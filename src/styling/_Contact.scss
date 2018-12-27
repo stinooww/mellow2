@@ -1,0 +1,16 @@
+@import "variables";
+
+
+h1,h2,h3,p, .contact-intro{
+  color:black;
+}
+
+.contact-section{
+  li{
+    color:black;
+  }
+
+  display: flex;
+  flex-direction: column;
+
+}

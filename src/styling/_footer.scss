@@ -1,0 +1,26 @@
+@import "variables";
+.footer{
+  background-color: black;
+  .footer-section{
+    display: flex;
+    flex-direction: column;
+    h4{
+      color:black;
+
+    }
+  }
+}
+p, .text-footer, li{
+  color:white;
+}
+
+
+a{
+  color:$yellow;
+  &:hover{
+    color:white;
+  }
+}
+li{
+  list-style: none;
+}
