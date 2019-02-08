@@ -1,0 +1,44 @@
+.dicomenu-service {
+
+  h1, h3, p {
+    color: black;
+  }
+
+  h1 {
+    font-size: 35px;
+    font-weight: 500;
+    margin: 8% 0 3% 0;
+  }
+
+  h3 {
+    text-shadow: none;
+    font-weight: 300;
+    font-size: 34px;
+    text-align: center;
+    margin: 1%;
+  }
+
+  .no-problemo {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.5px;
+    color: $yellow;
+    text-shadow: #6c6c6c 1px 1px 1px;
+  }
+
+  .dicomenu-website {
+    margin: 1% 20%;
+    text-align: center;
+  }
+
+  .webhosting {
+    margin: 7% 20%;
+    text-align: center;
+  }
+}
+
+.cta-button {
+  margin: 5% 42%;
+  padding: 1.9em;
+  text-transform: uppercase;
+}

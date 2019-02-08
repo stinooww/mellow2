@@ -1,0 +1,59 @@
+.serviceHomePictures {
+  background-color: #b9b7b7b8;
+  height: 1100px;
+  padding: 5% 2%;
+  width: 100%;
+
+  .serviceheader {
+    width: 65%;
+    margin: 3% 21%;
+    text-align: center;
+    height: 22%;
+  }
+
+  h2, p {
+    color: black;
+
+
+  }
+
+  h2 {
+
+
+    font-size: 2.44em;
+    line-height: 1em;
+    position: relative;
+
+    font-weight: normal;
+    margin: .83em 0 1.15em 0em;
+  }
+
+  p {
+
+
+    font-size: 1.125em;
+    line-height: 1.550em;
+    font-weight: 300;
+
+  }
+
+  .helpen {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+
+  .service {
+    padding: 0 9%;
+
+    .serviceTiles {
+      display: flex;
+      flex-direction: row;
+
+      .lastTile {
+        margin-top: -100px;
+      }
+    }
+  }
+
+}
