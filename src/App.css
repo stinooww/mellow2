@@ -1,21 +1,45 @@
-h1, h2, h3, p, .contact-intro {
-  color: black; }
+.contact .contact-header {
+  padding-top: 5%;
+  padding-bottom: 2%; }
 
-.contact-section {
+.contact p, .contact .contact-header, .contact .contact-subheader {
+  color: black;
+  text-shadow: none;
+  text-align: left; }
+
+.contact .contact-section {
   display: flex;
   flex-direction: column; }
-  .contact-section li {
+  .contact .contact-section li {
     color: black; }
+  .contact .contact-section a:hover {
+    color: #b28b0e; }
 
-.landingJumb h1 {
-  color: white;
-  font-size: 50px;
-  text-shadow: #6c6c6c 2px 2px; }
+.contactForm {
+  min-height: 400px;
+  margin-bottom: 100px;
+  padding-bottom: 50px; }
+  .contactForm .form-group {
+    height: 40px; }
+    @media screen and (max-width: 768px) {
+      .contactForm .form-group {
+        height: 55px; } }
+  .contactForm .mellow-btn {
+    text-transform: uppercase;
+    margin: 0;
+    width: 130px; }
 
-.landingJumb .cta-landing {
-  margin-top: 50px;
-  font-size: 18px;
-  text-transform: uppercase; }
+.landingJumb .container {
+  padding-top: 10%; }
+  .landingJumb .container h1 {
+    color: white;
+    font-size: 50px;
+    text-align: left;
+    text-shadow: #6c6c6c 2px 2px; }
+  .landingJumb .container .cta-landing {
+    margin-top: 80px;
+    font-size: 18px;
+    text-transform: uppercase; }
 
 .contentTile {
   width: 25%;
@@ -71,9 +95,38 @@ a {
 li {
   list-style: none; }
 
-.menu-item {
+@media (min-width: 768px) and (max-width: 992px) {
+  .navbar-nav {
+    margin: 0 18% 2% 22%; } }
+
+.navbar-nav .menu-item {
+  margin-top: 60px;
   color: #6c6c6c;
   text-transform: uppercase; }
+  @media screen and (max-width: 768px) {
+    .navbar-nav .menu-item {
+      padding-left: 55px; } }
+  @media screen and (max-width: 768px) {
+    .navbar-nav .menu-item {
+      margin-top: 15px; } }
+  @media (min-width: 768px) and (max-width: 992px) {
+    .navbar-nav .menu-item {
+      margin-top: 1px; } }
+
+.navbar-nav .modal-offerte-header {
+  float: left;
+  margin-top: 59px;
+  margin-left: 10px; }
+  @media screen and (min-width: 1081px) {
+    .navbar-nav .modal-offerte-header {
+      margin-top: 66px; } }
+  @media screen and (max-width: 768px) {
+    .navbar-nav .modal-offerte-header {
+      margin-top: 9px;
+      padding-left: 55px; } }
+  @media (min-width: 768px) and (max-width: 992px) {
+    .navbar-nav .modal-offerte-header {
+      margin-top: 1px; } }
 
 .navbar-default {
   background: #efc337;
@@ -101,17 +154,14 @@ li {
   .nav > li > a {
     padding: 8px 12px; } }
 
-.modal-offerte-header {
-  float: left;
-  margin-top: 66px;
-  margin-left: 10px; }
-  @media (min-width: 768px) and (max-width: 1080px) {
-    .modal-offerte-header {
-      margin-top: 10px; } }
+.navbar-collapse {
+  height: 425px; }
+  @media screen and (max-width: 768px) {
+    .navbar-collapse {
+      margin-top: 125px; } }
 
 /* Underline From Center */
 .hvr-underline-from-center {
-  margin-top: 60px;
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -119,9 +169,6 @@ li {
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
   overflow: hidden; }
-  @media (min-width: 768px) and (max-width: 1080px) {
-    .hvr-underline-from-center {
-      margin-top: 10px; } }
 
 .hvr-underline-from-center:before {
   content: "";

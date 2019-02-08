@@ -58,7 +58,7 @@ class Contactform extends Component {
         if (validation.isValid) {
             // handle actual form submission here
         }
-    }
+    };
     render() {
         let validation = this.submitted ?                         // if the form has been submitted at least once
             this.validator.validate(this.state) :   // then check validity every time we render
@@ -66,14 +66,14 @@ class Contactform extends Component {
         return (
             <div>
                 <form horizontal className="contactForm">
-                    <h2>Verstuur ons een berichtje</h2>
+
 
 
                     <FormGroup className={validation.firstname.isInvalid && 'has-error'}>
-                        <Col componentClass={ControlLabel} sm={2}>
+                        <Col componentClass={ControlLabel} sm={3}>
                             <label htmlFor="firstname">Voornaam</label>
                         </Col>
-                        <Col sm={10}>
+                        <Col smOffset={1} sm={8}>
                             <input type="firstname" className="form-control"
                                    name="firstname"
                                    onChange={this.handleInputChange}
@@ -83,10 +83,10 @@ class Contactform extends Component {
                     </FormGroup>
 
                     <FormGroup className={validation.lastname.isInvalid && 'has-error'}>
-                        <Col componentClass={ControlLabel} sm={2}>
+                        <Col componentClass={ControlLabel} sm={3}>
                             <label htmlFor="lastname">Achternaam</label>
                         </Col>
-                        <Col sm={10}>
+                        <Col smOffset={1} sm={8}>
                             <input type="lastname" className="form-control"
                                    name="lastname"
                                    onChange={this.handleInputChange}
@@ -96,10 +96,10 @@ class Contactform extends Component {
                     </FormGroup>
 
                     <FormGroup className={validation.email.isInvalid && 'has-error'}>
-                        <Col componentClass={ControlLabel} sm={2}>
+                        <Col componentClass={ControlLabel} sm={3}>
                             <label htmlFor="email">Email</label>
                         </Col>
-                        <Col sm={10}>
+                        <Col smOffset={1} sm={8}>
                             <input type="email" className="form-control"
                                    name="email"
                                    onChange={this.handleInputChange}
@@ -109,10 +109,10 @@ class Contactform extends Component {
                     </FormGroup>
 
                     <FormGroup className={validation.email.isInvalid && 'has-error'}>
-                        <Col componentClass={ControlLabel} sm={2}>
+                        <Col componentClass={ControlLabel} sm={3}>
                             <label htmlFor="phone">Gsm of telefoon</label>
                         </Col>
-                        <Col sm={10}>
+                        <Col smOffset={1} sm={8}>
                             <input type="phone" className="form-control"
                                    name="phone"
                                    onChange={this.handleInputChange}
@@ -122,7 +122,7 @@ class Contactform extends Component {
 
 
                     <FormGroup>
-                        <Col smOffset={2} sm={10}>
+                        <Col smOffset={4} sm={8}>
                             <Button onClick={this.handleFormSubmit} className="mellow-btn uppercase">
                                 Versturen
                             </Button>

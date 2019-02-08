@@ -1,9 +1,44 @@
 
 @import "variables";
 
-.menu-item{
-  color: $grey;
-  text-transform: uppercase;
+
+
+.navbar-nav{
+  @media (min-width: $Tablet) and (max-width: $smallerLaptop) {
+  margin: 0 18% 2% 22%;
+  }
+  .menu-item{
+    margin-top: 60px;
+    color: $grey;
+    text-transform: uppercase;
+    @media screen and (max-width:$Tablet){
+      padding-left: 55px;
+
+    }
+
+    @media screen and (max-width:$Tablet){
+      margin-top: 15px;
+
+    }
+    @media (min-width: $Tablet) and (max-width: $smallerLaptop) {
+      margin-top: 1px;
+    }
+  }
+  .modal-offerte-header{
+    float: left;
+    margin-top: 59px;
+    margin-left: 10px;
+    @media screen and (min-width: 1081px) {
+      margin-top: 66px;
+    }
+    @media screen and (max-width:$Tablet){
+      margin-top: 9px;
+      padding-left: 55px;
+    }
+    @media (min-width: $Tablet) and (max-width: $smallerLaptop) {
+      margin-top: 1px;
+    }
+  }
 }
 .navbar-default{
   //background-color: #6b4539 !important;
@@ -44,17 +79,17 @@
 
   }
 }
-.modal-offerte-header{
-float: left;
-  margin-top: 66px;
-  margin-left: 10px;
-  @media (min-width: 768px) and (max-width: 1080px) {
-    margin-top: 10px;
+
+.navbar-collapse{
+  height: 425px;
+  @media screen and (max-width:$Tablet){
+    margin-top: 125px;
   }
+
 }
 /* Underline From Center */
 .hvr-underline-from-center {
-  margin-top: 60px;
+
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -62,9 +97,7 @@ float: left;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
   overflow: hidden;
-  @media (min-width: 768px) and (max-width: 1080px) {
-      margin-top: 10px;
-  }
+
 }
 .hvr-underline-from-center:before {
   content: "";

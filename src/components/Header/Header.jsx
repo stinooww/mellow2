@@ -15,7 +15,7 @@ class Header extends Component{
                     <Navbar.Toggle></Navbar.Toggle>
                 </Navbar.Header>
                 <Navbar.Collapse>
-                    <Nav pullRight>
+                    <Nav >
                         <NavItem eventKey={1} componentClass={Link} className="menu-item hvr-underline-from-center " href="/" to="/">Home</NavItem>
                         <NavItem eventKey={2} componentClass={Link} className="menu-item hvr-underline-from-center " href="/services" to="/services">Diensten</NavItem>
                         <NavItem eventKey={3} componentClass={Link} className="menu-item hvr-underline-from-center " href="/portfolio" to="/portfolio">Portfolio</NavItem>

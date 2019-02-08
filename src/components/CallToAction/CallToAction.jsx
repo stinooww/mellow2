@@ -5,7 +5,10 @@ import {Link} from "react-router-dom";
 export default class CallToAction extends Component {
     render() {
         return(
-            <Grid className="section-cta">
+                <div className="section-cta">
+
+
+            <Grid >
                 <Row>
                     <Col md={8} sm={8} xs={12}>
                     <h4 className="cta-text">
@@ -20,6 +23,7 @@ export default class CallToAction extends Component {
                 </Row>
 
             </Grid>
+                </div>
 
         )
     }

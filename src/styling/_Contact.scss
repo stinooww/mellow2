@@ -1,16 +1,46 @@
 @import "variables";
 
+.contact{
+  .contact-header{
+    padding-top: 5%;
+    padding-bottom: 2%;
+  }
+  p, .contact-header, .contact-subheader{
+    color:black;
+    text-shadow: none;
+    text-align: left;
 
-h1,h2,h3,p, .contact-intro{
-  color:black;
+  }
+  .contact-section{
+    li{
+      color:black;
+    }
+a:hover{
+  color:darken($yellow, 20%);
+}
+    display: flex;
+    flex-direction: column;
+
+  }
 }
 
-.contact-section{
-  li{
-    color:black;
+.contactForm{
+  min-height: 400px;
+  margin-bottom: 100px;
+  padding-bottom: 50px;
+  .form-group{
+    height: 40px;
+    @media screen and (max-width: $Tablet) {
+      height: 55px;
+    }
   }
+  label.control-label{
 
-  display: flex;
-  flex-direction: column;
+  }
+  .mellow-btn{
 
+    text-transform: uppercase;
+    margin: 0;
+    width: 130px;
+  }
 }
