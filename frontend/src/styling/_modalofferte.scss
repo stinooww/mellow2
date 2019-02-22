@@ -10,11 +10,24 @@
 .modal-main {
   position: fixed;
   background: white;
-  width: 80%;
   height: auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.mellow-btn {
+  .svg-inline--fa {
+    padding-top: 5px;
+    padding-left: 2px;
+    font-size: 1.5em;
+  }
+
+  span {
+    font-size: 16px;
+    text-shadow: none;
+
+  }
 }
 
 .display-block {
@@ -34,9 +47,10 @@
 }
 
 .closeModal {
+
   cursor: pointer;
   height: 30px;
-  margin: 13px;
+  margin: 60px 13px 0 13px;
 
 }
 
@@ -59,6 +73,7 @@
 
   .form-offerte-small {
     font-size: 18px;
+    padding: 10px 0;
   }
 
   .form-offerte {
@@ -91,4 +106,8 @@
       }
     }
   }
+}
+
+.mos-multiSelect {
+  z-index: 120;
 }

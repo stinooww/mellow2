@@ -3,9 +3,63 @@ import {Button, Col, Grid, Row} from "react-bootstrap";
 import ModalOfferte from './ModalOfferte';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faAddressBook, faAngleRight, faPaperPlane, faAddressCard} from "@fortawesome/free-solid-svg-icons";
+import Select from 'react-select';
 
+const options = [
+
+    {
+        value: 'Website',
+        label: 'Website'
+    },
+    {
+        value: 'Webshop',
+        label: 'Webshop'
+    },
+    {
+        value: 'SEO',
+        label: 'SEO'
+    },
+    {
+        value: 'SEA',
+        label: 'SEA'
+    },
+    {
+        value: 'Logo',
+        label: 'Logo'
+    },
+    {
+        value: 'Email marketing',
+        label: 'Email marketing'
+    },
+    {
+        value: 'Business kaartjes',
+        label: 'Business kaartjes'
+    }
+];
+const customStyles = {
+    option: (provided, state) => ({
+        ...provided,
+        borderBottom: '1px dotted black',
+        color       : state.isSelected ? 'red' : 'black',
+        padding     : 20,
+        opacity     : 1
+    }),
+    singleValue: (provided, state) => {
+        const opacity = state.isDisabled ? 0.5 : 1;
+        const transition = 'opacity 300ms';
+
+        return {
+            ...provided,
+            opacity,
+            transition
+        };
+    }
+}
 class ModalOfferteStart extends Component {
-    state = {isToggleOn: false};
+    state = {
+        selectedOption: null,
+        isToggleOn    : false
+    };
 
     constructor(props) {
         super(props);
@@ -38,6 +92,10 @@ class ModalOfferteStart extends Component {
         this.setState({[e.target.name]: e.target.value})
     }
 
+    handleChange = (selectedOption) => {
+        this.setState({selectedOption});
+        console.log(`Option selected:`, selectedOption);
+    }
     onInputClick(e) {
         const clickedEl = e.target;
         e = e || window.event;
@@ -72,11 +130,15 @@ class ModalOfferteStart extends Component {
             email    : '',
             tel      : '',
             region   : '',
-            company  : ''
+            company  : '',
+            deadline : '',
+            budget   : '',
+            extrainfo: ''
         }
     }
 
     render() {
+        const {selectedOption} = this.state;
         return (
                 <div>
                     <ModalOfferte show={this.state.isToggleOn} handleClose={this.hideModal}>
@@ -90,6 +152,7 @@ class ModalOfferteStart extends Component {
                                   onSubmit={this.onSubmit}
                                   name="form-offerte">
                                 <input type="hidden" name="step" id="frm-offerte-step" value="1"/>
+
                                 <Grid className="fieldset fieldset1" id="fieldset-1">
                                     <div className="legend">
                                     <span>
@@ -210,62 +273,82 @@ class ModalOfferteStart extends Component {
                                         <span>Naar stap 2</span>
                                         <FontAwesomeIcon size="2x" className="iconRight" icon={faAngleRight}/>
                                     </Button>
-                                    {/*<div className="frm-row select-row" id="row-offerte-budget2" style="display:none;">*/}
-                                    {/*<select name="budget2" id="offerte-select">*/}
-                                    {/*<option value="">Wat is uw budget?</option>*/}
-                                    {/*<option value="Vanaf 1880 EUR (template website)">Vanaf 1880 EUR (template*/}
-                                    {/*website)*/}
-                                    {/*</option>*/}
-                                    {/*<option value="Van 3420 tot 5000 EUR (kleine tot middelgrote website)">Van 3420*/}
-                                    {/*tot 5000 EUR (middelgrote website - html)*/}
-                                    {/*</option>*/}
-                                    {/*<option value="Van 5000 tot 8000 EUR (grote website)">Van 5000 tot 8000 EUR*/}
-                                    {/*(middelgrote tot grote website/shop)*/}
-                                    {/*</option>*/}
-                                    {/*<option value="Van 8000 tot 12500 EUR (grote website)">Van 8000 tot 12500 EUR*/}
-                                    {/*(grote website/shop)*/}
-                                    {/*</option>*/}
-                                    {/*<option value="Vanaf 12500 EUR">Vanaf 12500 EUR</option>*/}
-                                    {/*</select>*/}
-                                    {/*</div>*/}
+
                                 </Grid>
                                 <Grid className="fieldset fieldset2" id="fieldset-2">
                                     <div className="legend">
                                         <span> <FontAwesomeIcon size="sm" icon={faAddressCard}/>Vertel ons meer over uw project</span>
                                     </div>
                                     <Row className="form-group clearfix">
-                                        <Col xs={12} md={6} className="special-input" id="row-offerte-interest">
-                                            <input type="text" className="input-text" name="interest"
-                                                   id="input-offerte-interest"/>
-                                            <label htmlFor="input-offerte-interest" className="form-label">
-                                                <span>Waar heeft u interesse voor?</span></label>
+                                        <Col md={4} xs={12} className="special-input" id="row-offerte-interest">
+                                            <Select
+                                                    value={selectedOption}
+                                                    onChange={this.handleChange}
+                                                    options={options}
+                                                    placeholder="Waar heeft u interesse voor?"
+                                                    className="mos-multiSelect"
+                                                    styles={customStyles}
+                                            />
                                         </Col>
-                                        <Col xs={12} md={6} className="special-input" id="row-offerte-services">
-                                            <input type="text" className="input-text" name="services"
-                                                   id="input-offerte-services"/>
-                                            <label htmlFor="input-offerte-services" className="form-label"><span>Logo, drukwerk, nieuwsbrief, ...?</span></label>
-                                        </Col>
+
                                     </Row>
                                     <Row className="form-group clearfix">
                                         <Col xs={12} md={6} className="special-input" id="row-offerte-deadline">
-                                            <input type="text" className="input-text" name="deadline"
-                                                   id="input-offerte-deadline"/>
-                                            <label htmlFor="input-offerte-deadline" className="form-label">
-                                                <span>Bepaal uw deadline</span></label>
+
+                                      <span className="input input--nariko"
+                                            onClick={this.onInputClick}
+                                      >
+                                            <input className="input__field input__field--nariko"
+                                                   type="text"
+                                                   id="input-offerte-deadline"
+                                                   value={this.state.deadline}
+                                                   onChange={this.onChange}
+                                                   name="deadline"
+                                            />
+                                            <label className="input__label input__label--nariko" htmlFor="input-offerte-firstname">
+                                                <span className="input__label-content input__label-content--nariko">Bepaal uw deadline</span>
+                                            </label>
+				                        </span>
                                         </Col>
                                         <Col xs={12} md={6} className="special-input" id="row-offerte-budget">
-                                            <input type="text" className="input-text" name="budget"
-                                                   id="input-offerte-budget"/>
-                                            <label htmlFor="input-offerte-budget" className="form-label">
-                                                <span>Wat is uw budget?</span></label>
+                                              <span className="input input--nariko"
+                                                    onClick={this.onInputClick}
+                                              >
+                                            <input className="input__field input__field--nariko"
+                                                   type="text"
+                                                   id="input-offerte-budget"
+                                                   value={this.state.budget}
+                                                   onChange={this.onChange}
+                                                   name="budget"
+                                            />
+                                            <label className="input__label input__label--nariko" htmlFor="input-offerte-firstname">
+                                                <span className="input__label-content input__label-content--nariko">Wat is uw budget?</span>
+                                            </label>
+				                        </span>
+
+
                                         </Col>
                                     </Row>
                                     <Row className="form-group clearfix">
                                         <Col xs={12} md={12} className="" id="row-extrainfo">
-                                            <label htmlFor="input-offerte-extrainfo" className="frm-label">
-                                                <span>Extra informatie <small>(Korte omschrijving van uw project)</small></span></label>
-                                            <textarea className="input-text" rows="6" id="input-offerte-extrainfo"
-                                                      name="extrainfo"/>
+                                                       <span className="input input--nariko"
+                                                             onClick={this.onInputClick}
+                                                       >
+                                            <textarea className="input__field input__field--nariko"
+                                                      type="text"
+                                                      id="input-offerte-extrainfo"
+                                                      value={this.state.extrainfo}
+                                                      onChange={this.onChange}
+                                                      name="extrainfo"
+                                                      rows="6"
+                                            />
+
+                                            <label className="input__label input__label--nariko" htmlFor="input-offerte-extrainfo">
+                                                <span className="input__label-content input__label-content--nariko">Extra informatie <small>(Korte omschrijving van uw project)</small></span>
+                                            </label>
+				                        </span>
+
+
                                         </Col>
                                     </Row>
                                     <Row className="form-group clearfix">

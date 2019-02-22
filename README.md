@@ -1,4 +1,4 @@
-The new mellow website!
+The new mellow website written in django and react framework!
 
-starting the front end react server: "n
-pm start"
+
+To start the front-end react server: "npm start"
