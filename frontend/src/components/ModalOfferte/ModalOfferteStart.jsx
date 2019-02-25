@@ -137,6 +137,13 @@ class ModalOfferteStart extends Component {
             budget   : '',
             extrainfo: ''
         }
+        const validation = this.validator.validate(this.state);
+        this.setState({validation});
+        this.submitted = true;
+
+        if(validation.isValid) {
+            // handle actual form submission here
+        }
     }
 
     render() {

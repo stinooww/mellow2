@@ -8,27 +8,33 @@ class Contactform extends Component {
         this.validator = new FormValidator([
             {
                 field    : 'firstname',
-                method   : 'isEmpty',
+                method   : 'isAlpha',
                 validWhen: false,
                 message  : 'Uw voornaam is verplicht.'
             },
             {
                 field    : 'lastname',
-                method   : 'isEmpty',
+                method   : 'isAlpha',
                 validWhen: false,
                 message  : 'Achternaam is verplicht.'
             },
             {
                 field    : 'email',
-                method   : 'isEmpty',
+                method   : 'isEmail',
                 validWhen: false,
-                message  : 'Email is required.'
+                message  : 'Email is verplicht.'
             },
             {
-                field    : 'email',
-                method   : 'isEmail',
+                field    : 'phone',
+                method   : 'isPhone',
                 validWhen: true,
-                message  : 'That is not a valid email.'
+                message  : 'Het nummer mag alleen cijfers bevatten.'
+            },
+            {
+                field    : 'info',
+                method   : 'isAlphanumeric',
+                validWhen: true,
+                message  : 'Gelieve uw invoer even na te kijken.'
             },
         ]);
 
@@ -75,8 +81,12 @@ class Contactform extends Component {
                                 <label htmlFor="firstname">Voornaam</label>
                             </Col>
                             <Col smOffset={1} sm={8}>
-                                <input type="firstname" className="form-control"
+                                <input type="firstname"
+                                       className="form-control"
                                        name="firstname"
+                                       required
+                                       minLength="2"
+                                       maxLength="15"
                                        onChange={this.handleInputChange}
                                 />
                                 <span className="help-block">{validation.firstname.message}</span>
@@ -87,8 +97,12 @@ class Contactform extends Component {
                                 <label htmlFor="lastname">Achternaam</label>
                             </Col>
                             <Col smOffset={1} sm={8}>
-                                <input type="lastname" className="form-control"
+                                <input type="lastname"
+                                       className="form-control"
                                        name="lastname"
+                                       required
+                                       minLength="2"
+                                       maxLength="15"
                                        onChange={this.handleInputChange}
                                 />
                                 <span className="help-block">{validation.lastname.message}</span>
@@ -99,21 +113,39 @@ class Contactform extends Component {
                                 <label htmlFor="email">Email</label>
                             </Col>
                             <Col smOffset={1} sm={8}>
-                                <input type="email" className="form-control"
+                                <input type="email"
+                                       className="form-control"
                                        name="email"
+                                       required
                                        onChange={this.handleInputChange}
                                 />
                                 <span className="help-block">{validation.email.message}</span>
                             </Col>
                         </FormGroup>
-                        <FormGroup className={validation.email.isInvalid && 'has-error'}>
+                        <FormGroup className={validation.phone.isInvalid && 'has-error'}>
                             <Col componentClass={ControlLabel} sm={3}>
                                 <label htmlFor="phone">Gsm of telefoon</label>
                             </Col>
                             <Col smOffset={1} sm={8}>
-                                <input type="phone" className="form-control"
+                                <input type="phone"
+                                       className="form-control"
                                        name="phone"
                                        onChange={this.handleInputChange}
+                                />
+                            </Col>
+                        </FormGroup>
+                        <FormGroup className={validation.info.isInvalid && 'has-error'}>
+                            <Col componentClass={ControlLabel} md={3}>
+                                <label className="" htmlFor="info">Uw vraag</label>
+                            </Col>
+                            <Col smOffset={1} sm={8}>
+                                <textarea className="textarea"
+                                          id="info"
+                                          value={this.state.info}
+                                          onChange={this.handleInputChange}
+                                          name="info"
+                                          rows="8"
+                                          cols="50"
                                 />
                             </Col>
                         </FormGroup>
