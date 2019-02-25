@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {Button, Col, Grid, Row} from "react-bootstrap";
 import ModalOfferte from './ModalOfferte';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faAddressBook, faAngleRight, faPaperPlane, faAddressCard} from "@fortawesome/free-solid-svg-icons";
+import {faAddressBook, faAngleRight, faAngleLeft, faPaperPlane, faAddressCard} from "@fortawesome/free-solid-svg-icons";
 import Select from 'react-select';
 
 const options = [
@@ -72,7 +72,10 @@ class ModalOfferteStart extends Component {
             email    : '',
             tel      : '',
             region   : '',
-            company  : ''
+            company  : '',
+            deadline : '',
+            budget   : '',
+            extrainfo: ''
         }
         this.onChange = this.onChange.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
@@ -102,15 +105,6 @@ class ModalOfferteStart extends Component {
         const target = e.target.parentNode || e.srcElement;
         const innerTarget = e.target;
         target.classList.add('input--filled');
-
-        // if ( innerTarget.innerHTML === '') {
-        //     console.log("empty");
-        //     target.classList.remove('input--filled');
-        // }else {
-        //     console.log("not empty");
-        //     target.classList.add('input--filled');
-        // }
-
     }
 
     // check if user input is filled + go to next fieldset
@@ -120,6 +114,14 @@ class ModalOfferteStart extends Component {
         let fieldset2 = document.getElementById("fieldset-2");
         field1.style.display = "none";
         fieldset2.style.display = "block";
+    }
+
+    onPreviousClick() {
+
+        let field1 = document.getElementById('fieldset-1');
+        let fieldset2 = document.getElementById("fieldset-2");
+        field1.style.display = "block";
+        fieldset2.style.display = "none";
     }
 
     onSubmit(e) {
@@ -280,19 +282,6 @@ class ModalOfferteStart extends Component {
                                         <span> <FontAwesomeIcon size="sm" icon={faAddressCard}/>Vertel ons meer over uw project</span>
                                     </div>
                                     <Row className="form-group clearfix">
-                                        <Col md={4} xs={12} className="special-input" id="row-offerte-interest">
-                                            <Select
-                                                    value={selectedOption}
-                                                    onChange={this.handleChange}
-                                                    options={options}
-                                                    placeholder="Waar heeft u interesse voor?"
-                                                    className="mos-multiSelect"
-                                                    styles={customStyles}
-                                            />
-                                        </Col>
-
-                                    </Row>
-                                    <Row className="form-group clearfix">
                                         <Col xs={12} md={6} className="special-input" id="row-offerte-deadline">
 
                                       <span className="input input--nariko"
@@ -330,22 +319,37 @@ class ModalOfferteStart extends Component {
                                         </Col>
                                     </Row>
                                     <Row className="form-group clearfix">
-                                        <Col xs={12} md={12} className="" id="row-extrainfo">
-                                                       <span className="input input--nariko"
+                                        <Col md={1} xs={0}/>
+                                        <Col md={4} xs={12} className="special-input" id="row-offerte-interest">
+                                            <Select
+                                                    isMulti
+                                                    value={selectedOption}
+                                                    onChange={this.handleChange}
+                                                    options={options}
+                                                    placeholder="Waar heeft u interesse voor?"
+                                                    className="mos-multiSelect"
+                                                    styles={customStyles}
+                                            />
+                                        </Col>
+                                        <Col xs={12} md={6} className="" id="row-extrainfo">
+                                                       <span className=" "
                                                              onClick={this.onInputClick}
                                                        >
-                                            <textarea className="input__field input__field--nariko"
-                                                      type="text"
+                                                             <label className="" htmlFor="input-offerte-extrainfo">
+                                                <span className="">Extra informatie <small>(Korte omschrijving van uw project)</small></span>
+                                            </label>
+                                                           <span className="clearfix"/>
+                                            <textarea className="fieldset2_textarea"
                                                       id="input-offerte-extrainfo"
                                                       value={this.state.extrainfo}
                                                       onChange={this.onChange}
                                                       name="extrainfo"
-                                                      rows="6"
+                                                      rows="8"
+                                                      cols="50"
+                                                      placeholder="Vertel ons wat meer over je onderneming"
                                             />
 
-                                            <label className="input__label input__label--nariko" htmlFor="input-offerte-extrainfo">
-                                                <span className="input__label-content input__label-content--nariko">Extra informatie <small>(Korte omschrijving van uw project)</small></span>
-                                            </label>
+
 				                        </span>
 
 
@@ -353,19 +357,17 @@ class ModalOfferteStart extends Component {
                                     </Row>
                                     <Row className="form-group clearfix">
                                         <Col xs={12} md={12}>
-                                            <button className="mellow-btn uppercase btn-submit" data-step="submit">
-                                    <span><i
-                                            className="icon icon-plane3"/>Verzenden</span></button>
+                                            <Button className="btn-step mellow-btn uppercase" onClick={this.onPreviousClick}>
+                                                <FontAwesomeIcon size="2x" className="iconLeft" icon={faAngleLeft}/>
+                                                <span>Naar stap 1</span>
+                                            </Button>
+                                            <Button className="mellow-btn uppercase btn-submit" data-step="submit">
+                                                <FontAwesomeIcon size="2x" className="iconLeft" icon={faPaperPlane}/>
+                                                <span> Verzenden</span>
+                                            </Button>
                                         </Col>
                                     </Row>
                                     <div className="feedback">Gelieve alle verplichte velden in te vullen</div>
-                                    <nav className="offerte-step-nav">
-                                        <ul>
-                                            <li>
-                                                <Button data-step="1">Naar stap 1</Button>
-                                            </li>
-                                        </ul>
-                                    </nav>
                                 </Grid>
                                 <p className="form-offerte-small">Uw gegevens worden enkel bewaard om u te contacteren of om een
                                     prijsraming door te mailen.

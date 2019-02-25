@@ -296,7 +296,7 @@ li {
 .closeModal {
   cursor: pointer;
   height: 30px;
-  margin: 60px 13px 0 13px; }
+  margin: 60px 80px 0 13px; }
 
 .opper-form-offerte {
   padding: 35px 0;
@@ -334,6 +334,18 @@ li {
 
 .mos-multiSelect {
   z-index: 120; }
+
+#fieldset-2 .form-group:first-child {
+  padding: 5% 0; }
+
+#fieldset-2 .fieldset2_textarea {
+  outline: black;
+  resize: none;
+  overflow: auto;
+  color: black; }
+
+#fieldset-2 .mos-multiSelect {
+  padding-top: 25px; }
 
 h1, h2, h3, p {
   color: white; }
