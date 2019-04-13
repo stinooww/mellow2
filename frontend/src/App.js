@@ -11,7 +11,7 @@ import Services from "./pages/Services/Services";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 import Portfolio from "./pages/Portfolio/Portfolio";
-import PortfolioItem from "./pages/PortfolioItem/PortfolioItem";
+import PortfolioItem from "./components/portfolio-item/PortfolioItem";
 import page404 from "./pages/Error/page404";
 
 class App extends Component {

@@ -1,26 +1,32 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import {Grid, Row, Col, Image, Button} from 'react-bootstrap';
-import dicomenupic from './../../images/dicomenu2.jpg';
+import dicomenuBack from './../../images/frontLAYER.png';
+import dicomenuFRONT from './../../images/back_layer.png';
 import waterschenken from './../../images/Waterschenken-min.jpg';
 import ober from './../../images/Obervlees-min.jpeg';
 import koppel from './../../images/Koppelres-min.jpg';
 import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
+import 'aos/dist/aos.css';
+import CallToAction from '../../components/CallToAction/CallToAction';
+
 AOS.init();
 
-class ServiceItem extends Component {
+class PortfolioItem extends Component {
     render() {
         return (
                 <div>
-                    <Grid className="dicomenu-service">
-                        <Row>
-                            <Col>
-                                <h1> Dicomenu</h1>
-                                <h3>Vertalingen & verkopen van culinaire woordenboeken </h3>
-                                <Image src={dicomenupic} alt="dicomenu" rounded responsive className="img"/>
-                            </Col>
-                        </Row>
+                    <div className="portfolio_item-header">
+                        <div className="header-layers">
+                            <h1> Dicomenu</h1>
+                            <h3>Vertalingen & verkopen van culinaire woordenboeken </h3>
+                        </div>
+                        <div className="image-layers">
+                            <Image src={dicomenuFRONT} alt="dicomenu" className="img"/>
+                            <Image src={dicomenuBack} alt="dicomenu" className="img"/>
+                        </div>
+                    </div>
+                    <Grid className="portfolio_item-grid">
                         <Row>
                             <Col className="dicomenu-website" data-aos="fade-up" data-aos-mirror="true">
                                 <p>Dicomenu kwam naar ons met de vraag of we heel hun oude website inclusief webshop in een nieuw jasje konden steken.</p>
@@ -48,17 +54,18 @@ class ServiceItem extends Component {
                             </Col>
                         </Row>
                         <Row>
-                            <Col className="webhosting" data-aos="zoom-in-up" data-aos-delay="1250">
+                            <Col className="webhosting" data-aos="zoom-in-up" data-aos-delay="550">
                                 <p>Enkele maanden na de release contaceerde ze ons opnieuw omdat ze toch vonden dat de laadtijd van hun website gehost
                                     op een goedkope buitenlandse hosting niet zo snel was...</p>
                                 <p>We hebben de volledige website vervolgens overgezet naar onze webhosting server en dit resulteerde in een laadtijd van bijna <strong>3,5 seconde</strong> sneller !!!
                                 </p>
                             </Col>
                         </Row>
+                        <CallToAction/>
                     </Grid>
                 </div>
         );
     }
 }
 
-export default ServiceItem;
+export default PortfolioItem;
