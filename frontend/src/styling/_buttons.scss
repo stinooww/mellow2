@@ -3,15 +3,14 @@ $grey: #6c6c6c;
 
 .mellow-btn {
   border-radius: 5.5px;
-
-  margin: .4em;
+  width: 300px;
+  margin: 1.2em;
   padding: 1.3em;
   cursor: pointer;
   text-decoration: none;
   background: $yellow;
   color: #666;
-  display: inline-block;
-  vertical-align: middle;
+
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -57,4 +56,17 @@ $grey: #6c6c6c;
   background: transparent;
   border: 2px solid black;
   text-transform: uppercase;
+}
+
+.cta-overal {
+  display: flex;
+  justify-content: center;
+
+  .cta-button {
+    display: flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    padding: 1.2em;
+    text-transform: uppercase;
+  }
 }

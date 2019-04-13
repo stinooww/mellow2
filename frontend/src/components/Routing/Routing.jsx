@@ -7,7 +7,7 @@ import PortfolioItem from "../../pages/PortfolioItem/PortfolioItem";
 import About from "../../pages/About/About";
 import Contact from "../../pages/Contact/Contact";
 import page404 from "../../pages/Error/page404";
-import ServiceDicomenu from "../../pages/Services/ServiceDicomenu";
+import ServiceItem from "../../pages/Services/ServiceItem";
 import Av from "../../pages/AV/Av";
 
 function Routing() {
@@ -16,7 +16,7 @@ function Routing() {
             <div>
                 <Route exact path="/" component={Home}/>
                 <Route path="/services" component={Services}/>
-                <Route path="/service/dicomenu" component={ServiceDicomenu}/>
+                <Route path="/service/dicomenu" component={ServiceItem}/>
                 {/*<Route path={`${match.url}/:postId`}*/}
                 {/*render={ (props) => <Product data= {productsData} {...props} />}/>
                        component={PortfolioItem}

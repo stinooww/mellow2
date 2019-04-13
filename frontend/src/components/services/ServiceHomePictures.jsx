@@ -14,39 +14,16 @@ class ServiceHomePictures extends Component {
     render() {
         return (
                 <div>
-                    {/*<div className="serviceHomePictures">*/}
-                    {/*<div className="serviceheader text-center">*/}
-                    {/*<h2>Onze services</h2>*/}
-                    {/*<p>Webdesign is wat we doen, waarbij we mee denken met jou om de beste oplossing op maat te vinden.*/}
-                    {/*</p>*/}
-                    {/*<p>  <span className="helpen">*/}
-                    {/*Wij helpen u uw digitale identiteit te creeëren*/}
-                    {/*</span>*/}
-                    {/*</p>*/}
-                    {/*</div>*/}
-                    {/*<div className="service">*/}
-                    {/*<div className="serviceTiles">*/}
-                    {/*<ServiceTile tileWidth="big" tileImg="dicomenu" tileDescription="Webdesign & webshop"/>*/}
-                    {/*<ServiceTile tileWidth="small" tileImg="bodyupdate"/>*/}
-                    {/*<ServiceTile tileWidth="small" tileImg="sea"/>*/}
-                    {/*</div>*/}
-                    {/*<div className="serviceTiles">*/}
-                    {/*<ServiceTile tileWidth="medium" tileImg="finnegans"/>*/}
-                    {/*<div className="lastTile">*/}
-                    {/*<ServiceTile tileWidth="big" tileImg="peeraer"/>*/}
-                    {/*</div>*/}
-                    {/*</div>*/}
-                    {/*</div>*/}
-                    {/*</div>*/}
                     <div className="home-portfolio" id="home-portfolio">
                         <div className="wrapper-1075">
                             <div className="home-portfolio-text-mobile"><p>Contacteer Weblounge (Brugge) Tel. 050 687 657</p></div>
                             <div className="home-portfolio-text clearfix">
-                                <div className="grid-col-50"><h2>Webdesign is wat we doen, <i>waarbij we mee denken met jou </i>om de beste oplossing op maat te vinden. </h2></div>
-                                <div className="grid-col-50 wysi"><p>Websites maken is onze eerste grote liefde maar ook een stijlvol grafisch ontwerp van jouw
-                                    <a href="/grafisch-ontwerp/logo-ontwerp/" title="Logo ontwerp in Brugge">logo</a> is bij Weblounge in goede
-                                    handen. <a href="/over-ons/" title="De diensten van web bureau Weblounge">Lees
-                                        ons verhaal en ontdek hoe wij jou kunnen helpen van A tot Z.</a></p></div>
+                                <div className="col-md-12">
+                                    <h2>Webdesign is wat we doen,
+                                        <i>waarbij we mee denken met jou </i>
+                                        om de beste oplossing op maat te vinden. </h2>
+                                </div>
+
                             </div>
                             <div className="portfolio-grid clearfix">
                                 <div className="grid-col-50">

@@ -10,7 +10,7 @@ class Testimonials extends Component {
                             <Col xs={12} md={12} className="person-wrapper">
                                 <div className="testimonial-title">
                                     <h1>Wat onze klanten van ons zeggen</h1>
-                                    <h2>En waarom ze ook blijven terug komen</h2>
+                                    <h3>En waarom ze ook blijven terug komen</h3>
                                 </div>
                                 <Carousel className="testimonial-carousel">
                                     <CarouselItem>

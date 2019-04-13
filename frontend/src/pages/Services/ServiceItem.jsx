@@ -9,7 +9,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 AOS.init();
 
-class ServiceDicomenu extends Component {
+class ServiceItem extends Component {
     render() {
         return (
                 <div>
@@ -31,8 +31,8 @@ class ServiceDicomenu extends Component {
                             </Col>
                         </Row>
                         <Row>
-                            <Col>
-                                <Link to="www.dicomenu.com" className="mellow-btn cta-button" bsSize="large"> Bezoek de website</Link>
+                            <Col md={12} className="cta-overal">
+                                <Link to="www.dicomenu.com" className="mellow-btn cta-button"> Bezoek de website</Link>
                             </Col>
                         </Row>
                         <Row>
@@ -61,4 +61,4 @@ class ServiceDicomenu extends Component {
     }
 }
 
-export default ServiceDicomenu;
+export default ServiceItem;

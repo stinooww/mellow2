@@ -19,8 +19,11 @@ class ServiceAboutHome extends Component {
                                     <Responsive/>
                                 </div>
                                 <h2>Webdesign</h2>
-                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam,
-                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <p>Websites maken is onze eerste grote liefde maar ook een stijlvol grafisch ontwerp van jouw
+                                    <a href="/grafisch-ontwerp/logo-ontwerp/" title="Logo ontwerp in Brugge">logo</a> is bij Mellow in goede
+                                    handen. <a href="/over-ons/" title="De diensten van web bureau Weblounge">Lees
+                                        ons verhaal en ontdek hoe wij jou kunnen helpen van A tot Z.</a></p>
+
                             </Col>
                             <Col xs={12} md={4} className="service-tile">
                                 <div className="icon-margin">
