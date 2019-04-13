@@ -1183,18 +1183,21 @@ h2:after {
     display: flex;
     align-items: center; }
   .portfolio_item-header .header-layers {
-    justify-content: flex-start;
+    justify-content: flex-end;
     flex-direction: column;
     align-items: baseline;
     order: 1;
-    width: calc(100% - 70vw); }
+    width: calc(100% - 60vw);
+    padding: 20px 0 80px 100px; }
     .portfolio_item-header .header-layers h1, .portfolio_item-header .header-layers h3 {
       text-align: left;
       color: black; }
     .portfolio_item-header .header-layers h3 {
-      font-size: 25px; }
+      font-size: 25px;
+      text-shadow: none; }
   .portfolio_item-header .image-layers {
     width: calc(100% - 30vw);
+    padding-right: 2%;
     order: 2;
     display: flex;
     justify-content: flex-end; }
