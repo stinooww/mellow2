@@ -1,19 +1,4 @@
-
 .about {
-  $font: 'Source Sans Pro', sans-serif;
-
-  $color-alpha: #d0f2ee;
-
-  $color-black: #000;
-  $color-grey: #a9b1b3;
-  $color-white: #fff;
-
-  $mq-xs: 20em;
-  $mq-sm: 30em;
-  $mq-md: 54em;
-  $mq-lg: 64em;
-  $mq-xl: 76.5em;
-  $mq-xxl: 114em;
 
   /**
    * Mixins
@@ -27,28 +12,19 @@
     }
   }
 
-  /**
-   * Base Settings/Overwrite Normalize
-   */
-  *, *:before, *:after {
-    box-sizing: border-box;
-  }
+
 
   h2 {
     margin-top: 0;
     margin-bottom: 0.25em;
-
+    color: $blue;
     font-size: 3.2em;
     font-weight: 900;
-    line-height: 1;
+    line-height: 1.2;
     text-align: left;
   }
 
-  p {
-    margin: 0;
 
-    color: $color-grey;
-  }
 
   a {
     padding: 0.5em 1em;
@@ -63,67 +39,30 @@
     &:hover,
     &:active,
     &:focus {
-      color: $color-white;
+      color: white;
       background-color: $color-grey;
     }
   }
 
   h1 {
     padding: 1em 0;
-    color: $color-black;
+    color: black;
   }
 
-  figure {
-    margin: 0;
-  }
+
 
   ::selection {
-    color: $color-white;
+    color: white;
     background-color: $color-alpha;
     text-shadow: none;
   }
 
 
-  body {
-    font-family: $font;
-    font-size: 100%;
-    line-height: 1.6;
-    color: $color-black;
-    background-color: $color-white;
-
-    @media (min-width: $mq-xs) {
-      font-size: 102.5%;
-    }
-
-    @media (min-width: $mq-sm) {
-      font-size: 105%;
-    }
-
-    @media (min-width: $mq-md) {
-      font-size: 107.5%;
-    }
-
-    @media (min-width: $mq-lg) {
-      font-size: 110%;
-    }
-
-    @media (min-width: $mq-xl) {
-      font-size: 115%;
-    }
-
-    @media (min-width: $mq-xxl) {
-      font-size: 125%;
-    }
-  }
-
-  /**
-   * Components
-   */
   .post {
     min-height: 100vh;
     width: 100%;
 
-    border: 0.5em solid $color-white;
+    border: 0.5em solid white;
 
     @media (min-width: $mq-md) {
       display: flex;
@@ -208,7 +147,7 @@
         height: 2px;
         width: 12em;
 
-        background-color: $color-black;
+        background-color: black;
         animation: slide-in 1s ease-in both 0.5s;
       }
     }

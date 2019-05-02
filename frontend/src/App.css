@@ -1306,29 +1306,19 @@ h2:after {
    * Mixins
    */
   /**
-   * Base Settings/Overwrite Normalize
-   */
-  /**
-   * Components
-   */
-  /**
    * Helpers
    */
   /**
    * Animations
    */ }
-  .about *, .about *:before, .about *:after {
-    box-sizing: border-box; }
   .about h2 {
     margin-top: 0;
     margin-bottom: 0.25em;
+    color: #3763ef;
     font-size: 3.2em;
     font-weight: 900;
-    line-height: 1;
+    line-height: 1.2;
     text-align: left; }
-  .about p {
-    margin: 0;
-    color: #a9b1b3; }
   .about a {
     padding: 0.5em 1em;
     font-size: 0.8em;
@@ -1339,45 +1329,19 @@ h2:after {
     border: 1px solid #a9b1b3;
     transition: all 0.3s ease-in; }
     .about a:hover, .about a:active, .about a:focus {
-      color: #fff;
+      color: white;
       background-color: #a9b1b3; }
   .about h1 {
     padding: 1em 0;
-    color: #000; }
-  .about figure {
-    margin: 0; }
+    color: black; }
   .about ::selection {
-    color: #fff;
+    color: white;
     background-color: #d0f2ee;
     text-shadow: none; }
-  .about body {
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 100%;
-    line-height: 1.6;
-    color: #000;
-    background-color: #fff; }
-    @media (min-width: 20em) {
-      .about body {
-        font-size: 102.5%; } }
-    @media (min-width: 30em) {
-      .about body {
-        font-size: 105%; } }
-    @media (min-width: 54em) {
-      .about body {
-        font-size: 107.5%; } }
-    @media (min-width: 64em) {
-      .about body {
-        font-size: 110%; } }
-    @media (min-width: 76.5em) {
-      .about body {
-        font-size: 115%; } }
-    @media (min-width: 114em) {
-      .about body {
-        font-size: 125%; } }
   .about .post {
     min-height: 100vh;
     width: 100%;
-    border: 0.5em solid #fff; }
+    border: 0.5em solid white; }
     @media (min-width: 54em) {
       .about .post {
         display: flex;
@@ -1440,7 +1404,7 @@ h2:after {
         bottom: 0;
         height: 2px;
         width: 12em;
-        background-color: #000;
+        background-color: black;
         animation: slide-in 1s ease-in both 0.5s; }
     .about .post__content {
       padding: 2em 0; }
@@ -1546,6 +1510,12 @@ h2:after {
   margin-bottom: 0;
   border-radius: 0; }
 
+/**
+   * Base Settings/Overwrite Normalize
+   */
+*, *:before, *:after {
+  box-sizing: border-box; }
+
 .container-fluid {
   padding: 0; }
 
@@ -1562,9 +1532,38 @@ a {
 h1 {
   font-family: 'mellow', Arial, Helvetica, sans-serif; }
 
+figure {
+  margin: 0; }
+
 p {
-  font-size: 22px; }
+  font-size: 22px;
+  margin: 0;
+  color: #a9b1b3; }
 
 @media (min-width: 1300px) {
   .container {
     width: 1350px; } }
+
+body {
+  font-size: 100%;
+  line-height: 1.6;
+  color: black;
+  background-color: white; }
+  @media (min-width: 20em) {
+    body {
+      font-size: 102.5%; } }
+  @media (min-width: 30em) {
+    body {
+      font-size: 105%; } }
+  @media (min-width: 54em) {
+    body {
+      font-size: 107.5%; } }
+  @media (min-width: 64em) {
+    body {
+      font-size: 110%; } }
+  @media (min-width: 76.5em) {
+    body {
+      font-size: 115%; } }
+  @media (min-width: 114em) {
+    body {
+      font-size: 125%; } }

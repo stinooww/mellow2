@@ -69,8 +69,11 @@
   border-radius: 0;
 }
 
-.header-logo {
-
+/**
+   * Base Settings/Overwrite Normalize
+   */
+*, *:before, *:after {
+  box-sizing: border-box;
 }
 
 .container-fluid {
@@ -93,10 +96,13 @@ h1 {
   font-family: 'mellow', Arial, Helvetica, sans-serif;
 }
 
+figure {
+  margin: 0;
+}
 p {
-
   font-size: 22px;
-
+  margin: 0;
+  color: $color-grey;
 }
 
 @media (min-width: 1300px) {
@@ -108,5 +114,37 @@ p {
 @media (min-width: 768px) {
   .container {
 
+  }
+}
+
+body {
+
+  font-size: 100%;
+  line-height: 1.6;
+  color: black;
+  background-color: white;
+
+  @media (min-width: $mq-xs) {
+    font-size: 102.5%;
+  }
+
+  @media (min-width: $mq-sm) {
+    font-size: 105%;
+  }
+
+  @media (min-width: $mq-md) {
+    font-size: 107.5%;
+  }
+
+  @media (min-width: $mq-lg) {
+    font-size: 110%;
+  }
+
+  @media (min-width: $mq-xl) {
+    font-size: 115%;
+  }
+
+  @media (min-width: $mq-xxl) {
+    font-size: 125%;
   }
 }
