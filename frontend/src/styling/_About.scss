@@ -77,18 +77,13 @@
     margin: 0;
   }
 
-  /**
-   * Text Selection
-   */
   ::selection {
     color: $color-white;
     background-color: $color-alpha;
     text-shadow: none;
   }
 
-  /**
-   * Body
-   */
+
   body {
     font-family: $font;
     font-size: 100%;
@@ -138,7 +133,6 @@
 
     & > *:first-child {
       position: relative;
-
       height: 14em;
 
 
@@ -266,10 +260,7 @@
     position: absolute;
     top: 0;
     left: 0;
-
-    height: 100%;
     width: 100%;
-
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;

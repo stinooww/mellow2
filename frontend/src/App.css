@@ -1309,12 +1309,6 @@ h2:after {
    * Base Settings/Overwrite Normalize
    */
   /**
-   * Text Selection
-   */
-  /**
-   * Body
-   */
-  /**
    * Components
    */
   /**
@@ -1480,7 +1474,6 @@ h2:after {
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
     width: 100%;
     background-position: 50%;
     background-repeat: no-repeat;

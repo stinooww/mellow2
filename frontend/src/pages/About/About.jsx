@@ -14,7 +14,7 @@ export default class Home extends Component {
                     <Col xs={12} sm={12} className="person">
                         <article className="post">
                             <div>
-                                <Image src={mellowBazen} className="stijnJonas"/>
+                                <Image src={mellowBazen} className="stijnJonas absolute-bg"/>
                             </div>
                             <div className="post__container">
                                 <span className="post__category">Wat meer over wie er achter mellow zit</span>
