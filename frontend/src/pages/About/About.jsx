@@ -31,7 +31,9 @@ export default class Home extends Component {
                         </article>
                     </Col>
                     </div>
-                    <CallToAction/>
+                    <div className="cta-padding">
+                        <CallToAction/>
+                    </div>
                 </Grid>
 
         )

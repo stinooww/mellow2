@@ -1502,6 +1502,9 @@ h2:after {
   100% {
     opacity: 1; } }
 
+.cta-padding {
+  margin: 112vh 0 10vh 0; }
+
 .dicomenu {
   background-image: url("images/dicomenu1.png"); }
 
