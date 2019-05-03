@@ -4,7 +4,10 @@ import {VerticalTimeline, VerticalTimelineElement} from 'react-vertical-timeline
 import 'react-vertical-timeline-component/style.min.css';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faCheckSquare, faCoffee} from '@fortawesome/free-solid-svg-icons';
-
+//https://stephane-monnot.github.io/react-vertical-timeline/#/
+// https://github.com/FortAwesome/react-fontawesome
+// https://trulata.com/
+// https://hype4.com/development
 class Timeline extends Component {
 
     render() {
