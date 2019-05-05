@@ -1,41 +1,28 @@
-h1, h2, h3, p {
-  color: white;
-}
-
-h1 {
-  text-align: center;
-}
-
-h2 {
-  font-style: italic;
-  font-size: 28px;
-  text-align: center;
-}
-
-h3 {
-
-  font-size: 40px;
-  text-shadow: #6c6c6c 2px 2px;
-  text-align: center;
-}
-
-.show-grid {
-  padding-bottom: 30px;
-}
-.testimonial-title {
-  padding: 5%;
-}
-
-.testimonial-carousel {
-  background-color: #6c6c6c80;
-  margin: 1% 25%;
-  padding: 5%;
-
-  .carousel-indicators {
-    top: 202px;
+.person-wrapper {
+  h3 {
+    text-align: center !important;
   }
 
-  .carousel-control {
-    display: none;
+  .show-grid {
+    padding-bottom: 30px;
+  }
+
+  .testimonial-title {
+    padding: 5%;
+  }
+
+  .testimonial-carousel {
+    background-color: #6c6c6c80;
+    margin: 1% 25%;
+    padding: 5%;
+
+    .carousel-indicators {
+      top: 202px;
+    }
+
+    .carousel-control {
+      display: none;
+    }
   }
 }
+

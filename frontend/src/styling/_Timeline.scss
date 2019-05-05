@@ -1,0 +1,32 @@
+.timeline {
+  h1 {
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 30px;
+    font-weight: 300;
+    color: $blue;
+    font-family: 'JOSEFIN-SANS-REG', Arial, Helvetica, sans-serif;
+    text-align: left;
+    text-shadow: none;
+  }
+
+  .vertical-timeline-element-content {
+    box-shadow: 3px 4px 1px #ddd;
+  }
+
+
+  .vertical-timeline--two-columns .vertical-timeline-element:nth-child(odd):not(.vertical-timeline-element--left) .vertical-timeline-element-content .vertical-timeline-element-date {
+    left: 139% !important;
+  }
+
+  .vertical-timeline--two-columns .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content .vertical-timeline-element-date {
+    right: 139% !important;
+  }
+
+  .vertical-timeline-element-icon {
+    background: $blue !important;
+  }
+
+}

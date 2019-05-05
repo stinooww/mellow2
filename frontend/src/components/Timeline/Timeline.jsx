@@ -3,7 +3,7 @@ import {Carousel, CarouselItem, Col, Grid, Row} from 'react-bootstrap';
 import {VerticalTimeline, VerticalTimelineElement} from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faCheckSquare, faCoffee} from '@fortawesome/free-solid-svg-icons';
+import {faCheckSquare, faCoffee, faCalendar, faLaptopCode, faLaptop, faProjectDiagram, faUserFriends} from '@fortawesome/free-solid-svg-icons';
 //https://stephane-monnot.github.io/react-vertical-timeline/#/
 // https://github.com/FortAwesome/react-fontawesome
 // https://trulata.com/
@@ -14,10 +14,12 @@ class Timeline extends Component {
         return (
                 <div>
                     <Grid>
-                        <Row className="show-grid ">
+                        <Row className="show-grid timeline">
                             <Col xs={12} md={12}>
                                 <h1>Hoe is het om met ons te werken</h1>
-                                <h2>Typical Project Timeline</h2>
+                                <div className="elementor-divider">
+                                    <span className="elementor-divider-separator"/>
+                                </div>
                                 <VerticalTimeline>
                                     <VerticalTimelineElement
                                             className="vertical-timeline-element--work"
@@ -28,8 +30,8 @@ class Timeline extends Component {
                                             }}
                                             icon={<FontAwesomeIcon icon={faCoffee}/>}
                                     >
-                                        <h3 className="vertical-timeline-element-title">Onze eerste stap</h3>
-                                        <h4 className="vertical-timeline-element-subtitle">Verkennend gesprek</h4>
+                                        <h3 className="vertical-timeline-element-title">Verkennend gesprek</h3>
+
                                         <p>
                                             In our earliest discussions, we’ll figure out the size, scope, and nature of your project, as well as help you think through what exactly you would like to
                                             create.
@@ -42,10 +44,9 @@ class Timeline extends Component {
                                                 background: 'rgb(33, 150, 243)',
                                                 color     : '#fff'
                                             }}
-                                            icon={<FontAwesomeIcon icon={faCoffee}/>}
+                                            icon={<FontAwesomeIcon icon={faUserFriends}/>}
                                     >
-                                        <h3 className="vertical-timeline-element-title">2 de gesprek</h3>
-                                        <h4 className="vertical-timeline-element-subtitle">diepgaand gesprek</h4>
+                                        <h3 className="vertical-timeline-element-title">Diepgaand gesprek</h3>
                                         <p>
                                             To get the ball rolling, we’ll ask you some questions about your business, your competition, and your inspirations. This will lay the groundwork to make
                                             sure your project is successful.
@@ -58,10 +59,9 @@ class Timeline extends Component {
                                                 background: 'rgb(33, 150, 243)',
                                                 color     : '#fff'
                                             }}
-                                            icon={<FontAwesomeIcon icon={faCoffee}/>}
+                                            icon={<FontAwesomeIcon icon={faLaptopCode}/>}
                                     >
-                                        <h3 className="vertical-timeline-element-title">3de </h3>
-                                        <h4 className="vertical-timeline-element-subtitle">Prototype</h4>
+                                        <h3 className="vertical-timeline-element-title">Prototype </h3>
                                         <p>
                                             Our first deliverable will be a prototype that you’ll be able to critique. We’ll work through revisions together as we prepare the final product
                                         </p>
@@ -73,10 +73,9 @@ class Timeline extends Component {
                                                 background: 'rgb(33, 150, 243)',
                                                 color     : '#fff'
                                             }}
-                                            icon={<FontAwesomeIcon icon={faCoffee}/>}
+                                            icon={<FontAwesomeIcon icon={faProjectDiagram}/>}
                                     >
-                                        <h3 className="vertical-timeline-element-title">4de </h3>
-                                        <h4 className="vertical-timeline-element-subtitle">The final product </h4>
+                                        <h3 className="vertical-timeline-element-title">Het eind product </h3>
                                         <p>
                                             Once all revisions are complete, you’ll receive your final, beautiful, and high converting deliverable.
                                         </p>
@@ -88,10 +87,9 @@ class Timeline extends Component {
                                                 background: 'rgb(233, 30, 99)',
                                                 color     : '#fff'
                                             }}
-                                            icon={<FontAwesomeIcon icon={faCoffee}/>}
+                                            icon={<FontAwesomeIcon icon={faLaptop}/>}
                                     >
-                                        <h3 className="vertical-timeline-element-title">5de</h3>
-                                        <h4 className="vertical-timeline-element-subtitle">Ongoing Support</h4>
+                                        <h3 className="vertical-timeline-element-title">Doorlopende support</h3>
                                         <p>
                                             If you desire, you’ll be able to sign-up for ongoing support and project management for a low monthly fee.
                                         </p>

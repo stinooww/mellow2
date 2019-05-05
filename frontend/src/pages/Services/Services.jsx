@@ -9,7 +9,6 @@ class Services extends Component {
 
         return (
                 <div className="PortfolioPage">
-                    <h1 className="portHead-title">services</h1>
                     <Grid>
                         <Row className="show-grid">
                             <Timeline/>

@@ -53,7 +53,7 @@
 }
 
 .testimonials {
-  background-image: url("images/wood.jpg");
+  //  background-image: url("images/wood.jpg");
   height: 600px;
   background-position: right;
   background-repeat: no-repeat;
@@ -61,11 +61,11 @@
 }
 
 .landingJumb {
-  background-image: url("images/smartmockups4.jpg");
-  height: 1000px;
-  background-position: right;
+  background-image: url("images/backgroundLayer.jpg");
+  height: 80vh;
+  background-position: top;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   margin-bottom: 0;
   border-radius: 0;
 }
@@ -93,8 +93,18 @@ a {
   font-style: normal;
 }
 
+@font-face {
+  font-family: JOSEFIN-SANS-REG;
+  src: url("styling/font/JosefinSans-Regular.ttf");
+  font-size: 100%;
+  font-weight: normal;
+  font-style: normal;
+}
+
 h1 {
   font-family: 'mellow', Arial, Helvetica, sans-serif;
+  padding: 1em 0;
+  color: black;
 }
 
 figure {
@@ -104,8 +114,30 @@ p {
   font-size: 22px;
   margin: 0;
   color: $color-grey;
+  font-family: 'JOSEFIN-SANS-REG', Arial, Helvetica, sans-serif;
+  // https://www.fontsquirrel.com/fonts/josefin-sans
 }
 
+h3 {
+  font-size: 30px;
+  font-weight: 300;
+  color: $blue;
+  text-align: left;
+  font-family: 'JOSEFIN-SANS-REG', Arial, Helvetica, sans-serif;
+
+  text-shadow: none;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 0.25em;
+  color: $blue;
+  font-family: 'JOSEFIN-SANS-REG', Arial, Helvetica, sans-serif;
+  font-size: 3em;
+  font-weight: 900;
+  line-height: 1.2;
+  text-align: left;
+}
 @media (min-width: 1300px) {
   .container {
     width: 1350px;
@@ -148,4 +180,22 @@ body {
   @media (min-width: $mq-xxl) {
     font-size: 125%;
   }
+}
+
+
+// vertical divider
+.elementor-divider {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  line-height: 0;
+  font-size: 0;
+}
+
+.elementor-divider-separator {
+  border-top-style: solid;
+  border-top-width: 3px;
+  border-top-color: $blue;
+  width: 40px;
+  display: inline-block;
 }

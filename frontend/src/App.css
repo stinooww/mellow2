@@ -33,7 +33,7 @@
   padding-top: 10%; }
   .landingJumb .container h1 {
     color: white;
-    font-size: 50px;
+    font-size: 40px;
     text-align: left;
     text-shadow: #6c6c6c 2px 2px; }
   .landingJumb .container .cta-landing {
@@ -356,35 +356,22 @@ li {
 #fieldset-2 .mos-multiSelect {
   padding-top: 25px; }
 
-h1, h2, h3, p {
-  color: white; }
+.person-wrapper h3 {
+  text-align: center !important; }
 
-h1 {
-  text-align: center; }
-
-h2 {
-  font-style: italic;
-  font-size: 28px;
-  text-align: center; }
-
-h3 {
-  font-size: 40px;
-  text-shadow: #6c6c6c 2px 2px;
-  text-align: center; }
-
-.show-grid {
+.person-wrapper .show-grid {
   padding-bottom: 30px; }
 
-.testimonial-title {
+.person-wrapper .testimonial-title {
   padding: 5%; }
 
-.testimonial-carousel {
+.person-wrapper .testimonial-carousel {
   background-color: #6c6c6c80;
   margin: 1% 25%;
   padding: 5%; }
-  .testimonial-carousel .carousel-indicators {
+  .person-wrapper .testimonial-carousel .carousel-indicators {
     top: 202px; }
-  .testimonial-carousel .carousel-control {
+  .person-wrapper .testimonial-carousel .carousel-control {
     display: none; }
 
 .service-home {
@@ -1311,14 +1298,6 @@ h2:after {
   /**
    * Animations
    */ }
-  .about h2 {
-    margin-top: 0;
-    margin-bottom: 0.25em;
-    color: #3763ef;
-    font-size: 3.2em;
-    font-weight: 900;
-    line-height: 1.2;
-    text-align: left; }
   .about a {
     padding: 0.5em 1em;
     font-size: 0.8em;
@@ -1331,9 +1310,6 @@ h2:after {
     .about a:hover, .about a:active, .about a:focus {
       color: white;
       background-color: #a9b1b3; }
-  .about h1 {
-    padding: 1em 0;
-    color: black; }
   .about ::selection {
     color: white;
     background-color: #d0f2ee;
@@ -1466,8 +1442,30 @@ h2:after {
     opacity: 1; } }
 
 .cta-padding {
-    margin: 100vh 0 10vh 0;
-}
+  margin: 100vh 0 10vh 0; }
+
+.timeline h1 {
+  text-align: center; }
+
+.timeline h3 {
+  font-size: 30px;
+  font-weight: 300;
+  color: #3763ef;
+  font-family: 'JOSEFIN-SANS-REG', Arial, Helvetica, sans-serif;
+  text-align: left;
+  text-shadow: none; }
+
+.timeline .vertical-timeline-element-content {
+  box-shadow: 3px 4px 1px #ddd; }
+
+.timeline .vertical-timeline--two-columns .vertical-timeline-element:nth-child(odd):not(.vertical-timeline-element--left) .vertical-timeline-element-content .vertical-timeline-element-date {
+  left: 139% !important; }
+
+.timeline .vertical-timeline--two-columns .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content .vertical-timeline-element-date {
+  right: 139% !important; }
+
+.timeline .vertical-timeline-element-icon {
+  background: #3763ef !important; }
 
 .dicomenu {
   background-image: url("images/dicomenu1.png"); }
@@ -1495,18 +1493,17 @@ h2:after {
   background-repeat: no-repeat; }
 
 .testimonials {
-  background-image: url("images/wood.jpg");
   height: 600px;
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover; }
 
 .landingJumb {
-  background-image: url("images/smartmockups4.jpg");
-  height: 1000px;
-  background-position: right;
+  background-image: url("images/backgroundLayer.jpg");
+  height: 80vh;
+  background-position: top;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   margin-bottom: 0;
   border-radius: 0; }
 
@@ -1529,8 +1526,17 @@ a {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: JOSEFIN-SANS-REG;
+  src: url("styling/font/JosefinSans-Regular.ttf");
+  font-size: 100%;
+  font-weight: normal;
+  font-style: normal; }
+
 h1 {
-  font-family: 'mellow', Arial, Helvetica, sans-serif; }
+  font-family: 'mellow', Arial, Helvetica, sans-serif;
+  padding: 1em 0;
+  color: black; }
 
 figure {
   margin: 0; }
@@ -1538,7 +1544,26 @@ figure {
 p {
   font-size: 22px;
   margin: 0;
-  color: #a9b1b3; }
+  color: #a9b1b3;
+  font-family: 'JOSEFIN-SANS-REG', Arial, Helvetica, sans-serif; }
+
+h3 {
+  font-size: 30px;
+  font-weight: 300;
+  color: #3763ef;
+  text-align: left;
+  font-family: 'JOSEFIN-SANS-REG', Arial, Helvetica, sans-serif;
+  text-shadow: none; }
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 0.25em;
+  color: #3763ef;
+  font-family: 'JOSEFIN-SANS-REG', Arial, Helvetica, sans-serif;
+  font-size: 3em;
+  font-weight: 900;
+  line-height: 1.2;
+  text-align: left; }
 
 @media (min-width: 1300px) {
   .container {
@@ -1567,3 +1592,17 @@ body {
   @media (min-width: 114em) {
     body {
       font-size: 125%; } }
+
+.elementor-divider {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  line-height: 0;
+  font-size: 0; }
+
+.elementor-divider-separator {
+  border-top-style: solid;
+  border-top-width: 3px;
+  border-top-color: #3763ef;
+  width: 40px;
+  display: inline-block; }
