@@ -181,6 +181,7 @@ class ModalOfferteStart extends Component {
                                                    onChange={this.onChange}
                                                    name="firstname"
                                                    required
+                                                   placeholder="voornaam"
                                             />
                                             <label className="input__label input__label--nariko" htmlFor="input-offerte-firstname">
                                                 <span className="input__label-content input__label-content--nariko">Voornaam</span>
@@ -198,6 +199,7 @@ class ModalOfferteStart extends Component {
                                                    onChange={this.onChange}
                                                    name="name"
                                                    required
+                                                   placeholder="achternaam"
                                             />
                                             <label className="input__label input__label--nariko" htmlFor="input-offerte-name">
                                                 <span className="input__label-content input__label-content--nariko">Naam</span>
@@ -217,6 +219,7 @@ class ModalOfferteStart extends Component {
                                                    onChange={this.onChange}
                                                    name="email"
                                                    required
+                                                   placeholder="email"
                                             />
                                             <label className="input__label input__label--nariko" htmlFor="input-offerte-email">
                                                 <span className="input__label-content input__label-content--nariko">E-mail</span>
@@ -234,6 +237,7 @@ class ModalOfferteStart extends Component {
                                                    onChange={this.onChange}
                                                    name="tel"
                                                    required
+                                                   placeholder="telefoon nummer"
                                             />
                                             <label className="input__label input__label--nariko" htmlFor="input-offerte-tel">
                                                 <span className="input__label-content input__label-content--nariko">Telefoon</span>
@@ -252,6 +256,7 @@ class ModalOfferteStart extends Component {
                                                    value={this.state.company}
                                                    onChange={this.onChange}
                                                    name="company"
+                                                   placeholder="bedrijf"
                                             />
                                             <label className="input__label input__label--nariko" htmlFor="input-offerte-company">
                                                 <span className="input__label-content input__label-content--nariko">Bedrijf</span>
@@ -269,6 +274,7 @@ class ModalOfferteStart extends Component {
                                                    value={this.state.region}
                                                    onChange={this.onChange}
                                                    name="region"
+                                                   placeholder="gemeente"
                                             />
                                             <label className="input__label input__label--nariko" htmlFor="input-offerte-region">
                                                 <span className="input__label-content input__label-content--nariko">Gemeente</span>
@@ -300,6 +306,7 @@ class ModalOfferteStart extends Component {
                                                    value={this.state.deadline}
                                                    onChange={this.onChange}
                                                    name="deadline"
+                                                   placeholder="ruwe schatting van de deadline"
                                             />
                                             <label className="input__label input__label--nariko" htmlFor="input-offerte-firstname">
                                                 <span className="input__label-content input__label-content--nariko">Bepaal uw deadline</span>
@@ -316,6 +323,7 @@ class ModalOfferteStart extends Component {
                                                    value={this.state.budget}
                                                    onChange={this.onChange}
                                                    name="budget"
+                                                   placeholder="budget"
                                             />
                                             <label className="input__label input__label--nariko" htmlFor="input-offerte-firstname">
                                                 <span className="input__label-content input__label-content--nariko">Wat is uw budget?</span>
