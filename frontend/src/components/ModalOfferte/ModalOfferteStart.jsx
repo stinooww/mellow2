@@ -152,8 +152,9 @@ class ModalOfferteStart extends Component {
                 <div>
                     <ModalOfferte show={this.state.isToggleOn} handleClose={this.hideModal}>
                         <Grid className="opper-form-offerte">
-                            <h1>Ontvang een offerte</h1>
-                            <h3>Vertel ons in 2 stappen wat u zoekt.
+                            <h1>Dus je wilt met ons samenwerken?</h1>
+                            <h3>Super! Vertel ons in 2 stappen wat meer over je project.
+                                <br/> en wij contacteren je zo snel mogenlijk
                             </h3>
                             <form id="form-offerte"
                                   className="form-offerte"
@@ -390,7 +391,7 @@ class ModalOfferteStart extends Component {
                             </form>
                         </Grid>
                     </ModalOfferte>
-                    <Button className="hvr-box-shadow-outset offerte-btn" onClick={this.activateOfferte}>Offerte</Button>
+                    <Button className="hvr-box-shadow-outset offerte-btn" onClick={this.activateOfferte}>Start een project</Button>
                 </div>
         );
     }
