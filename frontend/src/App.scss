@@ -15,6 +15,7 @@
 @import "styling/CallToAction";
 @import "styling/About";
 @import "styling/Timeline";
+@import "styling/Webhosting";
 
 .dicomenu {
   background-image: url("images/dicomenu1.png");
@@ -198,4 +199,12 @@ body {
   border-top-color: $blue;
   width: 40px;
   display: inline-block;
+}
+
+.green {
+  color: $green;
+}
+
+.red {
+  color: $red;
 }

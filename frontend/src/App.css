@@ -1471,6 +1471,27 @@ h2:after {
 .timeline .vertical-timeline-element-icon {
   background: #3763ef !important; }
 
+.Diensten {
+  padding: 5%; }
+  .Diensten .Grid-cell .price {
+    margin: 20px 5px; }
+    .Diensten .Grid-cell .price .basic-header {
+      background-color: #a9b1b3;
+      color: white; }
+    .Diensten .Grid-cell .price .highlighted-header {
+      color: white; }
+    .Diensten .Grid-cell .price li {
+      color: black; }
+      .Diensten .Grid-cell .price li.grey .button-submit {
+        font-size: 15px;
+        height: 40px;
+        text-transform: uppercase;
+        width: 185px; }
+  .Diensten .Grid-cell:first-child .price:hover {
+    margin: 20px 5px; }
+  .Diensten .Grid-cell:first-child .grey .button-submit {
+    display: none; }
+
 .dicomenu {
   background-image: url("images/dicomenu1.png"); }
 
@@ -1610,3 +1631,9 @@ body {
   border-top-color: #3763ef;
   width: 40px;
   display: inline-block; }
+
+.green {
+  color: green; }
+
+.red {
+  color: red; }

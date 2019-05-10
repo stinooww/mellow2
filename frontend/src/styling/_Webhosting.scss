@@ -1,0 +1,50 @@
+.Diensten {
+  padding: 5%;
+
+  .Grid-cell {
+    .price {
+      margin: 20px 5px;
+
+      .basic-header {
+        background-color: $color-grey;
+        color: white;
+      }
+
+      .highlighted-header {
+        color: white;
+      }
+
+      li {
+        color: black;
+
+        &.grey {
+
+          .button-submit {
+            font-size: 15px;
+            height: 40px;
+            text-transform: uppercase;
+            width: 185px;
+          }
+
+        }
+      }
+
+    }
+
+    &:first-child {
+      .price:hover {
+        margin: 20px 5px;
+      }
+
+      .grey {
+        .button-submit {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+
+
+

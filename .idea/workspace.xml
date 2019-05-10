@@ -2,9 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12ea28b2-16cc-402e-8e6a-5180a58d3b5c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/Diensten/Grafisch.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/Diensten/SEO.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/Diensten/Webhosting.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/Diensten/Website.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/styling/_Webhosting.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/config/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/services.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Header/Header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/ModalOfferte/ModalOfferteStart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ModalOfferte/ModalOfferteStart.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Routing/Routing.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Routing/Routing.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Services/Services.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Strategie/Strategie.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/_variables.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,33 +30,34 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/styling/_modalofferte.scss">
+        <entry file="file://$PROJECT_DIR$/frontend/src/pages/Diensten/Website.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/styling/_form.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/components/ModalOfferte/ModalOfferteStart.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="154" column="63" selection-start-line="154" selection-start-column="63" selection-end-line="154" selection-end-column="63" />
+            <state relative-caret-position="105">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
-                <element signature="e#375#840#0" />
-                <element signature="e#863#1321#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/pages/Diensten/Webhosting.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="430">
+              <caret line="76" column="38" selection-start-line="76" selection-start-column="38" selection-end-line="76" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/styling/_Webhosting.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -50,20 +65,29 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/src/components/Header/Header.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="164" selection-start-line="21" selection-start-column="155" selection-end-line="21" selection-end-column="164" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
+            <state>
+              <caret line="1" column="58" selection-start-line="1" selection-start-column="58" selection-end-line="1" selection-end-column="58" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/App.scss">
+        <entry file="file://$PROJECT_DIR$/frontend/node_modules/react-bootstrap/es/NavDropdown.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1005">
-              <caret line="67" column="27" selection-start-line="67" selection-start-column="27" selection-end-line="67" selection-end-column="27" />
+            <state relative-caret-position="108">
+              <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/components/Routing/Routing.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="355">
+              <caret line="28" column="29" lean-forward="true" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="47" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -133,18 +157,15 @@
         <option value="$PROJECT_DIR$/frontend/src/pages/Services/ServiceDicomenu.jsx" />
         <option value="$PROJECT_DIR$/frontend/src/styling/_buttons.scss" />
         <option value="$PROJECT_DIR$/frontend/src/pages/Services/ServiceItem.jsx" />
-        <option value="$PROJECT_DIR$/frontend/src/components/Routing/Routing.jsx" />
         <option value="$PROJECT_DIR$/frontend/src/components/portfolio-item/portfolioItemAnim.js" />
         <option value="$PROJECT_DIR$/frontend/src/styling/_Portfolioitem.scss" />
         <option value="$PROJECT_DIR$/frontend/src/components/portfolio-item/PortfolioItem.jsx" />
         <option value="$PROJECT_DIR$/frontend/src/styling/_CallToAction.scss" />
         <option value="$PROJECT_DIR$/frontend/src/pages/About/About.jsx" />
-        <option value="$PROJECT_DIR$/frontend/src/styling/_variables.scss" />
         <option value="$PROJECT_DIR$/frontend/src/pages/Services/Services.jsx" />
         <option value="$PROJECT_DIR$/frontend/src/styling/_About.scss" />
         <option value="$PROJECT_DIR$/frontend/src/components/services/ServiceAboutHome.jsx" />
         <option value="$PROJECT_DIR$/frontend/src/components/services/ServiceHomePictures.jsx" />
-        <option value="$PROJECT_DIR$/frontend/src/App.scss" />
         <option value="$PROJECT_DIR$/frontend/src/styling/_landing.scss" />
         <option value="$PROJECT_DIR$/frontend/src/styling/_testimonials.scss" />
         <option value="$PROJECT_DIR$/frontend/src/styling/_Timeline.scss" />
@@ -152,6 +173,16 @@
         <option value="$PROJECT_DIR$/frontend/src/styling/_modalofferte.scss" />
         <option value="$PROJECT_DIR$/frontend/src/styling/_form.scss" />
         <option value="$PROJECT_DIR$/frontend/src/components/ModalOfferte/ModalOfferteStart.jsx" />
+        <option value="$PROJECT_DIR$/frontend/src/pages/Strategie/Strategie.jsx" />
+        <option value="$PROJECT_DIR$/frontend/src/App.js" />
+        <option value="$PROJECT_DIR$/frontend/src/pages/Diensten/Website.jsx" />
+        <option value="$PROJECT_DIR$/frontend/src/pages/Diensten/SEO.jsx" />
+        <option value="$PROJECT_DIR$/frontend/src/pages/Diensten/Grafisch.jsx" />
+        <option value="$PROJECT_DIR$/frontend/src/styling/_variables.scss" />
+        <option value="$PROJECT_DIR$/frontend/src/App.scss" />
+        <option value="$PROJECT_DIR$/frontend/src/pages/Diensten/Webhosting.jsx" />
+        <option value="$PROJECT_DIR$/frontend/src/styling/_Webhosting.scss" />
+        <option value="$PROJECT_DIR$/frontend/src/components/Routing/Routing.jsx" />
         <option value="$PROJECT_DIR$/frontend/src/components/Header/Header.jsx" />
       </list>
     </option>
@@ -163,8 +194,9 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="30" />
     <option name="y" value="23" />
-    <option name="width" value="1527" />
+    <option name="width" value="1139" />
     <option name="height" value="947" />
   </component>
   <component name="ProjectView">
@@ -173,7 +205,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -198,15 +229,15 @@
               <item name="mellow2" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="@fortawesome" type="462c0819:PsiDirectoryNode" />
+              <item name="react-bootstrap" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mellow2" type="b2602c69:ProjectViewProjectNode" />
               <item name="mellow2" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="@fortawesome" type="462c0819:PsiDirectoryNode" />
-              <item name="free-solid-svg-icons" type="462c0819:PsiDirectoryNode" />
+              <item name="react-bootstrap" type="462c0819:PsiDirectoryNode" />
+              <item name="es" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mellow2" type="b2602c69:ProjectViewProjectNode" />
@@ -220,30 +251,6 @@
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mellow2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mellow2" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="CallToAction" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mellow2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mellow2" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Contactform" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mellow2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mellow2" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="FormValidator" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mellow2" type="b2602c69:ProjectViewProjectNode" />
@@ -267,14 +274,6 @@
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="portfolio-item" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mellow2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mellow2" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="Routing" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -282,37 +281,6 @@
               <item name="mellow2" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mellow2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mellow2" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Testimonials" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mellow2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mellow2" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Timeline" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mellow2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mellow2" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mellow2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mellow2" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -321,7 +289,7 @@
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="About" type="462c0819:PsiDirectoryNode" />
+              <item name="Diensten" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mellow2" type="b2602c69:ProjectViewProjectNode" />
@@ -329,23 +297,7 @@
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="Home" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mellow2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mellow2" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="Portfolio" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mellow2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mellow2" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="Services" type="462c0819:PsiDirectoryNode" />
+              <item name="Strategie" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mellow2" type="b2602c69:ProjectViewProjectNode" />
@@ -365,13 +317,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557057826777" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557490316703" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -423,7 +376,8 @@
       <workItem from="1556883787462" duration="3698000" />
       <workItem from="1556888625116" duration="395000" />
       <workItem from="1556973978953" duration="10577000" />
-      <workItem from="1557146895680" duration="238000" />
+      <workItem from="1557146895680" duration="2153000" />
+      <workItem from="1557409896115" duration="11843000" />
     </task>
     <task id="LOCAL-00001" summary="made hompeage responsive and added facebook messenger implementation">
       <created>1549620479646</created>
@@ -572,17 +526,24 @@
       <option name="project" value="LOCAL" />
       <updated>1557057825145</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="header">
+      <created>1557147344417</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1557147344417</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86022000" />
+    <option name="totallyTimeSpent" value="99718000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1527" height="947" extended-state="0" />
+    <frame x="30" y="23" width="1139" height="947" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17171717" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18596171" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -590,7 +551,7 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32982457" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -598,7 +559,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3290735" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.28304094" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.28304094" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Hybris Console [Experimental]" order="11" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
@@ -637,47 +598,12 @@
     <MESSAGE value="added some links for doc" />
     <MESSAGE value="css changes en timeline verbeterd" />
     <MESSAGE value="modal styling" />
-    <option name="LAST_COMMIT_MESSAGE" value="modal styling" />
+    <MESSAGE value="header" />
+    <option name="LAST_COMMIT_MESSAGE" value="header" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frontend/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/node_modules/scrollmagic/scrollmagic/minified/ScrollMagic.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/node_modules/scrollmagic/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="210">
-            <caret line="120" column="16" lean-forward="true" selection-start-line="120" selection-start-column="16" selection-end-line="120" selection-end-column="48" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/node_modules/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/components/portfolio-item/portfolioItemAnim.js" />
-    <entry file="file://$PROJECT_DIR$/frontend/src/pages/About/About.scss" />
-    <entry file="file://$PROJECT_DIR$/frontend/src/pages/About/About.css" />
     <entry file="file://$PROJECT_DIR$/frontend/node_modules/scrollmagic/scrollmagic/uncompressed/plugins/jquery.ScrollMagic.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -734,16 +660,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/components/CallToAction/CallToAction.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/styling/_Portfolioitem.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1740">
@@ -765,16 +681,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="412">
           <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/components/Routing/Routing.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="52" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="52" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -810,16 +716,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/pages/Services/Services.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/node_modules/@fortawesome/free-solid-svg-icons/faFileCode.d.ts">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -834,13 +730,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/styling/font/mellowicons.svg">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/styling/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/styling/_About.scss">
       <provider selected="true" editor-type-id="text-editor">
@@ -931,20 +820,6 @@
     <entry file="file://$PROJECT_DIR$/frontend/src/styling/_Home.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/styling/_modalofferte.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/App.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1005">
-          <caret line="67" column="27" selection-start-line="67" selection-start-column="27" selection-end-line="67" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/components/ModalOfferte/ModalOfferte.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -954,17 +829,84 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/styling/_modalofferte.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/styling/_form.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
+        <state relative-caret-position="330">
           <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/CallToAction/CallToAction.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/pages/Diensten/Grafisch.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/pages/Diensten/SEO.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/pages/Strategie/Strategie.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="14" lean-forward="true" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/pages/Diensten/Website.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/components/ModalOfferte/ModalOfferteStart.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="154" column="63" selection-start-line="154" selection-start-column="63" selection-end-line="154" selection-end-column="63" />
+        <state relative-caret-position="302">
+          <caret line="168" column="86" selection-start-line="168" selection-start-column="37" selection-end-line="168" selection-end-column="86" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
             <element signature="e#375#840#0" />
@@ -973,13 +915,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/components/Header/Header.jsx">
+    <entry file="file://$PROJECT_DIR$/frontend/src/App.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="164" selection-start-line="21" selection-start-column="155" selection-end-line="21" selection-end-column="164" />
+        <state relative-caret-position="536">
+          <caret line="208" column="1" lean-forward="true" selection-start-line="208" selection-start-column="1" selection-end-line="208" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/styling/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="11" selection-start-line="5" selection-end-line="5" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/pages/Diensten/Webhosting.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="76" column="38" selection-start-line="76" selection-start-column="38" selection-end-line="76" selection-end-column="38" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/styling/_Webhosting.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/Routing/Routing.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="28" column="29" lean-forward="true" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/node_modules/react-bootstrap/es/NavDropdown.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/Header/Header.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="1" column="58" selection-start-line="1" selection-start-column="58" selection-end-line="1" selection-end-column="58" />
         </state>
       </provider>
     </entry>
