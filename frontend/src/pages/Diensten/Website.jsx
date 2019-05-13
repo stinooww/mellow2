@@ -8,15 +8,16 @@ class Website extends Component {
     render() {
 
         return (
-                <div className="PortfolioPage">
+                <div className="Diensten">
                     <Grid>
                         <Row>
                             <Col xs={12}>
                                 <h1>Onze Website</h1>
                             </Col>
                         </Row>
-                        <CallToAction/>
+
                     </Grid>
+                    <CallToAction/>
                 </div>
         );
     }

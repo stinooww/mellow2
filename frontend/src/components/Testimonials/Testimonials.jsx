@@ -14,12 +14,13 @@ class Testimonials extends Component {
                                 </div>
                                 <Carousel className="testimonial-carousel">
                                     <CarouselItem>
-                                        <h3>Wauw echto toffe gaste</h3>
+
                                         <p>Zelqjk glqhlq</p>
+                                        <h3>Wauw echto toffe gaste</h3>
                                     </CarouselItem>
                                     <CarouselItem>
-                                        <h3>Second slide label</h3>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        <h3>Second slide label</h3>
                                     </CarouselItem>
                                     <Carousel.Item>
                                         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>

@@ -29,7 +29,7 @@ $grey: #6c6c6c;
     left: 0;
     right: 0;
     bottom: 0;
-    background: $grey;
+    background: $blue;
     -webkit-transform: scaleY(0);
     transform: scaleY(0);
     -webkit-transform-origin: 50% 0;
@@ -45,6 +45,7 @@ $grey: #6c6c6c;
 
 .mellow-btn:hover, .mellow-btn:focus, .mellow-btn:active {
   color: white;
+
 }
 
 .mellow-btn:hover:before, .mellow-btn:focus:before, .hmellow-btn:active:before {
@@ -56,6 +57,12 @@ $grey: #6c6c6c;
   background: transparent;
   border: 2px solid black;
   text-transform: uppercase;
+
+  &:hover {
+    background-color: $blue;
+    color: white;
+    border-color: $blue;
+  }
 }
 
 .cta-overal {

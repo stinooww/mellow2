@@ -19,7 +19,7 @@ class Header extends Component {
                         <Nav>
                             <NavItem eventKey={1} componentClass={Link} className="menu-item hvr-underline-from-center " href="/" to="/">Home</NavItem>
                             <NavItem eventKey={2} componentClass={Link} className="menu-item hvr-underline-from-center " href="/strategie" to="/strategie">Onze strategie</NavItem>
-                            <NavDropdown title="Dropdown" className="menu-item  " id="nav-dropdown">
+                            <NavDropdown title="Onze diensten" className="menu-item  " id="nav-dropdown">
                                 <NavItem eventKey="3.1" href="/diensten/website" to="/diensten/website">Website & webshops</NavItem>
                                 <NavItem eventKey="3.2" href="/diensten/seo" to="/diensten/seo">
                                     SEO & SEA

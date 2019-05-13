@@ -231,7 +231,7 @@ li {
     left: 0;
     right: 0;
     bottom: 0;
-    background: #6c6c6c;
+    background: #3763ef;
     -webkit-transform: scaleY(0);
     transform: scaleY(0);
     -webkit-transform-origin: 50% 0;
@@ -254,6 +254,10 @@ li {
   background: transparent;
   border: 2px solid black;
   text-transform: uppercase; }
+  .offerte-btn:hover {
+    background-color: #3763ef;
+    color: white;
+    border-color: #3763ef; }
 
 .cta-overal {
   display: flex;
@@ -315,9 +319,7 @@ li {
     padding: 0; }
   .opper-form-offerte h3 {
     text-shadow: none;
-    font-family: 'mellow', Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    font-size: 35px;
+    font-size: 30px;
     text-align: center; }
   .opper-form-offerte .form-offerte-small {
     font-size: 18px;
@@ -377,7 +379,7 @@ li {
   .person-wrapper .testimonial-carousel .carousel-indicators {
     top: 202px; }
   .person-wrapper .testimonial-carousel .carousel-control {
-    display: none; }
+    display: inherit; }
 
 .service-home {
   width: 100%;

@@ -14,6 +14,24 @@ class Webhosting extends Component {
                 <div className="Diensten">
                     <Grid>
                         <Row>
+                            <h2>Waarom een onderhouds pakket ?</h2>
+                            <br/>
+                            <Col xs={12}>
+                                <p>Een website creëren, stopt niet bij de ontwikkeling ervan. Ook na de lancering is het belangrijk dat je website goed wordt onderhouden. Hiervoor bieden we een
+                                    onderhoudspakket aan.
+                                    Dit is nodig omdat in de website verschillende plugins steken die zorgen voor allerlei functionaliteit van de website. Deze moeten op regelmatige basis worden
+                                    geupdate zodat ze goed kunnne blijven werken.
+                                </p>
+                                <br/>
+                                <p>
+                                    Ook houden we je website beschermt tegen hackers om te voorkomen dat cyberaanvallen je webpagina aantasten. We nemen bovendien regelmatig een backup zodat de inhoud
+                                    en structuur van je website nooit verloren gaan.
+                                </p>
+                                <br/>
+                                <p> Wat we daarbovenop ook daarbij steken zijn kleine aanpassingen aan de website zelf: wil je graag een afbeelding veranderen, of dat stukje tekst over jezelf
+                                    aanpassen. Dit doen we kosteloos!
+                                </p>
+                            </Col>
                             <Col xs={12}>
                                 <h1>Onze Onderhouds pakketten</h1>
                                 <PricingTable highlightColor='#1976D2'>
@@ -75,8 +93,9 @@ class Webhosting extends Component {
                                 <br/>
                             </Col>
                         </Row>
-                        <CallToAction/>
+
                     </Grid>
+                    <CallToAction/>
                 </div>
         );
     }
