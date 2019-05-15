@@ -13,7 +13,8 @@ class Strategie extends Component {
                     <Grid>
                         <Row>
                             <Col xs={12}>
-                                <h1>Onze strategie</h1>
+                                <br/>
+                                <h2>Onze strategie</h2>
                                 <p>
                                     We starten vanuit uw visie en kijken wat de beste digitale oplossing is om uw idee te doen groeien.
                                     Onze strategie is opgedeeld in verschillende fases om zo uw ideeen om te zetten in een geweldig en professioneel eindproduct

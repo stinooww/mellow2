@@ -10,4 +10,4 @@ export const fetchPosts = () =>
         payload: posts
     })
     );
-}
+};

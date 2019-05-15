@@ -16,7 +16,6 @@ class Timeline extends Component {
                     <Grid>
                         <Row className="show-grid timeline">
                             <Col xs={12} md={12}>
-                                <h1>Hoe is het om met ons te werken</h1>
                                 <div className="elementor-divider">
                                     <span className="elementor-divider-separator"/>
                                 </div>

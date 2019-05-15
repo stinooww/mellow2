@@ -55,13 +55,22 @@ $grey: #6c6c6c;
 
 .offerte-btn {
   background: transparent;
-  border: 2px solid black;
+  border-bottom: 2px solid black;
+  text-shadow: none;
   text-transform: uppercase;
-
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-radius: inherit;
+  font-size: 17px;
+  padding: 15px 5px;
+  line-height: 20px;
   &:hover {
     background-color: $blue;
     color: white;
     border-color: $blue;
+    box-shadow: none;
+    text-shadow: none;
   }
 }
 

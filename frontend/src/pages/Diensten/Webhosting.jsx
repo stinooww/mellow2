@@ -6,6 +6,7 @@ import {PricingTable, PricingSlot, PricingDetail} from 'react-pricing-table';
 import {faCheck, faTimes} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
+// https://github.com/gergely-nagy/react-pricing-table#features
 class Webhosting extends Component {
 
     render() {
@@ -15,20 +16,20 @@ class Webhosting extends Component {
                     <Grid>
                         <Row>
                             <h2>Waarom een onderhouds pakket ?</h2>
-                            <br/>
-                            <Col xs={12}>
-                                <p>Een website creëren, stopt niet bij de ontwikkeling ervan. Ook na de lancering is het belangrijk dat je website goed wordt onderhouden. Hiervoor bieden we een
+                            <Col xs={12} className="waaromOnderhoud-txt">
+                                <p>Een website maken stopt niet bij de ontwikkeling ervan. Ook na de lancering is het belangrijk dat je website goed wordt onderhouden. Hiervoor bieden we een
                                     onderhoudspakket aan.
                                     Dit is nodig omdat in de website verschillende plugins steken die zorgen voor allerlei functionaliteit van de website. Deze moeten op regelmatige basis worden
-                                    geupdate zodat ze goed kunnne blijven werken.
+                                    geupdate zodat ze goed kunnnen blijven werken.
                                 </p>
-                                <br/>
+
                                 <p>
-                                    Ook houden we je website beschermt tegen hackers om te voorkomen dat cyberaanvallen je webpagina aantasten. We nemen bovendien regelmatig een backup zodat de inhoud
-                                    en structuur van je website nooit verloren gaan.
+                                    Ook zorgen we ervoor dat je website beschermt is tegen hackers om te voorkomen dat cyberaanvallen je website offline halen.
+                                    We nemen bovendien regelmatig een backup zodat we altijd een kopie hebben van de inhoud je website en deze dus nooit verloren kan gaan.
+
                                 </p>
-                                <br/>
-                                <p> Wat we daarbovenop ook daarbij steken zijn kleine aanpassingen aan de website zelf: wil je graag een afbeelding veranderen, of dat stukje tekst over jezelf
+                                <p> Tevens zitten in een onderhoudspakket ook kleine aanpassingen inbegrepen aan de website zelf: wil je graag een afbeelding veranderen, of dat stukje tekst over
+                                    jezelf
                                     aanpassen. Dit doen we kosteloos!
                                 </p>
                             </Col>
@@ -48,7 +49,7 @@ class Webhosting extends Component {
                                         <PricingDetail> Snelheidsoptimalisatie</PricingDetail>
                                         <PricingDetail> Support</PricingDetail>
                                     </PricingSlot>
-                                    <PricingSlot onClick={this.submit} buttonText='Start onderhoud' title='STANDAARD' priceText='35 EUR/maand'>
+                                    <PricingSlot onClick={this.submit} buttonText='Start onderhoud' title='STANDAARD' priceText='39 EUR/maand'>
                                         <PricingDetail> <FontAwesomeIcon size="sm" className="green" icon={faCheck}/></PricingDetail>
                                         <PricingDetail> <FontAwesomeIcon size="sm" className="green" icon={faCheck}/></PricingDetail>
                                         <PricingDetail> <FontAwesomeIcon size="sm" className="green" icon={faCheck}/></PricingDetail>
@@ -62,7 +63,7 @@ class Webhosting extends Component {
                                         <PricingDetail> <b>30 min</b> per maand</PricingDetail>
                                         {/*<PricingDetail strikethrough> <b>Time tracking</b></PricingDetail>*/}
                                     </PricingSlot>
-                                    <PricingSlot highlighted onClick={this.submit} buttonText='Start onderhoud' title='ADVANCED' priceText='50 EUR/maand'>
+                                    <PricingSlot highlighted onClick={this.submit} buttonText='Start onderhoud' title='ADVANCED' priceText='59 EUR/maand'>
                                         <PricingDetail> <FontAwesomeIcon size="sm" className="green" icon={faCheck}/></PricingDetail>
                                         <PricingDetail> <FontAwesomeIcon size="sm" className="green" icon={faCheck}/></PricingDetail>
                                         <PricingDetail> <FontAwesomeIcon size="sm" className="green" icon={faCheck}/></PricingDetail>
@@ -75,7 +76,7 @@ class Webhosting extends Component {
                                         <PricingDetail> <FontAwesomeIcon size="sm" className="red" icon={faTimes}/></PricingDetail>
                                         <PricingDetail> <b>60 min</b> per maand</PricingDetail>
                                     </PricingSlot>
-                                    <PricingSlot onClick={this.submit} buttonText='Start onderhoud' title='PROFESSIONAL' priceText='69/maand'>
+                                    <PricingSlot onClick={this.submit} buttonText='Start onderhoud' title='PROFESSIONAL' priceText='75 EUR/maand'>
                                         <PricingDetail> <FontAwesomeIcon size="sm" className="green" icon={faCheck}/></PricingDetail>
                                         <PricingDetail> <FontAwesomeIcon size="sm" className="green" icon={faCheck}/></PricingDetail>
                                         <PricingDetail> <FontAwesomeIcon size="sm" className="green" icon={faCheck}/></PricingDetail>

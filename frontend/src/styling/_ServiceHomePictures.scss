@@ -58,121 +58,11 @@
 
 }
 
-html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4
-}
-
-body {
-  margin: 0
-}
-
-figcaption, figure {
-  display: block
-}
-
-a {
-  background: transparent
-}
-
-a:active, a:hover {
-  outline: 0
-}
-
-small {
-  font-size: 80%
-}
-
-img {
-  border: 0
-}
-
-figure {
-  margin: 1em 40px
-}
-
-.hr {
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 0
-}
-
-::-moz-selection {
-  background: #FFE9A1;
-  text-shadow: none
-}
-
-::selection {
-  background: #FFE9A1;
-  text-shadow: none
-}
-
-.hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0
-}
-
-img {
-  vertical-align: middle
-}
-
-.clearfix:before, .clearfix:after {
-  content: " ";
-  display: table
-}
-
-.clearfix:after {
-  clear: both
-}
-
-@media print {
-  * {
-    background: transparent !important;
-    color: #000 !important;
-    box-shadow: none !important;
-    text-shadow: none !important
-  }
-
-  a, a:visited {
-    text-decoration: underline
-  }
-
-  a[href]:after {
-    content: " (" attr(href) ")"
-  }
-
-  img {
-    page-break-inside: avoid
-  }
-
-  img {
-    max-width: 100% !important
-  }
-
-  p, h2, h3 {
-    orphans: 3;
-    widows: 3
-  }
-
-  h2, h3 {
-    page-break-after: avoid
-  }
-}
 
 
-a, a:focus {
-  outline: none;
-  text-decoration: none;
-  color: inherit
-}
+
+
+
 
 .cover {
   background-size: cover;
@@ -180,68 +70,13 @@ a, a:focus {
   background-position: center center
 }
 
-html, body {
-  height: 100%
-}
 
-body {
 
-  font-size: 1.125em;
-  line-height: 1.750em;
-  font-weight: 300;
-  color: #6c6c6c;
-  background-color: #f2f2f2;
-  min-width: 1200px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
-}
 
-@media (min-width: 0px) {
-  body {
-    min-width: 0
-  }
-}
 
-h2 {
-  position: relative;
-  font-family: 'Playfair Display';
-  font-size: 2.1111111111em;
-  font-weight: normal;
-  line-height: 1.1578947368em;
-  margin: .83em 0 1.15em 0
-}
 
-h2:after {
-  content: "";
-  display: block;
-  width: 46px;
-  height: 2px;
-  background: #efc337;
-  position: absolute;
-  left: 0;
-  bottom: -18px
-}
 
-@media (max-width: 1023px) {
 
-  h2 {
-    font-size: 1.8888888889em
-  }
-}
-
-@media (max-width: 767px) {
-  body {
-    font-size: 1em
-  }
-
-  h2 {
-    font-size: 1.5em !important
-  }
-
-  h2 br {
-    display: none
-  }
-}
 
 .wrapper-1075 {
   margin: 0 auto;
@@ -249,7 +84,7 @@ h2:after {
   position: relative
 }
 
-/*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
+
 
 [class^="grid-col-"] {
   float: left;
@@ -352,8 +187,7 @@ h2:after {
   transform: translate3d(-40px, 0, 0);
 
   h3 {
-    font-family: 'Playfair Display', sans-serif;
-    font-size: 1.6666666667em;
+    font-size: 2em;
     line-height: 1.1333333333em;
     font-weight: 400;
     margin: 0;
@@ -374,7 +208,7 @@ h2:after {
   }
 
   & > a {
-    font-size: 0.7777777778em;
+    font-size: 0.94em;
     font-weight: 700;
     text-transform: uppercase;
     display: block;
@@ -432,7 +266,7 @@ h2:after {
   font-family: 'Museo Sans', sans-serif;
   font-weight: 700;
   line-height: normal;
-  font-size: 0.7222222222em;
+  font-size: 0.92em;
   color: #fff;
   text-transform: uppercase;
   z-index: 1;
@@ -449,14 +283,12 @@ h2:after {
   width: 100%;
   display: block;
   z-index: -1;
-  background: url(/assets/img/components/fig-hover-gradient.png);
   background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.4) 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(0, 0, 0, 0.4)));
   background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.4) 100%);
   background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.4) 100%);
   background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.4) 100%);
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.4) 100%);
-  display: none
 }
 
 .fig-hover-item > .full-link {
@@ -489,7 +321,6 @@ h2:after {
   bottom: 0;
   left: 0;
   z-index: 3;
-  background: url(/assets/img/blank.gif)
 }
 
 @media (max-width: 767px) {

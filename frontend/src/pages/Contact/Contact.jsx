@@ -2,6 +2,8 @@ import PropTypes from 'prop-types';
 import React, {Component} from 'react';
 import {Grid, Row, Col, Image, Button} from 'react-bootstrap';
 import Contactform from '../../components/Contactform/Contactform';
+import Reactcontactform from '../../components/Contactform/Reactcontactform';
+
 import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 class Contact extends Component {
@@ -45,10 +47,10 @@ class Contact extends Component {
                     {/*</div>*/}
                     <Row className="contact">
                         <Col xs={12} md={12} sm={12}>
-                            <h1 className="contact-header">
+                            <h2 className="contact-header">
                                 Vraag ons gerust om
                                 een vrijblijvende offerte op maat.
-                            </h1>
+                            </h2>
                             <p>
                                 Wij contacteren u binnen de 24 uur!
                             </p>
@@ -58,7 +60,7 @@ class Contact extends Component {
                             <ul>
                                 <li> Mellow webdesign & Development</li>
                                 <li>Jan De Sadelerlaan 22</li>
-                                <li>2650 Edegeme</li>
+                                <li>2650 Edegem</li>
                             </ul>
                         </Col>
                         <Col md={6} sm={6} className="contact-section">
@@ -100,6 +102,30 @@ class Contact extends Component {
                             <h3 className="contact-subheader">Contact formulier</h3>
                             <hr/>
                             <Contactform/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <Reactcontactform/>
                         </Col>
                     </Row>
                 </Grid>

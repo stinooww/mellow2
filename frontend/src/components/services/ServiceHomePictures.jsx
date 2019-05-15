@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
-import {Grid, Row, Col, Image, Button} from 'react-bootstrap';
-import ServiceTile from './ServiceTile/ServiceTile';
 
 class ServiceHomePictures extends Component {
     static propTypes = {

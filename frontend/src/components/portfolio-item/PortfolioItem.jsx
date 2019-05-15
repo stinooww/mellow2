@@ -43,24 +43,7 @@ class PortfolioItem extends Component {
                 .addTo(this.controller);
     }
 
-    handleClick() {
-        let container = document.getElementById('root');
-        let windowHeight = window.innerHeight;
-        let windowWidth = window.innerWidth;
-        let scrollArea = 1000 - windowHeight;
-        let image1 = document.getElementsByClassName('front');
-        let image2 = document.getElementsByClassName('back');
 
-        // update position of image 1 and image 2 when scroll event fires.
-        window.addEventListener('scroll', function() {
-            var scrollTop = window.pageYOffset || window.scrollTop;
-            var scrollPercent = scrollTop / scrollArea || 0;
-
-            image1.style.left = scrollPercent * window.innerWidth + 'px';
-            image2.style.left = 800 - scrollPercent * window.innerWidth * 0.6 + 'px';
-        });
-
-    }
 
     render() {
         return (

@@ -1,0 +1,35 @@
+.website {
+  padding: 5%;
+  width: 100%;
+
+  .row {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .waarom-website-txt {
+    strong {
+      font-size: 1.6em;
+      margin: 10px 0;
+    }
+  }
+
+  .mobile-responsive {
+    margin: 20vh 0;
+  }
+
+  strong {
+    color: black;
+    margin-top: 20px;
+  }
+
+
+  .overall-container {
+    height: 500px;
+    width: 100%;
+    position: absolute;
+  }
+
+}
+
+

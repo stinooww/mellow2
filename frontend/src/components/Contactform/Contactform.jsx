@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import {Button, Col, ControlLabel, FormGroup} from "react-bootstrap";
 import FormValidator from '../../components/FormValidator/FormValidator';
 
+// https://github.com/jaredpalmer/formik
+
 class Contactform extends Component {
     constructor(props) {
         super(props);
@@ -80,7 +82,7 @@ class Contactform extends Component {
                             <Col componentClass={ControlLabel} sm={3}>
                                 <label htmlFor="firstname">Voornaam</label>
                             </Col>
-                            <Col smOffset={1} sm={8}>
+                            <Col smOffset={1} sm={7}>
                                 <input type="firstname"
                                        className="form-control"
                                        name="firstname"
@@ -96,7 +98,7 @@ class Contactform extends Component {
                             <Col componentClass={ControlLabel} sm={3}>
                                 <label htmlFor="lastname">Achternaam</label>
                             </Col>
-                            <Col smOffset={1} sm={8}>
+                            <Col smOffset={1} sm={7}>
                                 <input type="lastname"
                                        className="form-control"
                                        name="lastname"
@@ -112,7 +114,7 @@ class Contactform extends Component {
                             <Col componentClass={ControlLabel} sm={3}>
                                 <label htmlFor="email">Email</label>
                             </Col>
-                            <Col smOffset={1} sm={8}>
+                            <Col smOffset={1} sm={7}>
                                 <input type="email"
                                        className="form-control"
                                        name="email"
@@ -126,7 +128,7 @@ class Contactform extends Component {
                             <Col componentClass={ControlLabel} sm={3}>
                                 <label htmlFor="phone">Gsm of telefoon</label>
                             </Col>
-                            <Col smOffset={1} sm={8}>
+                            <Col smOffset={1} sm={7}>
                                 <input type="phone"
                                        className="form-control"
                                        name="phone"

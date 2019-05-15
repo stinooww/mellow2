@@ -1,12 +1,9 @@
 @import "variables";
 
 .contact {
-  .contact-header {
-    padding-top: 5%;
-    padding-bottom: 2%;
-  }
 
-  p, .contact-header, .contact-subheader {
+
+  p, .contact-subheader {
     color: black;
     text-shadow: none;
     text-align: left;
@@ -40,6 +37,11 @@
     }
   }
 
+  textarea {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
   label.control-label {
 
   }
@@ -47,7 +49,7 @@
   .mellow-btn {
 
     text-transform: uppercase;
-    margin: 0;
+    margin: 20px 0;
     width: 130px;
   }
 }

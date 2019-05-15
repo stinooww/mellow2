@@ -33,8 +33,8 @@ class ServiceAboutHome extends Component {
                                 <div className="icon-margin">
                                     <Social/>
                                 </div>
-                                <h2>Social media</h2>
-                                <p> Ik zou hier liever iets hebben met betrekking tot SEO /SEA , waar we sterker in zijn + meer in doen.</p>
+                                <h2>Online marketing</h2>
+                                <p> Facebook & LinkedIn pagina's? Of Liever gepersonaliseerde marketing emails... Wij kunnen het!</p>
                             </Col>
                         </Row>
                         <Link to="/contact"/>

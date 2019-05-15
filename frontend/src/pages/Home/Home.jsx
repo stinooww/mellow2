@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React, {Component} from 'react';
 
 import Landing from '../../components/landing/Landing';
-import ServiceAboutHome from '../../components/services/ServiceAboutHome';
+import ServiceAboutHome from '../../components/WhatWeDo/ServiceAboutHome';
 import Testimonials from '../../components/Testimonials/Testimonials';
 import ServiceHomePictures from '../../components/services/ServiceHomePictures';
 import CallToAction from '../../components/CallToAction/CallToAction';

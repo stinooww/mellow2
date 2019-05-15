@@ -1,6 +1,18 @@
 .Diensten {
   padding: 5%;
 
+  @media (min-width: 1300px) {
+    .container {
+      width: 1170px;
+    }
+  }
+
+  .waaromOnderhoud-txt {
+    p {
+      margin-bottom: 1em;
+      width: 90%;
+    }
+  }
   .Grid-cell {
     .price {
       margin: 20px 5px;
