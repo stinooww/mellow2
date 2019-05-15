@@ -2,46 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12ea28b2-16cc-402e-8e6a-5180a58d3b5c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/Contactform/Reactcontactform.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/images/responsive-mobile.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/images/responsive.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/styling/_General.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/styling/_Reactcontactform.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/styling/_Website.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/tar/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/tar/lib/parse.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/tar/lib/parse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/tar/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/tar/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Contactform/Contactform.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Contactform/Contactform.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/ModalOfferte/ModalOfferte.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ModalOfferte/ModalOfferte.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/ModalOfferte/ModalOfferteStart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ModalOfferte/ModalOfferteStart.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Timeline/Timeline.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Timeline/Timeline.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/portfolio-item/PortfolioItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/portfolio-item/PortfolioItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/services/ServiceAboutHome.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/WhatWeDo/ServiceAboutHome.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/services/ServiceHomePictures.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/services/ServiceHomePictures.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/services/ServiceTile/ServiceTile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/services/ServiceTile/ServiceTile.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/services/Services.jsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/Contact/Contact.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Contact/Contact.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Diensten/Webhosting.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Diensten/Webhosting.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Diensten/Website.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Diensten/Website.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Home/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Strategie/Strategie.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Strategie/Strategie.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/redux/actions/postActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/redux/actions/postActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_About.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/_About.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_CallToAction.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/_CallToAction.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_Contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/_Contact.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_Portfolio.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/_Portfolio.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_ServiceHomePictures.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/_ServiceHomePictures.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_Timeline.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/_Timeline.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_Webhosting.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/_Webhosting.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/_buttons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/_footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_serviceHome.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/_serviceHome.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/src/pages/Contact/Contact.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="121" column="33" selection-start-line="121" selection-start-column="33" selection-end-line="121" selection-end-column="33" />
+            <state relative-caret-position="1144">
+              <caret line="108" selection-start-line="108" selection-end-line="108" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -67,8 +29,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/components/Contactform/Reactcontactform.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1422">
-              <caret line="136" column="42" selection-start-line="136" selection-start-column="42" selection-end-line="136" selection-end-column="42" />
+            <state relative-caret-position="246">
+              <caret line="69" column="2" selection-start-line="69" selection-start-column="2" selection-end-line="69" selection-end-column="2" />
               <folding>
                 <element signature="e#1#27#0" expanded="true" />
               </folding>
@@ -76,11 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/styling/_Reactcontactform.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-491">
-              <caret line="39" column="17" lean-forward="true" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+            <state relative-caret-position="585">
+              <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -96,7 +58,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>position: rel</find>
       <find>small</find>
       <find>tileHref</find>
       <find>home-por</find>
@@ -126,6 +87,7 @@
       <find>classnames</find>
       <find>horizon</find>
       <find>width</find>
+      <find>code</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/frontend/node_modules</dir>
@@ -183,12 +145,12 @@
         <option value="$PROJECT_DIR$/frontend/src/styling/_Website.scss" />
         <option value="$PROJECT_DIR$/frontend/src/components/Contactform/Contactform.jsx" />
         <option value="$PROJECT_DIR$/frontend/src/components/ModalOfferte/ModalOfferte.jsx" />
-        <option value="$PROJECT_DIR$/frontend/src/pages/Contact/Contact.jsx" />
         <option value="$PROJECT_DIR$/frontend/src/components/ModalOfferte/ModalOfferteStart.jsx" />
         <option value="$PROJECT_DIR$/frontend/package.json" />
         <option value="$PROJECT_DIR$/frontend/src/App.scss" />
         <option value="$PROJECT_DIR$/frontend/src/components/Contactform/Reactcontactform.jsx" />
         <option value="$PROJECT_DIR$/frontend/src/styling/_Reactcontactform.scss" />
+        <option value="$PROJECT_DIR$/frontend/src/pages/Contact/Contact.jsx" />
       </list>
     </option>
   </component>
@@ -436,7 +398,7 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557925629359" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557926226463" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -493,7 +455,7 @@
       <workItem from="1556888625116" duration="395000" />
       <workItem from="1556973978953" duration="10577000" />
       <workItem from="1557146895680" duration="2153000" />
-      <workItem from="1557409896115" duration="58098000" />
+      <workItem from="1557409896115" duration="58521000" />
     </task>
     <task id="LOCAL-00001" summary="made hompeage responsive and added facebook messenger implementation">
       <created>1549620479646</created>
@@ -663,15 +625,21 @@
       <option name="project" value="LOCAL" />
       <updated>1557730707610</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="npm update en beter contact formulier">
+      <created>1557925874088</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1557925874088</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145973000" />
+    <option name="totallyTimeSpent" value="146396000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.16531605" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -731,7 +699,8 @@
     <MESSAGE value="header" />
     <MESSAGE value="header + nieuwe pagina voor onz diensten etc etc" />
     <MESSAGE value="onderhoud helemaal af" />
-    <option name="LAST_COMMIT_MESSAGE" value="onderhoud helemaal af" />
+    <MESSAGE value="npm update en beter contact formulier" />
+    <option name="LAST_COMMIT_MESSAGE" value="npm update en beter contact formulier" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1077,16 +1046,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/pages/Contact/Contact.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="121" column="33" selection-start-line="121" selection-start-column="33" selection-end-line="121" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/App.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -1094,20 +1053,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/styling/_Reactcontactform.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/components/Contactform/Reactcontactform.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1422">
-          <caret line="136" column="42" selection-start-line="136" selection-start-column="42" selection-end-line="136" selection-end-column="42" />
+        <state relative-caret-position="246">
+          <caret line="69" column="2" selection-start-line="69" selection-start-column="2" selection-end-line="69" selection-end-column="2" />
           <folding>
             <element signature="e#1#27#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/styling/_Reactcontactform.scss">
+    <entry file="file://$PROJECT_DIR$/frontend/src/pages/Contact/Contact.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-491">
-          <caret line="39" column="17" lean-forward="true" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+        <state relative-caret-position="1144">
+          <caret line="108" selection-start-line="108" selection-end-line="108" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
