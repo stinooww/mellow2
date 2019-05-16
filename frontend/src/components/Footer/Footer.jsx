@@ -6,7 +6,7 @@ export default class Footer extends Component {
     render() {
         return (
 
-                <footer className="footer">
+                <footer className="footer fixed-bottom">
                     <Grid>
                         <Row>
                             <Col xs={12} sm={12} className="footer">

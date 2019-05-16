@@ -211,18 +211,28 @@ a, a:focus {
   text-decoration: none;
   color: inherit; }
 
+.contact {
+  padding-left: 10%;
+}
+
 .contact p, .contact .contact-subheader {
   color: black;
   text-shadow: none;
-  text-align: left; }
+  text-align: left;
+}
 
 .contact .contact-section {
   display: flex;
-  flex-direction: column; }
-  .contact .contact-section li {
-    color: black; }
-  .contact .contact-section a:hover {
-    color: #b28b0e; }
+  flex-direction: column;
+}
+
+.contact .contact-section li {
+  color: black;
+}
+
+.contact .contact-section a:hover {
+  color: #b28b0e;
+}
 
 .contactForm {
   min-height: 400px;
@@ -284,6 +294,10 @@ a, a:focus {
       display: block;
       line-height: normal;
       color: #b5b3b3; }
+
+footer {
+  position: sticky;
+}
 
 .footer {
   background-color: black; }
@@ -1597,13 +1611,13 @@ a, a:focus {
     width: 100%;
     position: absolute; }
 
-.reactContact code {
+.reactContact code, .seo-cta code {
   background: #eee;
   padding: .1rem;
   font-size: 13px;
   color: #ff00aa; }
 
-.reactContact .text-input {
+.reactContact .text-input, .seo-cta .text-input {
   padding: .5rem;
   font-size: 16px;
   width: 100%;
@@ -1611,38 +1625,38 @@ a, a:focus {
   border-radius: 4px;
   border: 1px solid #ccc; }
 
-.reactContact .text-input:focus {
+.reactContact .text-input:focus, .seo-cta .text-input:focus {
   border-color: #3763ef;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0 3px rgba(0, 126, 255, 0.1);
   outline: none; }
 
-.reactContact .error .text-input {
+.reactContact .error .text-input, .seo-cta .error .text-input {
   border-color: red; }
 
-.reactContact .label {
+.reactContact .label, .seo-cta .label {
   font-weight: bold;
   display: block;
   margin-bottom: .5rem; }
 
-.reactContact .error .label {
+.reactContact .error .label, .seo-cta .error .label {
   color: red; }
 
-.reactContact .input-feedback {
+.reactContact .input-feedback, .seo-cta .input-feedback {
   color: #6c6c6c;
   margin-top: .25rem; }
 
-.reactContact .error .input-feedback {
+.reactContact .error .input-feedback, .seo-cta .error .input-feedback {
   color: red; }
 
-.reactContact .animated {
+.reactContact .animated, .seo-cta .animated {
   animation-duration: .3s;
   animation-fill-mode: both; }
 
-.reactContact .input-group {
+.reactContact .input-group, .seo-cta .input-group {
   margin-bottom: 1rem;
   width: 49%; }
 
-.reactContact button {
+.reactContact button, .seo-cta button {
   max-width: 150px;
   margin: 20px 0;
   padding: 12px 20px;
@@ -1657,19 +1671,19 @@ a, a:focus {
   outline: none;
   -webkit-appearance: none; }
 
-.reactContact button:disabled {
+.reactContact button:disabled, .seo-cta button:disabled {
   opacity: .5;
   cursor: not-allowed !important; }
 
-.reactContact button + button {
+.reactContact button + button, .seo-cta button + button {
   margin-left: .5rem; }
 
-.reactContact button.outline {
+.reactContact button.outline, .seo-cta button.outline {
   background-color: #eee;
   border: 1px solid #aaa;
   color: #555; }
 
-.reactContact .animated {
+.reactContact .animated, .seo-cta .animated {
   animation-duration: 1s;
   animation-fill-mode: both; }
 
@@ -1681,5 +1695,65 @@ a, a:focus {
   20%, 40%, 60%, 80% {
     transform: translate3d(10px, 0, 0); } }
 
-.reactContact .shake {
+.reactContact .shake, .seo-cta .shake {
   animation-name: shake; }
+
+.seo {
+  margin: 10vh 0;
+}
+
+.seo .row:first-child {
+  height: 60vh;
+  display: flex;
+  margin-bottom: 10vh;
+}
+
+.seo .row:first-child div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seo .row:first-child .img-google {
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+
+.seo .row:first-child p {
+  margin: 1em 0;
+}
+
+.seo .row:first-child .sea-link {
+  color: black;
+}
+
+.seo-cta {
+  margin-left: 0;
+  height: 40vh;
+  width: 100%;
+  background-color: lightgray;
+  padding: 3em;
+}
+
+.seo-cta form {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.seo-cta form .label {
+  display: none;
+}
+
+.seo-cta form .input-group {
+  display: flex;
+  width: 250px;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.seo-cta form button {
+  display: flex;
+  justify-content: flex-end;
+}

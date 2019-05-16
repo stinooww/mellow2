@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import React, {Component} from 'react';
 import {Grid, Row, Col, Image, Button} from 'react-bootstrap';
-import Contactform from '../../components/Contactform/Contactform';
 import Reactcontactform from '../../components/Contactform/Reactcontactform';
 
 import MessengerCustomerChat from 'react-messenger-customer-chat';
@@ -107,6 +106,13 @@ class Contact extends Component {
                             <Reactcontactform/>
                         </Col>
                     </Row>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+
                 </Grid>
 
         )

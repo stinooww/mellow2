@@ -2,8 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12ea28b2-16cc-402e-8e6a-5180a58d3b5c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/SEOanalyse/SeoAnalyse.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/images/google.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/images/graphic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/styling/_Seo.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Contactform/Contactform.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Footer/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/FormValidator/FormValidator.jsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/Contact/Contact.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Contact/Contact.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Diensten/SEO.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Diensten/SEO.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Diensten/Website.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Diensten/Website.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_Contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/_Contact.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_Reactcontactform.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/_Reactcontactform.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/_footer.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,25 +28,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frontend/src/pages/Contact/Contact.jsx">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/pages/Diensten/Website.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1144">
-              <caret line="108" selection-start-line="108" selection-end-line="108" />
+            <state relative-caret-position="318">
+              <caret line="77" column="23" selection-start-line="77" selection-start-column="23" selection-end-line="84" selection-end-column="48" />
               <folding>
-                <element signature="e#0#35#0" expanded="true" />
+                <element signature="e#0#39#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/components/Contactform/Reactcontactform.jsx">
+        <entry file="file://$PROJECT_DIR$/frontend/src/pages/Diensten/SEO.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="69" column="2" selection-start-line="69" selection-start-column="2" selection-end-line="69" selection-end-column="2" />
+            <state relative-caret-position="372">
+              <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
               <folding>
-                <element signature="e#1#27#0" expanded="true" />
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frontend/src/styling/_Seo.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/components/SEOanalyse/SeoAnalyse.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="447">
+              <caret line="80" column="19" lean-forward="true" selection-start-line="80" selection-start-column="19" selection-end-line="80" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -41,8 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/styling/_Reactcontactform.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+            <state>
+              <caret column="23" selection-start-column="23" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -58,7 +93,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>small</find>
       <find>tileHref</find>
       <find>home-por</find>
       <find>overlay-co</find>
@@ -88,6 +122,7 @@
       <find>horizon</find>
       <find>width</find>
       <find>code</find>
+      <find>MyForm</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/frontend/node_modules</dir>
@@ -100,10 +135,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/frontend/src/styling/_ServiceTile.scss" />
-        <option value="$PROJECT_DIR$/frontend/src/styling/_ServicesAll.scss" />
-        <option value="$PROJECT_DIR$/frontend/src/pages/Services/ServiceDicomenu.jsx" />
         <option value="$PROJECT_DIR$/frontend/src/pages/Services/ServiceItem.jsx" />
         <option value="$PROJECT_DIR$/frontend/src/components/portfolio-item/portfolioItemAnim.js" />
         <option value="$PROJECT_DIR$/frontend/src/styling/_Portfolioitem.scss" />
@@ -113,7 +144,6 @@
         <option value="$PROJECT_DIR$/frontend/src/styling/_landing.scss" />
         <option value="$PROJECT_DIR$/frontend/src/styling/_form.scss" />
         <option value="$PROJECT_DIR$/frontend/src/App.js" />
-        <option value="$PROJECT_DIR$/frontend/src/pages/Diensten/SEO.jsx" />
         <option value="$PROJECT_DIR$/frontend/src/pages/Diensten/Grafisch.jsx" />
         <option value="$PROJECT_DIR$/frontend/src/styling/_variables.scss" />
         <option value="$PROJECT_DIR$/frontend/src/components/Routing/Routing.jsx" />
@@ -123,7 +153,6 @@
         <option value="$PROJECT_DIR$/frontend/src/styling/_testimonials.scss" />
         <option value="$PROJECT_DIR$/frontend/src/styling/_Webhosting.scss" />
         <option value="$PROJECT_DIR$/frontend/src/pages/Diensten/Webhosting.jsx" />
-        <option value="$PROJECT_DIR$/frontend/src/styling/_Contact.scss" />
         <option value="$PROJECT_DIR$/frontend/src/styling/_Portfolio.scss" />
         <option value="$PROJECT_DIR$/frontend/src/components/Timeline/Timeline.jsx" />
         <option value="$PROJECT_DIR$/frontend/src/pages/Strategie/Strategie.jsx" />
@@ -132,7 +161,6 @@
         <option value="$PROJECT_DIR$/frontend/src/styling/_buttons.scss" />
         <option value="$PROJECT_DIR$/frontend/src/styling/_header.scss" />
         <option value="$PROJECT_DIR$/frontend/src/styling/_About.scss" />
-        <option value="$PROJECT_DIR$/frontend/src/styling/_footer.scss" />
         <option value="$PROJECT_DIR$/frontend/src/styling/_ServiceHomePictures.scss" />
         <option value="$PROJECT_DIR$/frontend/src/redux/actions/postActions.js" />
         <option value="$PROJECT_DIR$/frontend/src/components/services/ServiceTile/ServiceTile.jsx" />
@@ -141,16 +169,23 @@
         <option value="$PROJECT_DIR$/frontend/src/components/WhatWeDo/ServiceAboutHome.jsx" />
         <option value="$PROJECT_DIR$/frontend/src/styling/_General.scss" />
         <option value="$PROJECT_DIR$/frontend/src/components/portfolio-item/PortfolioItem.jsx" />
-        <option value="$PROJECT_DIR$/frontend/src/pages/Diensten/Website.jsx" />
         <option value="$PROJECT_DIR$/frontend/src/styling/_Website.scss" />
         <option value="$PROJECT_DIR$/frontend/src/components/Contactform/Contactform.jsx" />
         <option value="$PROJECT_DIR$/frontend/src/components/ModalOfferte/ModalOfferte.jsx" />
         <option value="$PROJECT_DIR$/frontend/src/components/ModalOfferte/ModalOfferteStart.jsx" />
         <option value="$PROJECT_DIR$/frontend/package.json" />
-        <option value="$PROJECT_DIR$/frontend/src/App.scss" />
         <option value="$PROJECT_DIR$/frontend/src/components/Contactform/Reactcontactform.jsx" />
-        <option value="$PROJECT_DIR$/frontend/src/styling/_Reactcontactform.scss" />
+        <option value="$PROJECT_DIR$/frontend/src/components/Footer/Footer.jsx" />
+        <option value="$PROJECT_DIR$/frontend/src/styling/_footer.scss" />
         <option value="$PROJECT_DIR$/frontend/src/pages/Contact/Contact.jsx" />
+        <option value="$PROJECT_DIR$/frontend/src/styling/_Contact.scss" />
+        <option value="$PROJECT_DIR$/frontend/src/pages/Diensten/Website.jsx" />
+        <option value="$PROJECT_DIR$/frontend/src/App.scss" />
+        <option value="$PROJECT_DIR$/frontend/src/components/SEOanalyse/seoAnalyse.jsx" />
+        <option value="$PROJECT_DIR$/frontend/src/components/SEOanalyse/SeoAnalyse.jsx" />
+        <option value="$PROJECT_DIR$/frontend/src/styling/_Reactcontactform.scss" />
+        <option value="$PROJECT_DIR$/frontend/src/pages/Diensten/SEO.jsx" />
+        <option value="$PROJECT_DIR$/frontend/src/styling/_Seo.scss" />
       </list>
     </option>
   </component>
@@ -160,10 +195,10 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="391" />
-    <option name="y" value="23" />
-    <option name="width" value="1276" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-1918" />
+    <option name="y" value="24" />
+    <option name="width" value="1038" />
     <option name="height" value="947" />
   </component>
   <component name="ProjectView">
@@ -204,6 +239,14 @@
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="CallToAction" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mellow2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mellow2" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="Contactform" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -213,14 +256,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="Footer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mellow2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mellow2" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="FormValidator" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mellow2" type="b2602c69:ProjectViewProjectNode" />
@@ -276,6 +311,14 @@
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="SEOanalyse" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mellow2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mellow2" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -310,6 +353,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="WhatWeDo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mellow2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mellow2" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mellow2" type="b2602c69:ProjectViewProjectNode" />
@@ -398,7 +448,7 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557926226463" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558007587946" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -455,7 +505,7 @@
       <workItem from="1556888625116" duration="395000" />
       <workItem from="1556973978953" duration="10577000" />
       <workItem from="1557146895680" duration="2153000" />
-      <workItem from="1557409896115" duration="58521000" />
+      <workItem from="1557409896115" duration="69293000" />
     </task>
     <task id="LOCAL-00001" summary="made hompeage responsive and added facebook messenger implementation">
       <created>1549620479646</created>
@@ -632,16 +682,23 @@
       <option name="project" value="LOCAL" />
       <updated>1557925874088</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="contact form af + start diensten paginas - website">
+      <created>1557926296892</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1557926296892</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146396000" />
+    <option name="totallyTimeSpent" value="157168000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <frame x="-1918" y="24" width="1038" height="947" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.16531605" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32028112" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -657,7 +714,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3290735" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.16938776" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.19415204" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Hybris Console [Experimental]" order="11" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
@@ -700,41 +757,12 @@
     <MESSAGE value="header + nieuwe pagina voor onz diensten etc etc" />
     <MESSAGE value="onderhoud helemaal af" />
     <MESSAGE value="npm update en beter contact formulier" />
-    <option name="LAST_COMMIT_MESSAGE" value="npm update en beter contact formulier" />
+    <MESSAGE value="contact form af + start diensten paginas - website" />
+    <option name="LAST_COMMIT_MESSAGE" value="contact form af + start diensten paginas - website" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/mellow/mellow-website/website/mellow/images/landing.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/styling/_testimonials.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/components/Testimonials/Testimonials.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="18" column="71" selection-start-line="18" selection-start-column="71" selection-end-line="18" selection-end-column="71" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/styling/_Webhosting.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/images/landing.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/pages/Diensten/Webhosting.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="487">
@@ -742,13 +770,6 @@
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/styling/_Contact.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="762">
-          <caret line="52" column="3" lean-forward="true" selection-start-line="52" selection-start-column="3" selection-end-line="52" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -825,22 +846,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="11" selection-start-line="5" selection-end-line="5" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/components/Footer/Footer.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/styling/_footer.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -980,16 +985,6 @@
         <state relative-caret-position="-1528" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/pages/Diensten/Website.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1065">
-          <caret line="137" column="27" lean-forward="true" selection-start-line="137" selection-start-column="27" selection-end-line="137" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/styling/_Website.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-58">
@@ -997,47 +992,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/components/FormValidator/FormValidator.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="694">
-          <caret line="51" column="31" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/components/Contactform/ContactformReact.jsx">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/components/ModalOfferte/ModalOfferte.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/components/Contactform/Contactform.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="40" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/components/ModalOfferte/ModalOfferteStart.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#375#840#0" />
-            <element signature="e#863#1321#0" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/package.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -1046,37 +1002,148 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/App.scss">
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/Footer/Footer.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/styling/_Reactcontactform.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/components/Contactform/Reactcontactform.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="69" column="2" selection-start-line="69" selection-start-column="2" selection-end-line="69" selection-end-column="2" />
+        <state relative-caret-position="120">
+          <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
           <folding>
-            <element signature="e#1#27#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/styling/_footer.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/Contactform/Contactform.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/FormValidator/FormValidator.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="634">
+          <caret line="51" column="31" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/styling/_Contact.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/pages/Contact/Contact.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1144">
-          <caret line="108" selection-start-line="108" selection-end-line="108" />
+        <state relative-caret-position="1123">
+          <caret line="114" selection-start-line="114" selection-end-line="114" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/ModalOfferte/ModalOfferte.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/ModalOfferte/ModalOfferteStart.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1051">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/pages/Diensten/Website.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="77" column="23" selection-start-line="77" selection-start-column="23" selection-end-line="84" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/CallToAction/CallToAction.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="24" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/App.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/App.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/Contactform/Reactcontactform.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="178" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/styling/_Reactcontactform.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="23" selection-start-column="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/SEOanalyse/SeoAnalyse.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="80" column="19" lean-forward="true" selection-start-line="80" selection-start-column="19" selection-end-line="80" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/pages/Diensten/SEO.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/styling/_Seo.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
         </state>
       </provider>
     </entry>
