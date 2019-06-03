@@ -10,17 +10,19 @@ export default class SeoAnalyse extends Component {
     render() {
         return (
                 <Row className="seo-cta">
-                    <h2>
-                        Wil je graag te weten komen hoe jou website er voor staat?
-                        <br/> Vul je gegevens in en wij sturen je een GRATIS SEO analyse op!
-                    </h2>
-                    <SEOwebsiteAnalyseForm user={{
+                    <div>
+                        <h2>
+                            Wil je graag te weten komen hoe jou website er voor staat?
+                            <br/> Vul je gegevens in en wij sturen je een GRATIS SEO analyse op!
+                        </h2>
+                        <SEOwebsiteAnalyseForm user={{
 
-                        Name   : '',
-                        bedrijf: '',
-                        email  : '',
-                        url    : ''
-                    }}/>
+                            Name   : '',
+                            bedrijf: '',
+                            email  : '',
+                            url    : ''
+                        }}/>
+                    </div>
                 </Row>
 
         )

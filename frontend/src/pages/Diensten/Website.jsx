@@ -74,7 +74,7 @@ class Website extends Component {
                             </Col>
                         </Row>
                         <Row>
-                            <Col md={12} className="overall-container">
+                            {/*<Col md={12} className="overall-container">*/}
                                 {/*<Controller>*/}
                                 {/*<Scene duration={400} pin={true}>*/}
                                 {/*<div className="sticky"><Image src={dicomenuBack} alt="dicomenu" id="back" className="img back"/></div>*/}
@@ -83,7 +83,7 @@ class Website extends Component {
                                 {/*<div className="sticky"><Image src={dicomenuFRONT} alt="dicomenu" id="front" className="img front"/></div>*/}
                                 {/*</Scene>*/}
                                 {/*</Controller>*/}
-                            </Col>
+                            {/*</Col>*/}
                             {/*<Col md={12} className="overall-container">*/}
                             {/*<div className="img-container">*/}
                             {/*<div>*/}

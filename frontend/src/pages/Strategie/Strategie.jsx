@@ -9,7 +9,7 @@ class Strategie extends Component {
     render() {
 
         return (
-                <div className="PortfolioPage">
+                <div className="PortfolioPage mt-4">
                     <Grid>
                         <Row>
                             <Col xs={12}>

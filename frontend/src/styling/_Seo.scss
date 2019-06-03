@@ -1,11 +1,11 @@
 .seo {
-  margin: 10vh 0;
+  margin: 10vh 0 2vh 0;
 
 
-  .row:first-child {
+  .section--belang {
     height: 60vh;
     display: flex;
-    margin-bottom: 10vh;
+    margin-bottom: 15vh;
 
     div:first-child {
       display: flex;
@@ -14,7 +14,7 @@
     }
 
     .img-google {
-      width: 60%;
+      width: 50%;
       display: flex;
       align-items: center;
     }
@@ -28,12 +28,22 @@
     }
   }
 
-  .row:nth-child(2) {
+  .row:nth-child(3) {
+    & div:first-child {
+      display: flex;
+      justify-content: center;
+
+      .img-seo {
+        height: 60%;
+        width: 60%;
+      }
+    }
+
     aside {
       display: flex;
       margin: 40px 0;
       line-height: 20px;
-
+      justify-content: space-around;
       transition: all 0.3s ease-in-out;
       transition-property: all;
       transition-duration: 0.3s;
@@ -64,7 +74,7 @@
           letter-spacing: .88px;
           text-transform: uppercase;
           color: #666;
-          margin: 0 0 20px 0;
+          margin: 0 0 15px 0;
         }
 
         p {
@@ -73,6 +83,7 @@
           line-height: normal;
           font-size: 16px;
           letter-spacing: .285714px;
+          color: black;
         }
 
         &:first-child {
@@ -81,6 +92,8 @@
 
         strong {
           font-family: 'JOSEFIN-SANS-BOLD', Arial, Helvetica, sans-serif;
+          color: #666;
+          margin-bottom: 25px;
         }
 
       }
@@ -92,31 +105,34 @@
 
 
 .seo-cta {
-  margin-left: 0;
+  margin: 5vh 0;
   height: 40vh;
   width: 100%;
   background-color: lightgray;
   padding: 3em;
 
-  form {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-
-    .label {
-      display: none;
-    }
-
-    .input-group {
+  div {
+    form {
       display: flex;
-      width: 250px;
-      flex-direction: column;
-      justify-content: space-around;
-    }
+      flex-flow: row wrap;
+      justify-content: space-evenly;
 
-    button {
-      display: flex;
-      justify-content: flex-end;
+      .label {
+        display: none;
+      }
+
+      .input-group {
+        display: flex;
+        width: 250px;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+
+      button {
+        display: flex;
+        justify-content: flex-end;
+      }
     }
   }
+
 }

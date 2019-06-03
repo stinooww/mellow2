@@ -1431,7 +1431,7 @@ footer {
           max-width: 50%; } }
       .about .post > *:first-child .stijnJonas {
         width: 100%;
-        padding-top: 20%; }
+        padding-top: 10%; }
         @media (min-width: 30em) {
           .about .post > *:first-child .stijnJonas {
             padding-top: 0; } }
@@ -1536,7 +1536,8 @@ footer {
 
 .timeline {
   background-color: lightgray;
-  margin: 1em; }
+  margin: 1em;
+  margin-bottom: 10vh; }
   .timeline h1 {
     text-align: center; }
   .timeline h3 {
@@ -1548,12 +1549,20 @@ footer {
     text-shadow: none; }
   .timeline .vertical-timeline-element-content {
     box-shadow: 3px 4px 1px #ddd; }
+    .timeline .vertical-timeline-element-content p {
+      font-size: 16px !important; }
+    .timeline .vertical-timeline-element-content .vertical-timeline-element-date {
+      font-size: 16px !important; }
+    .timeline .vertical-timeline-element-content span {
+      font-size: 16px; }
   .timeline .vertical-timeline--two-columns .vertical-timeline-element:nth-child(odd):not(.vertical-timeline-element--left) .vertical-timeline-element-content .vertical-timeline-element-date {
     left: 139% !important; }
   .timeline .vertical-timeline--two-columns .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content .vertical-timeline-element-date {
     right: 139% !important; }
   .timeline .vertical-timeline-element-icon {
     background: #3763ef !important; }
+    .timeline .vertical-timeline-element-icon svg {
+      font-size: 16px; }
 
 .Diensten {
   padding: 5%; }
@@ -1689,33 +1698,40 @@ footer {
   animation-name: shake; }
 
 .seo {
-  margin: 10vh 0; }
-  .seo .row:first-child {
+  margin: 10vh 0 2vh 0; }
+  .seo .section--belang {
     height: 60vh;
     display: flex;
-    margin-bottom: 10vh; }
-    .seo .row:first-child div:first-child {
+    margin-bottom: 15vh; }
+    .seo .section--belang div:first-child {
       display: flex;
       align-items: center;
       justify-content: center; }
-    .seo .row:first-child .img-google {
-      width: 60%;
+    .seo .section--belang .img-google {
+      width: 50%;
       display: flex;
       align-items: center; }
-    .seo .row:first-child p {
+    .seo .section--belang p {
       margin: 1em 0; }
-    .seo .row:first-child .sea-link {
+    .seo .section--belang .sea-link {
       color: black; }
-  .seo .row:nth-child(2) aside {
+  .seo .row:nth-child(3) div:first-child {
+    display: flex;
+    justify-content: center; }
+    .seo .row:nth-child(3) div:first-child .img-seo {
+      height: 60%;
+      width: 60%; }
+  .seo .row:nth-child(3) aside {
     display: flex;
     margin: 40px 0;
     line-height: 20px;
+    justify-content: space-around;
     transition: all 0.3s ease-in-out;
     transition-property: all;
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
     transition-delay: 0s; }
-    .seo .row:nth-child(2) aside article {
+    .seo .row:nth-child(3) aside article {
       background: #efc337;
       width: 30%;
       padding: 25px;
@@ -1730,7 +1746,7 @@ footer {
       flex-direction: column;
       max-width: 350px;
       border-radius: 5px; }
-      .seo .row:nth-child(2) aside article h3 {
+      .seo .row:nth-child(3) aside article h3 {
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -1738,35 +1754,38 @@ footer {
         letter-spacing: .88px;
         text-transform: uppercase;
         color: #666;
-        margin: 0 0 20px 0; }
-      .seo .row:nth-child(2) aside article p {
+        margin: 0 0 15px 0; }
+      .seo .row:nth-child(3) aside article p {
         font-style: normal;
         font-weight: 400;
         line-height: normal;
         font-size: 16px;
-        letter-spacing: .285714px; }
-      .seo .row:nth-child(2) aside article:first-child {
+        letter-spacing: .285714px;
+        color: black; }
+      .seo .row:nth-child(3) aside article:first-child {
         margin-right: 20px; }
-      .seo .row:nth-child(2) aside article strong {
-        font-family: 'JOSEFIN-SANS-BOLD', Arial, Helvetica, sans-serif; }
+      .seo .row:nth-child(3) aside article strong {
+        font-family: 'JOSEFIN-SANS-BOLD', Arial, Helvetica, sans-serif;
+        color: #666;
+        margin-bottom: 25px; }
 
 .seo-cta {
-  margin-left: 0;
+  margin: 5vh 0;
   height: 40vh;
   width: 100%;
   background-color: lightgray;
   padding: 3em; }
-  .seo-cta form {
+  .seo-cta div form {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly; }
-    .seo-cta form .label {
+    .seo-cta div form .label {
       display: none; }
-    .seo-cta form .input-group {
+    .seo-cta div form .input-group {
       display: flex;
       width: 250px;
       flex-direction: column;
       justify-content: space-around; }
-    .seo-cta form button {
+    .seo-cta div form button {
       display: flex;
       justify-content: flex-end; }

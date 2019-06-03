@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import {Grid, Row, Col, Image, Button, OverlayTrigger} from 'react-bootstrap';
+import {Grid, Row, Col, Image, Button, OverlayTrigger, Tooltip} from 'react-bootstrap';
 import CallToAction from '../../components/CallToAction/CallToAction';
 import SeoAnalyse from '../../components/SEOanalyse/SeoAnalyse'
 import Google from '../../images/google.png';
@@ -9,40 +9,23 @@ import Graphic from '../../images/graphic.png';
 class SEO extends Component {
 
     ref = React.createRef();
-    metaDescription = () => (
-            <OverlayTrigger
-                    placement="right-start"
-                    delay={{
-                        show: 250,
-                        hide: 400
-                    }}
-                    overlay={this.renderTooltip}
-                    ref={this.ref}
-            >
-                <li> Meta description</li>
-            </OverlayTrigger>
-    );
-    renderTooltip = props => (
-            <div
-                    {...props}
-                    ref={this.ref}
-                    style={{
-                        backgroundColor: 'rgba(0, 0, 0, 0.85)',
-                        padding        : '2px 10px',
-                        color          : 'white',
-                        borderRadius   : 3,
-                        ...props.style,
-                    }}
-            >
-                de tekst die je krijgt te zien in bij de zoekresultaten.
-                Deze moet m.a.w. goed geschreven zijn, kernwoorden bevatten en ook nog eens aanzetten tot doorklikken.
-            </div>
-    );
+
     render() {
+        let renderTooltip =
+                    <div>
+                    </div>;
+        let tooltip2 = <Tooltip><strong>De tekst die je krijgt te zien in bij de zoekresultaten.
+        </strong> Deze moet m.a.w. goed geschreven zijn, kernwoorden bevatten en ook nog eens aanzetten tot doorklikken.</Tooltip>;
+        let tooltip1 = <Tooltip><strong>Je titels en tussentitels mogen al eens een zoekwoord bevatten.</strong> Probeer dit wel niet in altijd te doen. Je wilt ook geen overoptimalisatie
+            krijgen.!</Tooltip>;
+        let tooltip3 = <Tooltip><strong>Dit is de titel die je Google laat lezen als titel van de pagina. </strong> Geef duidelijk aan waarover je pagina gaat en dit in maximaal 70
+            karakters.</Tooltip>;
+        let tooltip4 = <Tooltip><strong>Geef alle afbeeldingen op je website een alt-tag.</strong> Dit is de beschrijving die men te zien krijgt als de afbeelding niet moest inladen.</Tooltip>;
+
         return (
                 <div className="PortfolioPage seo">
                     <Grid>
-                        <Row>
+                        <Row className="section--belang">
                             <Col md={4} xs={12}>
                                 <Image className="img-google" src={Google} responsive/>
                             </Col>
@@ -51,9 +34,9 @@ class SEO extends Component {
                                 <p>We gebruiken allemaal regelmatig bekende zoekmachines zoals Bing of Google. Je zit bijvoorbeeld met een vraag of je wilt de openingsuren van een plek te weten
                                     komen.</p>
                                 <p>
-                                    Daarom is het belangrijk om zo hoog mogelijk te scoren in deze zoekmachines. Want je wilt niet op de 2de of 3de pagina verschijnen in de zoekresultaten want daar
-                                    kijkt
-                                    niemand op.
+                                    Daarom is het belangrijk om zo hoog mogelijk te scoren in deze zoekmachines. Want je wilt niet op de 2de of 3de pagina verschijnen in de zoekresultaten ... want
+                                    laten we eerlijk zijn, daar
+                                    kijkt bijna niemand op.
                                     Je wil liefst op de eerste plaats verschijnen als men een antwoord zoekt waarop jij een oplossing kan bieden! </p>
                                 <p>Omdat het enkele weken duurt voordat SEO begint te werken zal je dit resultaat niet meteen zien. Zoekmachine optimalisatie oftwel SEO is dus een lange termijn
                                     verhaal.
@@ -66,6 +49,9 @@ class SEO extends Component {
                         </Row>
                         <SeoAnalyse/>
                         <Row>
+                            <Col xs={12}>
+                                <Image className="img-seo" src={Graphic} responsive/>
+                            </Col>
                             <Col md={12} className="seo-stappen">
                                 <aside>
                                     <article>
@@ -88,10 +74,24 @@ class SEO extends Component {
                                             <br/>
                                             We bekijken de content die op je website zich bevind zoals zoekwoorden in titels en teksten en passen dit aan.
                                             we voegen enkele zaken toe aan je website zoals:
-                                            <ul>
-                                                <metaDescription/>
+                                            <br/>
+                                            <ul className="col-md-6">
+                                                <OverlayTrigger placement="right" overlay={tooltip1}>
+                                                    <li bsStyle="default">titels</li>
+                                                </OverlayTrigger>
+                                                <OverlayTrigger placement="right" overlay={tooltip2}>
+                                                    <li bsStyle="default">meta tags</li>
+                                                </OverlayTrigger>
+                                                <OverlayTrigger placement="right" overlay={tooltip3}>
+                                                    <li bsStyle="default">alt tags</li>
+                                                </OverlayTrigger>
+                                                <OverlayTrigger placement="right" overlay={tooltip4}>
+                                                    <li bsStyle="default">title tags</li>
+                                                </OverlayTrigger>
+
+
                                             </ul>
-                                            , title tags, alt tags
+
                                         </p>
                                     </article>
                                     <article>
@@ -100,6 +100,7 @@ class SEO extends Component {
                                             <strong>
                                                 Technische optimalisatie
                                             </strong>
+                                            <br/>
                                             Tenslotte voegen we ook verschillende stukjes code toe aan de website,
                                             zodat zoek robots gemakelijker door de site kunnen navigeren.
                                             We dubbel checken of de website volledig mobiel beschikbaar is en kijken of de afbeeldingen snel genoeg inladen
@@ -112,15 +113,12 @@ class SEO extends Component {
 
                             </Col>
                             <Col md={12}>
-                                <p> Op deze manier krijg je meer bezoekers en scoor je hoger in Google,
+                                <p className="text-center"> Op deze manier krijg je meer bezoekers en scoor je hoger in Google, <br/>
                                     wat jou ook weer meer bezoekers en dus potentiële klanten oplevert.</p>
                             </Col>
-                            <Col md={6} xs={12}>
-                                <Image className="img-google" src={Graphic} responsive/>
-                            </Col>
                         </Row>
-                        <CallToAction/>
                     </Grid>
+                    <CallToAction/>
                 </div>
         );
     }
