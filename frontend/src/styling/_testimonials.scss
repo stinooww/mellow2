@@ -1,19 +1,31 @@
 .person-wrapper {
-  h3 {
-    text-align: center !important;
-  }
 
+  text-align: center;
   .show-grid {
     padding-bottom: 30px;
   }
 
   .testimonial-title {
     padding: 5%;
+
+    h2, h3 {
+      text-align: center !important;
+    }
+
+    h2 {
+      color: black;
+    }
+
+    h3 {
+      font-style: italic;
+      font-size: 20px;
+    }
+
   }
 
   .testimonial-carousel {
-    background-color: #6c6c6c80;
-    margin: 1% 25%;
+
+    margin: 0 20%;
     padding: 5%;
 
     .carousel-indicators {
@@ -22,7 +34,19 @@
 
     .carousel-control {
       display: inherit;
+      background: none;
     }
+
+    .carousel-inner {
+      width: 70%;
+      margin: 0 auto;
+      text-align: center;
+
+      .item {
+        height: 90px;
+      }
+    }
+
   }
 }
 

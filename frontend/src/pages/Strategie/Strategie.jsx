@@ -9,7 +9,7 @@ class Strategie extends Component {
     render() {
 
         return (
-                <div className="PortfolioPage mt-4">
+                <div className="StrategiePage ">
                     <Grid>
                         <Row>
                             <Col xs={12}>
@@ -26,9 +26,10 @@ class Strategie extends Component {
                         <Row className="show-grid">
                             <Timeline/>
                         </Row>
-                        <CallToAction/>
+
 
                     </Grid>
+                    <CallToAction/>
                 </div>
         );
     }

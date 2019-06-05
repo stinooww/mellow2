@@ -1,0 +1,20 @@
+.grafisch-email {
+  h1 {
+    font-size: 35px;
+    color: $blue;
+    text-align: left;
+    font-family: 'JOSEFIN-SANS-BOLD', Arial, Helvetica, sans-serif;
+
+    text-shadow: none;
+  }
+
+  .marketing-email {
+    .emailmarketing-image {
+      width: 85%;
+    }
+  }
+
+  .row {
+    margin-bottom: 15vh;
+  }
+}

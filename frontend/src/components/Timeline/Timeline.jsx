@@ -30,10 +30,9 @@ class Timeline extends Component {
                                             icon={<FontAwesomeIcon icon={faCoffee}/>}
                                     >
                                         <h3 className="vertical-timeline-element-title">Verkennend gesprek</h3>
+                                        <p> In ons verkennend gesprek, luisteren we naar uw verhaal, uw noden en de grote van het project. Waarbij we ook meedenken met wat de beste oplossing is die
+                                            bij u past.
 
-                                        <p>
-                                            In our earliest discussions, we’ll figure out the size, scope, and nature of your project, as well as help you think through what exactly you would like to
-                                            create.
                                         </p>
                                     </VerticalTimelineElement>
                                     <VerticalTimelineElement
@@ -46,9 +45,9 @@ class Timeline extends Component {
                                             icon={<FontAwesomeIcon icon={faUserFriends}/>}
                                     >
                                         <h3 className="vertical-timeline-element-title">Diepgaand gesprek</h3>
-                                        <p>
-                                            To get the ball rolling, we’ll ask you some questions about your business, your competition, and your inspirations. This will lay the groundwork to make
-                                            sure your project is successful.
+                                        <p>Als we verder gaan vanuit het verkennend gesprek. Stellen we allerlei vragen om een beter beeld te kunnen vormen van uw onderneming en wie uw klanten zijn.
+                                            Dit zorgt ervoor dat we ons een beter beeld kunnen vormen die de fundering is om het project succesvol te maken.
+
                                         </p>
                                     </VerticalTimelineElement>
                                     <VerticalTimelineElement
@@ -62,7 +61,9 @@ class Timeline extends Component {
                                     >
                                         <h3 className="vertical-timeline-element-title">Prototype </h3>
                                         <p>
-                                            Our first deliverable will be a prototype that you’ll be able to critique. We’ll work through revisions together as we prepare the final product
+                                            Ons eerste afgeleverd product is het design of prototype waarbij u als klant volledig kan bekritiseren wat u goed / slecht vind en aangepast moet worden.
+                                            Hierbij bekijken we dit samen om ons voor te bereiden op het eind product.
+
                                         </p>
                                     </VerticalTimelineElement>
                                     <VerticalTimelineElement
@@ -75,8 +76,8 @@ class Timeline extends Component {
                                             icon={<FontAwesomeIcon icon={faProjectDiagram}/>}
                                     >
                                         <h3 className="vertical-timeline-element-title">Het eind product </h3>
-                                        <p>
-                                            Once all revisions are complete, you’ll receive your final, beautiful, and high converting deliverable.
+                                        <p>Na de feedback momenten werken we aan het product tot dit volledig klaar is.
+                                            Dit altijd gemaakt in de laatste technologiën die tevens volledig getest is, om uiteindelijk een mooi eindproduct te bekomen.
                                         </p>
                                     </VerticalTimelineElement>
                                     <VerticalTimelineElement
@@ -90,7 +91,7 @@ class Timeline extends Component {
                                     >
                                         <h3 className="vertical-timeline-element-title">Doorlopende support</h3>
                                         <p>
-                                            If you desire, you’ll be able to sign-up for ongoing support and project management for a low monthly fee.
+                                            Bij vele producten die we aanbieden hoort doorlopende support om ervoor te zorgen dat alles optimaal blijft werken.
                                         </p>
                                     </VerticalTimelineElement>
                                 </VerticalTimeline>

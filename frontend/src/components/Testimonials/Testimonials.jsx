@@ -9,22 +9,24 @@ class Testimonials extends Component {
                         <Row className="show-grid ">
                             <Col xs={12} md={12} className="person-wrapper">
                                 <div className="testimonial-title">
-                                    <h1>Wat onze klanten van ons zeggen</h1>
-                                    <h3>En waarom ze ook blijven terug komen</h3>
+                                    <h2>Wat onze klanten van ons zeggen</h2>
+                                    <h3>En waarom ze ook blijven terug komen ...</h3>
                                 </div>
                                 <Carousel className="testimonial-carousel">
                                     <CarouselItem>
-
+                                        <i className="fa fa-quote-right"/>
                                         <p>Zelqjk glqhlq</p>
-                                        <h3>Wauw echto toffe gaste</h3>
+                                        <i className="fa fa-quote-left"/>
+                                        <strong>Third slide label</strong>
+
                                     </CarouselItem>
                                     <CarouselItem>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                        <h3>Second slide label</h3>
+                                        <strong>Third slide label</strong>
                                     </CarouselItem>
                                     <Carousel.Item>
                                         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                                        <h3>Third slide label</h3>
+                                        <strong>Third slide label</strong>
                                     </Carousel.Item>
                                 </Carousel>
                             </Col>

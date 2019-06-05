@@ -2,26 +2,27 @@ $yellow: #efc337;
 $grey: #6c6c6c;
 
 .mellow-btn {
-  border-radius: 5.5px;
+  // border-radius: 5.5px;
   width: 300px;
   margin: 1.2em;
-  padding: 1.3em;
+  padding: 1.1em;
   cursor: pointer;
   text-decoration: none;
   background: $yellow;
   color: #666;
-
+  text-align: center;
+  text-transform: uppercase;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+
   position: relative;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
-
+  box-shadow: 2px 2px #9e9e9e;
   &:before {
-    border-radius: 5.5px;
+    // border-radius: 5.5px;
     content: "";
     position: absolute;
     z-index: -1;
@@ -48,7 +49,7 @@ $grey: #6c6c6c;
 
 }
 
-.mellow-btn:hover:before, .mellow-btn:focus:before, .hmellow-btn:active:before {
+.mellow-btn:hover:before, .mellow-btn:focus:before, .mellow-btn:active:before {
   -webkit-transform: scaleY(1);
   transform: scaleY(1);
 }

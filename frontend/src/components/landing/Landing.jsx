@@ -8,7 +8,7 @@ function Landing(props) {
     return (
 
             <div className=" landingJumb">
-                <div className="container">
+                <div className="landingJumb-cta">
                     <h1>
                         <Typist
                                 cursor={{hideWhenDone: true}}>

@@ -70,7 +70,7 @@ class PortfolioItem extends Component {
                         </Row>
                         <Row>
                             <Col md={12} className="cta-overal">
-                                <Link to="www.dicomenu.com" className="mellow-btn cta-button"> Bezoek de website</Link>
+                                <Link to="www.dicomenu.com" className="mellow-btn"> Bezoek de website</Link>
                             </Col>
                         </Row>
                         <Row>
