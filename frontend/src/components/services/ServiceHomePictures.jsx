@@ -14,7 +14,6 @@ class ServiceHomePictures extends Component {
                 <div>
                     <div className="home-portfolio" id="home-portfolio">
                         <div className="wrapper-1075">
-                            <div className="home-portfolio-text-mobile"><p>Contacteer Weblounge (Brugge) Tel. 050 687 657</p></div>
                             <div className="home-portfolio-text clearfix">
                                 <div className="col-md-12">
                                     <h2>Webdesign is wat we doen,
@@ -29,39 +28,43 @@ class ServiceHomePictures extends Component {
                                 <div className="grid-col-50">
                                     <div className="fig-hover-item height-380">
                                         <figure className="fig cover dicomenu">
-                                            <img src="../../images/dicomenu1.png" alt="Kok au Vin"/>
-                                            <figcaption className="caption">Huisstijl &amp; Webdesign</figcaption>
+                                            <img src="../../images/dicomenu1.png" alt="Dicomenu"/>
+                                            <figcaption className="caption">Webshop &amp; Marketing emails</figcaption>
                                         </figure>
-                                        <a href="" className="full-link">Dicomenu</a>
+                                        <Link to="/portfolioitem/dicomenu" className="full-link">Dicomenu</Link>
                                         <div className="overlay">
                                             <div className="overlay-color overlay-color1"/>
                                             <div className="overlay-content">
-                                                <h3><a href="">Dicomenu
+                                                <h3><Link to="/portfolioitem/dicomenu">Dicomenu
                                                     <small>Culinaire vertalingen </small>
-                                                </a></h3>
-                                                <a href="">Bekijk project</a>
+                                                </Link></h3>
+                                                <Link to="/portfolioitem/dicomenu">Bekijk project</Link>
                                                 <div className="hr"/>
-                                                <a href="" className="light">Bekijk portfolio</a></div>
-                                            <a href="" className="full-link">Dicomenu</a></div>
+                                                <Link to="/portfolio" className="light">Bekijk portfolio</Link></div>
+                                            <Link to="/portfolioitem/dicomenu" className="full-link">Dicomenu</Link>
+                                        </div>
                                     </div>
+
                                     <div className="fig-hover-item height-280">
                                         <figure className="fig cover finnegans">
                                             <img src="../../images/finnegans.png" alt="Marmotta Alpin Hotel"/>
-                                            <figcaption className="caption">Logo ontwerp &amp; Webdesign</figcaption>
+                                            <figcaption className="caption">Webdesign</figcaption>
                                         </figure>
-                                        <a href="" className="full-link">Finnegans</a>
+                                        <Link to="/portfolioitem/finnegans" className="full-link">Finnegans</Link>
                                         <div className="overlay">
-                                            <div className="overlay-color overlay-color2"/>
+                                            <div className="overlay-color overlay-color1"/>
                                             <div className="overlay-content">
-                                                <h3><a href="">Finnegans
-                                                    <small>De betere cocktails</small>
-                                                </a></h3>
-                                                <a href="">Bekijk project</a>
+                                                <h3><Link to="/portfolioitem/finnegans">Finnegans
+                                                    <small>B2B en B2C cocktailconcepten op maat </small>
+                                                </Link></h3>
+                                                <Link to="/portfolioitem/finnegans">Bekijk project</Link>
                                                 <div className="hr"/>
-                                                <a href="/grafisch-ontwerp/" className="light">Bekijk portfolio</a></div>
-                                            <a href="/webdesign/marmotta-alpin-hotel-oostenrijk/" className="full-link">Finnegans</a></div>
+                                                <Link to="/portfolio" className="light">Bekijk portfolio</Link></div>
+                                            <Link to="/portfolioitem/finnegans" className="full-link">Finnegans</Link>
+                                        </div>
                                     </div>
                                 </div>
+
                                 <div className="grid-col-50">
                                     <div className="grid-col-50">
                                         <div className="fig-hover-item height-280">
@@ -69,58 +72,59 @@ class ServiceHomePictures extends Component {
                                                 <img src="../../images/bodyupdate.jpg" alt="Rondreis"/>
                                                 <figcaption className="caption">responsive website</figcaption>
                                             </figure>
-                                            <a href="/webdesign/rondreis/" className="full-link">Rondreis</a>
+                                            <Link to="/portfolioitem/bodyupdate" className="full-link">Afslanken</Link>
                                             <div className="overlay">
-                                                <div className="overlay-color overlay-color3"/>
+                                                <div className="overlay-color overlay-color1"/>
                                                 <div className="overlay-content">
-                                                    <h3><a href="/webdesign/rondreis/">Rondreis
-                                                        <small>Responsive website</small>
-                                                    </a></h3>
-                                                    <a href="/webdesign/rondreis/">Bekijk project</a>
-                                                    <div className="hr"></div>
-                                                    <a href="/webdesign/" className="light">Bekijk portfolio</a></div>
-                                                <a href="/webdesign/rondreis/" className="full-link">Rondreis</a></div>
+                                                    <h3><Link to="/portfolioitem/bodyupdate">Body-update
+                                                        <small>Afslanken &amp; diëten </small>
+                                                    </Link></h3>
+                                                    <Link to="/portfolioitem/bodyupdate">Bekijk project</Link>
+                                                    <div className="hr"/>
+                                                    <Link to="/portfolio" className="light">Bekijk portfolio</Link></div>
+                                                <Link to="/portfolioitem/bodyupdate" className="full-link">Body-update</Link>
+                                            </div>
                                         </div>
                                     </div>
                                     <div className="grid-col-50">
                                         <div className="fig-hover-item height-280">
                                             <figure className="fig cover sea">
-                                                <img src="/phpthumb/cache/uploads/homeprojecten/webdesign-maisonbertine/w269h2269zc0q100/webdesign-maisonbertine.jpg" alt="Maison Bertine"/>
-                                                <figcaption className="caption">Kant-en-klaar webdesign</figcaption>
+                                                <figcaption className="caption">Webdesign en SEA</figcaption>
                                             </figure>
-                                            <a href="/webdesign/bed-and-breakfast-maison-bertine/" className="full-link">Maison Bertine</a>
+                                            <Link to="/portfolioitem/askbliksem" className="full-link">SEA</Link>
                                             <div className="overlay">
-                                                <div className="overlay-color overlay-color4"/>
+                                                <div className="overlay-color overlay-color1"/>
                                                 <div className="overlay-content">
-                                                    <h3><a href="/webdesign/bed-and-breakfast-maison-bertine/">Maison Bertine
-                                                        <small>Kant-en-klaar webdesign</small>
-                                                    </a></h3>
-                                                    <a href="/webdesign/bed-and-breakfast-maison-bertine/">Bekijk project</a>
-                                                    <div className="hr"></div>
-                                                    <a href="/webdesign/kant-en-klare-sites/" className="light">Bekijk portfolio</a></div>
-                                                <a href="/webdesign/bed-and-breakfast-maison-bertine/" className="full-link">Maison Bertine</a></div>
+                                                    <h3><Link to="/portfolioitem/dicomenu">Ask-bliksembeveiliging
+                                                        <small>Social media &amp; webdesign </small>
+                                                    </Link></h3>
+                                                    <Link to="/portfolioitem/askbliksem">Bekijk project</Link>
+                                                    <div className="hr"/>
+                                                    <Link to="/portfolio" className="light">Bekijk portfolio</Link></div>
+                                                <Link to="/portfolioitem/askbliksem" className="full-link">Ask-bliksembeveiliging</Link>
+                                            </div>
                                         </div>
                                     </div>
                                     <div className="fig-hover-item height-380">
                                         <figure className="fig cover peeraer">
-                                            <img src="../../images/peeraer.jpeg" alt="The Shop - Ecommerce webshop"/>
-                                            <figcaption className="caption">Webshop &amp; Logo</figcaption>
+                                            <figcaption className="caption">Webshop</figcaption>
                                         </figure>
-                                        <a href="/webdesign/the-shop/" className="full-link">The Shop Online</a>
+                                        <Link to="/portfolioitem/bakkerijpeeraer/" className="full-link">Bakkerij & broodjes</Link>
                                         <div className="overlay">
-                                            <div className="overlay-color overlay-color5"/>
+                                            <div className="overlay-color overlay-color1"/>
                                             <div className="overlay-content">
-                                                <h3><a href="/webdesign/the-shop/">The Shop Online
-                                                    <small>Webshop &amp; Logo</small>
-                                                </a></h3>
-                                                <a href="/webdesign/the-shop/">Bekijk project</a>
+                                                <h3><Link to="/portfolioitem/bakkerijpeeraer">Bakkerij Peeraer
+                                                    <small>Bakkerij & broodjes</small>
+                                                </Link></h3>
+                                                <Link to="/portfolioitem/bakkerijpeeraer">Bekijk project</Link>
                                                 <div className="hr"/>
-                                                <a href="/webdesign/webshops/" className="light">Bekijk portfolio</a></div>
-                                            <a href="/webdesign/the-shop/" className="full-link">The Shop Online</a></div>
+                                                <Link to="/portfolio" className="light">Bekijk portfolio</Link></div>
+                                            <Link to="/portfolioitem/bakkerijpeeraer" className="full-link">Bakkerij Peeraer</Link>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <a href="/webdesign/" title="Bekijk onze portfolio" className="btn btn-border btn-center track-btn fx fx-opacity" data-label="CTA Home 3"><span>Bekijk onze portfolio</span></a>
+                            <Link to="/portfolio" title="Bekijk onze portfolio" className="btn btn-border btn-center track-btn fx fx-opacity" data-label="CTA Home 3"><span>Ontdek meer</span></Link>
                         </div>
                     </div>
                 </div>

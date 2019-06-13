@@ -62,7 +62,7 @@ class Portfolio extends Component {
                                                                     <h3 className="client"><a href="https://mmehospitality.nl/client/circuit-van-zandvoort/">Circuit van Zandvoort</a></h3>
                                                                 </div>
                                                                 <p className="view-project">
-                                                                    <a href="https://mmehospitality.nl/project/jumbo-racedagen-2019/">Bekijk Project</a>
+                                                                    <Link to="">Bekijk Project</Link>
                                                                 </p>
                                                             </div>
                                                         </div>

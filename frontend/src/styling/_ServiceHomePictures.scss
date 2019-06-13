@@ -324,28 +324,22 @@
 }
 
 @media (max-width: 767px) {
-  .fig-hover-item {
-    height: auto !important
-  }
 
-  .fig-hover-item .fig {
-    background-image: none !important
-  }
 
   .fig-hover-item .fig img {
-    display: block
+    display: block;
   }
 
   .fig-hover-item .caption {
     padding: 0 0 10px 15px;
-    font-size: 0.6875em
+    font-size: 0.6875em;
   }
 }
 
 .home-portfolio {
   background: #f4f4f4;
   padding-top: 80px;
-  padding-bottom: 65px
+  padding-bottom: 65px;
 }
 
 .home-portfolio .portfolio-grid {

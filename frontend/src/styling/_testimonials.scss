@@ -25,11 +25,19 @@
 
   .testimonial-carousel {
 
-    margin: 0 20%;
-    padding: 5%;
+    margin: 0 12%;
+    padding: 0 4%;
 
     .carousel-indicators {
-      top: 202px;
+      top: 222px;
+
+      li {
+        border-color: $blue;
+      }
+
+      li.active {
+        background-color: $blue;
+      }
     }
 
     .carousel-control {
@@ -43,7 +51,7 @@
       text-align: center;
 
       .item {
-        height: 90px;
+        height: 250px;
       }
     }
 
