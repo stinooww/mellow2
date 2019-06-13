@@ -8,14 +8,21 @@
   }
 
   .waarom-website-txt {
+    h2 {
+      margin: 3vh 0 5vh 0;
+    }
     strong {
       font-size: 1.6em;
-      margin: 10px 0;
+      line-height: 3em;
     }
   }
 
   .mobile-responsive {
     margin: 20vh 0;
+
+    p {
+      margin: 3vh 0;
+    }
   }
 
   strong {

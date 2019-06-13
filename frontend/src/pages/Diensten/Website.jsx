@@ -43,8 +43,9 @@ class Website extends Component {
                         <Row>
                             <Col xs={12} className="waarom-website-txt">
                                 <h2> Waarom zou je een website nodig hebben voor je onderneming?</h2>
-                                <p>Een website zorgt ervoor dat jij als ondernemer altijd online bent vertegenwoordigd, het geeft je een eigen identiteit, je online visite kaartje zeg maar. </p>
-                                <p>Hierbij proberen we zo goed mogelijk jouw idee of wat je doet te visualiseren en op een boeiende manier aan al je toekomstige bezoekers duidelijk te maken wat je
+                                <p>Een website zorgt ervoor dat jij als ondernemer altijd online bent vertegenwoordigd,</p><p> het geeft je een eigen identiteit, je online visite kaartje zeg
+                                maar. </p>
+                                <p>Wij proberen hierbij zo goed mogelijk jouw idee of wat je doet te visualiseren en op een boeiende manier aan al je toekomstige bezoekers duidelijk te maken wat je
                                     doet.</p>
                                 <strong> Want in een wereld van verandering is een digtale aanwezigheid belangrijk! </strong>
                                 <p>
@@ -63,14 +64,19 @@ class Website extends Component {
                                 <h3>Jouw website mobiel beschikbaar</h3>
                                 <p>
                                     In een tijdperk waarin smartphones niet meer weg te denken zijn uit ons dagelijks leven, is een mobiele website een absolute must !
-                                    <br/>
+                                </p>
+                                <p>
                                     <strong>Wist u dat meer dan 60 procent van de websitebezoekers...</strong> jouw website zal bezoeken met een smartphone of Ipad?
+
                                 </p>
                                 <p>
                                     Mobile beschikbare websites scoren bovendien ook beter bij Google dan niet mobiele websites.
-                                    <br/>
-                                    Dus stel dat jouw website niet responsief is en die van jouw concurrent wel dan geeft Google de voorang aan jouw concurrent.
                                 </p>
+                            </Col>
+                            <Col xs={12}>
+                                <h3>
+                                    Dus stel dat jouw website niet responsief is en die van jouw concurrent wel dan geeft Google de voorang aan jouw concurrent.</h3>
+                                <br/>
                             </Col>
                         </Row>
                         <Row>

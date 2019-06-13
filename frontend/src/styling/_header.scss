@@ -2,10 +2,12 @@
 
 
 .navbar-nav {
-  @media (min-width: $Tablet) and (max-width: $smallerLaptop) {
-    margin: 0 18% 2% 22%;
+  @media (min-width: $Tablet) and (max-width: $smallLaptop) {
+    margin: 0 4% 2% 22%;
   }
-
+  @media (min-width: $smallLaptop) and (max-width: $bigLaptop) {
+    margin: 0 0 2% 16%;
+  }
   .menu-item {
     margin-top: 60px;
     color: $grey;
@@ -21,6 +23,9 @@
     }
     @media (min-width: $Tablet) and (max-width: $smallerLaptop) {
       margin-top: 1px;
+    }
+    @media (min-width: $smallerLaptop) and (max-width: $bigLaptop) {
+      margin-top: 5px;
     }
   }
 
@@ -39,6 +44,9 @@
     }
     @media (min-width: $Tablet) and (max-width: $smallerLaptop) {
       margin-top: 1px;
+    }
+    @media (min-width: $smallerLaptop) and (max-width: $bigLaptop) {
+      margin-top: 5px;
     }
   }
 }
@@ -65,7 +73,12 @@
   height: 150px;
   padding: 7px 14px;
   margin-top: 110px;
-
+  @media (min-width: $smallLaptop) and (max-width: $bigLaptop) {
+    margin-top: 115px;
+  }
+  @media (min-width: $smallerLaptop) and (max-width: $smallLaptop) {
+    margin-top: 115px;
+  }
 }
 
 .navbar-default .navbar-nav > li > a {

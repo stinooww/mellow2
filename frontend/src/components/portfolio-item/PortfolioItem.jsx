@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import {Grid, Row, Col, Image, Button} from 'react-bootstrap';
 import scrollmagic from 'scrollmagic';
+import {CircleArrow as ScrollUpButton} from "react-scroll-up-button";
+
 import dicomenuBack from './../../images/frontLAYER.png';
 import dicomenuFRONT from './../../images/back_layer.png';
 import waterschenken from './../../images/Waterschenken-min.jpg';
@@ -12,6 +14,7 @@ import 'aos/dist/aos.css';
 import CallToAction from '../../components/CallToAction/CallToAction';
 import {Controller, Scene} from 'react-scrollmagic';
 import {Tween, Timeline} from 'react-gsap';
+
 // https://scrollmagic.io/
 // https://github.com/bitworking/react-scrollmagic/tree/master/example/src/components/ScrollMagicExamples
 // https://bitworking.github.io/react-gsap/
@@ -47,15 +50,15 @@ class PortfolioItem extends Component {
 
     render() {
         return (
-                <div>
+                <>
                     <div className="portfolio_item-header">
                         <div className="header-layers">
                             <h1> Dicomenu</h1>
                             <h3>Vertalingen & verkopen van culinaire woordenboeken </h3>
                         </div>
                         <div className="image-layers">
-                            <Image src={dicomenuFRONT} alt="dicomenu" id="front" className="img front"/>
-                            <Image src={dicomenuBack} alt="dicomenu" id="back" className="img back"/>
+                            <Image src={dicomenuFRONT} alt="mellow webdesign & development" id="front" className="img front"/>
+                            <Image src={dicomenuBack} alt="mellow webdesign & development" id="back" className="img back"/>
                         </div>
                     </div>
                     <Grid className="portfolio_item-grid">
@@ -74,9 +77,7 @@ class PortfolioItem extends Component {
                             </Col>
                         </Row>
                         <Row>
-                            {/*<Col className="banner" id="paralax" sm={12}>*/}
-                            {/*<Image src={ober} alt="dicomenu" id="innerParalax" rounded responsive className="img innerBanner"/>*/}
-                            {/*</Col>*/}
+
                             <Controller>
                                 <div className="section"/>
                                 <Scene
@@ -96,7 +97,7 @@ class PortfolioItem extends Component {
                                                     yPercent: 0,
                                                 }}
                                         >
-                                            <img src={ober} alt=""/>
+                                            <img src={ober} alt="mellowwebdesign portfolio "/>
                                         </Tween>
                                     </Timeline>
                                 </Scene>
@@ -112,9 +113,10 @@ class PortfolioItem extends Component {
                                 </p>
                             </Col>
                         </Row>
-                        <CallToAction/>
                     </Grid>
-                </div>
+                    <ScrollUpButton/>
+                    <CallToAction/>
+                </>
         );
     }
 }

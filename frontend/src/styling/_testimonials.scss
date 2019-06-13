@@ -30,7 +30,10 @@
 
     .carousel-indicators {
       top: 222px;
+      @media screen and (max-width: $Tablet) {
+        display: none;
 
+      }
       li {
         border-color: $blue;
       }
@@ -49,9 +52,16 @@
       width: 70%;
       margin: 0 auto;
       text-align: center;
+      @media screen and (max-width: $Tablet) {
+        width: 100%;
 
+      }
       .item {
-        height: 250px;
+        height: 100%;
+        @media screen and (max-width: $Tablet) {
+
+
+        }
       }
     }
 

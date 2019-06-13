@@ -4,7 +4,7 @@
     color: $blue;
     text-align: left;
     font-family: 'JOSEFIN-SANS-BOLD', Arial, Helvetica, sans-serif;
-
+    margin: 8vh 0 4vh 0;
     text-shadow: none;
   }
 
@@ -15,6 +15,15 @@
   }
 
   .row {
-    margin-bottom: 15vh;
+    &:first-child {
+      margin-bottom: 5vh;
+    }
+
+  }
+
+  .section-cta {
+    .row {
+      margin-bottom: 0;
+    }
   }
 }

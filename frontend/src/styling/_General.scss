@@ -183,11 +183,10 @@ body {
 }
 
 .testimonials {
-  //  background-image: url("images/wood.jpg");
-  height: 600px;
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: cover;
+  @media screen and (max-width: $Tablet) {
+    min-height: 700px;
+
+  }
 }
 
 .landingJumb {

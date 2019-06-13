@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import {Grid, Row, Col, Image, Button} from 'react-bootstrap';
 import CallToAction from '../../components/CallToAction/CallToAction';
 import emailmarketing from '../../images/emailmarketing.png';
+import logodesign from '../../images/logodesign.png';
 
 class Grafisch extends Component {
 
@@ -14,18 +15,22 @@ class Grafisch extends Component {
                         <Row>
                             <Col xs={12}>
                                 <h1>Grafisch werk</h1>
-                                <Col md={6} xs={12}>
+                                <Col xs={12}>
                                     <h2>Logo design & huisstijl</h2>
                                     <p>
                                         Uw huisstijl bepaalt uw imago.
+                                        <br/>
                                         Juist daarom vinden wij het zeer belangrijk dat er voldoende aandacht aan wordt geschonken. </p>
                                     <p>Wij denken hierbij na over een sterke look & feel
-                                        zodat u een visuele identiteit krijgt die voor de volle 100% bij u past. Denk hierbij aan een stijlvol logo of een nieuwe branding.
+                                        zodat u een visuele identiteit krijgt die voor de volle 100% bij u past.
+                                        <br/>
+                                        Denk hierbij aan een stijlvol logo of een nieuwe branding.
                                         <br/>
                                         Wilt u deze verder door trekken? Wij maken ook smaakvolle business kaartjes of stickers.
                                     </p>
                                 </Col>
-                                <Col md={6} xs={12}>
+                                <Col xs={12}>
+                                    <Image className="emailmarketing-image" responsive src={logodesign}/>
                                 </Col>
                             </Col>
                         </Row>

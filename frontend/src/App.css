@@ -135,11 +135,9 @@ body {
   background-size: contain;
   background-repeat: no-repeat; }
 
-.testimonials {
-  height: 600px;
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: cover; }
+@media screen and (max-width: 768px) {
+  .testimonials {
+    min-height: 700px; } }
 
 .landingJumb {
   background-image: url("images/man.jpg");
@@ -432,9 +430,13 @@ footer {
   .footer li {
     list-style: none; }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .navbar-nav {
-    margin: 0 18% 2% 22%; } }
+    margin: 0 4% 2% 22%; } }
+
+@media (min-width: 1024px) and (max-width: 1400px) {
+  .navbar-nav {
+    margin: 0 0 2% 16%; } }
 
 .navbar-nav .menu-item {
   margin-top: 60px;
@@ -449,6 +451,9 @@ footer {
   @media (min-width: 768px) and (max-width: 992px) {
     .navbar-nav .menu-item {
       margin-top: 1px; } }
+  @media (min-width: 992px) and (max-width: 1400px) {
+    .navbar-nav .menu-item {
+      margin-top: 5px; } }
 
 .navbar-nav .modal-offerte-header {
   float: left;
@@ -464,6 +469,9 @@ footer {
   @media (min-width: 768px) and (max-width: 992px) {
     .navbar-nav .modal-offerte-header {
       margin-top: 1px; } }
+  @media (min-width: 992px) and (max-width: 1400px) {
+    .navbar-nav .modal-offerte-header {
+      margin-top: 5px; } }
 
 .navbar-default {
   background: #efc337;
@@ -479,6 +487,12 @@ footer {
   height: 150px;
   padding: 7px 14px;
   margin-top: 110px; }
+  @media (min-width: 1024px) and (max-width: 1400px) {
+    .header-logo {
+      margin-top: 115px; } }
+  @media (min-width: 992px) and (max-width: 1024px) {
+    .header-logo {
+      margin-top: 115px; } }
 
 .navbar-default .navbar-nav > li > a {
   color: black;
@@ -728,6 +742,9 @@ footer {
     padding: 0 4%; }
     .person-wrapper .testimonial-carousel .carousel-indicators {
       top: 222px; }
+      @media screen and (max-width: 768px) {
+        .person-wrapper .testimonial-carousel .carousel-indicators {
+          display: none; } }
       .person-wrapper .testimonial-carousel .carousel-indicators li {
         border-color: #3763ef; }
       .person-wrapper .testimonial-carousel .carousel-indicators li.active {
@@ -739,8 +756,11 @@ footer {
       width: 70%;
       margin: 0 auto;
       text-align: center; }
+      @media screen and (max-width: 768px) {
+        .person-wrapper .testimonial-carousel .carousel-inner {
+          width: 100%; } }
       .person-wrapper .testimonial-carousel .carousel-inner .item {
-        height: 250px; }
+        height: 100%; }
 
 .service-home {
   width: 100%;
@@ -1345,6 +1365,14 @@ footer {
   display: flex;
   flex-direction: row;
   border-top: 2px solid black; }
+  @media screen and (max-width: 1024px) {
+    .portfolio_item-header {
+      flex-direction: column;
+      height: 100%; } }
+  @media screen and (max-width: 1300px) and (min-width: 1025px) {
+    .portfolio_item-header {
+      flex-direction: column;
+      height: 100%; } }
   .portfolio_item-header .header-layers, .portfolio_item-header .image-layers {
     display: flex;
     align-items: center; }
@@ -1361,12 +1389,33 @@ footer {
     .portfolio_item-header .header-layers h3 {
       font-size: 25px;
       text-shadow: none; }
+    @media screen and (max-width: 1024px) {
+      .portfolio_item-header .header-layers {
+        order: 1;
+        width: 100%;
+        padding-top: 0; } }
+    @media screen and (max-width: 1300px) and (min-width: 1025px) {
+      .portfolio_item-header .header-layers {
+        order: 1;
+        width: 100%;
+        padding-top: 0; } }
   .portfolio_item-header .image-layers {
     width: calc(100% - 30vw);
     padding-right: 2%;
     order: 2;
     display: flex;
     justify-content: flex-end; }
+    @media screen and (max-width: 767px) {
+      .portfolio_item-header .image-layers {
+        display: none; } }
+    @media screen and (max-width: 1024px) and (min-width: 767px) {
+      .portfolio_item-header .image-layers {
+        order: 0;
+        width: 99%; } }
+    @media screen and (max-width: 1300px) and (min-width: 1025px) {
+      .portfolio_item-header .image-layers {
+        order: 0;
+        width: 99%; } }
     .portfolio_item-header .image-layers img:nth-child(2) {
       position: absolute;
       bottom: 85px;
@@ -1389,6 +1438,9 @@ footer {
 
 .portfolio_item-grid > .row:first-child {
   padding-top: 200px; }
+  @media screen and (max-width: 767px) {
+    .portfolio_item-grid > .row:first-child {
+      padding-top: 20px; } }
 
 .portfolio_item-grid > .row:nth-child(2) {
   padding: 100px 0; }
@@ -1426,14 +1478,16 @@ footer {
     position: absolute; }
 
 .StrategiePage {
-  margin: 10vh 0 5vh 0; }
+  margin: 10vh 0 0 0; }
+  .StrategiePage__intro h2 {
+    margin: 3vh 0 10vh 0; }
+  .StrategiePage__intro h3 {
+    margin: 10vh 0; }
 
 .section-cta {
   width: 100%;
   background-color: #efc337;
-  margin: 1em 0;
   padding: 50px 30px;
-  height: 22vh;
   display: flex; }
   @media (max-width: 780px) {
     .section-cta {
@@ -1682,7 +1736,7 @@ footer {
       font-size: 16px; }
 
 .Diensten {
-  padding: 5%; }
+  margin-top: 10vh; }
   @media (min-width: 1300px) {
     .Diensten .container {
       width: 1170px; } }
@@ -1714,11 +1768,15 @@ footer {
   .website .row {
     flex-direction: row;
     width: 100%; }
+  .website .waarom-website-txt h2 {
+    margin: 3vh 0 5vh 0; }
   .website .waarom-website-txt strong {
     font-size: 1.6em;
-    margin: 10px 0; }
+    line-height: 3em; }
   .website .mobile-responsive {
     margin: 20vh 0; }
+    .website .mobile-responsive p {
+      margin: 3vh 0; }
   .website strong {
     color: black;
     margin-top: 20px; }
@@ -1815,7 +1873,7 @@ footer {
   animation-name: shake; }
 
 .seo {
-  margin: 10vh 0 2vh 0; }
+  margin: 10vh 0 0 0; }
   .seo .section--belang {
     height: 60vh;
     display: flex;
@@ -1912,10 +1970,14 @@ footer {
   color: #3763ef;
   text-align: left;
   font-family: 'JOSEFIN-SANS-BOLD', Arial, Helvetica, sans-serif;
+  margin: 8vh 0 4vh 0;
   text-shadow: none; }
 
 .grafisch-email .marketing-email .emailmarketing-image {
   width: 85%; }
 
-.grafisch-email .row {
-  margin-bottom: 15vh; }
+.grafisch-email .row:first-child {
+  margin-bottom: 5vh; }
+
+.grafisch-email .section-cta .row {
+  margin-bottom: 0; }

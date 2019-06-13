@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
+import {CircleArrow as ScrollUpButton} from "react-scroll-up-button";
 import {fetchPosts} from "../../redux/actions/postActions";
 import dicomenu from "../../images/dicomenu1.png";
 import {Grid, Row, Col, Image, Button} from 'react-bootstrap';
@@ -9,6 +10,7 @@ import {Link} from 'react-router-dom';
 // https://mmehospitality.nl/project/
 {/*<Image src={dicomenu} className="contentImg"/>*/
 }
+
 class Portfolio extends Component {
     componentWillMount() {
         this.props.fetchPosts();
@@ -18,7 +20,7 @@ class Portfolio extends Component {
         const postItems = this.props.posts.map(post => (
                 <Col md={4} xs={12} key={post.id}>
                     <div>
-                        <Image src={post.url} className="contentImg"></Image>
+                        <Image src={post.url} className="contentImg"/>
                     </div>
                     <div className="contentTitle">
                         <h3>{post.title}</h3>
@@ -28,6 +30,9 @@ class Portfolio extends Component {
                     </div>
                 </Col>
         ));
+        const divStyle = {
+            backgroundImage: 'url(' + dicomenu + ')'
+        };
         return (
                 <div className="PortfolioPage">
 
@@ -48,21 +53,21 @@ class Portfolio extends Component {
                                                     <div className="row">
                                                         <div className="cell image-cell">
                                                             <div className="image-cell-container">
-                                                                <a href="https://mmehospitality.nl/project/jumbo-racedagen-2019/">
-                                                                    <figure className="image" style={{backgroundImage: "url('../images/dicomenu1.png')"}}>
+                                                                <Link to="portfolioitem/dicomenu">
+                                                                    <figure className="image" style={divStyle}>
                                                                         <span className="aspect-ratio"/>
                                                                     </figure>
-                                                                </a>
+                                                                </Link>
                                                             </div>
                                                         </div>
                                                         <div className="cell content-cell">
                                                             <div className="content-cell-container">
                                                                 <div>
-                                                                    <h2 className="title"><a href="https://mmehospitality.nl/project/jumbo-racedagen-2019/" rel="bookmark">Jumbo Racedagen 2019</a></h2>
-                                                                    <h3 className="client"><a href="https://mmehospitality.nl/client/circuit-van-zandvoort/">Circuit van Zandvoort</a></h3>
+                                                                    <h2 className="title"><Link to="portfolioitem/dicomenu" rel="bookmark">Dicomenu</Link></h2>
+                                                                    <h3 className="client"><Link to="portfolioitem/dicomenu">Webshop & marketing e-mails</Link></h3>
                                                                 </div>
                                                                 <p className="view-project">
-                                                                    <Link to="">Bekijk Project</Link>
+                                                                    <Link to="portfolioitem/dicomenu">Bekijk Project</Link>
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -328,6 +333,7 @@ class Portfolio extends Component {
                             </Col>
                         </Row>
                     </Grid>
+                    <ScrollUpButton/>
                 </div>
         );
     }
