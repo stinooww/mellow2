@@ -96,7 +96,6 @@ class Contact extends Component {
                             <ul>
                                 <li> Facebook</li>
                                 <li>Linkedin</li>
-                                <li>email</li>
                             </ul>
                             </div>
 

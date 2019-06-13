@@ -209,6 +209,10 @@ a, a:focus {
 
 .contact {
   padding-left: 10%; }
+
+.contact .contact-header {
+    margin-top: 10vh;
+}
   .contact p, .contact .contact-subheader {
     color: black;
     text-shadow: none;
@@ -216,8 +220,15 @@ a, a:focus {
   .contact .contact-section {
     display: flex;
     flex-direction: column; }
-    .contact .contact-section li {
-      color: black; }
+
+.contact .contact-section ul {
+    list-style-type: none;
+}
+
+.contact .contact-section ul li {
+    color: black;
+    font-size: 130%;
+}
     .contact .contact-section a:hover {
       color: #b28b0e; }
 
