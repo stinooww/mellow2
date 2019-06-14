@@ -209,10 +209,8 @@ a, a:focus {
 
 .contact {
   padding-left: 10%; }
-
-.contact .contact-header {
-    margin-top: 10vh;
-}
+  .contact .contact-header {
+    margin-top: 10vh; }
   .contact p, .contact .contact-subheader {
     color: black;
     text-shadow: none;
@@ -220,15 +218,11 @@ a, a:focus {
   .contact .contact-section {
     display: flex;
     flex-direction: column; }
-
-.contact .contact-section ul {
-    list-style-type: none;
-}
-
-.contact .contact-section ul li {
-    color: black;
-    font-size: 130%;
-}
+    .contact .contact-section ul {
+      list-style-type: none; }
+      .contact .contact-section ul li {
+        color: black;
+        font-size: 130%; }
     .contact .contact-section a:hover {
       color: #b28b0e; }
 
@@ -1774,7 +1768,7 @@ footer {
     display: none; }
 
 .website {
-  padding: 5%;
+  padding-top: 5%;
   width: 100%; }
   .website .row {
     flex-direction: row;
@@ -1901,66 +1895,68 @@ footer {
       margin: 1em 0; }
     .seo .section--belang .sea-link {
       color: black; }
-  .seo .row:nth-child(3) div:first-child {
-    display: flex;
-    justify-content: center; }
-    .seo .row:nth-child(3) div:first-child .img-seo {
-      height: 60%;
-      width: 60%; }
-  .seo .row:nth-child(3) aside {
-    display: flex;
-    margin: 40px 0;
-    line-height: 20px;
-    justify-content: space-around;
-    transition: all 0.3s ease-in-out;
-    transition-property: all;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in-out;
-    transition-delay: 0s; }
-    .seo .row:nth-child(3) aside article {
-      background: #efc337;
-      width: 30%;
-      padding: 25px;
-      box-sizing: border-box;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      -js-display: flex;
+  .seo .seo__voordelen {
+    margin: 12vh 0; }
+    .seo .seo__voordelen div:first-child {
       display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      max-width: 350px;
-      border-radius: 5px; }
-      .seo .row:nth-child(3) aside article h3 {
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        font-size: 21px;
-        letter-spacing: .88px;
-        text-transform: uppercase;
-        color: #666;
-        margin: 0 0 15px 0; }
-      .seo .row:nth-child(3) aside article p {
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        font-size: 16px;
-        letter-spacing: .285714px;
-        color: black; }
-      .seo .row:nth-child(3) aside article:first-child {
-        margin-right: 20px; }
-      .seo .row:nth-child(3) aside article strong {
-        font-family: 'JOSEFIN-SANS-BOLD', Arial, Helvetica, sans-serif;
-        color: #666;
-        margin-bottom: 25px; }
+      justify-content: center; }
+      .seo .seo__voordelen div:first-child .img-seo {
+        height: 60%;
+        width: 60%; }
+    .seo .seo__voordelen aside {
+      display: flex;
+      margin: 40px 0;
+      line-height: 20px;
+      justify-content: space-around;
+      transition: all 0.3s ease-in-out;
+      transition-property: all;
+      transition-duration: 0.3s;
+      transition-timing-function: ease-in-out;
+      transition-delay: 0s; }
+      .seo .seo__voordelen aside article {
+        background: #efc337;
+        width: 30%;
+        padding: 25px;
+        box-sizing: border-box;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        -js-display: flex;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        max-width: 350px;
+        border-radius: 5px; }
+        .seo .seo__voordelen aside article h3 {
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          font-size: 21px;
+          letter-spacing: .88px;
+          text-transform: uppercase;
+          color: #666;
+          margin: 0 0 15px 0; }
+        .seo .seo__voordelen aside article p {
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          font-size: 16px;
+          letter-spacing: .285714px;
+          color: black; }
+        .seo .seo__voordelen aside article:first-child {
+          margin-right: 20px; }
+        .seo .seo__voordelen aside article strong {
+          font-family: 'JOSEFIN-SANS-BOLD', Arial, Helvetica, sans-serif;
+          color: #666;
+          margin-bottom: 25px; }
 
 .seo-cta {
-  margin: 5vh 0;
+  margin: 100px 0;
   height: 40vh;
   width: 100%;
   background-color: lightgray;
-  padding: 3em; }
+  padding: 6em; }
   .seo-cta div form {
     display: flex;
     flex-flow: row wrap;

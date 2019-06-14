@@ -12,9 +12,11 @@ export default class SeoAnalyse extends Component {
                 <Row className="seo-cta">
                     <div>
                         <h2>
-                            Wil je graag te weten komen hoe jou website er voor staat?
-                            <br/> Vul je gegevens in en wij sturen je een GRATIS SEO analyse op!
+                            Wil je graag weten hoe jouw website er voor staat?
+
                         </h2>
+                        <h4> Vul je gegevens in en wij sturen je een GRATIS SEO analyse op!</h4>
+                        <br/>
                         <SEOwebsiteAnalyseForm user={{
 
                             Name   : '',
@@ -37,8 +39,7 @@ const formikEnhancer = withFormik({
                 .required('Uw naam is verplicht.'),
         bedrijfsnaam: Yup.string()
                 .min(2, "Dat is een korte naam")
-                .max(50, 'Veel te lang!')
-                .required('Uw naam is verplicht.'),
+                .max(50, 'Veel te lang!'),
         email       : Yup.string()
                 .email('Ongeldig email adres')
                 .max(50, 'Veel te lang!')

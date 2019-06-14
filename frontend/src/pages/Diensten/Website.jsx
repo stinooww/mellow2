@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 
-import {Grid, Row, Col, Image, Button} from 'react-bootstrap';
+import {Grid, Row, Col} from 'react-bootstrap';
 import CallToAction from '../../components/CallToAction/CallToAction';
-import scrollmagic from 'scrollmagic';
-import dicomenuBack from './../../images/frontLAYER.png';
-import dicomenuFRONT from './../../images/back_layer.png';
 
-import {Controller, Scene} from 'react-scrollmagic';
-import {Tween, Timeline} from 'react-gsap';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
+
 class Website extends Component {
 
     constructor(props) {
@@ -56,11 +56,11 @@ class Website extends Component {
                         </Row>
                         <Row>
                             <Col xs={8} className="mobile-responsive">
-                                <div className="mobile-img"/>
+                                <div className="mobile-img" data-aos="fade-up-right"/>
 
 
                             </Col>
-                            <Col xs={4} className="mobile-responsive">
+                            <Col xs={4} className="mobile-responsive" data-aos="fade-up-left" data-aos-mirror="true">
                                 <h3>Jouw website mobiel beschikbaar</h3>
                                 <p>
                                     In een tijdperk waarin smartphones niet meer weg te denken zijn uit ons dagelijks leven, is een mobiele website een absolute must !
@@ -73,9 +73,13 @@ class Website extends Component {
                                     Mobile beschikbare websites scoren bovendien ook beter bij Google dan niet mobiele websites.
                                 </p>
                             </Col>
-                            <Col xs={12}>
-                                <h3>
-                                    Dus stel dat jouw website niet responsief is en die van jouw concurrent wel dan geeft Google de voorang aan jouw concurrent.</h3>
+                            <Col xs={12} data-aos="fade-up">
+                                <h3 className="text-center">
+                                    Dus stel dat jouw website niet responsief is en die van jouw concurrent wel dan geeft Google de voorrang aan jouw concurrent.</h3>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
                                 <br/>
                             </Col>
                         </Row>

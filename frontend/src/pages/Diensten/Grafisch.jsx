@@ -5,6 +5,11 @@ import CallToAction from '../../components/CallToAction/CallToAction';
 import emailmarketing from '../../images/emailmarketing.png';
 import logodesign from '../../images/logodesign.png';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
+
 class Grafisch extends Component {
 
     render() {
@@ -29,7 +34,7 @@ class Grafisch extends Component {
                                         Wilt u deze verder door trekken? Wij maken ook smaakvolle business kaartjes of stickers.
                                     </p>
                                 </Col>
-                                <Col xs={12}>
+                                <Col xs={12} data-aos="zoom-in-down">
                                     <Image className="emailmarketing-image" responsive src={logodesign}/>
                                 </Col>
                             </Col>
@@ -38,10 +43,10 @@ class Grafisch extends Component {
                             <Col xs={12}>
                                 <h1>Marketings emails</h1>
                             </Col>
-                            <Col md={6} xs={12}>
+                            <Col md={6} xs={12} data-aos="zoom-out-right">
                                 <Image className="emailmarketing-image" src={emailmarketing}/>
                             </Col>
-                            <Col md={6} xs={12}>
+                            <Col md={6} xs={12} data-aos="zoom-out-left">
                                 <p>Klanten en prospects kan je snel en makkelijk bereiken via e-mail marketing. Denk bijvoorbeeld aan een nieuwsletter van je bedrijf, of om je producten en of
                                     kortingsacties hierop aan te prijzen.
                                 </p>
