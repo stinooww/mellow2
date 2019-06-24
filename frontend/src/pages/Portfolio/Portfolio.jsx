@@ -1,19 +1,27 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import {connect} from 'react-redux';
+
 import {CircleArrow as ScrollUpButton} from "react-scroll-up-button";
-import {fetchPosts} from "../../redux/actions/postActions";
+import axios from 'axios';
 import dicomenu from "../../images/dicomenu1.png";
 import {Grid, Row, Col, Image, Button} from 'react-bootstrap';
 // eslint-disable-next-line
 import {Link} from 'react-router-dom';
 // https://mmehospitality.nl/project/
+// https://www.youtube.com/watch?v=oQnojIyTXb8  voor axios
 {/*<Image src={dicomenu} className="contentImg"/>*/
 }
 
 class Portfolio extends Component {
-    componentWillMount() {
-        this.props.fetchPosts();
+    state = {
+        persons: [],
+    };
+
+    componentDidMount() {
+        axios.get('https://jsonplaceholder.typicode.com/users')
+                .then(res => {
+                    this.setState({persons: res.data})
+                })
     }
 
     render() {
@@ -36,8 +44,14 @@ class Portfolio extends Component {
         return (
                 <div className="PortfolioPage">
 
+
                     <Grid>
                         <Row className="show-grid">
+                            <ul>
+                                {
+                                    this.state.persons.map(person => <li key={person.id}> {person.name}</li>)
+                                }
+                            </ul>
                             {/*{postItems}*/}
                             <Col md={12}>
                                 <h1 className="portHead-title">Bekijk hier al onze projecten</h1>
@@ -339,12 +353,13 @@ class Portfolio extends Component {
     }
 }
 
-Portfolio.propTypes = {
-    fetchPosts: PropTypes.func.isRequired,
-    posts     : PropTypes.array.isRequired
-};
-const mapStateToProps = state => ({
-    posts: state.posts.items
-});
+// Portfolio.propTypes = {
+//     fetchPosts: PropTypes.func.isRequired,
+//     posts     : PropTypes.array.isRequired
+// };
+// const mapStateToProps = state => ({
+//     posts: state.posts.items
+// });
 
-export default connect(mapStateToProps, {fetchPosts})(Portfolio);
+// export default connect(mapStateToProps, {fetchPosts})(Portfolio);
+export default Portfolio;

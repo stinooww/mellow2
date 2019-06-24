@@ -730,6 +730,7 @@ footer {
   padding-top: 25px; }
 
 .person-wrapper {
+  height: 60vh;
   text-align: center; }
   .person-wrapper .show-grid {
     padding-bottom: 30px; }

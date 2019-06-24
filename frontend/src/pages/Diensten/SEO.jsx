@@ -138,6 +138,20 @@ class SEO extends Component {
                         </Row>
                         <Row className="sea" id="sea">
                             <Col md={12}>
+                                <h2>Snel gezien met SEA</h2>
+                                <p>
+                                    Dankzij SEA (Search Engine Advertising) verschijnt jouw boodschap , jouw aanwezigheid op Google helemaal bovenaan.
+                                    Je kiest zelf welke zoektermen het meest relevant zijn voor je bedrijf en die je advertentie kan triggeren.
+                                    <strong> Voor deze advertenties betaal je
+                                        alleen als iemand op jouw advertentie klikt. </strong>
+                                </p>
+                                <p>Concreet gaan we een zeer doelgerichte advertien voor je website maken waarbij we rekening houden met enkele parameters zoals locatie, apparaat en de termen waar je
+                                    op gevonden wil worden.
+                                    Je krijgt hier ook zeer snel resultaten van, die een groot voordeel zijn van pay-per-clickadvertenties.
+                                </p>
+                            </Col>
+                            <Col md={12}>
+                                <p className="text-center"> Het is dus een vlotte en efficiënte manier om meer bezoekers, inclusief nieuwe klanten, naar jouw website te leiden!</p>
                             </Col>
                         </Row>
                     </Grid>
