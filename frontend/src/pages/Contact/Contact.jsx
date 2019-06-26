@@ -94,8 +94,15 @@ class Contact extends Component {
                             <div>
                             <h4>Social media</h4>
                             <ul>
-                                <li> Facebook</li>
-                                <li>Linkedin</li>
+                                <li>
+                                    <a href="https://www.facebook.com/mellowwebdesign">
+                                        <i id="social-fb" className="fa fa-facebook-square fa-3x social"/></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/company/mellow-webdesign">
+                                        <i id="social-tw"
+                                           className="fa fa-linkedin-square fa-3x social"/></a></li>
+
                             </ul>
                             </div>
 

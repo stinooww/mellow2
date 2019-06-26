@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 import {withFormik} from 'formik';
 import * as Yup from 'yup';
 import classnames from 'classnames';
@@ -27,8 +28,18 @@ const formikEnhancer = withFormik({
         ...user,
     }),
     handleSubmit    : (payload, {setSubmitting}) => {
-        alert(payload.email + payload.vraag);
+
         setSubmitting(false);
+        const user = {
+            name : payload.firstName + " " + payload.lastName,
+            email: payload.email,
+            vraag: payload.vraag
+        };
+        axios.post('https://jsonplaceholder.typicode.com/users', {user})
+                .then(res => {
+
+                    console.log(res.data);
+                });
     },
     displayName     : 'MyForm',
 });

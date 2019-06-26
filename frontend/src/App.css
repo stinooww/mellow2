@@ -32,7 +32,7 @@ a {
   font-style: normal; }
 
 h1 {
-  font-family: 'mellow', Arial, Helvetica, sans-serif;
+  font-family: 'JOSEFIN-SANS-BOLD', Arial, Helvetica, sans-serif;
   padding: 1em 0;
   color: black; }
 
@@ -55,7 +55,7 @@ h3 {
 h2 {
   margin-top: 0;
   margin-bottom: 0.65em;
-  color: #3763ef;
+  color: #efc337;
   font-family: 'JOSEFIN-SANS-REG', Arial, Helvetica, sans-serif;
   font-size: 3em;
   font-weight: 900;
@@ -206,6 +206,9 @@ a, a:focus {
   outline: none;
   text-decoration: none;
   color: inherit; }
+
+.ScrollUpButton__Container {
+  bottom: 40px !important; }
 
 .contact {
   padding-left: 10%; }
@@ -650,6 +653,9 @@ footer {
   top: 51%;
   left: 50%;
   transform: translate(-50%, -50%); }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .modal-main {
+      top: 60%; } }
 
 .mellow-btn .svg-inline--fa {
   padding-top: 5px;
@@ -682,7 +688,9 @@ footer {
   text-align: center;
   background-color: #efc337; }
   .opper-form-offerte h1 {
-    padding: 0; }
+    padding: 0;
+    font-weight: 400;
+    font-family: 'JOSEFIN-SANS-REG', Arial, Helvetica, sans-serif; }
   .opper-form-offerte h3 {
     text-shadow: none;
     font-size: 30px;
@@ -730,7 +738,7 @@ footer {
   padding-top: 25px; }
 
 .person-wrapper {
-  height: 60vh;
+  height: 70vh;
   text-align: center; }
   .person-wrapper .show-grid {
     padding-bottom: 30px; }
@@ -1737,9 +1745,10 @@ footer {
   .timeline .vertical-timeline--two-columns .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content .vertical-timeline-element-date {
     right: 139% !important; }
   .timeline .vertical-timeline-element-icon {
-    background: #3763ef !important; }
+    background: #efc337 !important; }
     .timeline .vertical-timeline-element-icon svg {
-      font-size: 16px; }
+      font-size: 16px;
+      left: 52%; }
 
 .Diensten {
   margin-top: 10vh; }
@@ -1918,6 +1927,7 @@ footer {
         background: #efc337;
         width: 30%;
         padding: 25px;
+        height: 350px;
         box-sizing: border-box;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1933,11 +1943,12 @@ footer {
           font-style: normal;
           font-weight: 700;
           line-height: normal;
-          font-size: 21px;
+          font-size: 24px;
+          text-align: center;
           letter-spacing: .88px;
           text-transform: uppercase;
           color: #666;
-          margin: 0 0 15px 0; }
+          margin: 0 0 30px 0; }
         .seo .seo__voordelen aside article p {
           font-style: normal;
           font-weight: 400;
@@ -1947,10 +1958,11 @@ footer {
           color: black; }
         .seo .seo__voordelen aside article:first-child {
           margin-right: 20px; }
-        .seo .seo__voordelen aside article strong {
+        .seo .seo__voordelen aside article .seo__subtitle {
           font-family: 'JOSEFIN-SANS-BOLD', Arial, Helvetica, sans-serif;
           color: #666;
-          margin-bottom: 25px; }
+          margin-bottom: 20px;
+          font-size: 25px; }
 
 .seo-cta {
   margin: 100px 0;
@@ -1972,6 +1984,13 @@ footer {
     .seo-cta div form button {
       display: flex;
       justify-content: flex-end; }
+
+.sea-context {
+  margin: 20vh 0; }
+  .sea-context p {
+    margin-bottom: 10vh; }
+  .sea-context .sea-shoutout {
+    color: black; }
 
 .grafisch-email h1 {
   font-size: 35px;

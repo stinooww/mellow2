@@ -66,8 +66,8 @@ class SEO extends Component {
                                              data-aos-delay="300"
                                              data-aos-duration="1000">
                                         <h3 className="seo-stappen-head"> 1</h3>
+                                        <strong className="seo__subtitle">Analyse</strong>
                                         <p>
-                                            <strong>Analyse</strong>
                                             <br/>
                                             We starten met een keyword-analyse.
                                             Dit doen we om de trefwoorden te zoeken die je potentiële klanten gebruiken in Google
@@ -80,10 +80,10 @@ class SEO extends Component {
                                              data-aos-delay="300"
                                              data-aos-duration="1000">
                                         <h3>2</h3>
+                                        <strong className="seo__subtitle">
+                                            Content optimalisatie
+                                        </strong>
                                         <p>
-                                            <strong>
-                                                Content optimalisatie
-                                            </strong>
                                             <br/>
                                             We bekijken de content die op je website zich bevind zoals zoekwoorden in titels en teksten en passen dit aan.
                                             <br/>
@@ -112,10 +112,10 @@ class SEO extends Component {
                                              data-aos-delay="300"
                                              data-aos-duration="1000">
                                         <h3>3</h3>
+                                        <strong className="seo__subtitle">
+                                            Technische optimalisatie
+                                        </strong>
                                         <p>
-                                            <strong>
-                                                Technische optimalisatie
-                                            </strong>
                                             <br/>
                                             Tenslotte voegen we ook verschillende stukjes code toe aan de website,
                                             zodat zoek robots gemakelijker door de site kunnen navigeren.
@@ -136,7 +136,7 @@ class SEO extends Component {
                                     wat jou ook weer meer bezoekers en dus potentiële klanten oplevert.</p>
                             </Col>
                         </Row>
-                        <Row className="sea" id="sea">
+                        <Row className="sea-context" id="sea">
                             <Col md={12}>
                                 <h2>Snel gezien met SEA</h2>
                                 <p>
@@ -145,13 +145,14 @@ class SEO extends Component {
                                     <strong> Voor deze advertenties betaal je
                                         alleen als iemand op jouw advertentie klikt. </strong>
                                 </p>
-                                <p>Concreet gaan we een zeer doelgerichte advertien voor je website maken waarbij we rekening houden met enkele parameters zoals locatie, apparaat en de termen waar je
+                                <p>Concreet gaan we een zeer doelgerichte advertensie voor je website maken waarbij we rekening houden met enkele parameters zoals locatie, apparaat en de termen waar
+                                    je
                                     op gevonden wil worden.
                                     Je krijgt hier ook zeer snel resultaten van, die een groot voordeel zijn van pay-per-clickadvertenties.
                                 </p>
                             </Col>
                             <Col md={12}>
-                                <p className="text-center"> Het is dus een vlotte en efficiënte manier om meer bezoekers, inclusief nieuwe klanten, naar jouw website te leiden!</p>
+                                <p className="text-center sea-shoutout"> Het is dus een vlotte en efficiënte manier om meer bezoekers, inclusief nieuwe klanten, naar jouw website te leiden!</p>
                             </Col>
                         </Row>
                     </Grid>

@@ -4,6 +4,7 @@ import ModalOfferte from './ModalOfferte';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faAddressBook, faAddressCard, faAngleLeft, faAngleRight, faPaperPlane} from "@fortawesome/free-solid-svg-icons";
 import Select from 'react-select';
+import axios from "axios";
 //  zeker dit bekijken! https://github.com/jaredpalmer/formik
 
 const options = [
@@ -135,7 +136,7 @@ class ModalOfferteStart extends Component {
 
     onSubmit(e) {
         e.preventDefault();
-        const post = {
+        const offerte = {
             firstname: 'Voornaam',
             name     : ' Achternaam',
             email    : 'Uw email adres',
@@ -152,6 +153,11 @@ class ModalOfferteStart extends Component {
 
         if(validation.isValid) {
             // handle actual form submission here
+            axios.post('https://jsonplaceholder.typicode.com/users', {offerte})
+                    .then(res => {
+
+                        console.log(res.data);
+                    });
         }
     }
 
@@ -161,10 +167,11 @@ class ModalOfferteStart extends Component {
                 <div>
                     <ModalOfferte show={this.state.isToggleOn} handleClose={this.hideModal}>
                         <Grid className="opper-form-offerte">
-                            <h1>Dus je wilt met ons samenwerken?</h1>
-                            <h3>Super ( of => dat vinden we geweldig)! <br/> Vertel ons in 2 stappen wat meer over je project.
-                                <br/> en wij contacteren je zo snel mogenlijk
-                            </h3>
+                            <div><h1>Dus je wilt met ons samenwerken?</h1>
+                                <h4>Super ! Vertel ons in 2 stappen wat meer over je project.
+                                    <br/> en wij contacteren je zo snel mogenlijk
+                                </h4></div>
+
                             <form id="form-offerte"
                                   className="form-offerte"
                                   autoComplete="off"
@@ -174,7 +181,7 @@ class ModalOfferteStart extends Component {
                                 <Grid className="fieldset fieldset1" id="fieldset-1">
                                     <div className="legend">
                                     <span>
-                                     <FontAwesomeIcon size="sm" icon={faAddressBook}/>
+                                     <FontAwesomeIcon size="2x" icon={faAddressBook}/>
 
                                              Uw gegevens</span>
                                     </div>

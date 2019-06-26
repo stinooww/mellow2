@@ -38,7 +38,7 @@ a {
 }
 
 h1 {
-  font-family: 'mellow', Arial, Helvetica, sans-serif;
+  font-family: 'JOSEFIN-SANS-BOLD', Arial, Helvetica, sans-serif;
   padding: 1em 0;
   color: black;
 }
@@ -67,7 +67,7 @@ h3 {
 h2 {
   margin-top: 0;
   margin-bottom: 0.65em;
-  color: $blue;
+  color: $yellow;
   font-family: 'JOSEFIN-SANS-REG', Arial, Helvetica, sans-serif;
   font-size: 3em;
   font-weight: 900;
@@ -275,4 +275,8 @@ a, a:focus {
   outline: none;
   text-decoration: none;
   color: inherit
+}
+
+.ScrollUpButton__Container {
+  bottom: 40px !important;
 }
