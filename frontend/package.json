@@ -32,8 +32,6 @@
     "react-select": "^2.4.1",
     "react-typist": "^2.0.4",
     "react-vertical-timeline-component": "^2.3.1",
-    "redux": "^4.0.0",
-    "redux-thunk": "^2.3.0",
     "scrollmagic": "^2.0.6",
     "validator": "^10.7.1",
     "yup": "^0.27.0"
