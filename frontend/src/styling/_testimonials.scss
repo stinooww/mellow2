@@ -1,37 +1,70 @@
-h1, h2, h3, p {
-  color: white;
-}
-
-h1 {
+.person-wrapper {
+  height: 70vh;
   text-align: center;
-}
-
-h2 {
-  font-style: italic;
-  font-size: 28px;
-  text-align: center;
-}
-
-h3 {
-
-  font-size: 40px;
-  text-shadow: #6c6c6c 2px 2px;
-}
-
-.testimonial-title {
-  padding: 5%;
-}
-
-.testimonial-carousel {
-  background-color: #6c6c6c80;
-  margin: 1% 25%;
-  padding: 5%;
-
-  .carousel-indicators {
-    top: 202px;
+  .show-grid {
+    padding-bottom: 30px;
   }
 
-  .carousel-control {
-    display: none;
+  .testimonial-title {
+    padding: 5%;
+
+    h2, h3 {
+      text-align: center !important;
+    }
+
+    h2 {
+      color: black;
+    }
+
+    h3 {
+      font-style: italic;
+      font-size: 20px;
+    }
+
+  }
+
+  .testimonial-carousel {
+
+    margin: 0 12%;
+    padding: 0 4%;
+
+    .carousel-indicators {
+      top: 222px;
+      @media screen and (max-width: $Tablet) {
+        display: none;
+
+      }
+      li {
+        border-color: $blue;
+      }
+
+      li.active {
+        background-color: $blue;
+      }
+    }
+
+    .carousel-control {
+      display: inherit;
+      background: none;
+    }
+
+    .carousel-inner {
+      width: 70%;
+      margin: 0 auto;
+      text-align: center;
+      @media screen and (max-width: $Tablet) {
+        width: 100%;
+
+      }
+      .item {
+        height: 100%;
+        @media screen and (max-width: $Tablet) {
+
+
+        }
+      }
+    }
+
   }
 }
+

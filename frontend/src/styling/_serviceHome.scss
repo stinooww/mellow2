@@ -17,13 +17,13 @@
     margin: 0 0 2em 0;
     display: flex;
     flex-direction: column;
-
+    align-items: center;
     div:nth-child(2), div:nth-child(3) {
-      margin-left: 50px;
+
     }
   }
 
-  h2, p {
+  p {
     color: black;
     @media (max-width: 991px) {
       text-align: center;
@@ -39,22 +39,10 @@
   }
 
   .icon-margin {
-    margin-left: 120px;
-    @media (max-width: 991px) {
-      margin-left: 40%;
-    }
-    @media (max-width: 1199px) and (min-width: 992px) {
-      margin-left: 13%;
-    }
+
   }
 
   .icon-margin1 {
-    margin-left: 75px;
-    @media (max-width: 991px) {
-      margin-left: 30%;
-    }
-    @media (max-width: 1199px) and (min-width: 992px) {
-      margin-left: 1%;
-    }
+
   }
 }

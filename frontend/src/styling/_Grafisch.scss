@@ -1,0 +1,29 @@
+.grafisch-email {
+  h1 {
+    font-size: 35px;
+    color: $blue;
+    text-align: left;
+    font-family: 'JOSEFIN-SANS-BOLD', Arial, Helvetica, sans-serif;
+    margin: 8vh 0 4vh 0;
+    text-shadow: none;
+  }
+
+  .marketing-email {
+    .emailmarketing-image {
+      width: 85%;
+    }
+  }
+
+  .row {
+    &:first-child {
+      margin-bottom: 5vh;
+    }
+
+  }
+
+  .section-cta {
+    .row {
+      margin-bottom: 0;
+    }
+  }
+}

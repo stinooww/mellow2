@@ -1,0 +1,159 @@
+
+
+.portfolio_item-header {
+  width: 100%;
+  height: 70vh;
+  background-color: $yellow;
+  display: flex;
+  flex-direction: row;
+  border-top: 2px solid black;
+  @media screen and (max-width: $smallLaptop) {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  @media screen and (max-width: 1300px) and (min-width: 1025px) {
+    flex-direction: column;
+    height: 100%;
+  }
+
+
+  .header-layers, .image-layers {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-layers {
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: baseline;
+    order: 1;
+    width: calc(100% - 60vw);
+    padding: 20px 0 80px 100px;
+    h1, h3 {
+      text-align: left;
+      color: black;
+    }
+
+    h3 {
+      font-size: 25px;
+      text-shadow: none;
+    }
+
+    @media screen and (max-width: $smallLaptop) {
+      order: 1;
+      width: 100%;
+      padding-top: 0;
+    }
+    @media screen and (max-width: 1300px) and (min-width: 1025px) {
+      order: 1;
+      width: 100%;
+      padding-top: 0;
+    }
+  }
+
+  .image-layers {
+    width: calc(100% - 30vw);
+    padding-right: 2%;
+    order: 2;
+    display: flex;
+    justify-content: flex-end;
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+    @media screen and (max-width: $smallLaptop) and (min-width: $bigGsm) {
+      order: 0;
+      width: 99%;
+    }
+
+    @media screen and (max-width: 1300px) and (min-width: 1025px) {
+      order: 0;
+      width: 99%;
+    }
+
+    img {
+      &:nth-child(2) {
+        position: absolute;
+        bottom: 85px;
+        right: 35px;
+      }
+    }
+  }
+}
+
+.portfolio_item-grid {
+
+  h1, h3, p {
+    color: black;
+  }
+
+  h1 {
+    font-size: 35px;
+    font-weight: 500;
+    margin: 8% 0 3% 0;
+  }
+
+  h3 {
+    text-shadow: none;
+    font-weight: 300;
+    font-size: 34px;
+    text-align: center;
+    margin: 1%;
+  }
+
+  > .row:first-child {
+    padding-top: 200px;
+    @media screen and (max-width: $bigGsm) {
+      padding-top: 20px;
+    }
+  }
+
+  > .row:nth-child(2) {
+    padding: 100px 0;
+  }
+
+  .no-problemo {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.5px;
+    color: $yellow;
+    text-shadow: #6c6c6c 1px 1px 1px;
+  }
+
+
+  .dicomenu-website {
+    margin: 1% 20%;
+    text-align: center;
+  }
+
+  .webhosting {
+    margin: 7% 20%;
+    text-align: center;
+  }
+
+  .banner {
+    height: 40vh;
+    overflow: hidden;
+
+    .innerBanner {
+      position: relative;
+      top: -100%;
+      height: 200%;
+    }
+  }
+
+}
+
+
+.parallax {
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+  }
+}
+

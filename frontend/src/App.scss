@@ -1,3 +1,5 @@
+@import "styling/variables";
+@import "styling/General";
 @import "styling/Contact";
 @import "styling/landing";
 @import "styling/Portfolio";
@@ -10,103 +12,15 @@
 @import "styling/form";
 @import "styling/ServiceHomePictures";
 @import "styling/ServiceTile";
-@import "styling/ServicesAll";
-@import "styling/variables";
+@import "styling/Portfolioitem";
+@import "styling/Strategie";
 @import "styling/CallToAction";
+@import "styling/About";
+@import "styling/Timeline";
+@import "styling/Webhosting";
+@import "styling/Website";
+@import "styling/Reactcontactform";
+@import "styling/Seo";
+@import "styling/Grafisch";
 
 
-.dicomenu {
-  background-image: url("images/dicomenu1.png");
-  //background-size: cover;
-  //background-repeat: no-repeat;
-  //
-  //&:hover {
-  //  background-image: url("images/dicomenu1-1.jpg");
-  //}
-}
-
-.finnegans {
-  background-image: url("images/finnegans.png");
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
-}
-
-.peeraer {
-  background-image: url("images/peeraer.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.bodyupdate {
-  background-image: url("images/bodyupdate.jpg");
-  background-size: cover;
-  background-position: left;
-  background-repeat: no-repeat;
-}
-
-.sea {
-  background-image: url("images/seo.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.testimonials {
-  background-image: url("images/wood.jpg");
-  height: 600px;
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.landingJumb {
-  background-image: url("images/smartmockups4.jpg");
-  height: 1000px;
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 0;
-  border-radius: 0;
-}
-
-.header-logo {
-
-}
-
-.container-fluid {
-  padding: 0;
-}
-
-a {
-  text-decoration: none !important;
-}
-
-@font-face {
-  font-family: mellow;
-  src: url("styling/font/lithos.otf");
-  font-size: 100%;
-  font-weight: normal;
-  font-style: normal;
-}
-
-h1 {
-  font-family: 'mellow', Arial, Helvetica, sans-serif;
-}
-
-p {
-
-  font-size: 22px;
-
-}
-
-@media (min-width: 1300px) {
-  .container {
-    width: 1350px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-
-  }
-}

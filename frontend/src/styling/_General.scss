@@ -1,0 +1,282 @@
+/**
+   * Base Settings/Overwrite Normalize
+   */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+@font-face {
+  font-family: mellow;
+  src: url("styling/font/lithos.otf");
+  font-size: 100%;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: JOSEFIN-SANS-REG;
+  src: url("styling/font/JosefinSans-Regular.ttf");
+  font-size: 100%;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: JOSEFIN-SANS-BOLD;
+  src: url("styling/font/JosefinSans-Bold.ttf");
+  font-size: 100%;
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-family: 'JOSEFIN-SANS-BOLD', Arial, Helvetica, sans-serif;
+  padding: 1em 0;
+  color: black;
+}
+
+figure {
+  margin: 0;
+}
+
+p {
+  font-size: 22px;
+  margin: 0;
+  color: $color-grey;
+  font-family: 'JOSEFIN-SANS-REG', Arial, Helvetica, sans-serif;
+  // https://www.fontsquirrel.com/fonts/josefin-sans
+}
+
+h3 {
+  font-size: 27px;
+  color: $blue;
+  text-align: left;
+  font-family: 'JOSEFIN-SANS-BOLD', Arial, Helvetica, sans-serif;
+
+  text-shadow: none;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 0.65em;
+  color: $yellow;
+  font-family: 'JOSEFIN-SANS-REG', Arial, Helvetica, sans-serif;
+  font-size: 3em;
+  font-weight: 900;
+  line-height: 1.2;
+  text-align: left;
+}
+
+@media (min-width: 1300px) {
+  .container {
+    width: 1350px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+
+  }
+}
+
+body {
+
+  font-size: 100%;
+  line-height: 1.6;
+  color: black;
+  background-color: white;
+
+  @media (min-width: $mq-xs) {
+    font-size: 102.5%;
+  }
+
+  @media (min-width: $mq-sm) {
+    font-size: 105%;
+  }
+
+  @media (min-width: $mq-md) {
+    font-size: 107.5%;
+  }
+
+  @media (min-width: $mq-lg) {
+    font-size: 110%;
+  }
+
+  @media (min-width: $mq-xl) {
+    font-size: 115%;
+  }
+
+  @media (min-width: $mq-xxl) {
+    font-size: 125%;
+  }
+}
+
+
+// vertical divider
+.elementor-divider {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  line-height: 0;
+  font-size: 0;
+}
+
+.elementor-divider-separator {
+  border-top-style: solid;
+  border-top-width: 3px;
+  border-top-color: $blue;
+  width: 40px;
+  display: inline-block;
+}
+
+.green {
+  color: $green;
+}
+
+.red {
+  color: $red;
+}
+
+
+.dicomenu {
+  background-image: url("images/dicomenu1.png");
+  //background-size: cover;
+  //background-repeat: no-repeat;
+  //
+  //&:hover {
+  //  background-image: url("images/dicomenu1-1.jpg");
+  //}
+}
+
+.finnegans {
+  background-image: url("images/finnegans.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.peeraer {
+  background-image: url("images/peeraer.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bodyupdate {
+  background-image: url("images/bodyupdate.jpg");
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.sea {
+  background-image: url("images/seo.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.testimonials {
+  @media screen and (max-width: $Tablet) {
+    min-height: 700px;
+
+  }
+}
+
+.landingJumb {
+  background-image: url("images/man.jpg");
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 0;
+
+}
+
+.mobile-img {
+  background-image: url("images/responsive.png");
+  height: 500px;
+  background-position: center;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+small {
+  font-size: 80%
+}
+
+img {
+  border: 0
+}
+
+figure {
+  margin: 1em 40px
+}
+
+figcaption, figure {
+  display: block
+}
+
+a {
+  background: transparent
+}
+
+a:active, a:hover {
+  outline: 0
+}
+
+
+.hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0
+}
+
+::-moz-selection {
+  background: #FFE9A1;
+  text-shadow: none
+}
+
+::selection {
+  background: #FFE9A1;
+  text-shadow: none
+}
+
+.hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0
+}
+
+img {
+  vertical-align: middle
+}
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table
+}
+
+.clearfix:after {
+  clear: both
+}
+
+
+a, a:focus {
+  outline: none;
+  text-decoration: none;
+  color: inherit
+}
+
+.ScrollUpButton__Container {
+  bottom: 40px !important;
+}

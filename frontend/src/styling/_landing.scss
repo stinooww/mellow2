@@ -1,22 +1,31 @@
 
 .landingJumb {
-  .container {
-    padding-top: 10%;
+
+  .landingJumb-cta {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     h1 {
-      color: white;
-      font-size: 50px;
-      text-align: left;
+      color: white !important;
+      font-size: 3rem;
+      text-align: center;
       text-shadow: #6c6c6c 2px 2px;
     }
 
     .cta-landing {
-      margin-top: 80px;
+      margin-top: 5vh;
       font-size: 18px;
       text-transform: uppercase;
+      width: 250px;
     }
-
   }
+
+
+
 
 }
 

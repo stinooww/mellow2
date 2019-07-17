@@ -1,12 +1,11 @@
-@import "variables";
+
 
 .contact {
   .contact-header {
-    padding-top: 5%;
-    padding-bottom: 2%;
+    margin-top: 10vh;
   }
-
-  p, .contact-header, .contact-subheader {
+  padding-left: 10%;
+  p, .contact-subheader {
     color: black;
     text-shadow: none;
     text-align: left;
@@ -14,9 +13,15 @@
   }
 
   .contact-section {
-    li {
-      color: black;
+    ul {
+      list-style-type: none;
+
+      li {
+        color: black;
+        font-size: 130%;
+      }
     }
+
 
     a:hover {
       color: darken($yellow, 20%);
@@ -40,6 +45,11 @@
     }
   }
 
+  textarea {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
   label.control-label {
 
   }
@@ -47,7 +57,7 @@
   .mellow-btn {
 
     text-transform: uppercase;
-    margin: 0;
+    margin: 20px 0;
     width: 130px;
   }
 }

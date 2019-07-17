@@ -2,10 +2,11 @@ import PropTypes from 'prop-types';
 import React, {Component} from 'react';
 
 import Landing from '../../components/landing/Landing';
-import ServiceAboutHome from '../../components/services/ServiceAboutHome';
+import ServiceAboutHome from '../../components/WhatWeDo/ServiceAboutHome';
 import Testimonials from '../../components/Testimonials/Testimonials';
 import ServiceHomePictures from '../../components/services/ServiceHomePictures';
 import CallToAction from '../../components/CallToAction/CallToAction';
+import {CircleArrow as ScrollUpButton} from "react-scroll-up-button";
 
 class Home extends Component {
     static propTypes = {
@@ -23,6 +24,7 @@ class Home extends Component {
                         <Testimonials/>
                     </div>
                     <CallToAction/>
+                    <ScrollUpButton/>
                 </div>
         )
     }

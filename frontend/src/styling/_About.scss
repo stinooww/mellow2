@@ -1,0 +1,230 @@
+.about {
+
+  /**
+   * Mixins
+   */
+  @mixin nth-animation-delay($items: 3, $time: 0.1s) {
+    @for $i from 1 through $items {
+
+      &:nth-child(#{$i}) {
+        animation-delay: $time * $i;
+      }
+    }
+  }
+
+
+
+
+
+  a {
+    padding: 0.5em 1em;
+    font-size: 0.8em;
+    color: $color-grey;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    border: 1px solid $color-grey;
+    transition: all 0.3s ease-in;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: white;
+      background-color: $color-grey;
+    }
+  }
+
+
+  ::selection {
+    color: white;
+    background-color: $color-alpha;
+    text-shadow: none;
+  }
+
+
+  .post {
+    min-height: 100vh;
+    width: 100%;
+
+    border: 0.5em solid white;
+
+    @media (min-width: $mq-md) {
+      display: flex;
+      height: 100vh;
+      min-height: 40em;
+    }
+
+    & > *:first-child {
+      position: relative;
+      height: 14em;
+
+
+      @media (min-width: $mq-sm) {
+        height: 18em;
+      }
+
+      @media (min-width: $mq-md) {
+        flex-basis: 50%;
+        max-width: 50%;
+        height: auto;
+      }
+
+      @media (min-width: $mq-xl) {
+        flex-basis: 50%;
+        max-width: 50%;
+      }
+
+      .stijnJonas {
+        width: 100%;
+        padding-top: 10%;
+        @media (min-width: $mq-sm) {
+          padding-top: 0;
+        }
+        @media (min-width: $mq-md) {
+          padding-top: 20%;
+        }
+      }
+    }
+
+    & > *:last-child {
+
+      @media (min-width: $mq-md) {
+        flex-basis: 50%;
+        max-width: 50%;
+      }
+
+      @media (min-width: $mq-xl) {
+        flex-basis: 50%;
+        max-width: 50%;
+      }
+    }
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+
+      padding: 2em;
+
+      overflow-y: auto;
+      @media (min-width: $mq-sm) {
+        padding-top: 25%;
+      }
+      @media (min-width: $mq-lg) {
+        padding-top: 1%;
+      }
+    }
+
+    &__category {
+      position: relative;
+      text-transform: uppercase;
+      letter-spacing: 0.3em;
+      overflow: hidden;
+
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+
+        height: 2px;
+        width: 12em;
+
+        background-color: black;
+        animation: slide-in 1s ease-in both 0.5s;
+      }
+    }
+
+    &__content {
+      padding: 2em 0;
+
+      @media (min-width: $mq-md) {
+        padding: 3em 2em 0 2em;
+      }
+    }
+
+    &__time {
+      display: inline-block;
+      margin-bottom: 0.5em;
+
+      font-weight: 600;
+      font-size: 0.8em;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    &__header {
+      overflow: hidden;
+
+      span {
+        @include nth-animation-delay();
+
+        display: inline-block;
+
+        animation: slide-up 0.8s ease-in-out both;
+      }
+    }
+
+    &__text {
+      font-weight: 300;
+      animation: fade-in 0.8s ease-in-out both 0.5s;
+    }
+
+    &__link {
+      text-align: right;
+    }
+  }
+
+  /**
+   * Helpers
+   */
+  .absolute-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    animation: fade-in 0.8s ease-in-out both 1s;
+  }
+
+  /**
+   * Animations
+   */
+  @keyframes slide-in {
+    0% {
+      transform: translate3d(-100%, 0, 0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes slide-up {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+}
+
+.cta-padding {
+  margin: 100vh 0 10vh 0;
+}

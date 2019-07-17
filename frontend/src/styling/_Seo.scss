@@ -1,0 +1,155 @@
+.seo {
+  margin: 10vh 0 0 0;
+
+
+  .section--belang {
+    height: 60vh;
+    display: flex;
+    margin-bottom: 15vh;
+
+    div:first-child {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .img-google {
+      width: 50%;
+      display: flex;
+      align-items: center;
+    }
+
+    p {
+      margin: 1em 0;
+    }
+
+    .sea-link {
+      color: black;
+    }
+  }
+
+  .seo__voordelen {
+    margin: 12vh 0;
+    & div:first-child {
+      display: flex;
+      justify-content: center;
+
+      .img-seo {
+        height: 60%;
+        width: 60%;
+      }
+    }
+
+    aside {
+      display: flex;
+      margin: 40px 0;
+      line-height: 20px;
+      justify-content: space-around;
+      transition: all 0.3s ease-in-out;
+      transition-property: all;
+      transition-duration: 0.3s;
+      transition-timing-function: ease-in-out;
+      transition-delay: 0s;
+
+      article {
+        background: $yellow;
+        width: 30%;
+        padding: 25px;
+        height: 350px;
+        box-sizing: border-box;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        -js-display: flex;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        max-width: 350px;
+        border-radius: 5px;
+
+        h3 {
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          font-size: 24px;
+          text-align: center;
+          letter-spacing: .88px;
+          text-transform: uppercase;
+          color: #666;
+          margin: 0 0 30px 0;
+        }
+
+        p {
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          font-size: 16px;
+          letter-spacing: .285714px;
+          color: black;
+        }
+
+        &:first-child {
+          margin-right: 20px;
+        }
+
+        .seo__subtitle {
+          font-family: 'JOSEFIN-SANS-BOLD', Arial, Helvetica, sans-serif;
+          color: #666;
+          margin-bottom: 20px;
+          font-size: 25px;
+        }
+
+
+      }
+
+
+    }
+  }
+}
+
+
+.seo-cta {
+  margin: 100px 0;
+  height: 40vh;
+  width: 100%;
+  background-color: lightgray;
+  padding: 6em;
+
+  div {
+    form {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-evenly;
+
+      .label {
+        display: none;
+      }
+
+      .input-group {
+        display: flex;
+        width: 250px;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+
+      button {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+
+}
+
+.sea-context {
+  margin: 20vh 0;
+
+  p {
+    margin-bottom: 10vh;
+  }
+
+  .sea-shoutout {
+    color: black;
+  }
+}

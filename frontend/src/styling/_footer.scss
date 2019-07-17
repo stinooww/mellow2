@@ -1,5 +1,9 @@
 @import "variables";
 
+footer {
+  position: sticky;
+  // margin-top: 109px;
+}
 .footer {
   background-color: black;
 
@@ -12,21 +16,25 @@
 
     }
   }
-}
 
-p, .text-footer, li {
-  color: white;
-}
-
-
-a {
-  color: $yellow;
-
-  &:hover {
+  p, .text-footer, li {
     color: white;
+    font-size: 1.5em;
+  }
+
+  a {
+    color: $yellow;
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  li {
+    list-style: none;
   }
 }
 
-li {
-  list-style: none;
-}
+
+
+

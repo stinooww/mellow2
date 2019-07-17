@@ -9,21 +9,28 @@ class Testimonials extends Component {
                         <Row className="show-grid ">
                             <Col xs={12} md={12} className="person-wrapper">
                                 <div className="testimonial-title">
-                                    <h1>Wat onze klanten van ons zeggen</h1>
-                                    <h2>En waarom ze ook blijven terug komen</h2>
+                                    <h2>Wat onze klanten van ons zeggen</h2>
+                                    <h3>En waarom ze ook blijven terug komen ...</h3>
                                 </div>
-                                <Carousel className="testimonial-carousel">
+                                <Carousel className="testimonial-carousel"
+                                          interval={7000}>
                                     <CarouselItem>
-                                        <h3>Wauw echto toffe gaste</h3>
-                                        <p>Zelqjk glqhlq</p>
+                                        <i className="fa fa-quote-right"/>
+                                        <p>Vol nieuwe ideeën, dynamisch, vriendelijk, opbouw met respect voor de mogelijkheden. Steeds vernieuwend. Super toffe jonge mensen waarop je altijd kan
+                                            rekenen.
+                                            <br/> Mellow webdesign is een echte aanrader, en wij kunnen het weten want we werken al een hele tijd samen.
+                                        </p>
+                                        <i className="fa fa-quote-left"/>
+                                        <strong>Rita founder van Dicomenu</strong>
+
                                     </CarouselItem>
                                     <CarouselItem>
-                                        <h3>Second slide label</h3>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        <strong>Third slide label</strong>
                                     </CarouselItem>
                                     <Carousel.Item>
                                         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                                        <h3>Third slide label</h3>
+                                        <strong>Third slide label</strong>
                                     </Carousel.Item>
                                 </Carousel>
                             </Col>
