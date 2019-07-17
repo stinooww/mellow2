@@ -19,12 +19,18 @@
                         <tr>
                             <th scope="col">title</th>
                             <th scope="col">client</th>
+                            <th scope="col">delete</th>
                         </tr>
                     </thead>
                 @foreach($items as $item)
                     <tr>
                         <td><a href="{{route('portfolio.edit',$item->id)}}">{{$item->title}}</a></td>
                         <td>{{$item->clientName }}</td>
+                        <td>
+                            {{Form::open(['method'  => 'DELETE', 'route' => ['portfolio.destroy', $item->id]])}}
+                            {{Form::button('<i class="fa fa-trash-o"></i>', array('type' => 'submit', 'class' => 'btn-danger'))}}
+                            {{ Form::close() }}
+                        </td>
                     </tr>
                     @endforeach
                 </table>

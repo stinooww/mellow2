@@ -9,6 +9,7 @@
 @section('content')
     <div class="col-sm-12">
         {!! Form::open(['url' =>route('portfolio.store'), 'method' => 'post']) !!}
+        @include('partials.singleImage',['path'=>'upload','image'=> 'none','name'=>'mainImgUrl'])
         @include('portfolio.partials.form')
         {!! Form::close() !!}
     </div>

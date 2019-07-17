@@ -126,6 +126,12 @@ return [
     | specify a specific custom language line for a given attribute rule.
     |
     */
+    'image64' => 'The :attribute must be a file of type: :values.',
+    'custom' => [
+        'attribute-name' => [
+            'rule-name' => 'custom-message',
+        ],
+    ],
 
     'custom' => [
         'attribute-name' => [

@@ -15,7 +15,7 @@ use Illuminate\Http\Request;
 */
 Route::resource('portfolio', 'Api\PortfolioController');
 Route::resource('taggables', 'Api\TaggableController');
-
+route::get('sendmail','Mail\MailController@sendmail');
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });

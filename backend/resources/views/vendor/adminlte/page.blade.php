@@ -14,6 +14,7 @@
 ][config('adminlte.layout')] : '') . (config('adminlte.collapse_sidebar') ? ' sidebar-collapse ' : ''))
 
 @section('body')
+    <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
     <div class="wrapper">
 
         <!-- Main Header -->
