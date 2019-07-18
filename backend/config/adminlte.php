@@ -93,7 +93,7 @@ return [
 
     'login_url' => 'admin/login',
 
-    'register_url' => 'admin/register',
+    'register_url' => null,
 
     /*
     |--------------------------------------------------------------------------

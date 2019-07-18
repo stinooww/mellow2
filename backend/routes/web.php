@@ -10,6 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 Route::group(['middleware' => 'auth'], function () {
 
 
@@ -19,7 +20,15 @@ Route::get('/', 'admin\adminController@index')->name('admin');
 Route::resource('portfolio','admin\portfolioController');
 Route::resource('medewerkers','admin\userController');
 
+Route::post('medewerkers/{id}/upload','admin\userController@image');
+Route::post('portfolio/{id}/upload/main','admin\portfolioController@mainimage');
+Route::post('portfolio/{id}/upload/thumb','admin\portfolioController@thumbimage');
+Route::post('portfolio/{id}/upload/car','admin\portfolioController@carimage');
+
+
+
 });
+
 
 Auth::routes();
 
