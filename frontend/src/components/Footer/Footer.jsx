@@ -12,8 +12,6 @@ export default class Footer extends Component {
                             <Col xs={12} sm={12} className="footer">
                                 <span className="text-footer">&copy; Mellowwebdesign {new Date().getFullYear()} - </span>
                                 <Link to="/algemenevoorwaarde">Algemene voorwaarde </Link>
-                                <Link to="/algemenevoorwaarde">Cookie Policy </Link>
-                                <Link to="/algemenevoorwaarde">Pivacy Policy </Link>
                             </Col>
                         </Row>
                     </Grid>

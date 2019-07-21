@@ -4,6 +4,32 @@ import {withFormik} from 'formik';
 import * as Yup from 'yup';
 import classnames from 'classnames';
 
+class Reactcontactform extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {submitted: false};
+    }
+
+    render() {
+        const submitted = this.state.submitted;
+
+        return (
+                <div className="reactContact ">
+                    {submitted ? (
+                            <h4>Uw bericht is verstuurd!</h4>
+                    ) : (
+
+                            <MyEnhancedForm user={{
+                                email    : '',
+                                firstName: '',
+                                lastName : '',
+                                vraag    : ''
+                            }}/>
+                    )}
+                </div>
+        );
+    }
+}
 const formikEnhancer = withFormik({
     validationSchema: Yup.object().shape({
         firstName: Yup.string()
@@ -27,9 +53,9 @@ const formikEnhancer = withFormik({
     mapPropsToValues: ({user}) => ({
         ...user,
     }),
-    handleSubmit    : (payload, {setSubmitting}) => {
+    handleSubmit    : (payload, action) => {
 
-        setSubmitting(false);
+        action.setSubmitting(false);
         const user = {
             name : payload.firstName + " " + payload.lastName,
             email: payload.email,
@@ -37,9 +63,12 @@ const formikEnhancer = withFormik({
         };
         axios.post('https://jsonplaceholder.typicode.com/users', {user})
                 .then(res => {
-
+                    console.log(this.state.submitted);
+                    this.setState({submitted: true});
+                    console.log(this.state.submitted);
                     console.log(res.data);
                 });
+
     },
     displayName     : 'MyForm',
 });
@@ -173,20 +202,6 @@ const MyForm = props => {
 };
 const MyEnhancedForm = formikEnhancer(MyForm);
 
-class Reactcontactform extends React.Component {
 
-    render() {
-        return (
-                <div className="reactContact ">
-                    <MyEnhancedForm user={{
-                        email    : '',
-                        firstName: '',
-                        lastName : '',
-                        vraag    : ''
-                    }}/>
-                </div>
-        );
-    }
-}
 
 export default Reactcontactform;

@@ -4,10 +4,14 @@ import {withFormik} from 'formik';
 import * as Yup from 'yup';
 import classnames from 'classnames';
 import {Link} from "react-router-dom";
+import axios from "axios";
 
 export default class SeoAnalyse extends Component {
-
+    state = {
+        submitted: false
+    };
     render() {
+        const submitted = this.state.submitted;
         return (
                 <Row className="seo-cta">
                     <div>
@@ -54,8 +58,17 @@ const formikEnhancer = withFormik({
         ...user,
     }),
     handleSubmit    : (payload, {setSubmitting}) => {
-        alert(payload.email + payload.vraag);
+
         setSubmitting(false);
+        const data = {
+            email: payload.email,
+            vraag: payload.vraag
+        };
+        axios.post('https://jsonplaceholder.typicode.com/users', {data})
+                .then(res => {
+                    this.submitted = true;
+                    console.log(res.data);
+                });
     },
     displayName     : 'SeoForm',
 });

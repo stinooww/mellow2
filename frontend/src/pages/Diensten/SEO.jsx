@@ -30,7 +30,7 @@ class SEO extends Component {
                 <div className="PortfolioPage seo">
                     <Grid>
                         <Row className="section--belang">
-                            <Col md={4} xs={12}>
+                            <Col xs={12} md={4}>
                                 <Image className="img-google" src={Google} responsive/>
                             </Col>
                             <Col md={8} xs={12}>

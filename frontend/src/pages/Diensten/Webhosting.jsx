@@ -16,7 +16,7 @@ class Webhosting extends Component {
                     <Grid>
                         <Row>
                             <h2>Waarom een onderhouds pakket ?</h2>
-                            <Col xs={12} className="waaromOnderhoud-txt">
+                            <Col xs={12} className="onderhoud__expl">
                                 <p>Een website maken stopt niet bij de ontwikkeling ervan. Ook na de lancering is het belangrijk dat je website goed wordt onderhouden. Hiervoor bieden we een
                                     onderhoudspakket aan.
                                     Dit is nodig omdat in de website verschillende plugins steken die zorgen voor allerlei functionaliteit van de website. Deze moeten op regelmatige basis worden
@@ -33,7 +33,7 @@ class Webhosting extends Component {
                                     aanpassen. Dit doen we kosteloos!
                                 </p>
                             </Col>
-                            <Col xs={12}>
+                            <Col xs={12} className="onderhoud__table">
                                 <h1>Onze Onderhouds pakketten</h1>
                                 <PricingTable highlightColor='#1976D2'>
                                     <PricingSlot title='Wat zit er in?' priceText='website abonnementen'>

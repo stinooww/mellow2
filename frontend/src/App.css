@@ -1638,7 +1638,9 @@ footer {
       overflow-y: auto; }
       @media (min-width: 30em) {
         .about .post__container {
-          padding-top: 25%; } }
+            padding-top: 35%;
+        }
+      }
       @media (min-width: 64em) {
         .about .post__container {
           padding-top: 1%; } }
@@ -1751,31 +1753,68 @@ footer {
       left: 52%; }
 
 .Diensten {
-  margin-top: 10vh; }
-  @media (min-width: 1300px) {
+    margin: 5vw;
+}
+
+@media (min-width: 54em) {
+    .Diensten {
+        margin-top: 10vh;
+    }
+}
+
+@media (min-width: 76.5em) {
     .Diensten .container {
       width: 1170px; } }
-  .Diensten .waaromOnderhoud-txt p {
+
+.Diensten h2 {
+    padding: 0 15px;
+}
+
+.Diensten .onderhoud__expl p {
     margin-bottom: 1em;
     width: 90%; }
-  .Diensten .Grid-cell .price {
-    margin: 20px 5px; }
-    .Diensten .Grid-cell .price .basic-header {
-      background-color: #a9b1b3;
-      color: white; }
-    .Diensten .Grid-cell .price .highlighted-header {
-      color: white; }
-    .Diensten .Grid-cell .price li {
-      color: black; }
-      .Diensten .Grid-cell .price li.grey .button-submit {
-        font-size: 15px;
-        height: 40px;
-        text-transform: uppercase;
-        width: 185px; }
-  .Diensten .Grid-cell:first-child .price:hover {
-    margin: 20px 5px; }
-  .Diensten .Grid-cell:first-child .grey .button-submit {
-    display: none; }
+
+.Diensten .onderhoud__table {
+    display: none;
+}
+
+@media (min-width: 54em) {
+    .Diensten .onderhoud__table {
+        display: inherit;
+    }
+}
+
+.Diensten .onderhoud__table .Grid-cell .price {
+    margin: 20px 5px;
+}
+
+.Diensten .onderhoud__table .Grid-cell .price .basic-header {
+    background-color: #a9b1b3;
+    color: white;
+}
+
+.Diensten .onderhoud__table .Grid-cell .price .highlighted-header {
+    color: white;
+}
+
+.Diensten .onderhoud__table .Grid-cell .price li {
+    color: black;
+}
+
+.Diensten .onderhoud__table .Grid-cell .price li.grey .button-submit {
+    font-size: 15px;
+    height: 40px;
+    text-transform: uppercase;
+    width: 185px;
+}
+
+.Diensten .onderhoud__table .Grid-cell:first-child .price:hover {
+    margin: 20px 5px;
+}
+
+.Diensten .onderhoud__table .Grid-cell:first-child .grey .button-submit {
+    display: none;
+}
 
 .website {
   padding-top: 5%;
@@ -1790,6 +1829,18 @@ footer {
     line-height: 3em; }
   .website .mobile-responsive {
     margin: 20vh 0; }
+
+@media (min-width: 20em) {
+    .website .mobile-responsive {
+        margin: 0;
+    }
+}
+
+@media (min-width: 30em) {
+    .website .mobile-responsive {
+        margin: 0;
+    }
+}
     .website .mobile-responsive p {
       margin: 3vh 0; }
   .website strong {
@@ -1891,12 +1942,35 @@ footer {
   margin: 10vh 0 0 0; }
   .seo .section--belang {
     height: 60vh;
-    display: flex;
     margin-bottom: 15vh; }
+
+@media (min-width: 20em) {
+    .seo .section--belang {
+        display: inherit;
+    }
+}
+
+@media (min-width: 54em) {
+    .seo .section--belang {
+        display: flex;
+    }
+}
     .seo .section--belang div:first-child {
       display: flex;
       align-items: center;
       justify-content: center; }
+
+@media (min-width: 20em) {
+    .seo .section--belang div:first-child {
+        margin-bottom: 5vh;
+    }
+}
+
+@media (min-width: 30em) {
+    .seo .section--belang div:first-child {
+        margin-bottom: 5vh;
+    }
+}
     .seo .section--belang .img-google {
       width: 50%;
       display: flex;
@@ -1906,7 +1980,16 @@ footer {
     .seo .section--belang .sea-link {
       color: black; }
   .seo .seo__voordelen {
-    margin: 12vh 0; }
+      margin: 5vh 0;
+      display: flex;
+      flex-direction: column;
+  }
+
+@media (min-width: 54em) {
+    .seo .seo__voordelen {
+        margin: 12vh 0;
+    }
+}
     .seo .seo__voordelen div:first-child {
       display: flex;
       justify-content: center; }
@@ -1915,17 +1998,26 @@ footer {
         width: 60%; }
     .seo .seo__voordelen aside {
       display: flex;
+        flex-direction: column;
+        align-items: center;
       margin: 40px 0;
       line-height: 20px;
-      justify-content: space-around;
       transition: all 0.3s ease-in-out;
       transition-property: all;
       transition-duration: 0.3s;
       transition-timing-function: ease-in-out;
       transition-delay: 0s; }
+
+@media (min-width: 54em) {
+    .seo .seo__voordelen aside {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
       .seo .seo__voordelen aside article {
         background: #efc337;
-        width: 30%;
+          width: 100%;
+          margin-bottom: 4rem;
         padding: 25px;
         height: 350px;
         box-sizing: border-box;
@@ -1939,6 +2031,12 @@ footer {
         flex-direction: column;
         max-width: 350px;
         border-radius: 5px; }
+
+@media (min-width: 54em) {
+    .seo .seo__voordelen aside article {
+        width: 30%;
+    }
+}
         .seo .seo__voordelen aside article h3 {
           font-style: normal;
           font-weight: 700;
@@ -1965,28 +2063,65 @@ footer {
           font-size: 25px; }
 
 .seo-cta {
-  margin: 100px 0;
-  height: 40vh;
   width: 100%;
   background-color: lightgray;
-  padding: 6em; }
+    padding: 6em;
+    display: flex;
+    justify-content: center;
+    margin: 100px 0 20px 0;
+}
+
+@media (min-width: 54em) {
+    .seo-cta {
+        margin: 100px 0;
+    }
+}
+
+.seo-cta h2 {
+    color: #3763ef;
+}
   .seo-cta div form {
     display: flex;
-    flex-flow: row wrap;
+      flex-direction: column;
     justify-content: space-evenly; }
     .seo-cta div form .label {
       display: none; }
     .seo-cta div form .input-group {
       display: flex;
-      width: 250px;
+        width: 70%;
       flex-direction: column;
       justify-content: space-around; }
+
+@media (min-width: 30em) {
+    .seo-cta div form .input-group:last-child {
+        width: 100%;
+    }
+}
     .seo-cta div form button {
       display: flex;
       justify-content: flex-end; }
 
+@media (min-width: 20em) {
+    .seo-cta div form button {
+        justify-content: unset;
+    }
+}
+
+@media (min-width: 30em) {
+    .seo-cta div form button {
+        justify-content: unset;
+    }
+}
+
 .sea-context {
-  margin: 20vh 0; }
+    margin: 10vh 0;
+}
+
+@media (min-width: 54em) {
+    .sea-context {
+        margin: 20vh 0;
+    }
+}
   .sea-context p {
     margin-bottom: 10vh; }
   .sea-context .sea-shoutout {

@@ -19,7 +19,13 @@
 
   .mobile-responsive {
     margin: 20vh 0;
+    @media (min-width: $mq-xs) {
+      margin: 0;
+    }
 
+    @media (min-width: $mq-sm) {
+      margin: 0;
+    }
     p {
       margin: 3vh 0;
     }
