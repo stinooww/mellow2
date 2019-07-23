@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import {Grid, Row, Col, Image, Button, OverlayTrigger, Tooltip} from 'react-bootstrap';
+import {Grid, Row, Col, Image, OverlayTrigger, Tooltip} from 'react-bootstrap';
 import CallToAction from '../../components/CallToAction/CallToAction';
 import SeoAnalyse from '../../components/SEOanalyse/SeoAnalyse'
 import Google from '../../images/google.png';
@@ -89,24 +89,23 @@ class SEO extends Component {
                                             <br/>
                                             We voegen enkele zaken toe aan je website zoals:
                                             <br/>
+                                        </p>
                                             <ul className="col-md-6">
                                                 <OverlayTrigger placement="right" overlay={tooltip1}>
-                                                    <li bsStyle="default">titels</li>
+                                                    <li bsstyle="default">titels</li>
                                                 </OverlayTrigger>
                                                 <OverlayTrigger placement="right" overlay={tooltip2}>
-                                                    <li bsStyle="default">meta tags</li>
+                                                    <li bsstyle="default">meta tags</li>
                                                 </OverlayTrigger>
                                                 <OverlayTrigger placement="right" overlay={tooltip3}>
-                                                    <li bsStyle="default">alt tags</li>
+                                                    <li bsstyle="default">alt tags</li>
                                                 </OverlayTrigger>
                                                 <OverlayTrigger placement="right" overlay={tooltip4}>
-                                                    <li bsStyle="default">title tags</li>
+                                                    <li bsstyle="default">title tags</li>
                                                 </OverlayTrigger>
 
 
                                             </ul>
-
-                                        </p>
                                     </article>
                                     <article data-aos="flip-right" data-aos-easing="ease-in-back"
                                              data-aos-delay="300"

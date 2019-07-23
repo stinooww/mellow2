@@ -1,34 +1,32 @@
 import React, {Component} from 'react';
-import {Grid, Row, Col} from 'react-bootstrap';
+import {Row, Col, Grid} from 'react-bootstrap';
 import {withFormik} from 'formik';
 import * as Yup from 'yup';
 import classnames from 'classnames';
-import {Link} from "react-router-dom";
+
 import axios from "axios";
 
 export default class SeoAnalyse extends Component {
-    state = {
-        submitted: false
-    };
+
     render() {
-        const submitted = this.state.submitted;
         return (
                 <Row className="seo-cta">
-                    <div>
-                        <h2>
-                            Wil je graag weten hoe jouw website er voor staat?
+                    <Col md={8} sm={12}>
+                        <div>
+                            <h2>
+                                Wil je graag weten hoe jouw website er voor staat?
+                            </h2>
+                            <h4> Vul je gegevens in en wij sturen je een GRATIS SEO analyse op! </h4>
+                            <br/>
+                            <SEOwebsiteAnalyseForm user={{
 
-                        </h2>
-                        <h4> Vul je gegevens in en wij sturen je een GRATIS SEO analyse op!</h4>
-                        <br/>
-                        <SEOwebsiteAnalyseForm user={{
-
-                            Name   : '',
-                            bedrijf: '',
-                            email  : '',
-                            url    : ''
-                        }}/>
-                    </div>
+                                Name   : '',
+                                bedrijf: '',
+                                email  : '',
+                                url    : ''
+                            }}/>
+                        </div>
+                    </Col>
                 </Row>
 
         )
@@ -58,15 +56,20 @@ const formikEnhancer = withFormik({
         ...user,
     }),
     handleSubmit    : (payload, {setSubmitting}) => {
+        //  action.setSubmitting(false);
+        // e.preventDefault();
 
-        setSubmitting(false);
         const data = {
-            email: payload.email,
-            vraag: payload.vraag
+            naam        : payload.naam,
+            bedrijfsnaam: payload.bedrijfsnaam,
+            website     : payload.url,
+            email       : payload.email
         };
+
         axios.post('https://jsonplaceholder.typicode.com/users', {data})
                 .then(res => {
-                    this.submitted = true;
+                    // this.setState({submitted: true});
+                    setSubmitting(true);
                     console.log(res.data);
                 });
     },
@@ -119,59 +122,69 @@ const SeoForm = props => {
               values,
               touched,
               errors,
-              dirty,
               handleChange,
               handleBlur,
               handleSubmit,
-              handleReset,
               isSubmitting,
           } = props;
     return (
-            <form onSubmit={handleSubmit}>
-                <TextInput
-                        id="naam"
-                        type="text"
-                        label="naam"
-                        placeholder="Naam*"
-                        error={touched.naam && errors.naam}
-                        value={values.naam}
-                        onChange={handleChange}
-                        onBlur={handleBlur}
-                />
-                <TextInput
-                        id="bedrijfsnaam"
-                        type="text"
-                        label="bedrijfsnaam"
-                        placeholder="Bedrijfsnaam"
-                        error={touched.bedrijfsnaam && errors.bedrijfsnaam}
-                        value={values.bedrijfsnaam}
-                        onChange={handleChange}
-                        onBlur={handleBlur}
-                />
-                <TextInput
-                        id="url"
-                        type="text"
-                        label="url"
-                        placeholder="Website Url*"
-                        error={touched.url && errors.url}
-                        value={values.url}
-                        onChange={handleChange}
-                        onBlur={handleBlur}
-                />
-                <TextInput
-                        id="email"
-                        type="email"
-                        label="email"
-                        placeholder="Email*"
-                        error={touched.email && errors.email}
-                        value={values.email}
-                        onChange={handleChange}
-                        onBlur={handleBlur}
-                />
-                <button type="submit" disabled={isSubmitting}>
-                    Verzenden
-                </button>
-            </form>
+            <div>
+                {isSubmitting ? (
+                        <h4>Uw bericht is verstuurd!</h4>
+                ) : (
+
+                        <form onSubmit={handleSubmit}>
+                            <TextInput
+                                    id="naam"
+                                    type="text"
+                                    label="naam"
+                                    placeholder="Naam*"
+                                    error={touched.naam && errors.naam}
+                                    value={values.naam}
+                                    onChange={handleChange}
+                                    onBlur={handleBlur}
+                            />
+                            <TextInput
+                                    id="bedrijfsnaam"
+                                    type="text"
+                                    label="bedrijfsnaam"
+                                    placeholder="Bedrijfsnaam"
+                                    error={touched.bedrijfsnaam && errors.bedrijfsnaam}
+                                    value={values.bedrijfsnaam}
+                                    onChange={handleChange}
+                                    onBlur={handleBlur}
+                            />
+                            <TextInput
+                                    id="url"
+                                    type="text"
+                                    label="url"
+                                    placeholder="Website Url*"
+                                    error={touched.url && errors.url}
+                                    value={values.url}
+                                    onChange={handleChange}
+                                    onBlur={handleBlur}
+                            />
+                            <TextInput
+                                    id="email"
+                                    type="email"
+                                    label="email"
+                                    placeholder="Email*"
+                                    error={touched.email && errors.email}
+                                    value={values.email}
+                                    onChange={handleChange}
+                                    onBlur={handleBlur}
+                            />
+                            <button type="submit"
+                                    onClick={handleSubmit}
+                            >
+                                Verzenden
+                            </button>
+                        </form>
+                )}
+            </div>
+
+
+
     );
 };
 const SEOwebsiteAnalyseForm = formikEnhancer(SeoForm);

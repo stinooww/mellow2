@@ -5,27 +5,16 @@ import * as Yup from 'yup';
 import classnames from 'classnames';
 
 class Reactcontactform extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {submitted: false};
-    }
-
     render() {
-        const submitted = this.state.submitted;
-
         return (
                 <div className="reactContact ">
-                    {submitted ? (
-                            <h4>Uw bericht is verstuurd!</h4>
-                    ) : (
-
                             <MyEnhancedForm user={{
                                 email    : '',
                                 firstName: '',
                                 lastName : '',
                                 vraag    : ''
-                            }}/>
-                    )}
+                            }}
+                            />
                 </div>
         );
     }
@@ -53,9 +42,9 @@ const formikEnhancer = withFormik({
     mapPropsToValues: ({user}) => ({
         ...user,
     }),
-    handleSubmit    : (payload, action) => {
+    handleSubmit    : (payload, {setSubmitting}) => {
 
-        action.setSubmitting(false);
+
         const user = {
             name : payload.firstName + " " + payload.lastName,
             email: payload.email,
@@ -63,9 +52,9 @@ const formikEnhancer = withFormik({
         };
         axios.post('https://jsonplaceholder.typicode.com/users', {user})
                 .then(res => {
-                    console.log(this.state.submitted);
-                    this.setState({submitted: true});
-                    console.log(this.state.submitted);
+
+                    setSubmitting(true);
+
                     console.log(res.data);
                 });
 
@@ -144,60 +133,68 @@ const MyForm = props => {
               isSubmitting,
           } = props;
     return (
-            <form onSubmit={handleSubmit}>
-                <TextInput
-                        id="firstName"
-                        type="text"
-                        label="Voornaam"
-                        placeholder="Voornaam"
-                        error={touched.firstName && errors.firstName}
-                        value={values.firstName}
-                        onChange={handleChange}
-                        onBlur={handleBlur}
-                />
-                <TextInput
-                        id="lastName"
-                        type="text"
-                        label="Achternaam"
-                        placeholder="Achternaam"
-                        error={touched.lastName && errors.lastName}
-                        value={values.lastName}
-                        onChange={handleChange}
-                        onBlur={handleBlur}
-                />
-                <TextInput
-                        id="email"
-                        type="email"
-                        label="Email"
-                        placeholder="Uw email adres"
-                        error={touched.email && errors.email}
-                        value={values.email}
-                        onChange={handleChange}
-                        onBlur={handleBlur}
-                />
-                <Textarea
-                        id="vraag"
-                        label="Vraag"
-                        placeholder="Uw vraag "
-                        rows="4"
-                        cols="50"
-                        error={touched.vraag && errors.vraag}
-                        value={values.vraag}
-                        onChange={handleChange}
-                        onBlur={handleBlur}
-                />
-                <button
-                        type="button"
-                        className="outline"
-                        onClick={handleReset}
-                        disabled={!dirty || isSubmitting}
-                >
-                    Reset
-                </button>
-                <button type="submit" disabled={isSubmitting}>
-                    Verzenden
-                </button>
-            </form>
+
+            <div>
+                {isSubmitting ? (
+                        <h4>Uw bericht is verstuurd!</h4>
+                ) : (
+                        <form onSubmit={handleSubmit}>
+                            <TextInput
+                                    id="firstName"
+                                    type="text"
+                                    label="Voornaam"
+                                    placeholder="Voornaam"
+                                    error={touched.firstName && errors.firstName}
+                                    value={values.firstName}
+                                    onChange={handleChange}
+                                    onBlur={handleBlur}
+                            />
+                            <TextInput
+                                    id="lastName"
+                                    type="text"
+                                    label="Achternaam"
+                                    placeholder="Achternaam"
+                                    error={touched.lastName && errors.lastName}
+                                    value={values.lastName}
+                                    onChange={handleChange}
+                                    onBlur={handleBlur}
+                            />
+                            <TextInput
+                                    id="email"
+                                    type="email"
+                                    label="Email"
+                                    placeholder="Uw email adres"
+                                    error={touched.email && errors.email}
+                                    value={values.email}
+                                    onChange={handleChange}
+                                    onBlur={handleBlur}
+                            />
+                            <Textarea
+                                    id="vraag"
+                                    label="Vraag"
+                                    placeholder="Uw vraag "
+                                    rows="4"
+                                    cols="50"
+                                    error={touched.vraag && errors.vraag}
+                                    value={values.vraag}
+                                    onChange={handleChange}
+                                    onBlur={handleBlur}
+                            />
+                            <button
+                                    type="button"
+                                    className="outline"
+                                    onClick={handleReset}
+                                    disabled={!dirty || isSubmitting}
+                            >
+                                Reset
+                            </button>
+                            <button type="submit" disabled={isSubmitting}>
+                                Verzenden
+                            </button>
+                        </form>
+                )}
+            </div>
+
     );
 };
 const MyEnhancedForm = formikEnhancer(MyForm);

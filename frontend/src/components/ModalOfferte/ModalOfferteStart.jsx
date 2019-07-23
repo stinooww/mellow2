@@ -60,30 +60,29 @@ const customStyles = {
 class ModalOfferteStart extends Component {
     state = {
         selectedOption: null,
-        isToggleOn    : false,
-        submitted     : false
     };
-
     constructor(props) {
         super(props);
         this.activateOfferte = this.activateOfferte.bind(this);
         this.hideModal = this.hideModal.bind(this);
         // de state wordt in de constructor geinitializeerd
         this.state = {
-            firstname: '',
-            name     : '',
-            email    : '',
-            tel      : '',
-            region   : '',
-            company  : '',
-            deadline : '',
-            budget   : '',
-            extrainfo: ''
+            firstname : '',
+            name      : '',
+            email     : '',
+            tel       : '',
+            region    : '',
+            company   : '',
+            deadline  : '',
+            budget    : '',
+            extrainfo : '',
+            isToggleOn: false,
+            submitted : false
         };
+
         // this.onChange = this.onChange.bind(this);
-        this.onSubmit = this.onSubmit.bind(this);
-        this.onInputClick = this.onInputClick.bind(this);
-        this.onContinueClick = this.onContinueClick.bind(this);
+        // this.onSubmit = this.onSubmit.bind(this);
+
     }
 
     activateOfferte = () => {
@@ -93,84 +92,107 @@ class ModalOfferteStart extends Component {
     hideModal = () => {
         this.setState({isToggleOn: false});
     };
+    // .toLowerCase()
+    onChange = (event) => {
+        const target = event.target;
+        const value = target.value;
+        const firstname = target.firstname;
+        const name = target.name;
+        const email = target.email;
+        const tel = target.tel;
+        const region = target.region;
+        const company = target.company;
+        const deadline = target.deadline;
+        const budget = target.budget;
+        const extrainfo = target.extrainfo;
+        //  const selectedOption = target.selectedOption;
 
-    onChange = (e, selectedOption) => {
-        this.setState({name: e.target.value.toLowerCase()});
-        this.setState({firstname: e.target.value.toLowerCase()});
-        this.setState({email: e.target.value});
-        this.setState({tel: e.target.value});
-        this.setState({region: e.target.value});
-        this.setState({company: e.target.value});
-        this.setState({deadline: e.target.value});
-        this.setState({budget: e.target.value});
-        this.setState({extrainfo: e.target.value});
+        this.setState({[firstname]: value});
+        this.setState({[name]: value});
+        this.setState({[email]: value});
+        this.setState({[tel]: value});
+        this.setState({[region]: value});
+        this.setState({[company]: value});
+        this.setState({[deadline]: value});
+        this.setState({[budget]: value});
+        this.setState({[extrainfo]: value});
 
-        this.setState({selectedOption});
-        console.log(`Options selected:`, selectedOption);
+        //
     };
 
-    onInputClick(e) {
+    handleChange = selectedOption => {
+        this.setState({selectedOption});
+        console.log(`Option selected:`, selectedOption);
+
+    };
+
+    onInputClick = (e) => {
         const clickedEl = e.target;
         e = e || window.event;
         const target = e.target.parentNode || e.srcElement;
         const innerTarget = e.target;
         target.classList.add('input--filled');
-    }
+    };
 
     // check if user input is filled + go to next fieldset
-    onContinueClick() {
+    onContinueClick = () => {
 
         let field1 = document.getElementById('fieldset-1');
         let fieldset2 = document.getElementById("fieldset-2");
         field1.style.display = "none";
         fieldset2.style.display = "block";
-    }
+    };
 
-    onPreviousClick() {
+    onPreviousClick = () => {
 
         let field1 = document.getElementById('fieldset-1');
         let fieldset2 = document.getElementById("fieldset-2");
         field1.style.display = "block";
         fieldset2.style.display = "none";
-    }
+    };
 
-    onSubmit(e) {
-        e.preventDefault();
+    onSubmit = (event) => {
+        event.preventDefault();
         const offerte = {
-            firstname: this.state.firstName,
-            name     : this.state.name,
-            email    : this.state.email,
-            tel      : this.state.tel,
-            region   : this.state.region,
-            company  : this.state.company,
-            deadline : this.state.deadline,
-            budget   : this.state.budget,
-            extrainfo: this.state.extrainfo
+            firstname     : this.state.firstname,
+            name          : this.state.name,
+            email         : this.state.email,
+            tel           : this.state.tel,
+            region        : this.state.region,
+            company       : this.state.company,
+            deadline      : this.state.deadline,
+            budget        : this.state.budget,
+            extrainfo     : this.state.extrainfo,
+            selectedOption: this.state.selectedOption
         };
-        const validation = this.validator.validate(this.state);
-        this.setState({validation});
+        // const validation = this.validator.validate(this.state);
+        // this.setState({validation});
 
+        // if(validation.isValid) {
+        //
+        //
+        //          }
 
-        if(validation.isValid) {
-            // handle actual form submission here
-            axios.post('https://jsonplaceholder.typicode.com/users', {offerte})
-                    .then(res => {
+        axios.post('https://jsonplaceholder.typicode.com/users', {offerte})
+                .then(res => {
 
-                        console.log(res.data);
-                        let fieldset2 = document.getElementById("fieldset-2");
-                        fieldset2.style.display = "none";
-                        this.submitted = true;
-                    });
-        }
-    }
+                    console.log(res.data);
+                    let fieldset2 = document.getElementById("fieldset-2");
+                    fieldset2.style.display = "none";
+                    let header = document.getElementById("formOfferte__header");
+                    header.style.display = "none";
+                    this.setState({submitted: true});
+                });
+
+    };
 
     render() {
-        const {selectedOption, submitted} = this.state;
+        const {submitted, selectedOption} = this.state;
         return (
                 <div>
                     <ModalOfferte show={this.state.isToggleOn} handleClose={this.hideModal}>
                         <Grid className="opper-form-offerte">
-                            <div>
+                            <div id="formOfferte__header">
                                 <h1>Dus je wilt met ons samenwerken?</h1>
                                 <h4>Super ! Vertel ons in 2 stappen wat meer over je project.
                                     <br/> en wij contacteren je zo snel mogenlijk
@@ -204,7 +226,7 @@ class ModalOfferteStart extends Component {
                                                    type="text"
                                                    id="input-offerte-firstname"
                                                    value={this.state.firstname}
-                                                   onChange={this.props.onChange}
+                                                   onChange={this.onChange}
                                                    name="firstname"
                                                    required
                                             />
@@ -222,7 +244,7 @@ class ModalOfferteStart extends Component {
                                                    type="text"
                                                    id="input-offerte-name"
                                                    value={this.state.name}
-                                                   onChange={this.props.onChange}
+                                                   onChange={this.onChange}
                                                    name="name"
                                                    required
 
@@ -242,7 +264,7 @@ class ModalOfferteStart extends Component {
                                                    type="email"
                                                    id="input-offerte-email"
                                                    value={this.state.email}
-                                                   onChange={this.props.onChange}
+                                                   onChange={this.onChange}
                                                    name="email"
                                                    required
                                             />
@@ -251,6 +273,7 @@ class ModalOfferteStart extends Component {
                                             </label>
 				                        </span>
                                         </Col>
+
                                         <Col md={6} xs={12} id="row-offerte-tel">
                                            <span className="input input--nariko"
                                                  onClick={this.props.onInputClick}
@@ -259,7 +282,7 @@ class ModalOfferteStart extends Component {
                                                    type="tel"
                                                    id="input-offerte-tel"
                                                    value={this.state.tel}
-                                                   onChange={this.props.onChange}
+                                                   onChange={this.onChange}
                                                    name="tel"
                                                    required
                                             />
@@ -269,6 +292,7 @@ class ModalOfferteStart extends Component {
                                            </span>
                                         </Col>
                                     </Row>
+
                                     <Row className="form-group clearfix">
                                         <Col md={6} xs={12}>
                                         <span className="input input--nariko"
@@ -278,7 +302,7 @@ class ModalOfferteStart extends Component {
                                                    type="text"
                                                    id="input-offerte-company"
                                                    value={this.state.company}
-                                                   onChange={this.props.onChange}
+                                                   onChange={this.onChange}
                                                    name="company"
                                             />
                                             <label className="input__label input__label--nariko" htmlFor="input-offerte-company">
@@ -286,6 +310,7 @@ class ModalOfferteStart extends Component {
                                             </label>
                                            </span>
                                         </Col>
+
                                         <Col md={6} xs={12}>
                                             <div className="frm-row special-input" id="row-offerte-region">
                                             <span className="input input--nariko"
@@ -295,7 +320,7 @@ class ModalOfferteStart extends Component {
                                                    type="text"
                                                    id="input-offerte-region"
                                                    value={this.state.region}
-                                                   onChange={this.props.onChange}
+                                                   onChange={this.onChange}
                                                    name="region"
                                             />
                                             <label className="input__label input__label--nariko" htmlFor="input-offerte-region">
@@ -325,11 +350,11 @@ class ModalOfferteStart extends Component {
                                                    type="text"
                                                    id="input-offerte-deadline"
                                                    value={this.state.deadline}
-                                                   onChange={this.props.onChange}
+                                                   onChange={this.onChange}
                                                    name="deadline"
                                                    placeholder="een ruwe schatting"
                                             />
-                                            <label className="input__label input__label--nariko" htmlFor="input-offerte-firstname">
+                                            <label className="input__label input__label--nariko" htmlFor="input-offerte-deadline">
                                                 <span className="input__label-content input__label-content--nariko">Bepaal uw deadline</span>
                                             </label>
 				                        </span>
@@ -342,11 +367,11 @@ class ModalOfferteStart extends Component {
                                                    type="text"
                                                    id="input-offerte-budget"
                                                    value={this.state.budget}
-                                                   onChange={this.props.onChange}
+                                                   onChange={this.onChange}
                                                    name="budget"
                                                    placeholder="budget"
                                             />
-                                            <label className="input__label input__label--nariko" htmlFor="input-offerte-firstname">
+                                            <label className="input__label input__label--nariko" htmlFor="input-offerte-budget">
                                                 <span className="input__label-content input__label-content--nariko">Wat is uw budget?</span>
                                             </label>
 				                        </span>
@@ -354,11 +379,12 @@ class ModalOfferteStart extends Component {
                                     </Row>
                                     <Row className="form-group clearfix">
                                         <Col md={1} xs={0}/>
-                                        <Col md={4} xs={12} className="special-input" id="row-offerte-interest">
+                                        <Col md={4} xs={12} className="special-input">
                                             <Select
                                                     isMulti
                                                     value={selectedOption}
-                                                    onChange={this.props.onChange}
+                                                    name="selectedOption"
+                                                    onChange={this.handleChange}
                                                     options={options}
                                                     placeholder="Waar heeft u interesse voor?"
                                                     className="mos-multiSelect"
@@ -376,7 +402,7 @@ class ModalOfferteStart extends Component {
                                             <textarea className="fieldset2_textarea"
                                                       id="input-offerte-extrainfo"
                                                       value={this.state.extrainfo}
-                                                      onChange={this.props.onChange}
+                                                      onChange={this.onChange}
                                                       name="extrainfo"
                                                       rows="8"
                                                       cols="50"
@@ -393,7 +419,9 @@ class ModalOfferteStart extends Component {
                                                 <FontAwesomeIcon size="2x" className="iconLeft" icon={faAngleLeft}/>
                                                 <span>Naar stap 1</span>
                                             </Button>
-                                            <Button className="mellow-btn uppercase btn-submit" data-step="submit">
+                                            <Button className="mellow-btn uppercase btn-submit" data-step="submit"
+                                                    onClick={this.onSubmit}
+                                            >
                                                 <FontAwesomeIcon size="2x" className="iconLeft" icon={faPaperPlane}/>
                                                 <span> Verzenden</span>
                                             </Button>
