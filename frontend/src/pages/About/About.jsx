@@ -8,7 +8,7 @@ export default class Home extends Component {
     render() {
         return (
                 <div>
-                    <Grid>
+                    <Grid className="about__container">
                         <div className="about">
 
                             <Col xs={12} sm={12} className="person">

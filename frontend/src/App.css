@@ -275,12 +275,18 @@ a, a:focus {
     position: relative;
     display: inline-block;
     vertical-align: top;
-    width: 40%;
+      width: 100%;
     padding-left: 0;
     margin-left: 0;
     box-sizing: border-box;
     margin-bottom: 40px;
     /* vspace */ }
+
+@media (min-width: 54em) {
+    .section-projects ul li {
+        width: 40%;
+    }
+}
     .section-projects ul li:nth-child(even) {
       -webkit-transform: translate3d(0px, 80px, 0px);
       /* vspace */
@@ -1564,17 +1570,24 @@ footer {
   -webkit-transform: scaleX(1);
   transform: scaleX(1); }
 
-.about {
-  /**
-   * Mixins
-   */
-  /**
-   * Helpers
-   */
-  /**
-   * Animations
-   */ }
-  .about a {
+.about__container {
+    padding-bottom: 50px;
+}
+
+.about__container .about {
+    padding: 50px 0;
+    /**
+     * Mixins
+     */
+    /**
+     * Helpers
+     */
+    /**
+ * Animations
+ */
+}
+
+.about__container .about a {
     padding: 0.5em 1em;
     font-size: 0.8em;
     color: #a9b1b3;
@@ -1582,111 +1595,178 @@ footer {
     text-transform: uppercase;
     letter-spacing: 0.3em;
     border: 1px solid #a9b1b3;
-    transition: all 0.3s ease-in; }
-    .about a:hover, .about a:active, .about a:focus {
-      color: white;
-      background-color: #a9b1b3; }
-  .about ::selection {
+    transition: all 0.3s ease-in;
+}
+
+.about__container .about a:hover, .about__container .about a:active, .about__container .about a:focus {
+    color: white;
+    background-color: #a9b1b3;
+}
+
+.about__container .about ::selection {
     color: white;
     background-color: #d0f2ee;
-    text-shadow: none; }
-  .about .post {
+    text-shadow: none;
+}
+
+.about__container .about .post {
     min-height: 100vh;
     width: 100%;
-    border: 0.5em solid white; }
-    @media (min-width: 54em) {
-      .about .post {
+    border: 0.5em solid white;
+}
+
+@media (min-width: 54em) {
+    .about__container .about .post {
         display: flex;
         height: 100vh;
-        min-height: 40em; } }
-    .about .post > *:first-child {
-      position: relative;
-      height: 14em; }
-      @media (min-width: 30em) {
-        .about .post > *:first-child {
-          height: 18em; } }
-      @media (min-width: 54em) {
-        .about .post > *:first-child {
-          flex-basis: 50%;
-          max-width: 50%;
-          height: auto; } }
-      @media (min-width: 76.5em) {
-        .about .post > *:first-child {
-          flex-basis: 50%;
-          max-width: 50%; } }
-      .about .post > *:first-child .stijnJonas {
-        width: 100%;
-        padding-top: 10%; }
-        @media (min-width: 30em) {
-          .about .post > *:first-child .stijnJonas {
-            padding-top: 0; } }
-        @media (min-width: 54em) {
-          .about .post > *:first-child .stijnJonas {
-            padding-top: 20%; } }
-    @media (min-width: 54em) {
-      .about .post > *:last-child {
+        min-height: 40em;
+    }
+}
+
+.about__container .about .post > *:first-child {
+    position: relative;
+    height: 14em;
+}
+
+@media (min-width: 30em) {
+    .about__container .about .post > *:first-child {
+        height: 18em;
+    }
+}
+
+@media (min-width: 54em) {
+    .about__container .about .post > *:first-child {
         flex-basis: 50%;
-        max-width: 50%; } }
-    @media (min-width: 76.5em) {
-      .about .post > *:last-child {
+        max-width: 50%;
+        height: auto;
+    }
+}
+
+@media (min-width: 76.5em) {
+    .about__container .about .post > *:first-child {
         flex-basis: 50%;
-        max-width: 50%; } }
-    .about .post__container {
-      display: flex;
-      flex-direction: column;
-      padding: 2em;
-      overflow-y: auto; }
-      @media (min-width: 30em) {
-        .about .post__container {
-            padding-top: 35%;
-        }
-      }
-      @media (min-width: 64em) {
-        .about .post__container {
-          padding-top: 1%; } }
-    .about .post__category {
-      position: relative;
-      text-transform: uppercase;
-      letter-spacing: 0.3em;
-      overflow: hidden; }
-      .about .post__category:before {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        height: 2px;
-        width: 12em;
-        background-color: black;
-        animation: slide-in 1s ease-in both 0.5s; }
-    .about .post__content {
-      padding: 2em 0; }
-      @media (min-width: 54em) {
-        .about .post__content {
-          padding: 3em 2em 0 2em; } }
-    .about .post__time {
-      display: inline-block;
-      margin-bottom: 0.5em;
-      font-weight: 600;
-      font-size: 0.8em;
-      text-transform: uppercase;
-      letter-spacing: 0.1em; }
-    .about .post__header {
-      overflow: hidden; }
-      .about .post__header span {
-        display: inline-block;
-        animation: slide-up 0.8s ease-in-out both; }
-        .about .post__header span:nth-child(1) {
-          animation-delay: 0.1s; }
-        .about .post__header span:nth-child(2) {
-          animation-delay: 0.2s; }
-        .about .post__header span:nth-child(3) {
-          animation-delay: 0.3s; }
-    .about .post__text {
-      font-weight: 300;
-      animation: fade-in 0.8s ease-in-out both 0.5s; }
-    .about .post__link {
-      text-align: right; }
-  .about .absolute-bg {
+        max-width: 50%;
+    }
+}
+
+.about__container .about .post > *:first-child .stijnJonas {
+    width: 100%;
+    padding-top: 10%;
+}
+
+@media (min-width: 30em) {
+    .about__container .about .post > *:first-child .stijnJonas {
+        padding-top: 0;
+    }
+}
+
+@media (min-width: 54em) {
+    .about__container .about .post > *:first-child .stijnJonas {
+        padding-top: 20%;
+    }
+}
+
+@media (min-width: 54em) {
+    .about__container .about .post > *:last-child {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 76.5em) {
+    .about__container .about .post > *:last-child {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+}
+
+.about__container .about .post__container {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    overflow-y: auto;
+}
+
+@media (min-width: 30em) {
+    .about__container .about .post__container {
+        padding-top: 35%;
+    }
+}
+
+@media (min-width: 64em) {
+    .about__container .about .post__container {
+        padding-top: 1%;
+    }
+}
+
+.about__container .about .post__category {
+    position: absolute;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    overflow: hidden;
+}
+
+.about__container .about .post__category:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 12em;
+    background-color: black;
+    animation: slide-in 1s ease-in both 0.5s;
+}
+
+.about__container .about .post__content {
+    padding: 2em 0;
+}
+
+@media (min-width: 54em) {
+    .about__container .about .post__content {
+        padding: 3em 2em 0 2em;
+    }
+}
+
+.about__container .about .post__time {
+    display: inline-block;
+    margin-bottom: 0.5em;
+    font-weight: 600;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.about__container .about .post__header {
+    overflow: hidden;
+}
+
+.about__container .about .post__header span {
+    display: inline-block;
+    animation: slide-up 0.8s ease-in-out both;
+}
+
+.about__container .about .post__header span:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.about__container .about .post__header span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.about__container .about .post__header span:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.about__container .about .post__text {
+    font-weight: 300;
+    animation: fade-in 0.8s ease-in-out both 0.5s;
+}
+
+.about__container .about .post__link {
+    text-align: right;
+}
+
+.about__container .about .absolute-bg {
     position: absolute;
     top: 0;
     left: 0;
@@ -1695,13 +1775,8 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
-    animation: fade-in 0.8s ease-in-out both 1s; }
-
-@keyframes slide-in {
-  0% {
-    transform: translate3d(-100%, 0, 0); }
-  100% {
-    transform: translate3d(0, 0, 0); } }
+    animation: fade-in 0.8s ease-in-out both 1s;
+}
 
 @keyframes slide-up {
   0% {
@@ -1717,6 +1792,15 @@ footer {
     opacity: 0; }
   100% {
     opacity: 1; } }
+
+@keyframes slide-in {
+    0% {
+        transform: translate3d(-100%, 0, 0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
 
 .cta-padding {
   margin: 100vh 0 10vh 0; }
@@ -1824,6 +1908,27 @@ footer {
     width: 100%; }
   .website .waarom-website-txt h2 {
     margin: 3vh 0 5vh 0; }
+
+.website .waarom-website-txt h2:before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 66px;
+    bottom: 0;
+    height: 2px;
+    width: 12em;
+    background-color: black;
+    animation: slide-in 1s ease-in both 0.5s;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translate3d(-100%, 0, 0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
   .website .waarom-website-txt strong {
     font-size: 1.6em;
     line-height: 3em; }
@@ -2098,18 +2203,12 @@ footer {
     }
 }
     .seo-cta div form button {
-      display: flex;
-      justify-content: flex-end; }
-
-@media (min-width: 20em) {
-    .seo-cta div form button {
-        justify-content: unset;
+        display: flex;
     }
-}
 
 @media (min-width: 30em) {
     .seo-cta div form button {
-        justify-content: unset;
+        justify-content: flex-end;
     }
 }
 

@@ -191,14 +191,10 @@
 
       button {
         display: flex;
-        justify-content: flex-end;
 
-        @media (min-width: $mq-xs) {
-          justify-content: unset;
-        }
 
         @media (min-width: $mq-sm) {
-          justify-content: unset;
+          justify-content: flex-end;
         }
       }
     }

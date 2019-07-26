@@ -35,11 +35,11 @@ class Portfolio extends Component {
 
                     <Grid>
                         <Row className="show-grid">
-                            <ul>
-                                {
-                                    this.state.persons.map(person => <li key={person.id}> {person.name}</li>)
-                                }
-                            </ul>
+                            {/*<ul>*/}
+                            {/*{*/}
+                            {/*this.state.persons.map(person => <li key={person.id}> {person.name}</li>)*/}
+                            {/*}*/}
+                            {/*</ul>*/}
 
                             <Col md={12}>
                                 <h1 className="portHead-title">Bekijk hier al onze projecten</h1>
