@@ -16,9 +16,12 @@ class contact extends Mailable
      *
      * @return void
      */
-    public function __construct()
+    private $name, $email,$vraag;
+    public function __construct($data)
     {
-        //
+        $this->name=$data->name;
+        $this->email=$data->email;
+        $this->vraag=$data->vraag;
     }
 
     /**
@@ -28,12 +31,10 @@ class contact extends Mailable
      */
     public function build()
     {
-        $data['user']="test mail";
-        $data['posting']="vree content van";
-       /* $data=
-            "title"=> "test mail",
-            "content"=>"vree content van"
-        ];*/
+        $data['name']=$this->name;
+        $data['email']=$this->email;
+        $data['vraag']=$this->vraag;
+
 
         return $this->view('email',$data);
     }
