@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Button, Col, Grid, Row} from "react-bootstrap";
+import {Col, Grid, Row} from "react-bootstrap";
 import {Link} from "react-router-dom";
 import Responsive from '../ICONS/Responsive';
 import Webdev from '../ICONS/Webdev';

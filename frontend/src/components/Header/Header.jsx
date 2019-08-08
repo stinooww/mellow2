@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Navbar, Nav, NavItem, Image, NavDropdown, Dropdown} from 'react-bootstrap';
+import {Navbar, Nav, NavItem, Image, NavDropdown} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 import logozw from '../../images/logo.png';
 import ModalOfferteStart from '../ModalOfferte/ModalOfferteStart';

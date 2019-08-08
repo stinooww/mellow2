@@ -1,5 +1,6 @@
 /* Projects */
 .section-projects {
+  padding-bottom: 50px;
   figure {
     margin: 0;
   }
@@ -42,8 +43,14 @@
 
 .section-projects ul li:nth-child(even) .table,
 .section-projects ul li:nth-child(even) .container {
-  padding-right: 0;
-  margin-left: 40px;
+  padding-right: 20px;
+  margin-left: 0;
+
+
+  @media (min-width: $mq-md) {
+    padding-right: 0;
+    margin-left: 40px;
+  }
 }
 
 .section-projects .table .row {

@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import {Route, Switch, BrowserRouter, Router} from 'react-router-dom';
+import React from 'react';
+import {Route} from 'react-router-dom';
 import Home from "../../pages/Home/Home";
 import Strategie from "../../pages/Strategie/Strategie";
 import Portfolio from "../../pages/Portfolio/Portfolio";

@@ -1,9 +1,12 @@
-import PropTypes from 'prop-types';
 import React, {Component} from 'react';
-import {Grid, Row, Col, Image, Button} from 'react-bootstrap';
+import {Grid, Row, Col} from 'react-bootstrap';
 import Reactcontactform from '../../components/Contactform/Reactcontactform';
 
 import MessengerCustomerChat from 'react-messenger-customer-chat';
+
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+
+import {faFacebook, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 
 class Contact extends Component {
 
@@ -93,15 +96,16 @@ class Contact extends Component {
                             </div>
                             <div>
                             <h4>Social media</h4>
-                            <ul>
+                                <ul className="socialBtn">
                                 <li>
                                     <a href="https://www.facebook.com/mellowwebdesign">
-                                        <i id="social-fb" className="fa fa-facebook-square fa-3x social"/></a>
+                                        <FontAwesomeIcon size="3x" icon={faFacebook}/>
+                                    </a>
                                 </li>
                                 <li>
                                     <a href="https://www.linkedin.com/company/mellow-webdesign">
-                                        <i id="social-tw"
-                                           className="fa fa-linkedin-square fa-3x social"/></a></li>
+                                        <FontAwesomeIcon size="3x" icon={faLinkedin}/>
+                                    </a></li>
 
                             </ul>
                             </div>

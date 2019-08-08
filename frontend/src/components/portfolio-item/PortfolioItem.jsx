@@ -1,14 +1,12 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import {Grid, Row, Col, Image, Button} from 'react-bootstrap';
+import {Grid, Row, Col, Image} from 'react-bootstrap';
 import scrollmagic from 'scrollmagic';
 import {CircleArrow as ScrollUpButton} from "react-scroll-up-button";
 
 import dicomenuBack from './../../images/frontLAYER.png';
 import dicomenuFRONT from './../../images/back_layer.png';
-import waterschenken from './../../images/Waterschenken-min.jpg';
 import ober from './../../images/Obervlees-min.jpeg';
-import koppel from './../../images/Koppelres-min.jpg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import CallToAction from '../../components/CallToAction/CallToAction';

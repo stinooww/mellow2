@@ -28,7 +28,7 @@ class ServiceHomePictures extends Component {
                                 <div className="grid-col-50">
                                     <div className="fig-hover-item height-380">
                                         <figure className="fig cover dicomenu">
-                                            <img src="../../images/dicomenu1.png" alt="Dicomenu"/>
+                                            <img src="../../images/dicomenu1.png" className="figMobile__alt" alt="Dicomenu"/>
                                             <figcaption className="caption">Webshop &amp; Marketing emails</figcaption>
                                         </figure>
                                         <Link to="/portfolioitem/dicomenu" className="full-link">Dicomenu</Link>
@@ -47,7 +47,7 @@ class ServiceHomePictures extends Component {
 
                                     <div className="fig-hover-item height-280">
                                         <figure className="fig cover finnegans">
-                                            <img src="../../images/finnegans.png" alt="Marmotta Alpin Hotel"/>
+                                            <img src="../../images/finnegans.png" className="figMobile__alt" alt="Finnegans"/>
                                             <figcaption className="caption">Webdesign</figcaption>
                                         </figure>
                                         <Link to="/portfolioitem/finnegans" className="full-link">Finnegans</Link>
@@ -69,7 +69,7 @@ class ServiceHomePictures extends Component {
                                     <div className="grid-col-50">
                                         <div className="fig-hover-item height-280">
                                             <figure className="fig cover bodyupdate">
-                                                <img src="../../images/bodyupdate.jpg" alt="Rondreis"/>
+                                                <img src="../../images/bodyupdate.jpg" className="figMobile__alt" alt="body-update"/>
                                                 <figcaption className="caption">responsive website</figcaption>
                                             </figure>
                                             <Link to="/portfolioitem/bodyupdate" className="full-link">Afslanken</Link>

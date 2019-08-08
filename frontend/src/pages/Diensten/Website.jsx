@@ -10,30 +10,25 @@ AOS.init();
 
 class Website extends Component {
 
-    constructor(props) {
-        super(props);
-        //  this.handleClick = this.handleClick.bind(this);
-
-    }
-
-    handleClick() {
-        let container = document.getElementById('root');
-        let windowHeight = window.innerHeight;
-        let windowWidth = window.innerWidth;
-        let scrollArea = 1000 - windowHeight;
-        // let image1 = document.getElementsByClassName('front');
-        const image1 = document.getElementById('front');
-        const image2 = document.getElementsByClassName('back');
-        console.log(image1, image2);
-        // update position of image 1 and image 2 when scroll event fires.
-        window.addEventListener('scroll', function() {
-            let scrollTop = window.pageYOffset || window.scrollTop;
-            let scrollPercent = scrollTop / scrollArea || 0;
-            console.log(scrollPercent, scrollTop);
-            image1.style.left = scrollPercent * window.innerWidth + 'px';
-            image2.style.left = 800 - scrollPercent * window.innerWidth * 0.6 + 'px';
-        });
-    }
+    //
+    // handleClick() {
+    //     let container = document.getElementById('root');
+    //     let windowHeight = window.innerHeight;
+    //     let windowWidth = window.innerWidth;
+    //     let scrollArea = 1000 - windowHeight;
+    //     // let image1 = document.getElementsByClassName('front');
+    //     const image1 = document.getElementById('front');
+    //     const image2 = document.getElementsByClassName('back');
+    //     console.log(image1, image2);
+    //     // update position of image 1 and image 2 when scroll event fires.
+    //     window.addEventListener('scroll', function() {
+    //         let scrollTop = window.pageYOffset || window.scrollTop;
+    //         let scrollPercent = scrollTop / scrollArea || 0;
+    //         console.log(scrollPercent, scrollTop);
+    //         image1.style.left = scrollPercent * window.innerWidth + 'px';
+    //         image2.style.left = 800 - scrollPercent * window.innerWidth * 0.6 + 'px';
+    //     });
+    // }
 
     render() {
 

@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import PropTypes from 'prop-types';
 
 import {CircleArrow as ScrollUpButton} from "react-scroll-up-button";
 import axios from 'axios';
@@ -9,8 +8,6 @@ import {Grid, Row, Col} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 // https://mmehospitality.nl/project/
 // https://www.youtube.com/watch?v=oQnojIyTXb8  voor axios
-{/*<Image src={dicomenu} className="contentImg"/>*/
-}
 
 class Portfolio extends Component {
     state = {

@@ -249,7 +249,14 @@
 .fig-hover-item .fig {
   margin: 0;
   width: 100%;
-  height: 100%
+  height: 100%;
+
+  .figMobile__alt {
+    @media (min-width: $mq-sm) {
+      display: none;
+    }
+  }
+
 }
 
 .fig-hover-item .fig img {

@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import {Carousel, CarouselItem, Col, Grid, Row} from 'react-bootstrap';
+import {Col, Grid, Row} from 'react-bootstrap';
 import {VerticalTimeline, VerticalTimelineElement} from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faCheckSquare, faCoffee, faCalendar, faLaptopCode, faLaptop, faProjectDiagram, faUserFriends} from '@fortawesome/free-solid-svg-icons';
+import {faCoffee, faLaptopCode, faLaptop, faProjectDiagram, faUserFriends} from '@fortawesome/free-solid-svg-icons';
 //https://stephane-monnot.github.io/react-vertical-timeline/#/
 // https://github.com/FortAwesome/react-fontawesome
 // https://trulata.com/

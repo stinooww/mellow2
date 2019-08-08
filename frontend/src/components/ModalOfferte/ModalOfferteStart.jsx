@@ -127,10 +127,10 @@ class ModalOfferteStart extends Component {
     };
 
     onInputClick = (e) => {
-        const clickedEl = e.target;
+        // const clickedEl = e.target;
         e = e || window.event;
         const target = e.target.parentNode || e.srcElement;
-        const innerTarget = e.target;
+        //  const innerTarget = e.target;
         target.classList.add('input--filled');
     };
 

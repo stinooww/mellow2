@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
-import {Jumbotron, Grid, Row, Col, Image, Button} from 'react-bootstrap';
+import {Grid, Col, Image} from 'react-bootstrap';
 import mellowBazen from './../../images/jonasstijn.jpg';
 import CallToAction from '../../components/CallToAction/CallToAction';
 

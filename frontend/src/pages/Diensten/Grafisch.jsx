@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import {Grid, Row, Col, Image, Button} from 'react-bootstrap';
+import {Grid, Row, Col, Image} from 'react-bootstrap';
 import CallToAction from '../../components/CallToAction/CallToAction';
 import emailmarketing from '../../images/emailmarketing.png';
 import logodesign from '../../images/logodesign.png';
