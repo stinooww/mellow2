@@ -35,16 +35,16 @@ class Grafisch extends Component {
                                     </p>
                                 </Col>
                                 <Col xs={12} data-aos="zoom-in-down">
-                                    <Image className="emailmarketing-image" responsive src={logodesign}/>
+                                    <Image className="emailmarketing" responsive src={logodesign}/>
                                 </Col>
                             </Col>
                         </Row>
-                        <Row className="marketing-email">
+                        <Row className="marketingEmail">
                             <Col xs={12}>
-                                <h1>Marketings emails</h1>
+                                <h1 className="marketingEmail__title">Marketings emails</h1>
                             </Col>
                             <Col md={6} xs={12} data-aos="zoom-out-right">
-                                <Image className="emailmarketing-image" src={emailmarketing}/>
+                                <Image className="marketingEmail__image" src={emailmarketing}/>
                             </Col>
                             <Col md={6} xs={12} data-aos="zoom-out-left">
                                 <p>Klanten en prospects kan je snel en makkelijk bereiken via e-mail marketing. Denk bijvoorbeeld aan een nieuwsletter van je bedrijf, of om je producten en of
@@ -57,7 +57,9 @@ class Grafisch extends Component {
                                 </p>
                                 <br/>
                                 <p>Dit is zonder meer interessant om te kijken wat werkt en wat niet. Dit om jouw meer business op te leveren.
-                                    Zo kan je gericht je doelgroep benaderen en je kansen op succes maximaliseren.
+                                    <br/>
+                                    <br/><span className="marketingEmail__cta">Zo kan je gericht je doelgroep benaderen en je kansen op succes maximaliseren!</span>
+
                                 </p>
                                 <br/>
                             </Col>

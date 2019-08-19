@@ -63,8 +63,8 @@ class SEO extends Component {
                             <Col md={12} className="seo-stappen">
                                 <aside>
                                     <article data-aos="flip-left" data-aos-easing="ease-in-back"
-                                             data-aos-delay="300"
-                                             data-aos-duration="1000">
+                                             data-aos-delay="150"
+                                             data-aos-duration="800">
                                         <h3 className="seo-stappen-head"> 1</h3>
                                         <strong className="seo__subtitle">Analyse</strong>
                                         <p>
@@ -77,8 +77,8 @@ class SEO extends Component {
                                         </p>
                                     </article>
                                     <article data-aos="flip-up" data-aos-easing="ease-in-back"
-                                             data-aos-delay="300"
-                                             data-aos-duration="1000">
+                                             data-aos-delay="150"
+                                             data-aos-duration="800">
                                         <h3>2</h3>
                                         <strong className="seo__subtitle">
                                             Content optimalisatie
@@ -108,8 +108,8 @@ class SEO extends Component {
                                             </ul>
                                     </article>
                                     <article data-aos="flip-right" data-aos-easing="ease-in-back"
-                                             data-aos-delay="300"
-                                             data-aos-duration="1000">
+                                             data-aos-delay="150"
+                                             data-aos-duration="800">
                                         <h3>3</h3>
                                         <strong className="seo__subtitle">
                                             Technische optimalisatie
@@ -141,8 +141,9 @@ class SEO extends Component {
                                 <p>
                                     Dankzij SEA (Search Engine Advertising) verschijnt jouw boodschap , jouw aanwezigheid op Google helemaal bovenaan.
                                     Je kiest zelf welke zoektermen het meest relevant zijn voor je bedrijf en die je advertentie kan triggeren.
-                                    <strong> Voor deze advertenties betaal je
-                                        alleen als iemand op jouw advertentie klikt. </strong>
+                                    <br/>
+                                    <strong> Voor deze advertenties betaal je dus
+                                        alleen als iemand op jouw advertentie klikt! </strong>
                                 </p>
                                 <p>Concreet gaan we een zeer doelgerichte advertensie voor je website maken waarbij we rekening houden met enkele parameters zoals locatie, apparaat en de termen waar
                                     je

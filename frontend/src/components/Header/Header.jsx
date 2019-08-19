@@ -34,8 +34,11 @@ class Header extends Component {
                             <NavItem eventKey={4} componentClass={Link} className="menu-item hvr-underline-from-center " href="/portfolio" to="/portfolio">Portfolio</NavItem>
                             <NavItem eventKey={5} componentClass={Link} className="menu-item hvr-underline-from-center " href="/about" to="/about">Wie zijn we</NavItem>
                             <NavItem eventKey={6} componentClass={Link} className="menu-item hvr-underline-from-center " href="/contact" to="/contact">Contact</NavItem>
-                            <div className="modal-offerte-header"><ModalOfferteStart/></div>
+
                         </Nav>
+                        <div className="modal-offerte-header">
+                            <ModalOfferteStart/>
+                        </div>
                     </Navbar.Collapse>
                 </Navbar>
         )

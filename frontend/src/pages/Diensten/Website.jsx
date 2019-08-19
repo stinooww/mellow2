@@ -38,9 +38,10 @@ class Website extends Component {
                         <Row>
                             <Col xs={12} className="waarom-website-txt">
                                 <h2> Waarom zou je een website nodig hebben voor je onderneming?</h2>
-                                <p>Een website zorgt ervoor dat jij als ondernemer altijd online bent vertegenwoordigd,</p><p> het geeft je een eigen identiteit, je online visite kaartje zeg
-                                maar. </p>
-                                <p>Wij proberen hierbij zo goed mogelijk jouw idee of wat je doet te visualiseren en op een boeiende manier aan al je toekomstige bezoekers duidelijk te maken wat je
+                                <p>Een website zorgt ervoor dat jij als ondernemer altijd online bent vertegenwoordigd.</p>
+                                <p> Het geeft je een eigen identiteit, je online visite kaartje zeg maar. </p>
+                                <p>Wij proberen hierbij zo goed mogelijk jouw idee of wat je doet te visualiseren <br/> en op een boeiende manier aan al je toekomstige bezoekers duidelijk te maken wat
+                                    je
                                     doet.</p>
                                 <strong> Want in een wereld van verandering is een digtale aanwezigheid belangrijk! </strong>
                                 <p>
@@ -56,7 +57,7 @@ class Website extends Component {
 
                             </Col>
                             <Col xs={12} sm={6} md={4} className="mobile-responsive" data-aos="fade-up-left" data-aos-mirror="true">
-                                <h3>Jouw website mobiel beschikbaar</h3>
+                                <h3>Jouw website mobiel beschikbaar!</h3>
                                 <p>
                                     In een tijdperk waarin smartphones niet meer weg te denken zijn uit ons dagelijks leven, is een mobiele website een absolute must !
                                 </p>
