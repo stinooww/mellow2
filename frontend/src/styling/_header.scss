@@ -29,28 +29,29 @@
     }
   }
 
-  .modal-offerte-header {
-    float: left;
-    margin-top: 59px;
-    margin-left: 10px;
 
-
-    @media screen and (min-width: 1081px) {
-      margin-top: 59px;
-    }
-    @media screen and (max-width: $Tablet) {
-      margin-top: 9px;
-      padding-left: 55px;
-    }
-    @media (min-width: $Tablet) and (max-width: $smallerLaptop) {
-      margin-top: 1px;
-    }
-    @media (min-width: $smallerLaptop) and (max-width: $bigLaptop) {
-      margin-top: 5px;
-    }
-  }
 }
 
+.modal-offerte-header {
+
+  margin-top: 59px;
+  margin-left: 10px;
+
+
+  @media screen and (min-width: 1081px) {
+    margin-top: 59px;
+  }
+  @media screen and (max-width: $Tablet) {
+    margin-top: 9px;
+    padding-left: 55px;
+  }
+  @media (min-width: $Tablet) and (max-width: $smallerLaptop) {
+    margin-top: 1px;
+  }
+  @media (min-width: $smallerLaptop) and (max-width: $bigLaptop) {
+    margin-top: 5px;
+  }
+}
 .navbar-default {
   //background-color: #6b4539 !important;
   // background-color: white !important;

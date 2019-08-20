@@ -1,5 +1,6 @@
 /* Projects */
 .section-projects {
+  padding-bottom: 50px;
   figure {
     margin: 0;
   }
@@ -11,12 +12,14 @@
       position: relative;
       display: inline-block;
       vertical-align: top;
-      width: 40%;
+      width: 100%;
       padding-left: 0;
       margin-left: 0;
       box-sizing: border-box;
       margin-bottom: 40px; /* vspace */
-
+      @media (min-width: $mq-md) {
+        width: 40%;
+      }
       &:nth-child(even) {
         -webkit-transform: translate3d(0px, 80px, 0px); /* vspace */
         transform: translate3d(0px, 80px, 0px); /* vspace */
@@ -40,8 +43,14 @@
 
 .section-projects ul li:nth-child(even) .table,
 .section-projects ul li:nth-child(even) .container {
-  padding-right: 0;
-  margin-left: 40px;
+  padding-right: 20px;
+  margin-left: 0;
+
+
+  @media (min-width: $mq-md) {
+    padding-right: 0;
+    margin-left: 40px;
+  }
 }
 
 .section-projects .table .row {

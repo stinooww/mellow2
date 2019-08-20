@@ -4,13 +4,26 @@
 
   .section--belang {
     height: 60vh;
-    display: flex;
-    margin-bottom: 15vh;
 
+    margin-bottom: 15vh;
+    @media (min-width: $mq-xs) {
+      display: inherit;
+    }
+
+    @media (min-width: $mq-md) {
+      display: flex;
+    }
     div:first-child {
       display: flex;
       align-items: center;
       justify-content: center;
+      @media (min-width: $mq-xs) {
+        margin-bottom: 5vh;
+      }
+
+      @media (min-width: $mq-sm) {
+        margin-bottom: 5vh;
+      }
     }
 
     .img-google {
@@ -29,7 +42,15 @@
   }
 
   .seo__voordelen {
-    margin: 12vh 0;
+    margin: 5vh 0;
+
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $mq-md) {
+      margin: 12vh 0;
+    }
+
     & div:first-child {
       display: flex;
       justify-content: center;
@@ -42,9 +63,17 @@
 
     aside {
       display: flex;
+
+      flex-direction: column;
+      align-items: center;
+
+      @media (min-width: $mq-md) {
+        flex-direction: row;
+        justify-content: space-around;
+      }
       margin: 40px 0;
       line-height: 20px;
-      justify-content: space-around;
+
       transition: all 0.3s ease-in-out;
       transition-property: all;
       transition-duration: 0.3s;
@@ -53,7 +82,12 @@
 
       article {
         background: $yellow;
-        width: 30%;
+        width: 100%;
+        margin-bottom: 4rem;
+        @media (min-width: $mq-md) {
+          width: 30%;
+
+        }
         padding: 25px;
         height: 350px;
         box-sizing: border-box;
@@ -110,32 +144,59 @@
 
 
 .seo-cta {
-  margin: 100px 0;
-  height: 40vh;
+
+
   width: 100%;
   background-color: lightgray;
   padding: 6em;
+  display: flex;
+  justify-content: center;
+  margin: 100px 0 20px 0;
+  @media (min-width: $mq-md) {
 
+    margin: 100px 0;
+
+  }
+
+  h2 {
+    color: $blue;
+  }
   div {
     form {
       display: flex;
-      flex-flow: row wrap;
+      flex-direction: column;
       justify-content: space-evenly;
+      @media (min-width: $mq-md) {
 
+
+      }
       .label {
         display: none;
       }
 
       .input-group {
         display: flex;
-        width: 250px;
+        width: 70%;
         flex-direction: column;
         justify-content: space-around;
+
+        &:last-child {
+
+
+          @media (min-width: $mq-sm) {
+            width: 100%;
+          }
+        }
       }
 
       button {
         display: flex;
-        justify-content: flex-end;
+
+
+        @media (min-width: $mq-sm) {
+          justify-content: flex-end;
+          padding: 12px 33px;
+        }
       }
     }
   }
@@ -143,8 +204,10 @@
 }
 
 .sea-context {
-  margin: 20vh 0;
-
+  margin: 10vh 0;
+  @media (min-width: $mq-md) {
+    margin: 20vh 0 10vh 0;
+  }
   p {
     margin-bottom: 10vh;
   }

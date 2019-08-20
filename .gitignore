@@ -1,4 +1,8 @@
 .idea/
 .idea/workspace.xml
 backend/public/images/
-
+../.DS_Store
+../.idea/workspace.xml
+.DS_Store
+public/.DS_Store
+src/.DS_Store
