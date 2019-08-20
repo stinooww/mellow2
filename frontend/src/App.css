@@ -857,11 +857,6 @@ footer {
     overflow-y: scroll;
   }
 }
-@media (max-width: 767px) {
-  .modal-main {
-    margin: 40px 0;
-  }
-}
 
 .mellow-btn .svg-inline--fa {
   padding-top: 5px;
@@ -901,26 +896,32 @@ footer {
   text-align: center;
   background-color: #efc337;
 }
+
 .opper-form-offerte #formOfferte__header {
   padding: 0 5%;
 }
+
 .opper-form-offerte #formOfferte__header h1 {
   padding: 0;
 }
+
 @media (min-width: 420px) and (max-width: 768px) {
   .opper-form-offerte #formOfferte__header h1 {
     font-size: 22px;
     text-align: left;
   }
 }
+
 @media (min-width: 420px) and (max-width: 768px) {
   .opper-form-offerte #formOfferte__header h4 {
     text-align: left;
   }
 }
+
 .opper-form-offerte h1 {
   padding: 0;
 }
+
 @media (min-width: 420px) and (max-width: 768px) {
   .opper-form-offerte h1 {
     font-size: 22px;
@@ -2332,33 +2333,41 @@ footer {
 .Diensten .onderhoud__table {
   display: none;
 }
+
 @media (min-width: 54em) {
   .Diensten .onderhoud__table {
     display: inherit;
   }
 }
+
 .Diensten .onderhoud__table .Grid-cell .price {
   margin: 20px 5px;
 }
+
 .Diensten .onderhoud__table .Grid-cell .price .basic-header {
   background-color: #a9b1b3;
   color: white;
 }
+
 .Diensten .onderhoud__table .Grid-cell .price .highlighted-header {
   color: white;
 }
+
 .Diensten .onderhoud__table .Grid-cell .price li {
   color: black;
 }
+
 .Diensten .onderhoud__table .Grid-cell .price li.grey .button-submit {
   font-size: 15px;
   height: 40px;
   text-transform: uppercase;
   width: 185px;
 }
+
 .Diensten .onderhoud__table .Grid-cell:first-child .price:hover {
   margin: 20px 5px;
 }
+
 .Diensten .onderhoud__table .Grid-cell:first-child .grey .button-submit {
   display: none;
 }
