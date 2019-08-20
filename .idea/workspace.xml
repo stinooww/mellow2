@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12ea28b2-16cc-402e-8e6a-5180a58d3b5c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/CallToAction/CallToAction.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/CallToAction/CallToAction.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/ModalOfferte/ModalOfferte.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ModalOfferte/ModalOfferte.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Diensten/Grafisch.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Diensten/Grafisch.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Diensten/SEO.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Diensten/SEO.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Diensten/Website.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Diensten/Website.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_Grafisch.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/_Grafisch.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_Reactcontactform.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/_Reactcontactform.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_Seo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/_Seo.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_Strategie.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/_Strategie.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_Webhosting.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/_Webhosting.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_Website.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/_Website.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_modalofferte.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/_modalofferte.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -86,7 +71,7 @@
         <entry file="file://$PROJECT_DIR$/frontend/src/styling/_header.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="147">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
             </state>
           </provider>
         </entry>
@@ -210,8 +195,8 @@
     <dismissed value="$PROJECT_DIR$/backend/package.json" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1858" />
-    <option name="y" value="69" />
+    <option name="x" value="271" />
+    <option name="y" value="62" />
     <option name="width" value="1055" />
     <option name="height" value="902" />
   </component>
@@ -549,7 +534,7 @@
       <workItem from="1565157159498" duration="1491000" />
       <workItem from="1565182825190" duration="671000" />
       <workItem from="1565264380539" duration="3881000" />
-      <workItem from="1566216776407" duration="5090000" />
+      <workItem from="1566216776407" duration="6049000" />
     </task>
     <task id="LOCAL-00001" summary="made hompeage responsive and added facebook messenger implementation">
       <created>1549620479646</created>
@@ -838,15 +823,21 @@
       <option name="project" value="LOCAL" />
       <updated>1565268095344</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="overall improvement, styling and modifications to the website">
+      <created>1566223000432</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1566223000432</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="295762000" />
+    <option name="totallyTimeSpent" value="296721000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1858" y="69" width="1055" height="902" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2379072" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1271,7 +1262,7 @@
     <entry file="file://$PROJECT_DIR$/frontend/src/styling/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
         </state>
       </provider>
     </entry>

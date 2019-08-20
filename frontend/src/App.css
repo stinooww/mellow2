@@ -481,17 +481,17 @@ footer {
   margin-top: 59px;
   margin-left: 10px; }
   @media screen and (min-width: 1081px) {
-    .modal-offerte-header {
+      .modal-offerte-header {
       margin-top: 59px; } }
   @media screen and (max-width: 768px) {
-    .modal-offerte-header {
+      .modal-offerte-header {
       margin-top: 9px;
       padding-left: 55px; } }
   @media (min-width: 768px) and (max-width: 992px) {
-    .modal-offerte-header {
+      .modal-offerte-header {
       margin-top: 1px; } }
   @media (min-width: 992px) and (max-width: 1400px) {
-    .modal-offerte-header {
+      .modal-offerte-header {
       margin-top: 5px; } }
 
 .navbar-default {
@@ -666,15 +666,15 @@ footer {
   top: 51%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin: 0; }
+    margin: 0;
+}
   @media (min-width: 768px) and (max-width: 1024px) {
     .modal-main {
-      top: 45%;
-      height: 100vh;
-      overflow-y: scroll; } }
-  @media (max-width: 767px) {
-    .modal-main {
-      margin: 40px 0; } }
+        top: 45%;
+        height: 100vh;
+        overflow-y: scroll;
+    }
+  }
 
 .mellow-btn .svg-inline--fa {
   padding-top: 5px;
@@ -706,22 +706,37 @@ footer {
   padding: 35px 0;
   text-align: center;
   background-color: #efc337; }
-  .opper-form-offerte #formOfferte__header {
-    padding: 0 5%; }
+
+.opper-form-offerte #formOfferte__header {
+    padding: 0 5%;
+}
+
+.opper-form-offerte #formOfferte__header h1 {
+    padding: 0;
+}
+
+@media (min-width: 420px) and (max-width: 768px) {
     .opper-form-offerte #formOfferte__header h1 {
-      padding: 0; }
-      @media (min-width: 420px) and (max-width: 768px) {
-        .opper-form-offerte #formOfferte__header h1 {
-          font-size: 22px;
-          text-align: left; } }
-    @media (min-width: 420px) and (max-width: 768px) {
-      .opper-form-offerte #formOfferte__header h4 {
-        text-align: left; } }
-  .opper-form-offerte h1 {
-    padding: 0; }
-    @media (min-width: 420px) and (max-width: 768px) {
-      .opper-form-offerte h1 {
-        font-size: 22px; } }
+        font-size: 22px;
+        text-align: left;
+    }
+}
+
+@media (min-width: 420px) and (max-width: 768px) {
+    .opper-form-offerte #formOfferte__header h4 {
+        text-align: left;
+    }
+}
+
+.opper-form-offerte h1 {
+    padding: 0;
+}
+
+@media (min-width: 420px) and (max-width: 768px) {
+    .opper-form-offerte h1 {
+        font-size: 22px;
+    }
+}
   .opper-form-offerte h3 {
     text-shadow: none;
     font-size: 30px;
@@ -1528,7 +1543,8 @@ footer {
 .StrategiePage {
   margin: 10vh 0 0 0; }
   .StrategiePage__intro h2 {
-    margin: 3vh 0; }
+      margin: 3vh 0;
+  }
   .StrategiePage__intro h3 {
     margin: 10vh 0; }
 
@@ -1788,43 +1804,67 @@ footer {
       left: 52%; }
 
 @media (min-width: 54em) {
-  .Diensten {
-    margin-top: 10vh; } }
+    .Diensten {
+        margin-top: 10vh;
+    }
+}
 
 @media (min-width: 76.5em) {
-  .Diensten .container {
-    width: 1170px; } }
+    .Diensten .container {
+        width: 1170px;
+    }
+}
 
 .Diensten h2 {
-  padding: 0 15px; }
+    padding: 0 15px;
+}
 
 .Diensten .onderhoud__expl p {
-  margin-bottom: 1em;
-  width: 90%; }
+    margin-bottom: 1em;
+    width: 90%;
+}
 
 .Diensten .onderhoud__table {
-  display: none; }
-  @media (min-width: 54em) {
+    display: none;
+}
+
+@media (min-width: 54em) {
     .Diensten .onderhoud__table {
-      display: inherit; } }
-  .Diensten .onderhoud__table .Grid-cell .price {
-    margin: 20px 5px; }
-    .Diensten .onderhoud__table .Grid-cell .price .basic-header {
-      background-color: #a9b1b3;
-      color: white; }
-    .Diensten .onderhoud__table .Grid-cell .price .highlighted-header {
-      color: white; }
-    .Diensten .onderhoud__table .Grid-cell .price li {
-      color: black; }
-      .Diensten .onderhoud__table .Grid-cell .price li.grey .button-submit {
-        font-size: 15px;
-        height: 40px;
-        text-transform: uppercase;
-        width: 185px; }
-  .Diensten .onderhoud__table .Grid-cell:first-child .price:hover {
-    margin: 20px 5px; }
-  .Diensten .onderhoud__table .Grid-cell:first-child .grey .button-submit {
-    display: none; }
+        display: inherit;
+    }
+}
+
+.Diensten .onderhoud__table .Grid-cell .price {
+    margin: 20px 5px;
+}
+
+.Diensten .onderhoud__table .Grid-cell .price .basic-header {
+    background-color: #a9b1b3;
+    color: white;
+}
+
+.Diensten .onderhoud__table .Grid-cell .price .highlighted-header {
+    color: white;
+}
+
+.Diensten .onderhoud__table .Grid-cell .price li {
+    color: black;
+}
+
+.Diensten .onderhoud__table .Grid-cell .price li.grey .button-submit {
+    font-size: 15px;
+    height: 40px;
+    text-transform: uppercase;
+    width: 185px;
+}
+
+.Diensten .onderhoud__table .Grid-cell:first-child .price:hover {
+    margin: 20px 5px;
+}
+
+.Diensten .onderhoud__table .Grid-cell:first-child .grey .button-submit {
+    display: none;
+}
 
 .website {
   padding-top: 5%;
@@ -1837,13 +1877,14 @@ footer {
     .website .waarom-website-txt h2:before {
       content: "";
       position: absolute;
-      left: 260px;
+        left: 260px;
       top: 66px;
       bottom: 0;
       height: 2px;
-      width: 5em;
+        width: 5em;
       background-color: black;
-      animation: slide-in 1s ease-in; }
+        animation: slide-in 1s ease-in;
+    }
 
 @keyframes slide-in {
   0% {
@@ -1860,7 +1901,9 @@ footer {
         margin: 0; } }
     @media (min-width: 30em) {
       .website .mobile-responsive {
-        margin-top: 15vh; } }
+          margin-top: 15vh;
+      }
+    }
     .website .mobile-responsive p {
       margin: 3vh 0; }
   .website strong {
@@ -1914,7 +1957,8 @@ footer {
 
 .reactContact .input-group, .seo-cta .input-group {
   margin-bottom: 1rem;
-  width: 70%; }
+    width: 70%;
+}
 
 .reactContact button, .seo-cta button {
   max-width: 150px;
@@ -2090,14 +2134,18 @@ footer {
       display: flex; }
       @media (min-width: 30em) {
         .seo-cta div form button {
-          justify-content: flex-end;
-          padding: 12px 33px; } }
+            justify-content: flex-end;
+            padding: 12px 33px;
+        }
+      }
 
 .sea-context {
   margin: 10vh 0; }
   @media (min-width: 54em) {
     .sea-context {
-      margin: 20vh 0 10vh 0; } }
+        margin: 20vh 0 10vh 0;
+    }
+  }
   .sea-context p {
     margin-bottom: 10vh; }
   .sea-context .sea-shoutout {
@@ -2107,16 +2155,18 @@ footer {
   font-size: 35px;
   color: #3763ef;
   text-align: left;
-  margin: 8vh 0 4vh 1vh;
+    margin: 8vh 0 4vh 1vh;
   text-shadow: none; }
 
 .grafisch-email .emailmarketing, .grafisch-email .marketingEmail__image {
   width: 85%; }
 
 @media (max-width: 780px) {
-  .grafisch-email .emailmarketing {
-    width: 100%;
-    margin-top: 3vh; } }
+    .grafisch-email .emailmarketing {
+        width: 100%;
+        margin-top: 3vh;
+    }
+}
 
 .grafisch-email .row:first-child {
   margin-bottom: 5vh; }
@@ -2125,12 +2175,16 @@ footer {
   margin-bottom: 0; }
 
 .grafisch-email .marketingEmail__title {
-  margin: 4vh 0; }
+    margin: 4vh 0;
+}
 
 @media (max-width: 780px) {
-  .grafisch-email .marketingEmail .marketingEmail__image {
-    padding: 25px 0; } }
+    .grafisch-email .marketingEmail .marketingEmail__image {
+        padding: 25px 0;
+    }
+}
 
 .grafisch-email .marketingEmail__cta {
-  color: black;
-  margin: 1vh 0; }
+    color: black;
+    margin: 1vh 0;
+}
