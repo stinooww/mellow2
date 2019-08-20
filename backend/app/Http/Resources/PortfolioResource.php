@@ -26,6 +26,7 @@ class PortfolioResource extends JsonResource
                 'mainImgUrl' => $this->mainImgUrl,
                 'Thumbnail' => $this->Thumbnail,
                 'Carousel' => $this->Carousel,
+                'category' => $this->category,
             ],
             'relationships' => new PortfolioRelationshipResource($this),
             'links'         => [

@@ -4,6 +4,7 @@
 
 @section('content_header')
     <div class="col-sm-12"><h1>{{$item->title}}</h1></div>
+    {{$item->types}}
 @stop
 
 @section('content')

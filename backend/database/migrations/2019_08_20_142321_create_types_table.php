@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddCategoryToPortfolio extends Migration
+class CreateTypesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,10 @@ class AddCategoryToPortfolio extends Migration
      */
     public function up()
     {
-        Schema::table('portfolios', function (Blueprint $table) {
-            $table->json('category')->nullable;
+        Schema::create('types', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('type');
+            $table->timestamps();
         });
     }
 
@@ -25,8 +27,6 @@ class AddCategoryToPortfolio extends Migration
      */
     public function down()
     {
-        Schema::table('portfolios', function (Blueprint $table) {
-            $table->json('category');
-        });
+        Schema::dropIfExists('types');
     }
 }

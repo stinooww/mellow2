@@ -51,6 +51,18 @@
     </div>
 </div>
 
+<div class="row">
+    <div class="col-12 col-md-8 offset-md-2">
+        {{Form::checkbox('categoryArray[]', 'website')}}<label>Website</label>
+        {{Form::checkbox('categoryArray[]', 'webshop')}}<label>Webshop</label>
+        {{Form::checkbox('categoryArray[]', 'SEO')}} <label>SEO</label>
+        {{Form::checkbox('categoryArray[]', 'SEA')}}<label>SEA</label>
+        {{Form::checkbox('categoryArray[]', 'mails')}}<label>mails</label>
+        {{Form::checkbox('categoryArray[]', 'logo')}}<label>logo</label>
+        {{Form::checkbox('categoryArray[] ', 'grafisch ontwerp')}}<label>grafisch ontwerp</label>
+    </div>
+</div>
+
 <br>
 <div class="row">
     <div class="col-12 col-md-8 offset-md-2">

@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Session;
 use Intervention\Image\Facades\Image;
 use Illuminate\Support\Carbon;
 
+
 class CRUDController extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
@@ -40,6 +41,9 @@ class CRUDController extends BaseController
     }
     public function store(Request $request)
     {
+        if($request->has('categoryArray')){
+
+        }
         $item = $this->repository->create($request->all());
         return redirect()->route($this->routeName  . '.index', $item->id);
     }
