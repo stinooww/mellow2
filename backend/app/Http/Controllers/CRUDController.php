@@ -28,6 +28,7 @@ class CRUDController extends BaseController
     }
     public function show($id){
         $data['item'] = $this->repository->find($id);
+
         return view($this->viewFolder . '.detail', $data);
     }
     public function destroy($id)
@@ -41,6 +42,7 @@ class CRUDController extends BaseController
     }
     public function store(Request $request)
     {
+
         if($request->has('categoryArray')){
 
         }

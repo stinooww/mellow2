@@ -9,6 +9,7 @@
 namespace App\Repositories\Admin;
 
 
+use Illuminate\Support\Facades\DB;
 use Torann\LaravelRepository\Repositories\AbstractRepository;
 
 class PortfolioRepository extends AbstractRepository
@@ -19,7 +20,9 @@ class PortfolioRepository extends AbstractRepository
      * @return string
      */
     protected $model = \App\Portfolio::class;
-}
-{
 
+    public function getTypes(){
+       return DB::table('types')->get();
+
+    }
 }

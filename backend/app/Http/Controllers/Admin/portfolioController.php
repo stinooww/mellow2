@@ -17,6 +17,22 @@ class portfolioController extends CRUDController
         $this->viewFolder = 'portfolio';
         $this->routName = 'portfolio';
     }
+
+    public function edit($id)
+    {
+        $data['item'] = $this->repository->find($id);
+        $data['types']=$this->repository->getTypes();
+        return view($this->viewFolder . '.edit', $data);
+    }
+    public function update(Request $request, $id)
+    {
+        $model=$this->repository->find($id);
+        $this->repository->update($model, $request->all());
+        $types = $request['categoryArray'];
+        $model->types()->sync($types);
+        return redirect()->route($this->routName. '.index');
+    }
+
     public function mainimage(Request $request, $id){
         $response=$this->upload($request);
         DB::table('portfolios')
