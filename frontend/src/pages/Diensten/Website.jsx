@@ -5,6 +5,9 @@ import CallToAction from '../../components/CallToAction/CallToAction';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import {Helmet} from "react-helmet";
+import MessengerCustomerChat from 'react-messenger-customer-chat';
+
 
 AOS.init();
 
@@ -28,10 +31,27 @@ class Website extends Component {
   //         image2.style.left = 800 - scrollPercent * window.innerWidth * 0.6 + 'px';
   //     });
   // }
+    //       <meta name="referrer" content="origin-when-crossorigin" />
+    //           <meta http-equiv="Content-Security-Policy" content="default-src" />
+    //           <meta name="robots" content="noindex" />
+    //           <meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
+
 
   render() {
     return (
       <div className="website">
+          <Helmet>
+              <title>Contact mellow webdesign development</title>
+          </Helmet>
+          <MessengerCustomerChat
+                  pageId="342021876162625"
+                  appId="342021876162625"
+                  htmlRef={window.location.pathname}
+                  loggedInGreeting="Hallo, waar kan ik je mee helpen?"
+                  themeColor="#efc337"
+                  language="nl_NL"
+                  xfbml={true}
+          />
         <Grid>
           <Row>
             <Col xs={12} className="waarom-website-txt">
@@ -64,6 +84,17 @@ class Website extends Component {
               </p>
             </Col>
           </Row>
+            <Row>
+                <Col xs={12}>
+                    <div className="container">
+                        <blockquote className="wp-block-quote"><p>
+                            Goede communicatie, vernieuwde kijk op zaken gekregen, creatief,
+                            verdiepen zich goed in de materie van je bedrijf, <br/> afspraken nakomen,
+                            kortom een goede keuze geweest.</p>
+                            <cite>Anja - Body Update</cite></blockquote>
+                    </div>
+                </Col>
+            </Row>
           <Row>
             <Col xs={12} sm={6} md={8} className="mobile-responsive">
               <div className="mobile-img" data-aos="fade-up-right" />

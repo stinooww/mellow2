@@ -18,21 +18,15 @@ function Routing() {
     <div>
       <Route exact path="/" component={Home} />
       <Route path="/strategie" component={Strategie} />
-      <Route path="/portfolioitem/dicomenu" component={PortfolioItem} />
-      {/*<Route path={`${match.url}/:postId`}*/}
-      {/*render={ (props) => <Product data= {productsData} {...props} />}/>
-                       component={PortfolioItem}
-                       */}
+        <Route path='/portfolioitem/:id' component={PortfolioItem}/>
       <Route path="/diensten/website" component={Website} />
       <Route path="/diensten/seo" component={SEO} />
       <Route path="/diensten/grafisch" component={Grafisch} />
       <Route path="/diensten/webhosting" component={Webhosting} />
-
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />
       <Route path="/algemenevoorwaarde" component={Av} />
       <Route path="/portfolio" component={Portfolio} />
-      {/*<Route path="/portfolioitem/:id" component={PortfolioItem}/>*/}
       <Route path="/404" component={page404} />
     </div>
   );

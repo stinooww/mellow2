@@ -3,10 +3,11 @@
 
 .navbar-nav {
   @media (min-width: $Tablet) and (max-width: $smallLaptop) {
-    margin: 0 4% 2% 22%;
+    margin: 0 0 2% 26%;
   }
   @media (min-width: $smallLaptop) and (max-width: $bigLaptop) {
-    margin: 0 0 2% 16%;
+
+    margin: -3% 0 1% 16%;
   }
   .menu-item {
     margin-top: 60px;
@@ -22,10 +23,10 @@
 
     }
     @media (min-width: $Tablet) and (max-width: $smallerLaptop) {
-      margin-top: 1px;
+      margin-top: 7px;
     }
     @media (min-width: $smallerLaptop) and (max-width: $bigLaptop) {
-      margin-top: 5px;
+      margin-top: 30px;
     }
   }
 
@@ -33,23 +34,13 @@
 }
 
 .modal-offerte-header {
+  margin-top: 44px;
 
-  margin-top: 59px;
-  margin-left: 10px;
-
-
-  @media screen and (min-width: 1081px) {
-    margin-top: 59px;
-  }
-  @media screen and (max-width: $Tablet) {
-    margin-top: 9px;
-    padding-left: 55px;
-  }
   @media (min-width: $Tablet) and (max-width: $smallerLaptop) {
-    margin-top: 1px;
+    margin-top: -7px;
   }
-  @media (min-width: $smallerLaptop) and (max-width: $bigLaptop) {
-    margin-top: 5px;
+  @media (min-width: $smallLaptop) and (max-width: $bigLaptop) {
+    margin-top: 10px;
   }
 }
 .navbar-default {

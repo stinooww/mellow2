@@ -41,6 +41,22 @@ class Grafisch extends Component {
               </Col>
             </Col>
           </Row>
+            <Row>
+                <Col xs={12}>
+                    <div className="container">
+                        <blockquote className="wp-block-quote"><p>Het stralende middelpunt van onze stand waren jullie collega’s, onze proactieve en vriendelijke
+                            hostessen!&nbsp;We hebben veel complimenten gekregen over de gastvrijheid op onze stand en de inzet van jullie hostesses.&nbsp;Ontzettend
+                            bedankt!</p><cite>Wereldhave</cite></blockquote>
+                    </div>
+                    <div className="container">
+                        <blockquote className="wp-block-quote"><p>De dames van MME trokken enorm de aandacht! Ze waren proactief: iedereen werd aangesproken en de CHANCE
+                            ‘Lolipops’ werden volop uitgedeeld. Ze zagen er goed uit en waren heel enthousiast. Leuke dames! Zij hebben door hun aanwezig zeker de nieuwe
+                            versie van Chance Eau Tendre EDP in de belangstelling gezet.</p><cite>Chanel</cite></blockquote>
+                    </div>
+                </Col>
+            </Row>
+
+
           <Row className="marketingEmail">
             <Col xs={12}>
               <h1 className="marketingEmail__title">Marketings emails</h1>

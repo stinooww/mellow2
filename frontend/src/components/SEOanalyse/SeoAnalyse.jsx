@@ -20,10 +20,10 @@ export default class SeoAnalyse extends Component {
             <br />
             <SEOwebsiteAnalyseForm
               user={{
-                Name: '',
+                  name : '',
                 bedrijf: '',
-                email: '',
-                url: ''
+                email  : '',
+                url    : ''
               }}
             />
           </div>
@@ -35,18 +35,18 @@ export default class SeoAnalyse extends Component {
 
 const formikEnhancer = withFormik({
   validationSchema: Yup.object().shape({
-    naam: Yup.string()
+      name   : Yup.string()
       .min(1, 'Dat is een korte naam')
       .max(50, 'Veel te lang!')
       .required('Uw naam is verplicht.'),
-    bedrijfsnaam: Yup.string()
+      bedrijf: Yup.string()
       .min(2, 'Dat is een korte naam')
       .max(50, 'Veel te lang!'),
-    email: Yup.string()
+    email    : Yup.string()
       .email('Ongeldig email adres')
       .max(50, 'Veel te lang!')
       .required('Email is verplicht!'),
-    url: Yup.string()
+    url      : Yup.string()
       .min(2, 'url klopt niet.')
       .max(100, 'url te lang!')
       .required('url is verplicht!')
@@ -67,7 +67,7 @@ const formikEnhancer = withFormik({
     };
 
     axios
-      .post('https://jsonplaceholder.typicode.com/users', { data })
+            .post('https://api.mellowwebdesign.be/api/sendmail/seo', {data})
       .then(res => {
         // this.setState({submitted: true});
         setSubmitting(true);
@@ -139,24 +139,24 @@ const SeoForm = props => {
       ) : (
         <form onSubmit={handleSubmit}>
           <TextInput
-            id="naam"
-            type="text"
-            label="naam"
-            placeholder="Naam*"
-            error={touched.naam && errors.naam}
-            value={values.naam}
-            onChange={handleChange}
-            onBlur={handleBlur}
+                  id="name"
+                  type="text"
+                  label="name"
+                  placeholder="Naam*"
+                  error={touched.name && errors.name}
+                  value={values.name}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
           />
           <TextInput
-            id="bedrijfsnaam"
-            type="text"
-            label="bedrijfsnaam"
-            placeholder="Bedrijfsnaam"
-            error={touched.bedrijfsnaam && errors.bedrijfsnaam}
-            value={values.bedrijfsnaam}
-            onChange={handleChange}
-            onBlur={handleBlur}
+                  id="bedrijf"
+                  type="text"
+                  label="bedrijf"
+                  placeholder="Bedrijfsnaam"
+                  error={touched.bedrijf && errors.bedrijf}
+                  value={values.bedrijf}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
           />
           <TextInput
             id="url"

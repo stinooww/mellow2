@@ -99,10 +99,10 @@ class Header extends Component {
             >
               Contact
             </NavItem>
+            <NavItem className="modal-offerte-header">
+              <ModalOfferteStart/>
+            </NavItem>
           </Nav>
-          <div className="modal-offerte-header">
-            <ModalOfferteStart />
-          </div>
         </Navbar.Collapse>
       </Navbar>
     );

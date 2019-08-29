@@ -148,12 +148,6 @@ body {
 
 .dicomenu {
   background-image: url("images/dicomenu1.png");
-  //background-size: cover;
-  //background-repeat: no-repeat;
-  //
-  //&:hover {
-  //  background-image: url("images/dicomenu1-1.jpg");
-  //}
 }
 
 .finnegans {
@@ -206,6 +200,14 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.stijnJonas {
+  background-image: url("images/jonasstijn.jpg");
+
+  background-repeat: no-repeat;
+  background-size: contain !important;
+}
+
 
 small {
   font-size: 80%

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Grid, Col, Image } from 'react-bootstrap';
-import mellowBazen from './../../images/jonasstijn.jpg';
+import {Grid, Col} from 'react-bootstrap';
+
 import CallToAction from '../../components/CallToAction/CallToAction';
 
 export default class Home extends Component {
@@ -11,9 +11,7 @@ export default class Home extends Component {
           <div className="about">
             <Col xs={12} sm={12} className="person">
               <article className="post">
-                <div>
-                  <Image src={mellowBazen} className="stijnJonas absolute-bg" />
-                </div>
+                <div className="stijnJonas absolute-bg"/>
                 <div className="post__container">
                   <span className="post__category">
                     Wat meer over wie er achter mellow zit

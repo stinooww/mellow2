@@ -12,7 +12,7 @@ import 'aos/dist/aos.css';
 import CallToAction from '../../components/CallToAction/CallToAction';
 import { Controller, Scene } from 'react-scrollmagic';
 import { Tween, Timeline } from 'react-gsap';
-
+import axios from 'axios';
 // https://scrollmagic.io/
 // https://github.com/bitworking/react-scrollmagic/tree/master/example/src/components/ScrollMagicExamples
 // https://bitworking.github.io/react-gsap/
@@ -27,12 +27,23 @@ class PortfolioItem extends Component {
         duration: '200%'
       }
     });
+    this.state = {
+      project   : {},
+      attributes: []
+    }
     //  this.handleClick = this.handleClick.bind(this);
   }
 
   componentDidMount() {
     // init controller
+    const projectId = this.props.match.params.id;
 
+    axios.get(`https://api.mellowwebdesign.be/api/portfolio/${projectId}`).then(res => {
+      this.setState({
+        portfolios: res.data.data[0],
+        attributes: res.data.data[0].attributes
+      });
+    });
     // create a scene
     new scrollmagic.Scene({ triggerElement: '#paralax' })
       .setTween('#innerParalax', {
@@ -44,8 +55,9 @@ class PortfolioItem extends Component {
   }
 
   render() {
+    const {project, attributes} = this.state;
     return (
-      <>
+            <React.Fragment>
         <div className="portfolio_item-header">
           <div className="header-layers">
             <h1> Dicomenu</h1>
@@ -144,7 +156,7 @@ class PortfolioItem extends Component {
         </Grid>
         <ScrollUpButton />
         <CallToAction />
-      </>
+            </React.Fragment>
     );
   }
 }

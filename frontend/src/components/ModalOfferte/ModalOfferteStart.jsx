@@ -176,7 +176,7 @@ class ModalOfferteStart extends Component {
     //          }
 
     axios
-      .post('https://jsonplaceholder.typicode.com/users', { offerte })
+            .post('https://api.mellowwebdesign.be/api/sendmail/quotation', {offerte})
       .then(res => {
         console.log(res.data);
         let fieldset2 = document.getElementById('fieldset-2');
