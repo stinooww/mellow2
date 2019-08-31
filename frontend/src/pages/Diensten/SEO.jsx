@@ -15,6 +15,7 @@ import Graphic from '../../images/graphic.png';
 import { CircleArrow as ScrollUpButton } from 'react-scroll-up-button';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import {Helmet} from "react-helmet";
 
 AOS.init();
 class SEO extends Component {
@@ -58,6 +59,9 @@ class SEO extends Component {
 
     return (
       <div className="PortfolioPage seo">
+          <Helmet>
+              <title>seo optimalisatie - mellow webdesign development</title>
+          </Helmet>
         <Grid>
           <Row className="section--belang">
             <Col xs={12} md={4}>

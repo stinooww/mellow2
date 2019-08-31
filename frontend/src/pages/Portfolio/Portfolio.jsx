@@ -12,7 +12,7 @@ class Portfolio extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      portfolio   : {},
+      portfolio   : [],
       attributes  : [],
       portfoliosId: []
     }
@@ -25,21 +25,20 @@ class Portfolio extends Component {
         'Content-Type'               : 'application/json',
       }
     }).then(res => {
-      console.log(res.data.data[0]);
 
       this.setState({
-        portfolios  : res.data.data[0],
+        portfolio   : res.data.data,
         portfoliosId: Object.keys(res.data.data[0]),
         attributes  : Object.values((res.data.data[0].attributes))
       });
-      console.log(this.state.portfoliosId);
+      console.log(this.state.portfolio);
     });
 
   }
 
   render() {
 
-    const {portfolios, attributes, portfoliosId} = this.state;
+    const {portfolio, attributes, portfoliosId} = this.state;
 
 
 
@@ -56,19 +55,19 @@ class Portfolio extends Component {
                     <section className="section section-projects">
                       <div className="document-inset section-content">
                         <ul>
-                          {attributes && attributes.map((project) =>
-                                  <li key={portfoliosId}
+                          {portfolio && portfolio.map((project) =>
+                                  <li key={project.id}
                                   >
                                     <div className="table">
                                       <div className="row">
                                         <div className="cell image-cell">
                                           <div className="image-cell-container">
-                                            <Link to={portfoliosId}>
+                                            <Link to={`portfolioitem/${project.id}`}>
                                               <figure
                                                       className="image"
                                                       style={{
                                                         backgroundImage:
-                                                                'url(' + project[5] + ')'
+                                                                'url(' + project.attributes.Thumbnail + ')'
                                                       }}
                                               >
                                                 <span className="aspect-ratio"/>
@@ -81,20 +80,22 @@ class Portfolio extends Component {
                                             <div>
                                               <h2 className="title">
                                                 <Link
-                                                        to={`www.beta.mellowwebdesign.be/${portfoliosId}`}
-                                                        key={portfoliosId}
+                                                        to={`/portfolioitem/${project.id}`}
+                                                        key={project.id}
                                                 >
-                                                  {project.clientName}
+                                                  {project.attributes.clientName}
                                                 </Link>
                                               </h2>
-                                              {/*<h3 className="client">*/}
-                                              {/*<Link to={portfoliosId}>*/}
-                                              {/*{project.clientName}*/}
-                                              {/*</Link>*/}
-                                              {/*</h3>*/}
+                                              <h3 className="client">
+                                                <Link
+                                                        to={`/portfolioitem/${project.id}`}
+                                                >
+                                                  {project.attributes.title}
+                                                </Link>
+                                              </h3>
                                             </div>
                                             <p className="view-project">
-                                              <Link to={portfoliosId}>
+                                              <Link to={`/portfolioitem/${project.id}`}>
                                                 Bekijk Project
                                               </Link>
                                             </p>

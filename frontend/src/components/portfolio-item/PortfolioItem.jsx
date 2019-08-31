@@ -28,8 +28,7 @@ class PortfolioItem extends Component {
       }
     });
     this.state = {
-      project   : {},
-      attributes: []
+      portfolio: []
     }
     //  this.handleClick = this.handleClick.bind(this);
   }
@@ -40,8 +39,7 @@ class PortfolioItem extends Component {
 
     axios.get(`https://api.mellowwebdesign.be/api/portfolio/${projectId}`).then(res => {
       this.setState({
-        portfolios: res.data.data[0],
-        attributes: res.data.data[0].attributes
+        portfolio: res.data.data
       });
     });
     // create a scene
@@ -55,105 +53,87 @@ class PortfolioItem extends Component {
   }
 
   render() {
-    const {project, attributes} = this.state;
+    const {portfolio} = this.state;
     return (
             <React.Fragment>
-        <div className="portfolio_item-header">
-          <div className="header-layers">
-            <h1> Dicomenu</h1>
-            <h3>Vertalingen & verkopen van culinaire woordenboeken </h3>
-          </div>
-          <div className="image-layers">
-            <Image
-              src={dicomenuFRONT}
-              alt="mellow webdesign & development"
-              id="front"
-              className="img front"
-            />
-            <Image
-              src={dicomenuBack}
-              alt="mellow webdesign & development"
-              id="back"
-              className="img back"
-            />
-          </div>
-        </div>
-        <Grid className="portfolio_item-grid">
-          <Row>
-            <Col
-              className="dicomenu-website"
-              data-aos="fade-up"
-              data-aos-mirror="true"
-            >
-              <p>
-                Dicomenu kwam naar ons met de vraag of we heel hun oude website
-                inclusief webshop in een nieuw jasje konden steken.
-              </p>
-              <p>
-                Niet alleen wilden ze een vernieuwde huisstijl voor hun webshop,
-                ze wensten ook graag dat hun klanten betalingen konden doen via
-                PayPal.
-              </p>
-              <br />
-              <p>
-                Bovendien verstuurde ze op regelmatige basis e-mails naar al hun
-                klanten en wensten ze deze gepersonaliseerd met de huisstijl van
-                de website.{' '}
-              </p>
-              <p>
-                Ook dit hebben we tot een goed einde kunnen brengen, en dat
-                zelfs in 2 talen !
-              </p>
-            </Col>
-          </Row>
-          <Row>
-            <Col md={12} className="cta-overal">
-              <Link to="www.dicomenu.com" className="mellow-btn">
-                {' '}
-                Bezoek de website
-              </Link>
-            </Col>
-          </Row>
-          <Row>
-            <Controller>
-              <div className="section" />
-              <Scene indicators={false} duration="200%" triggerHook="onEnter">
-                <Timeline wrapper={<div className="parallax" />}>
-                  <Tween
-                    position="0"
-                    from={{
-                      yPercent: -50
-                    }}
-                    to={{
-                      yPercent: 0
-                    }}
-                  >
-                    <img src={ober} alt="mellowwebdesign portfolio " />
-                  </Tween>
-                </Timeline>
-              </Scene>
-              <div className="section" />
-            </Controller>
-          </Row>
-          <Row>
-            <Col
-              className="webhosting"
-              data-aos="zoom-in-up"
-              data-aos-delay="550"
-            >
-              <p>
-                Enkele maanden na de release contaceerde ze ons opnieuw omdat ze
-                toch vonden dat de laadtijd van hun website gehost op een
-                goedkope buitenlandse hosting niet zo snel was...
-              </p>
-              <p>
-                We hebben de volledige website vervolgens overgezet naar onze
-                webhosting server en dit resulteerde in een laadtijd van bijna{' '}
-                <strong>7 seconden</strong> sneller !!!
-              </p>
-            </Col>
-          </Row>
-        </Grid>
+              {portfolio && portfolio.map((project) =>
+
+                      <div>
+                        <div className="portfolio_item-header">
+                          <div className="header-layers">
+                            <h1>   {project.attributes.clientName}
+                            </h1>
+                            <h3><p>
+                              {project.attributes.title}
+                            </p></h3>
+                          </div>
+                          <div className="image-layers">
+                            <Image
+                                    src={dicomenuFRONT}
+                                    alt="mellow webdesign & development"
+                                    id="front"
+                                    className="img front"
+                            />
+                            <Image
+                                    src={dicomenuBack}
+                                    alt="mellow webdesign & development"
+                                    id="back"
+                                    className="img back"
+                            />
+                          </div>
+                        </div>
+                        <Grid className="portfolio_item-grid">
+                          <Row>
+                            <Col
+                                    className="dicomenu-website"
+                                    data-aos="fade-up"
+                                    data-aos-mirror="true"
+                            >
+                              {project.attributes.request}
+                              {project.attributes.solution}
+                            </Col>
+                          </Row>
+                          <Row>
+                            <Col md={12} className="cta-overal">
+                              <Link to={project.attributes.solution} className="mellow-btn">
+                                {' '}
+                                Bezoek de website
+                              </Link>
+                            </Col>
+                          </Row>
+                          <Row>
+                            <Controller>
+                              <div className="section"/>
+                              <Scene indicators={false} duration="200%" triggerHook="onEnter">
+                                <Timeline wrapper={<div className="parallax"/>}>
+                                  <Tween
+                                          position="0"
+                                          from={{
+                                            yPercent: -50
+                                          }}
+                                          to={{
+                                            yPercent: 0
+                                          }}
+                                  >
+                                    <img src={ober} alt="mellowwebdesign portfolio "/>
+                                  </Tween>
+                                </Timeline>
+                              </Scene>
+                              <div className="section"/>
+                            </Controller>
+                          </Row>
+                          <Row>
+                            <Col
+                                    className="webhosting"
+                                    data-aos="zoom-in-up"
+                                    data-aos-delay="550"
+                            >
+                              {project.attributes.solution}
+                            </Col>
+                          </Row>
+                        </Grid>
+                      </div>
+              )}
         <ScrollUpButton />
         <CallToAction />
             </React.Fragment>

@@ -41,7 +41,7 @@ class Website extends Component {
     return (
       <div className="website">
           <Helmet>
-              <title>Contact mellow webdesign development</title>
+              <title>Website - mellow webdesign development</title>
           </Helmet>
           <MessengerCustomerChat
                   pageId="342021876162625"
@@ -126,8 +126,8 @@ class Website extends Component {
             </Col>
             <Col xs={12} data-aos="fade-up">
               <h3 className="text-center">
-                Dus stel dat jouw website niet responsief is en die van jouw
-                concurrent wel dan geeft Google de voorrang aan jouw concurrent.
+                  Dus als jouw website niet responsief is tegenover die van jouw
+                  concurrent, dan geeft Google voorrang aan jouw concurrent!
               </h3>
               <br />
               <br />

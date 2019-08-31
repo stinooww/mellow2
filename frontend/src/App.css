@@ -67,6 +67,12 @@ h2 {
   .container {
     width: 1350px; } }
 
+@media (max-width: 768px) {
+    .mobile-img {
+        background-size: contain !important;
+    }
+}
+
 body {
   font-size: 100%;
   line-height: 1.6;
@@ -380,7 +386,13 @@ a, a:focus {
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 1px;
-  opacity: 0.5; }
+    opacity: 0.5;
+    color: grey;
+}
+
+.section-projects .content-cell h3 a:hover {
+    color: white;
+}
 
 .section-projects .content-cell div {
   padding-bottom: 20px;
@@ -397,28 +409,32 @@ a, a:focus {
   font-weight: 300; }
 
 .section-projects .content-cell .view-project a {
-  position: relative;
-  display: inline-block;
-  padding-left: 50px; }
-  .section-projects .content-cell .view-project a:hover {
-    text-decoration: none; }
+    position: relative;
+    display: inline-block;
+    padding-left: 50px;
+}
+
+.section-projects .content-cell .view-project a:hover {
+    text-decoration: none;
+}
 
 .section-projects .content-cell .view-project a:before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0px;
-  height: 1px;
-  width: 40px;
-  background: #fff;
-  transform: scaleX(0);
-  transform-origin-x: left;
-  transform-origin-y: center;
-  transform-origin-z: 0px;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0.38, 0, 0.12, 1);
-  transition-delay: 100ms;
-  transition-property: transform; }
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    height: 1px;
+    width: 40px;
+    background: #fff;
+    transform: scaleX(0);
+    transform-origin-x: left;
+    transform-origin-y: center;
+    transform-origin-z: 0px;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0.38, 0, 0.12, 1);
+    transition-delay: 100ms;
+    transition-property: transform;
+}
 
 .section-projects .content-cell a:hover {
   text-decoration: none; }
@@ -1601,14 +1617,17 @@ footer {
   .about__container .about {
     padding: 50px 0;
     /**
-     * Mixins
-     */
-    /**
      * Helpers
      */
     /**
  * Animations
  */ }
+
+@media (min-width: 54em) and (max-width: 64em) {
+    .about__container .about {
+        padding: 10px 0;
+    }
+}
     .about__container .about a {
       padding: 0.5em 1em;
       font-size: 0.8em;
@@ -1636,10 +1655,8 @@ footer {
           min-height: 40em; } }
       .about__container .about .post > *:first-child {
         position: relative;
-        height: 14em; }
-        @media (min-width: 30em) {
-          .about__container .about .post > *:first-child {
-            height: 18em; } }
+          height: 25em;
+      }
         @media (min-width: 54em) {
           .about__container .about .post > *:first-child {
             flex-basis: 50%;
@@ -1673,10 +1690,18 @@ footer {
         overflow-y: auto; }
         @media (min-width: 30em) {
           .about__container .about .post__container {
-            padding-top: 35%; } }
+              padding-top: 10%;
+          }
+        }
         @media (min-width: 64em) {
           .about__container .about .post__container {
             padding-top: 1%; } }
+
+@media (min-width: 54em) and (max-width: 64em) {
+    .about__container .about .post__container {
+        padding: 10px 0;
+    }
+}
       .about__container .about .post__category {
         position: absolute;
         text-transform: uppercase;
@@ -1858,7 +1883,8 @@ footer {
     @media (min-width: 20em) {
       .website .mobile-responsive {
         margin: 0; } }
-    @media (min-width: 30em) {
+
+@media (min-width: 54em) {
       .website .mobile-responsive {
         margin-top: 15vh; } }
     .website .mobile-responsive p {

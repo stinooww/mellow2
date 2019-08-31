@@ -125,6 +125,12 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   opacity: 0.5;
+  color: grey;
+
+  a:hover {
+    color: white;
+  }
+
 }
 
 .section-projects .content-cell div {
@@ -142,34 +148,36 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 300;
-}
 
-.section-projects .content-cell .view-project a {
-  position: relative;
-  display: inline-block;
-  padding-left: 50px;
-  &:hover {
-    text-decoration: none;
+  a {
+    position: relative;
+    display: inline-block;
+    padding-left: 50px;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  a:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    height: 1px;
+    width: 40px;
+    background: #fff;
+    transform: scaleX(0);
+    transform-origin-x: left;
+    transform-origin-y: center;
+    transform-origin-z: 0px;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0.38, 0, 0.12, 1);
+    transition-delay: 100ms;
+    transition-property: transform;
   }
 }
 
-.section-projects .content-cell .view-project a:before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0px;
-  height: 1px;
-  width: 40px;
-  background: #fff;
-  transform: scaleX(0);
-  transform-origin-x: left;
-  transform-origin-y: center;
-  transform-origin-z: 0px;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0.38, 0, 0.12, 1);
-  transition-delay: 100ms;
-  transition-property: transform;
-}
 
 
 .section-projects .content-cell a:hover {
