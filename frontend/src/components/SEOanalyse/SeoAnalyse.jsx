@@ -9,13 +9,10 @@ import axios from 'axios';
 export default class SeoAnalyse extends Component {
   render() {
     return (
-      <Row className="seo-cta">
-        <Col md={8} sm={12}>
-          <div>
-            <h2>Wil je graag weten hoe jouw website er voor staat?</h2>
+            <Col md={6} sm={12}>
+
             <h4>
-              {' '}
-              Vul je gegevens in en wij sturen je een GRATIS SEO analyse op!{' '}
+                Vul je gegevens in en wij sturen je een GRATIS SEO analyse op!
             </h4>
             <br />
             <SEOwebsiteAnalyseForm
@@ -26,9 +23,7 @@ export default class SeoAnalyse extends Component {
                 url    : ''
               }}
             />
-          </div>
         </Col>
-      </Row>
     );
   }
 }
@@ -47,9 +42,9 @@ const formikEnhancer = withFormik({
       .max(50, 'Veel te lang!')
       .required('Email is verplicht!'),
     url      : Yup.string()
-      .min(2, 'url klopt niet.')
+            .min(2, 'website klopt niet.')
       .max(100, 'url te lang!')
-      .required('url is verplicht!')
+            .required('website url is verplicht!')
   }),
 
   mapPropsToValues: ({ user }) => ({
@@ -142,7 +137,7 @@ const SeoForm = props => {
                   id="name"
                   type="text"
                   label="name"
-                  placeholder="Naam*"
+                  placeholder="Jouw naam*"
                   error={touched.name && errors.name}
                   value={values.name}
                   onChange={handleChange}
@@ -152,7 +147,7 @@ const SeoForm = props => {
                   id="bedrijf"
                   type="text"
                   label="bedrijf"
-                  placeholder="Bedrijfsnaam"
+                  placeholder="Jouw bedrijfsnaam"
                   error={touched.bedrijf && errors.bedrijf}
                   value={values.bedrijf}
                   onChange={handleChange}
@@ -169,17 +164,17 @@ const SeoForm = props => {
             onBlur={handleBlur}
           />
           <TextInput
-            id="email"
-            type="email"
-            label="email"
-            placeholder="Email*"
-            error={touched.email && errors.email}
-            value={values.email}
-            onChange={handleChange}
-            onBlur={handleBlur}
+                  id="email"
+                  type="email"
+                  label="email"
+                  placeholder="Jouw email*"
+                  error={touched.email && errors.email}
+                  value={values.email}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
           />
           <button type="submit" onClick={handleSubmit}>
-            Verzenden
+              Vraag je analyse aan
           </button>
         </form>
       )}

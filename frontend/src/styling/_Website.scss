@@ -42,17 +42,44 @@
 
   .mobile-responsive {
     margin: 20vh 0;
+    height: 70vh;
     @media (min-width: $mq-xs) {
       margin: 0;
     }
+    @media (max-width: $bigGsm) {
+      height: 50vh;
+    }
 
-    @media (min-width: $mq-md) {
-      margin-top: 15vh;
+    @media (min-width: $mq-md) and (max-width: $mq-lg) {
+      margin-top: 0;
     }
     p {
       margin: 3vh 0;
     }
+
+    .mobile-img {
+      display: block;
+      max-width: 100%;
+      width: 100%;
+      @media (max-width: $bigGsm) {
+        height: 50%;
+      }
+      @media (min-width: $mq-md) and (max-width: $mq-lg) {
+        height: 70%;
+      }
+      @media (min-width: $smallLaptop) and (max-width: 1199px) {
+        height: 65%;
+      }
+      @media (min-width: 1200px) and (max-width: 1299px) {
+        height: 73%;
+      }
+      @media (min-width: $bigLaptop) {
+        height: 90%;
+      }
+    }
+
   }
+
 
   strong {
     color: black;

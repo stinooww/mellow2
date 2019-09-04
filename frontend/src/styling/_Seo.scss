@@ -3,9 +3,7 @@
 
 
   .section--belang {
-    height: 60vh;
 
-    margin-bottom: 15vh;
     @media (min-width: $mq-xs) {
       display: inherit;
     }
@@ -14,9 +12,7 @@
       display: flex;
     }
     div:first-child {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+
       @media (min-width: $mq-xs) {
         margin-bottom: 5vh;
       }
@@ -38,6 +34,10 @@
 
     .sea-link {
       color: black;
+
+      &:hover {
+        text-decoration: underline !important;
+      }
     }
   }
 
@@ -89,11 +89,10 @@
 
         }
         padding: 25px;
-        height: 350px;
+        min-height: 350px;
         box-sizing: border-box;
         display: -webkit-box;
         display: -ms-flexbox;
-        -js-display: flex;
         display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -148,14 +147,21 @@
 
   width: 100%;
   background-color: lightgray;
-  padding: 6em;
+  padding: 3em;
   display: flex;
   justify-content: center;
-  margin: 100px 0 20px 0;
+  margin: 80px 0 20px 0;
   @media (min-width: $mq-md) {
+    height: 55vh;
 
-    margin: 100px 0;
+  }
+  @media (max-width: $bigGsm) {
+    flex-direction: column;
 
+  }
+
+  p {
+    color: black;
   }
 
   h2 {
@@ -166,10 +172,6 @@
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
-      @media (min-width: $mq-md) {
-
-
-      }
       .label {
         display: none;
       }
@@ -191,10 +193,11 @@
 
       button {
         display: flex;
-
+        max-width: 100%;
+        width: 70%;
+        justify-content: center;
 
         @media (min-width: $mq-sm) {
-          justify-content: flex-end;
           padding: 12px 33px;
         }
       }

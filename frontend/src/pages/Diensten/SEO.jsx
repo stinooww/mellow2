@@ -64,10 +64,9 @@ class SEO extends Component {
           </Helmet>
         <Grid>
           <Row className="section--belang">
-            <Col xs={12} md={4}>
-              <Image className="img-google" src={Google} responsive />
-            </Col>
-            <Col md={8} xs={12}>
+            <Col xs={12}>
+
+
               <h2>Het belang van eerste te staan in Google</h2>
               <p>
                 We gebruiken allemaal regelmatig bekende zoekmachines zoals Bing
@@ -82,6 +81,7 @@ class SEO extends Component {
                 verschijnen als men een antwoord zoekt waarop jij een oplossing
                 kan bieden!{' '}
               </p>
+              <Image className="img-google" src={Google} responsive/>
               <p>
                 Omdat het enkele weken duurt voordat SEO begint te werken zal je
                 dit resultaat niet meteen zien. Zoekmachine optimalisatie oftwel
@@ -94,16 +94,25 @@ class SEO extends Component {
                 Wil je toch liever op kortere termijn bovenaan de zoekresultaten
                 verschijnen, <br />{' '}
                 <a className="sea-link" href="#sea">
-                  kan je inzetten op een SEA-campagne
+                  Kan je inzetten op een SEA-campagne
                 </a>
                 .
               </p>
             </Col>
           </Row>
         </Grid>
-        <div data-aos="zoom-in-down" className="mt-4 mb-4 d-flex">
+        <div data-aos="zoom-in-down" className="container-fluid">
+          <Row className="seo-cta">
+            <Col md={6} sm={12}>
+              <h2>Wil je graag weten hoe jouw website er voor staat?</h2>
+              <p>Vul dan hier je gegevens in,
+                wij kijken je website grondig na en sturen een volledig analyse rapport samen met een offerte naar u op!</p>
+            </Col>
           <SeoAnalyse />
+          </Row>
+
         </div>
+
         <Grid>
           <Row className="seo__voordelen">
             <Col xs={12}>
@@ -112,10 +121,10 @@ class SEO extends Component {
             <Col md={12} className="seo-stappen">
               <aside>
                 <article
-                  data-aos="flip-left"
-                  data-aos-easing="ease-in-back"
-                  data-aos-delay="150"
-                  data-aos-duration="800"
+                        data-aos="flip-left"
+                        data-aos-easing="ease-in-back"
+                        data-aos-delay="100"
+                        data-aos-duration="800"
                 >
                   <h3 className="seo-stappen-head"> 1</h3>
                   <strong className="seo__subtitle">Analyse</strong>
@@ -130,10 +139,10 @@ class SEO extends Component {
                   </p>
                 </article>
                 <article
-                  data-aos="flip-up"
-                  data-aos-easing="ease-in-back"
-                  data-aos-delay="150"
-                  data-aos-duration="800"
+                        data-aos="flip-up"
+                        data-aos-easing="ease-in-back"
+                        data-aos-delay="110"
+                        data-aos-duration="800"
                 >
                   <h3>2</h3>
                   <strong className="seo__subtitle">
@@ -163,10 +172,10 @@ class SEO extends Component {
                   </ul>
                 </article>
                 <article
-                  data-aos="flip-right"
-                  data-aos-easing="ease-in-back"
-                  data-aos-delay="150"
-                  data-aos-duration="800"
+                        data-aos="flip-right"
+                        data-aos-easing="ease-in-back"
+                        data-aos-delay="120"
+                        data-aos-duration="800"
                 >
                   <h3>3</h3>
                   <strong className="seo__subtitle">

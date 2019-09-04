@@ -96,16 +96,16 @@ class Website extends Component {
                 </Col>
             </Row>
           <Row>
-            <Col xs={12} sm={6} md={8} className="mobile-responsive">
+              <Col xs={12} sm={12} md={8} className="mobile-responsive">
               <div className="mobile-img" data-aos="fade-up-right" />
             </Col>
             <Col
-              xs={12}
-              sm={6}
-              md={4}
-              className="mobile-responsive"
-              data-aos="fade-up-left"
-              data-aos-mirror="true"
+                    xs={12}
+                    sm={12}
+                    md={4}
+                    className="mobile-responsive"
+                    data-aos="fade-up-left"
+                    data-aos-mirror="true"
             >
               <h3>Jouw website mobiel beschikbaar!</h3>
               <p>
