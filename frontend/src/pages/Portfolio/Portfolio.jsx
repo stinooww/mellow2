@@ -12,9 +12,7 @@ class Portfolio extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      portfolio   : [],
-      attributes  : [],
-      portfoliosId: []
+        portfolio: []
     }
   }
 
@@ -27,18 +25,16 @@ class Portfolio extends Component {
     }).then(res => {
 
       this.setState({
-        portfolio   : res.data.data,
-        portfoliosId: Object.keys(res.data.data[0]),
-        attributes  : Object.values((res.data.data[0].attributes))
+          portfolio: res.data.data
       });
-      console.log(this.state.portfolio);
+        // console.log(this.state.portfolio);
     });
 
   }
 
   render() {
 
-    const {portfolio, attributes, portfoliosId} = this.state;
+      const {portfolio} = this.state;
 
 
 
@@ -54,7 +50,7 @@ class Portfolio extends Component {
                   <Col md={12}>
                     <section className="section section-projects">
                       <div className="document-inset section-content">
-                        <ul>
+                          <ul className="section-content__list">
                           {portfolio && portfolio.map((project) =>
                                   <li key={project.id}
                                   >

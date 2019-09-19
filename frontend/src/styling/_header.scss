@@ -3,11 +3,11 @@
 
 .navbar-nav {
   @media (min-width: $Tablet) and (max-width: $smallLaptop) {
-    margin: 0 0 2% 26%;
+    margin: 6% 0 2% 1%;
   }
   @media (min-width: $smallLaptop) and (max-width: $bigLaptop) {
 
-    margin: -3% 0 1% 16%;
+    margin: 0 0 1% 2%;
   }
   .menu-item {
     margin-top: 60px;
@@ -15,6 +15,7 @@
     text-transform: uppercase;
     @media screen and (max-width: $Tablet) {
       padding-left: 55px;
+      width: 56%;
 
     }
 
@@ -34,13 +35,19 @@
 }
 
 .modal-offerte-header {
-  margin-top: 44px;
-
-  @media (min-width: $Tablet) and (max-width: $smallerLaptop) {
-    margin-top: -7px;
+  margin-top: 4px;
+  padding-left: 55px;
+  @media (min-width: $Tablet) and (max-width: $smallLaptop) {
+    margin-top: 0;
+    padding-left: 0;
   }
   @media (min-width: $smallLaptop) and (max-width: $bigLaptop) {
-    margin-top: 10px;
+    margin-top: 14px;
+    padding-left: 0;
+  }
+  @media (min-width: 1301px) {
+    margin-top: 41px;
+    padding-left: 0;
   }
 }
 
@@ -51,48 +58,71 @@
   margin-bottom: 0;
   min-height: 160px;
   border: none;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $Tablet) {
+      flex-direction: unset;
+
+    }
+  }
 }
 
+.navbar-header {
+  margin-left: 5% !important;
+  @media (min-width: $Tablet) {
+    display: block;
+    width: unset;
+
+  }
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
 .navbar-brand {
   display: flex;
   align-items: center;
-}
-
-.header-logo {
   height: 150px;
-  padding: 7px 14px;
-  margin-top: 110px;
-  @media (min-width: $smallLaptop) and (max-width: $bigLaptop) {
-    margin-top: 115px;
-  }
-  @media (min-width: $smallerLaptop) and (max-width: $smallLaptop) {
-    margin-top: 115px;
-  }
+  width: 150px;
+  padding: 0;
+  margin: 15px;
 }
 
 .navbar-default .navbar-nav > li > a {
   color: black;
   font-size: 17px;
-  @media (min-width: 768px) and (max-width: 1080px) {
+  @media (min-width: $Tablet) and (max-width: 1080px) {
     font-size: 15px;
 
   }
 
 }
 
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+  background-color: #3763ef61;
+  background-image: unset;
+}
+
 .nav > li > a {
-  @media (min-width: 768px) and (max-width: 1080px) {
+  @media (min-width: $Tablet) and (max-width: 1080px) {
     padding: 8px 12px;
 
   }
 }
 
 .navbar-collapse {
-  height: 425px;
+  height: 100vh;
   @media screen and (max-width: $Tablet) {
-    margin-top: 125px;
+    margin-top: 12px;
   }
 
+}
+
+.navbar-toggle {
+  height: 50px;
 }
 
 /* Underline From Center */

@@ -5,12 +5,14 @@
   .row {
     flex-direction: row;
     width: 100%;
+    margin: 0 15px;
   }
 
   .waarom-website-txt {
     margin-bottom: 10vh;
     h2 {
       margin: 3vh 0 5vh 0;
+      line-height: 1.4;
 
       &:before {
         content: "";
@@ -41,42 +43,45 @@
   }
 
   .mobile-responsive {
-    margin: 20vh 0;
-    height: 70vh;
-    @media (min-width: $mq-xs) {
-      margin: 0;
-    }
     @media (max-width: $bigGsm) {
-      height: 50vh;
+      margin: 5vh 0;
     }
+    margin: 10vh 0;
 
-    @media (min-width: $mq-md) and (max-width: $mq-lg) {
-      margin-top: 0;
-    }
+
     p {
       margin: 3vh 0;
     }
 
-    .mobile-img {
-      display: block;
-      max-width: 100%;
-      width: 100%;
+    &__img {
+      height: 70vh;
       @media (max-width: $bigGsm) {
-        height: 50%;
+        height: 50vh;
       }
-      @media (min-width: $mq-md) and (max-width: $mq-lg) {
-        height: 70%;
-      }
-      @media (min-width: $smallLaptop) and (max-width: 1199px) {
-        height: 65%;
-      }
-      @media (min-width: 1200px) and (max-width: 1299px) {
-        height: 73%;
-      }
-      @media (min-width: $bigLaptop) {
-        height: 90%;
+
+      .mobile-img {
+        display: block;
+        max-width: 100%;
+        width: 100%;
+        @media (max-width: $bigGsm) {
+          height: 60%;
+        }
+        @media (min-width: $mq-md) and (max-width: $mq-lg) {
+          height: 70%;
+        }
+        @media (min-width: $smallLaptop) and (max-width: 1199px) {
+          height: 65%;
+        }
+        @media (min-width: 1200px) and (max-width: 1299px) {
+          height: 73%;
+        }
+        @media (min-width: $bigLaptop) {
+          height: 90%;
+        }
       }
     }
+
+
 
   }
 
@@ -97,16 +102,14 @@
 
 
 .container  {
-  padding-right: 0;
-  padding-left: 20px;
-  margin: 10vh 0;
+
 
   .wp-block-quote {
-    margin: 40px;
+    margin: 20px;
 
     p {
+      font-size: 15px;
       position: relative;
-      font-size: 31px;
       line-height: 1.5em;
       font-style: italic;
     }

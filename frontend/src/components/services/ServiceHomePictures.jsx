@@ -39,25 +39,25 @@ class ServiceHomePictures extends Component {
                       Webshop &amp; Marketing emails
                     </figcaption>
                   </figure>
-                  <Link to="/portfolioitem/dicomenu" className="full-link">
+                    <Link to="/portfolioitem/19" className="full-link">
                     Dicomenu
                   </Link>
                   <div className="overlay">
                     <div className="overlay-color overlay-color1" />
                     <div className="overlay-content">
                       <h3>
-                        <Link to="/portfolioitem/dicomenu">
+                          <Link to="/portfolioitem/19">
                           Dicomenu
                           <small>Culinaire vertalingen </small>
                         </Link>
                       </h3>
-                      <Link to="/portfolioitem/dicomenu">Bekijk project</Link>
+                        <Link to="/portfolioitem/19">Bekijk project</Link>
                       <div className="hr" />
                       <Link to="/portfolio" className="light">
                         Bekijk portfolio
                       </Link>
                     </div>
-                    <Link to="/portfolioitem/dicomenu" className="full-link">
+                      <Link to="/portfolioitem/19" className="full-link">
                       Dicomenu
                     </Link>
                   </div>
@@ -72,25 +72,25 @@ class ServiceHomePictures extends Component {
                     />
                     <figcaption className="caption">Webdesign</figcaption>
                   </figure>
-                  <Link to="/portfolioitem/finnegans" className="full-link">
+                    <Link to="/portfolioitem/14" className="full-link">
                     Finnegans
                   </Link>
                   <div className="overlay">
                     <div className="overlay-color overlay-color1" />
                     <div className="overlay-content">
                       <h3>
-                        <Link to="/portfolioitem/finnegans">
+                          <Link to="/portfolioitem/14">
                           Finnegans
                           <small>B2B en B2C cocktailconcepten op maat </small>
                         </Link>
                       </h3>
-                      <Link to="/portfolioitem/finnegans">Bekijk project</Link>
+                        <Link to="/portfolioitem/14">Bekijk project</Link>
                       <div className="hr" />
                       <Link to="/portfolio" className="light">
                         Bekijk portfolio
                       </Link>
                     </div>
-                    <Link to="/portfolioitem/finnegans" className="full-link">
+                      <Link to="/portfolioitem/14" className="full-link">
                       Finnegans
                     </Link>
                   </div>
@@ -110,19 +110,19 @@ class ServiceHomePictures extends Component {
                         responsive website
                       </figcaption>
                     </figure>
-                    <Link to="/portfolioitem/bodyupdate" className="full-link">
+                      <Link to="/portfolioitem/18" className="full-link">
                       Afslanken
                     </Link>
                     <div className="overlay">
                       <div className="overlay-color overlay-color1" />
                       <div className="overlay-content">
                         <h3>
-                          <Link to="/portfolioitem/bodyupdate">
+                            <Link to="/portfolioitem/18">
                             Body-update
                             <small>Afslanken &amp; diëten </small>
                           </Link>
                         </h3>
-                        <Link to="/portfolioitem/bodyupdate">
+                          <Link to="/portfolioitem/18">
                           Bekijk project
                         </Link>
                         <div className="hr" />
@@ -131,8 +131,8 @@ class ServiceHomePictures extends Component {
                         </Link>
                       </div>
                       <Link
-                        to="/portfolioitem/bodyupdate"
-                        className="full-link"
+                          to="/portfolioitem/18"
+                          className="full-link"
                       >
                         Body-update
                       </Link>
@@ -146,19 +146,19 @@ class ServiceHomePictures extends Component {
                         Webdesign en SEA
                       </figcaption>
                     </figure>
-                    <Link to="/portfolioitem/askbliksem" className="full-link">
+                      <Link to="/portfolioitem/20" className="full-link">
                       SEA
                     </Link>
                     <div className="overlay">
                       <div className="overlay-color overlay-color1" />
                       <div className="overlay-content">
                         <h3>
-                          <Link to="/portfolioitem/dicomenu">
+                            <Link to="/portfolioitem/20">
                             Ask-bliksembeveiliging
                             <small>Social media &amp; webdesign </small>
                           </Link>
                         </h3>
-                        <Link to="/portfolioitem/askbliksem">
+                          <Link to="/portfolioitem/20">
                           Bekijk project
                         </Link>
                         <div className="hr" />
@@ -167,8 +167,8 @@ class ServiceHomePictures extends Component {
                         </Link>
                       </div>
                       <Link
-                        to="/portfolioitem/askbliksem"
-                        className="full-link"
+                          to="/portfolioitem/20"
+                          className="full-link"
                       >
                         Ask-bliksembeveiliging
                       </Link>
@@ -180,8 +180,8 @@ class ServiceHomePictures extends Component {
                     <figcaption className="caption">Webshop</figcaption>
                   </figure>
                   <Link
-                    to="/portfolioitem/bakkerijpeeraer/"
-                    className="full-link"
+                      to="/portfolioitem/9"
+                      className="full-link"
                   >
                     Bakkerij & broodjes
                   </Link>
@@ -189,12 +189,12 @@ class ServiceHomePictures extends Component {
                     <div className="overlay-color overlay-color1" />
                     <div className="overlay-content">
                       <h3>
-                        <Link to="/portfolioitem/bakkerijpeeraer">
+                          <Link to="/portfolioitem/9">
                           Bakkerij Peeraer
                           <small>Bakkerij & broodjes</small>
                         </Link>
                       </h3>
-                      <Link to="/portfolioitem/bakkerijpeeraer">
+                        <Link to="/portfolioitem/9">
                         Bekijk project
                       </Link>
                       <div className="hr" />
@@ -203,8 +203,8 @@ class ServiceHomePictures extends Component {
                       </Link>
                     </div>
                     <Link
-                      to="/portfolioitem/bakkerijpeeraer"
-                      className="full-link"
+                        to="/portfolioitem/9"
+                        className="full-link"
                     >
                       Bakkerij Peeraer
                     </Link>

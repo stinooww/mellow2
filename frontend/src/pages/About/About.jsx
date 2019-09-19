@@ -17,13 +17,13 @@ export default class Home extends Component {
                     Wat meer over wie er achter mellow zit
                   </span>
                   <div className="post__content">
-                    <header>
+                      <div>
                       <time className="post__time">November 28 2017</time>
                       <h2 className="post__header">
                         <span>Hoe het</span> <span>allemaal</span>{' '}
                         <span>begon</span>
                       </h2>
-                    </header>
+                      </div>
                     <p className="post__text">
                       Mellow webdesign is een idee dat eind 2017 is ontstaan
                       toen Jonas en Stijn samen studeerde op de Karel de grote

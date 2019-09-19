@@ -15,7 +15,7 @@ a {
 
 @font-face {
   font-family: mellow;
-  src: url("styling/font/lithos.otf");
+  src: url("./styling/font/lithos.otf");
   font-size: 100%;
   font-weight: normal;
   font-style: normal;
@@ -23,7 +23,7 @@ a {
 
 @font-face {
   font-family: JOSEFIN-SANS-REG;
-  src: url("styling/font/JosefinSans-Regular.ttf");
+  src: url("./styling/font/JosefinSans-Regular.ttf");
   font-size: 100%;
   font-weight: normal;
   font-style: normal;
@@ -31,7 +31,7 @@ a {
 
 @font-face {
   font-family: JOSEFIN-SANS-BOLD;
-  src: url("styling/font/JosefinSans-Bold.ttf");
+  src: url("./styling/font/JosefinSans-Bold.ttf");
   font-size: 100%;
   font-weight: normal;
   font-style: normal;
@@ -172,6 +172,12 @@ body {
 
 .sea {
   background-image: url("images/seo.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.navbar-brand {
+  background-image: url("images/logozw.png");
   background-size: contain;
   background-repeat: no-repeat;
 }

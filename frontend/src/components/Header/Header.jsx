@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { Navbar, Nav, NavItem, Image, NavDropdown } from 'react-bootstrap';
+import {Navbar, Nav, NavItem, NavDropdown} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import logozw from '../../images/logo.png';
+
 import ModalOfferteStart from '../ModalOfferte/ModalOfferteStart';
 
 class Header extends Component {
@@ -10,14 +10,9 @@ class Header extends Component {
       <Navbar default collapseOnSelect>
         <Navbar.Header>
           <Navbar.Brand>
-            <Link to="/">
-              {' '}
-              <Image
-                responsive
-                className="header-logo"
-                src={logozw}
-                alt="logo"
-              />
+            <Link
+                to="/"
+            >
             </Link>
           </Navbar.Brand>
           <Navbar.Toggle />

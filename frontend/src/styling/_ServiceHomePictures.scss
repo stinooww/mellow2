@@ -58,25 +58,11 @@
 
 }
 
-
-
-
-
-
-
 .cover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center
 }
-
-
-
-
-
-
-
-
 
 .wrapper-1075 {
   margin: 0 auto;
@@ -89,8 +75,6 @@
 [class^="grid-col-"] {
   float: left;
   list-style-type: none;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box
 }
 
@@ -146,15 +130,11 @@
   left: 0;
   background: #000;
   opacity: 0;
-  -webkit-transition: opacity .35s;
-  -moz-transition: opacity .35s;
-  -ms-transition: opacity .35s;
-  -o-transition: opacity .35s;
   transition: opacity .35s
 }
 
 .overlay-color1 {
-  background-color: #dd8b78;
+  background-color: $blue;
 }
 
 .overlay-color2 {
@@ -181,27 +161,25 @@
   right: 43px;
   color: #fff;
   opacity: 0;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(-40px, 0, 0);
   transform: translate3d(-40px, 0, 0);
 
   h3 {
     font-size: 2em;
-    line-height: 1.1333333333em;
+    line-height: 1.13em;
     font-weight: 400;
     margin: 0;
 
     a {
       display: block;
+      color: $yellow;
     }
 
     small {
-      font-size: 0.6666666667em;
+      font-size: 0.66em;
       display: block;
       font-style: italic;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
+      color: $yellow;
       line-height: 1.15em;
       margin-top: 4px;
     }

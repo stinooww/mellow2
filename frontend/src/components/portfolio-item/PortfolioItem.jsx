@@ -55,7 +55,6 @@ class PortfolioItem extends Component {
   render() {
     const {portfolio} = this.state;
 
-    const test = portfolio['request'];
     return (
             <React.Fragment>
               <div>
@@ -110,7 +109,7 @@ class PortfolioItem extends Component {
                       <div className="section"/>
                     </Controller>
                   </Row>
-                  <Row>
+                    <Row className="portfolio__wrapper">
                     <Col
                             className="portfolio__solution"
                             data-aos="zoom-in-up"
@@ -118,6 +117,11 @@ class PortfolioItem extends Component {
                     >
                       <div className="portfolio__solutionTxt">{ReactHtmlParser(portfolio['solution'])}</div>
                     </Col>
+
+                        <Image responsive
+                               className="image portfolio__smartphone"
+                               src={portfolio['Smartphone']}
+                        />
                   </Row>
                 </Grid>
               </div>
