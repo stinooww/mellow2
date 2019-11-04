@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12ea28b2-16cc-402e-8e6a-5180a58d3b5c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/styling/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/styling/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/styling/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/styling/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/styling/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/styling/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/styling/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/styling/bootstrap/js/npm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Contactform/Reactcontactform.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Contactform/Reactcontactform.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ModalOfferte/ModalOfferteStart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ModalOfferte/ModalOfferteStart.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/services/ServiceFooterTile/ServiceFooterTile.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/services/ServiceHomePictures.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ServiceHomePictures/ServiceHomePictures.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/services/ServiceTile/ServiceTile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ServiceHomePictures/ServiceTile/ServiceTile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Home/Home.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -159,14 +159,7 @@
       <workItem from="1571242279458" duration="1849000" />
       <workItem from="1571499037811" duration="3898000" />
       <workItem from="1571849058629" duration="7285000" />
-      <workItem from="1572857449171" duration="14118000" />
-    </task>
-    <task id="LOCAL-00008" summary="frontend offerte part 2  validation">
-      <created>1551101444722</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1551101444722</updated>
+      <workItem from="1572857449171" duration="19991000" />
     </task>
     <task id="LOCAL-00009" summary="frontend service homepage">
       <created>1555148080676</created>
@@ -504,7 +497,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572889831596</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="styling">
+      <created>1572890145325</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1572890145325</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -524,7 +524,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="about pagina af" />
     <MESSAGE value="about pagina scss fixes" />
     <MESSAGE value="first implementation of timeline" />
     <MESSAGE value="added some links for doc" />
@@ -549,7 +548,8 @@
     <MESSAGE value="full styling - not done" />
     <MESSAGE value="overall improvement, styling and modifications to the website" />
     <MESSAGE value="te veel voor op te noeme" />
-    <option name="LAST_COMMIT_MESSAGE" value="te veel voor op te noeme" />
+    <MESSAGE value="styling" />
+    <option name="LAST_COMMIT_MESSAGE" value="styling" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

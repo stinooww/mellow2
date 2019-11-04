@@ -4,7 +4,7 @@ import React, {Component} from 'react';
 import Landing from '../../components/landing/Landing';
 import ServiceAboutHome from '../../components/WhatWeDo/ServiceAboutHome';
 import Testimonials from '../../components/Testimonials/Testimonials';
-import ServiceHomePictures from '../../components/services/ServiceHomePictures';
+import ServiceHomePictures from '../../components/ServiceHomePictures/ServiceHomePictures';
 import CallToAction from '../../components/CallToAction/CallToAction';
 import {CircleArrow as ScrollUpButton} from "react-scroll-up-button";
 

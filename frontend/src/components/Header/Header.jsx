@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
-import { Navbar, Nav, NavItem, NavDropdown, Button } from 'react-bootstrap';
+import {Navbar, Nav, NavItem, NavDropdown} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-import ModalOfferteStart from '../ModalOfferte/ModalOfferteStart';
-
 class Header extends Component {
+
   constructor(props) {
     super(props);
-    this.activateOfferte = this.activateOfferte.bind(this);
+    this.state = {
+      isToggleOn: false
+    };
   }
 
   activateOfferte = () => {
