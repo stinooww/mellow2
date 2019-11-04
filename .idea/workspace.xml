@@ -2,46 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12ea28b2-16cc-402e-8e6a-5180a58d3b5c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/styling/components/_PortfolioItem.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/styling/components/_serviceHome.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/styling/pages/_Home.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/ModalOfferte/ModalOfferte.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ModalOfferte/ModalOfferte.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/ModalOfferte/ModalOfferteStart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ModalOfferte/ModalOfferteStart.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Routing/Routing.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Routing/Routing.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/SEOanalyse/SeoAnalyse.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/SEOanalyse/SeoAnalyse.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/WhatWeDo/ServiceAboutHome.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/WhatWeDo/ServiceAboutHome.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/portfolio-item/PortfolioItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/portfolio-item/PortfolioItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/services/ServiceHomePictures.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/services/ServiceHomePictures.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Diensten/Grafisch.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Diensten/Grafisch.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Diensten/SEO.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Diensten/SEO.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Diensten/Website.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Diensten/Website.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_About.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/pages/_About.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_CallToAction.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/components/_CallToAction.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_Contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/pages/_Contact.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_General.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/_General.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_Grafisch.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/pages/_Grafisch.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_Home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/mixins.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_Portfolio.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/components/_Portfolio.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_Portfolioitem.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_Reactcontactform.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/components/_Reactcontactform.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_Seo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/pages/_Seo.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_ServiceHomePictures.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/components/_ServiceHomePictures.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_ServiceTile.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/components/_ServiceTile.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_Strategie.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/pages/_Strategie.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_Timeline.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/components/_Timeline.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_Webhosting.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/pages/_Webhosting.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_Website.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/pages/_Website.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/components/_footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_landing.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/components/_landing.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_modalofferte.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/components/_modalOfferte.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_serviceHome.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_testimonials.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/components/_testimonials.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/styling/components/_modalOfferte.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/components/_modalOfferte.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -191,21 +152,7 @@
       <workItem from="1571242279458" duration="1849000" />
       <workItem from="1571499037811" duration="3898000" />
       <workItem from="1571849058629" duration="7285000" />
-      <workItem from="1572857449171" duration="694000" />
-    </task>
-    <task id="LOCAL-00002" summary="folder structure implemented  and code reformat">
-      <created>1549621654124</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1549621654124</updated>
-    </task>
-    <task id="LOCAL-00003" summary="folder structure implemented  backend">
-      <created>1549621952597</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1549621952597</updated>
+      <workItem from="1572857449171" duration="982000" />
     </task>
     <task id="LOCAL-00004" summary="frontend fix">
       <created>1550823030393</created>
@@ -536,7 +483,21 @@
       <option name="project" value="LOCAL" />
       <updated>1568897401437</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="te veel voor op te noeme">
+      <created>1572867428174</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1572867428174</updated>
+    </task>
+    <task id="LOCAL-00052" summary="te veel voor op te noeme">
+      <created>1572867569913</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1572867569913</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
