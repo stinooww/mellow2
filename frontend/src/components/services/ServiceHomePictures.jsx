@@ -17,9 +17,9 @@ class ServiceHomePictures extends Component {
             <div className="home-portfolio-text clearfix">
               <div className="col-md-12">
                 <h2>
-                  Webdesign is wat we doen,
-                  <span> waarbij we mee denken met jou </span>
-                  om de beste oplossing op maat te vinden.{' '}
+                    Wij zijn gespecialiseerd in webdesign,
+                    <span> en denken mee met jou </span>
+                    om de beste oplossing op maat te vinden!{' '}
                 </h2>
               </div>
               <div className="elementor-divider">

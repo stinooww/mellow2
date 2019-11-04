@@ -1,4 +1,10 @@
-/* Projects */
+.PortfolioPage {
+  .container {
+    @media (min-width: $mq-xl) {
+      width: 1170px;
+    }
+  }
+}
 .section-projects {
   padding-bottom: 50px;
   figure {
@@ -7,8 +13,7 @@
 
   .section-content__list {
     list-style: none;
-    @media (min-width: $mq-md) {
-    }
+
 
     padding: 0 20px;
 
@@ -66,7 +71,7 @@
 
 .section-projects .table .row {
   overflow: hidden;
-  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 7px 7px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
   transition: transform 300ms;
 }
 
@@ -92,7 +97,6 @@
   bottom: 0;
   color: #fff;
   padding: 20px;
-  box-sizing: border-box;
 
   &:before {
     content: "";
@@ -105,13 +109,33 @@
     background: #1a1a1a;
     transform: scale(2) rotate(2deg);
     transition: transform 300ms;
+
   }
 
 }
 
+@media (max-width: $mq-md) {
+  .section-projects .content-cell-container:before, .section-projects .content-cell h3 {
+    display: none;
+
+  }
+
+  .section-projects .content-cell h2 {
+    background-color: black;
+    padding: 1%;
+  }
+  .section-projects .section-content__list li {
+    margin-bottom: 0;
+  }
+  .section-projects .section-content__list li:nth-child(even) {
+    margin-bottom: 180px;
+  }
+
+}
 
 .section-projects ul li:nth-child(even) .content-cell-container:before {
   transform: scale(2) rotate(-2deg);
+
 }
 
 .section-projects .content-cell {
@@ -154,6 +178,9 @@
 }
 
 .section-projects .content-cell .view-project {
+  @media (max-width: $mq-md) {
+    display: none;
+  }
   font-size: 12px;
   line-height: 1em;
   text-transform: uppercase;
@@ -201,6 +228,9 @@
 
 .section-projects ul li:hover .content-cell-container:before {
   transform: scale(2) rotate(-2deg);
+  @media (max-width: $mq-md) {
+    top: 38%;
+  }
 }
 
 .section-projects ul li:nth-child(even):hover .content-cell-container:before {

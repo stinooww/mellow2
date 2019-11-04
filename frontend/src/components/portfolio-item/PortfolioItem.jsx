@@ -2,9 +2,8 @@ import React, {Component} from 'react';
 import {Col, Grid, Image, Row} from 'react-bootstrap';
 import scrollmagic from 'scrollmagic';
 import {CircleArrow as ScrollUpButton} from 'react-scroll-up-button';
-import ReactHtmlParser, {processNodes, convertNodeToElement, htmlparser2} from 'react-html-parser';
+import ReactHtmlParser from 'react-html-parser';
 
-import {Link} from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import CallToAction from '../../components/CallToAction/CallToAction';
@@ -57,24 +56,24 @@ class PortfolioItem extends Component {
 
     return (
             <React.Fragment>
-              <div>
-                <div className="portfolio_item-header">
+              <div className="portfolioItem">
+                <div className="portfolioItem__header">
                   <Image responsive
                          className="image portfolio__head-img"
                          src={portfolio['mainImgUrl']}
                   />
-                  <div className="header-layers">
-                    <h1>   {portfolio['clientName']}
-                    </h1>
-                  </div>
+
                 </div>
-                <Grid className="portfolio_item-grid">
+                <Grid className="portfolioItem__grid">
                   <Row>
                     <Col
-                            className="dicomenu-website"
                             data-aos="fade-up"
                             data-aos-mirror="true"
                     >
+                      <div className="header-layers">
+                        <h1>   {portfolio['clientName']}
+                        </h1>
+                      </div>
                       <div className="portfolio__request">{ReactHtmlParser(portfolio['request'])}</div>
                     </Col>
                   </Row>
@@ -88,42 +87,43 @@ class PortfolioItem extends Component {
                       </a>
                     </Col>
                   </Row>
-                  <Row>
-                    <Controller>
-                      <div className="section"/>
-                      <Scene indicators={false} duration="200%" triggerHook="onEnter">
-                        <Timeline wrapper={<div id="parallax" className="parallax"/>}>
-                          <Tween
-                                  position="0"
-                                  from={{
-                                    yPercent: -50
-                                  }}
-                                  to={{
-                                    yPercent: 0
-                                  }}
-                          >
-                            <img src={portfolio.Carousel} className="img-responsive" alt="mellowwebdesign portfolio "/>
-                          </Tween>
-                        </Timeline>
-                      </Scene>
-                      <div className="section"/>
-                    </Controller>
-                  </Row>
-                    <Row className="portfolio__wrapper">
+
+                </Grid>
+                <Row>
+                  <Controller>
+                    <Scene indicators={false} duration="200%" triggerHook="onEnter">
+                      <Timeline wrapper={<div id="parallax" className="parallax"/>}>
+                        <Tween
+                            position="0"
+                            from={{
+                              yPercent: -50
+                            }}
+                            to={{
+                              yPercent: 0
+                            }}
+                        >
+                          <img src={portfolio.Carousel} className="img-responsive" alt="mellowwebdesign portfolio "/>
+                        </Tween>
+                      </Timeline>
+                    </Scene>
+                  </Controller>
+                </Row>
+                <Row className="portfolioItem__wrapper">
                     <Col
-                            className="portfolio__solution"
-                            data-aos="zoom-in-up"
-                            data-aos-delay="550"
+                        className="portfolio__wrapper-solution"
+                        data-aos="zoom-in-up"
+                        data-aos-delay="550"
                     >
                       <div className="portfolio__solutionTxt">{ReactHtmlParser(portfolio['solution'])}</div>
                     </Col>
-
+                  <div className="portfolio__wrapper-img">
                         <Image responsive
                                className="image portfolio__smartphone"
                                src={portfolio['Smartphone']}
                         />
-                  </Row>
-                </Grid>
+                  </div>
+
+                </Row>
               </div>
               <ScrollUpButton/>
               <CallToAction/>

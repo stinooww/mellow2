@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import { Row, Col } from 'react-bootstrap';
+import {Col} from 'react-bootstrap';
 import { withFormik } from 'formik';
 import * as Yup from 'yup';
 import classnames from 'classnames';
-
 import axios from 'axios';
 
 export default class SeoAnalyse extends Component {

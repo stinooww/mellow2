@@ -24,9 +24,8 @@
   }
 
   .testimonial-carousel {
-
-    margin: 0 12%;
-    padding: 0 4%;
+    margin: 0;
+    padding: 0;
 
     .carousel-indicators {
       top: 222px;
@@ -46,6 +45,8 @@
     .carousel-control {
       display: inherit;
       background: none;
+      color: black;
+      width: 5%;
     }
 
     .carousel-inner {
@@ -58,10 +59,6 @@
       }
       .item {
         height: 100%;
-        @media screen and (max-width: $Tablet) {
-
-
-        }
       }
     }
 

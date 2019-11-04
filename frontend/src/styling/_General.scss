@@ -93,6 +93,9 @@ body {
   line-height: 1.6;
   color: black;
   background-color: white;
+  width: 100%;
+  overflow-x: hidden;
+  height: 100%;
 
   @media (min-width: $mq-xs) {
     font-size: 102.5%;

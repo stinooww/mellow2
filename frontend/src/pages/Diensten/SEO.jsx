@@ -18,6 +18,8 @@ import 'aos/dist/aos.css';
 import {Helmet} from "react-helmet";
 
 AOS.init();
+AOS.init({disable: 'mobile'});
+
 class SEO extends Component {
   ref = React.createRef();
 
@@ -81,23 +83,17 @@ class SEO extends Component {
                 verschijnen als men een antwoord zoekt waarop jij een oplossing
                 kan bieden!{' '}
               </p>
-              <Image className="img-google" src={Google} responsive/>
-              <p>
-                Omdat het enkele weken duurt voordat SEO begint te werken zal je
-                dit resultaat niet meteen zien. Zoekmachine optimalisatie oftwel
-                SEO is dus een lange termijn verhaal. Hoe beter de optimalisatie
-                => hoe beter Google jouw website gaat scoren en dus hoger zal
-                ranken => en hoe meer je wordt gevonden door potentiële klanten
-                die effectief op zoek zijn en dus interesse tonen.
-              </p>
-              <p>
-                Wil je toch liever op kortere termijn bovenaan de zoekresultaten
-                verschijnen, <br />{' '}
-                <a className="sea-link" href="#sea">
-                  Kan je inzetten op een SEA-campagne
-                </a>
-                .
-              </p>
+                <Col lg={12}>
+                    <Image className="img-google" src={Google} responsive/>
+                    <p>
+                        Heb je toch meer interesse in Goolge advertising?<br/>{' '}
+                        <a className="sea-link" href="#sea">
+                            Dan kan je inzetten op een SEA-campagne
+                        </a>
+                        .
+                    </p>
+                </Col>
+
             </Col>
           </Row>
         </Grid>

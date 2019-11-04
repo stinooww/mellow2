@@ -6,7 +6,6 @@ import Portfolio from '../../pages/Portfolio/Portfolio';
 import PortfolioItem from '../portfolio-item/PortfolioItem';
 import About from '../../pages/About/About';
 import Contact from '../../pages/Contact/Contact';
-import page404 from '../../pages/Error/page404';
 import Av from '../../pages/AV/Av';
 import Website from '../../pages/Diensten/Website';
 import SEO from '../../pages/Diensten/SEO';
@@ -29,7 +28,7 @@ function Routing() {
             <Route path="/algemenevoorwaarde" component={Av}/>
             <Route path="/portfolio" component={Portfolio}/>
             {/*<Route component={page404}/>*/}
-            <Route render={() => <page404/>}/>
+            {/*<Route render={() => <Page404 />}/>*/}
         </div>
     );
 }

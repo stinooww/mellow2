@@ -6,6 +6,8 @@
     flex-direction: row;
     width: 100%;
     margin: 0 15px;
+
+
   }
 
   .waarom-website-txt {
@@ -25,6 +27,9 @@
 
         background-color: black;
         animation: slide-in 1s ease-in;
+        @media (max-width: $bigGsm) {
+          display: none;
+        }
       }
 
       @keyframes slide-in {
@@ -44,7 +49,10 @@
 
   .mobile-responsive {
     @media (max-width: $bigGsm) {
-      margin: 5vh 0;
+      margin: 0;
+    }
+    @media (min-width: $bigGsm) and (max-width: $mq-lg) {
+      margin: 0;
     }
     margin: 10vh 0;
 
@@ -58,15 +66,18 @@
       @media (max-width: $bigGsm) {
         height: 50vh;
       }
+      @media (min-width: $bigGsm) and (max-width: $mq-lg) {
+        margin: 10vh 0 0 0;
+      }
 
       .mobile-img {
         display: block;
         max-width: 100%;
         width: 100%;
         @media (max-width: $bigGsm) {
-          height: 60%;
+          height: inherit;
         }
-        @media (min-width: $mq-md) and (max-width: $mq-lg) {
+        @media (min-width: $bigGsm) and (max-width: $mq-lg) {
           height: 70%;
         }
         @media (min-width: $smallLaptop) and (max-width: 1199px) {
@@ -101,19 +112,19 @@
 }
 
 
-.container  {
-
+.website__testimonial {
 
   .wp-block-quote {
-    margin: 20px;
+    margin: 20px 0;
+    @media (max-width: $mq-md) {
+      margin: 20px 0;
+    }
 
     p {
-      font-size: 15px;
-      position: relative;
+      font-size: 20px;
       line-height: 1.5em;
       font-style: italic;
     }
-
     cite {
       font-style: normal;
       font-weight: normal;

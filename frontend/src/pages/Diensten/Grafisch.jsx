@@ -9,12 +9,14 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 AOS.init();
+AOS.init({disable: 'mobile'});
+
 
 class Grafisch extends Component {
   render() {
     return (
-      <div className="grafisch-email">
-        <Grid>
+        <div>
+            <Grid className="grafisch-email">
           <Row>
             <Col xs={12}>
               <h1>Grafisch werk</h1>

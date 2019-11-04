@@ -1,0 +1,64 @@
+.serviceHome {
+  width: 100%;
+  background-color: $yellow;
+}
+
+.serviceHome__header-wrapper {
+  display: flex;
+
+  .serviceHome__title {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+}
+
+.weetjes {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $Tablet) {
+    flex-direction: row;
+  }
+
+  .service-tile {
+    margin: 0 0 2em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      color: black;
+      margin-top: 83px;
+    }
+
+    .webdesign {
+      margin-top: 45px;
+
+    }
+  }
+
+  p {
+    color: black;
+    @media (max-width: 991px) {
+      text-align: center;
+    }
+  }
+
+  svg {
+    height: 120px;
+
+
+    &:nth-child(2), &:nth-child(3) {
+      margin-left: 50px;
+    }
+  }
+}
+
+.icon-margin1 {
+  svg {
+    height: 200px;
+    margin-top: -4em;
+  }
+}

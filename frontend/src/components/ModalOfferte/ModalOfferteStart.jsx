@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Col, Grid, Row } from 'react-bootstrap';
+import {Button, Col, Row} from 'react-bootstrap';
 import ModalOfferte from './ModalOfferte';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -127,7 +127,6 @@ class ModalOfferteStart extends Component {
 
   handleChange = selectedOption => {
     this.setState({ selectedOption });
-    console.log(`Option selected:`, selectedOption);
   };
 
   onInputClick = e => {
@@ -143,13 +142,13 @@ class ModalOfferteStart extends Component {
     let field1 = document.getElementById('fieldset-1');
     let fieldset2 = document.getElementById('fieldset-2');
     field1.style.display = 'none';
-    fieldset2.style.display = 'block';
+    fieldset2.style.display = 'flex';
   };
 
   onPreviousClick = () => {
     let field1 = document.getElementById('fieldset-1');
     let fieldset2 = document.getElementById('fieldset-2');
-    field1.style.display = 'block';
+    field1.style.display = 'flex';
     fieldset2.style.display = 'none';
   };
 
@@ -167,18 +166,10 @@ class ModalOfferteStart extends Component {
       extrainfo: this.state.extrainfo,
       selectedOption: this.state.selectedOption
     };
-    // const validation = this.validator.validate(this.state);
-    // this.setState({validation});
 
-    // if(validation.isValid) {
-    //
-    //
-    //          }
 
-    axios
-            .post('https://api.mellowwebdesign.be/api/sendmail/quotation', {offerte})
+    axios.post('https://api.mellowwebdesign.be/api/sendmail/quotation', {offerte})
       .then(res => {
-        console.log(res.data);
         let fieldset2 = document.getElementById('fieldset-2');
         fieldset2.style.display = 'none';
         let header = document.getElementById('formOfferte__header');
@@ -192,14 +183,15 @@ class ModalOfferteStart extends Component {
     return (
       <div>
         <ModalOfferte show={this.state.isToggleOn} handleClose={this.hideModal}>
-          <Grid className="opper-form-offerte">
-            <div id="formOfferte__header">
+
+          <div id="formOfferte__header" className="opper-form-offerte">
               <h1>Dus je wilt met ons samenwerken?</h1>
               <h4>
                 Super ! Vertel ons in 2 stappen wat meer over je project.
-                <br /> en wij contacteren je zo snel mogenlijk
+                en wij contacteren je zo snel mogenlijk
               </h4>
             </div>
+
             {submitted && (
               <div>
                 <h4>Uw bericht is verstuurd!</h4>
@@ -219,10 +211,10 @@ class ModalOfferteStart extends Component {
                 id="frm-offerte-step"
                 value="1"
               />
-              <Grid className="fieldset fieldset1" id="fieldset-1">
+              <div className="fieldset fieldset1" id="fieldset-1">
                 <div className="legend">
                   <span>
-                    <FontAwesomeIcon size="2x" icon={faAddressBook} />
+                    <FontAwesomeIcon size="lg" icon={faAddressBook}/>
                     Uw gegevens
                   </span>
                 </div>
@@ -397,12 +389,12 @@ class ModalOfferteStart extends Component {
                     icon={faAngleRight}
                   />
                 </Button>
-              </Grid>
-              <Grid className="fieldset fieldset2" id="fieldset-2">
+              </div>
+              <div className="fieldset fieldset2" id="fieldset-2">
                 <div className="legend">
                   <span>
                     {' '}
-                    <FontAwesomeIcon size="sm" icon={faAddressCard} />
+                    <FontAwesomeIcon size="lg" icon={faAddressCard}/>
                     Vertel ons meer over uw project
                   </span>
                 </div>
@@ -467,8 +459,7 @@ class ModalOfferteStart extends Component {
                   </Col>
                 </Row>
                 <Row className="form-group clearfix">
-                  <Col md={1} xs={0} />
-                  <Col md={4} xs={12} className="special-input">
+                  <Col lg={4} md={5} xs={12} className="special-input">
                     <Select
                       isMulti
                       value={selectedOption}
@@ -480,7 +471,9 @@ class ModalOfferteStart extends Component {
                       styles={customStyles}
                     />
                   </Col>
-                  <Col xs={12} md={6} className="" id="row-extrainfo">
+                  <Col md={1} xs={0}/>
+
+                  <Col lg={5} xs={12} md={6} className="" id="row-extrainfo">
                     <span className=" " onClick={this.onInputClick}>
                       <label className="" htmlFor="input-offerte-extrainfo">
                         <span className="">
@@ -503,7 +496,7 @@ class ModalOfferteStart extends Component {
                   </Col>
                 </Row>
                 <Row className="form-group clearfix">
-                  <Col xs={12} md={12}>
+                  <Col xs={12} md={12} className="btn__Steps">
                     <Button
                       className="btn-step mellow-btn uppercase"
                       onClick={this.onPreviousClick}
@@ -532,13 +525,14 @@ class ModalOfferteStart extends Component {
                 <div className="feedback">
                   Gelieve alle verplichte velden in te vullen
                 </div>
-              </Grid>
-              <p className="form-offerte-small">
-                Uw gegevens worden enkel bewaard om u te contacteren of om een
-                prijsraming door te mailen.
-              </p>
+                <p className="form-offerte-small">
+                  Uw gegevens worden enkel bewaard om u te contacteren of om een
+                  prijsraming door te mailen.
+                </p>
+              </div>
+
             </form>
-          </Grid>
+
         </ModalOfferte>
         <Button
           className="hvr-box-shadow-outset offerte-btn"
