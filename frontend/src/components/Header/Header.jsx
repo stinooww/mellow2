@@ -1,10 +1,20 @@
 import React, { Component } from 'react';
-import {Navbar, Nav, NavItem, NavDropdown} from 'react-bootstrap';
+import {Navbar, Nav, NavItem, NavDropdown, Button} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 import ModalOfferteStart from '../ModalOfferte/ModalOfferteStart';
 
 class Header extends Component {
+
+  constructor(props) {
+    super(props);
+    this.activateOfferte = this.activateOfferte.bind(this);
+
+  }
+
+  activateOfferte = () => {
+    this.setState({isToggleOn: true});
+  };
   render() {
     return (
       <Navbar default collapseOnSelect>
@@ -68,34 +78,37 @@ class Header extends Component {
               </NavItem>
             </NavDropdown>
             <NavItem
-              eventKey={4}
-              componentClass={Link}
-              className="menu-item hvr-underline-from-center "
-              href="/portfolio"
-              to="/portfolio"
+                eventKey={4}
+                componentClass={Link}
+                className="menu-item hvr-underline-from-center"
+                href="/portfolio"
+                to="/portfolio"
             >
               Portfolio
             </NavItem>
             <NavItem
-              eventKey={5}
-              componentClass={Link}
-              className="menu-item hvr-underline-from-center "
-              href="/about"
-              to="/about"
+                eventKey={5}
+                componentClass={Link}
+                className="menu-item hvr-underline-from-center"
+                href="/about"
+                to="/about"
             >
               Wie zijn we
             </NavItem>
             <NavItem
-              eventKey={6}
-              componentClass={Link}
-              className="menu-item hvr-underline-from-center "
-              href="/contact"
-              to="/contact"
+                eventKey={6}
+                componentClass={Link}
+                className="menu-item hvr-underline-from-center"
+                href="/contact"
+                to="/contact"
             >
               Contact
             </NavItem>
-            <NavItem className="modal-offerte-header">
-              <ModalOfferteStart/>
+            <NavItem
+                className="modal-offerte-header menu-item hvr-underline-from-center"
+                onClick={this.activateOfferte}
+            >
+              Start een project
             </NavItem>
           </Nav>
         </Navbar.Collapse>

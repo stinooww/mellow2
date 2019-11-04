@@ -15,31 +15,6 @@
     h2 {
       margin: 3vh 0 5vh 0;
       line-height: 1.4;
-
-      &:before {
-        content: "";
-        position: absolute;
-        left: 260px;
-        top: 66px;
-        bottom: 0;
-        height: 2px;
-        width: 5em;
-
-        background-color: black;
-        animation: slide-in 1s ease-in;
-        @media (max-width: $bigGsm) {
-          display: none;
-        }
-      }
-
-      @keyframes slide-in {
-        0% {
-          transform: translate3d(-100%, 0, 0);
-        }
-        100% {
-          transform: translate3d(0, 0, 0);
-        }
-      }
     }
     strong {
       font-size: 1.6em;

@@ -9,8 +9,8 @@
 
 .modal-main {
   position: fixed;
-  background: white;
-  height: auto;
+  background: $yellow;
+  height: 95%;
   top: 50%;
   display: flex;
   flex-direction: column;
@@ -24,17 +24,32 @@
     width: 100%;
     justify-content: flex-end;
     background-color: $yellow;
+
+    &-wrapper {
+      width: 170px;
+      background-color: white;
+      align-items: center;
+      margin: 10px;
+      padding: 8px;
+      box-shadow: none;
+      border: white;
+
+    }
+
+    svg {
+      color: black;
+      padding-top: 0 !important;
+    }
+
+    &-text {
+      text-transform: uppercase;
+      font-size: 17px;
+      margin-right: 25px;
+      color: black;
+    }
   }
 
-  .modal-main__close-wrapper {
-    width: 140px;
-    background-color: white;
-    align-items: center;
-    margin: 10px;
-    padding: 8px;
-    display: flex;
-    justify-content: space-between;
-  }
+
 
 
   @media (min-width: $Tablet) and (max-width: $smallLaptop) {
@@ -53,8 +68,8 @@
   align-self: center;
 
   .svg-inline--fa {
-    padding-top: 5px;
-    padding-left: 2px;
+    margin: 0 3px;
+    padding-top: 3px;
     font-size: 1.5em;
   }
 
@@ -73,11 +88,10 @@
   display: none;
 }
 
-.fieldset1 {
+.fieldset1, .fieldset2 {
   display: flex;
-
   .form-group {
-    margin: 10px 25px;
+    margin: 0 10px;
   }
 }
 
@@ -129,6 +143,8 @@
 
 .form-offerte-small {
   font-size: 16px;
+  width: 100%;
+  text-align: center;
   padding: 10px 0;
 }
 
@@ -187,10 +203,7 @@
 
   .fieldset2_textarea {
     outline: black;
-    resize: none;
-    overflow: auto;
     color: black;
-    width: 100%;
   }
 
   .mos-multiSelect {
@@ -199,8 +212,11 @@
 }
 
 .feedback {
+  margin-top: 25px;
   display: flex;
   align-self: center;
+  font-size: 15px;
+  margin-left: 5px;
 }
 
 .btn__Steps {
@@ -208,6 +224,9 @@
   justify-content: space-between;
 }
 
+.btn-step {
+  margin-left: 0;
+}
 .special-input {
   span.input {
     height: 84px;
@@ -215,4 +234,16 @@
 }
 .input--nariko {
   height: 84px;
+}
+
+.last {
+  margin-top: 15px !important;
+}
+
+.confirmation {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
 }

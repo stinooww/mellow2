@@ -5,22 +5,17 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
 function ModalOfferte({ handleClose, show, children }) {
   return (
     <div className={show ? 'modal display-block' : 'modal display-none'}>
-      <section className="modal-main">
+        <section className="modal-main" id="modelMain">
           <div className="modal-main__close">
-              <div className="modal-main__close-wrapper">
+              <button className="mellow-btn modal-main__close-wrapper" onClick={handleClose}>
                   <p className="modal-main__close-text"> Sluiten </p>
                   <FontAwesomeIcon
                       className="closeModal"
-                      pull="right"
-                      onClick={handleClose}
                       size="10x"
                       icon={faTimes}
                   />
-              </div>
-
-
+              </button>
           </div>
-
         {children}
       </section>
     </div>

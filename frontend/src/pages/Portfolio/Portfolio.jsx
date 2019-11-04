@@ -3,9 +3,7 @@ import React, {Component} from 'react';
 import {CircleArrow as ScrollUpButton} from 'react-scroll-up-button';
 import axios from 'axios';
 import {Col, Grid, Row} from 'react-bootstrap';
-
 import {Link} from 'react-router-dom';
-// https://mmehospitality.nl/project/
 // https://www.youtube.com/watch?v=oQnojIyTXb8  voor axios
 
 class Portfolio extends Component {
@@ -27,7 +25,6 @@ class Portfolio extends Component {
       this.setState({
           portfolio: res.data.data
       });
-        // console.log(this.state.portfolio);
     });
 
   }

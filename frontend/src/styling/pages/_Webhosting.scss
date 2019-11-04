@@ -26,7 +26,7 @@
 
   .onderhoud__table {
     display: none;
-    @media (min-width: $mq-md) {
+    @media (min-width: $mq-sm) {
       display: inherit;
     }
 

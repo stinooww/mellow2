@@ -4,6 +4,7 @@ import {BrowserRouter as Router} from 'react-router-dom';
 import Routing from './components/Routing/Routing';
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import ModalOfferteStart from "./components/ModalOfferte/ModalOfferteStart";
 
 class App extends Component {
     render() {
@@ -12,6 +13,7 @@ class App extends Component {
                     <div>
                         <Header/>
                         <Routing/>
+                        <ModalOfferteStart/>
                         <Footer/>
                     </div>
             </Router>

@@ -3,7 +3,7 @@ import { Route } from 'react-router-dom';
 import Home from '../../pages/Home/Home';
 import Strategie from '../../pages/Strategie/Strategie';
 import Portfolio from '../../pages/Portfolio/Portfolio';
-import PortfolioItem from '../portfolio-item/PortfolioItem';
+import PortfolioItem from '../../pages/portfolio-item/PortfolioItem';
 import About from '../../pages/About/About';
 import Contact from '../../pages/Contact/Contact';
 import Av from '../../pages/AV/Av';

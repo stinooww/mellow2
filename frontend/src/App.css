@@ -1,3 +1,4 @@
+@import url(styling/bootstrap/css/bootstrap.min.css);
 /**
    * Base Settings/Overwrite Normalize
    */
@@ -473,7 +474,8 @@ footer {
   position: sticky; }
 
 .footer {
-  background-color: black; }
+  background-color: black;
+  padding: 7px 0; }
   .footer .footer-section {
     display: flex;
     flex-direction: column; }
@@ -516,20 +518,22 @@ footer {
       margin-top: 30px; } }
 
 .modal-offerte-header {
-  margin-top: 4px;
-  padding-left: 55px; }
+  display: none !important; }
   @media (min-width: 768px) and (max-width: 1024px) {
     .modal-offerte-header {
       margin-top: 0;
-      padding-left: 0; } }
+      padding-left: 0;
+      display: inherit !important; } }
   @media (min-width: 1024px) and (max-width: 1300px) {
     .modal-offerte-header {
       margin-top: 14px;
-      padding-left: 0; } }
+      padding-left: 0;
+      display: inherit !important; } }
   @media (min-width: 1301px) {
     .modal-offerte-header {
       margin-top: 41px;
-      padding-left: 0; } }
+      padding-left: 0;
+      display: inherit !important; } }
 
 nav.navbar-default {
   background: #efc337;
@@ -592,7 +596,8 @@ nav.navbar-default {
   height: 100vh; }
   @media screen and (max-width: 768px) {
     .navbar-collapse {
-      margin-top: 12px; } }
+      margin-top: 12px;
+      border-color: transparent !important; } }
 
 .navbar-toggle {
   height: 50px; }
@@ -726,8 +731,8 @@ nav.navbar-default {
 
 .modal-main {
   position: fixed;
-  background: white;
-  height: auto;
+  background: #efc337;
+  height: 95%;
   top: 50%;
   display: flex;
   flex-direction: column;
@@ -740,14 +745,22 @@ nav.navbar-default {
     width: 100%;
     justify-content: flex-end;
     background-color: #efc337; }
-  .modal-main .modal-main__close-wrapper {
-    width: 140px;
-    background-color: white;
-    align-items: center;
-    margin: 10px;
-    padding: 8px;
-    display: flex;
-    justify-content: space-between; }
+    .modal-main__close-wrapper {
+      width: 170px;
+      background-color: white;
+      align-items: center;
+      margin: 10px;
+      padding: 8px;
+      box-shadow: none;
+      border: white; }
+    .modal-main__close svg {
+      color: black;
+      padding-top: 0 !important; }
+    .modal-main__close-text {
+      text-transform: uppercase;
+      font-size: 17px;
+      margin-right: 25px;
+      color: black; }
   @media (min-width: 768px) and (max-width: 1024px) {
     .modal-main {
       top: 45%;
@@ -762,8 +775,8 @@ nav.navbar-default {
   justify-content: center;
   align-self: center; }
   .mellow-btn .svg-inline--fa {
-    padding-top: 5px;
-    padding-left: 2px;
+    margin: 0 3px;
+    padding-top: 3px;
     font-size: 1.5em; }
   .mellow-btn span {
     font-size: 16px;
@@ -775,10 +788,10 @@ nav.navbar-default {
 .display-none {
   display: none; }
 
-.fieldset1 {
+.fieldset1, .fieldset2 {
   display: flex; }
-  .fieldset1 .form-group {
-    margin: 10px 25px; }
+  .fieldset1 .form-group, .fieldset2 .form-group {
+    margin: 0 10px; }
 
 .fieldset2 {
   display: none; }
@@ -812,6 +825,8 @@ nav.navbar-default {
 
 .form-offerte-small {
   font-size: 16px;
+  width: 100%;
+  text-align: center;
   padding: 10px 0; }
 
 .form-offerte {
@@ -852,26 +867,39 @@ nav.navbar-default {
     padding: 5% 0; }
   #fieldset-2 .fieldset2_textarea {
     outline: black;
-    resize: none;
-    overflow: auto;
-    color: black;
-    width: 100%; }
+    color: black; }
   #fieldset-2 .mos-multiSelect {
     padding-top: 25px; }
 
 .feedback {
+  margin-top: 25px;
   display: flex;
-  align-self: center; }
+  align-self: center;
+  font-size: 15px;
+  margin-left: 5px; }
 
 .btn__Steps {
   display: flex;
   justify-content: space-between; }
+
+.btn-step {
+  margin-left: 0; }
 
 .special-input span.input {
   height: 84px; }
 
 .input--nariko {
   height: 84px; }
+
+.last {
+  margin-top: 15px !important; }
+
+.confirmation {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center; }
 
 .person-wrapper {
   height: 70vh;
@@ -962,18 +990,15 @@ nav.navbar-default {
   z-index: 1;
   display: inline-block;
   margin: 0.4em;
-  max-width: 210px;
   width: calc(70% - 2em);
   vertical-align: top; }
 
 .input__field {
   position: relative;
   display: block;
-  float: right;
   padding: 0.8em;
   width: 60%;
   border: none;
-  border-radius: 0;
   background: #f0f0f0;
   color: #aaa;
   font-weight: 400;
@@ -986,20 +1011,11 @@ nav.navbar-default {
 
 .input__label {
   display: inline-block;
-  float: right;
   padding: 0 1em;
   width: 40%;
   color: #6a7989;
   font-weight: bold;
-  font-size: 100%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
+  font-size: 100%; }
 
 .input__label-content {
   position: relative;
@@ -1026,7 +1042,7 @@ nav.navbar-default {
   pointer-events: none;
   text-align: left;
   color: #8E9191;
-  padding: 0 0.5em; }
+  padding: 0; }
 
 .input__label--nariko::before {
   content: '';
@@ -1932,7 +1948,7 @@ nav.navbar-default {
     width: 90%; }
   .Diensten .onderhoud__table {
     display: none; }
-    @media (min-width: 54em) {
+    @media (min-width: 30em) {
       .Diensten .onderhoud__table {
         display: inherit; } }
     .Diensten .onderhoud__table .Grid-cell .price {
@@ -1966,25 +1982,6 @@ nav.navbar-default {
     .website .waarom-website-txt h2 {
       margin: 3vh 0 5vh 0;
       line-height: 1.4; }
-      .website .waarom-website-txt h2:before {
-        content: "";
-        position: absolute;
-        left: 260px;
-        top: 66px;
-        bottom: 0;
-        height: 2px;
-        width: 5em;
-        background-color: black;
-        animation: slide-in 1s ease-in; }
-        @media (max-width: 767px) {
-          .website .waarom-website-txt h2:before {
-            display: none; } }
-
-@keyframes slide-in {
-  0% {
-    transform: translate3d(-100%, 0, 0); }
-  100% {
-    transform: translate3d(0, 0, 0); } }
     .website .waarom-website-txt strong {
       font-size: 1.6em;
       line-height: 3em; }

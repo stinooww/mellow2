@@ -35,19 +35,21 @@
 }
 
 .modal-offerte-header {
-  margin-top: 4px;
-  padding-left: 55px;
+  display: none !important;
   @media (min-width: $Tablet) and (max-width: $smallLaptop) {
     margin-top: 0;
     padding-left: 0;
+    display: inherit !important;
   }
   @media (min-width: $smallLaptop) and (max-width: $bigLaptop) {
     margin-top: 14px;
     padding-left: 0;
+    display: inherit !important;
   }
   @media (min-width: 1301px) {
     margin-top: 41px;
     padding-left: 0;
+    display: inherit !important;
   }
 }
 
@@ -131,6 +133,7 @@ nav.navbar-default {
   height: 100vh;
   @media screen and (max-width: $Tablet) {
     margin-top: 12px;
+    border-color: transparent !important;
   }
 
 }
