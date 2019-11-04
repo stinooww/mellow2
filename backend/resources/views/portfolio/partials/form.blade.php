@@ -52,7 +52,7 @@
 </div>
 
 @foreach($types as $type)
-    {{Form::checkbox('categoryArray[]', $type->id,$item->types->contains('id', $type->id) ? 'checked' : '' )}}<label>{{$type->type}}</label>
+    {{Form::checkbox('categoryArray[]', $type->id,isset($item) ? $item->types->contains('id', $type->id) ? 'checked' : '':'' )}}<label>{{$type->type}}</label>
 @endforeach
 <br>
 <div class="row">
