@@ -1,0 +1,74 @@
+@import "../variables";
+.grafisch-email {
+  padding: 0 40px;
+  h1 {
+    font-size: 35px;
+    color: $blue;
+    text-align: left;
+
+    margin: 8vh 0 4vh 1vh;
+    text-shadow: none;
+  }
+
+
+  .emailmarketing, .marketingEmail__image {
+      width: 85%;
+    }
+
+  .emailmarketing {
+
+    @media (max-width: 780px) {
+      width: 100%;
+      margin-top: 3vh;
+    }
+  }
+
+
+  .row {
+    &:first-child {
+      margin-bottom: 5vh;
+    }
+
+  }
+
+  .section-cta {
+    .row {
+      margin-bottom: 0;
+    }
+  }
+
+  .marketingEmail {
+    &__title {
+      margin: 4vh 0;
+    }
+
+    .marketingEmail__image {
+      @media (max-width: 780px) {
+        padding: 25px 0;
+      }
+    }
+
+    &__cta {
+      color: black;
+      margin: 1vh 0;
+    }
+  }
+}
+
+
+.wp-block-quote {
+  margin: 20px;
+
+    p {
+      position: relative;
+      line-height: 1.5em;
+      font-style: italic;
+    }
+
+    cite {
+      font-style: normal;
+      font-weight: normal;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+}

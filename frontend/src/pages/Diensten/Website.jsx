@@ -5,33 +5,23 @@ import CallToAction from '../../components/CallToAction/CallToAction';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 
-AOS.init();
+AOS.init({ disable: 'phone' });
 
 class Website extends Component {
-  //
-  // handleClick() {
-  //     let container = document.getElementById('root');
-  //     let windowHeight = window.innerHeight;
-  //     let windowWidth = window.innerWidth;
-  //     let scrollArea = 1000 - windowHeight;
-  //     // let image1 = document.getElementsByClassName('front');
-  //     const image1 = document.getElementById('front');
-  //     const image2 = document.getElementsByClassName('back');
-  //     console.log(image1, image2);
-  //     // update position of image 1 and image 2 when scroll event fires.
-  //     window.addEventListener('scroll', function() {
-  //         let scrollTop = window.pageYOffset || window.scrollTop;
-  //         let scrollPercent = scrollTop / scrollArea || 0;
-  //         console.log(scrollPercent, scrollTop);
-  //         image1.style.left = scrollPercent * window.innerWidth + 'px';
-  //         image2.style.left = 800 - scrollPercent * window.innerWidth * 0.6 + 'px';
-  //     });
-  // }
-
   render() {
     return (
       <div className="website">
+        <MessengerCustomerChat
+          pageId="342021876162625"
+          appId="342021876162625"
+          htmlRef={window.location.pathname}
+          loggedInGreeting="Hallo, waar kan ik je mee helpen?"
+          themeColor="#efc337"
+          language="nl_NL"
+          xfbml={true}
+        />
         <Grid>
           <Row>
             <Col xs={12} className="waarom-website-txt">
@@ -64,15 +54,21 @@ class Website extends Component {
               </p>
             </Col>
           </Row>
+
           <Row>
-            <Col xs={12} sm={6} md={8} className="mobile-responsive">
+            <Col
+              xs={12}
+              sm={12}
+              md={8}
+              className="mobile-responsive mobile-responsive__img"
+            >
               <div className="mobile-img" data-aos="fade-up-right" />
             </Col>
             <Col
               xs={12}
-              sm={6}
+              sm={12}
               md={4}
-              className="mobile-responsive"
+              className="mobile-responsive mobile-responsive__text"
               data-aos="fade-up-left"
               data-aos-mirror="true"
             >
@@ -93,58 +89,28 @@ class Website extends Component {
                 Google dan niet mobiele websites.
               </p>
             </Col>
-            <Col xs={12} data-aos="fade-up">
-              <h3 className="text-center">
-                Dus stel dat jouw website niet responsief is en die van jouw
-                concurrent wel dan geeft Google de voorrang aan jouw concurrent.
-              </h3>
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
+          </Row>
+          <Row>
+            <Col xs={12}>
+              <div className="website__testimonial">
+                <blockquote className="wp-block-quote">
+                  <p>
+                    Goede communicatie, vernieuwde kijk op zaken gekregen,
+                    creatief, verdiepen zich goed in de materie van je bedrijf,{' '}
+                    <br /> afspraken nakomen, kortom een goede keuze geweest.
+                  </p>
+                  <cite>Anja - Body Update</cite>
+                </blockquote>
+              </div>
             </Col>
           </Row>
           <Row>
-            {/*<Col md={12} className="overall-container">*/}
-            {/*<Controller>*/}
-            {/*<Scene duration={400} pin={true}>*/}
-            {/*<div className="sticky"><Image src={dicomenuBack} alt="dicomenu" id="back" className="img back"/></div>*/}
-            {/*</Scene>*/}
-            {/*<Scene duration={10} pin={{pushFollowers: false}}>*/}
-            {/*<div className="sticky"><Image src={dicomenuFRONT} alt="dicomenu" id="front" className="img front"/></div>*/}
-            {/*</Scene>*/}
-            {/*</Controller>*/}
-            {/*</Col>*/}
-            {/*<Col md={12} className="overall-container">*/}
-            {/*<div className="img-container">*/}
-            {/*<div>*/}
-            {/*<Image src={dicomenuFRONT} alt="dicomenu" id="front" className="img front"/>*/}
-            {/*</div>*/}
-            {/*<Controller>*/}
-            {/*<Scene*/}
-            {/*triggerHook="onEnter"*/}
-            {/*duration={1000}*/}
-            {/*pin*/}
-            {/*>*/}
-            {/*{(progress) => (*/}
-            {/*<div className="sticky">*/}
-            {/*<Timeline totalProgress={progress} paused>*/}
-            {/*<Tween*/}
-            {/*from={{ x: '60%', top: '10%' }}*/}
-            {/*to={{ x: '10%', top: '60%' }}*/}
-            {/*>*/}
-            {/*<div className="animation">*/}
-            {/*<Image src={dicomenuBack} alt="dicomenu" id="back" className="img back"/>*/}
-            {/*</div>*/}
-            {/*</Tween>*/}
-            {/*</Timeline>*/}
-            {/*</div>*/}
-            {/*)}*/}
-            {/*</Scene>*/}
-            {/*</Controller>*/}
-            {/*</div>*/}
-            {/*</Col>*/}
+            <Col xs={12} data-aos="fade-up">
+              <h3 className="text-center">
+                Dus als jouw website niet responsief is tegenover die van jouw
+                concurrent, dan geeft Google voorrang aan jouw concurrent!
+              </h3>
+            </Col>
           </Row>
         </Grid>
         <CallToAction />

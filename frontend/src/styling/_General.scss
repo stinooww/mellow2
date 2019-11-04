@@ -15,7 +15,7 @@ a {
 
 @font-face {
   font-family: mellow;
-  src: url("styling/font/lithos.otf");
+  src: url("./styling/font/lithos.otf");
   font-size: 100%;
   font-weight: normal;
   font-style: normal;
@@ -23,7 +23,7 @@ a {
 
 @font-face {
   font-family: JOSEFIN-SANS-REG;
-  src: url("styling/font/JosefinSans-Regular.ttf");
+  src: url("./styling/font/JosefinSans-Regular.ttf");
   font-size: 100%;
   font-weight: normal;
   font-style: normal;
@@ -31,7 +31,7 @@ a {
 
 @font-face {
   font-family: JOSEFIN-SANS-BOLD;
-  src: url("styling/font/JosefinSans-Bold.ttf");
+  src: url("./styling/font/JosefinSans-Bold.ttf");
   font-size: 100%;
   font-weight: normal;
   font-style: normal;
@@ -81,9 +81,9 @@ h2 {
   }
 }
 
-@media (min-width: 768px) {
-  .container {
-
+@media (max-width: 768px) {
+  .mobile-img {
+    background-size: contain !important;
   }
 }
 
@@ -93,6 +93,9 @@ body {
   line-height: 1.6;
   color: black;
   background-color: white;
+  width: 100%;
+  overflow-x: hidden;
+  height: 100%;
 
   @media (min-width: $mq-xs) {
     font-size: 102.5%;
@@ -148,12 +151,6 @@ body {
 
 .dicomenu {
   background-image: url("images/dicomenu1.png");
-  //background-size: cover;
-  //background-repeat: no-repeat;
-  //
-  //&:hover {
-  //  background-image: url("images/dicomenu1-1.jpg");
-  //}
 }
 
 .finnegans {
@@ -182,6 +179,12 @@ body {
   background-repeat: no-repeat;
 }
 
+.navbar-brand {
+  background-image: url("images/logozw.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .testimonials {
   @media screen and (max-width: $Tablet) {
     min-height: 700px;
@@ -206,6 +209,14 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.stijnJonas {
+  background-image: url("images/jonasstijn.jpg");
+
+  background-repeat: no-repeat;
+  background-size: contain !important;
+}
+
 
 small {
   font-size: 80%

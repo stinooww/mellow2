@@ -3,29 +3,31 @@
 
 .navbar-nav {
   @media (min-width: $Tablet) and (max-width: $smallLaptop) {
-    margin: 0 4% 2% 22%;
+    margin: 6% 0 2% 1%;
   }
   @media (min-width: $smallLaptop) and (max-width: $bigLaptop) {
-    margin: 0 0 2% 16%;
+
+    margin: 0 0 1% 2%;
   }
   .menu-item {
     margin-top: 60px;
     color: $grey;
     text-transform: uppercase;
-    @media screen and (max-width: $Tablet) {
+    @media screen and (max-width: $bigGsm) {
+      width: 100%;
       padding-left: 55px;
-
     }
+
 
     @media screen and (max-width: $Tablet) {
       margin-top: 15px;
 
     }
     @media (min-width: $Tablet) and (max-width: $smallerLaptop) {
-      margin-top: 1px;
+      margin-top: 7px;
     }
     @media (min-width: $smallerLaptop) and (max-width: $bigLaptop) {
-      margin-top: 5px;
+      margin-top: 30px;
     }
   }
 
@@ -33,78 +35,111 @@
 }
 
 .modal-offerte-header {
-
-  margin-top: 59px;
-  margin-left: 10px;
-
-
-  @media screen and (min-width: 1081px) {
-    margin-top: 59px;
+  display: none !important;
+  @media (min-width: $Tablet) and (max-width: $smallLaptop) {
+    margin-top: 0;
+    padding-left: 0;
+    display: inherit !important;
   }
-  @media screen and (max-width: $Tablet) {
-    margin-top: 9px;
-    padding-left: 55px;
+  @media (min-width: $smallLaptop) and (max-width: $bigLaptop) {
+    margin-top: 14px;
+    padding-left: 0;
+    display: inherit !important;
   }
-  @media (min-width: $Tablet) and (max-width: $smallerLaptop) {
-    margin-top: 1px;
-  }
-  @media (min-width: $smallerLaptop) and (max-width: $bigLaptop) {
-    margin-top: 5px;
+  @media (min-width: 1301px) {
+    margin-top: 41px;
+    padding-left: 0;
+    display: inherit !important;
   }
 }
-.navbar-default {
-  //background-color: #6b4539 !important;
-  // background-color: white !important;
-}
 
-.navbar-default {
-  // background: #efc337a1;
+
+nav.navbar-default {
+
   background: $yellow;
   margin-bottom: 0;
   min-height: 160px;
   border: none;
+  border-radius: unset;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $Tablet) {
+      flex-direction: unset;
+
+    }
+  }
 }
 
+.navbar-header {
+  margin-left: 5% !important;
+  @media (min-width: $Tablet) {
+    display: block;
+    width: unset;
+
+  }
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  @media (max-width: $Tablet) {
+    margin-left: 0 !important;
+  }
+
+  &:before, &:after {
+    display: none;
+  }
+}
 .navbar-brand {
   display: flex;
   align-items: center;
-}
-
-.header-logo {
   height: 150px;
-  padding: 7px 14px;
-  margin-top: 110px;
-  @media (min-width: $smallLaptop) and (max-width: $bigLaptop) {
-    margin-top: 115px;
+  width: 150px;
+  padding: 0;
+  margin: 15px;
+  @media (max-width: $Tablet) {
+    height: 120px;
+    width: 120px;
+
   }
-  @media (min-width: $smallerLaptop) and (max-width: $smallLaptop) {
-    margin-top: 115px;
-  }
+
 }
 
 .navbar-default .navbar-nav > li > a {
   color: black;
   font-size: 17px;
-  @media (min-width: 768px) and (max-width: 1080px) {
+  @media (min-width: $Tablet) and (max-width: 1080px) {
     font-size: 15px;
 
   }
 
 }
 
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+  background-color: #3763ef61;
+  background-image: unset;
+}
+
 .nav > li > a {
-  @media (min-width: 768px) and (max-width: 1080px) {
+  @media (min-width: $Tablet) and (max-width: 1080px) {
     padding: 8px 12px;
 
   }
 }
 
 .navbar-collapse {
-  height: 425px;
+  height: 100vh;
   @media screen and (max-width: $Tablet) {
-    margin-top: 125px;
+    margin-top: 12px;
+    border-color: transparent !important;
   }
 
+}
+
+.navbar-toggle {
+  height: 50px;
 }
 
 /* Underline From Center */

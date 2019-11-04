@@ -8,17 +8,17 @@ import Social from '../ICONS/Social';
 class ServiceAboutHome extends Component {
   render() {
     return (
-      <div className="service-home">
+      <div className="serviceHome">
         <Grid>
+          <Col className="serviceHome__header-wrapper">
+            <h1 className="serviceHome__title">Over Mellowwebdesign</h1>
+          </Col>
           <Row className="weetjes">
-            <Col>
-              <h1 className="service-home-head">Over Mellowwebdesign</h1>
-            </Col>
             <Col xs={12} md={4} className="service-tile">
               <div className="icon-margin1">
                 <Responsive />
               </div>
-              <h2>Webdesign</h2>
+              <h2 className="webdesign">Webdesign</h2>
               <p>
                 Websites maken is onze eerste grote liefde maar ook een stijlvol
                 grafisch ontwerp van jouw is bij Mellow in goede handen.{' '}

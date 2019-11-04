@@ -1,0 +1,81 @@
+.Diensten {
+
+  margin-top: 5vh;
+  @media (min-width: $mq-md) {
+    margin-top: 10vh;
+  }
+  @media (min-width: $mq-xl) {
+    .container {
+      width: 1170px;
+    }
+  }
+
+  h2 {
+    padding: 0 15px;
+    @media (max-width: $mq-md) {
+      font-size: 2.7rem;
+    }
+  }
+
+  .onderhoud__expl {
+    p {
+      margin-bottom: 1em;
+      width: 90%;
+    }
+  }
+
+  .onderhoud__table {
+    display: none;
+    @media (min-width: $mq-sm) {
+      display: inherit;
+    }
+
+    .Grid-cell {
+      .price {
+        margin: 20px 5px;
+
+        .basic-header {
+          background-color: $color-grey;
+          color: white;
+        }
+
+        .highlighted-header {
+          color: white;
+        }
+
+        li {
+          color: black;
+
+          &.grey {
+
+            .button-submit {
+              font-size: 15px;
+              height: 40px;
+              text-transform: uppercase;
+              width: 185px;
+            }
+
+          }
+        }
+
+      }
+
+      &:first-child {
+        .price:hover {
+          margin: 20px 5px;
+        }
+
+        .grey {
+          .button-submit {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+
+

@@ -1,0 +1,179 @@
+
+.portfolioItem {
+  &__header {
+    width: 100%;
+    height: 70vh;
+    background-color: $yellow;
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid black;
+    align-items: center;
+
+    @media screen and (max-width: $bigGsm) {
+      height: 100%;
+    }
+
+    .header-layers {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 45vw;
+      background-color: white;
+      margin-top: -10px;
+      @media screen and (max-width: $bigGsm) {
+        padding: 5%;
+        width: 100%;
+        h1 {
+          padding: 0;
+          margin-top: 1em;
+        }
+      }
+
+      h1 {
+        text-align: left;
+        color: $blue;
+      }
+    }
+
+    .portfolio__head-img {
+      width: 50%;
+      margin-top: 3vh;
+      @media screen and (max-width: $bigGsm) {
+        width: 100%;
+        margin: 5vh 0;
+      }
+      @media screen and (max-width: $smallLaptop) and (min-width: $Tablet) {
+        width: 90%;
+        margin-bottom: 3vh;
+      }
+    }
+
+
+  }
+
+  &__grid {
+
+    h1, h3 {
+      color: black;
+      padding: 1vh 5vw;
+    }
+
+    .portfolio__request {
+      padding: 1vh 5vw;
+
+      p:nth-child(2) {
+        margin-top: 3vh;
+      }
+    }
+
+    h1 {
+      font-size: 35px;
+      font-weight: 500;
+      margin: 4% 0;
+    }
+
+    h3 {
+      text-shadow: none;
+      font-weight: 300;
+      font-size: 34px;
+      text-align: center;
+      margin: 1%;
+    }
+
+    > .row:first-child {
+      padding-top: 200px;
+      @media screen and (max-width: 1209px) and (min-width: $smallLaptop) {
+        padding-top: 5vh;
+      }
+      @media screen and (max-width: $bigGsm) {
+        padding-top: 20px;
+      }
+    }
+
+    > .row:nth-child(2) {
+      padding: 100px 0;
+    }
+
+    .no-problemo {
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 1.5px;
+      color: $yellow;
+      text-shadow: #6c6c6c 1px 1px 1px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    min-height: 50vh;
+
+    &-solution {
+      margin: 15% 2%;
+      width: 70%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media screen and (max-width: $smallLaptop) {
+        width: 100%;
+        margin: 15% 2% 4% 2%;
+      }
+    }
+
+    &-img {
+      .portfolio__smartphone {
+        display: flex;
+        justify-content: center;
+        @media screen and (max-width: $smallLaptop) {
+          margin: 0 auto;
+          width: 80%;
+        }
+      }
+
+    }
+
+    @media screen and (max-width: $smallLaptop) {
+      flex-direction: column;
+    }
+  }
+}
+
+
+.cta-overal {
+  a {
+    background: $blue;
+    color: white;
+
+    &:hover, &:before {
+      background: $yellow;
+    }
+  }
+
+}
+
+.parallax {
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+  }
+}
+
+.portfolio__head-img {
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+
+
+}
+
+
+
+
+
+

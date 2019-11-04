@@ -3,7 +3,6 @@
   z-index: 1;
   display: inline-block;
   margin: 0.4em;
-  max-width: 210px;
   width: calc(70% - 2em);
   vertical-align: top;
 }
@@ -11,16 +10,13 @@
 .input__field {
   position: relative;
   display: block;
-  float: right;
   padding: 0.8em;
   width: 60%;
   border: none;
-  border-radius: 0;
   background: #f0f0f0;
   color: #aaa;
   font-weight: 400;
   font-size: 20px;
-
   -webkit-appearance: none; /* for box shadows to show on iOS */
 }
 
@@ -30,20 +26,11 @@
 
 .input__label {
   display: inline-block;
-  float: right;
   padding: 0 1em;
   width: 40%;
   color: #6a7989;
   font-weight: bold;
   font-size: 100%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 .input__label-content {
@@ -64,7 +51,6 @@
   width: 100%;
   background: transparent;
   opacity: 0;
-
   z-index: 100;
   color: black;
 }
@@ -76,7 +62,7 @@
   pointer-events: none;
   text-align: left;
   color: #8E9191;
-  padding: 0 0.5em;
+  padding: 0;
 }
 
 .input__label--nariko::before {

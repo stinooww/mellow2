@@ -1,45 +1,36 @@
 import React, { Component } from 'react';
-import { Row, Col } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
 import { withFormik } from 'formik';
 import * as Yup from 'yup';
 import classnames from 'classnames';
-
 import axios from 'axios';
 
 export default class SeoAnalyse extends Component {
   render() {
     return (
-      <Row className="seo-cta">
-        <Col md={8} sm={12}>
-          <div>
-            <h2>Wil je graag weten hoe jouw website er voor staat?</h2>
-            <h4>
-              {' '}
-              Vul je gegevens in en wij sturen je een GRATIS SEO analyse op!{' '}
-            </h4>
-            <br />
-            <SEOwebsiteAnalyseForm
-              user={{
-                Name: '',
-                bedrijf: '',
-                email: '',
-                url: ''
-              }}
-            />
-          </div>
-        </Col>
-      </Row>
+      <Col md={6} sm={12}>
+        <h4>Vul je gegevens in en wij sturen je een GRATIS SEO analyse op!</h4>
+        <br />
+        <SEOwebsiteAnalyseForm
+          user={{
+            name: '',
+            bedrijf: '',
+            email: '',
+            url: ''
+          }}
+        />
+      </Col>
     );
   }
 }
 
 const formikEnhancer = withFormik({
   validationSchema: Yup.object().shape({
-    naam: Yup.string()
+    name: Yup.string()
       .min(1, 'Dat is een korte naam')
       .max(50, 'Veel te lang!')
       .required('Uw naam is verplicht.'),
-    bedrijfsnaam: Yup.string()
+    bedrijf: Yup.string()
       .min(2, 'Dat is een korte naam')
       .max(50, 'Veel te lang!'),
     email: Yup.string()
@@ -47,9 +38,9 @@ const formikEnhancer = withFormik({
       .max(50, 'Veel te lang!')
       .required('Email is verplicht!'),
     url: Yup.string()
-      .min(2, 'url klopt niet.')
+      .min(2, 'website klopt niet.')
       .max(100, 'url te lang!')
-      .required('url is verplicht!')
+      .required('website url is verplicht!')
   }),
 
   mapPropsToValues: ({ user }) => ({
@@ -67,7 +58,7 @@ const formikEnhancer = withFormik({
     };
 
     axios
-      .post('https://jsonplaceholder.typicode.com/users', { data })
+      .post('https://api.mellowwebdesign.be/api/sendmail/seo', { data })
       .then(res => {
         // this.setState({submitted: true});
         setSubmitting(true);
@@ -139,22 +130,22 @@ const SeoForm = props => {
       ) : (
         <form onSubmit={handleSubmit}>
           <TextInput
-            id="naam"
+            id="name"
             type="text"
-            label="naam"
-            placeholder="Naam*"
-            error={touched.naam && errors.naam}
-            value={values.naam}
+            label="name"
+            placeholder="Jouw naam*"
+            error={touched.name && errors.name}
+            value={values.name}
             onChange={handleChange}
             onBlur={handleBlur}
           />
           <TextInput
-            id="bedrijfsnaam"
+            id="bedrijf"
             type="text"
-            label="bedrijfsnaam"
-            placeholder="Bedrijfsnaam"
-            error={touched.bedrijfsnaam && errors.bedrijfsnaam}
-            value={values.bedrijfsnaam}
+            label="bedrijf"
+            placeholder="Jouw bedrijfsnaam"
+            error={touched.bedrijf && errors.bedrijf}
+            value={values.bedrijf}
             onChange={handleChange}
             onBlur={handleBlur}
           />
@@ -172,14 +163,14 @@ const SeoForm = props => {
             id="email"
             type="email"
             label="email"
-            placeholder="Email*"
+            placeholder="Jouw email*"
             error={touched.email && errors.email}
             value={values.email}
             onChange={handleChange}
             onBlur={handleBlur}
           />
           <button type="submit" onClick={handleSubmit}>
-            Verzenden
+            Vraag je analyse aan
           </button>
         </form>
       )}

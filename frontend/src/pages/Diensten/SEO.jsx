@@ -15,8 +15,11 @@ import Graphic from '../../images/graphic.png';
 import { CircleArrow as ScrollUpButton } from 'react-scroll-up-button';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Helmet } from 'react-helmet';
 
 AOS.init();
+AOS.init({ disable: 'mobile' });
+
 class SEO extends Component {
   ref = React.createRef();
 
@@ -58,12 +61,12 @@ class SEO extends Component {
 
     return (
       <div className="PortfolioPage seo">
+        <Helmet>
+          <title>seo optimalisatie - mellow webdesign development</title>
+        </Helmet>
         <Grid>
           <Row className="section--belang">
-            <Col xs={12} md={4}>
-              <Image className="img-google" src={Google} responsive />
-            </Col>
-            <Col md={8} xs={12}>
+            <Col xs={12}>
               <h2>Het belang van eerste te staan in Google</h2>
               <p>
                 We gebruiken allemaal regelmatig bekende zoekmachines zoals Bing
@@ -78,28 +81,34 @@ class SEO extends Component {
                 verschijnen als men een antwoord zoekt waarop jij een oplossing
                 kan bieden!{' '}
               </p>
-              <p>
-                Omdat het enkele weken duurt voordat SEO begint te werken zal je
-                dit resultaat niet meteen zien. Zoekmachine optimalisatie oftwel
-                SEO is dus een lange termijn verhaal. Hoe beter de optimalisatie
-                => hoe beter Google jouw website gaat scoren en dus hoger zal
-                ranken => en hoe meer je wordt gevonden door potentiële klanten
-                die effectief op zoek zijn en dus interesse tonen.
-              </p>
-              <p>
-                Wil je toch liever op kortere termijn bovenaan de zoekresultaten
-                verschijnen, <br />{' '}
-                <a className="sea-link" href="#sea">
-                  kan je inzetten op een SEA-campagne
-                </a>
-                .
-              </p>
+              <Col lg={12}>
+                <Image className="img-google" src={Google} responsive />
+                <p>
+                  Heb je toch meer interesse in Goolge advertising?
+                  <br />{' '}
+                  <a className="sea-link" href="#sea">
+                    Dan kan je inzetten op een SEA-campagne
+                  </a>
+                  .
+                </p>
+              </Col>
             </Col>
           </Row>
         </Grid>
-        <div data-aos="zoom-in-down" className="mt-4 mb-4 d-flex">
-          <SeoAnalyse />
+        <div data-aos="zoom-in-down" className="container-fluid">
+          <Row className="seo-cta">
+            <Col md={6} sm={12}>
+              <h2>Wil je graag weten hoe jouw website er voor staat?</h2>
+              <p>
+                Vul dan hier je gegevens in, wij kijken je website grondig na en
+                sturen een volledig analyse rapport samen met een offerte naar u
+                op!
+              </p>
+            </Col>
+            <SeoAnalyse />
+          </Row>
         </div>
+
         <Grid>
           <Row className="seo__voordelen">
             <Col xs={12}>
@@ -110,7 +119,7 @@ class SEO extends Component {
                 <article
                   data-aos="flip-left"
                   data-aos-easing="ease-in-back"
-                  data-aos-delay="150"
+                  data-aos-delay="100"
                   data-aos-duration="800"
                 >
                   <h3 className="seo-stappen-head"> 1</h3>
@@ -128,7 +137,7 @@ class SEO extends Component {
                 <article
                   data-aos="flip-up"
                   data-aos-easing="ease-in-back"
-                  data-aos-delay="150"
+                  data-aos-delay="110"
                   data-aos-duration="800"
                 >
                   <h3>2</h3>
@@ -161,7 +170,7 @@ class SEO extends Component {
                 <article
                   data-aos="flip-right"
                   data-aos-easing="ease-in-back"
-                  data-aos-delay="150"
+                  data-aos-delay="120"
                   data-aos-duration="800"
                 >
                   <h3>3</h3>

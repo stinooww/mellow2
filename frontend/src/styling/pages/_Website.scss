@@ -1,0 +1,110 @@
+.website {
+  padding-top: 5%;
+  width: 100%;
+
+  .row {
+    flex-direction: row;
+    width: 100%;
+    margin: 0 15px;
+
+
+  }
+
+  .waarom-website-txt {
+    margin-bottom: 10vh;
+    h2 {
+      margin: 3vh 0 5vh 0;
+      line-height: 1.4;
+    }
+    strong {
+      font-size: 1.6em;
+      line-height: 3em;
+    }
+  }
+
+  .mobile-responsive {
+    @media (max-width: $bigGsm) {
+      margin: 0;
+    }
+    @media (min-width: $bigGsm) and (max-width: $mq-lg) {
+      margin: 0;
+    }
+    margin: 10vh 0;
+
+
+    p {
+      margin: 3vh 0;
+    }
+
+    &__img {
+      height: 70vh;
+      @media (max-width: $bigGsm) {
+        height: 50vh;
+      }
+      @media (min-width: $bigGsm) and (max-width: $mq-lg) {
+        margin: 10vh 0 0 0;
+      }
+
+      .mobile-img {
+        display: block;
+        max-width: 100%;
+        width: 100%;
+        @media (max-width: $bigGsm) {
+          height: inherit;
+        }
+        @media (min-width: $bigGsm) and (max-width: $mq-lg) {
+          height: 70%;
+        }
+        @media (min-width: $smallLaptop) and (max-width: 1199px) {
+          height: 65%;
+        }
+        @media (min-width: 1200px) and (max-width: 1299px) {
+          height: 73%;
+        }
+        @media (min-width: $bigLaptop) {
+          height: 90%;
+        }
+      }
+    }
+
+
+
+  }
+
+
+  strong {
+    color: black;
+    margin-top: 20px;
+  }
+
+
+  .overall-container {
+    height: 500px;
+    width: 100%;
+    position: absolute;
+  }
+
+}
+
+
+.website__testimonial {
+
+  .wp-block-quote {
+    margin: 20px 0;
+    @media (max-width: $mq-md) {
+      margin: 20px 0;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 1.5em;
+      font-style: italic;
+    }
+    cite {
+      font-style: normal;
+      font-weight: normal;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  }
+}

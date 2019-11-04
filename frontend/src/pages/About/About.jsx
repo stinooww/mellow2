@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Grid, Col, Image } from 'react-bootstrap';
-import mellowBazen from './../../images/jonasstijn.jpg';
+import { Grid, Col } from 'react-bootstrap';
+
 import CallToAction from '../../components/CallToAction/CallToAction';
 
 export default class Home extends Component {
@@ -11,21 +11,19 @@ export default class Home extends Component {
           <div className="about">
             <Col xs={12} sm={12} className="person">
               <article className="post">
-                <div>
-                  <Image src={mellowBazen} className="stijnJonas absolute-bg" />
-                </div>
+                <div className="stijnJonas absolute-bg" />
                 <div className="post__container">
                   <span className="post__category">
                     Wat meer over wie er achter mellow zit
                   </span>
                   <div className="post__content">
-                    <header>
+                    <div>
                       <time className="post__time">November 28 2017</time>
                       <h2 className="post__header">
                         <span>Hoe het</span> <span>allemaal</span>{' '}
                         <span>begon</span>
                       </h2>
-                    </header>
+                    </div>
                     <p className="post__text">
                       Mellow webdesign is een idee dat eind 2017 is ontstaan
                       toen Jonas en Stijn samen studeerde op de Karel de grote
