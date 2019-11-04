@@ -14,16 +14,17 @@
 Route::group(['middleware' => 'auth'], function () {
 
 
-Route::get('/', 'admin\adminController@index')->name('admin');
+Route::get('/', 'Admin\adminController@index')->name('admin');
 
 /*portfolio*/
-Route::resource('portfolio','admin\portfolioController');
-Route::resource('medewerkers','admin\userController');
+Route::resource('portfolio','Admin\portfolioController');
+Route::resource('medewerkers','Admin\userController');
 
-Route::post('medewerkers/{id}/upload','admin\userController@image');
-Route::post('portfolio/{id}/upload/main','admin\portfolioController@mainimage');
-Route::post('portfolio/{id}/upload/thumb','admin\portfolioController@thumbimage');
-Route::post('portfolio/{id}/upload/car','admin\portfolioController@carimage');
+Route::post('medewerkers/{id}/upload','Admin\userController@image');
+Route::post('portfolio/{id}/upload/main','Admin\portfolioController@mainimage');
+Route::post('portfolio/{id}/upload/thumb','Admin\portfolioController@thumbimage');
+Route::post('portfolio/{id}/upload/car','Admin\portfolioController@carimage');
+Route::post('portfolio/{id}/upload/smartphone','Admin\portfolioController@smartimage');
 
 
 

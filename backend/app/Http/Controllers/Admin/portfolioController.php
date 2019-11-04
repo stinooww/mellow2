@@ -17,6 +17,11 @@ class portfolioController extends CRUDController
         $this->viewFolder = 'portfolio';
         $this->routName = 'portfolio';
     }
+    public function create()
+    {
+        $data['types']=$this->repository->getTypes();
+        return view($this->viewFolder . '.create', $data);
+    }
 
     public function edit($id)
     {
@@ -52,6 +57,13 @@ class portfolioController extends CRUDController
         DB::table('portfolios')
             ->where('id', $id)
             ->update(['Thumbnail' => "$response"]);
+
+    }
+    public function smartimage(Request $request, $id){
+        $response=$this->upload($request);
+        DB::table('portfolios')
+            ->where('id', $id)
+            ->update(['Smartphone' => "$response"]);
 
     }
 

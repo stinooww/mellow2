@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Col} from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
 import { withFormik } from 'formik';
 import * as Yup from 'yup';
 import classnames from 'classnames';
@@ -8,42 +8,39 @@ import axios from 'axios';
 export default class SeoAnalyse extends Component {
   render() {
     return (
-            <Col md={6} sm={12}>
-
-            <h4>
-                Vul je gegevens in en wij sturen je een GRATIS SEO analyse op!
-            </h4>
-            <br />
-            <SEOwebsiteAnalyseForm
-              user={{
-                  name : '',
-                bedrijf: '',
-                email  : '',
-                url    : ''
-              }}
-            />
-        </Col>
+      <Col md={6} sm={12}>
+        <h4>Vul je gegevens in en wij sturen je een GRATIS SEO analyse op!</h4>
+        <br />
+        <SEOwebsiteAnalyseForm
+          user={{
+            name: '',
+            bedrijf: '',
+            email: '',
+            url: ''
+          }}
+        />
+      </Col>
     );
   }
 }
 
 const formikEnhancer = withFormik({
   validationSchema: Yup.object().shape({
-      name   : Yup.string()
+    name: Yup.string()
       .min(1, 'Dat is een korte naam')
       .max(50, 'Veel te lang!')
       .required('Uw naam is verplicht.'),
-      bedrijf: Yup.string()
+    bedrijf: Yup.string()
       .min(2, 'Dat is een korte naam')
       .max(50, 'Veel te lang!'),
-    email    : Yup.string()
+    email: Yup.string()
       .email('Ongeldig email adres')
       .max(50, 'Veel te lang!')
       .required('Email is verplicht!'),
-    url      : Yup.string()
-            .min(2, 'website klopt niet.')
+    url: Yup.string()
+      .min(2, 'website klopt niet.')
       .max(100, 'url te lang!')
-            .required('website url is verplicht!')
+      .required('website url is verplicht!')
   }),
 
   mapPropsToValues: ({ user }) => ({
@@ -61,7 +58,7 @@ const formikEnhancer = withFormik({
     };
 
     axios
-            .post('https://api.mellowwebdesign.be/api/sendmail/seo', {data})
+      .post('https://api.mellowwebdesign.be/api/sendmail/seo', { data })
       .then(res => {
         // this.setState({submitted: true});
         setSubmitting(true);
@@ -133,24 +130,24 @@ const SeoForm = props => {
       ) : (
         <form onSubmit={handleSubmit}>
           <TextInput
-                  id="name"
-                  type="text"
-                  label="name"
-                  placeholder="Jouw naam*"
-                  error={touched.name && errors.name}
-                  value={values.name}
-                  onChange={handleChange}
-                  onBlur={handleBlur}
+            id="name"
+            type="text"
+            label="name"
+            placeholder="Jouw naam*"
+            error={touched.name && errors.name}
+            value={values.name}
+            onChange={handleChange}
+            onBlur={handleBlur}
           />
           <TextInput
-                  id="bedrijf"
-                  type="text"
-                  label="bedrijf"
-                  placeholder="Jouw bedrijfsnaam"
-                  error={touched.bedrijf && errors.bedrijf}
-                  value={values.bedrijf}
-                  onChange={handleChange}
-                  onBlur={handleBlur}
+            id="bedrijf"
+            type="text"
+            label="bedrijf"
+            placeholder="Jouw bedrijfsnaam"
+            error={touched.bedrijf && errors.bedrijf}
+            value={values.bedrijf}
+            onChange={handleChange}
+            onBlur={handleBlur}
           />
           <TextInput
             id="url"
@@ -163,17 +160,17 @@ const SeoForm = props => {
             onBlur={handleBlur}
           />
           <TextInput
-                  id="email"
-                  type="email"
-                  label="email"
-                  placeholder="Jouw email*"
-                  error={touched.email && errors.email}
-                  value={values.email}
-                  onChange={handleChange}
-                  onBlur={handleBlur}
+            id="email"
+            type="email"
+            label="email"
+            placeholder="Jouw email*"
+            error={touched.email && errors.email}
+            value={values.email}
+            onChange={handleChange}
+            onBlur={handleBlur}
           />
           <button type="submit" onClick={handleSubmit}>
-              Vraag je analyse aan
+            Vraag je analyse aan
           </button>
         </form>
       )}

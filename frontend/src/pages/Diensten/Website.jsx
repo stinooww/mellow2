@@ -7,23 +7,21 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import MessengerCustomerChat from 'react-messenger-customer-chat';
 
-
-AOS.init({disable: 'phone'});
+AOS.init({ disable: 'phone' });
 
 class Website extends Component {
-
   render() {
     return (
       <div className="website">
-          <MessengerCustomerChat
-                  pageId="342021876162625"
-                  appId="342021876162625"
-                  htmlRef={window.location.pathname}
-                  loggedInGreeting="Hallo, waar kan ik je mee helpen?"
-                  themeColor="#efc337"
-                  language="nl_NL"
-                  xfbml={true}
-          />
+        <MessengerCustomerChat
+          pageId="342021876162625"
+          appId="342021876162625"
+          htmlRef={window.location.pathname}
+          loggedInGreeting="Hallo, waar kan ik je mee helpen?"
+          themeColor="#efc337"
+          language="nl_NL"
+          xfbml={true}
+        />
         <Grid>
           <Row>
             <Col xs={12} className="waarom-website-txt">
@@ -58,17 +56,21 @@ class Website extends Component {
           </Row>
 
           <Row>
-              <Col xs={12} sm={12} md={8} className="mobile-responsive mobile-responsive__img">
+            <Col
+              xs={12}
+              sm={12}
+              md={8}
+              className="mobile-responsive mobile-responsive__img"
+            >
               <div className="mobile-img" data-aos="fade-up-right" />
             </Col>
             <Col
-                xs={12}
-                sm={12}
-                md={4}
-                className="mobile-responsive mobile-responsive__text"
-                data-aos="fade-up-left"
-                data-aos-mirror="true"
-
+              xs={12}
+              sm={12}
+              md={4}
+              className="mobile-responsive mobile-responsive__text"
+              data-aos="fade-up-left"
+              data-aos-mirror="true"
             >
               <h3>Jouw website mobiel beschikbaar!</h3>
               <p>
@@ -88,26 +90,28 @@ class Website extends Component {
               </p>
             </Col>
           </Row>
-            <Row>
-                <Col xs={12}>
-                    <div className="website__testimonial">
-                        <blockquote className="wp-block-quote"><p>
-                            Goede communicatie, vernieuwde kijk op zaken gekregen, creatief,
-                            verdiepen zich goed in de materie van je bedrijf, <br/> afspraken nakomen,
-                            kortom een goede keuze geweest.</p>
-                            <cite>Anja - Body Update</cite></blockquote>
-                    </div>
-                </Col>
-            </Row>
-            <Row>
-                <Col xs={12} data-aos="fade-up">
-                    <h3 className="text-center">
-                        Dus als jouw website niet responsief is tegenover die van jouw
-                        concurrent, dan geeft Google voorrang aan jouw concurrent!
-                    </h3>
-
-                </Col>
-            </Row>
+          <Row>
+            <Col xs={12}>
+              <div className="website__testimonial">
+                <blockquote className="wp-block-quote">
+                  <p>
+                    Goede communicatie, vernieuwde kijk op zaken gekregen,
+                    creatief, verdiepen zich goed in de materie van je bedrijf,{' '}
+                    <br /> afspraken nakomen, kortom een goede keuze geweest.
+                  </p>
+                  <cite>Anja - Body Update</cite>
+                </blockquote>
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={12} data-aos="fade-up">
+              <h3 className="text-center">
+                Dus als jouw website niet responsief is tegenover die van jouw
+                concurrent, dan geeft Google voorrang aan jouw concurrent!
+              </h3>
+            </Col>
+          </Row>
         </Grid>
         <CallToAction />
       </div>

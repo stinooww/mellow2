@@ -50,7 +50,7 @@ const formikEnhancer = withFormik({
       vraag: payload.vraag
     };
     axios
-            .post('https://api.mellowwebdesign.be/api/sendmail/contact', {user})
+      .post('https://api.mellowwebdesign.be/api/sendmail/contact', { user })
       .then(res => {
         setSubmitting(true);
 

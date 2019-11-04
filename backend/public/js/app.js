@@ -1813,7 +1813,9 @@ __webpack_require__.r(__webpack_exports__);
       console.log(this.path);
       axios.post(this.path, {
         image: this.image
-      }).then(function (response) {});
+      }).then(function (response) {
+        console.log(response);
+      });
     }
   }
 });

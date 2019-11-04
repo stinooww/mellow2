@@ -7,10 +7,9 @@ import { faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 class Contact extends Component {
   render() {
-
     return (
       <Grid>
-          <Row className="contact">
+        <Row className="contact">
           <Col xs={12} md={12} sm={12}>
             <h2 className="contact-header">Hebt u een vraag?</h2>
             <p>Wij contacteren u binnen de 24 uur!</p>

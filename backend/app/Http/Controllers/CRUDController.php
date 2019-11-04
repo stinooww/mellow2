@@ -78,7 +78,7 @@ class CRUDController extends BaseController
         } else {
             $imageData = $request->get('image');
             $fileName = Carbon::now()->timestamp . '_' . uniqid() . '.' . explode('/', explode(':', substr($imageData, 0, strpos($imageData, ';')))[1])[1];
-            Image::make($request->get('image'))->save(public_path('images/') . $fileName);
+            Image::make($request->get('image'))->save(public_path('storage/photos/') . $fileName);
             return $fileName;
         }
     }

@@ -17,9 +17,9 @@ class ServiceHomePictures extends Component {
             <div className="home-portfolio-text clearfix">
               <div className="col-md-12">
                 <h2>
-                    Wij zijn gespecialiseerd in webdesign,
-                    <span> en denken mee met jou </span>
-                    om de beste oplossing op maat te vinden!{' '}
+                  Wij zijn gespecialiseerd in webdesign,
+                  <span> en denken mee met jou </span>
+                  om de beste oplossing op maat te vinden!{' '}
                 </h2>
               </div>
               <div className="elementor-divider">
@@ -39,25 +39,25 @@ class ServiceHomePictures extends Component {
                       Webshop &amp; Marketing emails
                     </figcaption>
                   </figure>
-                    <Link to="/portfolioitem/19" className="full-link">
+                  <Link to="/portfolioitem/19" className="full-link">
                     Dicomenu
                   </Link>
                   <div className="overlay">
                     <div className="overlay-color overlay-color1" />
                     <div className="overlay-content">
                       <h3>
-                          <Link to="/portfolioitem/19">
+                        <Link to="/portfolioitem/19">
                           Dicomenu
                           <small>Culinaire vertalingen </small>
                         </Link>
                       </h3>
-                        <Link to="/portfolioitem/19">Bekijk project</Link>
+                      <Link to="/portfolioitem/19">Bekijk project</Link>
                       <div className="hr" />
                       <Link to="/portfolio" className="light">
                         Bekijk portfolio
                       </Link>
                     </div>
-                      <Link to="/portfolioitem/19" className="full-link">
+                    <Link to="/portfolioitem/19" className="full-link">
                       Dicomenu
                     </Link>
                   </div>
@@ -72,25 +72,25 @@ class ServiceHomePictures extends Component {
                     />
                     <figcaption className="caption">Webdesign</figcaption>
                   </figure>
-                    <Link to="/portfolioitem/14" className="full-link">
+                  <Link to="/portfolioitem/14" className="full-link">
                     Finnegans
                   </Link>
                   <div className="overlay">
                     <div className="overlay-color overlay-color1" />
                     <div className="overlay-content">
                       <h3>
-                          <Link to="/portfolioitem/14">
+                        <Link to="/portfolioitem/14">
                           Finnegans
                           <small>B2B en B2C cocktailconcepten op maat </small>
                         </Link>
                       </h3>
-                        <Link to="/portfolioitem/14">Bekijk project</Link>
+                      <Link to="/portfolioitem/14">Bekijk project</Link>
                       <div className="hr" />
                       <Link to="/portfolio" className="light">
                         Bekijk portfolio
                       </Link>
                     </div>
-                      <Link to="/portfolioitem/14" className="full-link">
+                    <Link to="/portfolioitem/14" className="full-link">
                       Finnegans
                     </Link>
                   </div>
@@ -110,30 +110,25 @@ class ServiceHomePictures extends Component {
                         responsive website
                       </figcaption>
                     </figure>
-                      <Link to="/portfolioitem/18" className="full-link">
+                    <Link to="/portfolioitem/18" className="full-link">
                       Afslanken
                     </Link>
                     <div className="overlay">
                       <div className="overlay-color overlay-color1" />
                       <div className="overlay-content">
                         <h3>
-                            <Link to="/portfolioitem/18">
+                          <Link to="/portfolioitem/18">
                             Body-update
                             <small>Afslanken &amp; diëten </small>
                           </Link>
                         </h3>
-                          <Link to="/portfolioitem/18">
-                          Bekijk project
-                        </Link>
+                        <Link to="/portfolioitem/18">Bekijk project</Link>
                         <div className="hr" />
                         <Link to="/portfolio" className="light">
                           Bekijk portfolio
                         </Link>
                       </div>
-                      <Link
-                          to="/portfolioitem/18"
-                          className="full-link"
-                      >
+                      <Link to="/portfolioitem/18" className="full-link">
                         Body-update
                       </Link>
                     </div>
@@ -146,30 +141,25 @@ class ServiceHomePictures extends Component {
                         Webdesign en SEA
                       </figcaption>
                     </figure>
-                      <Link to="/portfolioitem/20" className="full-link">
+                    <Link to="/portfolioitem/20" className="full-link">
                       SEA
                     </Link>
                     <div className="overlay">
                       <div className="overlay-color overlay-color1" />
                       <div className="overlay-content">
                         <h3>
-                            <Link to="/portfolioitem/20">
+                          <Link to="/portfolioitem/20">
                             Ask-bliksembeveiliging
                             <small>Social media &amp; webdesign </small>
                           </Link>
                         </h3>
-                          <Link to="/portfolioitem/20">
-                          Bekijk project
-                        </Link>
+                        <Link to="/portfolioitem/20">Bekijk project</Link>
                         <div className="hr" />
                         <Link to="/portfolio" className="light">
                           Bekijk portfolio
                         </Link>
                       </div>
-                      <Link
-                          to="/portfolioitem/20"
-                          className="full-link"
-                      >
+                      <Link to="/portfolioitem/20" className="full-link">
                         Ask-bliksembeveiliging
                       </Link>
                     </div>
@@ -179,33 +169,25 @@ class ServiceHomePictures extends Component {
                   <figure className="fig cover peeraer">
                     <figcaption className="caption">Webshop</figcaption>
                   </figure>
-                  <Link
-                      to="/portfolioitem/9"
-                      className="full-link"
-                  >
+                  <Link to="/portfolioitem/9" className="full-link">
                     Bakkerij & broodjes
                   </Link>
                   <div className="overlay">
                     <div className="overlay-color overlay-color1" />
                     <div className="overlay-content">
                       <h3>
-                          <Link to="/portfolioitem/9">
+                        <Link to="/portfolioitem/9">
                           Bakkerij Peeraer
                           <small>Bakkerij & broodjes</small>
                         </Link>
                       </h3>
-                        <Link to="/portfolioitem/9">
-                        Bekijk project
-                      </Link>
+                      <Link to="/portfolioitem/9">Bekijk project</Link>
                       <div className="hr" />
                       <Link to="/portfolio" className="light">
                         Bekijk portfolio
                       </Link>
                     </div>
-                    <Link
-                        to="/portfolioitem/9"
-                        className="full-link"
-                    >
+                    <Link to="/portfolioitem/9" className="full-link">
                       Bakkerij Peeraer
                     </Link>
                   </div>

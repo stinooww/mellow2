@@ -13,15 +13,19 @@
         </div>
         <div class="col-sm-4">
             <h3>Hoofdafbeelding</h3>
-            @include('partials.singleImage',['path'=>'upload/main','image'=> asset('/images/'.$item->mainImgUrl),'name'=>'mainImgUrl'])
+            @include('partials.singleImage',['path'=>'upload/main','image'=> asset('/storage/photos/'.$item->mainImgUrl),'name'=>'mainImgUrl'])
         </div>
         <div class="col-sm-4">
             <h3>Thumbnail</h3>
-            @include('partials.singleImage',['path'=>'upload/thumb','image'=> asset('/images/'.$item->Thumbnail),'name'=>'Thumbnail'])
+            @include('partials.singleImage',['path'=>'upload/thumb','image'=> asset('/storage/photos/'.$item->Thumbnail),'name'=>'Thumbnail'])
         </div>
         <div class="col-sm-4">
             <h3>carousel foto (wordt nog een echte carousel)</h3>
-            @include('partials.singleImage',['path'=>'upload/car','image'=> asset('/images/'.$item->Carousel),'name'=>'Carousel'])
+            @include('partials.singleImage',['path'=>'upload/car','image'=> asset('/storage/photos/'.$item->Carousel),'name'=>'Carousel'])
+        </div>
+        <div class="col-sm-4">
+            <h3>smartphone</h3>
+            @include('partials.singleImage',['path'=>'upload/smartphone','image'=> asset('/storage/photos/'.$item->Smartphone),'name'=>'Smartphone'])
         </div>
     </div>
     <div class="row">

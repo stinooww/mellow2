@@ -49,6 +49,7 @@ class PortfolioController extends Controller
      */
     public function show(Portfolio $portfolio)
     {
+
         PortfolioResource::withoutWrapping();
 
         return new PortfolioResource($portfolio);
