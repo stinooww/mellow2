@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Col, Grid, Row } from 'react-bootstrap';
 import {
   VerticalTimeline,
@@ -17,10 +17,8 @@ import {
 // https://github.com/FortAwesome/react-fontawesome
 // https://trulata.com/
 // https://hype4.com/development
-class Timeline extends Component {
-  render() {
-    return (
-      <div>
+const Timeline = () => (
+    <div>
         <Grid>
           <Row className="show-grid timeline">
             <Col xs={12} md={12}>
@@ -128,8 +126,6 @@ class Timeline extends Component {
           </Row>
         </Grid>
       </div>
-    );
-  }
-}
+);
 
 export default Timeline;

@@ -1,11 +1,9 @@
-import React, { Component } from 'react';
-import { Grid, Row, Col } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import React from 'react';
+import {Grid, Row, Col} from 'react-bootstrap';
+import {Link} from 'react-router-dom';
 
-export default class Footer extends Component {
-  render() {
-    return (
-      <footer className="footer fixed-bottom">
+const Footer = () => (
+    <footer className="footer fixed-bottom">
         <Grid>
           <Row>
             <Col xs={12} sm={12} className="footer">
@@ -16,7 +14,7 @@ export default class Footer extends Component {
             </Col>
           </Row>
         </Grid>
-      </footer>
-    );
-  }
-}
+    </footer>
+);
+
+export default Footer;

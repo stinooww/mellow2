@@ -170,7 +170,7 @@ class ModalOfferteStart extends Component {
   };
 
   render() {
-    console.log('state1 + ' + this.state.isToggleOn);
+    console.log('state1 + ' + isToggleOn);
 
     const {submitted, selectedOption, isToggleOn} = this.state;
     return (
@@ -531,8 +531,8 @@ class ModalOfferteStart extends Component {
   }
 }
 
-// ModalOfferteStart.propTypes = {
-//   isToggleOn: PropTypes.string
-// };
+ModalOfferteStart.propTypes = {
+  isToggleOn: PropTypes.string
+};
 
 export default ModalOfferteStart;

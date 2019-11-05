@@ -1,17 +1,8 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
-class ServiceHomePictures extends Component {
-  static propTypes = {
-    tileWidth: PropTypes.string,
-    tileImg: PropTypes.string,
-    tileDescription: PropTypes.string
-  };
-
-  render() {
-    return (
-      <div>
+const ServiceHomePictures = () => (
+    <div>
         <div className="home-portfolio" id="home-portfolio">
           <div className="wrapper-1075">
             <div className="home-portfolio-text clearfix">
@@ -205,8 +196,6 @@ class ServiceHomePictures extends Component {
           </div>
         </div>
       </div>
-    );
-  }
-}
+);
 
 export default ServiceHomePictures;

@@ -7,13 +7,26 @@ import Footer from './components/Footer/Footer';
 import ModalOfferteStart from './components/ModalOfferte/ModalOfferteStart';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isToggleOn: false
+    };
+  }
+
+  activateOfferte = () => {
+    this.setState(state => ({isToggleOn: !state.isToggleOn}));
+    console.log("na geklikt te hebben" + this.state.isToggleOn);
+  };
   render() {
+    const {isToggleOn} = this.state;
     return (
       <Router>
         <div>
-          <Header />
+          <Header activateOfferte={this.activateOfferte}/>
           <Routing />
-          <ModalOfferteStart />
+          {isToggleOn ? <ModalOfferteStart isToggleOn={this.state.isToggleOn}/> : null}
+
           <Footer />
         </div>
       </Router>

@@ -1,9 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-export default class CallToAction extends Component {
-  render() {
+function CallToAction(props) {
     return (
       <div className="section-cta">
         <Grid>
@@ -22,5 +21,6 @@ export default class CallToAction extends Component {
         </Grid>
       </div>
     );
-  }
 }
+
+export default CallToAction;

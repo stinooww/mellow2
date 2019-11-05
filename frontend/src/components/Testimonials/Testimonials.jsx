@@ -1,10 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Carousel, CarouselItem, Col, Grid, Row } from 'react-bootstrap';
 
-class Testimonials extends Component {
-  render() {
-    return (
-      <div>
+const Testimonials = () => (
+    <div>
         <Grid>
           <Row className="show-grid ">
             <Col xs={12} md={12} className="person-wrapper">
@@ -46,8 +44,6 @@ class Testimonials extends Component {
           </Row>
         </Grid>
       </div>
-    );
-  }
-}
+);
 
 export default Testimonials;

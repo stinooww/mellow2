@@ -1,13 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Col, Grid, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Responsive from '../ICONS/Responsive';
 import Webdev from '../ICONS/Webdev';
 import Social from '../ICONS/Social';
 
-class ServiceAboutHome extends Component {
-  render() {
-    return (
+const ServiceAboutHome = () => (
       <div className="serviceHome">
         <Grid>
           <Col className="serviceHome__header-wrapper">
@@ -50,8 +48,7 @@ class ServiceAboutHome extends Component {
           <Link to="/contact" />
         </Grid>
       </div>
-    );
-  }
-}
+);
+
 
 export default ServiceAboutHome;

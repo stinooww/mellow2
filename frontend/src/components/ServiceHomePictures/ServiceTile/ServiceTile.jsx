@@ -24,7 +24,6 @@ function ServiceTile(props) {
                 </a>
             </Row>
     );
-
 }
 
 ServiceTile.prototype = {
