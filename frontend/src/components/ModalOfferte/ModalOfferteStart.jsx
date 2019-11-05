@@ -122,6 +122,14 @@ class ModalOfferteStart extends Component {
   };
 
   onContinueClick = () => {
+    let firstName = document.getElementById('row-offerte-firstname');
+    let lastName = document.getElementById('row-offerte-name');
+    let email = document.getElementById('input-offerte-email');
+    if (firstName.value === "") {
+      console.log("empty");
+    }
+
+
     let field1 = document.getElementById('fieldset-1');
     let fieldset2 = document.getElementById('fieldset-2');
     field1.style.display = 'none';
@@ -269,6 +277,7 @@ class ModalOfferteStart extends Component {
                         onChange={this.onChange}
                         name="email"
                         required
+
                     />
                     <label
                         className="input__label input__label--nariko"

@@ -27,7 +27,8 @@ class App extends Component {
         <div>
           <Header activateOfferte={this.activateOfferte}/>
           <Routing />
-          {isToggleOn ? <ModalOfferteStart isToggleOn={this.state.isToggleOn} hideModal={this.hideModal}/> : null}
+            {isToggleOn ?
+                <ModalOfferteStart isToggleOn={this.state.isToggleOn} hideModal={this.hideModal}/> : null}
 
           <Footer />
         </div>
