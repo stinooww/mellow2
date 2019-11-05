@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {Navbar, Nav, NavItem, NavDropdown} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 

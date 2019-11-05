@@ -1,8 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export default class Av extends Component {
-  render() {
-    return (
+const Av = () => (
       <div className="container">
         <div className="row">
           <div className="col-md-12">
@@ -129,5 +127,4 @@ export default class Av extends Component {
         </div>
       </div>
     );
-  }
-}
+export default Av;

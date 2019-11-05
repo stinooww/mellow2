@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import { Grid, Row, Col } from 'react-bootstrap';
 import CallToAction from '../../components/CallToAction/CallToAction';
@@ -9,9 +9,7 @@ import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 AOS.init({ disable: 'phone' });
 
-class Website extends Component {
-  render() {
-    return (
+const Website = () => (
       <div className="website">
         <MessengerCustomerChat
           pageId="342021876162625"
@@ -115,8 +113,7 @@ class Website extends Component {
         </Grid>
         <CallToAction />
       </div>
-    );
-  }
-}
+);
+
 
 export default Website;

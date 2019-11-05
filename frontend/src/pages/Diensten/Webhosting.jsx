@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import { Grid, Row, Col } from 'react-bootstrap';
 import CallToAction from '../../components/CallToAction/CallToAction';
@@ -7,9 +7,7 @@ import { faCheck, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // https://github.com/gergely-nagy/react-pricing-table#features
-class Webhosting extends Component {
-  render() {
-    return (
+const Webhosting = () => (
       <div className="Diensten">
         <Grid>
           <Row>
@@ -329,8 +327,8 @@ class Webhosting extends Component {
         </Grid>
         <CallToAction />
       </div>
-    );
-  }
-}
+);
+
+
 
 export default Webhosting;

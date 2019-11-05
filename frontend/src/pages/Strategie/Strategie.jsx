@@ -1,12 +1,9 @@
-import React, { Component } from 'react';
-
+import React from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
 import Timeline from '../../components/Timeline/Timeline';
 import CallToAction from '../../components/CallToAction/CallToAction';
 
-class Strategie extends Component {
-  render() {
-    return (
+const Strategie = () => (
       <div className="StrategiePage ">
         <Grid>
           <Row>
@@ -30,8 +27,7 @@ class Strategie extends Component {
         </Grid>
         <CallToAction />
       </div>
-    );
-  }
-}
+);
+
 
 export default Strategie;

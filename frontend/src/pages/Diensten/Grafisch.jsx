@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import { Grid, Row, Col, Image } from 'react-bootstrap';
 import CallToAction from '../../components/CallToAction/CallToAction';
@@ -11,9 +11,7 @@ import 'aos/dist/aos.css';
 AOS.init();
 AOS.init({ disable: 'mobile' });
 
-class Grafisch extends Component {
-  render() {
-    return (
+const Grafisch = () => (
       <div>
         <Grid className="grafisch-email">
           <Row>
@@ -98,7 +96,6 @@ class Grafisch extends Component {
         <CallToAction />
       </div>
     );
-  }
-}
+
 
 export default Grafisch;

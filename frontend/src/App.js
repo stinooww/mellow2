@@ -14,9 +14,11 @@ class App extends Component {
     };
   }
 
+  hideModal = () => {
+    this.setState({isToggleOn: false});
+  };
   activateOfferte = () => {
     this.setState(state => ({isToggleOn: !state.isToggleOn}));
-    console.log("na geklikt te hebben" + this.state.isToggleOn);
   };
   render() {
     const {isToggleOn} = this.state;
@@ -25,7 +27,7 @@ class App extends Component {
         <div>
           <Header activateOfferte={this.activateOfferte}/>
           <Routing />
-          {isToggleOn ? <ModalOfferteStart isToggleOn={this.state.isToggleOn}/> : null}
+          {isToggleOn ? <ModalOfferteStart isToggleOn={this.state.isToggleOn} hideModal={this.hideModal}/> : null}
 
           <Footer />
         </div>

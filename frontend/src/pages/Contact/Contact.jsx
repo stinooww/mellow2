@@ -5,9 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
-class Contact extends Component {
-  render() {
-    return (
+const Contact = () => (
       <Grid>
         <Row className="contact">
           <Col xs={12} md={12} sm={12}>
@@ -75,8 +73,7 @@ class Contact extends Component {
         <br />
         <br />
       </Grid>
-    );
-  }
-}
+);
+
 
 export default Contact;

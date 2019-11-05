@@ -1,11 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Grid, Col } from 'react-bootstrap';
-
 import CallToAction from '../../components/CallToAction/CallToAction';
 
-export default class Home extends Component {
-  render() {
-    return (
+const About = () => (
       <div>
         <Grid className="about__container">
           <div className="about">
@@ -64,6 +61,5 @@ export default class Home extends Component {
         </Grid>
         <CallToAction />
       </div>
-    );
-  }
-}
+);
+export default About;
