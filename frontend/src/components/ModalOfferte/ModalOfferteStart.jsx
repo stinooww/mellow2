@@ -81,8 +81,11 @@ class ModalOfferteStart extends Component {
       deadline: '',
       budget: '',
       extrainfo: '',
-      submitted: false
+      submitted: false,
     };
+    this.firstNameRef = React.createRef();
+    this.lastNameRef = React.createRef();
+    this.emailRef = React.createRef();
   }
 
   onChange = event => {
@@ -121,12 +124,28 @@ class ModalOfferteStart extends Component {
     target.classList.add('input--filled');
   };
 
-  onContinueClick = () => {
-    let firstName = document.getElementById('row-offerte-firstname');
-    let lastName = document.getElementById('row-offerte-name');
-    let email = document.getElementById('input-offerte-email');
-    if (firstName.value === "") {
-      console.log("empty");
+  onContinueClick = (e) => {
+    e.preventDefault();
+    const firstName = this.firstNameRef.current;
+    const lastName = this.lastNameRef.current;
+    const email = this.emailRef.current;
+    validate(firstName, lastName, email);
+
+    function validate(firstName, lastName, email) {
+      const fnLabel = document.getElementById("inputLabelFN");
+      const lnLabel = document.getElementById("inputLabelLN");
+      const emaiLabel = document.getElementById("inputLabelEmail");
+
+      if (firstName.length === 0) {
+        console.log("voornaam is leeg");
+        fnLabel.addClass("error");
+      }
+      if (lastName.length < 2) {
+        lnLabel.addClass("error");
+      }
+      if (email.length === 0) {
+        emaiLabel.addClass("error");
+      }
     }
 
 
@@ -225,11 +244,13 @@ class ModalOfferteStart extends Component {
                         value={this.state.firstname}
                         onChange={this.onChange}
                         name="firstname"
+                        ref={this.firstNameRef}
                         required
                     />
                     <label
                         className="input__label input__label--nariko"
                         htmlFor="input-offerte-firstname"
+                        id="inputLabelFN"
                     >
                       <span className="input__label-content input__label-content--nariko">
                         Voornaam *
@@ -251,10 +272,12 @@ class ModalOfferteStart extends Component {
                         onChange={this.onChange}
                         name="name"
                         required
+                        ref={this.lastNameRef}
                     />
                     <label
                         className="input__label input__label--nariko"
                         htmlFor="input-offerte-name"
+                        id="inputLabelLN"
                     >
                       <span className="input__label-content input__label-content--nariko">
                         Achternaam *
@@ -277,11 +300,12 @@ class ModalOfferteStart extends Component {
                         onChange={this.onChange}
                         name="email"
                         required
-
+                        ref={this.emailRef}
                     />
                     <label
                         className="input__label input__label--nariko"
                         htmlFor="input-offerte-email"
+                        id="inputLabelEmail"
                     >
                       <span className="input__label-content input__label-content--nariko">
                         E-mail *
