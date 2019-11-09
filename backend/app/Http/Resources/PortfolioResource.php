@@ -23,6 +23,7 @@ class PortfolioResource extends JsonResource
                 'request' => $this->request,
                 'solution' => $this->solution,
                 'websiteUrl' => $this->websiteUrl,
+                'quote' => $this->quote,
                 'mainImgUrl' => asset('/storage/photos'). '/' .$this->mainImgUrl,
                 'Thumbnail' => asset('/storage/photos'). '/' .$this->Thumbnail,
                 'Carousel' => asset('/storage/photos'). '/' .$this->Carousel,

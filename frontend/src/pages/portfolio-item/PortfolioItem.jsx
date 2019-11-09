@@ -144,11 +144,15 @@ class PortfolioItem extends Component {
               </div>
             </Col>
           </Row>
-          <Row>
-            <Col md={12} className="portfolioItem__testimonial">
-              <PortfolioTestimonial />
-            </Col>
-          </Row>
+          {portfolio['quote'] ? (
+            <Row>
+              <Col md={12} className="portfolioItem__testimonial">
+                <PortfolioTestimonial />
+              </Col>
+            </Row>
+          ) : (
+            ''
+          )}
         </div>
         <ScrollUpButton />
         <CallToAction />
