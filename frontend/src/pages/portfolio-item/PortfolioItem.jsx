@@ -124,10 +124,19 @@ class PortfolioItem extends Component {
             </Controller>
           </Row>
           <Row className="portfolioItem__wrapper">
+            <Col md={6} className=" portfolioItem__BottomImageCol">
+              <div className="portfolioItem__GreyBg" />
+              <Image
+                src={portfolio.Thumbnail}
+                className="image-responsive"
+                alt="thumbnail mellow websdesign website"
+              />
+            </Col>
             <Col
-              className="portfolio__wrapper-solution"
-              data-aos="zoom-in-up"
-              data-aos-delay="550"
+              md={6}
+              className="portfolioItem__wrapper-solution"
+              // data-aos="zoom-in-up"
+              // data-aos-delay="550"
             >
               <div className="portfolio__solutionTxt">
                 {ReactHtmlParser(portfolio['solution'])}

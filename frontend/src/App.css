@@ -2027,6 +2027,26 @@ nav.navbar-default .container {
   margin: 5%;
 }
 
+.portfolioItem__GreyBg {
+  position: absolute;
+  margin: 0 -20vw 0 0;
+  height: 100%;
+  width: 55vw;
+  left: 20vw;
+  top: -30px;
+  z-index: -1;
+  background: #e5e5e5;
+}
+
+.portfolioItem__BottomImageCol {
+  margin-left: -3vw;
+  position: relative;
+}
+.portfolioItem__BottomImageCol img {
+  margin-left: -7vw;
+  width: 100%;
+}
+
 .portfolioItem__header {
   width: 100%;
   height: 83vh;
@@ -2154,16 +2174,19 @@ nav.navbar-default .container {
 
 .portfolioItem__wrapper {
   display: flex;
-  flex-direction: column;
-  padding: 40px;
+  padding: 20vh 40px;
   min-height: 50vh;
 }
 .portfolioItem__wrapper-solution {
-  margin: 15% 2%;
-  width: 70%;
   display: flex;
   align-items: center;
-  justify-content: center;
+}
+.portfolioItem__wrapper-solution .portfolio__solutionTxt {
+  width: 80%;
+  margin-top: -10vh;
+}
+.portfolioItem__wrapper-solution .portfolio__solutionTxt p {
+  color: black !important;
 }
 @media screen and (max-width: 1024px) {
   .portfolioItem__wrapper-solution {
