@@ -1,13 +1,9 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-class page404 extends Component {
-    render() {
-        return (
-                <div>
-                    <h1>Error 404: pagina niet gevonden</h1>
-                </div>
-        );
-    }
-}
+const page404 = () => (
+  <div>
+    <h1>Error 404: pagina niet gevonden</h1>
+  </div>
+);
 
 export default page404;

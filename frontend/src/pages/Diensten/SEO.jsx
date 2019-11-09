@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import {
   Grid,
   Row,
@@ -16,9 +15,7 @@ import { CircleArrow as ScrollUpButton } from 'react-scroll-up-button';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Helmet } from 'react-helmet';
-
 AOS.init();
-AOS.init({ disable: 'mobile' });
 
 class SEO extends Component {
   ref = React.createRef();
@@ -58,7 +55,6 @@ class SEO extends Component {
         inladen.
       </Tooltip>
     );
-
     return (
       <div className="PortfolioPage seo">
         <Helmet>
@@ -240,5 +236,4 @@ class SEO extends Component {
     );
   }
 }
-
 export default SEO;

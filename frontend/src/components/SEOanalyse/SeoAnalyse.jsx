@@ -1,28 +1,24 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Col } from 'react-bootstrap';
 import { withFormik } from 'formik';
 import * as Yup from 'yup';
 import classnames from 'classnames';
 import axios from 'axios';
 
-export default class SeoAnalyse extends Component {
-  render() {
-    return (
-      <Col md={6} sm={12}>
-        <h4>Vul je gegevens in en wij sturen je een GRATIS SEO analyse op!</h4>
-        <br />
-        <SEOwebsiteAnalyseForm
-          user={{
-            name: '',
-            bedrijf: '',
-            email: '',
-            url: ''
-          }}
-        />
-      </Col>
-    );
-  }
-}
+const SeoAnalyse = () => (
+  <Col md={6} sm={12}>
+    <h4>Vul je gegevens in en wij sturen je een GRATIS SEO analyse op!</h4>
+    <br />
+    <SEOwebsiteAnalyseForm
+      user={{
+        name: '',
+        bedrijf: '',
+        email: '',
+        url: ''
+      }}
+    />
+  </Col>
+);
 
 const formikEnhancer = withFormik({
   validationSchema: Yup.object().shape({
@@ -178,3 +174,4 @@ const SeoForm = props => {
   );
 };
 const SEOwebsiteAnalyseForm = formikEnhancer(SeoForm);
+export default SeoAnalyse;
