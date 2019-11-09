@@ -19,6 +19,11 @@
   transform: translate(-50%, -50%);
   margin: 0;
 
+  @media (max-width: $bigGsm) {
+    position: initial;
+    transform: unset;
+  }
+
   &__close {
     display: flex;
     width: 100%;
@@ -90,23 +95,7 @@
   display: none;
 }
 
-.fieldset1, .fieldset2 {
-  display: flex;
-  .form-group {
-    margin: 0 10px;
-    @media (max-width: $Tablet) {
-      margin-right: -15px;
-      margin-left: -15px;
-    }
 
-    .input {
-      @media (max-width: $Tablet) {
-        width: 100%;
-      }
-    }
-  }
-
-}
 
 .fieldset2 {
   display: none;
@@ -129,6 +118,7 @@
 
   @media (max-width: $Tablet) {
     padding-top: 0;
+    margin: 0;
   }
 
 
@@ -196,6 +186,9 @@
       font-style: italic;
       padding: 0;
       width: 100%;
+      @media (max-width: $bigGsm) {
+        text-align: left;
+      }
 
       span {
         svg {
@@ -207,6 +200,28 @@
 
 }
 
+.fieldset1, .fieldset2 {
+  display: flex;
+
+  .form-group {
+    margin: 0 10px;
+    @media (max-width: $Tablet) {
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+
+    .input {
+      @media (max-width: $Tablet) {
+        width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: $bigGsm) {
+    width: 100% !important;
+  }
+
+}
 .mos-multiSelect {
   z-index: 120;
 }

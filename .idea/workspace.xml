@@ -1,12 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="12ea28b2-16cc-402e-8e6a-5180a58d3b5c" name="Default Changelist" comment="">
+    <list default="true" id="12ea28b2-16cc-402e-8e6a-5180a58d3b5c" name="Default Changelist" comment="website full responsive + start een project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/amd/handlebars.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/amd/handlebars.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/amd/handlebars/base.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/amd/handlebars/base.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/amd/handlebars/compiler/base.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/amd/handlebars/compiler/base.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/amd/handlebars/compiler/javascript-compiler.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/amd/handlebars/compiler/javascript-compiler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/amd/handlebars/compiler/parser.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/amd/handlebars/compiler/parser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/amd/handlebars/compiler/whitespace-control.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/amd/handlebars/compiler/whitespace-control.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/amd/handlebars/exception.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/amd/handlebars/exception.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/amd/handlebars/helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/amd/handlebars/helpers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/amd/handlebars/helpers/each.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/amd/handlebars/helpers/each.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/amd/handlebars/helpers/if.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/amd/handlebars/helpers/if.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/amd/handlebars/helpers/with.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/amd/handlebars/helpers/with.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/amd/handlebars/runtime.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/amd/handlebars/runtime.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/amd/handlebars/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/amd/handlebars/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/cjs/handlebars.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/cjs/handlebars.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/cjs/handlebars/base.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/cjs/handlebars/base.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/cjs/handlebars/compiler/whitespace-control.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/cjs/handlebars/compiler/whitespace-control.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/cjs/handlebars/exception.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/cjs/handlebars/exception.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/cjs/handlebars/helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/cjs/handlebars/helpers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/cjs/handlebars/helpers/each.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/cjs/handlebars/helpers/each.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/cjs/handlebars/helpers/if.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/cjs/handlebars/helpers/if.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/cjs/handlebars/helpers/with.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/cjs/handlebars/helpers/with.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/cjs/handlebars/runtime.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/cjs/handlebars/runtime.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/cjs/handlebars/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/cjs/handlebars/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/handlebars.amd.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/handlebars.amd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/handlebars.amd.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/handlebars.amd.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/handlebars.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/handlebars.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/handlebars.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/handlebars.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/handlebars.runtime.amd.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/handlebars.runtime.amd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/handlebars.runtime.amd.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/handlebars.runtime.amd.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/handlebars.runtime.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/handlebars.runtime.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/handlebars.runtime.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/dist/handlebars.runtime.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/lib/handlebars.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/lib/handlebars.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/lib/handlebars/base.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/lib/handlebars/base.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/lib/handlebars/compiler/base.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/lib/handlebars/compiler/base.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/lib/handlebars/compiler/javascript-compiler.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/lib/handlebars/compiler/javascript-compiler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/lib/handlebars/compiler/parser.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/lib/handlebars/compiler/parser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/lib/handlebars/compiler/whitespace-control.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/lib/handlebars/compiler/whitespace-control.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/lib/handlebars/exception.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/lib/handlebars/exception.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/lib/handlebars/helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/lib/handlebars/helpers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/lib/handlebars/helpers/each.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/lib/handlebars/helpers/each.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/lib/handlebars/helpers/if.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/lib/handlebars/helpers/if.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/lib/handlebars/helpers/with.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/lib/handlebars/helpers/with.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/lib/handlebars/runtime.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/lib/handlebars/runtime.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/lib/handlebars/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/lib/handlebars/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/release-notes.md" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/release-notes.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/ModalOfferte/ModalOfferteStart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ModalOfferte/ModalOfferteStart.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/_form.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Routing/Routing.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Routing/Routing.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Portfolio/Portfolio.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Portfolio/Portfolio.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/styling/components/_modalOfferte.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/components/_modalOfferte.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -160,14 +210,7 @@
       <workItem from="1572857449171" duration="31210000" />
       <workItem from="1573033190692" duration="5385000" />
       <workItem from="1573290395807" duration="206000" />
-      <workItem from="1573297974127" duration="6763000" />
-    </task>
-    <task id="LOCAL-00015" summary="about pagina af">
-      <created>1556795144593</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1556795144593</updated>
+      <workItem from="1573297974127" duration="9653000" />
     </task>
     <task id="LOCAL-00016" summary="about pagina scss fixes">
       <created>1556796509421</created>
@@ -505,7 +548,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573301798756</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="website full responsive + start een project">
+      <created>1573309745451</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1573309745452</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -525,7 +575,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="modal styling" />
     <MESSAGE value="header" />
     <MESSAGE value="header + nieuwe pagina voor onz diensten etc etc" />
     <MESSAGE value="onderhoud helemaal af" />
@@ -550,7 +599,8 @@
     <MESSAGE value="start een project fixed" />
     <MESSAGE value="start een project validation" />
     <MESSAGE value="website full responsive" />
-    <option name="LAST_COMMIT_MESSAGE" value="website full responsive" />
+    <MESSAGE value="website full responsive + start een project" />
+    <option name="LAST_COMMIT_MESSAGE" value="website full responsive + start een project" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

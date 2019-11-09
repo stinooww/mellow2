@@ -737,6 +737,10 @@ nav.navbar-default {
   width: 90%;
   transform: translate(-50%, -50%);
   margin: 0; }
+  @media (max-width: 767px) {
+    .modal-main {
+      position: initial;
+      transform: unset; } }
   .modal-main__close {
     display: flex;
     width: 100%;
@@ -787,18 +791,6 @@ nav.navbar-default {
 .display-none {
   display: none; }
 
-.fieldset1, .fieldset2 {
-  display: flex; }
-  .fieldset1 .form-group, .fieldset2 .form-group {
-    margin: 0 10px; }
-    @media (max-width: 768px) {
-      .fieldset1 .form-group, .fieldset2 .form-group {
-        margin-right: -15px;
-        margin-left: -15px; } }
-    @media (max-width: 768px) {
-      .fieldset1 .form-group .input, .fieldset2 .form-group .input {
-        width: 100%; } }
-
 .fieldset2 {
   display: none; }
 
@@ -817,7 +809,8 @@ nav.navbar-default {
   flex-direction: column; }
   @media (max-width: 768px) {
     .opper-form-offerte {
-      padding-top: 0; } }
+      padding-top: 0;
+      margin: 0; } }
   .opper-form-offerte h1 {
     padding: 0; }
     @media (min-width: 420px) and (max-width: 768px) {
@@ -865,8 +858,26 @@ nav.navbar-default {
       font-style: italic;
       padding: 0;
       width: 100%; }
+      @media (max-width: 767px) {
+        .form-offerte .fieldset .legend {
+          text-align: left; } }
       .form-offerte .fieldset .legend span svg {
         margin-right: 20px; }
+
+.fieldset1, .fieldset2 {
+  display: flex; }
+  .fieldset1 .form-group, .fieldset2 .form-group {
+    margin: 0 10px; }
+    @media (max-width: 768px) {
+      .fieldset1 .form-group, .fieldset2 .form-group {
+        margin-right: -15px;
+        margin-left: -15px; } }
+    @media (max-width: 768px) {
+      .fieldset1 .form-group .input, .fieldset2 .form-group .input {
+        width: 100%; } }
+  @media (max-width: 767px) {
+    .fieldset1, .fieldset2 {
+      width: 100% !important; } }
 
 .mos-multiSelect {
   z-index: 120; }
