@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12ea28b2-16cc-402e-8e6a-5180a58d3b5c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/src/images/responsive-images.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Footer/Footer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/ModalOfferte/ModalOfferteStart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ModalOfferte/ModalOfferteStart.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Diensten/Website.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Diensten/Website.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_General.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/_General.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/styling/pages/_Website.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/pages/_Website.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,14 +59,14 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/frontend/src/images" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src/images" />
       <recent name="$PROJECT_DIR$/frontend/src/pages" />
       <recent name="$PROJECT_DIR$/frontend/src/styling/bootstrap" />
       <recent name="$PROJECT_DIR$/frontend/src/styling/pages" />
       <recent name="$PROJECT_DIR$/frontend/src/styling/components" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/frontend/src/images" />
     </key>
   </component>
@@ -154,14 +160,9 @@
       <workItem from="1571499037811" duration="3898000" />
       <workItem from="1571849058629" duration="7285000" />
       <workItem from="1572857449171" duration="31210000" />
-      <workItem from="1573033190692" duration="1605000" />
-    </task>
-    <task id="LOCAL-00013" summary="about pagina af">
-      <created>1556794384438</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1556794384438</updated>
+      <workItem from="1573033190692" duration="5385000" />
+      <workItem from="1573290395807" duration="206000" />
+      <workItem from="1573297974127" duration="2128000" />
     </task>
     <task id="LOCAL-00014" summary="about pagina af">
       <created>1556794773001</created>
@@ -499,7 +500,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572961201591</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="start een project validation">
+      <created>1573035177053</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1573035177053</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

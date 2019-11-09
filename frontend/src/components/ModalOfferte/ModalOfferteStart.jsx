@@ -88,10 +88,10 @@ class ModalOfferteStart extends Component {
     this.emailRef = React.createRef();
   }
 
-  onChange = event => {
-    const target = event.target;
+    onChange = e => {
+        const target = e.target;
     const value = target.value;
-    const firstname = event.target.firstname;
+        const firstname = e.target.firstname;
     const name = target.name;
     const email = target.email;
     const tel = target.tel;
@@ -129,23 +129,24 @@ class ModalOfferteStart extends Component {
     const firstName = this.firstNameRef.current;
     const lastName = this.lastNameRef.current;
     const email = this.emailRef.current;
-    validate(firstName, lastName, email);
+      const fnLabel = document.getElementsByClassName("input__label--nariko");
 
-    function validate(firstName, lastName, email) {
-      const fnLabel = document.getElementById("inputLabelFN");
       const lnLabel = document.getElementById("inputLabelLN");
       const emaiLabel = document.getElementById("inputLabelEmail");
 
-      if (firstName.length === 0) {
-        console.log("voornaam is leeg");
-        fnLabel.addClass("error");
+      const fnLength = this.state.firstname.length;
+      const lnLength = this.state.name.length;
+      const emailLength = this.state.email.length;
+      if (fnLength === 0) {
+          console.log(fnLabel);
+          fnLabel.addClass(".error");
       }
-      if (lastName.length < 2) {
-        lnLabel.addClass("error");
+
+      if (lnLength < 2) {
+          lnLabel.push("error");
       }
-      if (email.length === 0) {
-        emaiLabel.addClass("error");
-      }
+      if (emailLength === 0) {
+          emaiLabel.push("error");
     }
 
 
@@ -162,8 +163,8 @@ class ModalOfferteStart extends Component {
     fieldset2.style.display = 'none';
   };
 
-  onSubmit = event => {
-    event.preventDefault();
+    onSubmit = e => {
+        e.preventDefault();
     const Offerte = {
       firstname: this.state.firstname,
       name: this.state.name,

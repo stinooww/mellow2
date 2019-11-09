@@ -202,10 +202,8 @@ body {
 }
 
 .mobile-img {
-  background-image: url("images/responsive.png");
-  height: 500px;
+  background-image: url("images/responsive-images.png");
   background-position: center;
-
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -290,4 +288,5 @@ a, a:focus {
 
 .ScrollUpButton__Container {
   bottom: 40px !important;
+  z-index: 5;
 }

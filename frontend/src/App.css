@@ -160,8 +160,7 @@ body {
   margin-bottom: 0; }
 
 .mobile-img {
-  background-image: url("images/responsive.png");
-  height: 500px;
+  background-image: url("images/responsive-images.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -226,7 +225,8 @@ a, a:focus {
   color: inherit; }
 
 .ScrollUpButton__Container {
-  bottom: 40px !important; }
+  bottom: 40px !important;
+  z-index: 5; }
 
 .contact {
   padding-left: 10%; }
@@ -2029,6 +2029,8 @@ nav.navbar-default {
     @media (min-width: 767px) and (max-width: 64em) {
       .website .mobile-responsive {
         margin: 0; } }
+    .website .mobile-responsive__text {
+      margin-left: 5%; }
     .website .mobile-responsive p {
       margin: 3vh 0; }
     .website .mobile-responsive__img {
@@ -2042,22 +2044,11 @@ nav.navbar-default {
       .website .mobile-responsive__img .mobile-img {
         display: block;
         max-width: 100%;
-        width: 100%; }
-        @media (max-width: 767px) {
+        width: 100%;
+        height: 100%; }
+        @media (max-width: 992px) {
           .website .mobile-responsive__img .mobile-img {
-            height: inherit; } }
-        @media (min-width: 767px) and (max-width: 64em) {
-          .website .mobile-responsive__img .mobile-img {
-            height: 70%; } }
-        @media (min-width: 1024px) and (max-width: 1199px) {
-          .website .mobile-responsive__img .mobile-img {
-            height: 65%; } }
-        @media (min-width: 1200px) and (max-width: 1299px) {
-          .website .mobile-responsive__img .mobile-img {
-            height: 73%; } }
-        @media (min-width: 1300px) {
-          .website .mobile-responsive__img .mobile-img {
-            height: 90%; } }
+            background-size: contain; } }
   .website strong {
     color: black;
     margin-top: 20px; }
@@ -2080,6 +2071,9 @@ nav.navbar-default {
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 1px; }
+
+.website__besluit {
+  margin: 5vh 0 10vh 0; }
 
 .reactContact code, .seo-cta code {
   background: #eee;

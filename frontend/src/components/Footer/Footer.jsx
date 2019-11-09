@@ -10,7 +10,7 @@ const Footer = () => (
               <span className="text-footer">
                 &copy; Mellowwebdesign {new Date().getFullYear()} -{' '}
               </span>
-              <Link to="/algemenevoorwaarde">Algemene voorwaarde </Link>
+                <Link to="/algemenevoorwaarde">Algemene voorwaarden </Link>
             </Col>
           </Row>
         </Grid>
