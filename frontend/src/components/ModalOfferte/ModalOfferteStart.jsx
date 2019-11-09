@@ -81,17 +81,20 @@ class ModalOfferteStart extends Component {
       deadline: '',
       budget: '',
       extrainfo: '',
-      submitted: false
+      submitted: false,
+      isFirstNameCorrect: false,
+      isLastNameCorrect: false,
+      isEmailCorrect: false
     };
     this.firstNameRef = React.createRef();
     this.lastNameRef = React.createRef();
     this.emailRef = React.createRef();
   }
 
-  onChange = event => {
-    const target = event.target;
+  onChange = e => {
+    const target = e.target;
     const value = target.value;
-    const firstname = event.target.firstname;
+    const firstname = e.target.firstname;
     const name = target.name;
     const email = target.email;
     const tel = target.tel;
@@ -126,32 +129,38 @@ class ModalOfferteStart extends Component {
 
   onContinueClick = e => {
     e.preventDefault();
-    const firstName = this.firstNameRef.current;
-    const lastName = this.lastNameRef.current;
-    const email = this.emailRef.current;
-    validate(firstName, lastName, email);
-
-    function validate(firstName, lastName, email) {
-      const fnLabel = document.getElementById('inputLabelFN');
-      const lnLabel = document.getElementById('inputLabelLN');
-      const emaiLabel = document.getElementById('inputLabelEmail');
-
-      if (firstName.length === 0) {
-        console.log('voornaam is leeg');
-        fnLabel.addClass('error');
-      }
-      if (lastName.length < 2) {
-        lnLabel.addClass('error');
-      }
-      if (email.length === 0) {
-        emaiLabel.addClass('error');
-      }
+    const field1 = document.getElementById('fieldset-1');
+    const fieldset2 = document.getElementById('fieldset-2');
+    let canContinue = false;
+    const fnLength = this.state.firstname.length;
+    const lnLength = this.state.name.length;
+    const emailLength = this.state.email.length;
+    if (fnLength === 0) {
+      this.setState(prevState => ({
+        isFirstNameCorrect: !prevState.isFirstNameCorrect
+      }));
+    } else {
+      canContinue = true;
     }
 
-    let field1 = document.getElementById('fieldset-1');
-    let fieldset2 = document.getElementById('fieldset-2');
-    field1.style.display = 'none';
-    fieldset2.style.display = 'flex';
+    if (lnLength < 2) {
+      this.setState(prevState => ({
+        isLastNameCorrect: !prevState.isLastNameCorrect
+      }));
+    } else {
+      canContinue = true;
+    }
+    if (emailLength === 0) {
+      this.setState(prevState => ({
+        isEmailCorrect: !prevState.isEmailCorrect
+      }));
+    } else {
+      canContinue = true;
+    }
+    if (canContinue) {
+      field1.style.display = 'none';
+      fieldset2.style.display = 'flex';
+    }
   };
 
   onPreviousClick = () => {
@@ -161,8 +170,8 @@ class ModalOfferteStart extends Component {
     fieldset2.style.display = 'none';
   };
 
-  onSubmit = event => {
-    event.preventDefault();
+  onSubmit = e => {
+    e.preventDefault();
     const Offerte = {
       firstname: this.state.firstname,
       name: this.state.name,
@@ -193,7 +202,13 @@ class ModalOfferteStart extends Component {
 
   render() {
     const { hideModal, isToggleOn } = this.props;
-    const { submitted, selectedOption } = this.state;
+    const {
+      submitted,
+      selectedOption,
+      isFirstNameCorrect,
+      isEmailCorrect,
+      isLastNameCorrect
+    } = this.state;
     return (
       <div>
         {isToggleOn && (
@@ -252,7 +267,9 @@ class ModalOfferteStart extends Component {
                         required
                       />
                       <label
-                        className="input__label input__label--nariko"
+                        className={`input__label input__label--nariko ${
+                          isFirstNameCorrect ? 'error' : ''
+                        }`}
                         htmlFor="input-offerte-firstname"
                         id="inputLabelFN"
                       >
@@ -279,7 +296,9 @@ class ModalOfferteStart extends Component {
                         ref={this.lastNameRef}
                       />
                       <label
-                        className="input__label input__label--nariko"
+                        className={`input__label input__label--nariko ${
+                          isLastNameCorrect ? 'error' : ''
+                        }`}
                         htmlFor="input-offerte-name"
                         id="inputLabelLN"
                       >
@@ -307,7 +326,9 @@ class ModalOfferteStart extends Component {
                         ref={this.emailRef}
                       />
                       <label
-                        className="input__label input__label--nariko"
+                        className={`input__label input__label--nariko ${
+                          isEmailCorrect ? 'error' : ''
+                        }`}
                         htmlFor="input-offerte-email"
                         id="inputLabelEmail"
                       >
@@ -344,27 +365,32 @@ class ModalOfferteStart extends Component {
                 </Row>
                 <Row className="form-group clearfix">
                   <Col md={6} xs={12}>
-                    <span
-                      className="input input--nariko"
-                      onClick={this.onInputClick}
+                    <div
+                      className="frm-row special-input"
+                      id="row-offerte-company"
                     >
-                      <input
-                        className="input__field input__field--nariko"
-                        type="text"
-                        id="input-offerte-company"
-                        value={this.state.company}
-                        onChange={this.onChange}
-                        name="company"
-                      />
-                      <label
-                        className="input__label input__label--nariko"
-                        htmlFor="input-offerte-company"
+                      <span
+                        className="input input--nariko"
+                        onClick={this.onInputClick}
                       >
-                        <span className="input__label-content input__label-content--nariko">
-                          Bedrijf
-                        </span>
-                      </label>
-                    </span>
+                        <input
+                          className="input__field input__field--nariko"
+                          type="text"
+                          id="input-offerte-company"
+                          value={this.state.company}
+                          onChange={this.onChange}
+                          name="company"
+                        />
+                        <label
+                          className="input__label input__label--nariko"
+                          htmlFor="input-offerte-company"
+                        >
+                          <span className="input__label-content input__label-content--nariko">
+                            Bedrijf
+                          </span>
+                        </label>
+                      </span>
+                    </div>
                   </Col>
 
                   <Col md={6} xs={12}>
@@ -547,7 +573,7 @@ class ModalOfferteStart extends Component {
                   </Col>
                 </Row>
                 <div className="feedback">
-                  Gelieve alle verplichte velden in te vullen
+                  Gelieve alle verplichte velden met een * in te vullen.
                 </div>
                 <p className="form-offerte-small">
                   Uw gegevens worden enkel bewaard om u te contacteren of om een

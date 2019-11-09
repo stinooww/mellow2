@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-
-import { CircleArrow as ScrollUpButton } from 'react-scroll-up-button';
 import axios from 'axios';
+import { CircleArrow as ScrollUpButton } from 'react-scroll-up-button';
 import { Col, Grid, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 // https://www.youtube.com/watch?v=oQnojIyTXb8  voor axios
+var ES6Promise = require('es6-promise');
+ES6Promise.polyfill();
 
 class Portfolio extends Component {
   constructor(props) {
