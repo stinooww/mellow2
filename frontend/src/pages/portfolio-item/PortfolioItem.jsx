@@ -10,6 +10,7 @@ import CallToAction from '../../components/CallToAction/CallToAction';
 import { Controller, Scene } from 'react-scrollmagic';
 import { Timeline, Tween } from 'react-gsap';
 import axios from 'axios';
+import PortfolioTestimonial from '../../components/PortfolioTestimonial/PortfolioTestimonial';
 // https://scrollmagic.io/
 // https://github.com/bitworking/react-scrollmagic/tree/master/example/src/components/ScrollMagicExamples
 // https://bitworking.github.io/react-gsap/
@@ -141,6 +142,11 @@ class PortfolioItem extends Component {
               <div className="portfolio__solutionTxt">
                 {ReactHtmlParser(portfolio['solution'])}
               </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col md={12} className="portfolioItem__testimonial">
+              <PortfolioTestimonial />
             </Col>
           </Row>
         </div>

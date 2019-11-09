@@ -142,6 +142,13 @@
       background: $blue;
     }
   }
+
+  &__testimonial {
+    display: flex;
+    height: 40vh;
+    align-content: center;
+    justify-content: center;
+  }
   &__wrapper {
     display: flex;
     padding: 20vh 40px;

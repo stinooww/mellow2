@@ -2172,6 +2172,13 @@ nav.navbar-default .container {
   background: #3763ef;
 }
 
+.portfolioItem__testimonial {
+  display: flex;
+  height: 40vh;
+  align-content: center;
+  justify-content: center;
+}
+
 .portfolioItem__wrapper {
   display: flex;
   padding: 20vh 40px;
