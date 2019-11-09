@@ -1,14 +1,14 @@
 import React from 'react';
 
-function PortfolioTestimonial(props) {
-  return (
-    <div className="website__testimonial">
-      <blockquote className="wp-block-quote">
-        <p>test</p>
-        <cite>Anja - Body Update</cite>
-      </blockquote>
-    </div>
-  );
-}
+const PortfolioTestimonial = props => (
+  <div className="website__testimonial quote">
+    <blockquote className="wp-block-quote">
+      <p>{props.quote}</p>
+      <cite>
+        <span>{props.contact}</span> - <span>{props.company}</span>
+      </cite>
+    </blockquote>
+  </div>
+);
 
 export default PortfolioTestimonial;

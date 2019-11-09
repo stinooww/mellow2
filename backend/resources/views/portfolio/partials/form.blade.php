@@ -50,6 +50,26 @@
         @endif
     </div>
 </div>
+<div class="row">
+    <div class="col-12 col-md-8 offset-md-2">
+        @include('partials.text',['name'=>'quote','label'=>'quote','value'=> isset($item->quote)? $item->quote : ''])
+        @if ($errors->has('quote'))
+            <span class="help-block">
+                        <strong>{{ $errors->first('quote') }}</strong>
+                    </span>
+        @endif
+    </div>
+</div>
+<div class="row">
+    <div class="col-12 col-md-8 offset-md-2">
+        @include('partials.text',['name'=>'Contact','label'=>'Contact','value'=> isset($item->Contact)? $item->Contact : ''])
+        @if ($errors->has('Contact'))
+            <span class="help-block">
+                        <strong>{{ $errors->first('Contact') }}</strong>
+                    </span>
+        @endif
+    </div>
+</div>
 
 @foreach($types as $type)
     {{Form::checkbox('categoryArray[]', $type->id,isset($item) ? $item->types->contains('id', $type->id) ? 'checked' : '':'' )}}<label>{{$type->type}}</label>

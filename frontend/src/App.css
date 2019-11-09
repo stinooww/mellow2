@@ -2178,6 +2178,12 @@ nav.navbar-default .container {
   align-content: center;
   justify-content: center;
 }
+.portfolioItem__testimonial .quote {
+  max-width: 50%;
+}
+.portfolioItem__testimonial .quote cite > span {
+  text-transform: capitalize;
+}
 
 .portfolioItem__wrapper {
   display: flex;
@@ -2804,12 +2810,14 @@ nav.navbar-default .container {
   font-size: 20px;
   line-height: 1.5em;
   font-style: italic;
+  color: #000;
 }
 .website__testimonial .wp-block-quote cite {
   font-style: normal;
   font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 1px;
+  color: lightgray;
 }
 
 .reactContact code,

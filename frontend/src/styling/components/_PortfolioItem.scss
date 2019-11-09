@@ -148,6 +148,14 @@
     height: 40vh;
     align-content: center;
     justify-content: center;
+
+    .quote {
+      max-width: 50%;
+
+      cite > span {
+        text-transform: capitalize;
+      }
+    }
   }
   &__wrapper {
     display: flex;

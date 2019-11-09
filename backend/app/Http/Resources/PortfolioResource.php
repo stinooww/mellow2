@@ -2,6 +2,7 @@
 
 namespace App\Http\Resources;
 
+use App\Portfolio;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class PortfolioResource extends JsonResource
@@ -14,6 +15,8 @@ class PortfolioResource extends JsonResource
      */
     public function toArray($request)
     {
+        $previous = Portfolio::where('id', '<', $this->id)->max('id');
+        $next = Portfolio::where('id', '>', $this->id)->min('id');
         return [
             'type'          => 'portfolios',
             'id'            => (string)$this->id,
@@ -24,6 +27,7 @@ class PortfolioResource extends JsonResource
                 'solution' => $this->solution,
                 'websiteUrl' => $this->websiteUrl,
                 'quote' => $this->quote,
+                'contact' => $this->Contact,
                 'mainImgUrl' => asset('/storage/photos'). '/' .$this->mainImgUrl,
                 'Thumbnail' => asset('/storage/photos'). '/' .$this->Thumbnail,
                 'Carousel' => asset('/storage/photos'). '/' .$this->Carousel,
@@ -31,7 +35,9 @@ class PortfolioResource extends JsonResource
             ],
             'relationships' => new PortfolioRelationshipResource($this),
             'links'         => [
-                'self' => route('portfolio.show', ['id' => $this->id]),
+                'self' => 'https://www.api.mellowwebdesign.be/api/portfolio/' . $this->id,
+                'next' => $next,
+                'previous' => $previous
             ],
         ];
     }

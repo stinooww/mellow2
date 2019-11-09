@@ -147,7 +147,11 @@ class PortfolioItem extends Component {
           {portfolio['quote'] ? (
             <Row>
               <Col md={12} className="portfolioItem__testimonial">
-                <PortfolioTestimonial />
+                <PortfolioTestimonial
+                  quote={portfolio['quote']}
+                  company={portfolio['clientName']}
+                  contact={portfolio['contact']}
+                />
               </Col>
             </Row>
           ) : (
