@@ -157,6 +157,15 @@
       }
     }
   }
+
+  &__Link {
+    display: flex;
+    height: 10vh;
+    font-size: 1.5em;
+    align-content: center;
+    justify-content: center;
+    color: $blue;
+  }
   &__wrapper {
     display: flex;
     padding: 20vh 40px;

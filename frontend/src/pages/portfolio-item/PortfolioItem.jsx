@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Col, Grid, Image, Row } from 'react-bootstrap';
 import scrollmagic from 'scrollmagic';
 import { CircleArrow as ScrollUpButton } from 'react-scroll-up-button';
+import { Link } from 'react-router-dom';
 import ReactHtmlParser from 'react-html-parser';
 
 import AOS from 'aos';
@@ -26,7 +27,8 @@ class PortfolioItem extends Component {
       }
     });
     this.state = {
-      portfolio: {}
+      portfolio: {},
+      links: {}
     };
     //  this.handleClick = this.handleClick.bind(this);
   }
@@ -37,7 +39,8 @@ class PortfolioItem extends Component {
 
     axios.get(url).then(res => {
       this.setState({
-        portfolio: res.data.attributes
+        portfolio: res.data.attributes,
+        links: res.data.links
       });
     });
     // create a scene
@@ -52,6 +55,7 @@ class PortfolioItem extends Component {
 
   render() {
     const { portfolio } = this.state;
+    const { links } = this.state;
     const styles = {
       backgroundImage: `url(${portfolio['mainImgUrl']})`,
       backgroundRepeat: 'no-repeat',
@@ -157,6 +161,28 @@ class PortfolioItem extends Component {
           ) : (
             ''
           )}
+          <Row>
+            {links['previous'] ? (
+              <Col md={6} className="portfolioItem__Link">
+                <a href={`/portfolioitem/${links['previous']}`}>
+                  <span className="glyphicon glyphicon-triangle-left" /> vorige
+                  case
+                </a>
+              </Col>
+            ) : (
+              ''
+            )}
+            {links['next'] ? (
+              <Col md={6} className="portfolioItem__Link">
+                <a href={`/portfolioitem/${links['next']}`}>
+                  volgende case{' '}
+                  <span className="glyphicon glyphicon-triangle-right" />
+                </a>
+              </Col>
+            ) : (
+              ''
+            )}
+          </Row>
         </div>
         <ScrollUpButton />
         <CallToAction />

@@ -2185,6 +2185,15 @@ nav.navbar-default .container {
   text-transform: capitalize;
 }
 
+.portfolioItem__Link {
+  display: flex;
+  height: 10vh;
+  font-size: 1.5em;
+  align-content: center;
+  justify-content: center;
+  color: #3763ef;
+}
+
 .portfolioItem__wrapper {
   display: flex;
   padding: 20vh 40px;
