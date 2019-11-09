@@ -51,36 +51,52 @@ class PortfolioItem extends Component {
 
   render() {
     const { portfolio } = this.state;
-
+    const styles = {
+      backgroundImage: `url(${portfolio['mainImgUrl']})`,
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'center',
+      backgroundSize: 'cover'
+    };
     return (
       <React.Fragment>
         <div className="portfolioItem">
-          <div className="portfolioItem__header">
-            <Image
-              responsive
-              className="image portfolio__head-img"
-              src={portfolio['mainImgUrl']}
-            />
+          <div className="portfolioItem__header" style={styles}>
+            <div className="header-layers">
+              <h1> {portfolio['clientName']}</h1>
+            </div>
+            <div className="scroll-downs">
+              <a href="#intro">
+                <div className="mousey">
+                  <div className="scroller" />
+                </div>
+              </a>
+            </div>
           </div>
           <Grid className="portfolioItem__grid">
-            <Row>
-              <Col data-aos="fade-up" data-aos-mirror="true">
-                <div className="header-layers">
-                  <h1> {portfolio['clientName']}</h1>
-                </div>
-                <div className="portfolio__request">
-                  {ReactHtmlParser(portfolio['request'])}
-                </div>
+            <Row id="intro">
+              <Col md={12}>
+                <h2>{portfolio['title']}</h2>
               </Col>
             </Row>
             <Row>
-              <Col md={12} className="cta-overal">
-                {/*<Link to={portfolio['websiteUrl']} className="mellow-btn">*/}
-                {/*Bezoek de website*/}
-                {/*</Link>*/}
-                <a href={portfolio['websiteUrl']} className="mellow-btn">
-                  Bezoek de website
-                </a>
+              <Col md={6} data-aos="" data-aos-mirror="true">
+                <div className="portfolio__request">
+                  {ReactHtmlParser(portfolio['request'])}
+                  <br />
+                  <a
+                    href={portfolio['websiteUrl']}
+                    className="mellow-btn portbutton"
+                  >
+                    Bezoek de website
+                  </a>
+                </div>
+              </Col>
+              <Col md={6} data-aos-mirror="true">
+                <Image
+                  responsive
+                  className="image portfolio__smartphone"
+                  src={portfolio['Smartphone']}
+                />
               </Col>
             </Row>
           </Grid>
@@ -117,13 +133,6 @@ class PortfolioItem extends Component {
                 {ReactHtmlParser(portfolio['solution'])}
               </div>
             </Col>
-            <div className="portfolio__wrapper-img">
-              <Image
-                responsive
-                className="image portfolio__smartphone"
-                src={portfolio['Smartphone']}
-              />
-            </div>
           </Row>
         </div>
         <ScrollUpButton />
