@@ -517,23 +517,20 @@ footer {
     .navbar-nav .menu-item {
       margin-top: 30px; } }
 
-.modal-offerte-header {
-  display: none !important; }
-  @media (min-width: 768px) and (max-width: 1024px) {
-    .modal-offerte-header {
-      margin-top: 0;
-      padding-left: 0;
-      display: inherit !important; } }
-  @media (min-width: 1024px) and (max-width: 1300px) {
-    .modal-offerte-header {
-      margin-top: 14px;
-      padding-left: 0;
-      display: inherit !important; } }
-  @media (min-width: 1301px) {
-    .modal-offerte-header {
-      margin-top: 41px;
-      padding-left: 0;
-      display: inherit !important; } }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .modal-offerte-header {
+    margin-top: 0;
+    padding-left: 0; } }
+
+@media (min-width: 1024px) and (max-width: 1300px) {
+  .modal-offerte-header {
+    margin-top: 14px;
+    padding-left: 0; } }
+
+@media (min-width: 1301px) {
+  .modal-offerte-header {
+    margin-top: 41px;
+    padding-left: 0; } }
 
 nav.navbar-default {
   background: #efc337;
@@ -768,7 +765,9 @@ nav.navbar-default {
       overflow-y: scroll; } }
   @media (max-width: 767px) {
     .modal-main {
-      margin: 40px 0; } }
+      margin: 0;
+      height: 100%;
+      width: 100%; } }
 
 .mellow-btn {
   display: flex;
@@ -792,6 +791,13 @@ nav.navbar-default {
   display: flex; }
   .fieldset1 .form-group, .fieldset2 .form-group {
     margin: 0 10px; }
+    @media (max-width: 768px) {
+      .fieldset1 .form-group, .fieldset2 .form-group {
+        margin-right: -15px;
+        margin-left: -15px; } }
+    @media (max-width: 768px) {
+      .fieldset1 .form-group .input, .fieldset2 .form-group .input {
+        width: 100%; } }
 
 .fieldset2 {
   display: none; }
@@ -809,12 +815,16 @@ nav.navbar-default {
   background-color: #efc337;
   display: flex;
   flex-direction: column; }
+  @media (max-width: 768px) {
+    .opper-form-offerte {
+      padding-top: 0; } }
   .opper-form-offerte h1 {
     padding: 0; }
     @media (min-width: 420px) and (max-width: 768px) {
       .opper-form-offerte h1 {
         font-size: 22px;
-        text-align: left; } }
+        text-align: left;
+        margin: 0; } }
   @media (min-width: 420px) and (max-width: 768px) {
     .opper-form-offerte h4 {
       text-align: left; } }
@@ -877,6 +887,9 @@ nav.navbar-default {
   align-self: center;
   font-size: 15px;
   margin-left: 5px; }
+  @media (max-width: 768px) {
+    .feedback {
+      margin-top: 0; } }
 
 .btn__Steps {
   display: flex;
@@ -893,6 +906,9 @@ nav.navbar-default {
 
 .last {
   margin-top: 15px !important; }
+  @media (max-width: 768px) {
+    .last {
+      margin-top: 0 !important; } }
 
 .confirmation {
   width: 100%;
@@ -1025,7 +1041,8 @@ nav.navbar-default {
 
 .input--nariko {
   overflow: hidden;
-  padding-top: 2em; }
+  padding-top: 2em;
+  height: 65px; }
 
 .input__field--nariko {
   padding: 0.15em;

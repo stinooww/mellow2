@@ -58,7 +58,9 @@
     overflow-y: scroll;
   }
   @media (max-width: $bigGsm) {
-    margin: 40px 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
   }
 }
 
@@ -92,7 +94,18 @@
   display: flex;
   .form-group {
     margin: 0 10px;
+    @media (max-width: $Tablet) {
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+
+    .input {
+      @media (max-width: $Tablet) {
+        width: 100%;
+      }
+    }
   }
+
 }
 
 .fieldset2 {
@@ -114,18 +127,22 @@
   display: flex;
   flex-direction: column;
 
+  @media (max-width: $Tablet) {
+    padding-top: 0;
+  }
+
 
   h1 {
     padding: 0;
     @media (min-width: 420px) and (max-width: $Tablet) {
       font-size: 22px;
       text-align: left;
+      margin: 0;
     }
   }
 
   h4 {
     @media (min-width: 420px) and (max-width: $Tablet) {
-
       text-align: left;
     }
   }
@@ -187,6 +204,7 @@
       }
     }
   }
+
 }
 
 .mos-multiSelect {
@@ -217,6 +235,9 @@
   align-self: center;
   font-size: 15px;
   margin-left: 5px;
+  @media (max-width: $Tablet) {
+    margin-top: 0;
+  }
 }
 
 .btn__Steps {
@@ -238,6 +259,9 @@
 
 .last {
   margin-top: 15px !important;
+  @media (max-width: $Tablet) {
+    margin-top: 0 !important;
+  }
 }
 
 .confirmation {

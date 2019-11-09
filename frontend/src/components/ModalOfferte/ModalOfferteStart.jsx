@@ -82,35 +82,39 @@ class ModalOfferteStart extends Component {
       budget: '',
       extrainfo: '',
       submitted: false,
+      isFirstNameCorrect: false,
+      isLastNameCorrect: false,
+      isEmailCorrect: false
     };
     this.firstNameRef = React.createRef();
     this.lastNameRef = React.createRef();
     this.emailRef = React.createRef();
   }
 
+
     onChange = e => {
         const target = e.target;
-    const value = target.value;
+      const value = target.value;
         const firstname = e.target.firstname;
-    const name = target.name;
-    const email = target.email;
-    const tel = target.tel;
-    const region = target.region;
-    const company = target.company;
-    const deadline = target.deadline;
-    const budget = target.budget;
-    const extrainfo = target.extrainfo;
+      const name = target.name;
+      const email = target.email;
+      const tel = target.tel;
+      const region = target.region;
+      const company = target.company;
+      const deadline = target.deadline;
+      const budget = target.budget;
+      const extrainfo = target.extrainfo;
 
-    this.setState({value: firstname});
-    this.setState({[name]: value});
-    this.setState({[email]: value});
-    this.setState({[tel]: value});
-    this.setState({[region]: value});
-    this.setState({[company]: value});
-    this.setState({[deadline]: value});
-    this.setState({[budget]: value});
-    this.setState({[extrainfo]: value});
-  };
+      this.setState({value: firstname});
+      this.setState({[name]: value});
+      this.setState({[email]: value});
+      this.setState({[tel]: value});
+      this.setState({[region]: value});
+      this.setState({[company]: value});
+      this.setState({[deadline]: value});
+      this.setState({[budget]: value});
+      this.setState({[extrainfo]: value});
+    };
 
   handleChange = selectedOption => {
     this.setState({selectedOption});
@@ -126,34 +130,33 @@ class ModalOfferteStart extends Component {
 
   onContinueClick = (e) => {
     e.preventDefault();
-    const firstName = this.firstNameRef.current;
-    const lastName = this.lastNameRef.current;
-    const email = this.emailRef.current;
-      const fnLabel = document.getElementsByClassName("input__label--nariko");
-
-      const lnLabel = document.getElementById("inputLabelLN");
-      const emaiLabel = document.getElementById("inputLabelEmail");
-
-      const fnLength = this.state.firstname.length;
-      const lnLength = this.state.name.length;
-      const emailLength = this.state.email.length;
-      if (fnLength === 0) {
-          console.log(fnLabel);
-          fnLabel.addClass(".error");
-      }
-
-      if (lnLength < 2) {
-          lnLabel.push("error");
-      }
-      if (emailLength === 0) {
-          emaiLabel.push("error");
+    const field1 = document.getElementById('fieldset-1');
+    const fieldset2 = document.getElementById('fieldset-2');
+    let canContinue = false;
+    const fnLength = this.state.firstname.length;
+    const lnLength = this.state.name.length;
+    const emailLength = this.state.email.length;
+    if (fnLength === 0) {
+      this.setState(prevState => ({isFirstNameCorrect: !prevState.isFirstNameCorrect}));
+    } else {
+      canContinue = true;
     }
 
+    if (lnLength < 2) {
+      this.setState(prevState => ({isLastNameCorrect: !prevState.isLastNameCorrect}));
+    } else {
+      canContinue = true;
+    }
+    if (emailLength === 0) {
+      this.setState(prevState => ({isEmailCorrect: !prevState.isEmailCorrect}));
+    } else {
+      canContinue = true;
+    }
+    if (canContinue) {
+      field1.style.display = 'none';
+      fieldset2.style.display = 'flex';
+    }
 
-    let field1 = document.getElementById('fieldset-1');
-    let fieldset2 = document.getElementById('fieldset-2');
-    field1.style.display = 'none';
-    fieldset2.style.display = 'flex';
   };
 
   onPreviousClick = () => {
@@ -165,37 +168,37 @@ class ModalOfferteStart extends Component {
 
     onSubmit = e => {
         e.preventDefault();
-    const Offerte = {
-      firstname: this.state.firstname,
-      name: this.state.name,
-      email: this.state.email,
-      tel: this.state.tel,
-      region: this.state.region,
-      company: this.state.company,
-      deadline: this.state.deadline,
-      budget: this.state.budget,
-      extrainfo: this.state.extrainfo,
-      selectedOption: this.state.selectedOption
-    };
+      const Offerte = {
+        firstname: this.state.firstname,
+        name: this.state.name,
+        email: this.state.email,
+        tel: this.state.tel,
+        region: this.state.region,
+        company: this.state.company,
+        deadline: this.state.deadline,
+        budget: this.state.budget,
+        extrainfo: this.state.extrainfo,
+        selectedOption: this.state.selectedOption
+      };
 
-    axios
-        .post('https://api.mellowwebdesign.be/api/sendmail/quotation', {
-          Offerte
-        })
-        .then(res => {
-          let fieldset2 = document.getElementById('fieldset-2');
-          fieldset2.style.display = 'none';
-          let header = document.getElementById('formOfferte__header');
-          header.style.display = 'none';
-          let model = document.getElementById('modelMain');
-          model.style.height = '30%';
-          this.setState({submitted: true});
-        });
-  };
+      axios
+          .post('https://api.mellowwebdesign.be/api/sendmail/quotation', {
+            Offerte
+          })
+          .then(res => {
+            let fieldset2 = document.getElementById('fieldset-2');
+            fieldset2.style.display = 'none';
+            let header = document.getElementById('formOfferte__header');
+            header.style.display = 'none';
+            let model = document.getElementById('modelMain');
+            model.style.height = '30%';
+            this.setState({submitted: true});
+          });
+    };
 
   render() {
     const {hideModal, isToggleOn} = this.props;
-    const {submitted, selectedOption} = this.state;
+    const {submitted, selectedOption, isFirstNameCorrect, isEmailCorrect, isLastNameCorrect} = this.state;
     return (
         <div>
           {isToggleOn && (
@@ -249,7 +252,7 @@ class ModalOfferteStart extends Component {
                         required
                     />
                     <label
-                        className="input__label input__label--nariko"
+                        className={`input__label input__label--nariko ${isFirstNameCorrect ? "error" : ""}`}
                         htmlFor="input-offerte-firstname"
                         id="inputLabelFN"
                     >
@@ -276,7 +279,7 @@ class ModalOfferteStart extends Component {
                         ref={this.lastNameRef}
                     />
                     <label
-                        className="input__label input__label--nariko"
+                        className={`input__label input__label--nariko ${isLastNameCorrect ? "error" : ""}`}
                         htmlFor="input-offerte-name"
                         id="inputLabelLN"
                     >
@@ -304,7 +307,7 @@ class ModalOfferteStart extends Component {
                         ref={this.emailRef}
                     />
                     <label
-                        className="input__label input__label--nariko"
+                        className={`input__label input__label--nariko ${isEmailCorrect ? "error" : ""}`}
                         htmlFor="input-offerte-email"
                         id="inputLabelEmail"
                     >
@@ -341,6 +344,10 @@ class ModalOfferteStart extends Component {
                     </Row>
                     <Row className="form-group clearfix">
                       <Col md={6} xs={12}>
+                        <div
+                            className="frm-row special-input"
+                            id="row-offerte-company"
+                        >
                   <span
                       className="input input--nariko"
                       onClick={this.onInputClick}
@@ -362,6 +369,7 @@ class ModalOfferteStart extends Component {
                       </span>
                     </label>
                   </span>
+                        </div>
                       </Col>
 
                       <Col md={6} xs={12}>
@@ -544,7 +552,7 @@ class ModalOfferteStart extends Component {
                       </Col>
                     </Row>
                     <div className="feedback">
-                      Gelieve alle verplichte velden in te vullen
+                      Gelieve alle verplichte velden met een * in te vullen.
                     </div>
                     <p className="form-offerte-small">
                       Uw gegevens worden enkel bewaard om u te contacteren of om een
