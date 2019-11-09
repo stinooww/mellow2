@@ -175,7 +175,7 @@ class PortfolioItem extends Component {
             {links['next'] ? (
               <Col md={6} className="portfolioItem__Link">
                 <a href={`/portfolioitem/${links['next']}`}>
-                  volgende case{' '}
+                  volgende case
                   <span className="glyphicon glyphicon-triangle-right" />
                 </a>
               </Col>

@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12ea28b2-16cc-402e-8e6a-5180a58d3b5c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/portfolio-item/PortfolioItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/portfolio-item/PortfolioItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/components/_PortfolioItem.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/components/_PortfolioItem.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/src/pages/portfolio-item/PortfolioItem.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="173" column="77" selection-start-line="173" selection-start-column="77" selection-end-line="173" selection-end-column="77" />
+            <state relative-caret-position="370">
+              <caret line="177" column="31" selection-start-line="177" selection-start-column="31" selection-end-line="177" selection-end-column="31" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -64,7 +61,7 @@
         <entry file="file://$PROJECT_DIR$/frontend/src/styling/components/_PortfolioItem.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="362">
-              <caret line="162" column="21" lean-forward="true" selection-start-line="162" selection-start-column="21" selection-end-line="162" selection-end-column="21" />
+              <caret line="163" column="21" lean-forward="true" selection-start-line="163" selection-start-column="21" selection-end-line="163" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -605,13 +602,6 @@
       <workItem from="1571849058629" duration="7285000" />
       <workItem from="1572857449171" duration="14118000" />
     </task>
-    <task id="LOCAL-00013" summary="about pagina af">
-      <created>1556794384438</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1556794384438</updated>
-    </task>
     <task id="LOCAL-00014" summary="about pagina af">
       <created>1556794773001</created>
       <option name="number" value="00014" />
@@ -948,11 +938,18 @@
       <option name="project" value="LOCAL" />
       <updated>1573312726978</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="added previous and next">
+      <created>1573316588788</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1573316588788</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19391000" />
+    <option name="totallyTimeSpent" value="19465000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -1063,7 +1060,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="css changes en timeline verbeterd" />
     <MESSAGE value="modal styling" />
     <MESSAGE value="header" />
     <MESSAGE value="header + nieuwe pagina voor onz diensten etc etc" />
@@ -1088,7 +1084,8 @@
     <MESSAGE value="added testimonial  to pdp" />
     <MESSAGE value="added quoute to pdp" />
     <MESSAGE value="added previous and next to api" />
-    <option name="LAST_COMMIT_MESSAGE" value="added previous and next to api" />
+    <MESSAGE value="added previous and next" />
+    <option name="LAST_COMMIT_MESSAGE" value="added previous and next" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1311,14 +1308,14 @@
     <entry file="file://$PROJECT_DIR$/frontend/src/styling/components/_PortfolioItem.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="362">
-          <caret line="162" column="21" lean-forward="true" selection-start-line="162" selection-start-column="21" selection-end-line="162" selection-end-column="21" />
+          <caret line="163" column="21" lean-forward="true" selection-start-line="163" selection-start-column="21" selection-end-line="163" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/pages/portfolio-item/PortfolioItem.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="173" column="77" selection-start-line="173" selection-start-column="77" selection-end-line="173" selection-end-column="77" />
+        <state relative-caret-position="370">
+          <caret line="177" column="31" selection-start-line="177" selection-start-column="31" selection-end-line="177" selection-end-column="31" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
