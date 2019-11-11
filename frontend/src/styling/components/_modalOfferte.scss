@@ -197,12 +197,9 @@
       }
     }
   }
-
 }
 
 .fieldset1, .fieldset2 {
-  display: flex;
-
   .form-group {
     margin: 0 10px;
     @media (max-width: $Tablet) {
@@ -219,6 +216,7 @@
 
   @media (max-width: $bigGsm) {
     width: 100% !important;
+    padding: 15px;
   }
 
 }

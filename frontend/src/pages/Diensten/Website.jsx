@@ -84,20 +84,6 @@ const Website = () => (
         </Col>
       </Row>
       <Row>
-        {/*  <Col xs={12}>*/}
-        {/*    <div className="website__testimonial">*/}
-        {/*      <blockquote className="wp-block-quote">*/}
-        {/*        <p>*/}
-        {/*          Goede communicatie, vernieuwde kijk op zaken gekregen,*/}
-        {/*          creatief, verdiepen zich goed in de materie van je bedrijf,{' '}*/}
-        {/*          <br /> afspraken nakomen, kortom een goede keuze geweest.*/}
-        {/*        </p>*/}
-        {/*        <cite>Anja - Body Update</cite>*/}
-        {/*      </blockquote>*/}
-        {/*    </div>*/}
-        {/*  </Col>*/}
-        {/*</Row>*/}
-        {/*<Row>*/}
         <Col xs={12} className="website__besluit">
           <h3 className="text-center">
             Dus als jouw website niet responsief is tegenover die van jouw

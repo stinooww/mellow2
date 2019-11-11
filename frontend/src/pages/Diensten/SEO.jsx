@@ -69,6 +69,8 @@ class SEO extends Component {
                 of Google. Je zit bijvoorbeeld met een vraag of je wilt de
                 openingsuren van een plek te weten komen.
               </p>
+              <Image className="img-google" src={Google} responsive/>
+
               <p>
                 Daarom is het belangrijk om zo hoog mogelijk te scoren in deze
                 zoekmachines. Want je wilt niet op de 2de of 3de pagina
@@ -77,17 +79,113 @@ class SEO extends Component {
                 verschijnen als men een antwoord zoekt waarop jij een oplossing
                 kan bieden!{' '}
               </p>
-              <Col lg={12}>
-                <Image className="img-google" src={Google} responsive />
-                <p>
-                  Heb je toch meer interesse in Goolge advertising?
-                  <br />{' '}
-                  <a className="sea-link" href="#sea">
-                    Dan kan je inzetten op een SEA-campagne
-                  </a>
-                  .
-                </p>
+            </Col>
+          </Row>
+
+          <Row className="seo__voordelen">
+
+            <Col md={12} className="seo-stappen">
+              <aside>
+                <article
+                    // data-aos="flip-left"
+                    // data-aos-easing="ease-in-back"
+                    // data-aos-delay="100"
+                    // data-aos-duration="800"
+                >
+                  <h3 className="seo-stappen-head"> 1</h3>
+                  <strong className="seo__subtitle">Analyse</strong>
+                  <p>
+                    <br/>
+                    We starten met een keyword-analyse. Dit doen we om de
+                    trefwoorden te zoeken die je potentiële klanten gebruiken in
+                    Google en welke woorden jijzelf hoog wil scoren.
+                    <br/>
+                    Zo kunnen we jouw ideale doelgroep op je website laten
+                    belanden.
+                  </p>
+                </article>
+                <article
+                    // data-aos="flip-up"
+                    // data-aos-easing="ease-in-back"
+                    // data-aos-delay="110"
+                    // data-aos-duration="800"
+                >
+                  <h3>2</h3>
+                  <strong className="seo__subtitle">
+                    Content optimalisatie
+                  </strong>
+                  <p>
+                    <br/>
+                    We bekijken de content die op je website zich bevind zoals
+                    zoekwoorden in titels en teksten en passen dit aan.
+                    <br/>
+                    We voegen enkele zaken toe aan je website zoals:
+                    <br/>
+                  </p>
+                  <ul className="col-md-6">
+                    <OverlayTrigger placement="right" overlay={tooltip1}>
+                      <li bsstyle="default">titels</li>
+                    </OverlayTrigger>
+                    <OverlayTrigger placement="right" overlay={tooltip2}>
+                      <li bsstyle="default">meta tags</li>
+                    </OverlayTrigger>
+                    <OverlayTrigger placement="right" overlay={tooltip3}>
+                      <li bsstyle="default">alt tags</li>
+                    </OverlayTrigger>
+                    <OverlayTrigger placement="right" overlay={tooltip4}>
+                      <li bsstyle="default">title tags</li>
+                    </OverlayTrigger>
+                  </ul>
+                </article>
+                <article
+                    // data-aos="flip-right"
+                    // data-aos-easing="ease-in-back"
+                    // data-aos-delay="120"
+                    // data-aos-duration="800"
+                >
+                  <h3>3</h3>
+                  <strong className="seo__subtitle">
+                    Technische optimalisatie
+                  </strong>
+                  <p>
+                    <br/>
+                    Tenslotte voegen we ook verschillende stukjes code toe aan
+                    de website, zodat zoek robots gemakelijker door de site
+                    kunnen navigeren.
+                    <br/>
+                    We dubbel checken of de website volledig mobiel beschikbaar
+                    is
+                    <br/>
+                    en kijken of de afbeeldingen snel genoeg inladen waardoor de
+                    laadsnelheid ook merkbaar verbeterd.
+                  </p>
+                </article>
+              </aside>
+            </Col>
+            <Col md={12}>
+              <p className="text-center">
+                {' '}
+                Op deze manier krijg je meer bezoekers en scoor je hoger in
+                Google, <br/>
+                wat jou ook weer meer bezoekers en dus potentiële klanten
+                oplevert.
+              </p>
+            </Col>
+          </Row>
+          <Row>
+            <Col lg={12}>
+              <Col xs={12} className="seoDescription-wrapper">
+                <Image className="img-seo" src={Graphic} responsive/>
               </Col>
+              <p>
+                Heb je toch meer interesse in Goolge advertising?
+                <br />{' '}
+                <a className="sea-link" href="#sea">
+                  Dan kan je inzetten op een SEA-campagne
+                </a>
+                .
+              </p>
+
             </Col>
           </Row>
         </Grid>
@@ -106,98 +204,6 @@ class SEO extends Component {
         </div>
 
         <Grid>
-          <Row className="seo__voordelen">
-            <Col xs={12}>
-              <Image className="img-seo" src={Graphic} responsive />
-            </Col>
-            <Col md={12} className="seo-stappen">
-              <aside>
-                <article
-                  data-aos="flip-left"
-                  data-aos-easing="ease-in-back"
-                  data-aos-delay="100"
-                  data-aos-duration="800"
-                >
-                  <h3 className="seo-stappen-head"> 1</h3>
-                  <strong className="seo__subtitle">Analyse</strong>
-                  <p>
-                    <br />
-                    We starten met een keyword-analyse. Dit doen we om de
-                    trefwoorden te zoeken die je potentiële klanten gebruiken in
-                    Google en welke woorden jijzelf hoog wil scoren.
-                    <br />
-                    Zo kunnen we jouw ideale doelgroep op je website laten
-                    belanden.
-                  </p>
-                </article>
-                <article
-                  data-aos="flip-up"
-                  data-aos-easing="ease-in-back"
-                  data-aos-delay="110"
-                  data-aos-duration="800"
-                >
-                  <h3>2</h3>
-                  <strong className="seo__subtitle">
-                    Content optimalisatie
-                  </strong>
-                  <p>
-                    <br />
-                    We bekijken de content die op je website zich bevind zoals
-                    zoekwoorden in titels en teksten en passen dit aan.
-                    <br />
-                    We voegen enkele zaken toe aan je website zoals:
-                    <br />
-                  </p>
-                  <ul className="col-md-6">
-                    <OverlayTrigger placement="right" overlay={tooltip1}>
-                      <li bsstyle="default">titels</li>
-                    </OverlayTrigger>
-                    <OverlayTrigger placement="right" overlay={tooltip2}>
-                      <li bsstyle="default">meta tags</li>
-                    </OverlayTrigger>
-                    <OverlayTrigger placement="right" overlay={tooltip3}>
-                      <li bsstyle="default">alt tags</li>
-                    </OverlayTrigger>
-                    <OverlayTrigger placement="right" overlay={tooltip4}>
-                      <li bsstyle="default">title tags</li>
-                    </OverlayTrigger>
-                  </ul>
-                </article>
-                <article
-                  data-aos="flip-right"
-                  data-aos-easing="ease-in-back"
-                  data-aos-delay="120"
-                  data-aos-duration="800"
-                >
-                  <h3>3</h3>
-                  <strong className="seo__subtitle">
-                    Technische optimalisatie
-                  </strong>
-                  <p>
-                    <br />
-                    Tenslotte voegen we ook verschillende stukjes code toe aan
-                    de website, zodat zoek robots gemakelijker door de site
-                    kunnen navigeren.
-                    <br />
-                    We dubbel checken of de website volledig mobiel beschikbaar
-                    is
-                    <br />
-                    en kijken of de afbeeldingen snel genoeg inladen waardoor de
-                    laadsnelheid ook merkbaar verbeterd.
-                  </p>
-                </article>
-              </aside>
-            </Col>
-            <Col md={12}>
-              <p className="text-center">
-                {' '}
-                Op deze manier krijg je meer bezoekers en scoor je hoger in
-                Google, <br />
-                wat jou ook weer meer bezoekers en dus potentiële klanten
-                oplevert.
-              </p>
-            </Col>
-          </Row>
           <Row className="sea-context" id="sea">
             <Col md={12}>
               <h2>Snel gezien met SEA</h2>
@@ -222,7 +228,7 @@ class SEO extends Component {
               </p>
             </Col>
             <Col md={12}>
-              <p className="text-center sea-shoutout">
+              <p className="sea-shoutout">
                 {' '}
                 Het is dus een vlotte en efficiënte manier om meer bezoekers,
                 inclusief nieuwe klanten, naar jouw website te leiden!
