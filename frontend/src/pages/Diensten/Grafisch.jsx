@@ -40,30 +40,17 @@ const Grafisch = () => (
           </Col>
         </Col>
       </Row>
-      {/*<Row>*/}
-      {/*<Col xs={12}>*/}
-      {/*<div className="container">*/}
-      {/*<blockquote className="wp-block-quote"><p>Het stralende middelpunt van onze stand waren jullie collega’s, onze proactieve en vriendelijke*/}
-      {/*hostessen!&nbsp;We hebben veel complimenten gekregen over de gastvrijheid op onze stand en de inzet van jullie hostesses.&nbsp;Ontzettend*/}
-      {/*bedankt!</p><cite>Wereldhave</cite></blockquote>*/}
-      {/*</div>*/}
-      {/*<div className="container">*/}
-      {/*<blockquote className="wp-block-quote"><p>De dames van MME trokken enorm de aandacht! Ze waren proactief: iedereen werd aangesproken en de CHANCE*/}
-      {/*‘Lolipops’ werden volop uitgedeeld. Ze zagen er goed uit en waren heel enthousiast. Leuke dames! Zij hebben door hun aanwezig zeker de nieuwe*/}
-      {/*versie van Chance Eau Tendre EDP in de belangstelling gezet.*/}
-      {/*</p><cite>Chanel</cite></blockquote>*/}
-      {/*</div>*/}
-      {/*</Col>*/}
-      {/*</Row>*/}
 
       <Row className="marketingEmail">
         <Col xs={12}>
           <h1 className="marketingEmail__title">Marketings emails</h1>
         </Col>
-        <Col md={6} xs={12} data-aos="zoom-out-right">
+      </Row>
+        <Row>
+            <Col md={6} xs={12}>
           <Image className="marketingEmail__image" src={emailmarketing} />
         </Col>
-        <Col md={6} xs={12} data-aos="zoom-out-left">
+            <Col md={5} xs={12}>
           <p>
             Klanten en prospects kan je snel en makkelijk bereiken via e-mail
             marketing. Denk bijvoorbeeld aan een nieuwsletter van je bedrijf, of
@@ -71,23 +58,17 @@ const Grafisch = () => (
           </p>
           <br />
           <p>
-            E-mails versturen kan op heel wat manieren: een klassiek berichtje
-            of een een campagnemail met jouw logo en volledig in de stijl van je
-            branding. Wij voegen hierbij stukjes code zodat de emails slimmer
-            worden en je kan nagaan bijvoorbeeld wie de emails opent, waar en
+              Deze e-mails als campagnemail met jouw logo en volledig in de stijl van je
+              branding. Wij voegen hierbij stukjes code zodat de e-mails slimmer
+              worden en je kan nagaan wie de emails opent en waar /
             wanneer er wordt doorgeklikt.
           </p>
           <br />
-          <p>
-            Dit is zonder meer interessant om te kijken wat werkt en wat niet.
-            Dit om jouw meer business op te leveren.
-            <br />
-            <br />
-            <span className="marketingEmail__cta">
+                <p className="marketingEmail__cta">
               Zo kan je gericht je doelgroep benaderen en je kansen op succes
               maximaliseren!
-            </span>
-          </p>
+
+                </p>
           <br />
         </Col>
       </Row>

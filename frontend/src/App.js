@@ -26,7 +26,7 @@ class App extends Component {
       <Router>
         <div>
           <Header activateOfferte={this.activateOfferte} />
-          <Routing />
+          <Routing activateOfferte={this.activateOfferte}/>
           {isToggleOn ? (
             <ModalOfferteStart
               isToggleOn={this.state.isToggleOn}

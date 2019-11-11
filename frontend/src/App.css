@@ -2083,44 +2083,44 @@ nav.navbar-default {
       font-size: 16px;
       left: 52%; }
 
-.Diensten {
+.onderhoud {
   margin-top: 5vh; }
   @media (min-width: 54em) {
-    .Diensten {
+    .onderhoud {
       margin-top: 10vh; } }
   @media (min-width: 76.5em) {
-    .Diensten .container {
+    .onderhoud .container {
       width: 1170px; } }
-  .Diensten h2 {
+  .onderhoud h2 {
     padding: 0 15px; }
     @media (max-width: 54em) {
-      .Diensten h2 {
+      .onderhoud h2 {
         font-size: 2.7rem; } }
-  .Diensten .onderhoud__expl p {
+  .onderhoud .onderhoud__expl p {
     margin-bottom: 1em;
     width: 90%; }
-  .Diensten .onderhoud__table {
+  .onderhoud .onderhoud__table {
     display: none; }
     @media (min-width: 30em) {
-      .Diensten .onderhoud__table {
+      .onderhoud .onderhoud__table {
         display: inherit; } }
-    .Diensten .onderhoud__table .Grid-cell .price {
+    .onderhoud .onderhoud__table .Grid-cell .price {
       margin: 20px 5px; }
-      .Diensten .onderhoud__table .Grid-cell .price .basic-header {
+      .onderhoud .onderhoud__table .Grid-cell .price .basic-header {
         background-color: #a9b1b3;
         color: white; }
-      .Diensten .onderhoud__table .Grid-cell .price .highlighted-header {
+      .onderhoud .onderhoud__table .Grid-cell .price .highlighted-header {
         color: white; }
-      .Diensten .onderhoud__table .Grid-cell .price li {
+      .onderhoud .onderhoud__table .Grid-cell .price li {
         color: black; }
-        .Diensten .onderhoud__table .Grid-cell .price li.grey .button-submit {
+        .onderhoud .onderhoud__table .Grid-cell .price li.grey .button-submit {
           font-size: 15px;
           height: 40px;
           text-transform: uppercase;
           width: 185px; }
-    .Diensten .onderhoud__table .Grid-cell:first-child .price:hover {
+    .onderhoud .onderhoud__table .Grid-cell:first-child .price:hover {
       margin: 20px 5px; }
-    .Diensten .onderhoud__table .Grid-cell:first-child .grey .button-submit {
+    .onderhoud .onderhoud__table .Grid-cell:first-child .grey .button-submit {
       display: none; }
 
 .website {
@@ -2435,7 +2435,7 @@ nav.navbar-default {
     margin: 8vh 0 4vh 1vh;
     text-shadow: none; }
   .grafisch-email .emailmarketing, .grafisch-email .marketingEmail__image {
-    width: 85%; }
+    width: 75%; }
   @media (max-width: 780px) {
     .grafisch-email .emailmarketing {
       width: 100%;

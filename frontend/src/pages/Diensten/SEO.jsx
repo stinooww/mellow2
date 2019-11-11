@@ -87,10 +87,10 @@ class SEO extends Component {
             <Col md={12} className="seo-stappen">
               <aside>
                 <article
-                    // data-aos="flip-left"
-                    // data-aos-easing="ease-in-back"
-                    // data-aos-delay="100"
-                    // data-aos-duration="800"
+                    data-aos="flip-left"
+                    data-aos-easing="ease-in"
+                    data-aos-delay="100"
+                    data-aos-duration="800"
                 >
                   <h3 className="seo-stappen-head"> 1</h3>
                   <strong className="seo__subtitle">Analyse</strong>
@@ -105,10 +105,10 @@ class SEO extends Component {
                   </p>
                 </article>
                 <article
-                    // data-aos="flip-up"
-                    // data-aos-easing="ease-in-back"
-                    // data-aos-delay="110"
-                    // data-aos-duration="800"
+                    data-aos="flip-up"
+                    data-aos-easing="ease-in"
+                    data-aos-delay="110"
+                    data-aos-duration="800"
                 >
                   <h3>2</h3>
                   <strong className="seo__subtitle">
@@ -138,10 +138,10 @@ class SEO extends Component {
                   </ul>
                 </article>
                 <article
-                    // data-aos="flip-right"
-                    // data-aos-easing="ease-in-back"
-                    // data-aos-delay="120"
-                    // data-aos-duration="800"
+                    data-aos="flip-right"
+                    data-aos-easing="ease-in"
+                    data-aos-delay="140"
+                    data-aos-duration="800"
                 >
                   <h3>3</h3>
                   <strong className="seo__subtitle">

@@ -13,8 +13,7 @@ import Grafisch from '../../pages/Diensten/Grafisch';
 import Webhosting from '../../pages/Diensten/Webhosting';
 import Page404 from '../../pages/Error/page404';
 
-function Routing() {
-  return (
+const Routing = ({activateOfferte}) => (
     <div>
       <Route path="/" exact component={Home} />
       <Route path="/home" exact component={Home} />
@@ -23,7 +22,10 @@ function Routing() {
       <Route path="/diensten/website" component={Website} />
       <Route path="/diensten/seo" component={SEO} />
       <Route path="/diensten/grafisch" component={Grafisch} />
-      <Route path="/diensten/webhosting" component={Webhosting} />
+          <Route path="/diensten/webhosting"
+                 component={Webhosting}
+                 activateOfferte={activateOfferte}
+          />
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />
       <Route path="/algemenevoorwaarde" component={Av} />
@@ -31,7 +33,7 @@ function Routing() {
       {/*<Route component={page404}/>*/}
       {/*<Route render={() => <Page404 />}/>*/}
     </div>
-  );
-}
+
+);
 
 export default Routing;

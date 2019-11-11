@@ -1,14 +1,14 @@
 import React from 'react';
-
 import { Grid, Row, Col } from 'react-bootstrap';
 import CallToAction from '../../components/CallToAction/CallToAction';
 import { PricingTable, PricingSlot, PricingDetail } from 'react-pricing-table';
 import { faCheck, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+
 // https://github.com/gergely-nagy/react-pricing-table#features
-const Webhosting = () => (
-  <div className="Diensten">
+const Webhosting = ({activateOfferte}) => (
+    <div className="onderhoud">
     <Grid>
       <Row>
         <h2>Waarom een onderhouds pakket ?</h2>
@@ -56,10 +56,10 @@ const Webhosting = () => (
               <PricingDetail> Support</PricingDetail>
             </PricingSlot>
             <PricingSlot
-              onClick={this.submit}
-              buttonText="Start onderhoud"
-              title="STANDAARD"
-              priceText="39 EUR/maand"
+                onClick={activateOfferte}
+                buttonText="Start onderhoud"
+                title="STANDAARD"
+                priceText="39 EUR/maand"
             >
               <PricingDetail>
                 {' '}
@@ -108,11 +108,11 @@ const Webhosting = () => (
               {/*<PricingDetail strikethrough> <b>Time tracking</b></PricingDetail>*/}
             </PricingSlot>
             <PricingSlot
-              highlighted
-              onClick={this.submit}
-              buttonText="Start onderhoud"
-              title="ADVANCED"
-              priceText="59 EUR/maand"
+                highlighted
+                onClick={activateOfferte}
+                buttonText="Start onderhoud"
+                title="ADVANCED"
+                priceText="59 EUR/maand"
             >
               <PricingDetail>
                 {' '}
@@ -160,10 +160,10 @@ const Webhosting = () => (
               </PricingDetail>
             </PricingSlot>
             <PricingSlot
-              onClick={this.submit}
-              buttonText="Start onderhoud"
-              title="PROFESSIONAL"
-              priceText="75 EUR/maand"
+                onClick={activateOfferte}
+                buttonText="Start onderhoud"
+                title="PROFESSIONAL"
+                priceText="75 EUR/maand"
             >
               <PricingDetail>
                 {' '}
