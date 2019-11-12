@@ -23,7 +23,7 @@ const About = () => (
                 </div>
                 <p className="post__text">
                   Mellow webdesign is een idee dat eind 2017 is ontstaan toen
-                  Jonas en Stijn samen studeerde op de Karel de grote hogeschool
+                  Jonas en Stijn samen studeerden op de Karel de grote hogeschool
                   richting Multimedia technologie. Tijdens hun opleiding kregen
                   ze meer en meer de vraag van andere ondernemers naar
                   betaalbare maar nog steeds professionele websites.
@@ -45,9 +45,9 @@ const About = () => (
                 <br />
                 <p>
                   Om de klanten volledig te kunnen helpen met hun digitaal idee
-                  bieden wij een volledig oplossing aan zodat zun altijd maar 1
-                  aanspreekpunt hebben en zich kunnen focussen op hun
-                  onderneming en wij alles voorzien. Hierin bedoelen we dus het
+                  bieden wij een volledig oplossing aan zodat ze altijd maar één
+                  aanspreekpunt hebben en ze zich kunnen focussen op hun
+                  onderneming. Hierin bedoelen we dus het
                   technologische zoals websites, web applicaties, online
                   marketing maar ook de design kant zoals logos, banners en
                   flyers.

@@ -41,8 +41,8 @@ const Timeline = () => (
               <p>
                 {' '}
                 In ons verkennend gesprek, luisteren we naar uw verhaal, uw
-                noden en de grote van het project. Waarbij we ook meedenken met
-                wat de beste oplossing is die bij u past.
+                noden en de grootte van het project. Waarbij we vooral aandacht besteden aan de beste oplossing voor uw
+                project.
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
@@ -77,8 +77,8 @@ const Timeline = () => (
               <h3 className="vertical-timeline-element-title">Prototype </h3>
               <p>
                 Ons eerste afgeleverd product is het design of prototype waarbij
-                u als klant volledig kan bekritiseren wat u goed / slecht vind
-                en aangepast moet worden. Hierbij bekijken we dit samen om ons
+                u als klant volledig kan becommentariëren wat u goed / slecht vindt
+                en aangepast moet worden. Hierna bekijken we dit samen om ons
                 voor te bereiden op het eind product.
               </p>
             </VerticalTimelineElement>
@@ -96,8 +96,7 @@ const Timeline = () => (
               </h3>
               <p>
                 Na de feedback momenten werken we aan het product tot dit
-                volledig klaar is. Dit altijd gemaakt in de laatste technologiën
-                die tevens volledig getest is, om uiteindelijk een mooi
+                volledig klaar is. Dit volledig getest op verschillende browsers, om uiteindelijk een mooi
                 eindproduct te bekomen.
               </p>
             </VerticalTimelineElement>

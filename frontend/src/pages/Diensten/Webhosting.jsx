@@ -11,7 +11,7 @@ const Webhosting = ({activateOfferte}) => (
     <div className="onderhoud">
     <Grid>
       <Row>
-        <h2>Waarom een onderhouds pakket ?</h2>
+        <h2>Waarom een onderhoudspakket ?</h2>
         <Col xs={12} className="onderhoud__expl">
           <p>
             Een website maken stopt niet bij de ontwikkeling ervan. Ook na de
@@ -26,7 +26,7 @@ const Webhosting = ({activateOfferte}) => (
             Ook zorgen we ervoor dat je website beschermt is tegen hackers om te
             voorkomen dat cyberaanvallen je website offline halen. We nemen
             bovendien regelmatig een backup zodat we altijd een kopie hebben van
-            de inhoud je website en deze dus nooit verloren kan gaan.
+            je website en deze dus nooit verloren kan gaan.
           </p>
           <p>
             {' '}

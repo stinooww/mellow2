@@ -3,18 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="12ea28b2-16cc-402e-8e6a-5180a58d3b5c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Routing/Routing.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Routing/Routing.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Diensten/Grafisch.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Diensten/Grafisch.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Timeline/Timeline.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Timeline/Timeline.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/About/About.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/About/About.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/Diensten/SEO.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Diensten/SEO.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/Diensten/Webhosting.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Diensten/Webhosting.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/components/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/mixins.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/pages/_Grafisch.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/pages/_Grafisch.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/pages/_Webhosting.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/pages/_Webhosting.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -167,21 +159,9 @@
       <workItem from="1572857449171" duration="31210000" />
       <workItem from="1573033190692" duration="5385000" />
       <workItem from="1573290395807" duration="206000" />
-      <workItem from="1573297974127" duration="26259000" />
-    </task>
-    <task id="LOCAL-00018" summary="first implementation of timeline">
-      <created>1556887967964</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1556887967964</updated>
-    </task>
-    <task id="LOCAL-00019" summary="added some links for doc">
-      <created>1556889011259</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1556889011259</updated>
+      <workItem from="1573297974127" duration="26550000" />
+      <workItem from="1573572457810" duration="1262000" />
+      <workItem from="1573574661694" duration="1712000" />
     </task>
     <task id="LOCAL-00020" summary="css changes en timeline verbeterd">
       <created>1557055718915</created>
@@ -512,7 +492,21 @@
       <option name="project" value="LOCAL" />
       <updated>1573480070798</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="website full responsive + start een project">
+      <created>1573499135517</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1573499135517</updated>
+    </task>
+    <task id="LOCAL-00068" summary="seo rework">
+      <created>1573573223307</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1573573223307</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -532,7 +526,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="header" />
     <MESSAGE value="header + nieuwe pagina voor onz diensten etc etc" />
     <MESSAGE value="onderhoud helemaal af" />
     <MESSAGE value="npm update en beter contact formulier" />
@@ -557,7 +550,8 @@
     <MESSAGE value="start een project validation" />
     <MESSAGE value="website full responsive" />
     <MESSAGE value="website full responsive + start een project" />
-    <option name="LAST_COMMIT_MESSAGE" value="website full responsive + start een project" />
+    <MESSAGE value="seo rework" />
+    <option name="LAST_COMMIT_MESSAGE" value="seo rework" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

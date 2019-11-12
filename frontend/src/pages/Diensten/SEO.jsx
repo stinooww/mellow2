@@ -101,7 +101,7 @@ class SEO extends Component {
                     <br/>
                     We starten met een keyword-analyse. Dit doen we om de
                     trefwoorden te zoeken die je potentiële klanten gebruiken in
-                    Google en welke woorden jijzelf hoog wil scoren.
+                    Google en met welke woorden jijzelf hoog wil scoren.
                   </p>
                   <p>
                     <br/>
@@ -121,7 +121,7 @@ class SEO extends Component {
                   </strong>
                   <p>
                     <br/>
-                    We bekijken de content die op je website zich bevind zoals
+                    We bekijken de content die zich op je website zich bevind zoals
                     zoekwoorden in titels en teksten en passen dit aan.
                     <br/>
 
@@ -161,7 +161,7 @@ class SEO extends Component {
                   </strong>
                   <p>
                     <br/>
-                    Tenslotte voegen we ook verschillende stukjes code toe aan
+                    Tenslotte voegen we verschillende stukjes code toe aan
                     de website, zodat de zoek robots van Google gemakelijker door jouw website
                     kunnen navigeren.
                     <br/>
