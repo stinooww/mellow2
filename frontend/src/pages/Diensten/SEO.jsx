@@ -83,13 +83,16 @@ class SEO extends Component {
           </Row>
 
           <Row className="seo__voordelen">
-
+            <h2>
+              Onze manier van aanpak:
+            </h2>
             <Col md={12} className="seo-stappen">
+
               <aside>
                 <article
                     data-aos="flip-left"
                     data-aos-easing="ease-in"
-                    data-aos-delay="100"
+                    data-aos-delay="140"
                     data-aos-duration="800"
                 >
                   <h3 className="seo-stappen-head"> 1</h3>
@@ -99,6 +102,8 @@ class SEO extends Component {
                     We starten met een keyword-analyse. Dit doen we om de
                     trefwoorden te zoeken die je potentiële klanten gebruiken in
                     Google en welke woorden jijzelf hoog wil scoren.
+                  </p>
+                  <p>
                     <br/>
                     Zo kunnen we jouw ideale doelgroep op je website laten
                     belanden.
@@ -107,7 +112,7 @@ class SEO extends Component {
                 <article
                     data-aos="flip-up"
                     data-aos-easing="ease-in"
-                    data-aos-delay="110"
+                    data-aos-delay="140"
                     data-aos-duration="800"
                 >
                   <h3>2</h3>
@@ -119,23 +124,30 @@ class SEO extends Component {
                     We bekijken de content die op je website zich bevind zoals
                     zoekwoorden in titels en teksten en passen dit aan.
                     <br/>
-                    We voegen enkele zaken toe aan je website zoals:
-                    <br/>
+
                   </p>
-                  <ul className="col-md-6">
-                    <OverlayTrigger placement="right" overlay={tooltip1}>
-                      <li bsstyle="default">titels</li>
-                    </OverlayTrigger>
-                    <OverlayTrigger placement="right" overlay={tooltip2}>
-                      <li bsstyle="default">meta tags</li>
-                    </OverlayTrigger>
-                    <OverlayTrigger placement="right" overlay={tooltip3}>
-                      <li bsstyle="default">alt tags</li>
-                    </OverlayTrigger>
-                    <OverlayTrigger placement="right" overlay={tooltip4}>
-                      <li bsstyle="default">title tags</li>
-                    </OverlayTrigger>
-                  </ul>
+                  <br/>
+                  <p>
+                    Ook checken we of de website volledig mobiel beschikbaar
+                    is
+
+                    en kijken of de afbeeldingen snel genoeg inladen waardoor de
+                    laadsnelheid ook merkbaar verbeterd.
+                  </p>
+                  {/*<ul className="col-md-6">*/}
+                  {/*  <OverlayTrigger placement="right" overlay={tooltip1}>*/}
+                  {/*    <li bsstyle="default">titels</li>*/}
+                  {/*  </OverlayTrigger>*/}
+                  {/*  <OverlayTrigger placement="right" overlay={tooltip2}>*/}
+                  {/*    <li bsstyle="default">meta tags</li>*/}
+                  {/*  </OverlayTrigger>*/}
+                  {/*  <OverlayTrigger placement="right" overlay={tooltip3}>*/}
+                  {/*    <li bsstyle="default">alt tags</li>*/}
+                  {/*  </OverlayTrigger>*/}
+                  {/*  <OverlayTrigger placement="right" overlay={tooltip4}>*/}
+                  {/*    <li bsstyle="default">title tags</li>*/}
+                  {/*  </OverlayTrigger>*/}
+                  {/*</ul>*/}
                 </article>
                 <article
                     data-aos="flip-right"
@@ -150,14 +162,10 @@ class SEO extends Component {
                   <p>
                     <br/>
                     Tenslotte voegen we ook verschillende stukjes code toe aan
-                    de website, zodat zoek robots gemakelijker door de site
+                    de website, zodat de zoek robots van Google gemakelijker door jouw website
                     kunnen navigeren.
                     <br/>
-                    We dubbel checken of de website volledig mobiel beschikbaar
-                    is
-                    <br/>
-                    en kijken of de afbeeldingen snel genoeg inladen waardoor de
-                    laadsnelheid ook merkbaar verbeterd.
+
                   </p>
                 </article>
               </aside>
@@ -172,22 +180,22 @@ class SEO extends Component {
               </p>
             </Col>
           </Row>
-          <Row>
-            <Col lg={12}>
-              <Col xs={12} className="seoDescription-wrapper">
-                <Image className="img-seo" src={Graphic} responsive/>
-              </Col>
-              <p>
-                Heb je toch meer interesse in Goolge advertising?
-                <br />{' '}
-                <a className="sea-link" href="#sea">
-                  Dan kan je inzetten op een SEA-campagne
-                </a>
-                .
-              </p>
+          {/*<Row>*/}
+          {/*  <Col lg={12}>*/}
+          {/*    <Col xs={12} className="seoDescription-wrapper">*/}
+          {/*      <Image className="img-seo" src={Graphic} responsive/>*/}
+          {/*    </Col>*/}
+          {/*    <p>*/}
+          {/*      Heb je toch meer interesse in Goolge advertising?*/}
+          {/*      <br />{' '}*/}
+          {/*      <a className="sea-link" href="#sea">*/}
+          {/*        Dan kan je inzetten op een SEA-campagne*/}
+          {/*      </a>*/}
+          {/*      .*/}
+          {/*    </p>*/}
 
-            </Col>
-          </Row>
+          {/*  </Col>*/}
+          {/*</Row>*/}
         </Grid>
         <div data-aos="zoom-in-down" className="container-fluid">
           <Row className="seo-cta">
