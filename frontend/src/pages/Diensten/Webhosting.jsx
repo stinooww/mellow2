@@ -1,6 +1,5 @@
 import React from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
-import CallToAction from '../../components/CallToAction/CallToAction';
 import { PricingTable, PricingSlot, PricingDetail } from 'react-pricing-table';
 import { faCheck, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -8,8 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // https://github.com/gergely-nagy/react-pricing-table#features
 const Webhosting = ({activateOfferte}) => (
-    <div className="onderhoud">
-    <Grid>
+    <Grid className="onderhoud">
       <Row>
         <h2>Waarom een onderhoudspakket ?</h2>
         <Col xs={12} className="onderhoud__expl">
@@ -216,8 +214,6 @@ const Webhosting = ({activateOfferte}) => (
         </Col>
       </Row>
     </Grid>
-    <CallToAction />
-  </div>
 );
 
 export default Webhosting;

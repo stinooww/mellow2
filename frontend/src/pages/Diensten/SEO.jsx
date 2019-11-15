@@ -7,10 +7,8 @@ import {
   OverlayTrigger,
   Tooltip
 } from 'react-bootstrap';
-import CallToAction from '../../components/CallToAction/CallToAction';
 import SeoAnalyse from '../../components/SEOanalyse/SeoAnalyse';
 import Google from '../../images/google.png';
-import Graphic from '../../images/graphic.png';
 import { CircleArrow as ScrollUpButton } from 'react-scroll-up-button';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -245,7 +243,6 @@ class SEO extends Component {
           </Row>
         </Grid>
         <ScrollUpButton />
-        <CallToAction />
       </div>
     );
   }

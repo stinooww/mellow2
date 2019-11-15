@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { Grid, Row, Col } from 'react-bootstrap';
-import CallToAction from '../../components/CallToAction/CallToAction';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -92,7 +91,6 @@ const Website = () => (
         </Col>
       </Row>
     </Grid>
-    <CallToAction />
   </div>
 );
 

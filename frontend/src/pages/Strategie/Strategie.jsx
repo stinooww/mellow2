@@ -1,11 +1,9 @@
 import React from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
 import Timeline from '../../components/Timeline/Timeline';
-import CallToAction from '../../components/CallToAction/CallToAction';
 
 const Strategie = () => (
-  <div className="StrategiePage ">
-    <Grid>
+    <Grid className="StrategiePage">
       <Row>
         <Col xs={12} className="StrategiePage__intro">
           <h2>Onze strategie</h2>
@@ -25,8 +23,6 @@ const Strategie = () => (
         <Timeline />
       </Row>
     </Grid>
-    <CallToAction />
-  </div>
 );
 
 export default Strategie;

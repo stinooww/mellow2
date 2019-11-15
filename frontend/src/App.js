@@ -5,6 +5,7 @@ import Routing from './components/Routing/Routing';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import ModalOfferteStart from './components/ModalOfferte/ModalOfferteStart';
+import CallToAction from "./components/CallToAction/CallToAction";
 
 class App extends Component {
   constructor(props) {
@@ -33,7 +34,7 @@ class App extends Component {
               hideModal={this.hideModal}
             />
           ) : null}
-
+          <CallToAction/>
           <Footer />
         </div>
       </Router>

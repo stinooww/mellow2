@@ -149,7 +149,7 @@ class ModalOfferteStart extends Component {
     } else {
       isValidln = true;
     }
-    console.log("achternaam is " + ln + patt.test(ln));
+    console.log("achternaam is " + patt.test(ln));
     if (ln.length === 0 && !patt.test(ln)) {
       this.setState(prevState => ({
         isLastNameCorrect: !prevState.isLastNameCorrect

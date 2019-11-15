@@ -185,7 +185,6 @@ class PortfolioItem extends Component {
           </Row>
         </div>
         <ScrollUpButton />
-        <CallToAction />
       </React.Fragment>
     );
   }

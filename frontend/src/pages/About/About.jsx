@@ -1,9 +1,7 @@
 import React from 'react';
 import { Grid, Col } from 'react-bootstrap';
-import CallToAction from '../../components/CallToAction/CallToAction';
 
 const About = () => (
-  <div>
     <Grid className="about__container">
       <div className="about">
         <Col xs={12} sm={12} className="person">
@@ -58,7 +56,5 @@ const About = () => (
         </Col>
       </div>
     </Grid>
-    <CallToAction />
-  </div>
 );
 export default About;

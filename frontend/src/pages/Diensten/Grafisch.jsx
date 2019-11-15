@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { Grid, Row, Col, Image } from 'react-bootstrap';
-import CallToAction from '../../components/CallToAction/CallToAction';
 import emailmarketing from '../../images/emailmarketing.png';
 import logodesign from '../../images/logodesign.png';
 
@@ -12,7 +11,6 @@ AOS.init();
 AOS.init({ disable: 'mobile' });
 
 const Grafisch = () => (
-  <div>
     <Grid className="grafisch-email">
       <Row>
         <Col xs={12}>
@@ -67,14 +65,11 @@ const Grafisch = () => (
                 <p className="marketingEmail__cta">
               Zo kan je gericht je doelgroep benaderen en je kansen op succes
               maximaliseren!
-
                 </p>
           <br />
         </Col>
       </Row>
     </Grid>
-    <CallToAction />
-  </div>
 );
 
 export default Grafisch;
