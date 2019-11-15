@@ -34,7 +34,7 @@ class App extends Component {
               hideModal={this.hideModal}
             />
           ) : null}
-          <CallToAction/>
+          <CallToAction activateOfferte={this.activateOfferte}/>
           <Footer />
         </div>
       </Router>
