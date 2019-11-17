@@ -2074,6 +2074,11 @@ nav.navbar-default .container {
   margin: 5%;
 }
 
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
 .portfolioItem__GreyBg {
   position: absolute;
   margin: 0 -20vw 0 0;
@@ -2092,6 +2097,11 @@ nav.navbar-default .container {
 .portfolioItem__BottomImageCol img {
   margin-left: -7vw;
   width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .portfolioItem__BottomImageCol {
+    display: none;
+  }
 }
 
 .portfolioItem__header {
@@ -2133,6 +2143,25 @@ nav.navbar-default .container {
   text-transform: capitalize;
   margin-top: -5vh;
 }
+@media screen and (max-width: 1024px) {
+  .portfolioItem__header .header-layers h1 {
+    font-size: 10em;
+    margin-top: 0;
+    margin-top: 10vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  .portfolioItem__header .header-layers h1 {
+    font-size: 8em;
+    margin-top: 10vh;
+  }
+}
+@media screen and (max-width: 767px) {
+  .portfolioItem__header .header-layers h1 {
+    font-size: 6em;
+    margin-top: 15vh;
+  }
+}
 .portfolioItem__header .portfolio__head-img {
   width: 50%;
   margin-top: 3vh;
@@ -2158,6 +2187,11 @@ nav.navbar-default .container {
 
 .portfolioItem__grid .portfolio__request {
   padding: 1vh 0 0 7.6vw;
+}
+@media screen and (max-width: 767px) {
+  .portfolioItem__grid .portfolio__request {
+    padding: 10px;
+  }
 }
 .portfolioItem__grid .portfolio__request p:nth-child(2) {
   margin-top: 3vh;
@@ -2194,6 +2228,11 @@ nav.navbar-default .container {
 .portfolioItem__grid > .row:nth-child(2) {
   padding: 0 0 230px 0;
 }
+@media screen and (max-width: 767px) {
+  .portfolioItem__grid > .row:nth-child(2) {
+    padding: 0 0 20px 0;
+  }
+}
 
 .portfolioItem__grid .no-problemo {
   font-size: 22px;
@@ -2207,12 +2246,30 @@ nav.navbar-default .container {
   padding: 1vh 6vw;
   color: black;
 }
+@media screen and (max-width: 767px) {
+  .portfolioItem__grid h2 {
+    padding: 0;
+  }
+}
 
 .portfolioItem__grid .portbutton {
   margin: 2vh 0;
   width: 80%;
   padding: 2em;
   background: #3763ef;
+  color: white;
+}
+@media screen and (max-width: 767px) {
+  .portfolioItem__grid .portbutton {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+.portfolioItem__grid .portbutton:before {
+  background: #efc337;
 }
 
 .portfolioItem__grid .portbutton:hover {
@@ -2225,8 +2282,18 @@ nav.navbar-default .container {
   align-content: center;
   justify-content: center;
 }
+@media screen and (max-width: 767px) {
+  .portfolioItem__testimonial {
+    height: 30vh;
+  }
+}
 .portfolioItem__testimonial .quote {
   max-width: 50%;
+}
+@media screen and (max-width: 767px) {
+  .portfolioItem__testimonial .quote {
+    max-width: 100%;
+  }
 }
 .portfolioItem__testimonial .quote cite > span {
   text-transform: capitalize;
@@ -2246,6 +2313,11 @@ nav.navbar-default .container {
   padding: 20vh 40px;
   min-height: 50vh;
 }
+@media screen and (max-width: 767px) {
+  .portfolioItem__wrapper {
+    padding: 0;
+  }
+}
 .portfolioItem__wrapper-solution {
   display: flex;
   align-items: center;
@@ -2254,13 +2326,28 @@ nav.navbar-default .container {
   width: 80%;
   margin-top: -10vh;
 }
+@media screen and (max-width: 767px) {
+  .portfolioItem__wrapper-solution .portfolio__solutionTxt {
+    width: 100%;
+    margin-top: 0;
+  }
+  .portfolioItem__wrapper-solution .portfolio__solutionTxt p {
+    color: #a9b1b3 !important;
+  }
+}
 .portfolioItem__wrapper-solution .portfolio__solutionTxt p {
-  color: black !important;
+  color: black;
 }
 @media screen and (max-width: 1024px) {
   .portfolioItem__wrapper-solution {
     width: 100%;
     margin: 15% 2% 4% 2%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .portfolioItem__wrapper-solution {
+    margin: 20px 20px 20px 35px;
+    width: auto;
   }
 }
 .portfolioItem__wrapper-img .portfolio__smartphone {
@@ -2288,10 +2375,25 @@ nav.navbar-default .container {
   background: #efc337;
 }
 
+.portfolio__smartphone {
+  margin-top: -4vh;
+}
+@media screen and (max-width: 767px) {
+  .portfolio__smartphone {
+    margin-top: 5vh;
+    margin-bottom: 6vh;
+  }
+}
+
 .parallax {
   height: 400px;
   position: relative;
   overflow: hidden;
+}
+@media screen and (max-width: 767px) {
+  .parallax {
+    display: none;
+  }
 }
 .parallax img {
   width: 100%;
@@ -2311,6 +2413,11 @@ nav.navbar-default .container {
   width: 34px;
   height: 55px;
 }
+@media screen and (max-width: 1024px) {
+  .scroll-downs {
+    margin: 10vh 0 3vh 0;
+  }
+}
 
 .mousey {
   width: 3px;
@@ -2320,6 +2427,13 @@ nav.navbar-default .container {
   border-radius: 25px;
   opacity: 0.75;
   box-sizing: content-box;
+}
+@media screen and (max-width: 1024px) {
+  .mousey {
+    height: 25px;
+    width: 3px;
+    padding: 10px 10px;
+  }
 }
 
 .scroller {

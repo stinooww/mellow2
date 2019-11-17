@@ -1,4 +1,7 @@
-
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
 .portfolioItem {
   &__GreyBg {
     position: absolute;
@@ -19,6 +22,10 @@
       margin-left: -7vw;
       width: 100%;
 
+    }
+
+    @media screen and (max-width: $bigGsm) {
+      display: none;
     }
   }
   &__header {
@@ -56,6 +63,19 @@
         padding: 0;
         text-transform: capitalize;
         margin-top: -5vh;
+        @media screen and (max-width: $smallLaptop) {
+          font-size: 10em;
+          margin-top: 0;
+          margin-top: 10vh;
+        }
+        @media screen and (max-width: $Tablet) {
+          font-size: 8em;
+          margin-top: 10vh;
+        }
+        @media screen and (max-width: $bigGsm) {
+          font-size: 6em;
+          margin-top: 15vh;
+        }
       }
     }
 
@@ -84,6 +104,10 @@
 
     .portfolio__request {
       padding: 1vh 0 0 7.6vw;
+      @media screen and (max-width: $bigGsm) {
+        padding: 10px;
+      }
+
 
       p:nth-child(2) {
         margin-top: 3vh;
@@ -116,6 +140,9 @@
 
     > .row:nth-child(2) {
       padding: 0 0 230px 0;
+      @media screen and (max-width: $bigGsm) {
+        padding: 0 0 20px 0;
+      }
     }
 
     .no-problemo {
@@ -129,6 +156,9 @@
     h2 {
       padding: 1vh 6vw;
       color: black;
+      @media screen and (max-width: $bigGsm) {
+        padding: 0;
+      }
     }
 
     .portbutton {
@@ -136,6 +166,17 @@
       width: 80%;
       padding: 2em;
       background: $blue;
+      color: white;
+      @media screen and (max-width: $bigGsm) {
+        display: block;
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 20px;
+      }
+    }
+
+    .portbutton:before {
+      background: $yellow;
     }
 
     .portbutton:hover {
@@ -148,9 +189,15 @@
     height: 40vh;
     align-content: center;
     justify-content: center;
+    @media screen and (max-width: $bigGsm) {
+      height: 30vh;
+    }
 
     .quote {
       max-width: 50%;
+      @media screen and (max-width: $bigGsm) {
+        max-width: 100%;
+      }
 
       cite > span {
         text-transform: capitalize;
@@ -170,6 +217,9 @@
     display: flex;
     padding: 20vh 40px;
     min-height: 50vh;
+    @media screen and (max-width: $bigGsm) {
+      padding: 0;
+    }
 
     &-solution {
       display: flex;
@@ -178,15 +228,28 @@
       .portfolio__solutionTxt {
         width: 80%;
         margin-top: -10vh;
+        @media screen and (max-width: $bigGsm) {
+          width: 100%;
+          margin-top: 0;
+          p {
+            color: $color-grey !important;
+          }
+
+        }
 
         p {
-          color: black !important;
+          color: black;
         }
       }
       @media screen and (max-width: $smallLaptop) {
         width: 100%;
         margin: 15% 2% 4% 2%;
       }
+      @media screen and (max-width: $bigGsm) {
+        margin: 20px 20px 20px 35px;
+        width: auto;
+      }
+
     }
 
     &-img {
@@ -220,10 +283,20 @@
 
 }
 
+.portfolio__smartphone {
+  margin-top: -4vh;
+  @media screen and (max-width: $bigGsm) {
+    margin-top: 5vh;
+    margin-bottom: 6vh;
+  }
+}
 .parallax {
   height: 400px;
   position: relative;
   overflow: hidden;
+  @media screen and (max-width: $bigGsm) {
+    display: none;
+  }
 
   img {
     width: 100%;
@@ -245,6 +318,9 @@
   margin: 0 0 10vh 0;
   width: 34px;
   height: 55px;
+  @media screen and (max-width: $smallLaptop) {
+    margin: 10vh 0 3vh 0;
+  }
 }
 
 .mousey {
@@ -255,6 +331,12 @@
   border-radius: 25px;
   opacity: 0.75;
   box-sizing: content-box;
+  @media screen and (max-width: $smallLaptop) {
+    height: 25px;
+    width: 3px;
+    padding: 10px 10px;
+  }
+
 }
 
 .scroller {
