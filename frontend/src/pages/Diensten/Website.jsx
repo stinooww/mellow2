@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { Grid, Row, Col } from 'react-bootstrap';
-import CallToAction from '../../components/CallToAction/CallToAction';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -84,20 +83,6 @@ const Website = () => (
         </Col>
       </Row>
       <Row>
-        {/*  <Col xs={12}>*/}
-        {/*    <div className="website__testimonial">*/}
-        {/*      <blockquote className="wp-block-quote">*/}
-        {/*        <p>*/}
-        {/*          Goede communicatie, vernieuwde kijk op zaken gekregen,*/}
-        {/*          creatief, verdiepen zich goed in de materie van je bedrijf,{' '}*/}
-        {/*          <br /> afspraken nakomen, kortom een goede keuze geweest.*/}
-        {/*        </p>*/}
-        {/*        <cite>Anja - Body Update</cite>*/}
-        {/*      </blockquote>*/}
-        {/*    </div>*/}
-        {/*  </Col>*/}
-        {/*</Row>*/}
-        {/*<Row>*/}
         <Col xs={12} className="website__besluit">
           <h3 className="text-center">
             Dus als jouw website niet responsief is tegenover die van jouw
@@ -106,7 +91,6 @@ const Website = () => (
         </Col>
       </Row>
     </Grid>
-    <CallToAction />
   </div>
 );
 

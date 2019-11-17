@@ -2,7 +2,7 @@ import React from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-function CallToAction(props) {
+function CallToAction({ activateOfferte }) {
   return (
     <div className="section-cta">
       <Grid>
@@ -13,9 +13,12 @@ function CallToAction(props) {
             </h4>
           </Col>
           <Col lg={3} md={4} sm={4} xs={12}>
-            <Link className="cta-btn hvr-sweep-to-right" to="/contact">
+            <button
+              className="cta-btn hvr-sweep-to-right"
+              onClick={activateOfferte}
+            >
               Neem contact op
-            </Link>
+            </button>
           </Col>
         </Row>
       </Grid>

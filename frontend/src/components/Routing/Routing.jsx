@@ -13,25 +13,27 @@ import Grafisch from '../../pages/Diensten/Grafisch';
 import Webhosting from '../../pages/Diensten/Webhosting';
 import Page404 from '../../pages/Error/page404';
 
-function Routing() {
-  return (
-    <div>
-      <Route path="/" exact component={Home} />
-      <Route path="/home" exact component={Home} />
-      <Route path="/strategie" component={Strategie} />
-      <Route path="/portfolioitem/:id" component={PortfolioItem} />
-      <Route path="/diensten/website" component={Website} />
-      <Route path="/diensten/seo" component={SEO} />
-      <Route path="/diensten/grafisch" component={Grafisch} />
-      <Route path="/diensten/webhosting" component={Webhosting} />
-      <Route path="/about" component={About} />
-      <Route path="/contact" component={Contact} />
-      <Route path="/algemenevoorwaarde" component={Av} />
-      <Route path="/portfolio" component={Portfolio} />
-      {/*<Route component={page404}/>*/}
-      {/*<Route render={() => <Page404 />}/>*/}
-    </div>
-  );
-}
+const Routing = ({ activateOfferte }) => (
+  <div>
+    <Route path="/" exact component={Home} />
+    <Route path="/home" exact component={Home} />
+    <Route path="/strategie" component={Strategie} />
+    <Route path="/portfolioitem/:id" component={PortfolioItem} />
+    <Route path="/diensten/website" component={Website} />
+    <Route path="/diensten/seo" component={SEO} />
+    <Route path="/diensten/grafisch" component={Grafisch} />
+    <Route
+      path="/diensten/webhosting"
+      component={Webhosting}
+      activateOfferte={activateOfferte}
+    />
+    <Route path="/about" component={About} />
+    <Route path="/contact" component={Contact} />
+    <Route path="/algemenevoorwaarde" component={Av} />
+    <Route path="/portfolio" component={Portfolio} />
+    {/*<Route component={page404}/>*/}
+    {/*<Route render={() => <Page404 />}/>*/}
+  </div>
+);
 
 export default Routing;

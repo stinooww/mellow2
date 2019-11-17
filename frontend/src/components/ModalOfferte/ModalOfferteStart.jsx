@@ -70,7 +70,6 @@ class ModalOfferteStart extends Component {
 
   constructor(props) {
     super(props);
-    // de state wordt in de constructor geinitializeerd
     this.state = {
       firstname: '',
       name: '',
@@ -131,33 +130,42 @@ class ModalOfferteStart extends Component {
     e.preventDefault();
     const field1 = document.getElementById('fieldset-1');
     const fieldset2 = document.getElementById('fieldset-2');
-    let canContinue = false;
-    const fnLength = this.state.firstname.length;
-    const lnLength = this.state.name.length;
-    const emailLength = this.state.email.length;
-    if (fnLength === 0) {
+    let isValidln = false;
+    let isValidfn = false;
+    let isValidemail = false;
+    const fn = this.state.firstname;
+    const ln = this.state.name;
+    const email = this.state.email;
+    const regex = '^[a-zA-Z0-9]+$';
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    var patt = new RegExp(regex);
+
+    console.log('voornaam is' + fn.match(regex));
+    if (fn.length === 0 && !fn.match(regex)) {
       this.setState(prevState => ({
         isFirstNameCorrect: !prevState.isFirstNameCorrect
       }));
     } else {
-      canContinue = true;
+      isValidln = true;
     }
-
-    if (lnLength < 2) {
+    console.log('achternaam is ' + patt.test(ln));
+    if (ln.length === 0 && !patt.test(ln)) {
       this.setState(prevState => ({
         isLastNameCorrect: !prevState.isLastNameCorrect
       }));
     } else {
-      canContinue = true;
+      isValidfn = true;
     }
-    if (emailLength === 0) {
+    console.log('email is' + re.test(String(email).toLowerCase()));
+    if (email.length === 0 && !re.test(String(email).toLowerCase())) {
       this.setState(prevState => ({
         isEmailCorrect: !prevState.isEmailCorrect
       }));
     } else {
-      canContinue = true;
+      isValidemail = true;
     }
-    if (canContinue) {
+    console.log(isValidln, isValidfn, isValidemail);
+    if (isValidln && isValidfn && isValidemail) {
       field1.style.display = 'none';
       fieldset2.style.display = 'flex';
     }

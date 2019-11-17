@@ -5,6 +5,7 @@ import Routing from './components/Routing/Routing';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import ModalOfferteStart from './components/ModalOfferte/ModalOfferteStart';
+import CallToAction from './components/CallToAction/CallToAction';
 
 class App extends Component {
   constructor(props) {
@@ -26,14 +27,14 @@ class App extends Component {
       <Router>
         <div>
           <Header activateOfferte={this.activateOfferte} />
-          <Routing />
+          <Routing activateOfferte={this.activateOfferte} />
           {isToggleOn ? (
             <ModalOfferteStart
               isToggleOn={this.state.isToggleOn}
               hideModal={this.hideModal}
             />
           ) : null}
-
+          <CallToAction activateOfferte={this.activateOfferte} />
           <Footer />
         </div>
       </Router>

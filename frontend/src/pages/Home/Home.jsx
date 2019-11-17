@@ -1,11 +1,9 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-
 import Landing from '../../components/landing/Landing';
 import ServiceAboutHome from '../../components/WhatWeDo/ServiceAboutHome';
 import Testimonials from '../../components/Testimonials/Testimonials';
 import ServiceHomePictures from '../../components/ServiceHomePictures/ServiceHomePictures';
-import CallToAction from '../../components/CallToAction/CallToAction';
 import { CircleArrow as ScrollUpButton } from 'react-scroll-up-button';
 import { Carousel, CarouselItem, Col, Grid, Row } from 'react-bootstrap';
 
@@ -51,7 +49,6 @@ class Home extends Component {
             </Col>
           </Row>
         </Grid>
-        <CallToAction />
         <ScrollUpButton />
       </div>
     );
