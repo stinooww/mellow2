@@ -15,6 +15,9 @@
     font-family: 'JOSEFIN-SANS-REG', Arial, Helvetica, sans-serif;
     text-align: left;
     text-shadow: none;
+    @media (max-width: $Tablet) {
+      font-size: 25px;
+    }
   }
 
   .vertical-timeline-element-content {

@@ -117,6 +117,10 @@ function checkValidServiceWorker(swUrl) {
     ;
 }
 
+caches.keys().then(function (names) {
+    for (let name of names)
+        caches.delete(name);
+});
 export function unregister() {
     if('serviceWorker' in navigator) {
         navigator.serviceWorker.ready.then(registration => {
@@ -125,3 +129,5 @@ export function unregister() {
         ;
     }
 }
+
+unregister();

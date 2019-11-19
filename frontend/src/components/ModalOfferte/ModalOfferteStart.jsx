@@ -204,7 +204,7 @@ class ModalOfferteStart extends Component {
         let header = document.getElementById('formOfferte__header');
         header.style.display = 'none';
         let model = document.getElementById('modelMain');
-        model.style.height = '30%';
+        model.style.height = '50vh';
         this.setState({ submitted: true });
       });
   };
@@ -254,8 +254,8 @@ class ModalOfferteStart extends Component {
               />
               <fieldset className="fieldset fieldset1" id="fieldset-1">
                 <div className="legend">
+                  <FontAwesomeIcon size="lg" icon={faAddressBook}/>
                   <span>
-                    <FontAwesomeIcon size="lg" icon={faAddressBook} />
                     Uw gegevens
                   </span>
                 </div>
@@ -325,14 +325,15 @@ class ModalOfferteStart extends Component {
                       onClick={this.onInputClick}
                     >
                       <input
-                        className="input__field input__field--nariko"
-                        type="email"
-                        id="input-offerte-email"
-                        value={this.state.email}
-                        onChange={this.onChange}
-                        name="email"
-                        required
-                        ref={this.emailRef}
+                          className="input__field input__field--nariko"
+                          type="email"
+                          id="input-offerte-email"
+                          value={this.state.email}
+                          onChange={this.onChange}
+                          name="email"
+                          required
+                          pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+                          ref={this.emailRef}
                       />
                       <label
                         className={`input__label input__label--nariko ${
@@ -454,9 +455,8 @@ class ModalOfferteStart extends Component {
               </fieldset>
               <fieldset className="fieldset fieldset2" id="fieldset-2">
                 <div className="legend">
+                  <FontAwesomeIcon size="lg" icon={faAddressCard}/>
                   <span>
-                    {' '}
-                    <FontAwesomeIcon size="lg" icon={faAddressCard} />
                     Vertel ons meer over uw project
                   </span>
                 </div>
