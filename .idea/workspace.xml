@@ -2,28 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12ea28b2-16cc-402e-8e6a-5180a58d3b5c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/Spinner/Spinner.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/styling/components/_Spinner.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/assets/img/smartmockups.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/ModalOfferte/ModalOfferteStart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ModalOfferte/ModalOfferteStart.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/images/back_layer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/images/backgroundLayer.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/images/blackLeather.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/images/blackLeather.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/images/frontLAYER.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/images/smartmockups2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/images/smartmockups3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/images/smartmockups4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/registerServiceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/registerServiceWorker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/components/_CallToAction.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/components/_CallToAction.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/components/_Timeline.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/components/_Timeline.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/components/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/components/_footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/components/_modalOfferte.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/components/_modalOfferte.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/pages/_Strategie.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/pages/_Strategie.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Portfolio/Portfolio.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Portfolio/Portfolio.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -183,14 +167,8 @@
       <workItem from="1573804110286" duration="453000" />
       <workItem from="1573805235663" duration="355000" />
       <workItem from="1573906373082" duration="4130000" />
-      <workItem from="1574166245485" duration="2633000" />
-    </task>
-    <task id="LOCAL-00023" summary="header + nieuwe pagina voor onz diensten etc etc">
-      <created>1557490360447</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1557490360447</updated>
+      <workItem from="1574166245485" duration="2682000" />
+      <workItem from="1574243816630" duration="1686000" />
     </task>
     <task id="LOCAL-00024" summary="onderhoud helemaal af">
       <created>1557730707610</created>
@@ -528,7 +506,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573805644438</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="more responsive +  cache issue + cta opent start een project + kleine improvements">
+      <created>1574169115393</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1574169115393</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -548,7 +533,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="npm update en beter contact formulier" />
     <MESSAGE value="contact form af + start diensten paginas - website" />
     <MESSAGE value="seo en sea" />
     <MESSAGE value="van alles en nog wa" />
@@ -573,7 +557,8 @@
     <MESSAGE value="seo rework" />
     <MESSAGE value="changes nederlands" />
     <MESSAGE value="cta" />
-    <option name="LAST_COMMIT_MESSAGE" value="cta" />
+    <MESSAGE value="more responsive +  cache issue + cta opent start een project + kleine improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="more responsive +  cache issue + cta opent start een project + kleine improvements" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
