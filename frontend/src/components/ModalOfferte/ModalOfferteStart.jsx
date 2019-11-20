@@ -203,7 +203,7 @@ class ModalOfferteStart extends Component {
         let header = document.getElementById('formOfferte__header');
         header.style.display = 'none';
         let model = document.getElementById('modelMain');
-        model.style.height = '30%';
+        model.style.height = '50vh';
         this.setState({ submitted: true });
       });
   };
@@ -253,10 +253,8 @@ class ModalOfferteStart extends Component {
               />
               <fieldset className="fieldset fieldset1" id="fieldset-1">
                 <div className="legend">
-                  <span>
-                    <FontAwesomeIcon size="lg" icon={faAddressBook} />
-                    Uw gegevens
-                  </span>
+                  <FontAwesomeIcon size="lg" icon={faAddressBook} />
+                  <span>Uw gegevens</span>
                 </div>
                 <Row className="show-grid form-group">
                   <Col md={6} xs={12} id="row-offerte-firstname">
@@ -331,6 +329,7 @@ class ModalOfferteStart extends Component {
                         onChange={this.onChange}
                         name="email"
                         required
+                        pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
                         ref={this.emailRef}
                       />
                       <label
@@ -453,11 +452,8 @@ class ModalOfferteStart extends Component {
               </fieldset>
               <fieldset className="fieldset fieldset2" id="fieldset-2">
                 <div className="legend">
-                  <span>
-                    {' '}
-                    <FontAwesomeIcon size="lg" icon={faAddressCard} />
-                    Vertel ons meer over uw project
-                  </span>
+                  <FontAwesomeIcon size="lg" icon={faAddressCard} />
+                  <span>Vertel ons meer over uw project</span>
                 </div>
                 <Row className="form-group clearfix">
                   <Col

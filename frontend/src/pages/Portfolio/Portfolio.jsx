@@ -3,6 +3,7 @@ import axios from 'axios';
 import { CircleArrow as ScrollUpButton } from 'react-scroll-up-button';
 import { Col, Grid, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import Spinner from '../../components/Spinner/Spinner';
 // https://www.youtube.com/watch?v=oQnojIyTXb8  voor axios
 var ES6Promise = require('es6-promise');
 ES6Promise.polyfill();
@@ -11,7 +12,8 @@ class Portfolio extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      portfolio: []
+      portfolio: [],
+      isLoading: false
     };
   }
 
@@ -25,13 +27,14 @@ class Portfolio extends Component {
       })
       .then(res => {
         this.setState({
+          isLoading: true,
           portfolio: res.data.data
         });
       });
   }
 
   render() {
-    const { portfolio } = this.state;
+    const { portfolio, isLoading } = this.state;
 
     return (
       <div className="PortfolioPage">
@@ -46,7 +49,9 @@ class Portfolio extends Component {
               <section className="section section-projects">
                 <div className="document-inset section-content">
                   <ul className="section-content__list">
-                    {portfolio &&
+                    {!isLoading && portfolio ? (
+                      <Spinner />
+                    ) : (
                       portfolio.map(project => (
                         <li key={project.id}>
                           <div className="table">
@@ -95,7 +100,8 @@ class Portfolio extends Component {
                             </div>
                           </div>
                         </li>
-                      ))}
+                      ))
+                    )}
                   </ul>
                 </div>
               </section>
