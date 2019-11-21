@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="12ea28b2-16cc-402e-8e6a-5180a58d3b5c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/Spinner/Spinner.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/styling/components/_Spinner.scss" afterDir="false" />
+    <list default="true" id="12ea28b2-16cc-402e-8e6a-5180a58d3b5c" name="Default Changelist" comment="loading animation">
+      <change afterPath="$PROJECT_DIR$/frontend/src/styling/pages/_Page404.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Portfolio/Portfolio.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Portfolio/Portfolio.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/CallToAction/CallToAction.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/CallToAction/CallToAction.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ModalOfferte/ModalOfferteStart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ModalOfferte/ModalOfferteStart.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Routing/Routing.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Routing/Routing.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Error/page404.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Error/page404.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/styling/components/_modalOfferte.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/components/_modalOfferte.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -168,14 +171,9 @@
       <workItem from="1573805235663" duration="355000" />
       <workItem from="1573906373082" duration="4130000" />
       <workItem from="1574166245485" duration="2682000" />
-      <workItem from="1574243816630" duration="1686000" />
-    </task>
-    <task id="LOCAL-00024" summary="onderhoud helemaal af">
-      <created>1557730707610</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1557730707610</updated>
+      <workItem from="1574243816630" duration="1796000" />
+      <workItem from="1574261275909" duration="2601000" />
+      <workItem from="1574278390801" duration="1245000" />
     </task>
     <task id="LOCAL-00025" summary="npm update en beter contact formulier">
       <created>1557925874088</created>
@@ -513,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574169115393</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="loading animation">
+      <created>1574245793421</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1574245793421</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -533,7 +538,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="contact form af + start diensten paginas - website" />
     <MESSAGE value="seo en sea" />
     <MESSAGE value="van alles en nog wa" />
     <MESSAGE value="home page responsive" />
@@ -558,7 +562,8 @@
     <MESSAGE value="changes nederlands" />
     <MESSAGE value="cta" />
     <MESSAGE value="more responsive +  cache issue + cta opent start een project + kleine improvements" />
-    <option name="LAST_COMMIT_MESSAGE" value="more responsive +  cache issue + cta opent start een project + kleine improvements" />
+    <MESSAGE value="loading animation" />
+    <option name="LAST_COMMIT_MESSAGE" value="loading animation" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

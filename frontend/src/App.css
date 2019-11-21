@@ -774,7 +774,7 @@ nav.navbar-default {
       font-size: 17px;
       margin-right: 25px;
       color: black; }
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 768px) and (max-width: 992px) {
     .modal-main {
       top: 45%;
       height: 100vh;
@@ -868,15 +868,17 @@ nav.navbar-default {
       font-size: 1.8em;
       font-weight: 100;
       line-height: 1em;
-      margin: 0;
+      margin: 0 0 0 30px;
       font-style: italic;
       padding: 0;
       width: 100%; }
       @media (max-width: 767px) {
         .form-offerte .fieldset .legend {
           text-align: left; } }
-      .form-offerte .fieldset .legend span svg {
+      .form-offerte .fieldset .legend svg {
         margin-right: 20px; }
+      .form-offerte .fieldset .legend h4 {
+        font-size: 21px; }
 
 .fieldset1 .form-group, .fieldset2 .form-group {
   margin: 0 10px; }
@@ -2525,3 +2527,33 @@ nav.navbar-default {
   40% {
     -webkit-transform: scale(1);
     transform: scale(1); } }
+
+.page_404 {
+  padding: 40px 0;
+  background: #fff; }
+
+.page_404 img {
+  width: 100%; }
+
+.four_zero_four_bg {
+  background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+  height: 400px;
+  background-position: center; }
+
+.four_zero_four_bg h1 {
+  font-size: 80px;
+  margin: 10px 0 30px 0;
+  padding: 0; }
+
+.link_404 {
+  color: #fff !important;
+  padding: 10px 20px;
+  background: #39ac31;
+  margin: 20px 0;
+  display: inline-block; }
+
+.contant_box_404 {
+  margin-top: -50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column; }

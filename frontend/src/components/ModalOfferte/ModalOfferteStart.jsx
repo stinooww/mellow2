@@ -255,9 +255,9 @@ class ModalOfferteStart extends Component {
               <fieldset className="fieldset fieldset1" id="fieldset-1">
                 <div className="legend">
                   <FontAwesomeIcon size="lg" icon={faAddressBook}/>
-                  <span>
+                  <h4>
                     Uw gegevens
-                  </span>
+                  </h4>
                 </div>
                 <Row className="show-grid form-group">
                   <Col md={6} xs={12} id="row-offerte-firstname">
