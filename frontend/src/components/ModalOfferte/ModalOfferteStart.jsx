@@ -136,12 +136,11 @@ class ModalOfferteStart extends Component {
     const fn = this.state.firstname;
     const ln = this.state.name;
     const email = this.state.email;
-    const regex = "^[a-zA-Z0-9]+$";
+    const regex = '^[a-zA-Z0-9]+$';
     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     var patt = new RegExp(regex);
 
-
-    console.log("voornaam is" + fn.match(regex));
+    console.log('voornaam is' + fn.match(regex));
     if (fn.length === 0 && !fn.match(regex)) {
       this.setState(prevState => ({
         isFirstNameCorrect: !prevState.isFirstNameCorrect
@@ -149,7 +148,7 @@ class ModalOfferteStart extends Component {
     } else {
       isValidln = true;
     }
-    console.log("achternaam is " + patt.test(ln));
+    console.log('achternaam is ' + patt.test(ln));
     if (ln.length === 0 && !patt.test(ln)) {
       this.setState(prevState => ({
         isLastNameCorrect: !prevState.isLastNameCorrect
@@ -157,7 +156,7 @@ class ModalOfferteStart extends Component {
     } else {
       isValidfn = true;
     }
-    console.log("email is" + re.test(String(email).toLowerCase()));
+    console.log('email is' + re.test(String(email).toLowerCase()));
     if (email.length === 0 && !re.test(String(email).toLowerCase())) {
       this.setState(prevState => ({
         isEmailCorrect: !prevState.isEmailCorrect
@@ -254,10 +253,8 @@ class ModalOfferteStart extends Component {
               />
               <fieldset className="fieldset fieldset1" id="fieldset-1">
                 <div className="legend">
-                  <FontAwesomeIcon size="lg" icon={faAddressBook}/>
-                  <h4>
-                    Uw gegevens
-                  </h4>
+                  <FontAwesomeIcon size="lg" icon={faAddressBook} />
+                  <h4>Uw gegevens</h4>
                 </div>
                 <Row className="show-grid form-group">
                   <Col md={6} xs={12} id="row-offerte-firstname">
@@ -325,15 +322,15 @@ class ModalOfferteStart extends Component {
                       onClick={this.onInputClick}
                     >
                       <input
-                          className="input__field input__field--nariko"
-                          type="email"
-                          id="input-offerte-email"
-                          value={this.state.email}
-                          onChange={this.onChange}
-                          name="email"
-                          required
-                          pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
-                          ref={this.emailRef}
+                        className="input__field input__field--nariko"
+                        type="email"
+                        id="input-offerte-email"
+                        value={this.state.email}
+                        onChange={this.onChange}
+                        name="email"
+                        required
+                        pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+                        ref={this.emailRef}
                       />
                       <label
                         className={`input__label input__label--nariko ${
@@ -438,7 +435,7 @@ class ModalOfferteStart extends Component {
                       Gelieve alle verplichte velden in te vullen
                     </p>
                   </Col>
-                  <Col md={6} xs={12}>
+                  <Col md={4} xs={12}>
                     <Button
                       className="btn-step mellow-btn uppercase"
                       onClick={this.onContinueClick}
@@ -455,10 +452,8 @@ class ModalOfferteStart extends Component {
               </fieldset>
               <fieldset className="fieldset fieldset2" id="fieldset-2">
                 <div className="legend">
-                  <FontAwesomeIcon size="lg" icon={faAddressCard}/>
-                  <span>
-                    Vertel ons meer over uw project
-                  </span>
+                  <FontAwesomeIcon size="lg" icon={faAddressCard} />
+                  <span>Vertel ons meer over uw project</span>
                 </div>
                 <Row className="form-group clearfix">
                   <Col

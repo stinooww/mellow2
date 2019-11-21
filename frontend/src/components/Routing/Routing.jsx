@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route, Switch} from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import Home from '../../pages/Home/Home';
 import Strategie from '../../pages/Strategie/Strategie';
 import Portfolio from '../../pages/Portfolio/Portfolio';
@@ -13,48 +13,27 @@ import Grafisch from '../../pages/Diensten/Grafisch';
 import Webhosting from '../../pages/Diensten/Webhosting';
 import Page404 from '../../pages/Error/page404';
 
-const Routing = ({activateOfferte}) => (
-    <Switch>
-        <Route exact path="/">
-            <Home/>
-        </Route>
-        <Route exact path="/home">
-            <Home/>
-        </Route>
-        <Route path="/strategie">
-            <Strategie/>
-        </Route>
-        <Route path="/portfolio">
-            <Portfolio/>
-        </Route>
-        <Route path="/portfolioitem/:id">
-            <PortfolioItem/>
-        </Route>
-        <Route path="/diensten/website">
-            <Website/>
-        </Route>
-        <Route path="/diensten/seo">
-            <SEO/>
-        </Route>
-        <Route path="/diensten/grafisch">
-            <Grafisch/>
-        </Route>
-        <Route path="/diensten/webhosting">
-            <Webhosting activateOfferte={activateOfferte}/>
-        </Route>
-        <Route path="/about">
-            <About/>
-        </Route>
-        <Route path="/contact">
-            <Contact/>
-        </Route>
-        <Route path="/algemenevoorwaarde">
-            <Av/>
-        </Route>
-        <Route path="*">
-            <Page404/>
-        </Route>
-    </Switch>
+const Routing = ({ activateOfferte }) => (
+  <div>
+    <Route path="/" exact component={Home} />
+    <Route path="/home" exact component={Home} />
+    <Route path="/strategie" component={Strategie} />
+    <Route path="/portfolioitem/:id" component={PortfolioItem} />
+    <Route path="/diensten/website" component={Website} />
+    <Route path="/diensten/seo" component={SEO} />
+    <Route path="/diensten/grafisch" component={Grafisch} />
+    <Route
+      path="/diensten/webhosting"
+      component={Webhosting}
+      activateOfferte={activateOfferte}
+    />
+    <Route path="/about" component={About} />
+    <Route path="/contact" component={Contact} />
+    <Route path="/algemenevoorwaarde" component={Av} />
+    <Route path="/portfolio" component={Portfolio} />
+    {/*<Route component={page404}/>*/}
+    {/*<Route render={() => <Page404 />}/>*/}
+  </div>
 );
 
 export default Routing;

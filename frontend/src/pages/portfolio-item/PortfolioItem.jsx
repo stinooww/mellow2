@@ -2,12 +2,9 @@ import React, { Component } from 'react';
 import { Col, Grid, Image, Row } from 'react-bootstrap';
 import scrollmagic from 'scrollmagic';
 import { CircleArrow as ScrollUpButton } from 'react-scroll-up-button';
-import { Link } from 'react-router-dom';
 import ReactHtmlParser from 'react-html-parser';
-
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import CallToAction from '../../components/CallToAction/CallToAction';
 import { Controller, Scene } from 'react-scrollmagic';
 import { Timeline, Tween } from 'react-gsap';
 import axios from 'axios';
@@ -18,6 +15,7 @@ import PortfolioTestimonial from '../../components/PortfolioTestimonial/Portfoli
 AOS.init();
 
 class PortfolioItem extends Component {
+  _isMounted = false;
   constructor(props) {
     super(props);
     this.controller = new scrollmagic.Controller({
@@ -30,27 +28,36 @@ class PortfolioItem extends Component {
       portfolio: {},
       links: {}
     };
-    //  this.handleClick = this.handleClick.bind(this);
   }
 
   componentDidMount() {
+    this._isMounted = true;
     const projectId = this.props.match.params.id;
     const url = 'https://api.mellowwebdesign.be/api/portfolio/' + projectId;
 
     axios.get(url).then(res => {
-      this.setState({
-        portfolio: res.data.attributes,
-        links: res.data.links
-      });
+      if (this._isMounted) {
+        this.setState({
+          portfolio: res.data.attributes,
+          links: res.data.links
+        });
+      }
     });
-    // create a scene
-    new scrollmagic.Scene({ triggerElement: '#parallax' })
-      .setTween('#innerParalax', {
-        y: '80%',
-        ease: 'Linear.easeNone'
-      })
-      .addIndicators()
-      .addTo(this.controller);
+    if (this._isMounted) {
+      // create a scene
+      new scrollmagic.Scene({ triggerElement: '#parallax' })
+        .setTween('#innerParalax', {
+          y: '80%',
+          ease: 'Linear.easeNone'
+        })
+        .addIndicators()
+        .addTo(this.controller);
+    }
+    window.scrollTo(0, 0);
+  }
+
+  componentWillUnmount() {
+    this._isMounted = false;
   }
 
   render() {
