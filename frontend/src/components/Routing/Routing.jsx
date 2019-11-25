@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import Home from '../../pages/Home/Home';
 import Strategie from '../../pages/Strategie/Strategie';
 import Portfolio from '../../pages/Portfolio/Portfolio';
@@ -11,7 +11,6 @@ import Website from '../../pages/Diensten/Website';
 import SEO from '../../pages/Diensten/SEO';
 import Grafisch from '../../pages/Diensten/Grafisch';
 import Webhosting from '../../pages/Diensten/Webhosting';
-import Page404 from '../../pages/Error/page404';
 
 const Routing = ({ activateOfferte }) => (
   <div>
