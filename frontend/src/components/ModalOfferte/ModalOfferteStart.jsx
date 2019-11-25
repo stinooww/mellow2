@@ -254,7 +254,7 @@ class ModalOfferteStart extends Component {
               <fieldset className="fieldset fieldset1" id="fieldset-1">
                 <div className="legend">
                   <FontAwesomeIcon size="lg" icon={faAddressBook} />
-                  <span>Uw gegevens</span>
+                  <h4>Uw gegevens</h4>
                 </div>
                 <Row className="show-grid form-group">
                   <Col md={6} xs={12} id="row-offerte-firstname">
@@ -435,7 +435,7 @@ class ModalOfferteStart extends Component {
                       Gelieve alle verplichte velden in te vullen
                     </p>
                   </Col>
-                  <Col md={6} xs={12}>
+                  <Col md={4} xs={12}>
                     <Button
                       className="btn-step mellow-btn uppercase"
                       onClick={this.onContinueClick}

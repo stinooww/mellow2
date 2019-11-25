@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import { Route, Switch } from 'react-router-dom';
 import './App.css';
-import { BrowserRouter as Router } from 'react-router-dom';
 import Routing from './components/Routing/Routing';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import ModalOfferteStart from './components/ModalOfferte/ModalOfferteStart';
 import CallToAction from './components/CallToAction/CallToAction';
+import Page404 from './pages/Error/page404';
 
 class App extends Component {
   constructor(props) {
@@ -24,20 +25,24 @@ class App extends Component {
   render() {
     const { isToggleOn } = this.state;
     return (
-      <Router>
-        <div>
-          <Header activateOfferte={this.activateOfferte} />
-          <Routing activateOfferte={this.activateOfferte} />
-          {isToggleOn ? (
-            <ModalOfferteStart
-              isToggleOn={this.state.isToggleOn}
-              hideModal={this.hideModal}
-            />
-          ) : null}
-          <CallToAction activateOfferte={this.activateOfferte} />
-          <Footer />
-        </div>
-      </Router>
+      <div>
+        <Header activateOfferte={this.activateOfferte} />
+        <Routing activateOfferte={this.activateOfferte} />
+
+        {isToggleOn ? (
+          <ModalOfferteStart
+            isToggleOn={this.state.isToggleOn}
+            hideModal={this.hideModal}
+          />
+        ) : null}
+        {/*<Switch>*/}
+        {/*  <Route path="*">*/}
+        {/*    <Page404/>*/}
+        {/*  </Route>*/}
+        {/*</Switch>*/}
+        <CallToAction activateOfferte={this.activateOfferte} />
+        <Footer />
+      </div>
     );
   }
 }

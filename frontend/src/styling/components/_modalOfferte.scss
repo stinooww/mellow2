@@ -60,10 +60,8 @@
   }
 
 
-
-
-  @media (min-width: $Tablet) and (max-width: $smallLaptop) {
-    top: 45%;
+  @media (min-width: $Tablet) and (max-width: $smallerLaptop) {
+    top: 51%;
     height: 100vh;
     overflow-y: scroll;
   }
@@ -176,13 +174,12 @@
     }
 
     .legend {
-
       display: flex;
       text-align: center;
       font-size: 1.8em;
       font-weight: 100;
       line-height: 1em;
-      margin: 0;
+      margin: 0 0 0 30px;
       font-style: italic;
       padding: 0;
       width: 100%;
@@ -190,10 +187,12 @@
         text-align: left;
       }
 
-      span {
-        svg {
-          margin-right: 20px;
-        }
+      svg {
+        margin-right: 20px;
+      }
+
+      h4 {
+        font-size: 21px;
       }
     }
   }

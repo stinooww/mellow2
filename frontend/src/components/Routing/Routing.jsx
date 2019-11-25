@@ -11,7 +11,6 @@ import Website from '../../pages/Diensten/Website';
 import SEO from '../../pages/Diensten/SEO';
 import Grafisch from '../../pages/Diensten/Grafisch';
 import Webhosting from '../../pages/Diensten/Webhosting';
-import Page404 from '../../pages/Error/page404';
 
 const Routing = ({ activateOfferte }) => (
   <div>

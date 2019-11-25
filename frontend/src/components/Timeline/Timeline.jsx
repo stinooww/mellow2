@@ -39,10 +39,10 @@ const Timeline = () => (
                 Verkennend gesprek
               </h3>
               <p>
-                {' '}
-                In ons verkennend gesprek, luisteren we naar uw verhaal, uw
-                noden en de grootte van het project. Waarbij we vooral aandacht
-                besteden aan de beste oplossing voor uw project.
+                In een eerste verkennend gesprek luisteren we naar uw verhaal,
+                uw noden en bepalen we de grootte van het project. Zodra we uw
+                verwachtingen in kaart hebben gebracht, kunnen we het gepaste
+                voorstel uitwerken.
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
