@@ -11,7 +11,8 @@ import {
   faLaptopCode,
   faLaptop,
   faProjectDiagram,
-  faUserFriends
+  faUserFriends,
+  faCalculator
 } from '@fortawesome/free-solid-svg-icons';
 //https://stephane-monnot.github.io/react-vertical-timeline/#/
 // https://github.com/FortAwesome/react-fontawesome
@@ -47,6 +48,22 @@ const Timeline = () => (
             </VerticalTimelineElement>
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
+              date="Prijs offerte"
+              iconStyle={{
+                background: 'rgb(33, 150, 243)',
+                color: '#fff'
+              }}
+              icon={<FontAwesomeIcon icon={faCalculator} />}
+            >
+              <h3 className="vertical-timeline-element-title">Prijsofferte</h3>
+              <p>
+                U ontvangt binnen de week na het verkennend gesprek een eerste
+                prijsofferte. Deze is uiteraard steeds bespreekbaar en kan
+                aangepast worden waar nodig.
+              </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
               date="Ontdekking fase"
               iconStyle={{
                 background: 'rgb(33, 150, 243)',
@@ -58,11 +75,11 @@ const Timeline = () => (
                 Diepgaand gesprek
               </h3>
               <p>
-                Als we verder gaan vanuit het verkennend gesprek. Stellen we
-                allerlei vragen om een beter beeld te kunnen vormen van uw
-                onderneming en wie uw klanten zijn. Dit zorgt ervoor dat we ons
-                een beter beeld kunnen vormen die de fundering is om het project
-                succesvol te maken.
+                Zodra we een akkoord hebben ontvangen op de prijsofferte,
+                plannen we een tweede gesprek in, waarbij we allerelei vragen
+                stellen over uw onderneming en uw klanten. Als wij uw
+                onderneming en verwachtingen duidelijk in kaart hebben gebracht,
+                is de basis alavast gelegd om uw project succesvol maken.
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
@@ -76,10 +93,10 @@ const Timeline = () => (
             >
               <h3 className="vertical-timeline-element-title">Prototype </h3>
               <p>
-                Ons eerste afgeleverd product is het design of prototype waarbij
-                u als klant volledig kan becommentariëren wat u goed / slecht
-                vindt en aangepast moet worden. Hierna bekijken we dit samen om
-                ons voor te bereiden op het eind product.
+                Het eerste product dat we opleveren is het design of prototype,
+                waarbij u alvast de eerste feedback kan geven. Zo weten wij of
+                we volgens uw verwachtingen aan het werken zijn, en kunnen we
+                bijsturen waar nodig.
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
@@ -95,9 +112,10 @@ const Timeline = () => (
                 Het eind product{' '}
               </h3>
               <p>
-                Na de feedback momenten werken we aan het product tot dit
-                volledig klaar is. Dit volledig getest op verschillende
-                browsers, om uiteindelijk een mooi eindproduct te bekomen.
+                Op basis van uw feedback werken wij verder op het prototype, tot
+                we uiteindelijk een volwaardig eindproduct hebben. We doen de
+                nodige testen op verschillende browsers en presenteren u het
+                finale resultaat.
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
@@ -113,8 +131,10 @@ const Timeline = () => (
                 Doorlopende support
               </h3>
               <p>
-                Bij vele producten die we aanbieden hoort doorlopende support om
-                ervoor te zorgen dat alles optimaal blijft werken.
+                We bieden onze klanten ook nà de oplevering de nodige support,
+                om ervoor te zorgen dat alles optimaal blijft werken. Technsiche
+                ondersteuning zoals onderhoud en updates van uw website, zijn
+                standaard inbegrepen in onze service.
               </p>
             </VerticalTimelineElement>
           </VerticalTimeline>

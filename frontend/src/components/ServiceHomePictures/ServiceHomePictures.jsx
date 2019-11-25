@@ -9,7 +9,7 @@ const ServiceHomePictures = () => (
           <div className="col-md-12">
             <h2>
               Wij zijn gespecialiseerd in webdesign,
-              <span> en denken mee met jou </span>
+              <span> en denken mee met u </span>
               om de beste oplossing op maat te vinden!{' '}
             </h2>
           </div>

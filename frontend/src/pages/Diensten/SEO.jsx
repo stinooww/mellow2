@@ -21,9 +21,7 @@ class SEO extends Component {
   render() {
     let tooltip2 = (
       <Tooltip>
-        <strong>
-          De tekst die je krijgt te zien in bij de zoekresultaten.
-        </strong>{' '}
+        <strong>De tekst die u krijgt te zien in bij de zoekresultaten.</strong>{' '}
         Deze moet m.a.w. goed geschreven zijn, kernwoorden bevatten en ook nog
         eens aanzetten tot doorklikken.
       </Tooltip>
@@ -56,7 +54,7 @@ class SEO extends Component {
     return (
       <div className="PortfolioPage seo">
         <Helmet>
-          <title>seo optimalisatie - mellow webdesign development</title>
+          <title>Seo optimalisatie - mellow webdesign development</title>
         </Helmet>
         <Grid>
           <Row className="section--belang">
@@ -64,7 +62,7 @@ class SEO extends Component {
               <h2>Het belang van eerste te staan in Google</h2>
               <p>
                 We gebruiken allemaal regelmatig bekende zoekmachines zoals Bing
-                of Google. Je zit bijvoorbeeld met een vraag of je wilt de
+                of Google. U zit bijvoorbeeld met een vraag of u wilt de
                 openingsuren van een plek te weten komen.
               </p>
               <Image className="img-google" src={Google} responsive />
@@ -73,9 +71,9 @@ class SEO extends Component {
                 Daarom is het belangrijk om zo hoog mogelijk te scoren in deze
                 zoekmachines. Want je wilt niet op de 2de of 3de pagina
                 verschijnen in de zoekresultaten ... want laten we eerlijk zijn,
-                daar kijkt bijna niemand op. Je wil liefst op de eerste plaats
-                verschijnen als men een antwoord zoekt waarop jij een oplossing
-                kan bieden!{' '}
+                daar kijkt bijna niemand op. U wilt liefst op de eerste plaats
+                verschijnen als men een antwoord zoekt waarop u een oplossing
+                kan bieden!
               </p>
             </Col>
           </Row>
@@ -95,12 +93,12 @@ class SEO extends Component {
                   <p>
                     <br />
                     We starten met een keyword-analyse. Dit doen we om de
-                    trefwoorden te zoeken die je potentiële klanten gebruiken in
+                    trefwoorden te zoeken die uw potentiële klanten gebruiken in
                     Google en met welke woorden jijzelf hoog wil scoren.
                   </p>
                   <p>
                     <br />
-                    Zo kunnen we jouw ideale doelgroep op je website laten
+                    Zo kunnen we jouw ideale doelgroep op uw website laten
                     belanden.
                   </p>
                 </article>
@@ -116,8 +114,8 @@ class SEO extends Component {
                   </strong>
                   <p>
                     <br />
-                    We bekijken de content die zich op je website zich bevind
-                    zoals zoekwoorden in titels en teksten en passen dit aan.
+                    We bekijken de content die zich op uw website bevinden zoals
+                    zoekwoorden in titels en teksten en passen dit aan.
                     <br />
                   </p>
                   <br />
@@ -155,7 +153,7 @@ class SEO extends Component {
                     <br />
                     Tenslotte voegen we verschillende stukjes code toe aan de
                     website, zodat de zoek robots van Google gemakelijker door
-                    jouw website kunnen navigeren.
+                    uw website kunnen navigeren.
                     <br />
                   </p>
                 </article>
@@ -163,37 +161,20 @@ class SEO extends Component {
             </Col>
             <Col md={12}>
               <p className="text-center">
-                {' '}
-                Op deze manier krijg je meer bezoekers en scoor je hoger in
-                Google, <br />
-                wat jou ook weer meer bezoekers en dus potentiële klanten
+                Op deze manier krijgt u meer bezoekers en scoort uw site hoger
+                in Google, <br />
+                wat uw ook weer meer bezoekers en dus potentiële klanten
                 oplevert.
               </p>
             </Col>
           </Row>
-          {/*<Row>*/}
-          {/*  <Col lg={12}>*/}
-          {/*    <Col xs={12} className="seoDescription-wrapper">*/}
-          {/*      <Image className="img-seo" src={Graphic} responsive/>*/}
-          {/*    </Col>*/}
-          {/*    <p>*/}
-          {/*      Heb je toch meer interesse in Goolge advertising?*/}
-          {/*      <br />{' '}*/}
-          {/*      <a className="sea-link" href="#sea">*/}
-          {/*        Dan kan je inzetten op een SEA-campagne*/}
-          {/*      </a>*/}
-          {/*      .*/}
-          {/*    </p>*/}
-
-          {/*  </Col>*/}
-          {/*</Row>*/}
         </Grid>
         <div data-aos="zoom-in-down" className="container-fluid">
           <Row className="seo-cta">
             <Col md={6} sm={12}>
-              <h2>Wil je graag weten hoe jouw website er voor staat?</h2>
+              <h2>Wilt u graag weten hoe uw website er voor staat?</h2>
               <p>
-                Vul dan hier je gegevens in, wij kijken je website grondig na en
+                Vul dan hier uw gegevens in, wij kijken uw website grondig na en
                 sturen een volledig analyse rapport samen met een offerte naar u
                 op!
               </p>
@@ -207,30 +188,28 @@ class SEO extends Component {
             <Col md={12}>
               <h2>Snel gezien met SEA</h2>
               <p>
-                Dankzij SEA (Search Engine Advertising) verschijnt jouw
-                boodschap , jouw aanwezigheid op Google helemaal bovenaan. Je
-                kiest zelf welke zoektermen het meest relevant zijn voor je
-                bedrijf en die je advertentie kan triggeren.
+                Dankzij SEA (Search Engine Advertising) verschijnt uw boodschap
+                , uw aanwezigheid op Google helemaal bovenaan. U kiest zelf
+                welke zoektermen het meest relevant zijn voor uw bedrijf en die
+                uw advertentie kan triggeren.
                 <br />
                 <strong>
-                  {' '}
-                  Voor deze advertenties betaal je dus alleen als iemand op jouw
+                  Voor deze advertenties betaalt u dus alleen als iemand op uw
                   advertentie klikt!{' '}
                 </strong>
               </p>
               <p>
-                Concreet gaan we een zeer doelgerichte advertensie voor je
+                Concreet gaan we een zeer doelgerichte advertensie voor uw
                 website maken waarbij we rekening houden met enkele parameters
-                zoals locatie, apparaat en de termen waar je op gevonden wil
-                worden. Je krijgt hier ook zeer snel resultaten van, die een
+                zoals locatie, apparaat en de termen waarop u gevonden wil
+                worden. U krijgt hier ook zeer snel resultaten van, die een
                 groot voordeel zijn van pay-per-clickadvertenties.
               </p>
             </Col>
             <Col md={12}>
               <p className="sea-shoutout">
-                {' '}
                 Het is dus een vlotte en efficiënte manier om meer bezoekers,
-                inclusief nieuwe klanten, naar jouw website te leiden!
+                inclusief nieuwe klanten, naar uw website te leiden!
               </p>
             </Col>
           </Row>

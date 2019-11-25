@@ -12,7 +12,7 @@ const Webhosting = ({ activateOfferte }) => (
       <Col xs={12} className="onderhoud__expl">
         <p>
           Een website maken stopt niet bij de ontwikkeling ervan. Ook na de
-          lancering is het belangrijk dat je website goed wordt onderhouden.
+          lancering is het belangrijk dat uw website goed wordt onderhouden.
           Hiervoor bieden we een onderhoudspakket aan. Dit is nodig omdat in de
           website verschillende plugins steken die zorgen voor allerlei
           functionaliteit van de website. Deze moeten op regelmatige basis
@@ -20,16 +20,15 @@ const Webhosting = ({ activateOfferte }) => (
         </p>
 
         <p>
-          Ook zorgen we ervoor dat je website beschermt is tegen hackers om te
-          voorkomen dat cyberaanvallen je website offline halen. We nemen
+          Ook zorgen we ervoor dat uw website beschermt is tegen hackers om te
+          voorkomen dat cyberaanvallen uw website offline halen. We nemen
           bovendien regelmatig een backup zodat we altijd een kopie hebben van
-          je website en deze dus nooit verloren kan gaan.
+          uw website en deze dus nooit verloren kan gaan.
         </p>
         <p>
-          {' '}
           Tevens zitten in een onderhoudspakket ook kleine aanpassingen
-          inbegrepen aan de website zelf: wil je graag een afbeelding
-          veranderen, of dat stukje tekst over jezelf aanpassen. Dit doen we
+          inbegrepen aan de website zelf: wilt u graag een afbeelding
+          veranderen, of dat stukje tekst over uwzelf aanpassen. Dit doen we
           kosteloos!
         </p>
       </Col>
