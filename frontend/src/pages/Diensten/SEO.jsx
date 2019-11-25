@@ -168,22 +168,6 @@ class SEO extends Component {
               </p>
             </Col>
           </Row>
-          {/*<Row>*/}
-          {/*  <Col lg={12}>*/}
-          {/*    <Col xs={12} className="seoDescription-wrapper">*/}
-          {/*      <Image className="img-seo" src={Graphic} responsive/>*/}
-          {/*    </Col>*/}
-          {/*    <p>*/}
-          {/*      Heb je toch meer interesse in Goolge advertising?*/}
-          {/*      <br />{' '}*/}
-          {/*      <a className="sea-link" href="#sea">*/}
-          {/*        Dan kan je inzetten op een SEA-campagne*/}
-          {/*      </a>*/}
-          {/*      .*/}
-          {/*    </p>*/}
-
-          {/*  </Col>*/}
-          {/*</Row>*/}
         </Grid>
         <div data-aos="zoom-in-down" className="container-fluid">
           <Row className="seo-cta">
