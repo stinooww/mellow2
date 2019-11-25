@@ -22,29 +22,25 @@ const Website = () => (
     <Grid>
       <Row>
         <Col xs={12} className="waarom-website-txt">
-          <h2> Waarom zou je een website nodig hebben voor je onderneming?</h2>
+          <h2> Waarom zou u een website nodig hebben voor uw onderneming?</h2>
           <p>
-            Een website zorgt ervoor dat jij als ondernemer altijd online bent
+            Een website zorgt ervoor dat u als ondernemer altijd online bent
             vertegenwoordigd.
           </p>
+
           <p>
-            {' '}
-            Het geeft je een eigen identiteit, je online visite kaartje zeg
-            maar.{' '}
-          </p>
-          <p>
-            Wij proberen hierbij zo goed mogelijk jouw idee of wat je doet te
-            visualiseren <br /> en op een boeiende manier aan al je toekomstige
-            bezoekers duidelijk te maken wat je doet.
+            Het geeft een eigen identiteit en is een digitaal visitekaartje. Wij
+            proberen hierbij zo goed mogelijk uw idee te visualiseren en op een
+            boeiende manier aan al uw toekomstige bezoekers duidelijk te maken
+            wat uw bedrijf doet.
           </p>
           <strong>
-            {' '}
-            Want in een wereld van verandering is een digtale aanwezigheid
-            belangrijk!{' '}
+            Want in een wereld van verandering is een digitale aanwezigheid
+            belangrijk!
           </strong>
           <p>
-            Heb je nog geen website of ben je niet 100% tevreden van je huidige
-            website? Dan lossen wij dit graag voor je op.
+            Hebt u nog geen website of bent u niet 100% tevreden van uw huidige
+            website? Dan lossen wij dit graag voor u op.
           </p>
         </Col>
       </Row>
@@ -65,7 +61,7 @@ const Website = () => (
           // data-aos="fade-up-left"
           // data-aos-mirror="true"
         >
-          <h3>Jouw website mobiel beschikbaar!</h3>
+          <h3>Uw website mobiel beschikbaar!</h3>
           <p>
             In een tijdperk waarin smartphones niet meer weg te denken zijn uit
             ons dagelijks leven, is een mobiele website een absolute must !
@@ -74,19 +70,19 @@ const Website = () => (
             <strong>
               Wist u dat meer dan 60 procent van de websitebezoekers...
             </strong>{' '}
-            jouw website zal bezoeken met een smartphone of Ipad?
+            uw website zal bezoeken met een smartphone of Ipad?
           </p>
           <p>
-            Mobile beschikbare websites scoren bovendien ook beter bij Google
-            dan niet mobiele websites.
+            Mobile beschikbare websites scoren bovendien ook hoger in de
+            ranglijst van Google.
           </p>
         </Col>
       </Row>
       <Row>
         <Col xs={12} className="website__besluit">
           <h3 className="text-center">
-            Dus als jouw website niet responsief is tegenover die van jouw
-            concurrent, dan geeft Google voorrang aan jouw concurrent!
+            Dus als uw website niet responsief is tegenover die van uw
+            concurrent, dan geeft Google voorrang aan uw concurrent!
           </h3>
         </Col>
       </Row>

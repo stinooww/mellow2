@@ -7,7 +7,7 @@ import axios from 'axios';
 
 const SeoAnalyse = () => (
   <Col md={6} sm={12}>
-    <h4>Vul je gegevens in en wij sturen je een GRATIS SEO analyse op!</h4>
+    <h4>Vul uw gegevens in en wij sturen u een GRATIS SEO analyse op!</h4>
     <br />
     <SEOwebsiteAnalyseForm
       user={{
