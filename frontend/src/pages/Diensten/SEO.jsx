@@ -62,7 +62,7 @@ class SEO extends Component {
               <h2>Het belang van eerste te staan in Google</h2>
               <p>
                 We gebruiken allemaal regelmatig bekende zoekmachines zoals Bing
-                of Google. Je zit bijvoorbeeld met een vraag of je wilt de
+                of Google. U zit bijvoorbeeld met een vraag of u wilt de
                 openingsuren van een plek te weten komen.
               </p>
               <Image className="img-google" src={Google} responsive />
@@ -71,8 +71,8 @@ class SEO extends Component {
                 Daarom is het belangrijk om zo hoog mogelijk te scoren in deze
                 zoekmachines. Want je wilt niet op de 2de of 3de pagina
                 verschijnen in de zoekresultaten ... want laten we eerlijk zijn,
-                daar kijkt bijna niemand op. Je wilt liefst op de eerste plaats
-                verschijnen als men een antwoord zoekt waarop jij een oplossing
+                daar kijkt bijna niemand op. U wilt liefst op de eerste plaats
+                verschijnen als men een antwoord zoekt waarop u een oplossing
                 kan bieden!
               </p>
             </Col>
