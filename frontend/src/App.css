@@ -196,7 +196,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .testimonials {
-    min-height: 700px;
+    min-height: 500px;
   }
 }
 
@@ -1323,6 +1323,12 @@ nav.navbar-default .container {
   text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+  .person-wrapper {
+    height: 35vh;
+  }
+}
+
 .person-wrapper .show-grid {
   padding-bottom: 30px;
 }
@@ -1354,7 +1360,7 @@ nav.navbar-default .container {
   top: 222px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .person-wrapper .testimonial-carousel .carousel-indicators {
     display: none;
   }
@@ -1410,13 +1416,7 @@ nav.navbar-default .container {
 .weetjes {
   margin-bottom: 50px;
   display: flex;
-  flex-direction: column;
-}
-
-@media (min-width: 768px) {
-  .weetjes {
-    flex-direction: row;
-  }
+  flex-wrap: wrap;
 }
 
 .weetjes .service-tile {
@@ -1426,13 +1426,31 @@ nav.navbar-default .container {
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  .weetjes .service-tile {
+    margin-top: 45px;
+  }
+}
+
 .weetjes .service-tile h2 {
   color: black;
   margin-top: 83px;
 }
 
+@media (max-width: 768px) {
+  .weetjes .service-tile h2 {
+    margin-top: 35px;
+  }
+}
+
 .weetjes .service-tile .webdesign {
   margin-top: 45px;
+}
+
+@media (max-width: 768px) {
+  .weetjes .service-tile .webdesign {
+    margin-top: 5px;
+  }
 }
 
 .weetjes p {
