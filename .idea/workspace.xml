@@ -4,13 +4,9 @@
     <list default="true" id="12ea28b2-16cc-402e-8e6a-5180a58d3b5c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/SEOanalyse/SeoAnalyse.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/SEOanalyse/SeoAnalyse.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/ServiceHomePictures/ServiceHomePictures.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ServiceHomePictures/ServiceHomePictures.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Timeline/Timeline.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Timeline/Timeline.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Diensten/SEO.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Diensten/SEO.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Diensten/Webhosting.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Diensten/Webhosting.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Diensten/Website.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Diensten/Website.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/components/_Timeline.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/components/_Timeline.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/_buttons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/styling/components/_PortfolioItem.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/components/_PortfolioItem.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -176,35 +172,8 @@
       <workItem from="1574278390801" duration="9827000" />
       <workItem from="1574613846683" duration="632000" />
       <workItem from="1574687931344" duration="543000" />
-      <workItem from="1574709263596" duration="2060000" />
-    </task>
-    <task id="LOCAL-00028" summary="seo en sea">
-      <created>1558083068745</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1558083068745</updated>
-    </task>
-    <task id="LOCAL-00029" summary="seo en sea">
-      <created>1559551301833</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1559551301833</updated>
-    </task>
-    <task id="LOCAL-00030" summary="van alles en nog wa">
-      <created>1559739799675</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1559739799675</updated>
-    </task>
-    <task id="LOCAL-00031" summary="home page responsive">
-      <created>1560410089262</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1560410089262</updated>
+      <workItem from="1574709263596" duration="2627000" />
+      <workItem from="1574771976256" duration="2010000" />
     </task>
     <task id="LOCAL-00032" summary="home page responsive + al de andere paginas + portfolio item pagina">
       <created>1560432403547</created>
@@ -521,7 +490,35 @@
       <option name="project" value="LOCAL" />
       <updated>1574709467731</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="404 en alles">
+      <created>1574711583658</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1574711583658</updated>
+    </task>
+    <task id="LOCAL-00078" summary="404 en alles">
+      <created>1574711634245</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1574711634246</updated>
+    </task>
+    <task id="LOCAL-00079" summary="404 en alles">
+      <created>1574711659000</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1574711659000</updated>
+    </task>
+    <task id="LOCAL-00080" summary="more responsive etc">
+      <created>1574775154490</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1574775154490</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -541,7 +538,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="home page responsive" />
     <MESSAGE value="home page responsive + al de andere paginas + portfolio item pagina" />
     <MESSAGE value="contact styling" />
     <MESSAGE value="seo en sea development en styling" />
@@ -566,7 +562,8 @@
     <MESSAGE value="loading animation" />
     <MESSAGE value="404" />
     <MESSAGE value="404 en alles" />
-    <option name="LAST_COMMIT_MESSAGE" value="404 en alles" />
+    <MESSAGE value="more responsive etc" />
+    <option name="LAST_COMMIT_MESSAGE" value="more responsive etc" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

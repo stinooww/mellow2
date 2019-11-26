@@ -1,4 +1,3 @@
-
 .portfolioItem {
   &__GreyBg {
     position: absolute;
@@ -56,6 +55,9 @@
         padding: 0;
         text-transform: capitalize;
         margin-top: -5vh;
+        @media (min-width: $mq-xl) {
+
+        }
       }
     }
 
@@ -245,6 +247,9 @@
   margin: 0 0 10vh 0;
   width: 34px;
   height: 55px;
+  @media (max-width: $Tablet) {
+    display: none;
+  }
 }
 
 .mousey {

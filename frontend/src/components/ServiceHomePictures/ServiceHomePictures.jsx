@@ -172,9 +172,8 @@ const ServiceHomePictures = () => (
           to="/portfolio"
           title="Bekijk onze portfolio"
           className="btn btn-border btn-center track-btn fx fx-opacity"
-          data-label="CTA Home 3"
         >
-          <span>Ontdek meer</span>
+          <span className="mellow-btn">Ontdek meer</span>
         </Link>
       </div>
     </div>
