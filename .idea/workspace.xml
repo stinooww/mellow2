@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="12ea28b2-16cc-402e-8e6a-5180a58d3b5c" name="Default Changelist" comment="more responsive etc">
+    <list default="true" id="12ea28b2-16cc-402e-8e6a-5180a58d3b5c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Diensten/Website.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Diensten/Website.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Footer/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Routing/Routing.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Routing/Routing.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -173,14 +174,8 @@
       <workItem from="1574709263596" duration="2627000" />
       <workItem from="1574771976256" duration="2653000" />
       <workItem from="1574798368318" duration="1423000" />
-      <workItem from="1574839015248" duration="3473000" />
-    </task>
-    <task id="LOCAL-00034" summary="seo en sea development en styling">
-      <created>1560504447864</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1560504447865</updated>
+      <workItem from="1574839015248" duration="3564000" />
+      <workItem from="1574858936472" duration="508000" />
     </task>
     <task id="LOCAL-00035" summary="redux en react store vewijderd omdat deze overbodig is">
       <created>1561359466033</created>
@@ -518,7 +513,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574845191585</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="fb customer chat">
+      <created>1574846808417</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1574846808417</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -538,7 +540,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="contact styling" />
     <MESSAGE value="seo en sea development en styling" />
     <MESSAGE value="redux en react store vewijderd omdat deze overbodig is" />
     <MESSAGE value="algemene veranderingen aan verschillende paginas + toevoeging van SEO optimalisatie en offine modus voor service werkers" />
@@ -563,7 +564,8 @@
     <MESSAGE value="404 en alles" />
     <MESSAGE value="more responsive etc" />
     <MESSAGE value="more responsive + IE11 fix + custom 404 fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="more responsive + IE11 fix + custom 404 fix" />
+    <MESSAGE value="fb customer chat" />
+    <option name="LAST_COMMIT_MESSAGE" value="fb customer chat" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
