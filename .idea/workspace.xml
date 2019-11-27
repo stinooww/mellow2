@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="12ea28b2-16cc-402e-8e6a-5180a58d3b5c" name="Default Changelist" comment="">
+    <list default="true" id="12ea28b2-16cc-402e-8e6a-5180a58d3b5c" name="Default Changelist" comment="more responsive etc">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/ServiceHomePictures/ServiceHomePictures.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ServiceHomePictures/ServiceHomePictures.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/_buttons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/components/_PortfolioItem.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/components/_PortfolioItem.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Diensten/Website.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Diensten/Website.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,15 +55,15 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/frontend/src/styling/components" />
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/frontend/src/images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src/images" />
+      <recent name="$PROJECT_DIR$/frontend/src/styling/components" />
       <recent name="$PROJECT_DIR$/frontend/src/pages" />
       <recent name="$PROJECT_DIR$/frontend/src/styling/bootstrap" />
       <recent name="$PROJECT_DIR$/frontend/src/styling/pages" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/frontend/src/images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -173,21 +171,9 @@
       <workItem from="1574613846683" duration="632000" />
       <workItem from="1574687931344" duration="543000" />
       <workItem from="1574709263596" duration="2627000" />
-      <workItem from="1574771976256" duration="2010000" />
-    </task>
-    <task id="LOCAL-00032" summary="home page responsive + al de andere paginas + portfolio item pagina">
-      <created>1560432403547</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1560432403547</updated>
-    </task>
-    <task id="LOCAL-00033" summary="contact styling">
-      <created>1560434465523</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1560434465523</updated>
+      <workItem from="1574771976256" duration="2653000" />
+      <workItem from="1574798368318" duration="1423000" />
+      <workItem from="1574839015248" duration="3473000" />
     </task>
     <task id="LOCAL-00034" summary="seo en sea development en styling">
       <created>1560504447864</created>
@@ -518,7 +504,21 @@
       <option name="project" value="LOCAL" />
       <updated>1574775154490</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="more responsive etc">
+      <created>1574775521766</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1574775521766</updated>
+    </task>
+    <task id="LOCAL-00082" summary="more responsive + IE11 fix + custom 404 fix">
+      <created>1574845191584</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1574845191585</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -538,7 +538,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="home page responsive + al de andere paginas + portfolio item pagina" />
     <MESSAGE value="contact styling" />
     <MESSAGE value="seo en sea development en styling" />
     <MESSAGE value="redux en react store vewijderd omdat deze overbodig is" />
@@ -563,7 +562,8 @@
     <MESSAGE value="404" />
     <MESSAGE value="404 en alles" />
     <MESSAGE value="more responsive etc" />
-    <option name="LAST_COMMIT_MESSAGE" value="more responsive etc" />
+    <MESSAGE value="more responsive + IE11 fix + custom 404 fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="more responsive + IE11 fix + custom 404 fix" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

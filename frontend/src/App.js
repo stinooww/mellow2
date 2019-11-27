@@ -5,6 +5,7 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import ModalOfferteStart from './components/ModalOfferte/ModalOfferteStart';
 import CallToAction from './components/CallToAction/CallToAction';
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 class App extends Component {
   constructor(props) {
@@ -33,11 +34,17 @@ class App extends Component {
             hideModal={this.hideModal}
           />
         ) : null}
-        {/*<Switch>*/}
-
-        {/*</Switch>*/}
         <CallToAction activateOfferte={this.activateOfferte} />
         <Footer />
+        <MessengerCustomerChat
+          pageId="342021876162625"
+          appId="342021876162625"
+          htmlRef={window.location.pathname}
+          loggedInGreeting="Hallo, waar kan ik je mee helpen?"
+          themeColor="#efc337"
+          language="nl_NL"
+          xfbml={true}
+        />
       </div>
     );
   }
