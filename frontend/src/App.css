@@ -308,21 +308,30 @@ a:focus {
   display: flex;
   flex-direction: column;
 }
-.contact .contact-section ul {
-  list-style-type: none;
+.contact .contact-section .contact__gegevens {
+  display: flex;
+  align-items: center;
 }
-.contact .contact-section ul li {
+.contact .contact-section .contact__gegevens .contact__afbeelding {
+  height: 150px;
+  width: 180px;
+}
+.contact .contact-section .contact__gegevens ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.contact .contact-section .contact__gegevens ul li {
   color: black;
   font-size: 130%;
 }
-.contact .contact-section .socialBtn {
-  flex-direction: row;
+.contact .contact-section .socialBtn__list {
+  list-style-type: none;
   display: flex;
 }
-.contact .contact-section .socialBtn svg path {
+.contact .contact-section .socialBtn__list svg path {
   fill: #337ab7;
 }
-.contact .contact-section .socialBtn li {
+.contact .contact-section .socialBtn__list li {
   padding-right: 20px;
 }
 .contact .contact-section a:hover {

@@ -9,7 +9,7 @@ const ServiceAboutHome = () => (
   <div className="serviceHome">
     <Grid>
       <Col className="serviceHome__header-wrapper">
-        <h1 className="serviceHome__title">Over Mellowwebdesign</h1>
+        <h2 className="serviceHome__title">Over Mellowwebdesign</h2>
       </Col>
       <Row className="weetjes">
         <Col sm={12} lg={4} className="service-tile">
