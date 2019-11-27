@@ -38,7 +38,7 @@ class App extends Component {
         <Footer />
         <MessengerCustomerChat
           pageId="342021876162625"
-          appId="342021876162625"
+          appId="515842495670475"
           htmlRef={window.location.pathname}
           loggedInGreeting="Hallo, waar kan ik je mee helpen?"
           themeColor="#efc337"

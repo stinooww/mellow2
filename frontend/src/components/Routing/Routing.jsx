@@ -29,7 +29,7 @@ const Routing = ({ activateOfferte }) => (
     />
     <Route path="/about" component={About} />
     <Route path="/contact" component={Contact} />
-    <Route path="/algemenevoorwaarde" component={Av} />
+    <Route path="/algemenevoorwaarden" component={Av} />
     <Route path="/portfolio" component={Portfolio} />
     <Route path="*" component={Page404} />
   </Switch>
