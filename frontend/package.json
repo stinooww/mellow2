@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "proxy": "https://api.mellowwebdesign.be/api/portfolio",
-  "homepage": "https://www.beta.mellowwebdesign.be/",
+  "homepage": "https://www.mellowwebdesign.be/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.17",
     "@fortawesome/free-brands-svg-icons": "^5.10.1",

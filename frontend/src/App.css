@@ -294,8 +294,9 @@ a:focus {
 }
 
 .ScrollUpButton__Container {
-  bottom: 40px !important;
+  bottom: 90px !important;
   z-index: 5;
+  right: 35px !important;
 }
 
 .contact {
