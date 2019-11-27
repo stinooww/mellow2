@@ -9,10 +9,10 @@ const ServiceAboutHome = () => (
   <div className="serviceHome">
     <Grid>
       <Col className="serviceHome__header-wrapper">
-        <h1 className="serviceHome__title">Over Mellowwebdesign</h1>
+        <h2 className="serviceHome__title">Over Mellowwebdesign</h2>
       </Col>
       <Row className="weetjes">
-        <Col xs={12} md={4} className="service-tile">
+        <Col sm={12} lg={4} className="service-tile">
           <div className="icon-margin1">
             <Responsive />
           </div>
@@ -22,7 +22,7 @@ const ServiceAboutHome = () => (
             grafisch ontwerp van jouw is bij Mellow in goede handen.{' '}
           </p>
         </Col>
-        <Col xs={12} md={4} className="service-tile">
+        <Col xs={12} lg={4} sm={6} className="service-tile">
           <div className="icon-margin">
             <Webdev />
           </div>
@@ -33,7 +33,7 @@ const ServiceAboutHome = () => (
             maken voor jou!
           </p>
         </Col>
-        <Col xs={12} md={4} className="service-tile">
+        <Col xs={12} lg={4} sm={6} className="service-tile">
           <div className="icon-margin">
             <Social />
           </div>

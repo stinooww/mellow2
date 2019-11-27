@@ -17,24 +17,29 @@
 .weetjes {
   margin-bottom: 50px;
   display: flex;
-  flex-direction: column;
-  @media (min-width: $Tablet) {
-    flex-direction: row;
-  }
+  flex-wrap: wrap;
 
   .service-tile {
     margin: 0 0 2em 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    @media (max-width: $Tablet) {
+      margin-top: 45px;
+    }
     h2 {
       color: black;
       margin-top: 83px;
+      @media (max-width: $Tablet) {
+        margin-top: 35px;
+      }
     }
 
     .webdesign {
       margin-top: 45px;
+      @media (max-width: $Tablet) {
+        margin-top: 5px;
+      }
 
     }
   }

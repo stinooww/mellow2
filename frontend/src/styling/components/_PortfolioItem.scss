@@ -78,6 +78,10 @@
           font-size: 5em;
           margin-top: 15vh;
         }
+        margin-top: -5vh;
+        @media (min-width: $mq-xl) {
+
+        }
       }
     }
 
@@ -325,6 +329,9 @@
   height: 55px;
   @media screen and (max-width: $smallLaptop) {
     margin: 10vh 0 3vh 0;
+  }
+  @media (max-width: $Tablet) {
+    display: none;
   }
 }
 

@@ -1,24 +1,11 @@
 import React from 'react';
-
 import { Grid, Row, Col } from 'react-bootstrap';
-
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import MessengerCustomerChat from 'react-messenger-customer-chat';
-
 AOS.init({ disable: 'phone' });
 
 const Website = () => (
   <div className="website">
-    <MessengerCustomerChat
-      pageId="342021876162625"
-      appId="342021876162625"
-      htmlRef={window.location.pathname}
-      loggedInGreeting="Hallo, waar kan ik je mee helpen?"
-      themeColor="#efc337"
-      language="nl_NL"
-      xfbml={true}
-    />
     <Grid>
       <Row>
         <Col xs={12} className="waarom-website-txt">

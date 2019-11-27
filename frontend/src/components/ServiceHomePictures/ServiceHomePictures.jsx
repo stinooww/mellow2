@@ -21,11 +21,6 @@ const ServiceHomePictures = () => (
           <div className="grid-col-50">
             <div className="fig-hover-item height-380">
               <figure className="fig cover dicomenu">
-                <img
-                  src="../../images/dicomenu1.png"
-                  className="figMobile__alt"
-                  alt="Dicomenu"
-                />
                 <figcaption className="caption">
                   Webshop &amp; Marketing emails
                 </figcaption>
@@ -56,11 +51,6 @@ const ServiceHomePictures = () => (
 
             <div className="fig-hover-item height-280">
               <figure className="fig cover finnegans">
-                <img
-                  src="../../images/finnegans.png"
-                  className="figMobile__alt"
-                  alt="Finnegans"
-                />
                 <figcaption className="caption">Webdesign</figcaption>
               </figure>
               <Link to="/portfolioitem/14" className="full-link">
@@ -92,11 +82,6 @@ const ServiceHomePictures = () => (
             <div className="grid-col-50">
               <div className="fig-hover-item height-280">
                 <figure className="fig cover bodyupdate">
-                  <img
-                    src="../../images/bodyupdate.jpg"
-                    className="figMobile__alt"
-                    alt="body-update"
-                  />
                   <figcaption className="caption">
                     responsive website
                   </figcaption>
@@ -187,9 +172,8 @@ const ServiceHomePictures = () => (
           to="/portfolio"
           title="Bekijk onze portfolio"
           className="btn btn-border btn-center track-btn fx fx-opacity"
-          data-label="CTA Home 3"
         >
-          <span>Ontdek meer</span>
+          <span className="mellow-btn">Ontdek meer</span>
         </Link>
       </div>
     </div>

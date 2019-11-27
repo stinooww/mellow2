@@ -1,6 +1,9 @@
 .person-wrapper {
   height: 70vh;
   text-align: center;
+  @media screen and (max-width: $Tablet) {
+    height: 35vh;
+  }
   .show-grid {
     padding-bottom: 30px;
   }
@@ -26,17 +29,14 @@
   .testimonial-carousel {
     margin: 0;
     padding: 0;
-
     .carousel-indicators {
       top: 222px;
-      @media screen and (max-width: $Tablet) {
+      @media screen and (max-width: $smallerLaptop) {
         display: none;
-
       }
       li {
         border-color: $blue;
       }
-
       li.active {
         background-color: $blue;
       }

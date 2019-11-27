@@ -13,25 +13,35 @@
   }
 
   .contact-section {
-    ul {
-      list-style-type: none;
+    .contact__gegevens {
+      display: flex;
+      align-items: center;
 
-      li {
-        color: black;
-        font-size: 130%;
+      .contact__afbeelding {
+        height: 150px;
+        width: 180px;
+      }
+
+      ul {
+        list-style-type: none;
+        padding-left: 0;
+
+        li {
+          color: black;
+          font-size: 130%;
+        }
       }
     }
 
-    .socialBtn {
-      flex-direction: row;
-      display: flex;
 
+    .socialBtn__list {
+      list-style-type: none;
+      display: flex;
       svg {
         path {
           fill: #337ab7;
         }
       }
-
       li {
         padding-right: 20px;
       }
