@@ -322,10 +322,12 @@ a:focus {
   display: flex;
   align-items: center;
 }
+
 .contact .contact-section .contact__gegevens .contact__afbeelding {
   height: 150px;
   width: 180px;
 }
+
 .contact .contact-section .contact__gegevens ul {
   list-style-type: none;
   padding-left: 0;
@@ -1331,11 +1333,13 @@ nav.navbar-default .container {
   height: 70vh;
   text-align: center;
 }
+
 @media screen and (max-width: 768px) {
   .person-wrapper {
     height: 35vh;
   }
 }
+
 .person-wrapper .show-grid {
   padding-bottom: 30px;
 }
@@ -1426,40 +1430,40 @@ nav.navbar-default .container {
   flex-wrap: wrap;
 }
 
-@media (min-width: 768px) {
-  .weetjes {
-    flex-direction: row;
-  }
-}
-
 .weetjes .service-tile {
   margin: 0 0 2em 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 @media (max-width: 768px) {
   .weetjes .service-tile {
     margin-top: 45px;
   }
 }
+
 .weetjes .service-tile h2 {
   color: black;
   margin-top: 83px;
 }
+
 @media (max-width: 768px) {
   .weetjes .service-tile h2 {
     margin-top: 35px;
   }
 }
+
 .weetjes .service-tile .webdesign {
   margin-top: 45px;
 }
+
 @media (max-width: 768px) {
   .weetjes .service-tile .webdesign {
     margin-top: 5px;
   }
 }
+
 .weetjes p {
   color: black;
 }
@@ -2348,6 +2352,7 @@ nav.navbar-default .container {
   color: white;
   padding: 0;
   text-transform: capitalize;
+  margin-top: -5vh;
 }
 
 @media screen and (max-width: 1024px) {
@@ -2651,6 +2656,12 @@ nav.navbar-default .container {
   margin: 0 0 10vh 0;
   width: 34px;
   height: 55px;
+}
+
+@media screen and (max-width: 1024px) {
+  .scroll-downs {
+    margin: 10vh 0 3vh 0;
+  }
 }
 
 @media (max-width: 768px) {
