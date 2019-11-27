@@ -2176,24 +2176,22 @@ nav.navbar-default .container {
   color: white;
   padding: 0;
   text-transform: capitalize;
-  margin-top: -5vh;
 }
 @media screen and (max-width: 1024px) {
   .portfolioItem__header .header-layers h1 {
-    font-size: 10em;
-    margin-top: 0;
+    font-size: 9em;
     margin-top: 10vh;
   }
 }
 @media screen and (max-width: 768px) {
   .portfolioItem__header .header-layers h1 {
-    font-size: 8em;
+    font-size: 7em;
     margin-top: 10vh;
   }
 }
 @media screen and (max-width: 480px) {
   .portfolioItem__header .header-layers h1 {
-    font-size: 6em;
+    font-size: 5em;
     margin-top: 15vh;
   }
 }
