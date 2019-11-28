@@ -29,8 +29,8 @@ const ServiceAboutHome = () => (
           <h2>Webdevelopment</h2>
           <p>
             {' '}
-            Landingspagina's, website, webshops ... Noem maar op, wij kunnen het
-            maken voor jou!
+            Landingspagina's, website, webshops ... Wij kunnen het maken voor
+            jou!
           </p>
         </Col>
         <Col xs={12} lg={4} sm={6} className="service-tile">
@@ -40,8 +40,9 @@ const ServiceAboutHome = () => (
           <h2>Online marketing</h2>
           <p>
             {' '}
-            Facebook & LinkedIn pagina's? Of Liever gepersonaliseerde marketing
-            emails... Wij kunnen het!
+            Hebt u eerder nood aan een Facebook & LinkedIn pagina? Of liever
+            gepersonaliseerde marketing emails? Dan bent u bij ons aan het
+            juiste adres.
           </p>
         </Col>
       </Row>

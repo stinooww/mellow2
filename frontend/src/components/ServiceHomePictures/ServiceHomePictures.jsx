@@ -8,9 +8,9 @@ const ServiceHomePictures = () => (
         <div className="home-portfolio-text clearfix">
           <div className="col-md-12">
             <h2>
-              Wij zijn gespecialiseerd in webdesign,
+              Wij zijn gespecialiseerd in webdesign
               <span> en denken mee met u </span>
-              om de beste oplossing op maat te vinden!{' '}
+              om de beste oplossing op maat te vinden!
             </h2>
           </div>
           <div className="elementor-divider">

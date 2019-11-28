@@ -198,10 +198,10 @@ class SEO extends Component {
                   advertentie klikt!{' '}
                 </strong>
               </p>
-              <p>
+              <p className="callout">
                 Concreet gaan we een zeer doelgerichte advertensie voor uw
                 website maken waarbij we rekening houden met enkele parameters
-                zoals locatie, apparaat en de termen waarop u gevonden wil
+                zoals locatie, toestel en de termen waarop u gevonden wil
                 worden. U krijgt hier ook zeer snel resultaten van, die een
                 groot voordeel zijn van pay-per-clickadvertenties.
               </p>

@@ -14,7 +14,7 @@ import Webhosting from '../../pages/Diensten/Webhosting';
 import Page404 from '../../pages/Error/page404';
 
 const Routing = ({ activateOfferte }) => (
-  <div>
+  <Switch>
     <Route path="/" exact component={Home} />
     <Route path="/home" exact component={Home} />
     <Route path="/strategie" component={Strategie} />
@@ -31,8 +31,8 @@ const Routing = ({ activateOfferte }) => (
     <Route path="/contact" component={Contact} />
     <Route path="/algemenevoorwaarden" component={Av} />
     <Route path="/portfolio" component={Portfolio} />
-    {/*<Route path="*" component={Page404} />*/}
-  </div>
+    <Route path="*" component={Page404} />
+  </Switch>
 );
 
 export default Routing;

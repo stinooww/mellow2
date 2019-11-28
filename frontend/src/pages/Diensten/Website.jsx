@@ -25,7 +25,7 @@ const Website = () => (
             Want in een wereld van verandering is een digitale aanwezigheid
             belangrijk!
           </strong>
-          <p>
+          <p className="callout">
             Hebt u nog geen website of bent u niet 100% tevreden van uw huidige
             website? Dan lossen wij dit graag voor u op.
           </p>
