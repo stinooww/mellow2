@@ -14,6 +14,9 @@
       font-size: 3rem;
       text-align: center;
       text-shadow: #6c6c6c 2px 2px;
+      @media (max-width: $Tablet) {
+        font-size: 2.5rem;
+      }
     }
 
     .cta-landing {

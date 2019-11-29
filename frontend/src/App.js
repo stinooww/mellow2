@@ -41,6 +41,8 @@ class App extends Component {
           appId="515842495670475"
           htmlRef={window.location.pathname}
           loggedInGreeting="Hallo, waar kan ik je mee helpen?"
+          greetingDialogDisplay="fade"
+          greetingDialogDelay="30"
           themeColor="#efc337"
           language="nl_NL"
           xfbml={true}

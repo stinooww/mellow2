@@ -2,11 +2,9 @@
   height: 70vh;
   text-align: center;
   @media screen and (max-width: $Tablet) {
-    height: 35vh;
+    height: 600px;
   }
-  .show-grid {
-    padding-bottom: 30px;
-  }
+
 
   .testimonial-title {
     padding: 5%;
@@ -65,3 +63,6 @@
   }
 }
 
+.show-grid {
+  padding: 30px 0;
+}

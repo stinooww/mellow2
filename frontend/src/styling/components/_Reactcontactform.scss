@@ -53,6 +53,9 @@
   .input-group {
     margin-bottom: 1rem;
     width: 70%;
+    @media (max-width: $Tablet) {
+      width: 100%;
+    }
   }
 
 

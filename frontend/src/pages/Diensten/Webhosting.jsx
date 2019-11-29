@@ -18,8 +18,7 @@ const Webhosting = ({ activateOfferte }) => (
           functionaliteit van de website. Deze moeten op regelmatige basis
           worden geupdate zodat ze goed kunnnen blijven werken.
         </p>
-
-        <p>
+        <p className="callout">
           Ook zorgen we ervoor dat uw website beschermt is tegen hackers om te
           voorkomen dat cyberaanvallen uw website offline halen. We nemen
           bovendien regelmatig een backup zodat we altijd een kopie hebben van
@@ -199,7 +198,6 @@ const Webhosting = ({ activateOfferte }) => (
               <FontAwesomeIcon size="sm" className="green" icon={faCheck} />
             </PricingDetail>
             <PricingDetail>
-              {' '}
               <b>120 min</b> per maand
             </PricingDetail>
           </PricingSlot>
