@@ -198,7 +198,6 @@ const Webhosting = ({ activateOfferte }) => (
               <FontAwesomeIcon size="sm" className="green" icon={faCheck} />
             </PricingDetail>
             <PricingDetail>
-              {' '}
               <b>120 min</b> per maand
             </PricingDetail>
           </PricingSlot>
