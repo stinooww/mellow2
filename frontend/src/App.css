@@ -2373,9 +2373,7 @@ nav.navbar-default .container {
 @media screen and (max-width: 767px) {
   .portfolioItem__grid .portbutton {
     display: block;
-    margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin: 25px 0;
   }
 }
 
@@ -2457,7 +2455,7 @@ nav.navbar-default .container {
 }
 @media screen and (max-width: 767px) {
   .portfolioItem__wrapper-solution {
-    margin: 20px 20px 20px 35px;
+    margin: 20px;
     width: auto;
   }
 }
