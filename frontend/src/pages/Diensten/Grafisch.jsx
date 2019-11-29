@@ -15,32 +15,29 @@ const Grafisch = () => (
     <Grid className="grafisch-email">
       <Row>
         <Col xs={12}>
-          <h1>Grafisch werk</h1>
-          <Col xs={12}>
-            <h2>Logo design & huisstijl</h2>
-            <p>
-              Uw huisstijl bepaalt uw imago.
-              <br />
-              Juist daarom vinden wij het zeer belangrijk dat er voldoende
-              aandacht aan wordt geschonken.{' '}
-            </p>
-            <p>
-              Wij denken hierbij na over een sterke look & feel zodat u een
-              visuele identiteit krijgt die voor de volle 100% bij u past.
-              <br />
-              Denk hierbij aan een stijlvol logo of een nieuwe branding.
-              <br />
-              Wilt u deze verder door trekken? Wij maken ook smaakvolle business
-              kaartjes of stickers.
-            </p>
-          </Col>
-          <Col xs={12} data-aos="zoom-in-down">
-            <Image
-              className="grafisch-email__image"
-              responsive
-              src={logodesign}
-            />
-          </Col>
+          <h2>Logo design & huisstijl</h2>
+          <p>
+            Uw huisstijl bepaalt uw imago.
+            <br />
+            Juist daarom vinden wij het zeer belangrijk dat er voldoende
+            aandacht aan wordt geschonken.{' '}
+          </p>
+          <p>
+            Wij denken hierbij na over een sterke look & feel zodat u een
+            visuele identiteit krijgt die voor de volle 100% bij u past.
+            <br />
+            Denk hierbij aan een stijlvol logo of een nieuwe branding.
+            <br />
+            Wilt u deze verder door trekken? Wij maken ook smaakvolle business
+            kaartjes of stickers.
+          </p>
+        </Col>
+        <Col xs={12} data-aos="zoom-in-down">
+          <Image
+            className="grafisch-email__image"
+            responsive
+            src={logodesign}
+          />
         </Col>
       </Row>
     </Grid>
@@ -49,7 +46,7 @@ const Grafisch = () => (
       <Grid>
         <Row>
           <Col xs={12}>
-            <h1 className="emailMarketing__title">Marketings emails</h1>
+            <h2 className="emailMarketing__title">Marketings emails</h2>
           </Col>
         </Row>
         <Row>

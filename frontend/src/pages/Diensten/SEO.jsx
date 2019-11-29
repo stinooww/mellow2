@@ -19,38 +19,38 @@ class SEO extends Component {
   ref = React.createRef();
 
   render() {
-    let tooltip2 = (
-      <Tooltip>
-        <strong>De tekst die u krijgt te zien in bij de zoekresultaten.</strong>{' '}
-        Deze moet m.a.w. goed geschreven zijn, kernwoorden bevatten en ook nog
-        eens aanzetten tot doorklikken.
-      </Tooltip>
-    );
-    let tooltip1 = (
-      <Tooltip>
-        <strong>
-          Je titels en tussentitels mogen al eens een zoekwoord bevatten.
-        </strong>{' '}
-        Probeer dit wel niet in altijd te doen. Je wilt ook geen
-        overoptimalisatie krijgen.!
-      </Tooltip>
-    );
-    let tooltip3 = (
-      <Tooltip>
-        <strong>
-          Dit is de titel die je Google laat lezen als titel van de pagina.{' '}
-        </strong>{' '}
-        Geef duidelijk aan waarover je pagina gaat en dit in maximaal 70
-        karakters.
-      </Tooltip>
-    );
-    let tooltip4 = (
-      <Tooltip>
-        <strong>Geef alle afbeeldingen op je website een alt-tag.</strong> Dit
-        is de beschrijving die men te zien krijgt als de afbeelding niet moest
-        inladen.
-      </Tooltip>
-    );
+    // let tooltip2 = (
+    //   <Tooltip>
+    //     <strong>De tekst die u krijgt te zien in bij de zoekresultaten.</strong>{' '}
+    //     Deze moet m.a.w. goed geschreven zijn, kernwoorden bevatten en ook nog
+    //     eens aanzetten tot doorklikken.
+    //   </Tooltip>
+    // );
+    // let tooltip1 = (
+    //   <Tooltip>
+    //     <strong>
+    //       Je titels en tussentitels mogen al eens een zoekwoord bevatten.
+    //     </strong>{' '}
+    //     Probeer dit wel niet in altijd te doen. Je wilt ook geen
+    //     overoptimalisatie krijgen.!
+    //   </Tooltip>
+    // );
+    // let tooltip3 = (
+    //   <Tooltip>
+    //     <strong>
+    //       Dit is de titel die je Google laat lezen als titel van de pagina.{' '}
+    //     </strong>{' '}
+    //     Geef duidelijk aan waarover je pagina gaat en dit in maximaal 70
+    //     karakters.
+    //   </Tooltip>
+    // );
+    // let tooltip4 = (
+    //   <Tooltip>
+    //     <strong>Geef alle afbeeldingen op je website een alt-tag.</strong> Dit
+    //     is de beschrijving die men te zien krijgt als de afbeelding niet moest
+    //     inladen.
+    //   </Tooltip>
+    // );
     return (
       <div className="PortfolioPage seo">
         <Helmet>
@@ -94,11 +94,11 @@ class SEO extends Component {
                     <br />
                     We starten met een keyword-analyse. Dit doen we om de
                     trefwoorden te zoeken die uw potentiële klanten gebruiken in
-                    Google en met welke woorden jijzelf hoog wil scoren.
+                    Google en met welke woorden uzelf hoog wil scoren.
                   </p>
                   <p>
                     <br />
-                    Zo kunnen we jouw ideale doelgroep op uw website laten
+                    Zo kunnen we uw ideale doelgroep op uw website laten
                     belanden.
                   </p>
                 </article>
@@ -186,24 +186,26 @@ class SEO extends Component {
         <Grid>
           <Row className="sea-context" id="sea">
             <Col md={12}>
-              <h2>Snel gezien met SEA</h2>
+              <h2> Online adverteren met SEA</h2>
               <p>
                 Dankzij SEA (Search Engine Advertising) verschijnt uw boodschap
                 , uw aanwezigheid op Google helemaal bovenaan. U kiest zelf
-                welke zoektermen het meest relevant zijn voor uw bedrijf en die
-                uw advertentie kan triggeren.
+                welke zoektermen het meest relevant zijn voor uw bedrijf en wij
+                zorgen ervoor dat uw doelpubliek wordt getriggerd door uw
+                advertentie.
                 <br />
                 <strong>
-                  Voor deze advertenties betaalt u dus alleen als iemand op uw
+                  Voor deze advertenties betaalt u alleen als iemand op uw
                   advertentie klikt!{' '}
                 </strong>
               </p>
               <p className="callout">
-                Concreet gaan we een zeer doelgerichte advertensie voor uw
+                Concreet gaan we een zeer doelgerichte advertentie voor uw
                 website maken waarbij we rekening houden met enkele parameters
-                zoals locatie, toestel en de termen waarop u gevonden wil
-                worden. U krijgt hier ook zeer snel resultaten van, die een
-                groot voordeel zijn van pay-per-clickadvertenties.
+                zoals locatie, enkele specifieke eigenschappen en de termen
+                waarop u gevonden wil worden. U krijgt hier ook zeer snel
+                resultaten van, die een groot voordeel zijn van
+                pay-per-clickadvertenties.
               </p>
             </Col>
             <Col md={12}>

@@ -1,20 +1,9 @@
 @import "../variables";
 .grafisch-email {
   padding: 0 40px;
-  h1 {
-    font-size: 35px;
-    color: $blue;
-    text-align: left;
-
-    margin: 8vh 0 4vh 1vh;
-    text-shadow: none;
-  }
-
-
   .grafisch-email__image {
     width: 75%;
     }
-
   .grafisch-email__image {
 
     @media (max-width: 780px) {
@@ -22,8 +11,6 @@
       margin-top: 3vh;
     }
   }
-
-
   .row {
     &:first-child {
       margin-bottom: 5vh;
@@ -38,13 +25,29 @@
   }
 }
 
+.emailMarketing, .grafisch-email {
+  h2 {
+    font-size: 35px;
+    color: $blue;
+    text-align: left;
+
+    margin: 8vh 0 4vh 1vh;
+    text-shadow: none;
+  }
+}
+
 .emailMarketing {
   background-color: #f5f5f5;
-  //  padding: 0 40px;
   @media (min-width: $smallLaptop) {
     min-height: 50vh;
   }
 
+  .container {
+    padding: 80px 40px;
+    @media (max-width: $smallLaptop) {
+      padding: 40px;
+    }
+  }
   &__title {
 
   }
