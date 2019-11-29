@@ -3,6 +3,7 @@ import { Grid, Row, Col, Image } from 'react-bootstrap';
 import Reactcontactform from '../../components/Contactform/Reactcontactform';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import stijn from '../../images/stijn.png';
+import jonas from '../../images/jonas.png';
 
 import { faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
@@ -39,6 +40,7 @@ const Contact = () => (
             </ul>
           </div>
           <div className="contact__gegevens">
+            <Image responsive src={jonas} className="contact__afbeelding" />
             <ul>
               <li>Jonas Van Loey</li>
               <li>
