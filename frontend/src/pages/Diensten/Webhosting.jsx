@@ -18,7 +18,6 @@ const Webhosting = ({ activateOfferte }) => (
           functionaliteit van de website. Deze moeten op regelmatige basis
           worden geupdate zodat ze goed kunnnen blijven werken.
         </p>
-
         <p className="callout">
           Ook zorgen we ervoor dat uw website beschermt is tegen hackers om te
           voorkomen dat cyberaanvallen uw website offline halen. We nemen
