@@ -159,7 +159,7 @@ body {
 }
 
 .dicomenu {
-  background-image: url('images/dicomenu1.png');
+  background-image: url('images/metismockup.jpg');
 }
 
 .finnegans {
@@ -183,7 +183,7 @@ body {
 }
 
 .sea {
-  background-image: url('images/seo.jpg');
+  background-image: url('images/googlemockup.jpg');
   background-size: contain;
   background-repeat: no-repeat;
 }

@@ -25,19 +25,19 @@ const ServiceHomePictures = () => (
                   Webshop &amp; Marketing emails
                 </figcaption>
               </figure>
-              <Link to="/portfolioitem/19" className="full-link">
-                Dicomenu
+              <Link to="/portfolioitem/15" className="full-link">
+                Metis supplements
               </Link>
               <div className="overlay">
                 <div className="overlay-color overlay-color1" />
                 <div className="overlay-content">
                   <h3>
-                    <Link to="/portfolioitem/19">
-                      Dicomenu
-                      <small>Culinaire vertalingen </small>
+                    <Link to="/portfolioitem/15">
+                      Metis supplements
+                      <small>Voedingssupplementen die werken </small>
                     </Link>
                   </h3>
-                  <Link to="/portfolioitem/19">Bekijk project</Link>
+                  <Link to="/portfolioitem/15">Bekijk project</Link>
                   <div className="hr" />
                   <Link to="/portfolio" className="light">
                     Bekijk portfolio
