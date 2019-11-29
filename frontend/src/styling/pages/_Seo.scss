@@ -183,7 +183,9 @@
         width: 70%;
         flex-direction: column;
         justify-content: space-around;
-
+        @media (max-width: $Tablet) {
+          width: 100%;
+        }
         &:last-child {
 
 
@@ -201,6 +203,9 @@
 
         @media (min-width: $mq-sm) {
           padding: 12px 33px;
+        }
+        @media (max-width: $Tablet) {
+          width: 100%;
         }
       }
     }

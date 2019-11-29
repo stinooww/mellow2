@@ -4,14 +4,15 @@
     <list default="true" id="12ea28b2-16cc-402e-8e6a-5180a58d3b5c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Diensten/Grafisch.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Diensten/Grafisch.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Diensten/SEO.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Diensten/SEO.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Diensten/Webhosting.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Diensten/Webhosting.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_General.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/_General.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/components/_Timeline.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/components/_Timeline.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/pages/_Grafisch.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/pages/_Grafisch.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ModalOfferte/ModalOfferteStart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ModalOfferte/ModalOfferteStart.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/styling/components/_Reactcontactform.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/components/_Reactcontactform.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/styling/components/_landing.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/components/_landing.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/styling/components/_modalOfferte.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/components/_modalOfferte.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/styling/components/_serviceHome.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/components/_serviceHome.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/styling/components/_testimonials.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/components/_testimonials.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/styling/pages/_Contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/pages/_Contact.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/styling/pages/_Seo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/pages/_Seo.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/styling/pages/_Website.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/pages/_Website.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -184,27 +185,7 @@
       <workItem from="1574858936472" duration="591000" />
       <workItem from="1574867991803" duration="8593000" />
       <workItem from="1574952441345" duration="2346000" />
-    </task>
-    <task id="LOCAL-00038" summary="getting more responsive">
-      <created>1563725597229</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1563725597229</updated>
-    </task>
-    <task id="LOCAL-00039" summary="emails fixed!!!">
-      <created>1563876659857</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1563876659857</updated>
-    </task>
-    <task id="LOCAL-00040" summary="full styling - not done">
-      <created>1564154858202</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1564154858202</updated>
+      <workItem from="1575032386903" duration="2238000" />
     </task>
     <task id="LOCAL-00041" summary="overall improvement, styling and modifications to the website">
       <created>1565268095344</created>
@@ -528,7 +509,28 @@
       <option name="project" value="LOCAL" />
       <updated>1574937836226</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="improvement">
+      <created>1575032414509</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1575032414509</updated>
+    </task>
+    <task id="LOCAL-00088" summary="improvement">
+      <created>1575032436623</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1575032436623</updated>
+    </task>
+    <task id="LOCAL-00089" summary="improvement">
+      <created>1575032588901</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1575032588901</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -548,7 +550,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="redux en react store vewijderd omdat deze overbodig is" />
     <MESSAGE value="algemene veranderingen aan verschillende paginas + toevoeging van SEO optimalisatie en offine modus voor service werkers" />
     <MESSAGE value="nodemodule map die weg moet" />
     <MESSAGE value="getting more responsive" />
@@ -573,7 +574,8 @@
     <MESSAGE value="more responsive + IE11 fix + custom 404 fix" />
     <MESSAGE value="fb customer chat" />
     <MESSAGE value="van alle dingen" />
-    <option name="LAST_COMMIT_MESSAGE" value="van alle dingen" />
+    <MESSAGE value="improvement" />
+    <option name="LAST_COMMIT_MESSAGE" value="improvement" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

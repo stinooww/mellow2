@@ -432,7 +432,7 @@ class ModalOfferteStart extends Component {
                 <Row className="form-group last">
                   <Col md={6} xs={12}>
                     <p className="feedback">
-                      Gelieve alle verplichte velden in te vullen
+                      Gelieve alle verplichte velden met een * in te vullen
                     </p>
                   </Col>
                   <Col md={4} xs={12}>
