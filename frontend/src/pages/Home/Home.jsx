@@ -4,6 +4,7 @@ import Landing from '../../components/landing/Landing';
 import ServiceAboutHome from '../../components/ServiceAboutHome/ServiceAboutHome';
 import Testimonials from '../../components/Testimonials/Testimonials';
 import ServiceHomePictures from '../../components/ServiceHomePictures/ServiceHomePictures';
+import Cookie from '../../components/Cookie/Cookie';
 import { CircleArrow as ScrollUpButton } from 'react-scroll-up-button';
 import { Carousel, CarouselItem, Col, Grid, Row } from 'react-bootstrap';
 

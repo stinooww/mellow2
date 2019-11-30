@@ -14,7 +14,7 @@ const page404 = () => (
               <p>De pagina die je wilt bezoeken bestaat helaas niet!</p>
 
               <a href="/" className="mellow-btn hvr-sweep-to-right">
-                Ga terug naar start
+                Ga terug naar home
               </a>
             </div>
           </div>
