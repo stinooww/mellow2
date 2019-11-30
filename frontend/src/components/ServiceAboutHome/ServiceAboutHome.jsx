@@ -28,7 +28,6 @@ const ServiceAboutHome = () => (
           </div>
           <h2>Webdevelopment</h2>
           <p>
-            {' '}
             Landingspagina's, website, webshops ... Wij kunnen het maken voor u!
           </p>
         </Col>
