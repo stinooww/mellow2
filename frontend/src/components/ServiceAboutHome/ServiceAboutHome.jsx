@@ -38,7 +38,6 @@ const ServiceAboutHome = () => (
           </div>
           <h2>Online marketing</h2>
           <p>
-            {' '}
             Hebt u eerder nood aan een Facebook & LinkedIn pagina? Of liever
             gepersonaliseerde marketing emails? Dan bent u bij ons aan het
             juiste adres.
