@@ -2392,13 +2392,13 @@ nav.navbar-default .container {
 
 .portfolioItem__testimonial {
   display: flex;
-  height: 40vh;
+  min-height: 40vh;
   align-content: center;
   justify-content: center;
 }
 @media screen and (max-width: 767px) {
   .portfolioItem__testimonial {
-    height: 30vh;
+    min-height: 30vh;
   }
 }
 .portfolioItem__testimonial .quote {
