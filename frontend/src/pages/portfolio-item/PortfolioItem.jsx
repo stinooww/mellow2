@@ -9,6 +9,7 @@ import { Controller, Scene } from 'react-scrollmagic';
 import { Timeline, Tween } from 'react-gsap';
 import axios from 'axios';
 import PortfolioTestimonial from '../../components/PortfolioTestimonial/PortfolioTestimonial';
+import animateScrollTo from 'animated-scroll-to';
 // https://scrollmagic.io/
 // https://github.com/bitworking/react-scrollmagic/tree/master/example/src/components/ScrollMagicExamples
 // https://bitworking.github.io/react-gsap/
@@ -30,6 +31,15 @@ class PortfolioItem extends Component {
     };
   }
 
+  scrollTo = e => {
+    animateScrollTo(document.querySelector('#intro')).then(
+      hasScrolledToPosition => {
+        if (hasScrolledToPosition) {
+        } else {
+        }
+      }
+    );
+  };
   componentDidMount() {
     this._isMounted = true;
     const projectId = this.props.match.params.id;
@@ -77,7 +87,7 @@ class PortfolioItem extends Component {
               <h1> {portfolio['clientName']}</h1>
             </div>
             <div className="scroll-downs">
-              <a href="#intro">
+              <a href="#intro" onClick={this.scrollTo}>
                 <div className="mousey">
                   <div className="scroller" />
                 </div>
