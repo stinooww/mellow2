@@ -69,7 +69,7 @@ const Grafisch = () => (
             <br />
             <br />
           </Col>
-          <Col md={12}>
+          <Col md={12} className="emailMarketing__cta-wrapper">
             <p className="emailMarketing__cta callout">
               Zo kan je gericht je doelgroep benaderen en je kansen op succes
               maximaliseren!

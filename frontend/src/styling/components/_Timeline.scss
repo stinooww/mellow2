@@ -3,10 +3,7 @@
   h1 {
     text-align: center;
   }
-
   margin-bottom: 10vh;
-
-
   h3 {
     font-size: 30px;
     font-weight: 300;
@@ -18,7 +15,6 @@
       font-size: 25px;
     }
   }
-
   .vertical-timeline-element-content {
     box-shadow: 3px 4px 1px #ddd;
 
@@ -28,14 +24,11 @@
 
     .vertical-timeline-element-date {
       font-size: 16px !important;
-
     }
-
     span {
       font-size: 16px;
     }
   }
-
 
   .vertical-timeline--two-columns .vertical-timeline-element:nth-child(odd):not(.vertical-timeline-element--left) .vertical-timeline-element-content .vertical-timeline-element-date {
     left: 139% !important;
@@ -51,7 +44,10 @@
     svg {
       font-size: 19px;
       left: 52%;
+
+      &.fa-calculator {
+        left: 57%;
+      }
     }
   }
-
 }

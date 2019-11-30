@@ -59,21 +59,21 @@ class SEO extends Component {
         <Grid>
           <Row className="section--belang">
             <Col xs={12}>
-              <h2>Het belang van eerste te staan in Google</h2>
+              <h2>Het belang van bovenaan te staan op Google</h2>
               <p>
                 We gebruiken allemaal regelmatig bekende zoekmachines zoals Bing
                 of Google. U zit bijvoorbeeld met een vraag of u wilt de
-                openingsuren van een plek te weten komen.
+                openingsuren van uw favoriete restaurant te weten komen.
               </p>
               <Image className="img-google" src={Google} responsive />
 
               <p>
                 Daarom is het belangrijk om zo hoog mogelijk te scoren in deze
                 zoekmachines. Want je wilt niet op de 2de of 3de pagina
-                verschijnen in de zoekresultaten ... want laten we eerlijk zijn,
-                daar kijkt bijna niemand op. U wilt liefst op de eerste plaats
-                verschijnen als men een antwoord zoekt waarop u een oplossing
-                kan bieden!
+                verschijnen in de zoekresultaten. Want laten we eerlijk zijn,
+                daar kijkt bijna niemand naar.
+                <br />U wilt liefst op de eerste plaats verschijnen als men een
+                antwoord zoekt waarop u een oplossing kan bieden!
               </p>
             </Col>
           </Row>
@@ -92,14 +92,16 @@ class SEO extends Component {
                   <strong className="seo__subtitle">Analyse</strong>
                   <p>
                     <br />
-                    We starten met een keyword-analyse. Dit doen we om de
-                    trefwoorden te zoeken die uw potentiële klanten gebruiken in
-                    Google en met welke woorden uzelf hoog wil scoren.
+                    We starten met een keyword-analyse.
+                    <br />
+                    Dit doen we om de trefwoorden te zoeken die uw potentiële
+                    doelgroep gebruikt in Google en met welke woorden u hoog wil
+                    scoren.
                   </p>
                   <p>
                     <br />
-                    Zo kunnen we uw ideale doelgroep op uw website laten
-                    belanden.
+                    Zo kunnen we ervoor zorgen dat uw ideale doelgroep de weg
+                    naar uw website vindt.
                   </p>
                 </article>
                 <article
@@ -114,13 +116,13 @@ class SEO extends Component {
                   </strong>
                   <p>
                     <br />
-                    We bekijken de content die zich op uw website bevinden zoals
-                    zoekwoorden in titels en teksten en passen dit aan.
+                    We bekijken de content die zich op uw website bevindt zoals
+                    titels en teksten en kunnen dit passen waar nodig.
                     <br />
                   </p>
                   <br />
                   <p>
-                    Ook checken we of de website volledig mobiel beschikbaar is
+                    We checken ook of de website volledig mobiel beschikbaar is
                     en kijken of de afbeeldingen snel genoeg inladen waardoor de
                     laadsnelheid ook merkbaar verbeterd.
                   </p>
@@ -151,16 +153,23 @@ class SEO extends Component {
                   </strong>
                   <p>
                     <br />
-                    Tenslotte voegen we verschillende stukjes code toe aan de
-                    website, zodat de zoek robots van Google gemakelijker door
-                    uw website kunnen navigeren.
+                    We voegen verschillende stukjes code toe aan de website,
+                    zodat de zoek robots van Google gemakelijker door uw website
+                    kunnen navigeren.
                     <br />
+                  </p>
+                  <br />
+                  <p>
+                    Tenslotte stellen we uw bedrijf in op Google My Business
+                    zodat zowel op Google maps als in de zoekresultaten uw
+                    bedrijfs gegevens meteen al worden getoond bij een eerste
+                    zoektocht.
                   </p>
                 </article>
               </aside>
             </Col>
             <Col md={12}>
-              <p className="text-center">
+              <p className="text-center seo__extraCta">
                 Op deze manier krijgt u meer bezoekers en scoort uw site hoger
                 in Google, <br />
                 wat uw ook weer meer bezoekers en dus potentiële klanten

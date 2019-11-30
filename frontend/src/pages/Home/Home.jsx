@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import Landing from '../../components/landing/Landing';
-import ServiceAboutHome from '../../components/WhatWeDo/ServiceAboutHome';
+import ServiceAboutHome from '../../components/ServiceAboutHome/ServiceAboutHome';
 import Testimonials from '../../components/Testimonials/Testimonials';
 import ServiceHomePictures from '../../components/ServiceHomePictures/ServiceHomePictures';
 import { CircleArrow as ScrollUpButton } from 'react-scroll-up-button';

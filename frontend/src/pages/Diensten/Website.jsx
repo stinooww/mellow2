@@ -55,12 +55,12 @@ const Website = () => (
           </p>
           <p>
             <strong>
-              Wist u dat meer dan 60 procent van de websitebezoekers...
+              Wist u dat meer dan 60 procent van de websitebezoekers
             </strong>{' '}
             uw website zal bezoeken met een smartphone of Ipad?
           </p>
           <p>
-            Mobile beschikbare websites scoren bovendien ook hoger in de
+            Mobiele beschikbare websites scoren bovendien ook hoger in de
             ranglijst van Google.
           </p>
         </Col>

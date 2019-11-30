@@ -50,6 +50,7 @@
 
     h2 {
       color: black;
+      padding-left: 15px;
     }
 
 
@@ -91,7 +92,7 @@
 
         }
         padding: 25px;
-        min-height: 350px;
+        min-height: 400px;
         box-sizing: border-box;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -133,11 +134,18 @@
           color: #666;
           margin-bottom: 20px;
           font-size: 25px;
+          text-align: center;
+          min-height: 40px;
         }
 
 
       }
 
+
+    }
+
+    .seo__extraCta {
+      color: black;
 
     }
   }
