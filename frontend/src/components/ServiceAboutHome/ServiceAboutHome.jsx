@@ -19,7 +19,7 @@ const ServiceAboutHome = () => (
           <h2 className="webdesign">Webdesign</h2>
           <p>
             Websites maken is onze eerste grote liefde maar ook een stijlvol
-            grafisch ontwerp van jouw is bij Mellow in goede handen.{' '}
+            grafisch ontwerp is bij Mellow in goede handen.
           </p>
         </Col>
         <Col xs={12} lg={4} sm={6} className="service-tile">
@@ -29,8 +29,7 @@ const ServiceAboutHome = () => (
           <h2>Webdevelopment</h2>
           <p>
             {' '}
-            Landingspagina's, website, webshops ... Wij kunnen het maken voor
-            jou!
+            Landingspagina's, website, webshops ... Wij kunnen het maken voor u!
           </p>
         </Col>
         <Col xs={12} lg={4} sm={6} className="service-tile">

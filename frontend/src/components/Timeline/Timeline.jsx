@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Grid, Row } from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 import {
   VerticalTimeline,
   VerticalTimelineElement
@@ -71,11 +71,10 @@ const Timeline = () => (
         >
           <h3 className="vertical-timeline-element-title">Diepgaand gesprek</h3>
           <p>
-            Zodra we een akkoord hebben ontvangen op de prijsofferte, plannen we
-            een tweede gesprek in, waarbij we allerelei vragen stellen over uw
-            onderneming en uw klanten. Als wij uw onderneming en verwachtingen
-            duidelijk in kaart hebben gebracht, is de basis alavast gelegd om uw
-            project succesvol maken.
+            Zodra we een akkoord hebben ontvangen over de prijsofferte plannen
+            we een tweede gesprek in waarbij we dieper ingaan op uw onderneming
+            en uw doelpubliek. Als wij uw verwachtingen in kaart hebben gebracht
+            kunnen wij aan de slag gaan om uw project succesvol te maken.
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -87,12 +86,11 @@ const Timeline = () => (
           }}
           icon={<FontAwesomeIcon icon={faLaptopCode} />}
         >
-          <h3 className="vertical-timeline-element-title">Prototype </h3>
+          <h3 className="vertical-timeline-element-title">Design </h3>
           <p>
-            Het eerste product dat we opleveren is het design of prototype,
-            waarbij u alvast de eerste feedback kan geven. Zo weten wij of we
-            volgens uw verwachtingen aan het werken zijn, en kunnen we bijsturen
-            waar nodig.
+            Om te beginnen leveren we het design of prototype af, waarbij u
+            alvast de eerste feedback kan geven. Zo weten wij of we volgens uw
+            verwachtingen aan het werken zijn en kunnen we bijsturen waar nodig.
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -106,7 +104,7 @@ const Timeline = () => (
         >
           <h3 className="vertical-timeline-element-title">Het eind product </h3>
           <p>
-            Op basis van uw feedback werken wij verder op het prototype, tot we
+            Op basis van uw feedback werken wij verder aan het design tot we
             uiteindelijk een volwaardig eindproduct hebben. We doen de nodige
             testen op verschillende browsers en presenteren u het finale
             resultaat.
@@ -125,10 +123,10 @@ const Timeline = () => (
             Doorlopende support
           </h3>
           <p>
-            We bieden onze klanten ook nà de oplevering de nodige support, om
-            ervoor te zorgen dat alles optimaal blijft werken. Technsiche
-            ondersteuning zoals onderhoud en updates van uw website, zijn
-            standaard inbegrepen in onze service.
+            We bieden onze klanten ook nà de oplevering de nodige support om
+            ervoor te zorgen dat alles optimaal blijft werken. Wij bieden ook
+            noodzakelijke technsiche ondersteuning zoals onderhoud en updates
+            van uw website aan.
           </p>
         </VerticalTimelineElement>
       </VerticalTimeline>

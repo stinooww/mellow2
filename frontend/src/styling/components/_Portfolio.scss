@@ -67,6 +67,9 @@
     padding-right: 0;
     margin-left: 40px;
   }
+  @media (max-width: $Tablet) {
+    padding-right: 0;
+  }
 }
 
 .section-projects .table .row {
@@ -128,7 +131,7 @@
     margin-bottom: 0;
   }
   .section-projects .section-content__list li:nth-child(even) {
-    margin-bottom: 180px;
+    margin-bottom: 170px;
   }
 
 }

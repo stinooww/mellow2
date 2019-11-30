@@ -10,10 +10,11 @@ function Landing(props) {
         <h1>
           <Typist cursor={{ hideWhenDone: true }}>
             <span> Wij creëren uw online identiteit.</span>
-            {/*<Typist.Backspace count={29} delay={900} />*/}
-            {/*<span> maken uw website.</span>*/}
-            {/*<Typist.Backspace count={19} delay={900} />*/}
-            {/*<span> maken uw webshop op maat.</span>*/}
+            <Typist.Delay ms={500} />
+            <Typist.Backspace count={29} delay={1400} />
+            <span> maken uw webshop op maat.</span>
+            <Typist.Backspace count={19} delay={1400} />
+            <span> maken uw website.</span>
           </Typist>
         </h1>
         <Link className="mellow-btn cta-landing" to="/portfolio">
