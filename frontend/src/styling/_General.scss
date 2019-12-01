@@ -302,3 +302,10 @@ a, a:focus {
   text-align: center;
   margin: 5vh 0;
 }
+
+#_hj-f5b2a1eb-9b07_feedback, #fb-root {
+  @media screen and (max-width: $Tablet) {
+    display: none;
+
+  }
+}

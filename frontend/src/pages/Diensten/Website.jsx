@@ -2,6 +2,8 @@ import React from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import axios from 'axios';
+import scrollmagic from 'scrollmagic';
 AOS.init({ disable: 'phone' });
 
 const Website = () => (
@@ -14,7 +16,6 @@ const Website = () => (
             Een website zorgt ervoor dat u als ondernemer altijd online bent
             vertegenwoordigd.
           </p>
-
           <p>
             Het geeft een eigen identiteit en is een digitaal visitekaartje. Wij
             proberen hierbij zo goed mogelijk uw idee te visualiseren en op een

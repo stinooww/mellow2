@@ -28,12 +28,31 @@
     padding: 15px 30px;
     font-size: 1.1em;
     font-weight: 700;
-    font-family: 'JOSEFIN-SANS-BOLD', Arial, Helvetica, sans-serif;
+    font-family: JOSEFIN-SANS-BOLD, Arial, Helvetica, sans-serif !important;
     letter-spacing: .05em;
     background-color: transparent;
     width: 100%;
     @media (min-width: 780px) and (max-width: 1024px) {
       margin-top: 10%;
+    }
+  }
+
+  .moreInfo-btn {
+    margin: 2vh 0;
+    background: #3763ef;
+    color: white;
+    border: 2px solid transparent;
+    font-weight: 900;
+
+    &:before {
+      background: unset;
+    }
+
+    &:hover, &:focus, &:active {
+      background: transparent;
+      border: 2px solid white;
+      box-shadow: unset;
+      color: $blue;
     }
   }
 

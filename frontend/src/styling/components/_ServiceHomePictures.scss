@@ -498,7 +498,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $bigGsm) {
   .wrapper-1075 {
     margin-right: 20px;
     margin-left: 20px

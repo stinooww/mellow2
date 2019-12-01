@@ -1,9 +1,10 @@
 import React from 'react';
-import { Col, Grid, Row } from 'react-bootstrap';
+import { Col, Grid, Row, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Responsive from '../ICONS/Responsive';
 import Webdev from '../ICONS/Webdev';
-import Social from '../ICONS/Social';
+import Emailmarketing from '../../images/marketingEmail.png';
+import Seo from '../../images/seo.png';
 
 const ServiceAboutHome = () => (
   <div className="serviceHome">
@@ -12,35 +13,59 @@ const ServiceAboutHome = () => (
         <h2 className="serviceHome__title">Over Mellowwebdesign</h2>
       </Col>
       <Row className="weetjes">
-        <Col sm={12} lg={4} className="service-tile">
+        <Col xs={12} sm={5} className="service-tile">
           <div className="icon-margin1">
             <Responsive />
           </div>
           <h2 className="webdesign">Webdesign</h2>
           <p>
-            Websites maken is onze eerste grote liefde maar ook een stijlvol
-            grafisch ontwerp is bij Mellow in goede handen.
+            Websites maken is onze eerste grote liefde en dit in een stijlvol
+            ontwerp.
           </p>
+          <Link className="mellow-btn moreInfo-btn" to="/diensten/website">
+            Meer info
+          </Link>
         </Col>
-        <Col xs={12} lg={4} sm={6} className="service-tile">
-          <div className="icon-margin">
+        <Col xs={12} sm={5} className="service-tile seo-wrapper">
+          <div className="seo-image">
+            <Image responsive src={Seo} />
+          </div>
+          <h2 className="seo-title">Online advertising</h2>
+          <p>
+            Jouw klanten bevinden zich constant online, maar hoe krijg je ze tot
+            bij jou?
+          </p>
+          <Link className="mellow-btn moreInfo-btn" to="/diensten/seo">
+            Meer info
+          </Link>
+        </Col>
+      </Row>
+      <Row className="weetjes">
+        <Col xs={12} sm={5} className="service-tile">
+          <div className="icon-margin onderhoud-image">
             <Webdev />
           </div>
-          <h2>Webdevelopment</h2>
+          <h2 className="webhosting">Webhosting</h2>
           <p>
-            Landingspagina's, website, webshops ... Wij kunnen het maken voor u!
+            Webhosting & onderhoud ... Twee noodzakelijke elementen die je niet
+            mag vergeten bij een website!.
           </p>
+          <Link className="mellow-btn moreInfo-btn" to="/diensten/webhosting">
+            Meer info
+          </Link>
         </Col>
-        <Col xs={12} lg={4} sm={6} className="service-tile">
-          <div className="icon-margin">
-            <Social />
+        <Col xs={12} sm={5} className="service-tile email-wrapper">
+          <div className="icon-margin email-image">
+            <Image responsive src={Emailmarketing} />
           </div>
-          <h2>Online marketing</h2>
+          <h2 className="email-title">Email campagne</h2>
           <p>
-            Hebt u eerder nood aan een Facebook & LinkedIn pagina? Of liever
-            gepersonaliseerde marketing emails? Dan bent u bij ons aan het
-            juiste adres.
+            Hebt u eerder nood aan gepersonaliseerde marketing emails? Dan bent
+            u bij ons aan het juiste adres.
           </p>
+          <Link className="mellow-btn moreInfo-btn" to="/diensten/grafisch">
+            Meer info
+          </Link>
         </Col>
       </Row>
       <Link to="/contact" />
