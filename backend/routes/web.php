@@ -27,7 +27,6 @@ Route::post('portfolio/{id}/upload/car','Admin\portfolioController@carimage');
 Route::post('portfolio/{id}/upload/smartphone','Admin\portfolioController@smartimage');
 
 
-
 });
 
 

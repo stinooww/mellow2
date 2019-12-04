@@ -17,11 +17,13 @@ class contact extends Mailable
      * @return void
      */
     private $name, $email,$vraag;
-    public function __construct($data)
+
+    public function __construct(string $naam, string $mail, string $quest)
     {
-        $this->name=$data->name;
-        $this->email=$data->email;
-        $this->vraag=$data->vraag;
+
+        $this->name = $naam;
+        $this->email = $mail;
+        $this->vraag = $quest;
     }
 
     /**

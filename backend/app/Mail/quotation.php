@@ -17,17 +17,18 @@ class quotation extends Mailable
      * @return void
      */
     private $firstname,$name, $email,$tel,$region,$company,$deadline,$budget,$extrainfo;
-    public function __construct($data)
+
+    public function __construct($firstname, $name, $email, $tel, $region, $company, $deadline, $budget, $extrainfo)
     {
-        $this->firstname=$data->firstname;
-        $this->name=$data->name;
-        $this->email=$data->email;
-        $this->tel=$data->tel;
-        $this->region=$data->region;
-        $this->company=$data->company;
-        $this->deadline=$data->deadline;
-        $this->budget=$data->budget;
-        $this->extrainfo=$data->extrainfo;
+        $this->firstname = $firstname;
+        $this->name = $name;
+        $this->email = $email;
+        $this->tel = $tel;
+        $this->region = $region;
+        $this->company = $company;
+        $this->deadline = $deadline;
+        $this->budget = $budget;
+        $this->extrainfo = $extrainfo;
     }
 
     /**
@@ -44,7 +45,6 @@ class quotation extends Mailable
         $data['region']=$this->region;
         $data['company']=$this->company;
         $data['deadline']=$this->deadline;
-        $data['budget']=$this->budget;
         $data['budget']=$this->budget;
         $data['extrainfo']=$this->extrainfo;
 

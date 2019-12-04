@@ -17,12 +17,13 @@ class seo extends Mailable
      * @return void
      */
     private $name,$bedrijf, $email,$url;
-    public function __construct($data)
+
+    public function __construct($name, $bedrijf, $email, $url)
     {
-        $this->name=$data->name;
-        $this->bedrijf=$data->bedrijf;
-        $this->email=$data->email;
-        $this->url=$data->url;
+        $this->name = $name;
+        $this->bedrijf = $bedrijf;
+        $this->email = $email;
+        $this->url = $url;
 
     }
 

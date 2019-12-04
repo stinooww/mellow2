@@ -47,8 +47,8 @@ const formikEnhancer = withFormik({
     // e.preventDefault();
 
     const data = {
-      naam: payload.naam,
-      bedrijfsnaam: payload.bedrijfsnaam,
+      naam: payload.name,
+      bedrijfsnaam: payload.bedrijf,
       website: payload.url,
       email: payload.email
     };
