@@ -109,7 +109,7 @@
     }
 
     .portfolio__request {
-      padding: 1vh 0 0 7.6vw;
+      padding: 1vh 0 0 6vw;
       @media screen and (max-width: $bigGsm) {
         padding: 10px;
       }
@@ -217,6 +217,7 @@
     align-content: center;
     justify-content: center;
     color: $blue;
+    margin: 35px 0;
   }
   &__wrapper {
     display: flex;
@@ -276,6 +277,19 @@
   }
 }
 
+.portfolioItem__Link .next {
+  background: url("./images/arrow-pointing-to-right.png");
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-position: 15px 30px;
+}
+
+.portfolioItem__Link .previous {
+  background: url("./images/left-arrow (1).png");
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-position: 15px 30px;
+}
 
 .cta-overal {
   a {

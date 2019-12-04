@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import LinkComp from '../LinkComp/LinkComp';
 
 const Footer = () => (
   <footer className="footer fixed-bottom">
@@ -10,7 +10,10 @@ const Footer = () => (
           <span className="text-footer">
             &copy; Mellowwebdesign {new Date().getFullYear()} -{' '}
           </span>
-          <Link to="/algemenevoorwaarden">Algemene voorwaarden </Link>
+          <LinkComp
+            direction="/algemenevoorwaarden"
+            text="Algemene voorwaarden"
+          />
         </Col>
       </Row>
     </Grid>

@@ -11,13 +11,13 @@ import { Timeline, Tween } from 'react-gsap';
 import axios from 'axios';
 import PortfolioTestimonial from '../../components/PortfolioTestimonial/PortfolioTestimonial';
 import animateScrollTo from 'animated-scroll-to';
+import LinkComp from '../../components/LinkComp/LinkComp';
 // https://scrollmagic.io/
 // https://github.com/bitworking/react-scrollmagic/tree/master/example/src/components/ScrollMagicExamples
 // https://bitworking.github.io/react-gsap/
 AOS.init();
 
 class PortfolioItem extends Component {
-  _isMounted = false;
   constructor(props) {
     super(props);
     this.controller = new scrollmagic.Controller({
@@ -41,40 +41,34 @@ class PortfolioItem extends Component {
       }
     );
   };
-  componentDidMount() {
-    this._isMounted = true;
-    const projectId = this.props.match.params.id;
+  getPortfolioDetail = projectId => {
     const url = 'https://api.mellowwebdesign.be/api/portfolio/' + projectId;
 
     axios.get(url).then(res => {
-      if (this._isMounted) {
-        this.setState({
-          portfolio: res.data.attributes,
-          links: res.data.links
-        });
-      }
+      this.setState({
+        portfolio: res.data.attributes,
+        links: res.data.links
+      });
     });
-    if (this._isMounted) {
-      // create a scene
-      new scrollmagic.Scene({ triggerElement: '#parallax' })
-        .setTween('#innerParalax', {
-          y: '80%',
-          ease: 'Linear.easeNone'
-        })
-        .addIndicators()
-        .addTo(this.controller);
-    }
+  };
+  componentDidMount() {
+    const projectId = this.props.match.params.id;
+    this.getPortfolioDetail(projectId);
+    // create a scene
+    new scrollmagic.Scene({ triggerElement: '#parallax' })
+      .setTween('#innerParalax', {
+        y: '80%',
+        ease: 'Linear.easeNone'
+      })
+      .addIndicators()
+      .addTo(this.controller);
     window.scrollTo(0, 0);
   }
 
   componentWillReceiveProps(nextProps) {
-    //  check schrijven voor de huidige props.match te vergekijken met de nextprops
-    // als die verschillen terug de call maken met de nextprops.match
-    // aparte functie maken voor api get call met projectid als parameter
-  }
-
-  componentWillUnmount() {
-    this._isMounted = false;
+    if (this.props.match.params.id !== nextProps.match.params.id) {
+      this.getPortfolioDetail(nextProps.match.params.id);
+    }
   }
 
   render() {
@@ -172,7 +166,7 @@ class PortfolioItem extends Component {
               </div>
             </Col>
           </Row>
-          {portfolio['quote'] ? (
+          {portfolio['quote'] && (
             <Row>
               <Col md={12} className="portfolioItem__testimonial">
                 <PortfolioTestimonial
@@ -182,24 +176,24 @@ class PortfolioItem extends Component {
                 />
               </Col>
             </Row>
-          ) : (
-            ''
           )}
           <Row>
             {links['previous'] && (
               <Col md={6} className="portfolioItem__Link">
-                <Link to={`/portfolioitem/${links['previous']}`}>
-                  <span className="glyphicon glyphicon-triangle-left" /> vorige
-                  case
-                </Link>
+                <LinkComp
+                  text="Vorige case"
+                  direction={`/portfolioitem/${links['previous']}`}
+                  classname="previous"
+                />
               </Col>
             )}
             {links['next'] && (
               <Col md={6} className="portfolioItem__Link">
-                <a href={`/portfolioitem/${links['next']}`}>
-                  volgende case
-                  <span className="glyphicon glyphicon-triangle-right" />
-                </a>
+                <LinkComp
+                  text="Volgende case"
+                  direction={`/portfolioitem/${links['next']}`}
+                  classname="next"
+                />
               </Col>
             )}
           </Row>

@@ -224,7 +224,7 @@ class ModalOfferteStart extends Component {
             <div id="formOfferte__header" className="opper-form-offerte">
               <h1>Dus je wilt met ons samenwerken?</h1>
               <h4>
-                Super ! Vertel ons in 2 stappen wat meer over je project. en wij
+                Super ! Vertel ons in 2 stappen wat meer over je project en wij
                 contacteren je zo snel mogenlijk
               </h4>
             </div>

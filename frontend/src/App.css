@@ -2534,7 +2534,7 @@ nav.navbar-default .container {
 }
 
 .portfolioItem__grid .portfolio__request {
-  padding: 1vh 0 0 7.6vw;
+  padding: 1vh 0 0 6vw;
 }
 
 @media screen and (max-width: 767px) {
@@ -2663,6 +2663,7 @@ nav.navbar-default .container {
   align-content: center;
   justify-content: center;
   color: #3763ef;
+  margin: 35px 0;
 }
 
 .portfolioItem__wrapper {
@@ -2732,6 +2733,20 @@ nav.navbar-default .container {
   .portfolioItem__wrapper {
     flex-direction: column;
   }
+}
+
+.portfolioItem__Link .next {
+  background: url('./images/arrow-pointing-to-right.png');
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-position: 15px 30px;
+}
+
+.portfolioItem__Link .previous {
+  background: url('./images/left-arrow (1).png');
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-position: 15px 30px;
 }
 
 .cta-overal a {
@@ -2983,11 +2998,11 @@ nav.navbar-default .container {
 .about__container .about {
   padding: 50px 0;
   /**
-     * Helpers
-     */
+   * Helpers
+   */
   /**
- * Animations
- */
+* Animations
+*/
 }
 
 @media (min-width: 54em) and (max-width: 64em) {

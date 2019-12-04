@@ -1,30 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="12ea28b2-16cc-402e-8e6a-5180a58d3b5c" name="Default Changelist" comment="cookie">
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/LinkComp/LinkComp.jsx" afterDir="false" />
+    <list default="true" id="12ea28b2-16cc-402e-8e6a-5180a58d3b5c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/src/images/arrow-pointing-to-right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/images/left-arrow (1).png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/public/vendor/adminlte/vendor/bootstrap/dist/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/backend/public/vendor/adminlte/vendor/bootstrap/dist/css/bootstrap.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/public/vendor/adminlte/vendor/bootstrap/dist/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/backend/public/vendor/adminlte/vendor/bootstrap/dist/css/bootstrap.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/email.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/email.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/quoteemail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/quoteemail.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/seomail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/seomail.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Cookie/Cookie.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Cookie/Cookie.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Routing/Routing.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Routing/Routing.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/ServiceAboutHome/ServiceAboutHome.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ServiceAboutHome/ServiceAboutHome.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Diensten/Grafisch.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Diensten/Grafisch.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Diensten/SEO.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Diensten/SEO.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Diensten/Webhosting.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Diensten/Webhosting.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Diensten/Website.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Diensten/Website.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Footer/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ModalOfferte/ModalOfferteStart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ModalOfferte/ModalOfferteStart.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/portfolio-item/PortfolioItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/portfolio-item/PortfolioItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_General.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/_General.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/bootstrap/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/bootstrap/css/bootstrap.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/bootstrap/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/components/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/components/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/components/_modalOfferte.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/components/_modalOfferte.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/components/_testimonials.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/components/_testimonials.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/pages/_Contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/pages/_Contact.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/styling/components/_PortfolioItem.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/components/_PortfolioItem.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,15 +60,15 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src/images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/frontend/src/images" />
       <recent name="$PROJECT_DIR$/frontend/src/styling/components" />
       <recent name="$PROJECT_DIR$/frontend/src/pages" />
       <recent name="$PROJECT_DIR$/frontend/src/styling/bootstrap" />
       <recent name="$PROJECT_DIR$/frontend/src/styling/pages" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/frontend/src/images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -208,14 +193,7 @@
       <workItem from="1574867991803" duration="2957000" />
       <workItem from="1575300952222" duration="5138000" />
       <workItem from="1575449601314" duration="721000" />
-      <workItem from="1575472643134" duration="1753000" />
-    </task>
-    <task id="LOCAL-00046" summary="te veel voor op te noeme">
-      <created>1567076183057</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1567076183057</updated>
+      <workItem from="1575472643134" duration="5650000" />
     </task>
     <task id="LOCAL-00047" summary="te veel voor op te noeme">
       <created>1567258046176</created>
@@ -553,7 +531,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575224698773</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="cookie">
+      <created>1575474528732</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1575474528732</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -610,9 +595,9 @@
     <MESSAGE value="fb customer chat" />
     <MESSAGE value="added images to home" />
     <MESSAGE value="improvement mobile" />
-    <MESSAGE value="cookie" />
     <MESSAGE value="homepage tile" />
-    <option name="LAST_COMMIT_MESSAGE" value="homepage tile" />
+    <MESSAGE value="cookie" />
+    <option name="LAST_COMMIT_MESSAGE" value="cookie" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
