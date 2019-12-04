@@ -67,7 +67,7 @@ h3 {
 h2 {
   margin-top: 0;
   margin-bottom: 0.65em;
-  color: $yellow;
+  color: $blue;
   font-family: 'JOSEFIN-SANS-REG', Arial, Helvetica, sans-serif;
   font-size: 3em;
   font-weight: 900;
@@ -290,6 +290,7 @@ a, a:focus {
   bottom: 90px !important;
   z-index: 5;
   right: 32px !important;
+  outline: none;
 }
 
 .callout {

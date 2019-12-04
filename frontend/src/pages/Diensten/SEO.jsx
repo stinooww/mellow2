@@ -1,23 +1,21 @@
 import React, { Component } from 'react';
-import {
-  Grid,
-  Row,
-  Col,
-  Image,
-  OverlayTrigger,
-  Tooltip
-} from 'react-bootstrap';
+import { Grid, Row, Col, Image } from 'react-bootstrap';
 import SeoAnalyse from '../../components/SEOanalyse/SeoAnalyse';
 import Google from '../../images/google.png';
 import { CircleArrow as ScrollUpButton } from 'react-scroll-up-button';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Helmet } from 'react-helmet';
+import axios from 'axios';
+import scrollmagic from 'scrollmagic';
 AOS.init();
 
 class SEO extends Component {
   ref = React.createRef();
 
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     // let tooltip2 = (
     //   <Tooltip>

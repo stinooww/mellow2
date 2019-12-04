@@ -14,7 +14,7 @@ class Cookie extends React.Component {
               to="/algemenevoorwaarden"
               onClick={this.props.redirectPopup}
             >
-              afwijzen{' '}
+              Privacy policy{' '}
             </Link>
             <button className="cookies_button" onClick={this.props.closePopup}>
               Toestaan

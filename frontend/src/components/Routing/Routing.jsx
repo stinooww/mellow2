@@ -16,6 +16,7 @@ import Page404 from '../../pages/Error/page404';
 const Routing = ({ activateOfferte }) => (
   <Switch>
     <Route path="/" exact component={Home} />
+    <Route path="/index.html" exact component={Home} />
     <Route path="/home" exact component={Home} />
     <Route path="/strategie" component={Strategie} />
     <Route path="/portfolioitem/:id" component={PortfolioItem} />
@@ -31,6 +32,8 @@ const Routing = ({ activateOfferte }) => (
     <Route path="/contact" component={Contact} />
     <Route path="/algemenevoorwaarden" component={Av} />
     <Route path="/portfolio" component={Portfolio} />
+    <Route path="/404" component={Page404} />
+    <Route path="/500" component={Page404} />
     <Route path="*" component={Page404} />
   </Switch>
 );

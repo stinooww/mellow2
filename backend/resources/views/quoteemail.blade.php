@@ -203,7 +203,7 @@
         }
         /*
         @tab Header
-  Header Link
+  Header LinkComp
 	*/
         .headerContainer .mcnTextContent a,.headerContainer .mcnTextContent p a{
             /*@editable*/color:#007C89;
@@ -253,7 +253,7 @@
         }
         /*
         @tab Body
- Body Link
+ Body LinkComp
 	*/
         .bodyContainer .mcnTextContent a,.bodyContainer .mcnTextContent p a{
             /*@editable*/color:#007C89;
@@ -303,7 +303,7 @@
         }
         /*
         @tab Footer
- Footer Link
+ Footer LinkComp
 	*/
         .footerContainer .mcnTextContent a,.footerContainer .mcnTextContent p a{
             /*@editable*/color:#FFFFFF;

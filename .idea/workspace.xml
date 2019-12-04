@@ -1,24 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="12ea28b2-16cc-402e-8e6a-5180a58d3b5c" name="Default Changelist" comment="">
+    <list default="true" id="12ea28b2-16cc-402e-8e6a-5180a58d3b5c" name="Default Changelist" comment="cookie">
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/LinkComp/LinkComp.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/vendor/adminlte/vendor/bootstrap/dist/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/backend/public/vendor/adminlte/vendor/bootstrap/dist/css/bootstrap.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/vendor/adminlte/vendor/bootstrap/dist/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/backend/public/vendor/adminlte/vendor/bootstrap/dist/css/bootstrap.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/email.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/email.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/quoteemail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/quoteemail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/seomail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/seomail.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/ServiceHomePictures/ServiceTile/ServiceTile.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Timeline/Timeline.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Timeline/Timeline.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/WhatWeDo/ServiceAboutHome.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ServiceAboutHome/ServiceAboutHome.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/landing/Landing.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/landing/Landing.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Cookie/Cookie.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Cookie/Cookie.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Routing/Routing.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Routing/Routing.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ServiceAboutHome/ServiceAboutHome.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ServiceAboutHome/ServiceAboutHome.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/Diensten/Grafisch.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Diensten/Grafisch.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/Diensten/SEO.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Diensten/SEO.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Diensten/Webhosting.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Diensten/Webhosting.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/Diensten/Website.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Diensten/Website.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Home/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Strategie/Strategie.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Strategie/Strategie.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/components/_Portfolio.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/components/_Portfolio.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/components/_landing.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/components/_landing.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/pages/_Grafisch.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/pages/_Grafisch.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/pages/_Seo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/pages/_Seo.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/pages/_Webhosting.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/pages/_Webhosting.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styling/pages/_Website.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/pages/_Website.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/portfolio-item/PortfolioItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/portfolio-item/PortfolioItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/styling/_General.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/_General.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/styling/bootstrap/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/styling/bootstrap/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/styling/components/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/components/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/styling/components/_modalOfferte.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/components/_modalOfferte.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/styling/components/_testimonials.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/components/_testimonials.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/styling/pages/_Contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styling/pages/_Contact.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,15 +75,15 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/frontend/src/images" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/frontend/src/images" />
       <recent name="$PROJECT_DIR$/frontend/src/styling/components" />
       <recent name="$PROJECT_DIR$/frontend/src/pages" />
       <recent name="$PROJECT_DIR$/frontend/src/styling/bootstrap" />
       <recent name="$PROJECT_DIR$/frontend/src/styling/pages" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src/images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -90,6 +96,16 @@
           <option name="name" value="StatusDashboardGroupingRule" />
         </RuleState>
       </list>
+    </option>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand />
+          <select />
+        </treeState>
+      </serviceView>
     </option>
   </component>
   <component name="SvnConfiguration">
@@ -190,48 +206,9 @@
       <workItem from="1574839015248" duration="3564000" />
       <workItem from="1574858936472" duration="591000" />
       <workItem from="1574867991803" duration="2957000" />
-    </task>
-    <task id="LOCAL-00040" summary="full styling - not done">
-      <created>1564154858202</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1564154858202</updated>
-    </task>
-    <task id="LOCAL-00041" summary="overall improvement, styling and modifications to the website">
-      <created>1565268095344</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1565268095344</updated>
-    </task>
-    <task id="LOCAL-00042" summary="overall improvement, styling and modifications to the website">
-      <created>1566223000432</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1566223000432</updated>
-    </task>
-    <task id="LOCAL-00043" summary="overall improvement, styling and modifications to the website">
-      <created>1566317366865</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1566317366865</updated>
-    </task>
-    <task id="LOCAL-00044" summary="te veel voor op te noeme">
-      <created>1567076049214</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1567076049214</updated>
-    </task>
-    <task id="LOCAL-00045" summary="te veel voor op te noeme">
-      <created>1567076110984</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1567076110984</updated>
+      <workItem from="1575300952222" duration="5138000" />
+      <workItem from="1575449601314" duration="721000" />
+      <workItem from="1575472643134" duration="1753000" />
     </task>
     <task id="LOCAL-00046" summary="te veel voor op te noeme">
       <created>1567076183057</created>
@@ -534,7 +511,49 @@
       <option name="project" value="LOCAL" />
       <updated>1575107491277</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="improvement mobile">
+      <created>1575117324986</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1575117324986</updated>
+    </task>
+    <task id="LOCAL-00090" summary="improvement mobile">
+      <created>1575117349996</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1575117349996</updated>
+    </task>
+    <task id="LOCAL-00091" summary="improvement mobile">
+      <created>1575117403182</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1575117403182</updated>
+    </task>
+    <task id="LOCAL-00092" summary="cookie">
+      <created>1575122680538</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1575122680538</updated>
+    </task>
+    <task id="LOCAL-00093" summary="cookie">
+      <created>1575122708609</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1575122708609</updated>
+    </task>
+    <task id="LOCAL-00094" summary="homepage tile">
+      <created>1575224698773</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1575224698773</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -568,8 +587,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="algemene veranderingen aan verschillende paginas + toevoeging van SEO optimalisatie en offine modus voor service werkers" />
-    <MESSAGE value="nodemodule map die weg moet" />
     <MESSAGE value="getting more responsive" />
     <MESSAGE value="emails fixed!!!" />
     <MESSAGE value="full styling - not done" />
@@ -593,7 +610,9 @@
     <MESSAGE value="fb customer chat" />
     <MESSAGE value="added images to home" />
     <MESSAGE value="improvement mobile" />
-    <option name="LAST_COMMIT_MESSAGE" value="improvement mobile" />
+    <MESSAGE value="cookie" />
+    <MESSAGE value="homepage tile" />
+    <option name="LAST_COMMIT_MESSAGE" value="homepage tile" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

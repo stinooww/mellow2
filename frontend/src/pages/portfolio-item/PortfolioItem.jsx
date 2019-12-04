@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Col, Grid, Image, Row } from 'react-bootstrap';
 import scrollmagic from 'scrollmagic';
 import { CircleArrow as ScrollUpButton } from 'react-scroll-up-button';
+import { Link } from 'react-router-dom';
 import ReactHtmlParser from 'react-html-parser';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -64,6 +65,12 @@ class PortfolioItem extends Component {
         .addTo(this.controller);
     }
     window.scrollTo(0, 0);
+  }
+
+  componentWillReceiveProps(nextProps) {
+    //  check schrijven voor de huidige props.match te vergekijken met de nextprops
+    // als die verschillen terug de call maken met de nextprops.match
+    // aparte functie maken voor api get call met projectid als parameter
   }
 
   componentWillUnmount() {
@@ -179,25 +186,21 @@ class PortfolioItem extends Component {
             ''
           )}
           <Row>
-            {links['previous'] ? (
+            {links['previous'] && (
               <Col md={6} className="portfolioItem__Link">
-                <a href={`/portfolioitem/${links['previous']}`}>
+                <Link to={`/portfolioitem/${links['previous']}`}>
                   <span className="glyphicon glyphicon-triangle-left" /> vorige
                   case
-                </a>
+                </Link>
               </Col>
-            ) : (
-              ''
             )}
-            {links['next'] ? (
+            {links['next'] && (
               <Col md={6} className="portfolioItem__Link">
                 <a href={`/portfolioitem/${links['next']}`}>
                   volgende case
                   <span className="glyphicon glyphicon-triangle-right" />
                 </a>
               </Col>
-            ) : (
-              ''
             )}
           </Row>
         </div>

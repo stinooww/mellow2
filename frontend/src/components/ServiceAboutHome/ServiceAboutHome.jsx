@@ -5,6 +5,7 @@ import Responsive from '../ICONS/Responsive';
 import Webdev from '../ICONS/Webdev';
 import Emailmarketing from '../../images/marketingEmail.png';
 import Seo from '../../images/seo.png';
+import LinkComp from '../LinkComp/LinkComp';
 
 const ServiceAboutHome = () => (
   <div className="serviceHome">
@@ -35,9 +36,11 @@ const ServiceAboutHome = () => (
             Jouw klanten bevinden zich constant online, maar hoe krijg je ze tot
             bij jou?
           </p>
-          <Link className="mellow-btn moreInfo-btn" to="/diensten/seo">
-            Meer info
-          </Link>
+          <LinkComp
+            classname="mellow-btn moreInfo-btn"
+            direction="/diensten/seo"
+            text="Meer info"
+          />
         </Col>
       </Row>
       <Row className="weetjes">
@@ -47,12 +50,15 @@ const ServiceAboutHome = () => (
           </div>
           <h2 className="webhosting">Webhosting</h2>
           <p>
-            Webhosting & onderhoud ... Twee noodzakelijke elementen die je niet
-            mag vergeten bij een website!.
+            Webhosting & onderhoud. <br />
+            Twee noodzakelijke elementen die je niet mag vergeten bij een
+            website!
           </p>
-          <Link className="mellow-btn moreInfo-btn" to="/diensten/webhosting">
-            Meer info
-          </Link>
+          <LinkComp
+            classname="mellow-btn moreInfo-btn"
+            direction="/diensten/webhosting"
+            text="Meer info"
+          />
         </Col>
         <Col xs={12} sm={5} className="service-tile email-wrapper">
           <div className="icon-margin email-image">
@@ -63,9 +69,11 @@ const ServiceAboutHome = () => (
             Hebt u eerder nood aan gepersonaliseerde marketing emails? Dan bent
             u bij ons aan het juiste adres.
           </p>
-          <Link className="mellow-btn moreInfo-btn" to="/diensten/grafisch">
-            Meer info
-          </Link>
+          <LinkComp
+            classname="mellow-btn moreInfo-btn"
+            direction="/diensten/grafisch"
+            text="Meer info"
+          />
         </Col>
       </Row>
       <Link to="/contact" />
