@@ -23,7 +23,8 @@
         "nyholm/psr7": "^1.1",
         "php-http/guzzle6-adapter": "^1.0",
         "torann/laravel-repository": "^0.5.10",
-        "unisharp/laravel-filemanager": "dev-master"
+      "unisharp/laravel-filemanager": "dev-master",
+      "ext-json": "*"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
