@@ -1,6 +1,6 @@
 .serviceHome {
   width: 100%;
-  background-color: $yellow;
+  padding: 50px 0;
 }
 
 .serviceHome__header-wrapper {
@@ -15,12 +15,16 @@
 }
 
 .weetjes {
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 
   .service-tile {
-    margin: 0 0 2em 0;
+    background-color: $yellow;
+    padding: 3%;
+    margin: 0 12.5px;
+    box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,25 +33,33 @@
     }
     h2 {
       color: black;
-      margin-top: 83px;
+      margin: 25px 0 10px 0;
       @media (max-width: $Tablet) {
         margin-top: 35px;
       }
-    }
 
-    .webdesign {
-      margin-top: 45px;
-      @media (max-width: $Tablet) {
-        margin-top: 5px;
+      &.webdesign {
+        margin: 28px 0 10px 0;
       }
 
+      &.webhosting {
+        margin: 20px 0 9px 0;
+      }
     }
+
+
+
   }
 
   p {
     color: black;
+    width: 400px;
+    text-align: center;
     @media (max-width: 991px) {
       text-align: left;
+    }
+    @media (max-width: $mq-xl) {
+      width: unset;
     }
   }
 
@@ -59,6 +71,47 @@
       margin-left: 50px;
     }
   }
+
+  .onderhoud-image svg {
+    height: 141px;
+  }
+
+  .seo-wrapper {
+    .seo {
+      &-image {
+        width: 217px;
+      }
+    }
+
+  }
+
+  .email-wrapper {
+    .email {
+      &-image {
+        width: 140px;
+      }
+    }
+  }
+
+  .moreInfo-btn {
+    margin: 2vh 0;
+    background: #3763ef;
+    color: white;
+    border: 2px solid transparent;
+    font-weight: 900;
+
+    &:before {
+      background: unset;
+    }
+
+    &:hover, &:focus, &:active {
+      background: transparent;
+      border: 2px solid white;
+      box-shadow: unset;
+      color: $blue;
+    }
+  }
+
 }
 
 .icon-margin1 {

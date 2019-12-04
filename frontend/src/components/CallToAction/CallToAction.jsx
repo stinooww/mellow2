@@ -12,10 +12,7 @@ function CallToAction({ activateOfferte }) {
             </h4>
           </Col>
           <Col lg={3} md={4} sm={4} xs={12}>
-            <button
-              className="cta-btn hvr-sweep-to-right"
-              onClick={activateOfferte}
-            >
+            <button className="cta-btn moreInfo-btn" onClick={activateOfferte}>
               Neem contact op
             </button>
           </Col>
