@@ -18,7 +18,7 @@
     h3 {
       font-style: italic;
       font-size: 20px;
-      color: black;
+      color: $light-black;
     }
 
   }
@@ -42,7 +42,7 @@
     .carousel-control {
       display: inherit;
       background: none;
-      color: black;
+      color: $blue;
       width: 5%;
     }
 
@@ -56,6 +56,11 @@
       }
       .item {
         height: 100%;
+
+        p {
+          color: $light-black;
+
+        }
       }
     }
 

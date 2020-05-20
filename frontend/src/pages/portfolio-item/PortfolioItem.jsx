@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Col, Grid, Image, Row } from 'react-bootstrap';
 import scrollmagic from 'scrollmagic';
 import { CircleArrow as ScrollUpButton } from 'react-scroll-up-button';
-import { Link } from 'react-router-dom';
 import ReactHtmlParser from 'react-html-parser';
 import AOS from 'aos';
 import 'aos/dist/aos.css';

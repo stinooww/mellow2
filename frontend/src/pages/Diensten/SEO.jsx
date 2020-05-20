@@ -6,8 +6,6 @@ import { CircleArrow as ScrollUpButton } from 'react-scroll-up-button';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Helmet } from 'react-helmet';
-import axios from 'axios';
-import scrollmagic from 'scrollmagic';
 AOS.init();
 
 class SEO extends Component {

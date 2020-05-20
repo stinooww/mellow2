@@ -1,15 +1,16 @@
 .StrategiePage {
-  margin-top: 10vh;
+  padding-top: 5%;
 
   &__intro {
     padding: 0 40px;
 
-    h2 {
-      margin: 3vh 0;
+    h1 {
+      margin: 0 0 3vh 0;
+      padding-top: 0;
     }
 
     h3 {
-      margin: 10vh 0;
+      margin: 5vh 0 1vh 0;
     }
 
   }

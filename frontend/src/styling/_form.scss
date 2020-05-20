@@ -67,7 +67,7 @@
 }
 
 .error.input__label--nariko::before {
-  border-top: 4px solid #8c0013;
+  border-top: 4px solid $red;
   animation: wobble 0.7s ease-in;
 }
 

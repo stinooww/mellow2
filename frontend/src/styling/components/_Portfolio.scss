@@ -109,7 +109,7 @@
     right: 0;
     bottom: 0;
     z-index: -1;
-    background: #1a1a1a;
+    background: $light-black;
     transform: scale(2) rotate(2deg);
     transition: transform 300ms;
 
@@ -124,7 +124,7 @@
   }
 
   .section-projects .content-cell h2 {
-    background-color: black;
+    background-color: $light-black;
     padding: 1%;
   }
   .section-projects .section-content__list li {
@@ -163,7 +163,7 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   opacity: 0.5;
-  color: grey;
+  color: $color-grey;
 
   a:hover {
     color: white;

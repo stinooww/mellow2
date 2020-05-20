@@ -4,7 +4,7 @@ footer {
   position: sticky;
 }
 .footer {
-  background-color: black;
+  background-color: $light-black;
   padding: 7px 0;
   @media (max-width: $Tablet) {
     padding: 7px;
@@ -15,7 +15,7 @@ footer {
     display: flex;
     flex-direction: column;
     h4 {
-      color: black;
+      color: $light-black;
     }
   }
   p, .text-footer, li {

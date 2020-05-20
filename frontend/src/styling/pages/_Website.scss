@@ -14,13 +14,15 @@
       margin: 3vh 0 5vh 0;
       line-height: 1.4;
     }
-    strong {
-      font-size: 1.6em;
+
+    .waarom-website-txt__call {
+      font-weight: bold;
       line-height: 3em;
     }
 
     .callout {
       margin-top: 10vh;
+
     }
   }
 
@@ -59,11 +61,6 @@
         height: 100%;
       }
     }
-  }
-
-  strong {
-    color: black;
-    margin-top: 20px;
   }
 
   .overall-container {

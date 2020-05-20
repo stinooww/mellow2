@@ -10,7 +10,7 @@ function Webhosting(props) {
   return (
     <Grid className="onderhoud">
       <Row>
-        <h2>Waarom een onderhoudspakket ?</h2>
+        <h1>Waarom een onderhoudspakket ?</h1>
         <Col xs={12} className="onderhoud__expl">
           <p>
             Een website maken stopt niet bij de ontwikkeling ervan. Ook na de
@@ -106,6 +106,7 @@ function Webhosting(props) {
             </PricingSlot>
             <PricingSlot
               highlighted
+              highlightColor="#33658A"
               onClick={props.activateOfferte}
               buttonText="Start onderhoud"
               title="ADVANCED"

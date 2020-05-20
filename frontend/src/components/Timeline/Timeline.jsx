@@ -21,9 +21,6 @@ import {
 const Timeline = () => (
   <Row className="show-grid timeline">
     <Col xs={12} md={12}>
-      <div className="elementor-divider">
-        <span className="elementor-divider-separator" />
-      </div>
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"

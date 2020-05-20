@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import axios from 'axios';
-import scrollmagic from 'scrollmagic';
 AOS.init({ disable: 'phone' });
 
 class Website extends Component {
@@ -17,10 +15,7 @@ class Website extends Component {
         <Grid>
           <Row>
             <Col xs={12} className="waarom-website-txt">
-              <h2>
-                {' '}
-                Waarom zou u een website nodig hebben voor uw onderneming?
-              </h2>
+              <h1> Waarom heeft u een website nodig voor uw onderneming?</h1>
               <p>
                 Een website zorgt ervoor dat u als ondernemer altijd online bent
                 vertegenwoordigd.
@@ -31,10 +26,10 @@ class Website extends Component {
                 op een boeiende manier aan al uw toekomstige bezoekers duidelijk
                 te maken wat uw bedrijf doet.
               </p>
-              <strong>
+              <p className="waarom-website-txt__call">
                 Want in een wereld van verandering is een digitale aanwezigheid
                 belangrijk!
-              </strong>
+              </p>
               <p className="callout">
                 Hebt u nog geen website of bent u niet 100% tevreden van uw
                 huidige website? Dan lossen wij dit graag voor u op.

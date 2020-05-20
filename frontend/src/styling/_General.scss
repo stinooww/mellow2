@@ -40,7 +40,7 @@ a {
 h1 {
   font-family: 'JOSEFIN-SANS-BOLD', Arial, Helvetica, sans-serif;
   padding: 1em 0;
-  color: black;
+  color: $blue;
 }
 
 figure {
@@ -50,14 +50,14 @@ figure {
 p {
   font-size: 22px;
   margin: 0;
-  color: $color-grey;
+  color: $light-black;
   font-family: 'JOSEFIN-SANS-REG', Arial, Helvetica, sans-serif;
   // https://www.fontsquirrel.com/fonts/josefin-sans
 }
 
 h3 {
   font-size: 27px;
-  color: $blue;
+  color: $light-black;
   text-align: left;
   font-family: 'JOSEFIN-SANS-BOLD', Arial, Helvetica, sans-serif;
 
@@ -91,7 +91,7 @@ body {
 
   font-size: 100%;
   line-height: 1.6;
-  color: black;
+  color: $light-black;
   background-color: white;
   width: 100%;
   overflow-x: hidden;
@@ -294,7 +294,7 @@ a, a:focus {
 }
 
 .callout {
-  box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 18px 0 #33658a;
   background-color: #ffffff;
   border-radius: 6px 6px 6px 6px;
   overflow: hidden;

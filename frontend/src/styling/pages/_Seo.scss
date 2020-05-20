@@ -34,7 +34,7 @@
     }
 
     .sea-link {
-      color: black;
+      color: $light-black;
 
       &:hover {
         text-decoration: underline !important;
@@ -122,7 +122,7 @@
           line-height: normal;
           font-size: 16px;
           letter-spacing: .285714px;
-          color: black;
+          color: $light-black;
         }
 
         &:first-child {
@@ -145,7 +145,7 @@
     }
 
     .seo__extraCta {
-      color: black;
+      color: $light-black;
 
     }
   }
@@ -171,7 +171,7 @@
   }
 
   p {
-    color: black;
+    color: $light-black;
   }
 
   h2 {
@@ -246,6 +246,6 @@
   }
 
   .sea-shoutout {
-    color: black;
+    color: $light-black;
   }
 }

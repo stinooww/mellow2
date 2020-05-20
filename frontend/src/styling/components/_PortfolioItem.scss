@@ -37,7 +37,7 @@
     background-color: $yellow;
     display: flex;
     flex-direction: column;
-    border-top: 2px solid black;
+    border-top: 2px solid $light-black;
     align-items: center;
 
     @media screen and (max-width: $bigGsm) {
@@ -61,7 +61,7 @@
 
       h1 {
         text-align: center;
-        font-size: 16em;
+        font-size: 12em;
         color: white;
         padding: 0;
         text-transform: capitalize;
@@ -104,7 +104,7 @@
   &__grid {
 
     h1, h3 {
-      color: black;
+      color: $light-black;
       padding: 1vh 5vw;
     }
 
@@ -161,7 +161,7 @@
 
     h2 {
       padding: 1vh 6vw;
-      color: black;
+      color: $blue;
       @media screen and (max-width: $bigGsm) {
         padding: 0;
       }
@@ -212,7 +212,7 @@
 
   &__Link {
     display: flex;
-    height: 10vh;
+    height: 150px;
     font-size: 1.5em;
     align-content: center;
     justify-content: center;
@@ -244,7 +244,7 @@
         }
 
         p {
-          color: black;
+          color: $light-black;
         }
       }
       @media screen and (max-width: $smallLaptop) {

@@ -52,13 +52,13 @@
 
       @media (min-width: $mq-md) {
         display: flex;
-        height: 100vh;
         min-height: 40em;
       }
 
       & > *:first-child {
         position: relative;
         height: 25em;
+        order: 1;
 
 
 
@@ -87,6 +87,7 @@
       }
 
       & > *:last-child {
+        order: 0;
 
         @media (min-width: $mq-md) {
           flex-basis: 50%;
@@ -104,8 +105,6 @@
         flex-direction: column;
 
         padding: 2em;
-
-        overflow-y: auto;
         @media (min-width: $mq-sm) {
           padding-top: 10%;
         }
@@ -125,7 +124,7 @@
           content: "";
           position: absolute;
           left: 0;
-          bottom: 0;
+          bottom: -10px;
 
           height: 2px;
           width: 12em;

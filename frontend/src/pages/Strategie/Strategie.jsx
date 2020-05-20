@@ -7,7 +7,7 @@ const Strategie = () => (
     <Grid className="StrategiePage">
       <Row>
         <Col xs={12} className="StrategiePage__intro">
-          <h2>Onze strategie</h2>
+          <h1>Onze strategie</h1>
           <p>
             We starten vanuit uw visie en kijken samen met u wat de beste
             digitale oplossing is om uw idee te helpen groeien.

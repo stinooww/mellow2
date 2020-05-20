@@ -57,14 +57,14 @@
   }
 
   &__cta-wrapper {
-    color: black;
+    color: $light-black;
     margin: 10vh 0 3vh 0;
     @media (max-width: $smallLaptop) {
       margin: 5vh 0;
     }
 
     .emailMarketing__cta {
-      color: black;
+      color: $light-black;
       margin: 1vh 0;
     }
   }

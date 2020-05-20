@@ -13,9 +13,6 @@ const ServiceHomePictures = () => (
               om de beste oplossing op maat te vinden!
             </h2>
           </div>
-          <div className="elementor-divider">
-            <span className="elementor-divider-separator" />
-          </div>
         </div>
         <div className="portfolio-grid clearfix">
           <div className="grid-col-50">

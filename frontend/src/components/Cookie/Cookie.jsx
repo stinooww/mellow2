@@ -9,11 +9,7 @@ class Cookie extends React.Component {
         <div className="cookies_inner">
           <p>{this.props.cookieText}</p>
           <div className="cookies_inner-btn">
-            <Link
-              className="cookies_button"
-              to="/algemenevoorwaarden"
-              onClick={this.props.redirectPopup}
-            >
+            <Link className="cookies_button" to="/algemenevoorwaarden">
               Privacy policy{' '}
             </Link>
             <button className="cookies_button" onClick={this.props.closePopup}>

@@ -21,7 +21,7 @@ class Grafisch extends Component {
         <Grid className="grafisch-email">
           <Row>
             <Col xs={12}>
-              <h2>Logo design & huisstijl</h2>
+              <h1>Logo design & huisstijl</h1>
               <p>
                 Uw huisstijl bepaalt uw imago.
                 <br />
