@@ -8,7 +8,7 @@ function CallToAction({ activateOfferte }) {
         <Row>
           <Col lg={9} md={8} sm={8} xs={12}>
             <h4 className="cta-text">
-              Kunnen wij u helpen met het creëren van uw online identiteit?
+              Wij helpen je jouw online identiteit te creëren. Neem contact op.
             </h4>
           </Col>
           <Col lg={3} md={4} sm={4} xs={12}>

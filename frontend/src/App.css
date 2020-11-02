@@ -1621,7 +1621,7 @@ nav.navbar-default .container {
 .weetjes .moreInfo-btn:focus,
 .weetjes .moreInfo-btn:active {
   background: transparent;
-  border: 2px solid white;
+  border: 2px solid #33658a;
   box-shadow: unset;
   color: #33658a;
 }
@@ -2951,7 +2951,7 @@ nav.navbar-default .container {
 .section-cta .moreInfo-btn:focus,
 .section-cta .moreInfo-btn:active {
   background: transparent;
-  border: 2px solid white;
+  border: 2px solid #33658a;
   box-shadow: unset;
   color: #33658a;
 }
@@ -3010,11 +3010,11 @@ nav.navbar-default .container {
 .about__container .about {
   padding: 50px 0;
   /**
-     * Helpers
-     */
+   * Helpers
+   */
   /**
- * Animations
- */
+* Animations
+*/
 }
 
 @media (min-width: 54em) and (max-width: 64em) {

@@ -10,27 +10,30 @@ function Webhosting(props) {
   return (
     <Grid className="onderhoud">
       <Row>
-        <h1>Waarom een onderhoudspakket ?</h1>
+        <h1> Heb ik een onderhoudspakket nodig?</h1>
         <Col xs={12} className="onderhoud__expl">
           <p>
-            Een website maken stopt niet bij de ontwikkeling ervan. Ook na de
-            lancering is het belangrijk dat uw website goed wordt onderhouden.
-            Hiervoor bieden we een onderhoudspakket aan. Dit is nodig omdat in
-            de website verschillende plugins steken die zorgen voor allerlei
-            functionaliteit van de website. Deze moeten op regelmatige basis
-            worden geupdate zodat ze goed kunnnen blijven werken.
+            Wist je dat een website niet stopt bij het ontwikkelen ervan? Ook ná
+            de lancering moet je hem goed onderhouden zodat hij blijft werken.
+            Je website beschikt over verschillende plug-ins die instaan voor
+            verschillende functionaliteiten. Denk aan: online betalen, een
+            reservatiesysteem …
           </p>
           <p className="callout">
-            Ook zorgen we ervoor dat uw website beschermt is tegen hackers om te
-            voorkomen dat cyberaanvallen uw website offline halen. We nemen
-            bovendien regelmatig een backup zodat we altijd een kopie hebben van
-            uw website en deze dus nooit verloren kan gaan.
+            Die plug-ins moeten regelmatig geüpdatet worden. Anders werken ze
+            niet meer. Met ons onderhoudspakket doen wij dat voor jou. Zo kan
+            jij zonder zorgen genieten van een goed functionerende website.
           </p>
           <p>
-            Tevens zitten in een onderhoudspakket ook kleine aanpassingen
-            inbegrepen aan de website zelf: wilt u graag een afbeelding
-            veranderen, of dat stukje tekst over uwzelf aanpassen. Dit doen we
-            kosteloos!
+            Hoe meer ons dagelijks leven zich online afspeelt, hoe vaker hackers
+            zullen proberen een graantje mee te pikken (letterlijk). Ons
+            onderhoudspakket beschermt je website tegen dergelijke
+            cyberaanvallen.
+          </p>
+          <p>
+            {' '}
+            Liep er toch iets mis? We maken regelmatig een back-up van je
+            website. Zo hebben we altijd een kopie en gaat er niets verloren!
           </p>
         </Col>
         <Col xs={12} className="onderhoud__table">

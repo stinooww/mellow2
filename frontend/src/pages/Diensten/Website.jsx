@@ -15,24 +15,28 @@ class Website extends Component {
         <Grid>
           <Row>
             <Col xs={12} className="waarom-website-txt">
-              <h1> Waarom heeft u een website nodig voor uw onderneming?</h1>
+              <h1> Heb ik een website nodig voor mijn onderneming?</h1>
+
               <p>
-                Een website zorgt ervoor dat u als ondernemer altijd online bent
-                vertegenwoordigd.
-              </p>
-              <p>
-                Het geeft een eigen identiteit en is een digitaal visitekaartje.
-                Wij proberen hierbij zo goed mogelijk uw idee te visualiseren en
-                op een boeiende manier aan al uw toekomstige bezoekers duidelijk
-                te maken wat uw bedrijf doet.
+                Ons antwoord: ja! Je ideale klant zit steeds meer online.
+                Dankzij een website ben je altijd online vertegenwoordigd. Zo
+                kan je ideale klant je veel makkelijker vinden.
               </p>
               <p className="waarom-website-txt__call">
-                Want in een wereld van verandering is een digitale aanwezigheid
-                belangrijk!
+                Je website is het uithangbord van je merkidentiteit. Je digitale
+                visitekaartje als het ware.
               </p>
               <p className="callout">
-                Hebt u nog geen website of bent u niet 100% tevreden van uw
-                huidige website? Dan lossen wij dit graag voor u op.
+                Onze missie? Jouw identiteit en visie zo goed mogelijk vertalen
+                naar je website. Zodat je klanten op een boeiende en duidelijke
+                manier te weten komen wat jouw bedrijf voor hen kan betekenen.
+              </p>
+
+              <p>
+                In een wereld van verandering is digitale aanwezigheid
+                onmisbaar! Heb je nog geen website? Of ben je niet helemaal
+                tevreden van je huidige? We maken er graag een zoals jij het
+                wilt.
               </p>
             </Col>
           </Row>
@@ -53,29 +57,30 @@ class Website extends Component {
               // data-aos="fade-up-left"
               // data-aos-mirror="true"
             >
-              <h3>Uw website mobiel beschikbaar!</h3>
+              <h3>Je website mobiel beschikbaar!</h3>
               <p>
-                In een tijdperk waarin smartphones niet meer weg te denken zijn
-                uit ons dagelijks leven, is een mobiele website een absolute
-                must !
+                Online vertegenwoordigd zijn is één ding. Ervoor zorgen dat je
+                website ook mobiel goed functioneert is iets anders! Smartphones
+                nemen steeds meer plek in ons dagelijks leven in. Zo gebruiken
+                je klanten ook steeds meer hun telefoon om te surfen. Is je
+                website niet mobielvriendelijk? Jammer, je klant surft
+                genadeloos verder.
               </p>
               <p>
                 <strong>
-                  Wist u dat meer dan 60 procent van de websitebezoekers
-                </strong>{' '}
-                uw website zal bezoeken met een smartphone of Ipad?
-              </p>
-              <p>
-                Mobiele beschikbare websites scoren bovendien ook hoger in de
-                ranglijst van Google.
+                  Wist je dat meer dan 60% van je bezoekers naar je website
+                  surft met een smartphone of tablet?{' '}
+                </strong>
               </p>
             </Col>
           </Row>
           <Row>
             <Col xs={12} className="website__besluit">
               <h3 className="text-center">
-                Dus als uw website niet responsief is tegenover die van uw
-                concurrent, dan geeft Google voorrang aan uw concurrent!
+                En er is nog een voordeel: met een mobielvriendelijke website
+                scoor je hoger in de zoekresultaten van Google! Zo heb je een
+                streepje voor op je concurrenten Een mobiele website is dus een
+                must!
               </h3>
             </Col>
           </Row>

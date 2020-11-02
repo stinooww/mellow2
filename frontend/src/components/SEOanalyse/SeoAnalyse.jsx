@@ -7,7 +7,7 @@ import axios from 'axios';
 
 const SeoAnalyse = () => (
   <Col md={6} sm={12}>
-    <h4>Vul uw gegevens in en wij sturen u een GRATIS SEO analyse op!</h4>
+    <h4>Vul je gegevens in en we sturen je een GRATIS SEO-analyse toe!</h4>
     <br />
     <SEOwebsiteAnalyseForm
       user={{
@@ -25,7 +25,7 @@ const formikEnhancer = withFormik({
     name: Yup.string()
       .min(1, 'Dat is een korte naam')
       .max(50, 'Veel te lang!')
-      .required('Uw naam is verplicht.'),
+      .required('Jouw naam is verplicht.'),
     bedrijf: Yup.string()
       .min(2, 'Dat is een korte naam')
       .max(50, 'Veel te lang!'),

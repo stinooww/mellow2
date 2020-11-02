@@ -20,8 +20,8 @@ const ServiceAboutHome = () => (
           </div>
           <h2 className="webdesign">Webdesign</h2>
           <p>
-            Websites maken is onze eerste grote liefde en dit in een stijlvol
-            ontwerp.
+            Jouw website in een stijlvol ontwerp creëren? Dat is onze eerste
+            grote liefde.
           </p>
           <Link className="mellow-btn moreInfo-btn" to="/diensten/website">
             Meer info
@@ -33,8 +33,8 @@ const ServiceAboutHome = () => (
           </div>
           <h2 className="seo-title">Online advertising</h2>
           <p>
-            Jouw klanten bevinden zich constant online, maar hoe krijg je ze tot
-            bij jou?
+            Je ideale klant? Die zit voortdurend online. Maar hoe krijg je die
+            tot bij jou?
           </p>
           <LinkComp
             classname="mellow-btn moreInfo-btn"
@@ -50,9 +50,8 @@ const ServiceAboutHome = () => (
           </div>
           <h2 className="webhosting">Webhosting</h2>
           <p>
-            Webhosting & onderhoud. <br />
-            Twee noodzakelijke elementen die je niet mag vergeten bij een
-            website!
+            Webhosting & onderhoud: <br />
+            Twee sleutelelementen voor een website!
           </p>
           <LinkComp
             classname="mellow-btn moreInfo-btn"
@@ -66,8 +65,8 @@ const ServiceAboutHome = () => (
           </div>
           <h2 className="email-title">Email campagne</h2>
           <p>
-            Hebt u eerder nood aan gepersonaliseerde marketing emails? Dan bent
-            u bij ons aan het juiste adres.
+            Wil je je klanten gepersonaliseerde mails sturen om een betere band
+            te creëren?
           </p>
           <LinkComp
             classname="mellow-btn moreInfo-btn"

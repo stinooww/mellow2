@@ -32,13 +32,12 @@ const Timeline = () => (
           icon={<FontAwesomeIcon icon={faCoffee} />}
         >
           <h3 className="vertical-timeline-element-title">
-            Verkennend gesprek
+            Voorstellingsfase: verkennend gesprek
           </h3>
           <p>
-            In een eerste verkennend gesprek luisteren we naar uw verhaal, uw
-            noden en bepalen we de grootte van het project. Zodra we uw
-            verwachtingen in kaart hebben gebracht, kunnen we het gepaste
-            voorstel uitwerken.
+            In het eerste gesprek staat jouw verhaal centraal. Zo bepalen we je
+            noden en de grootte van het project. Een website? Een webshop?
+            Hosting en onderhoud? Het kan allemaal
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -50,11 +49,14 @@ const Timeline = () => (
           }}
           icon={<FontAwesomeIcon icon={faCalculator} />}
         >
-          <h3 className="vertical-timeline-element-title">Prijsofferte</h3>
+          <h3 className="vertical-timeline-element-title">
+            Prijsfase: de offerte
+          </h3>
           <p>
-            U ontvangt binnen de week na het verkennend gesprek een eerste
-            prijsofferte. Deze is uiteraard steeds bespreekbaar en kan aangepast
-            worden waar nodig.
+            Een week na het eerste gesprek ontvang je onze offerte. Moet het een
+            en ander worden aangepast? Laat het ons dan zeker weten. We staan
+            klaar om je vragen te beantwoorden en het projectvoorstel aan te
+            passen waar nodig.
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -66,12 +68,14 @@ const Timeline = () => (
           }}
           icon={<FontAwesomeIcon icon={faUserFriends} />}
         >
-          <h3 className="vertical-timeline-element-title">Diepgaand gesprek</h3>
+          <h3 className="vertical-timeline-element-title">
+            Ontdekkingsfase: diepgaand gesprek
+          </h3>
           <p>
-            Zodra we een akkoord hebben ontvangen over de prijsofferte plannen
-            we een tweede gesprek in waarbij we dieper ingaan op uw onderneming
-            en uw doelpubliek. Als wij uw verwachtingen in kaart hebben gebracht
-            kunnen wij aan de slag gaan om uw project succesvol te maken.
+            Ging je akkoord met de offerte? Dan plannen we een tweede gesprek
+            in. Nu nemen we je onderneming en je doelpubliek onder de loep.
+            Brachten we alles in kaart? Top! Nu kunnen we aan de slag. Op weg
+            naar succes!
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -83,11 +87,13 @@ const Timeline = () => (
           }}
           icon={<FontAwesomeIcon icon={faLaptopCode} />}
         >
-          <h3 className="vertical-timeline-element-title">Design </h3>
+          <h3 className="vertical-timeline-element-title">
+            Projectfase: design{' '}
+          </h3>
           <p>
-            Om te beginnen leveren we het design of prototype af, waarbij u
-            alvast de eerste feedback kan geven. Zo weten wij of we volgens uw
-            verwachtingen aan het werken zijn en kunnen we bijsturen waar nodig.
+            We leveren altijd eerst het design of prototype af. Daar geef je
+            alvast je feedback over. Zo weten we of we op goede weg zijn of dat
+            er toch het een en ander moet worden aangepast.
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -99,12 +105,14 @@ const Timeline = () => (
           }}
           icon={<FontAwesomeIcon icon={faProjectDiagram} />}
         >
-          <h3 className="vertical-timeline-element-title">Het eind product </h3>
+          <h3 className="vertical-timeline-element-title">
+            Aanleverfase: het eindproduct{' '}
+          </h3>
           <p>
-            Op basis van uw feedback werken wij verder aan het design tot we
-            uiteindelijk een volwaardig eindproduct hebben. We doen de nodige
-            testen op verschillende browsers en presenteren u het finale
-            resultaat.
+            Met jouw feedback sleutelen we verder aan het design tot we een
+            volwaardig eindproduct hebben. Testen op verschillende platformen en
+            browsers? Ook dat nemen we voor onze rekening! Dan breekt het grote
+            moment aan: we presenteren je het finale resultaat.
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -117,13 +125,13 @@ const Timeline = () => (
           icon={<FontAwesomeIcon icon={faLaptop} />}
         >
           <h3 className="vertical-timeline-element-title">
-            Doorlopende support
+            After project-fase en voortdurende verbetering: doorlopende support
           </h3>
           <p>
-            We bieden onze klanten ook nà de oplevering de nodige support om
-            ervoor te zorgen dat alles optimaal blijft werken. Wij bieden ook
-            noodzakelijke technsiche ondersteuning zoals onderhoud en updates
-            van uw website aan.
+            Wil je ook ná het project de nodige ondersteuning? Alles zeker op
+            rolletjes blijft lopen? Dat kan! Wij bieden verdere, cruciale
+            technische ondersteuning zoals het onderhouden en het up-to-date
+            houden van je website of -shop.
           </p>
         </VerticalTimelineElement>
       </VerticalTimeline>

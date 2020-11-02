@@ -106,7 +106,7 @@
 
     &:hover, &:focus, &:active {
       background: transparent;
-      border: 2px solid white;
+      border: 2px solid $blue;
       box-shadow: unset;
       color: $blue;
     }

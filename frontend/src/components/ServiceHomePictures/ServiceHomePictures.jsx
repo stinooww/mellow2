@@ -8,9 +8,10 @@ const ServiceHomePictures = () => (
         <div className="home-portfolio-text clearfix">
           <div className="col-md-12">
             <h2>
-              Wij zijn gespecialiseerd in webdesign
-              <span> en denken mee met u </span>
-              om de beste oplossing op maat te vinden!
+              Mellow Webdesign maakt websites en webshops die toevallige
+              bezoekers veranderen in trouwe klanten.
+              <span> Professioneel én gebruiksvriendelijk. </span>
+              Zo kiezen klanten altijd opnieuw voor jouw diensten.
             </h2>
           </div>
         </div>

@@ -55,21 +55,25 @@ class SEO extends Component {
         <Grid>
           <Row className="section--belang">
             <Col xs={12}>
-              <h2>Het belang van bovenaan te staan op Google</h2>
+              <h2>Waarom het belangrijk is bovenaan te staan in Google</h2>
               <p>
-                We gebruiken allemaal regelmatig bekende zoekmachines zoals Bing
-                of Google. U zit bijvoorbeeld met een vraag of u wilt de
-                openingsuren van uw favoriete restaurant te weten komen.
+                Je gebruikt waarschijnlijk zelf vaak zoekmachines zoals Google
+                of Bing. Je hebt bijvoorbeeld een specifieke vraag of je wilt
+                weten wat de openingsuren van je favoriete restaurant zijn. Naar
+                welke zoekresultaten kijk je? Juist: die op de eerste pagina.
+                Die op de 2de of 3de pagina? Ehm, not so much.
               </p>
-              <Image className="img-google" src={Google} responsive />
+              <p>
+                <strong>
+                  Waar wil jij dat je klanten terechtkomen als ze iets intypen?
+                  Juist: bij jou.
+                </strong>
+              </p>
 
               <p>
-                Daarom is het belangrijk om zo hoog mogelijk te scoren in deze
-                zoekmachines. Want je wilt niet op de 2de of 3de pagina
-                verschijnen in de zoekresultaten. Want laten we eerlijk zijn,
-                daar kijkt bijna niemand naar.
-                <br />U wilt liefst op de eerste plaats verschijnen als men een
-                antwoord zoekt waarop u een oplossing kan bieden!
+                Meer als 60% van de mensen die zoeken op Google klikt op een van
+                de eerste 5 resultaten. Dus wil je meer leads krijgen ? Dan moet
+                je hier tussen staan.
               </p>
             </Col>
           </Row>
@@ -87,17 +91,14 @@ class SEO extends Component {
                   <h3 className="seo-stappen-head"> 1</h3>
                   <strong className="seo__subtitle">Analyse</strong>
                   <p>
-                    <br />
-                    We starten met een keyword-analyse.
-                    <br />
-                    Dit doen we om de trefwoorden te zoeken die uw potentiële
-                    doelgroep gebruikt in Google en met welke woorden u hoog wil
-                    scoren.
+                    We starten met een zoekwoordenonderzoek (keywordanalyse). Zo
+                    achterhalen we de trefwoorden die jouw potentiële klant in
+                    Google intypt.
                   </p>
                   <p>
-                    <br />
-                    Zo kunnen we ervoor zorgen dat uw ideale doelgroep de weg
-                    naar uw website vindt.
+                    Met die woorden wil je dus zo hoog mogelijk scoren. Want
+                    enkel zo vindt je ideale klant sneller de weg naar jouw
+                    website.
                   </p>
                 </article>
                 <article
@@ -112,30 +113,17 @@ class SEO extends Component {
                   </strong>
                   <p>
                     <br />
-                    We bekijken de content die zich op uw website bevindt zoals
-                    titels en teksten en kunnen dit passen waar nodig.
+                    We nemen de teksten en titels op je website onder de loep.
+                    Zo weten we of de ideale trefwoorden al op je website staan
+                    en of we nog wat moeten aanpassen.
                     <br />
                   </p>
                   <br />
                   <p>
-                    We checken ook of de website volledig mobiel beschikbaar is
-                    en kijken of de afbeeldingen snel genoeg inladen waardoor de
-                    laadsnelheid ook merkbaar verbeterd.
+                    Is je website volledig beschikbaar? Laden de afbeeldingen
+                    snel genoeg in? Laadt je website snel genoeg? Ook dat kijken
+                    we in deze stap na.
                   </p>
-                  {/*<ul className="col-md-6">*/}
-                  {/*  <OverlayTrigger placement="right" overlay={tooltip1}>*/}
-                  {/*    <li bsstyle="default">titels</li>*/}
-                  {/*  </OverlayTrigger>*/}
-                  {/*  <OverlayTrigger placement="right" overlay={tooltip2}>*/}
-                  {/*    <li bsstyle="default">meta tags</li>*/}
-                  {/*  </OverlayTrigger>*/}
-                  {/*  <OverlayTrigger placement="right" overlay={tooltip3}>*/}
-                  {/*    <li bsstyle="default">alt tags</li>*/}
-                  {/*  </OverlayTrigger>*/}
-                  {/*  <OverlayTrigger placement="right" overlay={tooltip4}>*/}
-                  {/*    <li bsstyle="default">title tags</li>*/}
-                  {/*  </OverlayTrigger>*/}
-                  {/*</ul>*/}
                 </article>
                 <article
                   data-aos="flip-right"
@@ -149,27 +137,27 @@ class SEO extends Component {
                   </strong>
                   <p>
                     <br />
-                    We voegen verschillende stukjes code toe aan de website,
-                    zodat de zoek robots van Google gemakelijker door uw website
-                    kunnen navigeren.
+                    Google zet zoekrobots in om de inhoud van je website in
+                    kaart te brengen. Om die robots makkelijker door je website
+                    te laten navigeren (en je dus hoger in de ranking
+                    verschijnt), voegen we verschillende stukjes code aan de
+                    website toe.
                     <br />
                   </p>
                   <br />
                   <p>
-                    Tenslotte stellen we uw bedrijf in op Google My Business
-                    zodat zowel op Google maps als in de zoekresultaten uw
-                    bedrijfs gegevens meteen al worden getoond bij een eerste
-                    zoektocht.
+                    Ten slotte maken we je bedrijf beschikbaar op Google My
+                    business. Zo verschijnen jouw gegevens bij een zoekopdracht
+                    niet alleen in de zoekresultaten, maar ook meteen op Google
+                    Maps.
                   </p>
                 </article>
               </aside>
             </Col>
             <Col md={12}>
               <p className="text-center seo__extraCta">
-                Op deze manier krijgt u meer bezoekers en scoort uw site hoger
-                in Google, <br />
-                wat uw ook weer meer bezoekers en dus potentiële klanten
-                oplevert.
+                Hoger scoren in Google = meer bezoeker = meer potentiële
+                klanten!
               </p>
             </Col>
           </Row>
@@ -177,11 +165,11 @@ class SEO extends Component {
         <div data-aos="zoom-in-down" className="container-fluid">
           <Row className="seo-cta">
             <Col md={6} sm={12}>
-              <h2>Wilt u graag weten hoe uw website er voor staat?</h2>
+              <h2>Wil je graag weten hoe jouw website ervoor staat?</h2>
               <p>
-                Vul dan hier uw gegevens in, wij kijken uw website grondig na en
-                sturen een volledig analyse rapport samen met een offerte naar u
-                op!
+                Vul dan hier je gegevens in. Wij nemen je website onder de loep
+                en sturen je een volledige analyse samen met een offerte om je
+                website hoger te doen scoren.
               </p>
             </Col>
             <SeoAnalyse />
@@ -193,30 +181,29 @@ class SEO extends Component {
             <Col md={12}>
               <h2> Online adverteren met SEA</h2>
               <p>
-                Dankzij SEA (Search Engine Advertising) verschijnt uw boodschap
-                , uw aanwezigheid op Google helemaal bovenaan. U kiest zelf
-                welke zoektermen het meest relevant zijn voor uw bedrijf en wij
-                zorgen ervoor dat uw doelpubliek wordt getriggerd door uw
-                advertentie.
+                SEA staat voor Search Engine Advertising. Het zijn advertenties
+                waarmee jouw boodschap helemaal bovenaan in Google prijkt. Je
+                kiest zelf de zoekwoorden die het relevantst zijn voor je
+                bedrijf. En wij zorgen ervoor dat je doelpubliek overstag gaat
+                dankzij je advertenties. Moet ik voor die advertenties betalen?
                 <br />
                 <strong>
-                  Voor deze advertenties betaalt u alleen als iemand op uw
-                  advertentie klikt!{' '}
+                  Je betaalt enkel als iemand op je advertentie klikt: pay per
+                  click.
                 </strong>
               </p>
               <p className="callout">
-                Concreet gaan we een zeer doelgerichte advertentie voor uw
-                website maken waarbij we rekening houden met enkele parameters
-                zoals locatie, enkele specifieke eigenschappen en de termen
-                waarop u gevonden wil worden. U krijgt hier ook zeer snel
-                resultaten van, die een groot voordeel zijn van
-                pay-per-clickadvertenties.
+                Hoe zit dat dan concreet? We maken een advertentie die specifiek
+                op jouw doelpubliek focust. We houden rekening met enkele
+                parameters zoals locatie en specifieke eigenschappen en termen
+                waarmee je gevonden wilt worden. En het resultaat? Dat zie
+                dankzij pay per click vrij snel!
               </p>
             </Col>
             <Col md={12}>
               <p className="sea-shoutout">
-                Het is dus een vlotte en efficiënte manier om meer bezoekers,
-                inclusief nieuwe klanten, naar uw website te leiden!
+                SEA is een vlotte, efficiënte manier om meer bezoekers en dus
+                meer potentiële klanten naar je website te leiden.
               </p>
             </Col>
           </Row>

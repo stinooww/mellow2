@@ -23,8 +23,8 @@ class Home extends Component {
             <Row className="show-grid ">
               <Col xs={12} md={12} className="person-wrapper">
                 <div className="testimonial-title">
-                  <h2>Wat onze klanten van ons zeggen</h2>
-                  <h3>En waarom ze ook blijven terug komen ...</h3>
+                  <h2>Wat vinden onze klanten? </h2>
+                  <h3>En waarom blijven ze terugkomen?</h3>
                 </div>
                 <Carousel className="testimonial-carousel" interval={7500}>
                   <CarouselItem>
