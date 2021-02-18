@@ -26,7 +26,7 @@ class App extends Component {
     this.setState((state, props) => ({
       policy: true
     }));
-    console.log(this.state.policy);
+    // console.log(this.state.policy);
 
     // set all values
     let accept = {

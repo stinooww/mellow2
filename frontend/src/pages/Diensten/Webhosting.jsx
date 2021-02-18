@@ -35,6 +35,11 @@ function Webhosting(props) {
             Liep er toch iets mis? We maken regelmatig een back-up van je
             website. Zo hebben we altijd een kopie en gaat er niets verloren!
           </p>
+          <p>
+            Wil je na verloop van tijd toch iets aan je website veranderen? Een
+            afbeelding toevoegen? Een stukje tekst herschrijven? Ook dat doen we
+            voor u! En helemaal gratis.
+          </p>
         </Col>
         <Col xs={12} className="onderhoud__table">
           <h1>Onze Onderhouds pakketten</h1>

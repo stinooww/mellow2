@@ -25,12 +25,6 @@ const Footer = () => (
                 text="Algemene voorwaarden"
               />
             </li>
-            <li>
-              <LinkComp
-                direction="/algemenevoorwaarden"
-                text="Algemene voorwaarden"
-              />
-            </li>
           </ul>
         </Col>
       </Row>

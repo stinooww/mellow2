@@ -23,19 +23,17 @@ class Grafisch extends Component {
             <Col xs={12}>
               <h1>Logo design & huisstijl</h1>
               <p>
-                Uw huisstijl bepaalt uw imago.
-                <br />
-                Juist daarom vinden wij het zeer belangrijk dat er voldoende
-                aandacht aan wordt geschonken.{' '}
+                Hoe bepaal je jouw imago? Met je huisstijl! Daar schenk je dus
+                best voldoende aandacht aan. Een herkenbare huisstijl schept
+                vertrouwen. En vertrouwen? Dat doet kopen.
               </p>
               <p>
-                Wij denken hierbij na over een sterke look & feel zodat u een
-                visuele identiteit krijgt die voor de volle 100% bij u past.
-                <br />
-                Denk hierbij aan een stijlvol logo of een nieuwe branding.
-                <br />
-                Wilt u deze verder door trekken? Wij maken ook smaakvolle
-                business kaartjes of stickers.
+                We helpen je door een sterke look en feel te ontwerpen. Zo krijg
+                je een visuele identiteit die voor de volle 100% bij je past.
+                Denk aan een passend, stijlvol logo. Of een nieuwe branding. Heb
+                je je huisstijl gekozen? En wil je er verder mee aan de slag?
+                Vergroot je zichtbaarheid met onze passende businesskaartjes of
+                stickers.
               </p>
             </Col>
             <Col xs={12} data-aos="zoom-in-down">
@@ -52,7 +50,7 @@ class Grafisch extends Component {
           <Grid>
             <Row>
               <Col xs={12}>
-                <h2 className="emailMarketing__title">Marketings emails</h2>
+                <h2 className="emailMarketing__title">E-mailmarketings</h2>
               </Col>
             </Row>
             <Row>
@@ -61,25 +59,27 @@ class Grafisch extends Component {
               </Col>
               <Col md={5} xs={12}>
                 <p>
-                  Klanten en prospects kan je snel en makkelijk bereiken via
-                  e-mail marketing. Denk bijvoorbeeld aan een nieuwsletter van
-                  je bedrijf, of om je producten en of kortingsacties hierop aan
-                  te prijzen.
+                  Wil je een betere band opbouwen met je (potentiële) klanten?
+                  Vertrouwen scheppen zodat ze van je kopen? E-mailmarketing is
+                  daar de perfecte tool voor. Denk maar aan een maandelijkse
+                  nieuwsbrief om je producten aan te prijzen. Of zelfs een
+                  kortingscode met trouwe klanten te delen.
                 </p>
                 <br />
                 <p>
-                  Deze e-mails als campagnemail met jouw logo en volledig in de
-                  stijl van je branding. Wij voegen hierbij stukjes code zodat
-                  de e-mails slimmer worden en je kan nagaan wie de emails opent
-                  en waar / wanneer er wordt doorgeklikt.
+                  Natuurlijk moeten de mails wel herkenbaar zijn. Wij voegen je
+                  logo toe en bouwen ze volledig in de stijl van je branding op.
+                  Kers op de taart? We voegen stukjes code toe die je mails
+                  slimmer maken. Zo weet jij wie de campagnemails opent en waar
+                  en wanneer er wordt doorgeklikt.
                 </p>
                 <br />
                 <br />
               </Col>
               <Col md={12} className="emailMarketing__cta-wrapper">
                 <p className="emailMarketing__cta callout">
-                  Zo kan je gericht je doelgroep benaderen en je kansen op
-                  succes maximaliseren!
+                  Meten is weten. Vergroot zo je kans op succes bij je
+                  doelgroep!
                 </p>
                 <br />
 

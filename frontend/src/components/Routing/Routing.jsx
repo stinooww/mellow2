@@ -12,7 +12,8 @@ import SEO from '../../pages/Diensten/SEO';
 import Grafisch from '../../pages/Diensten/Grafisch';
 import Webhosting from '../../pages/Diensten/Webhosting';
 import Page404 from '../../pages/Error/page404';
-
+import CookiePolicy from '../../pages/cookiePolicy/cookiePolicy';
+import linkBio from '../../pages/LinkInBio/linkBio';
 const Routing = ({ activateOfferte }) => (
   <Switch>
     <Route path="/" exact component={Home} />
@@ -31,7 +32,9 @@ const Routing = ({ activateOfferte }) => (
     <Route path="/about" component={About} />
     <Route path="/contact" component={Contact} />
     <Route path="/algemenevoorwaarden" component={Av} />
+    <Route path="/CookiePolicy" component={CookiePolicy} />
     <Route path="/portfolio" component={Portfolio} />
+    <Route path="/instagram" component={linkBio} />
     <Route path="/404" component={Page404} />
     <Route path="/500" component={Page404} />
     <Route path="*" component={Page404} />
