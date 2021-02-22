@@ -19,8 +19,13 @@ Route::get('/', 'Admin\adminController@index')->name('admin');
 /*portfolio*/
 Route::resource('portfolio','Admin\portfolioController');
 Route::resource('medewerkers','Admin\userController');
+    Route::resource('blogs', 'Admin\BlogController');
+    Route::resource('instalinks', 'Admin\InstalinkController');
 
 Route::post('medewerkers/{id}/upload','Admin\userController@image');
+    Route::post('medewerkers/register', 'Admin\userController@storeUser')->name('registerUser');
+    Route::post('blogs/{id}/upload/main', 'Admin\BlogController@mainimage');
+    Route::post('instalinks/{id}/upload/main', 'Admin\InstalinkController@mainimage');
 Route::post('portfolio/{id}/upload/main','Admin\portfolioController@mainimage');
 Route::post('portfolio/{id}/upload/thumb','Admin\portfolioController@thumbimage');
 Route::post('portfolio/{id}/upload/car','Admin\portfolioController@carimage');

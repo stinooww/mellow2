@@ -124,6 +124,16 @@ return [
             'url'  => 'admin/medewerkers',
             'icon'        => 'user',
         ],
+        [
+            'text' => 'Blogs',
+            'url' => 'admin/blogs',
+            'icon' => 'pen',
+        ],
+        [
+            'text' => 'instalinks',
+            'url' => 'admin/instalinks',
+            'icon' => 'instagram-fa',
+        ],
     ],
 
     /*

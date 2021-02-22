@@ -47,7 +47,7 @@ class CRUDController extends BaseController
 
         }
         $item = $this->repository->create($request->all());
-        return redirect()->route($this->routeName  . '.index', $item->id);
+        return redirect()->route($this->viewFolder . '.index');
     }
     public function edit($id)
     {

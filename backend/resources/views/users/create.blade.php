@@ -7,15 +7,15 @@
 @stop
 
 @section('content')
-    {!! Form::open(['url' =>route('medewerkers.store'), 'method' => 'post']) !!}
+    {!! Form::open(['url' =>route('registerUser'), 'method' => 'post']) !!}
     <div id="app" class="col-sm-3">
         @include('partials.singleImage',['path'=>'upload','image'=> 'none','name'=>'imageUrl'])
     </div>
     <div class="col-sm-9">
-        {!! Form::open(['url' =>route('medewerkers.store'), 'method' => 'post']) !!}
+        {!! Form::open(['url' =>route('registerUser'), 'method' => 'post']) !!}
         @include('users.partials.form')
     </div>
-    <div class="row has-feedback {{ $errors->has('password') ? 'has-error' : '' }}">
+    <div class="row {{ $errors->has('password') ? 'has-error' : '' }}">
         <div class="col-12 col-md-8 offset-md-2">
             <label for="password">Paswoord</label>
             <input type="password" name="password" class="form-control">
