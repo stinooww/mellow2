@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Carousel, CarouselItem, Col, Grid, Row } from 'react-bootstrap';
+import websitehead from '../../images/stijn-jonas.jpg';
 
 class antwerpen extends Component {
   render() {
@@ -23,6 +24,10 @@ class antwerpen extends Component {
               Antwerpen (Edegem) gespecialiseerd in het maken van professionele
               en gebruiksvriendelijke websites.
             </p>
+          </Col>
+        </Row>
+        <Row>
+          <Col md={12} className="locaties__center-text">
             <h3>Wij ontwerpen gebruiksvriendelijke websites op maat</h3>
             <p>
               Daarbovenop scoren al onze websites goed op Google! Bovendien
@@ -41,7 +46,10 @@ class antwerpen extends Component {
               70% van de eerste website bezoeken gebeurd via je smartphone?
               Daarom is een mobiel vriendelijkse website een must
             </p>
-
+          </Col>
+        </Row>
+        <Row>
+          <Col md={12} className="locaties__center-text">
             <h3> Wil je je website zelf aanpassen?</h3>
             <p>
               Dat kan! Al onze websites worden gemaakt in Wordpress CMS, een
@@ -51,7 +59,11 @@ class antwerpen extends Component {
               foto's op je homepagina.
             </p>
           </Col>
-          <Col md={12} className="locaties__end-text">
+          <Col md={12} className="locaties__end-text text-center">
+            <img
+              src={websitehead}
+              alt="stijn & jonas Mellow webdesign & development"
+            />
             <h3>
               Zit je even vast bij een aanpassing dan kan je ons altijd gratis
               contacteren en helpen we je met plezier verder!

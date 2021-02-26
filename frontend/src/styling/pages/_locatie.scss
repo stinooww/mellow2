@@ -10,7 +10,7 @@
     }
 
     h2 {
-      font-size: 16px;
+      font-size: 18px;
       line-height: 22px;
       text-align: center;
     }
@@ -24,16 +24,21 @@
   }
 
   .locaties__intro {
-
+    margin-top: 5vh;
   }
 
   .locaties__center-text {
-
+    margin-top: 5vh;
   }
 
   .locaties__end-text {
-
+    margin-top: 5vh;
     padding-bottom: 5rem;
+
+    img {
+      height: auto;
+      max-width: 500px;
+    }
 
   }
 

@@ -4306,27 +4306,47 @@ nav.navbar-default .container {
 .locaties {
   width: 850px;
 }
+
 .locaties .locaties__head {
   padding: 5rem 0;
 }
+
 .locaties .locaties__head h1 {
   font-size: 3em;
   line-height: 1;
 }
+
 .locaties .locaties__head h2 {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 22px;
   text-align: center;
 }
+
 .locaties .locaties__intro,
 .locaties .locaties__center-text,
 .locaties .locaties__end-text {
   font-size: 16px;
   line-height: 28px;
 }
+
+.locaties .locaties__intro {
+  margin-top: 5vh;
+}
+
+.locaties .locaties__center-text {
+  margin-top: 5vh;
+}
+
 .locaties .locaties__end-text {
+  margin-top: 5vh;
   padding-bottom: 5rem;
 }
+
+.locaties .locaties__end-text img {
+  height: auto;
+  max-width: 500px;
+}
+
 @media (max-width: 640px) {
   .locaties .locaties__head {
     padding: 1.5rem 0;
