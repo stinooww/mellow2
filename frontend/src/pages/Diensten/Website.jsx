@@ -23,17 +23,6 @@ class Website extends Component {
     );
   };
 
-  componentDidMount() {
-    new scrollmagic.Scene({ triggerElement: '#parallax' })
-      .setTween('#innerParalax', {
-        y: '80%',
-        ease: 'Linear.easeNone'
-      })
-      .addIndicators()
-      .addTo(this.controller);
-    window.scrollTo(0, 0);
-  }
-
   render() {
     return (
       <div className="website">
@@ -74,7 +63,7 @@ class Website extends Component {
                 <img
                   src={websitehead}
                   className="imageTag  WebsiteHead"
-                  alt="Voorbeeld van een webshop of website gemaakt met Wordpress. Mellow webdesign & development"
+                  alt="Voorbeeld van een webshop of website gemaakt met Wordpress en mobiel responsive. Mellow webdesign & development"
                 />
               </Col>
             </Row>
@@ -104,7 +93,7 @@ class Website extends Component {
                 <img
                   src={starter}
                   className="imageTag "
-                  alt="Voorbeeld van een webshop of website gemaakt met Wordpress. Mellow webdesign & development"
+                  alt="Icoon voor een pakket met website gemaakt met template in Wordpress met woocommerce. Mellow webdesign & development"
                 />
               </Col>
               <Col
@@ -120,17 +109,17 @@ class Website extends Component {
                 <h3>Starter</h3>
                 <p>
                   Het starter pakket is ideaal voor ondernemingen die een eerste
-                  website of webshop willen. of wie geen budget heeft voor een
+                  website of webshop willen. Of die geen budget hebben voor een
                   volledig zelfontworpen website. Met dit pakket slaan we de
                   ontwerpfase over door gebruik te maken van een template in
                   Wordpress. Deze template,die in samenspraak met jou wordt
-                  gekozen, wordt dan ingevuld met de content die jij nodig hebt
-                  op jouw website of webshop.
+                  gekozen, vullen we in met de content die jij nodig hebt op
+                  jouw website of webshop.
                 </p>
                 <br />
                 <h4 className="websitePros">Voordelen</h4>
                 <p className="websitePros">
-                  Kortere oplevertermiijn, Lagere kostprijs, Professionele
+                  Kortere oplevertermijn, Lagere kostprijs, Professionele
                   website
                 </p>
                 <a
@@ -154,7 +143,7 @@ class Website extends Component {
                 <img
                   src={custom}
                   className="imageTag "
-                  alt="Voorbeeld van een webshop of website gemaakt met Wordpress. Mellow webdesign & development"
+                  alt="Icoon voor een pakket met custom website gemaakt in Wordpress met woocommerce"
                 />
               </Col>
               <Col
@@ -170,9 +159,9 @@ class Website extends Component {
                 <h3>Custom</h3>
                 <p>
                   Het Custom pakket is ideaal voor ondernemingen die een website
-                  of webshop nodig hebben die aangepast is aan hun onderneming .
-                  Deze website of webshop worden ontworpen in samenspraak met de
-                  klant. Deze worden later gebouwd in Wordpress.
+                  of webshop nodig hebben die aangepast is aan hun onderneming.
+                  Deze website of webshop wordt ontworpen in samenspraak met de
+                  klant. De website wordt daarna gebouwd in Wordpress.
                 </p>
                 <br />
                 <h4 className="websitePros">Voordelen</h4>
@@ -191,7 +180,7 @@ class Website extends Component {
                 <img
                   src={custom}
                   className="imageTag "
-                  alt="Voorbeeld van een webshop of website gemaakt met Wordpress. Mellow webdesign & development"
+                  alt="Icoon voor een pakket met custom website gemaakt in Wordpress met woocommerce"
                 />
               </Col>
             </Row>
@@ -204,7 +193,7 @@ class Website extends Component {
                 <img
                   src={customAdvanced}
                   className="imageTag "
-                  alt="Voorbeeld van een webshop of website gemaakt met Wordpress. Mellow webdesign & development"
+                  alt="Icoon voor een pakket met custom website "
                 />
               </Col>
               <Col
