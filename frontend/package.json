@@ -12,7 +12,7 @@
     "@fortawesome/react-fontawesome": "^0.1.14",
     "animated-scroll-to": "^2.0.12",
     "aos": "^2.3.4",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "babel-polyfill": "^6.26.0",
     "bootstrap": "^4.6.0",
     "classnames": "2.2.5",
