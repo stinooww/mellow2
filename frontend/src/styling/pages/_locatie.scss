@@ -1,0 +1,45 @@
+.locaties {
+  width: 850px;
+
+  .locaties__head {
+    padding: 5rem 0;
+
+    h1 {
+      font-size: 3em;
+      line-height: 1;
+    }
+
+    h2 {
+      font-size: 16px;
+      line-height: 22px;
+      text-align: center;
+    }
+  }
+
+  .locaties__intro,
+  .locaties__center-text,
+  .locaties__end-text {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .locaties__intro {
+
+  }
+
+  .locaties__center-text {
+
+  }
+
+  .locaties__end-text {
+
+    padding-bottom: 5rem;
+
+  }
+
+  @media (max-width: 640px) {
+    .locaties__head {
+      padding: 1.5rem 0;
+    }
+  }
+}
