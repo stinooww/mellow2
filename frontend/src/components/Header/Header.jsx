@@ -87,9 +87,16 @@ const Header = ({ activateOfferte }) => (
         >
           Contact
         </NavItem>
-        <NavItem
+        {/*  <NavItem
           className="modal-offerte-header menu-item hvr-underline-from-center"
           onClick={activateOfferte}
+        >
+          Start een project
+        </NavItem>*/}
+        <NavItem
+          className="modal-offerte-header menu-item hvr-underline-from-center"
+          href="/contact"
+          to="/contact"
         >
           Start een project
         </NavItem>

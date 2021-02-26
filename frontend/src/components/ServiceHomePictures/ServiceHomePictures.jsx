@@ -18,59 +18,61 @@ const ServiceHomePictures = () => (
         <div className="portfolio-grid clearfix">
           <div className="grid-col-50">
             <div className="fig-hover-item height-380">
-              <figure className="fig cover dicomenu">
+              <figure className="fig cover littlepumpkin">
                 <figcaption className="caption">
-                  Webshop &amp; Marketing emails
+                  Webshop met abonnementen &amp; Online marketing
                 </figcaption>
               </figure>
-              <Link to="/portfolioitem/15" className="full-link">
-                Metis supplements
+              <Link to="/portfolioitem/22" className="full-link">
+                Little pumpkin
               </Link>
               <div className="overlay">
                 <div className="overlay-color overlay-color1" />
                 <div className="overlay-content">
                   <h3>
-                    <Link to="/portfolioitem/15">
-                      Metis supplements
-                      <small>Voedingssupplementen die werken </small>
+                    <Link to="/portfolioitem/22">
+                      Little pumpkin
+                      <small>Organic food for growing minds.</small>
                     </Link>
                   </h3>
-                  <Link to="/portfolioitem/15">Bekijk project</Link>
+                  <Link to="/portfolioitem/22">Bekijk project</Link>
                   <div className="hr" />
                   <Link to="/portfolio" className="light">
                     Bekijk portfolio
                   </Link>
                 </div>
-                <Link to="/portfolioitem/19" className="full-link">
-                  Dicomenu
+                <Link to="/portfolioitem/22" className="full-link">
+                  Little pumpkin
                 </Link>
               </div>
             </div>
 
             <div className="fig-hover-item height-280">
-              <figure className="fig cover finnegans">
-                <figcaption className="caption">Webdesign</figcaption>
+              <figure className="fig cover fredfinest">
+                <figcaption className="caption">
+                  Webdesign &amp; development
+                </figcaption>
               </figure>
-              <Link to="/portfolioitem/14" className="full-link">
-                Finnegans
+              <Link to="/portfolioitem/21" className="full-link">
+                Fred's finest market
               </Link>
               <div className="overlay">
                 <div className="overlay-color overlay-color1" />
                 <div className="overlay-content">
                   <h3>
-                    <Link to="/portfolioitem/14">
-                      Finnegans
-                      <small>B2B en B2C cocktailconcepten op maat </small>
+                    <Link to="/portfolioitem/21">
+                      Fred's finest market
+                      <small>Delicatessenzaak en traiteur</small>
                     </Link>
                   </h3>
-                  <Link to="/portfolioitem/14">Bekijk project</Link>
+                  <Link to="/portfolioitem/21">Bekijk project</Link>
                   <div className="hr" />
                   <Link to="/portfolio" className="light">
                     Bekijk portfolio
                   </Link>
                 </div>
-                <Link to="/portfolioitem/14" className="full-link">
-                  Finnegans
+                <Link to="/portfolioitem/21" className="full-link">
+                  Fred's finest market
                 </Link>
               </div>
             </div>
@@ -79,31 +81,31 @@ const ServiceHomePictures = () => (
           <div className="grid-col-50">
             <div className="grid-col-50">
               <div className="fig-hover-item height-280">
-                <figure className="fig cover bodyupdate">
+                <figure className="fig cover barbershop">
                   <figcaption className="caption">
-                    responsive website
+                    Website &amp; boekingsysteem
                   </figcaption>
                 </figure>
-                <Link to="/portfolioitem/18" className="full-link">
-                  Afslanken
+                <Link to="/portfolioitem/12" className="full-link">
+                  the barbershop
                 </Link>
                 <div className="overlay">
                   <div className="overlay-color overlay-color1" />
                   <div className="overlay-content">
                     <h3>
-                      <Link to="/portfolioitem/18">
-                        Body-update
-                        <small>Afslanken &amp; diëten </small>
+                      <Link to="/portfolioitem/12">
+                        The barbershop
+                        <small>Kapperszaak met online boekingsysteem</small>
                       </Link>
                     </h3>
-                    <Link to="/portfolioitem/18">Bekijk project</Link>
+                    <Link to="/portfolioitem/12">Bekijk project</Link>
                     <div className="hr" />
                     <Link to="/portfolio" className="light">
                       Bekijk portfolio
                     </Link>
                   </div>
-                  <Link to="/portfolioitem/18" className="full-link">
-                    Body-update
+                  <Link to="/portfolioitem/12" className="full-link">
+                    the barbershop
                   </Link>
                 </div>
               </div>
@@ -138,29 +140,29 @@ const ServiceHomePictures = () => (
               </div>
             </div>
             <div className="fig-hover-item height-380">
-              <figure className="fig cover peeraer">
+              <figure className="fig cover julias">
                 <figcaption className="caption">Webshop</figcaption>
               </figure>
-              <Link to="/portfolioitem/9" className="full-link">
-                Bakkerij & broodjes
+              <Link to="/portfolioitem/23" className="full-link">
+                Artisanale en kwalitatieve ontbijtmanden.
               </Link>
               <div className="overlay">
                 <div className="overlay-color overlay-color1" />
                 <div className="overlay-content">
                   <h3>
-                    <Link to="/portfolioitem/9">
-                      Bakkerij Peeraer
-                      <small>Bakkerij & broodjes</small>
+                    <Link to="/portfolioitem/23">
+                      Julia's
+                      <small>Artisanale en kwalitatieve ontbijtmanden.</small>
                     </Link>
                   </h3>
-                  <Link to="/portfolioitem/9">Bekijk project</Link>
+                  <Link to="/portfolioitem/23">Bekijk project</Link>
                   <div className="hr" />
                   <Link to="/portfolio" className="light">
                     Bekijk portfolio
                   </Link>
                 </div>
-                <Link to="/portfolioitem/9" className="full-link">
-                  Bakkerij Peeraer
+                <Link to="/portfolioitem/23" className="full-link">
+                  Julia's
                 </Link>
               </div>
             </div>

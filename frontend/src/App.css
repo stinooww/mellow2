@@ -53,13 +53,13 @@ figure {
 p {
   font-size: 22px;
   margin: 0;
-  color: #2f2f2ffa;
+  color: #2b2b2b;
   font-family: 'JOSEFIN-SANS-REG', Arial, Helvetica, sans-serif;
 }
 
 h3 {
   font-size: 27px;
-  color: #2f2f2ffa;
+  color: #2b2b2b;
   text-align: left;
   font-family: 'JOSEFIN-SANS-BOLD', Arial, Helvetica, sans-serif;
   text-shadow: none;
@@ -91,7 +91,7 @@ h2 {
 body {
   font-size: 100%;
   line-height: 1.6;
-  color: #2f2f2ffa;
+  color: #2b2b2b;
   background-color: white;
   width: 100%;
   overflow-x: hidden;
@@ -152,32 +152,32 @@ body {
   color: red;
 }
 
-.dicomenu {
-  background-image: url('images/metismockup.jpg');
+.littlepumpkin {
+  background-image: url('images/lp3.jpg');
 }
 
-.finnegans {
-  background-image: url('images/finnegans.png');
+.fredfinest {
+  background-image: url('images/fredfinest.jpg');
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
 }
 
-.peeraer {
-  background-image: url('images/peeraermockup.jpg');
+.julias {
+  background-image: url('images/julias.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.bodyupdate {
-  background-image: url('images/seobody-update.jpg');
+.barbershop {
+  background-image: url('images/barbershop.jpg');
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
 }
 
 .sea {
-  background-image: url('images/googlemockup.jpg');
+  background-image: url('images/ask.jpg');
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -332,7 +332,7 @@ a:focus {
 }
 .contact p,
 .contact .contact-subheader {
-  color: #2f2f2ffa;
+  color: #2b2b2b;
   text-shadow: none;
   text-align: left;
 }
@@ -533,7 +533,7 @@ a:focus {
   right: 0;
   bottom: 0;
   z-index: -1;
-  background: #2f2f2ffa;
+  background: #2b2b2b;
   transform: scale(2) rotate(2deg);
   transition: transform 300ms;
 }
@@ -544,7 +544,7 @@ a:focus {
     display: none;
   }
   .section-projects .content-cell h2 {
-    background-color: #2f2f2ffa;
+    background-color: #2b2b2b;
     padding: 1%;
   }
   .section-projects .section-content__list li {
@@ -667,7 +667,7 @@ footer {
 }
 
 .footer {
-  background-color: #2f2f2ffa;
+  background-color: #2b2b2b;
   padding: 7px 0;
 }
 @media (max-width: 768px) {
@@ -682,7 +682,7 @@ footer {
   flex-direction: column;
 }
 .footer .footer-section h4 {
-  color: #2f2f2ffa;
+  color: #2b2b2b;
 }
 .footer p,
 .footer .text-footer,
@@ -815,7 +815,7 @@ nav.navbar-default .container {
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: #2f2f2ffa;
+  color: #2b2b2b;
   font-size: 17px;
 }
 @media (min-width: 768px) and (max-width: 1080px) {
@@ -869,7 +869,7 @@ nav.navbar-default .container {
   left: 51%;
   right: 51%;
   bottom: 0;
-  background: #2f2f2ffa;
+  background: #2b2b2b;
   height: 2px;
   -webkit-transition-property: left, right;
   transition-property: left, right;
@@ -1343,7 +1343,7 @@ nav.navbar-default .container {
 .person-wrapper .testimonial-title h3 {
   font-style: italic;
   font-size: 20px;
-  color: #2f2f2ffa;
+  color: #2b2b2b;
 }
 .person-wrapper .testimonial-carousel {
   margin: 0;
@@ -1383,7 +1383,7 @@ nav.navbar-default .container {
   height: 100%;
 }
 .person-wrapper .testimonial-carousel .carousel-inner .item p {
-  color: #2f2f2ffa;
+  color: #2b2b2b;
 }
 
 .show-grid {
@@ -1431,7 +1431,7 @@ nav.navbar-default .container {
   }
 }
 .weetjes .service-tile h2 {
-  color: #2f2f2ffa;
+  color: #2b2b2b;
   margin: 25px 0 10px 0;
 }
 @media (max-width: 768px) {
@@ -1446,7 +1446,7 @@ nav.navbar-default .container {
   margin: 20px 0 9px 0;
 }
 .weetjes p {
-  color: #2f2f2ffa;
+  color: #2b2b2b;
   width: 400px;
   text-align: center;
 }
@@ -2019,12 +2019,12 @@ nav.navbar-default .container {
   margin-top: 0;
   font-size: 2.4444444444em;
   line-height: 1em;
-  color: #2f2f2ffa;
+  color: #2b2b2b;
 }
 
 .home-portfolio-text p {
   margin-top: 0;
-  color: #2f2f2ffa;
+  color: #2b2b2b;
 }
 
 @media (max-width: 1024px) {
@@ -2297,7 +2297,7 @@ nav.navbar-default .container {
   background-color: #efc337;
   display: flex;
   flex-direction: column;
-  border-top: 2px solid #2f2f2ffa;
+  border-top: 2px solid #2b2b2b;
   align-items: center;
 }
 @media screen and (max-width: 767px) {
@@ -2367,7 +2367,7 @@ nav.navbar-default .container {
 
 .portfolioItem__grid h1,
 .portfolioItem__grid h3 {
-  color: #2f2f2ffa;
+  color: #2b2b2b;
   padding: 1vh 5vw;
 }
 
@@ -2521,7 +2521,7 @@ nav.navbar-default .container {
   }
 }
 .portfolioItem__wrapper-solution .portfolio__solutionTxt p {
-  color: #2f2f2ffa;
+  color: #2b2b2b;
 }
 @media screen and (max-width: 1024px) {
   .portfolioItem__wrapper-solution {
@@ -3109,7 +3109,7 @@ nav.navbar-default .container {
   background-color: #33658a !important;
 }
 .onderhoud .onderhoud__table .Grid-cell .price li {
-  color: #2f2f2ffa;
+  color: #2b2b2b;
 }
 .onderhoud .onderhoud__table .Grid-cell .price li.grey .button-submit {
   font-size: 15px;
@@ -3126,8 +3126,8 @@ nav.navbar-default .container {
 }
 
 .website {
-  padding-top: 5%;
   width: 100%;
+  overflow-x: hidden;
 }
 .website .row {
   flex-direction: row;
@@ -3139,6 +3139,81 @@ nav.navbar-default .container {
     margin: 0;
   }
 }
+.website .imageTag {
+  width: 100%;
+}
+.website .websiteContainer {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+.website .websiteText {
+  margin-top: 6vh;
+}
+.website .WebsiteCTA {
+  background-color: #33658a;
+  padding-bottom: 10vh;
+  padding-top: 5vh;
+}
+.website .WebsiteCTA p {
+  color: white;
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+.website .WebsiteCTA h3 {
+  color: #efc337;
+}
+.website .WebsiteGreyBg {
+  background-color: #f2f2f2;
+}
+.website a.websiteBtn {
+  margin: 0;
+  box-shadow: none;
+  width: 50%;
+  margin-top: 20px;
+}
+.website a.websiteBtn.centerCtaBtn {
+  display: block;
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+@media (max-width: 767px) {
+  .website a.websiteBtn.centerCtaBtn {
+    width: 80%;
+  }
+}
+.website a.websiteBtn.centerCtaBtn:before {
+  background: white;
+}
+.website a.websiteBtn.centerCtaBtn:hover {
+  color: #33658a;
+}
+.website .WebsiteMob {
+  margin-top: 15vh;
+}
+.website .websiteQuote {
+  margin-bottom: 2vh;
+  font-style: italic;
+}
+.website .WebsiteHead {
+  margin-top: 7vh;
+}
+@media (max-width: 992px) {
+  .website .WebsiteHead {
+    margin-top: 2vh;
+  }
+}
+.website .packageLabel {
+  color: #efc337;
+  margin-bottom: -16px;
+}
+.website .websitePros {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  color: #6c6c6c;
+  margin-top: 0px;
+}
 .website .waarom-website-txt h2 {
   margin: 3vh 0 5vh 0;
   line-height: 1.4;
@@ -3149,6 +3224,21 @@ nav.navbar-default .container {
 }
 .website .waarom-website-txt .callout {
   margin-top: 10vh;
+}
+@media (min-width: 767px) and (max-width: 768px) {
+  .website .packageImage {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .website .rightImage {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .website .leftImage {
+    display: none;
+  }
 }
 .website .mobile-responsive {
   margin: 10vh 0;
@@ -3401,7 +3491,7 @@ nav.navbar-default .container {
   margin: 1em 0;
 }
 .seo .section--belang .sea-link {
-  color: #2f2f2ffa;
+  color: #2b2b2b;
 }
 .seo .section--belang .sea-link:hover {
   text-decoration: underline !important;
@@ -3480,7 +3570,7 @@ nav.navbar-default .container {
   line-height: normal;
   font-size: 16px;
   letter-spacing: 0.285714px;
-  color: #2f2f2ffa;
+  color: #2b2b2b;
 }
 .seo .seo__voordelen aside article:first-child {
   margin-right: 20px;
@@ -3494,7 +3584,7 @@ nav.navbar-default .container {
   min-height: 40px;
 }
 .seo .seo__voordelen .seo__extraCta {
-  color: #2f2f2ffa;
+  color: #2b2b2b;
 }
 
 .seo-cta {
@@ -3516,7 +3606,7 @@ nav.navbar-default .container {
   }
 }
 .seo-cta p {
-  color: #2f2f2ffa;
+  color: #2b2b2b;
 }
 .seo-cta h2 {
   color: #33658a;
@@ -3584,7 +3674,7 @@ nav.navbar-default .container {
   margin-bottom: 5vh;
 }
 .sea-context .sea-shoutout {
-  color: #2f2f2ffa;
+  color: #2b2b2b;
 }
 
 .grafisch-email {
@@ -3640,7 +3730,7 @@ nav.navbar-default .container {
   }
 }
 .emailMarketing__cta-wrapper {
-  color: #2f2f2ffa;
+  color: #2b2b2b;
   margin: 10vh 0 3vh 0;
 }
 @media (max-width: 1024px) {
@@ -3649,7 +3739,7 @@ nav.navbar-default .container {
   }
 }
 .emailMarketing__cta-wrapper .emailMarketing__cta {
-  color: #2f2f2ffa;
+  color: #2b2b2b;
   margin: 1vh 0;
 }
 

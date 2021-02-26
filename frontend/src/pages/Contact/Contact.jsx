@@ -11,8 +11,15 @@ const Contact = () => (
   <Grid>
     <Row className="contact">
       <Col xs={12} md={12} sm={12}>
-        <h1 className="contact-header">Hebt u een vraag?</h1>
-        <p>Wij contacteren u binnen de 24 uur!</p>
+        <h1 className="contact-header">
+          Hebt u een vraag? Of interesse in één van onze diensten?
+        </h1>
+        <p>
+          Stuur ons gerust een bericht met vermelding van jouw vraag en dienst.
+          Wij contacteren jou binnen de 24 uur terug om jou verder te helpen.
+        </p>
+        <br />
+        <br />
       </Col>
     </Row>
     <Row className="contact">

@@ -105,12 +105,14 @@ class PortfolioItem extends Component {
                 <div className="portfolio__request">
                   {ReactHtmlParser(portfolio['request'])}
                   <br />
-                  <a
-                    href={portfolio['websiteUrl']}
-                    className="mellow-btn portbutton"
-                  >
-                    Bezoek de website
-                  </a>
+                  {portfolio['websiteUrl'] && (
+                    <a
+                      href={portfolio['websiteUrl']}
+                      className="mellow-btn portbutton"
+                    >
+                      Bezoek de website
+                    </a>
+                  )}
                 </div>
               </Col>
               <Col md={6} data-aos-mirror="true">

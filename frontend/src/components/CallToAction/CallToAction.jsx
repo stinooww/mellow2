@@ -12,9 +12,12 @@ function CallToAction({ activateOfferte }) {
             </h4>
           </Col>
           <Col lg={3} md={4} sm={4} xs={12}>
-            <button className="cta-btn moreInfo-btn" onClick={activateOfferte}>
-              Neem contact op
-            </button>
+            {/*<button className="cta-btn moreInfo-btn" onClick={activateOfferte}>*/}
+            {/*Neem contact op*/}
+            {/*</button>*/}
+            <a className="" href={'/contact/'}>
+              <button className="cta-btn moreInfo-btn">Neem contact op</button>
+            </a>
           </Col>
         </Row>
       </Grid>

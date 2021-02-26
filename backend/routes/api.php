@@ -20,6 +20,8 @@ header("Access-Control-Allow-Headers: Content-Type, X-Auth-Token, Origin,Access-
 |
 */
 Route::resource('portfolio', 'Api\PortfolioController');
+Route::resource('blogs', 'Api\BlogController');
+Route::resource('instalinks', 'Api\InstalinkController');
 Route::resource('taggables', 'Api\TaggableController');
 route::post('sendmail/contact','Mail\MailController@sendcontactmail');
 route::post('sendmail/quotation','Mail\MailController@sendquotationmail');
