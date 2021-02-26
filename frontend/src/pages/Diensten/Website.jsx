@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import websitehead from '/Users/jonasvanloey/Documents/mellow/mellow_backend/site/frontend/src/images/responsive-website-header.jpg';
-import responsive from '/Users/jonasvanloey/Documents/mellow/mellow_backend/site/frontend/src/images/mobiel-responsive-website.jpg';
-import starter from '/Users/jonasvanloey/Documents/mellow/mellow_backend/site/frontend/src/images/undraw_Designer_by46.png';
-import custom from '/Users/jonasvanloey/Documents/mellow/mellow_backend/site/frontend/src/images/undraw_Co_workers_re_1i6i.png';
-import customAdvanced from '/Users/jonasvanloey/Documents/mellow/mellow_backend/site/frontend/src/images/undraw_building_websites_i78t.png';
+import websitehead from '../../images/responsive-website-header.jpg';
+import responsive from '../../images/mobiel-responsive-website.jpg';
+import starter from '../../images/undraw_Designer_by46.png';
+import custom from '../../images/undraw_Co_workers_re_1i6i.png';
+import customAdvanced from '../../images/undraw_building_websites_i78t.png';
 import scrollmagic from 'scrollmagic';
 import animateScrollTo from 'animated-scroll-to';
 
