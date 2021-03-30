@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="12ea28b2-16cc-402e-8e6a-5180a58d3b5c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/LinkInBio/linkBio.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/LinkInBio/linkBio.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,48 +18,9 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/registerServiceWorker.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/polyfills.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/public/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="51" selection-start-line="51" selection-end-line="54" selection-end-column="42" />
-              <folding>
-                <element signature="n#style#0;n#iframe#0;n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/components/Contactform/Reactcontactform.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/components/CallToAction/CallToAction.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
+            <state relative-caret-position="240">
               <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -87,19 +50,42 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/pages/Diensten/Website.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1875">
-              <caret line="125" column="17" selection-start-line="125" selection-start-column="17" selection-end-line="125" selection-end-column="36" />
+            <state relative-caret-position="60">
+              <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/app/Mail/quotation.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="492">
+              <caret line="54" selection-end-line="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frontend/src/pages/LinkInBio/linkBio.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="60" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
               <folding>
-                <element signature="e#0#41#0" expanded="true" />
+                <element signature="e#0#26#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/app/Mail/contact.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/components/Header/Header.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1470">
+            <state relative-caret-position="1440">
               <caret line="98" column="23" selection-start-line="98" selection-start-column="23" selection-end-line="98" selection-end-column="23" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -108,16 +94,21 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/pages/Contact/Contact.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
+            <state relative-caret-position="105">
               <caret line="14" column="66" selection-start-line="14" selection-start-column="66" selection-end-line="14" selection-end-column="66" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/package.json">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -160,7 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/frontend/src/components/SEOanalyse/SeoAnalyse.jsx" />
         <option value="$PROJECT_DIR$/backend/app/Http/Controllers/Mail/MailController.php" />
         <option value="$PROJECT_DIR$/backend/resources/views/seomail.blade.php" />
         <option value="$PROJECT_DIR$/backend/resources/views/quoteemail.blade.php" />
@@ -206,11 +196,12 @@
         <option value="$PROJECT_DIR$/frontend/src/styling/_General.scss" />
         <option value="$PROJECT_DIR$/frontend/src/styling/pages/_Website.scss" />
         <option value="$PROJECT_DIR$/frontend/src/styling/_variables.scss" />
-        <option value="$PROJECT_DIR$/frontend/src/pages/Diensten/Website.jsx" />
         <option value="$PROJECT_DIR$/frontend/public/index.html" />
         <option value="$PROJECT_DIR$/frontend/src/components/CallToAction/CallToAction.jsx" />
         <option value="$PROJECT_DIR$/frontend/src/components/Header/Header.jsx" />
         <option value="$PROJECT_DIR$/frontend/src/pages/Contact/Contact.jsx" />
+        <option value="$PROJECT_DIR$/frontend/src/pages/Diensten/Website.jsx" />
+        <option value="$PROJECT_DIR$/frontend/src/pages/LinkInBio/linkBio.jsx" />
       </list>
     </option>
   </component>
@@ -340,7 +331,7 @@
       <path value="$PROJECT_DIR$/backend/vendor/symfony/error-handler" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="1920" />
     <option name="height" value="1080" />
   </component>
@@ -368,57 +359,7 @@
               <item name="site" type="b2602c69:ProjectViewProjectNode" />
               <item name="site" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="CallToAction" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Header" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="site" type="b2602c69:ProjectViewProjectNode" />
@@ -433,15 +374,7 @@
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="About" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="Contact" type="462c0819:PsiDirectoryNode" />
+              <item name="LinkInBio" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -848,21 +781,9 @@
       <workItem from="1594605516301" duration="13000" />
       <workItem from="1607501848125" duration="175000" />
       <workItem from="1613738164546" duration="26903000" />
-      <workItem from="1614346833349" duration="733000" />
-    </task>
-    <task id="LOCAL-00048" summary="te veel voor op te noeme">
-      <created>1567529407616</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1567529407616</updated>
-    </task>
-    <task id="LOCAL-00049" summary="te veel voor op te noeme">
-      <created>1567583850163</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1567583850163</updated>
+      <workItem from="1614346833349" duration="2114000" />
+      <workItem from="1614847037465" duration="147000" />
+      <workItem from="1617092076621" duration="1306000" />
     </task>
     <task id="LOCAL-00050" summary="te veel voor op te noeme">
       <created>1568897401436</created>
@@ -1193,11 +1114,25 @@
       <option name="project" value="LOCAL" />
       <updated>1614346906410</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="added images">
+      <created>1614350528616</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1614350528616</updated>
+    </task>
+    <task id="LOCAL-00098" summary="changed image url's">
+      <created>1614355173325</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1614355173325</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68114000" />
+    <option name="totallyTimeSpent" value="70948000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1210,9 +1145,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <frame x="0" y="23" width="1920" height="1010" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30402932" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27050054" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -1225,10 +1161,10 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="TODO" order="6" visible="true" weight="0.33877552" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32871288" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32871288" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.37722772" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3769063" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Hybris Console [Experimental]" order="11" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
@@ -1317,8 +1253,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="te veel voor op te noeme" />
-    <MESSAGE value="styling" />
     <MESSAGE value="component based implementation" />
     <MESSAGE value="start een project fixed" />
     <MESSAGE value="start een project validation" />
@@ -1342,7 +1276,9 @@
     <MESSAGE value="fixed forms" />
     <MESSAGE value="redesigned the home image component and the website page" />
     <MESSAGE value="replaced cta to link to contact" />
-    <option name="LAST_COMMIT_MESSAGE" value="replaced cta to link to contact" />
+    <MESSAGE value="added images" />
+    <MESSAGE value="changed image url's" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed image url's" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1351,22 +1287,6 @@
     <select />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/backend/app/Http/Controllers/Auth/ResetPasswordController.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/resources/views/vendor/adminlte/login.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/database/seeds/DatabaseSeeder.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/database/seeds/userSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="25" column="27" lean-forward="true" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/resources/views/instalinks/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1649,7 +1569,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/components/CallToAction/CallToAction.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="240">
           <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
@@ -1673,17 +1593,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/pages/Diensten/Website.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1875">
-          <caret line="125" column="17" selection-start-line="125" selection-start-column="17" selection-end-line="125" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/backend/app/Mail/contact.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/components/Header/Header.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1470">
+        <state relative-caret-position="1440">
           <caret line="98" column="23" selection-start-line="98" selection-start-column="23" selection-end-line="98" selection-end-column="23" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
@@ -1693,8 +1613,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/pages/Contact/Contact.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
+        <state relative-caret-position="105">
           <caret line="14" column="66" selection-start-line="14" selection-start-column="66" selection-end-line="14" selection-end-column="66" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/app/Mail/quotation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="54" selection-end-line="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/pages/LinkInBio/linkBio.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="60" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

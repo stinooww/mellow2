@@ -13,6 +13,13 @@ class linkBio extends React.Component {
           </div>
         </Col>
         <Col xs={12} sm={6} className="instagram__body instagram-body">
+          <a
+            class="instagram-body__buttons mellow-btn"
+            href="https://mailchi.mp/1d9d4f866969/seoguide"
+            target="_blank"
+          >
+            Verkrijg onze GRATIS SEO gids
+          </a>
           <Link
             className="instagram-body__buttons mellow-btn"
             to="/diensten/website"
