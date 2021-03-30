@@ -14,6 +14,11 @@ import Webhosting from '../../pages/Diensten/Webhosting';
 import Page404 from '../../pages/Error/page404';
 import CookiePolicy from '../../pages/cookiePolicy/cookiePolicy';
 import linkBio from '../../pages/LinkInBio/linkBio';
+import brasschaat from '../../pages/Locatie/brasschaat';
+import antwerpen from '../../pages/Locatie/antwerpen';
+import wilrijk from '../../pages/Locatie/wilrijk';
+import edegem from '../../pages/Locatie/edegem';
+
 const Routing = ({ activateOfferte }) => (
   <Switch>
     <Route path="/" exact component={Home} />
@@ -35,6 +40,16 @@ const Routing = ({ activateOfferte }) => (
     <Route path="/CookiePolicy" component={CookiePolicy} />
     <Route path="/portfolio" component={Portfolio} />
     <Route path="/instagram" component={linkBio} />
+    <Route path="/locatie/website-laten-maken-in-edegem" component={edegem} />
+    <Route
+      path="/locatie/website-laten-maken-in-brasschaat"
+      component={brasschaat}
+    />
+    <Route
+      path="/locatie/website-laten-maken-in-antwerpen"
+      component={antwerpen}
+    />
+    <Route path="/locatie/website-laten-maken-in-wilrijk" component={wilrijk} />
     <Route path="/404" component={Page404} />
     <Route path="/500" component={Page404} />
     <Route path="*" component={Page404} />

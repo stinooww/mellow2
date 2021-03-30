@@ -60,8 +60,6 @@ const formikEnhancer = withFormik({
       })
       .then(res => {
         setSubmitting(true);
-
-        console.log(res.data);
       });
   },
   displayName: 'MyForm'
